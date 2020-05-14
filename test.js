@@ -5,3 +5,7 @@ it('should return true', () => {
 it('should return false', () => {
     expect(false).toBe(false);
 })
+
+it('should break the build', () => {
+    expect(true).toBe(false);
+})
