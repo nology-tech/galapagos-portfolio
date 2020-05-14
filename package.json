@@ -1,5 +1,10 @@
 {
   "devDependencies": {
+    "jest": "^26.0.1",
     "sass": "^1.26.5"
+  },
+  "scripts": {
+    "build-css": "sass .:.",
+    "test": "jest"
   }
 }
