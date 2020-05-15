@@ -17,41 +17,5 @@
     "html-lint": "htmlhint **/*.html",
     "lint": "yarn html-lint && yarn css-lint && yarn js-lint"
   },
-  "dependencies": {},
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:jest/recommended"
-    ],
-    "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-      "ecmaVersion": 11,
-      "sourceType": "module"
-    },
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ],
-      "quotes": [
-        "error",
-        "single"
-      ],
-      "semi": [
-        "error",
-        "always"
-      ]
-    },
-    "plugins": [
-      "eslint-plugin-jest"
-    ]
-  }
+  "dependencies": {}
 }
