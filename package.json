@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-jest": "^23.11.0",
     "htmlhint": "0.11.0",
     "jest": "^26.0.1",
     "sass": "^1.26.5",
@@ -10,7 +12,10 @@
   "scripts": {
     "build-css": "sass .:.",
     "test": "jest",
-    "css-lint": "stylelint \"**/*.css\" \"**/*.scss\""
+    "css-lint": "stylelint \"**/*.css\" \"**/*.scss\"",
+    "js-lint": "eslint **/*.js",
+    "html-lint": "htmlhint **/*.html",
+    "lint": "yarn html-lint && yarn css-lint && yarn js-lint"
   },
   "dependencies": {}
 }

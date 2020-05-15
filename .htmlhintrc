@@ -10,5 +10,5 @@
    "attr-no-duplication": true,
    "title-require": true,
    "style-disabled": true,
-   "space-tab-mixed-disabled": "space2",
+   "space-tab-mixed-disabled": "space2"
 }
