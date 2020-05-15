@@ -4,7 +4,7 @@
     "es6": true,
     "jest": true
   },
-  "extends":[ "eslint:recommended", "plugin:jest/recommended"],
+  "extends": ["eslint:recommended", "plugin:jest/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -19,5 +19,5 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
   },
-    "plugins": ["eslint-plugin-jest"],
+  "plugins": ["eslint-plugin-jest"]
 }
