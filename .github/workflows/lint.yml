@@ -1,4 +1,4 @@
-name: Check scss files
+name: Lint html, css, scss and js
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
     branches:
       - master
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
-      - run: yarn build-css
-      - run: yarn test
+      - run: yarn html-lint
+      - run: yarn css-lint
+      - run: yarn js-lint
         env:
           CI: true
