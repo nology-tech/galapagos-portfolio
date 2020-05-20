@@ -1,0 +1,38 @@
+    body {
+        margin: 0;
+        padding: 0;
+        /* width: 100vw;
+    height: 100vh; */
+        text-align: center;
+        background-image: url(https://images.pexels.com/photos/3236265/pexels-photo-3236265.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1280&w=1706);
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    header {
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+    
+    section {
+        height: 70vh;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        margin: 10% 20%;
+    }
+    
+    .box {
+        border: 2px solid white;
+    }
+    
+    .transparent {
+        background-color: transparent;
+    }
+    
+    .solid {
+        background-color: rgb(149, 135, 156);
+    }
