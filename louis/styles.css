@@ -1,28 +1,58 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(116, 211, 255, 0.2);
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+}
+
+.boxgradtop {
+    height: 45vh;
+    background-size: contain;
+    background-image: linear-gradient(to top, rgb(116, 211, 255, 0.2), rgb(116, 211, 255, 1));
+}
+
+.boxgradbottom {
+    height: 45vh;
+    background-size: contain;
+    background-image: linear-gradient(to bottom, rgb(116, 211, 255, 0.2), rgb(116, 211, 255, 1));
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .box {
-    width: 100%;
-    height: 50px;
+    height: 1.7vh;
+    width: auto;
 }
 
-.one {
-background-color: rgb(255, 94, 91);
+.green1 {
+    background-color: #1cae03;
+}
+.green2 {
+    background-color: #43d12a;
+}
+.green3 {
+    background-color: #5ff045;
+}
+.green4 {
+    background-color: #89fb75;
+}
+.green5 {
+    background-color: #a3fa94;
 }
 
-.two {
-background-color: rgb(216, 216, 216);
-}
 
-.three {
-background-color: rgb(255, 255, 234);
-}
-
-.four {
-background-color: rgb(0, 206, 203);
-}
-
-.five {
-background-color: rgb(255, 237, 102)
-}
