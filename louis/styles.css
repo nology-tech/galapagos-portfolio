@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-main {
-    background-color: rgb(116, 211, 255, 0.2);
+body {
+    background-color: rgb(25, 182, 255, 0.2);
 }
 
 .header {
@@ -16,15 +16,10 @@ main {
 }
 
 .boxgradtop {
-    height: 45vh;
+    height: 65vh;
     background-size: contain;
-    background-image: linear-gradient(to top, rgb(116, 211, 255, 0.2), rgb(116, 211, 255, 1));
-}
-
-.boxgradbottom {
-    height: 45vh;
-    background-size: contain;
-    background-image: linear-gradient(to bottom, rgb(116, 211, 255, 0.2), rgb(116, 211, 255, 1));
+    background-image: linear-gradient(to top, rgb(25, 182, 255, 0), rgb(25, 182, 255, 1));
+    z-index: -1;
 }
 
 .footer {
@@ -34,25 +29,38 @@ main {
     width: 100%;
 }
 
+.boxgradbottom {
+    height: 15vh;
+    background-size: contain;
+    background-image: linear-gradient(to bottom, rgba(248, 248, 248, 0), rgb(248, 246, 114));
+    z-index: -1;
+}
+
 .box {
     height: 1.7vh;
     width: auto;
 }
 
-.green1 {
-    background-color: #1cae03;
+main {
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.green2 {
-    background-color: #43d12a;
-}
-.green3 {
-    background-color: #5ff045;
-}
-.green4 {
-    background-color: #89fb75;
-}
-.green5 {
-    background-color: #a3fa94;
+
+.plant {
+    top: 15vh;
+    border: 2px solid black;
+    width: 60vw;
+    height: 70vh;
+    position: relative;
 }
 
 
+
+.petal {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: red;
+    border-radius: 100px /50%;
+}
