@@ -4,30 +4,72 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    overflow-x: hidden;
+}
+
+.fa-bars {
+    color: #1C3041;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: .8em;
+    font-size: 1.7em;
 }
 
 nav {
     display: none;
+    width: 100vw;
+    position: fixed;
+    top: 3.3em;
+    z-index: 1;
+    background-color: #385F71;
+    font-size: 1.3em; 
+    transform: translateY(500px);
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+} 
+
+@keyframes  {
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+a, 
+a:visited {
+    color: white; 
+    text-decoration: none;
 }
 
 .container {
-    background: linear-gradient(to top left, #0FF4C6,#0FF4C6 calc(50% - 1px), #1C3041 calc(50% - 1px), #1C3041);
-    position: relative;
-    height: 100vh;
+    background: linear-gradient(95deg, #1C3041 42%, #1C3041, #F5F0F6,#F5F0F6 42%);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.inverse-container {
+    background: linear-gradient(95deg, #F6F7F8,#F6F7F8 42%, #1C3041 42%, #1C3041);
+    background-clip: text;
+    -webkit-background-clip: text;
+    min-height: 100vh;
     width: 100vw;
 }
 
 .name {
-    background: linear-gradient(to bottom right, #0FF4C6,#0FF4C6 calc(50% - 1px), #1C3041 calc(50% - 1px), #1C3041);
-    background-clip: text;
-    -webkit-background-clip: text;
-    position: absolute; 
-    height: inherit;
-    width: inherit;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .uppercase {
@@ -47,3 +89,83 @@ nav {
     font-size: 2em;
 }
 
+#cta-btn {
+    font-size: 1.2em;;
+    padding: 0em;
+    display: inline;
+    padding: .7em;
+    background-color: #2EC4B6;
+    margin: 2em auto 0;
+    border: 1px solid #1C3041;
+    border-radius: .25em;
+    font-weight: bold;
+    color: #1C3041;
+}
+
+#about {
+    margin: 2em auto;
+    background-color: rgba(28, 48, 65,.9);
+    color: white;
+    padding: 2em;
+    border-radius: .5em;
+    /* border: 2px solid white; */
+    width: 70vw;
+}
+
+#portfolio {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    margin: 2em;
+    color: white;
+    padding: 2em;
+    border-radius: .5em;
+}
+
+#portfolio h2 {
+    text-align: left;
+    width: 100%;
+    text-decoration: underline white;
+
+}
+
+#portfolio article {
+    position: relative;
+    border-radius: .25em;
+}
+
+#portfolio img {
+    width: 100%; 
+    height: auto;
+    filter: brightness(50%);
+    transition-duration: .3s;
+}
+
+#portfolio img:hover {
+    filter: brightness(100%);
+    transition-duration: .3s;
+}
+
+
+#portfolio h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#portfolio p {
+    display: none;
+}
+
+#project-1 {
+
+}
+
+#project-2 {
+
+}
+
+#project-3 {
+
+}
