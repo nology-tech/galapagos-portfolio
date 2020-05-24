@@ -1,38 +1,188 @@
-    body {
-        margin: 0;
-        padding: 0;
-        /* width: 100vw;
-    height: 100vh; */
-        text-align: center;
-        background-image: url(https://images.pexels.com/photos/3236265/pexels-photo-3236265.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=1280&w=1706);
-        background-attachment: fixed;
-        background-position: center;
-    }
-    
-    header {
-        background-color: whitesmoke;
-        padding: 10px;
-    }
-    
-    section {
-        height: 70vh;
-    }
-    
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100%;
-        margin: 10% 20%;
-    }
-    
-    .box {
-        border: 2px solid white;
-    }
-    
-    .transparent {
-        background-color: transparent;
-    }
-    
-    .solid {
-        background-color: rgb(149, 135, 156);
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    background-image: url(./img/background-one.jpg), linear-gradient(rgba(255, 255, 255, 0.5), rgba(219, 218, 218, 0.5));
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+header {
+    background-color: rgba(136, 136, 136, 0.3);
+    padding: 20px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header a {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(43, 43, 43);
+}
+
+
+/* Main sections styles for backgrounds */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.transparent {
+    background-color: transparent
+}
+
+.transparent:hover {
+    background-color: rgba(136, 136, 136, 0.1);
+    font-size: 1.1em;
+}
+
+.solid {
+    background-color: rgba(117, 129, 155, 0.6);
+}
+.solid:hover{
+    background-color: rgba(117, 129, 155, 0.7);
+    font-size: 1.1em;
+}
+
+footer:hover {
+    font-size: 1.1em;
+}
+
+/* About me, Projects and Contact */
+
+section {
+    min-height: 80vh;
+    padding: 4%
+}
+
+.ed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ed h2 {
+    padding-bottom: 2em;
+}
+
+.ed span {
+    overflow: hidden;
+    /* border-right: .15em solid black; */
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.span-one {
+    animation:
+    typing 4s steps(50, end),
+    blink .75s step-end infinite;
+    animation-delay: 0s;
+}
+
+.span-two {
+    animation:
+    typing 4s steps(50, end),
+    blink .75s step-end infinite;
+    animation-delay: 1.5s;
+}
+
+.span-three {
+    animation: 
+    typing 4s steps(50, end),
+    blink .75s step-end infinite;
+    animation-delay: 2.9s;
+}
+
+.span-four {
+    animation: 
+    typing 4s steps(50, end),
+    blink .75s step-end infinite;
+    animation-delay: 3.7s;
+}
+
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 80%;
+}
+
+.box {
+    border: 2px solid rgb(43, 43, 43);
+    height: 20vh;
+    width: 25vw;
+    min-width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-right h2 {
+    height: 100%;
+    width: 100%;
+}
+
+.icons {
+    font-size: 60px;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
+
+.icons a{
+    display: inline-block;
+}
+
+
+footer {
+    background-color: rgb(41, 40, 40);
+    color: whitesmoke;
+    padding: 20px;
+}
