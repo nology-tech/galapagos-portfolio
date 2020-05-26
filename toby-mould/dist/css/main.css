@@ -31,6 +31,10 @@ body h3 {
   color: set-h3-color(#111);
 }
 
+body h4 {
+  color: white;
+}
+
 body p {
   text-align: justify;
   line-height: 1.5rem;
@@ -182,7 +186,6 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border: 2px solid black;
   border-radius: 10px;
   margin: 10px 0px;
 }
@@ -274,5 +277,60 @@ body p {
 
 #skills .items #support div i:nth-of-type(3) {
   color: #cc3534;
+}
+
+#portfolio {
+  background: #a7adba;
+  padding: 20px;
+  min-height: 50vh;
+}
+
+#portfolio .items {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 10px;
+}
+
+#portfolio .items .item {
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+#portfolio .items .item:nth-child(even) {
+  margin: 10px 0px;
+}
+
+#portfolio .items .item:nth-of-type(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://source.unsplash.com/1600x900/?portfolio,website") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?portfolio,website") no-repeat center center/cover;
+}
+
+#portfolio .items .item:nth-of-type(1):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?portfolio,website") no-repeat center center/cover;
+}
+
+#portfolio .items .item:nth-of-type(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://source.unsplash.com/1600x900/?application,form") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?application,form") no-repeat center center/cover;
+}
+
+#portfolio .items .item:nth-of-type(2):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?application,form") no-repeat center center/cover;
+}
+
+#portfolio .items .item:nth-of-type(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
+}
+
+#portfolio .items .item:nth-of-type(3):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
 }
 /*# sourceMappingURL=main.css.map */
