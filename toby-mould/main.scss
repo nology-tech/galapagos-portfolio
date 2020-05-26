@@ -1,57 +1,4 @@
-$dark-colour: #111;
-$light-colour: #f4f4f4;
-$colour1: #5fa4dc;
-$unit: 5;
-
-// ICON COLOURS
-$HTML5: #f06529;
-$CSS3: #2965f1;
-$SASS: #cd6799;
-$JS: #f0db4f;
-$GIT: #f1502f;
-$NPM: #cc3534;
-$REACT: #61dbfb;
-$BOOTSTRAP: #563d7c;
-$NODE: #3c873a;
-$JAVA: #5382a1;
-
-//------------------------------------
-//--------MIX-INS--------//
-//------------------------------------
-//
-%marginPadding {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 10px;
-}
-%background-colour {
-  background: rgba(0, 0, 0, 0.05);
-}
-%text-adjust {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-%tileImage {
-  height: 150px;
-  min-width: 250px;
-  border-radius: 15px;
-  cursor: pointer;
-  h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
-    transition: all 0.5s ease-out;
-    color: set-h4-color($light-colour);
-
-    &:hover {
-      border: 1px solid orange;
-      background: rgba(0, 0, 0, 0.9);
-    }
-  }
-}
+@import 'variables';
 
 * {
   box-sizing: border-box;
@@ -59,6 +6,9 @@ $JAVA: #5382a1;
   padding: 0px;
 }
 
+//------------------------------------//
+//--------0. GENERAL STYLES--------//
+//------------------------------------//
 body {
   font-family: 'Dosis', sans-serif;
 
@@ -83,6 +33,10 @@ body {
     border-bottom: 2px solid $colour1;
     display: inline-block;
     color: set-h3-color($dark-colour);
+  }
+
+  h4 {
+    color: white;
   }
 
   p {
@@ -199,9 +153,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 2px solid black;
     border-radius: 10px;
     margin: 10px 0px;
+    // border: 2px solid black;
     // background: burlywood;
 
     #frontend {
@@ -285,5 +239,57 @@ body {
     //     }
     //   }
     // }
+  }
+}
+
+//------------------------------------//
+//--------4. PORTFOLIO SECTION--------//
+//------------------------------------//
+#portfolio {
+  background: $colour4;
+  padding: 20px;
+  min-height: 50vh;
+  // height: 100vh;
+
+  .items {
+    // background: blue;
+    margin-top: 20px;
+    display: grid;
+    align-content: space-between;
+    padding: 10px;
+    // max-height: 100%;
+    // gap: 4%;
+    // justify-content: center;
+    // grid-template-columns: 1fr;
+
+    .item {
+      // background: blue;
+      width: 100%;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+      &:nth-child(even) {
+        margin: 10px 0px;
+      }
+      &:nth-of-type(1) {
+        background: $linearGrad, $project1Image no-repeat center center/cover;
+        &:hover {
+          background: $linearGrad3D, $project1Image no-repeat center center/cover;
+        }
+      }
+      &:nth-of-type(2) {
+        background: $linearGrad, $project2Image no-repeat center center/cover;
+        &:hover {
+          background: $linearGrad3D, $project2Image no-repeat center center/cover;
+        }
+      }
+      &:nth-of-type(3) {
+        background: $linearGrad, $project3Image no-repeat center center/cover;
+        &:hover {
+          background: $linearGrad3D, $project3Image no-repeat center center/cover;
+        }
+      }
+    }
   }
 }
