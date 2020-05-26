@@ -4,7 +4,8 @@
 }
 
 body {
-  background-image: url(./images/wood-turqoise.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/wood-turqoise.jpg);
 }
 
 h1 {
@@ -22,7 +23,7 @@ img {
 
 a {
   color: black;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 #navbar ul {
@@ -46,42 +47,35 @@ h2 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-align: start;
   font-weight: bold;
 }
 
 li {
   font-size: 2em;
+  text-decoration: none;
 }
+
 #box {
   display: flex;
   justify-content: space-evenly;
 }
 
 .first {
-  border: 1px solid black;
   margin: 20px;
   padding: 20px;
 }
 
 .second {
-  border: 1px solid black;
   margin: 20px;
   padding: 20px;
 }
 
 .third {
-  border: 1px solid black;
-
   margin: 20px;
   padding: 20px;
-}
-
-.fourth {
-  border: 1px solid black;
-  margin: 20px;
-  padding: 20px;
+  text-decoration: none;
 }
 
 .main-picture {
