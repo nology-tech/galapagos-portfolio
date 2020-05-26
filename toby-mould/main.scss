@@ -1,0 +1,289 @@
+$dark-colour: #111;
+$light-colour: #f4f4f4;
+$colour1: #5fa4dc;
+$unit: 5;
+
+// ICON COLOURS
+$HTML5: #f06529;
+$CSS3: #2965f1;
+$SASS: #cd6799;
+$JS: #f0db4f;
+$GIT: #f1502f;
+$NPM: #cc3534;
+$REACT: #61dbfb;
+$BOOTSTRAP: #563d7c;
+$NODE: #3c873a;
+$JAVA: #5382a1;
+
+//------------------------------------
+//--------MIX-INS--------//
+//------------------------------------
+//
+%marginPadding {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+%background-colour {
+  background: rgba(0, 0, 0, 0.05);
+}
+%text-adjust {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+%tileImage {
+  height: 150px;
+  min-width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+  h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+    transition: all 0.5s ease-out;
+    color: set-h4-color($light-colour);
+
+    &:hover {
+      border: 1px solid orange;
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+
+  .container {
+    margin: 0px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid $colour1;
+    color: set-h2-color($dark-colour);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    // margin-top: 10px;
+    border-bottom: 2px solid $colour1;
+    display: inline-block;
+    color: set-h3-color($dark-colour);
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.5rem;
+    color: set-h3-color($dark-colour);
+  }
+}
+
+//------------------------------------//
+//--------1. LANDING SECTION--------//
+//------------------------------------//
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 92.5vh;
+  justify-content: center;
+  align-items: center;
+  background: url('/dist/img/SpaceSelfie.png') no-repeat 25% 100% / cover;
+  // background-attachment: fixed; //This solved nothing?
+
+  #home-overlay {
+    position: absolute;
+    height: 92.5vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  #home-content {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    margin: 0px auto 0px auto;
+    // background: purple;
+    z-index: 2;
+
+    h1 {
+      margin-bottom: 0px;
+    }
+    h2 {
+      border: none;
+      text-align: center;
+    }
+    span {
+      color: $colour1;
+    }
+  }
+}
+
+//------------------------------------//
+//--------2. NAVBAR SECTION--------//
+//------------------------------------//
+#navbar {
+  position: sticky;
+  top: 0;
+  height: 7.5vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-content: center;
+  background: $dark-colour;
+  z-index: 4;
+  font-size: 0.75rem;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: $colour1;
+    color: white;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      padding: 10px;
+      margin: 0px 5px;
+
+      li {
+        list-style-type: none;
+        border: 1px solid white;
+        background: blue;
+      }
+    }
+  }
+}
+
+//------------------------------------//
+//--------3. SKILLS SECTION--------//
+//------------------------------------//
+#skills {
+  background: #999;
+  padding: 10px;
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+    // background: burlywood;
+
+    #frontend {
+      // background: rebeccapurple;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          &:nth-of-type(1) {
+            color: $HTML5;
+          }
+          &:nth-of-type(2) {
+            color: $CSS3;
+          }
+          &:nth-of-type(3) {
+            color: $SASS;
+          }
+          &:nth-of-type(4) {
+            color: $JS;
+          }
+        }
+      }
+    }
+
+    #libraries {
+      // background: burlywood;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        i {
+          &:nth-of-type(1) {
+            color: $REACT;
+          }
+          &:nth-of-type(2) {
+            color: $BOOTSTRAP;
+          }
+        }
+      }
+    }
+
+    #support {
+      // background: rebeccapurple;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        i {
+          &:nth-of-type(1) {
+            color: $GIT;
+          }
+          &:nth-of-type(2) {
+            color: black;
+          }
+          &:nth-of-type(3) {
+            color: $NPM;
+          }
+        }
+      }
+    }
+
+    // #backend {
+    //   i {
+    //     &:nth-of-type(1) {
+    //       color: $NODE;
+    //     }
+    //     &:nth-of-type(2) {
+    //       color: $JAVA;
+    //     }
+    //   }
+    // }
+  }
+}
