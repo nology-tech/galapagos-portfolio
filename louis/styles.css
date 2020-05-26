@@ -27,12 +27,13 @@ body header {
   top: 0;
   width: 100vw;
   text-align: center;
-  background-color: #9657d3;
+  background-color: #8a88a1;
 }
 
 body main {
   height: 85vh;
-  font-family: fantasy;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +76,8 @@ body main section {
 }
 
 body main section article {
-  border: 2px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.548);
+  border-radius: 4px;
   width: 50vw;
   height: auto;
 }
@@ -90,6 +92,11 @@ body main section article.welcome {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   background-color: #dfa8a8;
+}
+
+body main section article.welcome:hover {
+  -webkit-box-shadow: 0px 0px 8px 8px #dff3fa;
+          box-shadow: 0px 0px 8px 8px #dff3fa;
 }
 
 body main section article.code {
@@ -158,6 +165,6 @@ body footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: #9657d3;
+  background-color: #8a88a1;
 }
 /*# sourceMappingURL=styles.css.map */
