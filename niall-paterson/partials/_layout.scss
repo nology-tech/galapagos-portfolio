@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     align-items: center;
     i {
-        margin: 24px;
+        margin: $margin-medium;
     }
 }
 
@@ -23,10 +23,9 @@ section, ul {
 }
 
 .project-links {
-    width: 42vw;
+    width: $width-small;
     display: flex;
     justify-content: space-evenly;
-    padding: 8px;
 }
 
 footer {
