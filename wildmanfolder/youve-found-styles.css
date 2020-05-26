@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 500vh;
+	background-image: linear-gradient(to bottom right, rgb(162, 0, 255) 0%, rgb(255, 0, 191) 50%, rgb(255, 0, 64) 100%);
+	color: #BBBAC6;
+}
+
+#landing-page {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	width: 100%;
+}
+
+nav {
+	height: 8vh;
+	background-color: #0B0014;
+}
+
+@font-face {
+    font-family: 'sfalienencsolid';
+    src: url('./assets/fonts/sfalienencsolid.woff2') format('woff2'),
+         url('./assets//fonts/sfalienencsolid.woff') format('woff'),
+		 url('./assets//fonts/sfalienencsolid.ttf') format('truetype');
+		 font-weight: normal;
+		 font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfalienenc';
+    src: url('./assets/fonts/sfalienenc.woff2') format('woff2'),
+         url('./assets//fonts/sfalienenc.woff') format('woff'),
+		 url('./assets//fonts/sfalienenc.ttf') format('truetype');
+		 font-weight: normal;
+		 font-style: normal;
+}
+
+section {
+	line-height: 1.4em;
+	font-family: 'sfalienencsolid';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12vmin;
+	height: 88vh;
+	/* background-color: red 0.6 0%; */
+	background-size: cover;
+	background-blend-mode: color;
+	opacity: 100%;
+}
+
+#background-image {
+	position: fixed;
+	top: 8vh;
+	left: 0;
+	height: 88vh;
+	width: 100%;
+	background-image: url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp), url(./assets/vector2.jpg);
+	background-size: cover;
+	background-blend-mode: luminosity;
+	z-index: -1;
+	opacity: 50%;
+
+}
+
+#container {
+	opacity: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 88vh;
+	width: 100%;
+	/* background-color: rgba(0, 0, 0, 0.4) */
+}
+
+.text {
+	background-color: #0b001466;
+	width: 100%;
+	text-align: center;
+}
+
+#youve {
+	padding-left: 16vw;
+	padding-right: 24vw;
+}
+
+
+
+
+#found {
+	padding-left: 24vw;
+	padding-right: 16vw;
+}
+
+#me {
+	padding-left: 32vw;
+	padding-right: 8vw;
+}
+
+p {
+	width: 100%;
+	background-color: rgba(11, 0, 20, 0.4);
+}
+
+.my-name {
+	font-family: "sfalienenc";
+
+}
+
+footer {
+	height: 4vh;
+	background-color: #0b0014;
+}
+
+@media screen and (max-width: 425px) and (orientation: portrait) {
+	.text {
+		margin: 2vh;
+		font-size: 36px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	section {
+		font-size: 92.16px;
+	}  
+
+}
