@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-$bannercolor: rgb(150, 087, 211); 
+$bannercolor: rgb(138, 136, 161); 
 $welcomebackground: rgb(223, 168, 168);
 
 body {
@@ -27,7 +27,8 @@ body {
 
     main {
         height: 85vh;
-        font-family: fantasy;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -54,7 +55,8 @@ body {
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
             article {
-                border: 2px solid black;
+                border: 1px solid rgba(0, 0, 0, 0.548);
+                border-radius: 4px;
                 width: 50vw;
                 height: auto;
     
@@ -62,37 +64,44 @@ body {
                     grid-area: 1 / 2 / 1 / 4;
                     color: red;
                     align-self: stretch;
-                    background-color: $welcomebackground;
+                    background-color: $welcomebackground; 
+                    &:hover {
+                        box-shadow: 0px 0px 8px 8px #dff3fa;
+                    }
                 }
                 &.code {
                     grid-area: 2 / 1 / 2 / 3;
                     color: green;
                     align-self: stretch;
                     background-color: #2e4057;
-                }
+                    }
                 &.baking {
                     grid-area: 3 / 2 / 3 / 4;;
                     color: red;
                     align-self: stretch;
                     background-color: #66a182;
-                }
+                    }
                 &.botany {
                     grid-area: 4 / 1 / 4 / 3;
                     color: green;
                     align-self: stretch;
                     background-color: #caffb9;
-                }
+                    }
                 &.amt {
                     grid-area: 5 / 2 / 5 / 4;
                     color: red;
                     align-self: stretch;
                     background-color: #aef78e;
+                    &:hover {
+                        box-shadow: 0px 0px 8px 8px #dff3fa;
                 }
                 &.personal {
                     grid-area: 6 / 1 / 6 / 3;
                     color: green;
                     align-self: stretch;
                     background-color: #c0d461;
+                    &:hover {
+                        box-shadow: 0px 0px 8px 8px #dff3fa;
                 }
             }
 
