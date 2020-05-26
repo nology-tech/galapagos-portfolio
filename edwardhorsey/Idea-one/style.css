@@ -45,6 +45,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* About me, Projects and Contact */
 }
 
 main .transparent {
@@ -52,15 +53,14 @@ main .transparent {
 }
 
 main .transparent:hover {
-  background-color: rgba(136, 136, 136, 0.2);
+  background-color: rgba(136, 136, 136, 0.1);
 }
 
 main .solid {
   background-color: rgba(115, 126, 150, 0.8);
 }
 
-/* About me, Projects and Contact */
-section {
+main section {
   min-height: 80vh;
   padding: 4%;
   display: -webkit-box;
@@ -72,23 +72,23 @@ section {
           flex-direction: column;
 }
 
-section h2 {
+main section h2 {
   padding-bottom: 2em;
   color: blue;
 }
 
-.ed {
+main .ed {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.ed span {
+main .ed span {
   overflow: hidden;
   margin: 0 auto;
 }
 
-.projects {
+main .projects {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-line-pack: center;
@@ -97,7 +97,7 @@ section h2 {
       flex-wrap: wrap;
 }
 
-.projects .container {
+main .projects .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ section h2 {
   height: 80%;
 }
 
-.projects .container .box {
+main .projects .container .box {
   border: 2px solid #2b2b2b;
   height: 20vh;
   width: 25vw;
@@ -123,13 +123,13 @@ section h2 {
   margin: 10px;
 }
 
-.cv-and-contact {
+main .cv-and-contact {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.cv-and-contact .contact {
+main .cv-and-contact .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@ section h2 {
       flex-wrap: wrap;
 }
 
-.cv-and-contact .contact div {
+main .cv-and-contact .contact div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,11 +158,11 @@ section h2 {
   padding: 10px;
 }
 
-.cv-and-contact .contact div ul li {
+main .cv-and-contact .contact div ul li {
   list-style-type: none;
 }
 
-.cv-and-contact .icons {
+main .cv-and-contact .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,11 +173,11 @@ section h2 {
   text-decoration: none;
 }
 
-.cv-and-contact .icons a {
+main .cv-and-contact .icons a {
   display: inline-block;
 }
 
-.cv-and-contact .icons a:visited {
+main .cv-and-contact .icons a:visited {
   color: #2b2b2b;
 }
 
