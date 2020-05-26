@@ -1,40 +1,86 @@
 * {
-    /* background-color: rgb((230,219,208); */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(132,140,142);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Over the Rainbow', cursive;
 }
-
-
 
 header {
-    width: 300px;
-    height: 800px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* background-color: rgb(196, 188, 119); */
-    background-color: rgb(230, 219, 208);
-    
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d1a2f;
 }
 
-h1 {
-    color: white;
+header li {
+  list-style: none;
+  text-decoration: none;
 }
 
-div {
+header a {
+  color: white;
+}
 
+main {
+  background-color: #e6dbd0;
+  height: calc(100vh - $headerheight);
+}
+
+main p {
+  font-size: 40px;
+  color: #1d1a2f;
+}
+
+main span {
+  display: inline-block;
+}
+
+main .bexfaceparent {
+  position: relative;
+}
+
+main .bexface {
+  height: auto;
+  width: 230px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/* AFTER MEDIA QUERY FOR TABLET SIZE */
+@media only screen and (min-width: 760px) {
+  main .bexface {
+    height: auto;
+    width: 295px;
+  }
+}
+
+/* AFTER MEDIA QUERY FOR  SIZE */
+@media only screen and (min-width: 980px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  header {
+    width: 20vw;
+    height: 100vh;
+  }
+  main {
+    width: 80vw;
+    height: 100vh;
+  }
+  main .bexface {
+    height: auto;
+    width: 360px;
+  }
 }
-li {
-    color: rgb(230, 219, 208);
-    list-style: none;
-    text-decoration: none;
-}
-
-a {
-    color: white;
-}
+/*# sourceMappingURL=main.css.map */
