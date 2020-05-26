@@ -22,5 +22,15 @@ section, ul {
     height: 100vh;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 
