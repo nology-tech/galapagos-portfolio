@@ -89,6 +89,7 @@ body main section article.welcome {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #dfa8a8;
 }
 
 body main section article.code {
@@ -100,6 +101,7 @@ body main section article.code {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #2e4057;
 }
 
 body main section article.baking {
@@ -111,6 +113,7 @@ body main section article.baking {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #66a182;
 }
 
 body main section article.botany {
@@ -122,6 +125,7 @@ body main section article.botany {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #caffb9;
 }
 
 body main section article.amt {
@@ -133,6 +137,7 @@ body main section article.amt {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #aef78e;
 }
 
 body main section article.personal {
@@ -144,6 +149,7 @@ body main section article.personal {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  background-color: #c0d461;
 }
 
 body footer {

@@ -5,6 +5,7 @@
 }
 
 $bannercolor: rgb(150, 087, 211); 
+$welcomebackground: rgb(223, 168, 168);
 
 body {
     background-color: rgb(186, 208, 211);
@@ -61,31 +62,37 @@ body {
                     grid-area: 1 / 2 / 1 / 4;
                     color: red;
                     align-self: stretch;
+                    background-color: $welcomebackground;
                 }
                 &.code {
                     grid-area: 2 / 1 / 2 / 3;
                     color: green;
                     align-self: stretch;
+                    background-color: #2e4057;
                 }
                 &.baking {
                     grid-area: 3 / 2 / 3 / 4;;
                     color: red;
                     align-self: stretch;
+                    background-color: #66a182;
                 }
                 &.botany {
                     grid-area: 4 / 1 / 4 / 3;
                     color: green;
                     align-self: stretch;
+                    background-color: #caffb9;
                 }
                 &.amt {
                     grid-area: 5 / 2 / 5 / 4;
                     color: red;
                     align-self: stretch;
+                    background-color: #aef78e;
                 }
                 &.personal {
                     grid-area: 6 / 1 / 6 / 3;
                     color: green;
                     align-self: stretch;
+                    background-color: #c0d461;
                 }
             }
 
