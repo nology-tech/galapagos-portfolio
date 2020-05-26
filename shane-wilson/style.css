@@ -55,7 +55,9 @@ body h3 {
     background-color: white;
     display: none;
   }
-#aside h3 {} 
+#aside h3 {
+    text-align: center;
+} 
    
 #footer {
     grid-area: footer;
