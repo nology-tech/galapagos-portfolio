@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One';
+    text-decoration: none;
+}
+
+$primary-color: whitesmoke;
+$secondary-color: #1d2227;
+
+$font-main:20px;
+
+body{
+    display: flex;
+}
+
+nav {
+    display: fixed;
+    width: 15vw;
+    height:100vh;
+    padding:5px;   
+    text-align: center;
+    font-size: $font-main;
+}
+
+/*    #logo{
+        width:7vw;
+        height:5vh;
+        background-color: transparent;
+    }
+}
+
+div{
+    width:1vw;
+    background-color: red;
+}
+
+main{
+    background-image: url(./Images/web-build1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    background-color:#536a8e;
+    width: 100vw; 
+
+    section{
+        display: grid;
+        margin:10px;
+        grid-template-areas: 
+        "name"
+        "title"
+        "btn-outline"
+        "btn-primary"
+    
+            #name{
+                grid-area: name;
+                font-size: 40px;
+            }
+            
+            #title{
+                grid-area: title;
+                font-size: 20px;
+            }
+            
+            .btn-outline {
+                grid-area: btn-outline;
+                border:2px solid $primary-color
+                padding:5px;
+                font-size: 20px;
+            }
+            
+            .btn-primary {
+                grid-area: btn-primary;
+                border:2px solid $primary-color
+                background-color: $primary-color
+                color:#536a8e;
+                padding:5px;
+                font-size: 20px;
+            }    
+    }
+}
+*/    
