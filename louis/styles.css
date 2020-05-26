@@ -1,67 +1,157 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(25, 182, 255, 0.2);
+  background-color: #bad0d3;
+  font-family: 'Courier New', Courier, monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%; 
+body header {
+  height: 7.5vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: #9657d3;
 }
 
-.boxgradtop {
-    height: 65vh;
-    background-size: contain;
-    background-image: linear-gradient(to top, rgb(25, 182, 255, 0), rgb(25, 182, 255, 1));
-    z-index: -1;
+body main {
+  height: 85vh;
+  font-family: fantasy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+body main h1 {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
 }
 
-.boxgradbottom {
-    height: 15vh;
-    background-size: contain;
-    background-image: linear-gradient(to bottom, rgba(248, 248, 248, 0), rgb(248, 246, 114));
-    z-index: -1;
+body main section {
+  width: 50%;
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5vh;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.box {
-    height: 1.7vh;
-    width: auto;
+body main section article {
+  border: 2px solid black;
+  width: 50vw;
+  height: auto;
 }
 
-main {
-display: flex;
-justify-content: center;
-align-items: center;
+body main section article.welcome {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 2 / 1 / 4;
+  color: red;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
-.plant {
-    top: 15vh;
-    border: 2px solid black;
-    width: 60vw;
-    max-width: 400px;
-    min-height: 70vh;
-    position: relative;
+body main section article.code {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 2 / 3;
+  color: green;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
-
-
-.petal {
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    background: red;
-    border-radius: 100px /50%;
+body main section article.baking {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 2 / 3 / 4;
+  color: red;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
+
+body main section article.botany {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 1 / 4 / 3;
+  color: green;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+body main section article.amt {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 5 / 2 / 5 / 4;
+  color: red;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+body main section article.personal {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 6 / 1 / 6 / 3;
+  color: green;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+body footer {
+  height: 7.5vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #9657d3;
+}
+/*# sourceMappingURL=styles.css.map */
