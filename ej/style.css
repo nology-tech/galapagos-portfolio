@@ -20,7 +20,7 @@ main .email {
           writing-mode: vertical-rl;
   position: fixed;
   bottom: 10px;
-  right: 30px;
+  right: 10px;
 }
 
 main .email a {
@@ -37,16 +37,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header nav a {
-  padding-left: 30px;
+  padding-left: 10px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
@@ -85,12 +85,12 @@ header p {
 }
 
 .landing p span {
-  border-bottom: 2px dotted #383838;
+  border-bottom: 1px dotted #383838;
   font-size: 48px;
 }
 
 .landing a {
-  border-bottom: 1px dotted #0000ee;
+  border-bottom: 1px dotted #383838;
   font-size: 40px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
@@ -102,5 +102,11 @@ header p {
 
 .landing .contact-links {
   font-size: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
