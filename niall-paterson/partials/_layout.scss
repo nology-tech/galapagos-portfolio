@@ -30,6 +30,14 @@ section, ul {
     width: $width-small;
 }
 
+.project-header {
+    position: static;
+    @include flex-row-start;
+    h2 {
+        margin: 0 $margin-medium;
+    }
+}
+
 footer {
    @include fixed-menu($header: false)
 }
