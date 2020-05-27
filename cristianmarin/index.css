@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -16,7 +18,7 @@ body {
 }
 
 a {
-  color: rgb(44, 83, 190);
+  color: #2c53be;
   text-decoration: none;
 }
 
@@ -29,6 +31,8 @@ h3 {
 
 p {
   margin: 10px 0;
+  color: #fff;
+  text-align: center;
 }
 
 #navbar {
@@ -63,7 +67,7 @@ p {
 
 #navbar ul li a:hover {
   border-radius: 25px;
-  background: rgb(30, 68, 180);
+  background: #1e44b4;
   color: #fff;
 }
 
@@ -72,11 +76,44 @@ p {
   padding: 100px;
   margin: 30px;
   text-align: center;
-  text-decoration-color: rgb(30, 68, 180);
+  -webkit-text-decoration-color: #1e44b4;
+          text-decoration-color: #1e44b4;
   line-height: 1.4;
 }
 
+.secondary-text {
+  text-align: center;
+}
+
+.downloadCv {
+  display: inline-block;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: #1e44b4;
+  letter-spacing: 1.9px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+.downloadCv a:hover {
+  background-color: rebeccapurple;
+}
+
+.list {
+  text-align: center;
+  color: white;
+}
+
 .box {
+  margin: 30px;
   text-align: center;
   letter-spacing: 20px;
   font-size: 10px;
@@ -89,15 +126,4 @@ p {
   bottom: 0;
   left: 0;
 }
-
-.downloadCv {
-  background-color: rgb(30, 68, 180);
-  color: #fff;
-  text-align: center;
-  margin-bottom: 10px;
-  max-width: 250px;
-  margin: 50px auto;
-  border: none;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+/*# sourceMappingURL=index.css.map */
