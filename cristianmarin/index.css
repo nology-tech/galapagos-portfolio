@@ -103,8 +103,8 @@ p {
   cursor: pointer;
 }
 
-.downloadCv a:hover {
-  background-color: rebeccapurple;
+.downloadCv:hover {
+  background-color: #e7e419;
 }
 
 .list {
@@ -125,5 +125,44 @@ p {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+/* Footer */
+#lab_social_icon_footer {
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+  height: 25vh;
+}
+
+#lab_social_icon_footer p {
+  color: white;
+  padding: 20px;
+}
+
+#lab_social_icon_footer a {
+  color: white;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: -webkit-transform scale(1.1);
+          transform: -webkit-transform scale(1.1);
+  transform: -moz-transform scale(1.1);
+  transform: -o-transform scale(1.1);
+}
+
+/*
+      Multicoloured Hover Variations
+  */
+#lab_social_footer #social-gh:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-li:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-em:hover {
+  color: #e7e419;
 }
 /*# sourceMappingURL=index.css.map */
