@@ -47,6 +47,18 @@ header {
     }
 }
 
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+P {
+    border: $border;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -83,14 +95,30 @@ nav {
     }
 }
 
-h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 2em;
+
+#skills {
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        }
 }
 
-P {
-    border: $border;
-    text-align: justify;
-    font-size: 1.5em;
+
+#contact {
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 60px;
+        }
+    }
+}
+
+
+img:hover {
+    cursor: pointer;
 }
