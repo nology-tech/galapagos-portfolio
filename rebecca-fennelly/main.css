@@ -3,7 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Over the Rainbow', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 header {
@@ -29,18 +29,39 @@ header a {
   color: white;
 }
 
-main {
-  background-color: #e6dbd0;
-  height: calc(100vh - $headerheight);
-}
-
-main p {
+main #parawrapper {
+  position: relative;
+  min-height: calc(100vh - 110px);
+  width: 100vw;
   font-size: 40px;
   color: #1d1a2f;
+  background-color: #e6dbd0;
 }
 
-main span {
-  display: inline-block;
+main .para1 {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
+  border-top: 3px dashed #1d1a2f;
+  border-left: 3px dashed #1d1a2f;
+  margin-bottom: 200px;
+  margin-right: 5px;
+  padding-left: 8px;
+}
+
+main .para2 {
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  width: 150px;
+  height: 150px;
+  border-bottom: 3px dashed #1d1a2f;
+  border-right: 3px dashed #1d1a2f;
+  margin-left: 5px;
+  padding-right: 8px;
 }
 
 main .bexfaceparent {
@@ -49,14 +70,14 @@ main .bexfaceparent {
 
 main .bexface {
   height: auto;
-  width: 230px;
+  width: 250px;
   position: fixed;
   right: 0;
   bottom: 0;
 }
 
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
   main .bexface {
     height: auto;
     width: 295px;
@@ -64,14 +85,14 @@ main .bexface {
 }
 
 /* AFTER MEDIA QUERY FOR  SIZE */
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 991px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   header {
-    width: 20vw;
+    width: 50vw;
     height: 100vh;
   }
   main {
