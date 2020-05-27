@@ -29,10 +29,11 @@ body {
   width: 35px;
   height: 5px;
   background-color: white;
-  text-shadow: black;
   margin: 6px 0px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black;
 }
 
 .burger.change .bar1 {
@@ -165,9 +166,8 @@ main .my-work .grid .column {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 40px;
   height: 50%;
   width: 100%;
@@ -177,6 +177,13 @@ main .my-work .grid .column div {
   height: 200px;
   width: 150px;
   background-color: slategray;
+  border: solid 2px slategray;
+  padding: 10px;
+}
+
+main .my-work .grid .column div:hover {
+  -webkit-box-shadow: 2px 2px 20px white;
+          box-shadow: 2px 2px 20px white;
   border: solid 2px white;
 }
 
