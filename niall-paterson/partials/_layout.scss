@@ -1,21 +1,12 @@
 header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include fixed-menu($header: true);
     i {
         margin: $margin-medium;
-    }
+    };
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-column;
 }
 
 section, ul {
@@ -23,20 +14,11 @@ section, ul {
 }
 
 .project-links {
+    @include flex-row-even;
     width: $width-small;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 8vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+   @include fixed-menu($header: false)
 }
-
-
 
