@@ -5,8 +5,9 @@ $tertiary-color: #536a8e;
 $font-main: 16px;
 $tn-width: 7vw;
 $tn-height: 7vh;
-$btn-width: 19vw;
+$btn-width: 22vw;
 $btn-height: 4vh;
+$primary-border:2px solid $primary-color;
 
 *{
     margin: 0px;
@@ -20,6 +21,7 @@ $btn-height: 4vh;
 body{
     display: flex;
 }
+
 nav{
     background-color: $secondary-color;
     display: fixed;
@@ -28,30 +30,63 @@ nav{
     height:100vh;
     padding:5px;   
     font-size: $font-main;
+    
+    .burger{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+      width: 40px;
+      height: 5px;
+      background-color: $primary-color;
+      margin: 6px 0;
+      transition: 0.4s;
+    }   
+    .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    }        
+    .change .bar2 {
+      opacity: 0;
+    }  
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+    }
+      
+    .menu{
+        display: none;
+    }
 
-    ul{
+    .social{
+        display: none;
+
+    }
+    #logo {
         display:none;
     }
-
-    span{
-        display:none;
-    }
-
-    #logo{
-       display: none;
-    }
-    #profile{
+    
+    #profile {
         display:none;
     }
 }
 
-/*nav show {
+.redline {
+    width:1vw;
+    background-color: red;
+    }
+
+/*nav {
     background-color: $secondary-color;
     display: fixed;
-    width: 100vw;
+    flex-direction: column;
+    width: 10vw;
     height:100vh;
     padding:5px;   
     font-size: $font-main;
+    
+    .burger{
+        display:none;
 
     #logo{
         width:$tn-width;
@@ -61,13 +96,10 @@ nav{
     #profile{
         width:$tn-width;
         height:$tn-height;
+
     }
 }*/
 
-div{
-    width:1vw;
-    background-color: red;
-}
 
 main{
     background-image: url(./Images/web-build1.png);
@@ -100,22 +132,70 @@ main{
 
         .btn-outline {
             grid-area: btn-outline;
-            border:2px solid $primary-color;
+            border:$primary-border;
             padding:5px;
             font-size: $font-main;
             width:$btn-width;
             height: $btn-height;
+            text-align: center;
+            &:hover{
+            cursor: pointer;
+            }
         }
 
         .btn-primary {
             grid-area: btn-primary;
-            border:2px solid $primary-color;
+            border:$primary-border;
             background-color: $primary-color;
             color:#536a8e;
             padding:5px;
             font-size: $font-main;
             width:$btn-width;
             height: $btn-height;
+            text-align: center;
         }
     }
-}        
+}   
+
+.portfolio {
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    gap:20px;
+    margin:20px;
+    grid-template-areas: 
+    "phil phil Phil ."
+    "frontend frontend Frontend ."
+    "project1 project2 . ."
+    "project3 project4 . ."
+    ;
+        article {
+        border:$primary-border;
+        font-size:$font-main;
+        }
+        .project1 {
+            grid-area: project1;
+        }
+
+        .project2 {
+            grid-area: project2;
+        }
+
+        .project3 {
+            grid-area: project3;
+        }
+
+        .project4 {
+            grid-area: project4;
+        }
+
+}
+
+/*@media only screen and (min-wdith:347px) {
+    .portfoli {
+      grid-template-rows:1fr 1fr 1fr 1fr;
+
+}
+
+@media only screen and (min-wdith:426px) {
+
+}*/
