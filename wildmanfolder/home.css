@@ -1,3 +1,6 @@
+
+	/* Let's get some out-of-this-world fonts */
+
 @font-face {
     font-family: 'sfalienencsolid';
 	src:	url('./assets/fonts/sfalienencsolid.woff2') format('woff2'),
@@ -16,6 +19,12 @@
 	font-style: normal;
 }
 
+
+
+
+	/* These colors were inspired by a funky Ted Baker wallet
+	which I was given when I left my last sales job */
+
 * {
 	--portfolio-light-blue: #8EA8C3;
 	--portfolio-black: #000000;
@@ -26,46 +35,30 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'sfalienencsolid', sans-serif;
-	color: var(--portfolio-blue);
+	color: inherit;
 	/* border: 2px hotpink dotted; */
 }
 
-.highlight {
-	color: var(--portfolio-light-blue);
-}
-
-.lowlight {
-	color: var(--portfolio-purple)
-}
-
-a {
-	text-decoration: none;
-	color: unset;
-}
+	/* I know how I like my body. */
 
 body {
 	max-width: 100vw;
 	background-color: var(--portfolio-black); 
 }
 
-ul {
-	list-style: none;
-	display: inline-flex;
-	justify-content: space-evenly;
-	align-items: center;
-	letter-spacing: initial;
-	font-size: 3vmin;
-}
+	/* Header styles. Because first impressions count. */
 
 header {
-	position: sticky;
-	top: 0;
-	height: 12vh;
-	background-color: var(--portfolio-purple);
+	width: 100%;
+	height: 32vh;
+	/* background-color: var(--portfolio-purple); */
+	background-image: url(./assets/images/Art\ \ \(5\).jpg);
+	background-size: cover;
 	border-bottom: 1px solid var(--portfolio-light-blue);
 }
 
 header > nav {
+	text-align: center;
 	width: 100%;
 	height: 100%;
 }
@@ -73,28 +66,222 @@ header > nav {
 header > nav > ul {
 	width: 100%;
 	height: 100%;
-	display: grid;
-	grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr;
-	grid-template-rows: 1fr;
-
+	list-style: none;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	letter-spacing: initial;
 }
 
 header > nav > ul > li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	color: inherit;
+	color: var(--portfolio-light-blue);
+	width: 85%;
 }
 
-footer {
+header > nav > ul > li:not(.home) {
+	color: var(--portfolio-blue);
+	border-left: 0.2em var(--portfolio-light-blue) solid;
+}
+
+header > nav > ul > li > a {
+	text-decoration: none;
+	font-size: 2em;
+}
+
+	/* All the sections take up one viewport height on mobile. */
+
+section {
+	height: 100vh;
+	border-bottom: 1px var(--portfolio-light-blue) double;
+}
+
+		/* What better way to start than a bold opening gambit? */
+
+section.bold-opening-gambit {
+	background-image: url(./assets/images/background-three.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.bold-opening-gambit #headline {
+	height: 68vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+section.bold-opening-gambit #headline div.text p {
+	line-height: 3em;
+	text-align: center;
+	text-shadow: 0px 0px 70px #8EA8C3;
+	overflow: visible;
+	font-size: 1.5em;
+}
+
+section.bold-opening-gambit #headline div.text.first-line p {
+	background-color: #5B2E4833;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	color: var(--portfolio-purple);
+	width: 45%;
+}
+
+section.bold-opening-gambit #headline div.text.second-line p {
+	background-color: #5B2E4833;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	float: right;
+	color: var(--portfolio-purple);
+	width: 65%;
+}
+
+section.bold-opening-gambit #headline div.text.third-line p {
+	background-color: #36394633;
+	color: var(--portfolio-blue);
+	font-size: 1.8em;
+}
+
+section.bold-opening-gambit #headline div.text.fourth-line p {
+	color: var(--portfolio-black);
+	background-color: #406E8E33;
+	font-size: 2.5em;
+}
+
+	/* Whew, that was long. Alright, first proper bit ofhomepage content now. */
+
+	/* Remember, we're still on mobile here—this all goes out the window after 768 pixels. */
+
+section.first-content {
+	background-image: url(./assets/images/background-five.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.first-content #headline {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+}
+
+section.first-content #headline div.text p {
+	line-height: 3em;
+	text-align: center;
+	text-shadow: 0px 0px 70px #8EA8C3;
+	overflow: visible;
+	font-size: 1.5em;
+}
+
+section.first-content #headline div.text.first-line p {
+	background-color: #5B2E4833;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	color: var(--portfolio-purple);
+	width: 45%;
+	float: middle;
+}
+
+section.first-content #headline div.text.second-line p {
+	color: var(--portfolio-black);
+	background-color: #406E8E33;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+section.first-content #headline div.text.third-line p {
+	background-color: #5B2E4833;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	float: right;
+	color: var(--portfolio-purple);
+	width: 65%;
+}
+
+
+section.first-content #headline div.text.fourth-line p {
+	color: var(--portfolio-black);
+	background-color: #406E8E33;
+	font-size: 1.2em;
+}
+
+	/* NICE. Ok, second bit of the homepage comin' up.
+	This will probably be a form but I'll change it later.
+	Also, this needs to be a bit shorter so we can fit the footer in. */
+
+	section.second-content {
+		background-image: url(./assets/images/background-four.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	section.second-content #headline {
+		height: 68vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: justify;
+	}
+	
+	section.second-content #headline div.text p {
+		line-height: 3em;
+		text-align: center;
+		text-shadow: 0px 0px 70px #8EA8C3;
+		overflow: visible;
+		font-size: 1.5em;
+	}
+	
+	section.second-content #headline div.text.first-line p {
+		background-color: #5B2E4833;
+		border-top-right-radius: 2em;
+		border-bottom-right-radius: 2em;
+		color: var(--portfolio-purple);
+		width: 45%;
+	}
+	
+	section.second-content #headline div.text.second-line p {
+		background-color: #5B2E4833;
+		border-top-left-radius: 2em;
+		border-bottom-left-radius: 2em;
+		float: right;
+		color: var(--portfolio-purple);
+		width: 65%;
+	}
+	
+	section.second-content #headline div.text.third-line p {
+		background-color: #36394633;
+		color: var(--portfolio-blue);
+		font-size: 1.8em;
+	}
+
+.char {
+	font-family: sans-serif;
+	font-size: 0.9em;
+}
+
+.first-content {
+	background-image: url(./assets/images/background-five.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.second-content {
+	background-image: url(./assets/images/background-four.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+	/* Last but not least. If you're still reading, I applaud you. */
+
+body > footer {
 	height: 12vh;
 	background-color: #8EA8C366;
 	border-top: 1px solid var(--portfolio-light-blue)
 }
 
 footer > ul {
+	list-style: none;
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -112,93 +299,92 @@ footer > ul > li {
 	color: inherit;
 }
 
-section {
-	height: 88vh;
-	border-bottom: 1px var(--portfolio-light-blue) double
-}
+@media screen and (min-width: 768px) {
 
-.bold-opening-gambit {
-	background-image: url(./assets/images/background-three.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.first-content {
-	background-image: url(./assets/images/background-five.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.second-content {
-	background-image: url(./assets/images/background-four.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-
-#headline {
-	height: 70%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.io {
-	color: inherit;
-}
-
-a:hover .io, p:hover .io {
-	letter-spacing: 0.05em;
-	transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-	transition: letter-spacing 0.5s, color 0.5s;
-	color: var(--portfolio-light-blue);
-	cursor: pointer;
-}
-
-
-.text {
-	font-size: 8vmin;
-	line-height: 1.4em;
-	background-color: #36394633;
-	width: 100%;
-	text-align: center;
-	text-shadow: 0px 0px 50px;
-	overflow: visible;
-}
-
-#youve {
-	padding-left: 16%;
-	padding-right: 32%;
-	width: 100%;
-}
-
-#found {
-	padding-left: 24%;
-	padding-right: 24%;
-}
-
-#david p {
-	color: var(--portfolio-purple);
-}
-
-#software-developer p {
-	font-size: 0.8em;
-	color: var(--portfolio-purple);
-}
-
-p {
-	width: 100%;
-	font-size: 100%;
-}
-
-@media screen and (orientation: portrait) {
-	.text {
-		font-size: 6vmin;
+	.hover-nav {
+		color: var(--portfolio-purple);
+	}
+	
+	nav:hover *.hover-nav {
+		display: inherit;
+		letter-spacing: 0.05em;
+		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+		transition: text-shadow 2s, color 2s;
+		color: var(--portfolio-blue);
+		cursor: pointer;
+	}
+		
+	a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
+		letter-spacing: 0.05em;
+		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+		transition: letter-spacing 0.5s, color 0.5s;
+		color: var(--portfolio-light-blue);
+		cursor: pointer;
+		text-shadow: 0px 0px 30px var(--portfolio-light-blue);
+	}
+	
+	section {
+		height: 88vh;
+		border-bottom: 1px var(--portfolio-light-blue) double
 	}
 
+	header {
+		position: sticky;
+		top: 0;
+		height: 12vh;
+		background-color: var(--portfolio-purple);
+		border-bottom: 1px solid var(--portfolio-light-blue);
+	}
+
+	header > nav {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	header > nav > ul {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1.75fr 1.75fr 1.75fr;
+		grid-template-rows: 1fr;
+
+	}
+
+	header > nav > ul > li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 50%;
+		color: inherit;
+	}
+
+	header > nav > ul > li > a {
+		text-decoration: none;
+		font-size: 2em;
+	}
 }
 
-.char {
-	font-family: sans-serif;
+@media screen and (min-width: 1080px) {
+
+	header > nav > ul > li > a {
+		font-size: 2.4em;
+	}
+}
+
+
+.highlight {
+	color: var(--portfolio-light-blue);
+	text-shadow: 0px 0px 30px var(--portfolio-light-blue);
+}
+
+.lowlight {
+	color: var(--portfolio-purple);
+	text-shadow: 0px 0px 30px var(--portfolio-light-blue);
+}
+
+
+.hover-io {
+	color: inherit;
 }
