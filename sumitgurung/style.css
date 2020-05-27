@@ -57,6 +57,18 @@ header h2 {
   font-size: 2em;
 }
 
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+P {
+  border: 2px solid black;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,12 +98,6 @@ nav a:hover {
   color: #4ae8eb;
 }
 
-#projects h2 {
-  text-align: center;
-  padding: 10px;
-  font-size: 2em;
-}
-
 #projects .container div {
   display: -ms-grid;
   display: grid;
@@ -104,33 +110,34 @@ nav a:hover {
   text-align: center;
 }
 
-#skills h2 {
-  text-align: center;
-  padding: 10px;
-  font-size: 2em;
+#skills .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#skills p {
-  border: 2px solid black;
-  text-align: justify;
-  font-size: 1.5em;
+#contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 60px;
 }
 
-#about h2 {
-  text-align: center;
-  padding: 10px;
-  font-size: 2em;
-}
-
-#about p {
-  border: 2px solid black;
-  text-align: justify;
-  font-size: 1.5em;
-}
-
-#contact h2 {
-  text-align: center;
-  padding: 10px;
-  font-size: 2em;
+#contact div img:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
