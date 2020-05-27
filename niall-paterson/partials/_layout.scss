@@ -27,7 +27,7 @@ section, ul {
 
 .project-links {
     @include flex-row-even;
-    width: $width-small;
+    width: $large-width;
 }
 
 .project-header {
