@@ -52,6 +52,6 @@ section, ul {
 }
 
 footer {
-   @include fixed-menu($header: false)
+   @include fixed-menu($header: false);
 }
 
