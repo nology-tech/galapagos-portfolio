@@ -1,22 +1,21 @@
 $color: #0000ee;
-$outline: 130px;
+$outline: 120px;
 
 * {
   color: #383838;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 body {
-  height: 100vh;
-  padding-top: 40px;
+  height:75vh;
+  padding-top: 20px;
   max-width: 95vw;
   margin: auto;
 }
 main {
-  margin-top: 50px;
   .email {
     writing-mode: vertical-rl;
     position: fixed;
@@ -38,7 +37,7 @@ header {
   nav {
     a {
       padding-left: 30px;
-      transition: ease 0.5s;
+      transition: ease 0.3s;
       &:hover {
         color: $color;
       }
@@ -47,37 +46,42 @@ header {
   span {
     color: $color;
   }
+  p{
+    font-family: youngserif ;
+  }
 }
 .landing {
   padding: 40px 0px;
   width: 100%;
   h1 {
-    font-family: harbour-medium;
+    font-family: youngserif,Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 100;
     font-size: $outline;
     margin-bottom: 20px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #383838;
+    -webkit-text-stroke-color: #000;
   }
 
   p {
-    width: 1000px;
+    width: 800px;
     margin-bottom: 40px;
-    font-size: 72px;
+    font-size: 48px;
     span {
       border-bottom: 2px dotted #383838;
-      font-size: 72px;
+      font-size: 48px;
     }
   }
   a {
     border-bottom: 1px dotted $color;
-    font-size: 50px;
-    transition: ease 0.5s;
+    font-size: 40px;
+    transition: ease 0.3s;
     &:hover {
       color: $color;
     }
   }
   .contact-links {
-    font-size: 64px;
+    font-size: 40px;
   }
 }
+
