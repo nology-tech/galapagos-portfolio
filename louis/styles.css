@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #bad0d3;
+  background-color: #bbbfbd;
   font-family: 'Courier New', Courier, monospace;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,13 +27,12 @@ body header {
   top: 0;
   width: 100vw;
   text-align: center;
-  background-color: #8a88a1;
+  background-color: #919894;
 }
 
 body main {
   height: 85vh;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +48,7 @@ body main {
 
 body main h1 {
   margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,11 +59,12 @@ body main h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
+  font-size: 40px;
 }
 
 body main section {
   width: 50%;
-  height: 80%;
+  height: 75%;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -80,6 +80,16 @@ body main section article {
   border-radius: 4px;
   width: 50vw;
   height: auto;
+  color: rgba(233, 231, 231, 0.898);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 3%;
+  -webkit-text-stroke: 1px #474343;
+}
+
+body main section article:hover {
+  -webkit-box-shadow: 0px 0px 6px 6px #e7f4f8;
+          box-shadow: 0px 0px 6px 6px #e7f4f8;
 }
 
 body main section article.welcome {
@@ -87,16 +97,11 @@ body main section article.welcome {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: 1 / 2 / 1 / 4;
-  color: red;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #dfa8a8;
-}
-
-body main section article.welcome:hover {
-  -webkit-box-shadow: 0px 0px 8px 8px #dff3fa;
-          box-shadow: 0px 0px 8px 8px #dff3fa;
+  background-color: #786c6c;
+  font-size: 30px;
 }
 
 body main section article.code {
@@ -104,11 +109,10 @@ body main section article.code {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 2 / 3;
-  color: green;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #2e4057;
+  background-color: #8d8080;
 }
 
 body main section article.baking {
@@ -116,11 +120,10 @@ body main section article.baking {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: 3 / 2 / 3 / 4;
-  color: red;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #66a182;
+  background-color: #a09696;
 }
 
 body main section article.botany {
@@ -128,11 +131,10 @@ body main section article.botany {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 4 / 1 / 4 / 3;
-  color: green;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #caffb9;
+  background-color: #b3abab;
 }
 
 body main section article.amt {
@@ -140,11 +142,10 @@ body main section article.amt {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: 5 / 2 / 5 / 4;
-  color: red;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #aef78e;
+  background-color: #c7c0c0;
 }
 
 body main section article.personal {
@@ -152,19 +153,39 @@ body main section article.personal {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 6 / 1 / 6 / 3;
-  color: green;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #c0d461;
+  background-color: #dad6d6;
 }
 
 body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 7.5vh;
   width: 100vw;
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: #8a88a1;
+  background-color: #919894;
+}
+
+body footer i {
+  font-size: 30px;
+  margin: 0 20px 0 20px;
+}
+
+body footer a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0 20px 0 20px;
 }
 /*# sourceMappingURL=styles.css.map */
