@@ -25,7 +25,7 @@
 
 @mixin fixed-menu($header: true) {
     position: fixed;
-    height: $size-large;
+    height: $medium-height;
     width: $full-width;
     @if $header {
         top: 0;
