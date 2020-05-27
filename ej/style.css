@@ -3,19 +3,15 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
-  height: 100vh;
-  padding-top: 40px;
+  height: 75vh;
+  padding-top: 20px;
   max-width: 95vw;
   margin: auto;
-}
-
-main {
-  margin-top: 50px;
 }
 
 main .email {
@@ -51,8 +47,8 @@ header {
 
 header nav a {
   padding-left: 30px;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 header nav a:hover {
@@ -63,36 +59,41 @@ header span {
   color: #0000ee;
 }
 
+header p {
+  font-family: youngserif;
+}
+
 .landing {
   padding: 40px 0px;
   width: 100%;
 }
 
 .landing h1 {
-  font-family: harbour-medium;
-  font-size: 130px;
+  font-family: youngserif,Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  font-size: 120px;
   margin-bottom: 20px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #383838;
+  -webkit-text-stroke-color: #000;
 }
 
 .landing p {
-  width: 1000px;
+  width: 800px;
   margin-bottom: 40px;
-  font-size: 72px;
+  font-size: 48px;
 }
 
 .landing p span {
   border-bottom: 2px dotted #383838;
-  font-size: 72px;
+  font-size: 48px;
 }
 
 .landing a {
   border-bottom: 1px dotted #0000ee;
-  font-size: 50px;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
+  font-size: 40px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 .landing a:hover {
@@ -100,6 +101,6 @@ header span {
 }
 
 .landing .contact-links {
-  font-size: 64px;
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */
