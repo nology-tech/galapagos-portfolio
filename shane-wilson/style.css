@@ -1,165 +1,245 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 body {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 100%;
-    width: 100%;
-    gap: 10px;
-    grid-template-areas:
-    "header header header header header"
-    "navb navb navb navb navb"
-    "article article article article article"
-    "article article article article article"
-    "footer footer footer footer footer"
+  background: url(./img/background2.jpg);
+  background-size: 100%;
+}
+
+body {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+      grid-template-areas: "header header header header header" "navb navb navb navb navb" "article article article article article" "article article article article article" "aside aside aside aside aside" "footer footer footer footer footer";
 }
 
 body h3 {
-    padding: 16px;
-}
-#header {
-    grid-area: header;
-    background-color: skyblue;
-  }
-#header h1 {
-    color: white;
-    text-align: center;
+  padding: 16px;
 }
 
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: header;
+  border-radius: 10px;
+  border: solid 1px purple;
+  background: url(./img/background3.jpg);
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 40px;
+}
+
+.dt {
+  display: none;
+}
 
 #navb {
-    grid-area: navb;
-    background-color: white;
-  }
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: navb;
+  background-color: white;
+  border: purple solid 1px;
+  border-top: solid purple 20px;
+  border-radius: 10px;
+}
 
+article {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: article;
+  background-color: white;
+  border: purple solid 1px;
+  border-top: solid purple 20px;
+  border-radius: 10px;
+  display: block;
+}
 
-#article {
-    grid-area: article;
-    background-color: white;
-  }
-   
+aside {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: aside;
+  background-color: white;
+  border: purple solid 1px;
+  border-top: solid purple 20px;
+  border-radius: 10px;
+}
 
-#aside { 
-    grid-area: aside;
-    background-color: white;
-    display: none;
-  }
-#aside h3 {
-    text-align: center;
-} 
-   
-#footer {
-    grid-area: footer;
-    background-color: black;
-  }
+* h3 {
+  text-align: center;
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: footer;
+  background-color: black;
+  border-radius: 10px;
+  border: solid 1px purple;
+}
+
+footer {
+  bottom: 0px;
+  width: auto;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 25px;
+  background: url(./img/background3.jpg);
+}
+
+footer .social i {
+  float: right;
+  cursor: pointer;
+  margin-left: 10px;
+  color: white;
+}
+
+footer .social i:hover {
+  color: purple;
+}
 
 #navb p {
-    background-color: skyblue;
-    color: skyblue;
+  background-color: purple;
+  color: purple;
 }
 
-#article p {
-    background-color: skyblue;
-    color: skyblue;
+#navb a {
+  display: block;
+  padding: 8px;
 }
 
-#aside p {
-    background-color: skyblue;
-    color: skyblue;
+article p {
+  background-color: purple;
+  color: purple;
 }
 
-    .background {
-    display: none;
+aside p {
+  background-color: purple;
+  color: purple;
 }
 
 @media only screen and (min-width: 780px) {
-body{
-    background: url("./img/background.jpg") no-repeat;
+  body {
+    background: url(./img/background2.jpg);
     background-size: 100%;
-    }
-
-body {
+  }
+  body {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     min-height: 50vh;
     max-width: 80%;
     gap: 20px;
-    grid-template-areas:
-    "header header header header header"
-    "navb navb navb navb navb"
-    "article article article article aside"
-    "article article article article aside"
-    "article article article article aside"
-    "footer footer footer footer footer"
-
-}
-
-body h3 {
-    padding: 16px;
-}
-
-#header {
-    grid-area: header;
-    background-color: skyblue;
+    margin: 0 auto;
+        grid-template-areas: "header header header header header" "navb navb navb navb navb" "article article article article aside" "article article article article aside" "article article article article aside" "footer footer footer footer footer";
   }
-    
-  #header h1 {
+  body h3 {
+    padding: 16px;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: header;
+    background-color: purple;
+    border-radius: 10px;
+    border: solid 1px purple;
+    background: url(./img/background3.jpg);
+  }
+  header h1 {
     color: white;
     text-align: center;
-}
-
-#navb {
-    grid-area: navb;
-    background-color: white;
   }
-
-
-#article {
-    grid-area: article;
-    background-color: white;
+  .mob {
+    display: none;
   }
-   
-
-#aside { 
-    grid-area: aside;
-    background-color: white;
+  .dt {
     display: block;
   }
-   
-#footer {
+  #navb {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: navb;
+    background-color: white;
+    border: purple solid 1px;
+    border-top: solid purple 20px;
+    border-radius: 10px;
+  }
+  #navb a {
+    display: block;
+    padding: 8px;
+  }
+  article {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: article;
+    background-color: white;
+    border: purple solid 1px;
+    border-top: solid purple 20px;
+    border-radius: 10px;
+  }
+  aside {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+    grid-area: aside;
+    background-color: white;
+    border: purple solid 1px;
+    border-top: solid purple 20px;
+    border-radius: 10px;
+  }
+  footer {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
     grid-area: footer;
     background-color: black;
+    border-radius: 10px;
+    border: solid 1px purple;
+    background: url(./img/background3.jpg);
   }
-
-#navb p {
-    background-color: skyblue;
-    color: skyblue;
+  #navb p {
+    background-color: purple;
+    color: purple;
+  }
+  article p {
+    background-color: purple;
+    color: purple;
+  }
+  aside p {
+    background-color: purple;
+    color: purple;
+  }
 }
-
-#article p {
-    background-color: skyblue;
-    color: skyblue;
-}
-
-#aside p {
-    background-color: skyblue;
-    color: skyblue;
-}
-
-}
-
-@media only screen and (min-width: 550px) {
- 
-}
+/*# sourceMappingURL=style.css.map */
