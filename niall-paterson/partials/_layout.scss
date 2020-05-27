@@ -5,8 +5,9 @@ nav {
         height: $full-height;
     }
     button {
-        position: absolute;
-        margin: $margin-large;
+    position: absolute;
+    right: 0;
+    margin: $margin-medium;
     }
 }
 
