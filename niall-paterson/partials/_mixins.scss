@@ -1,0 +1,31 @@
+@mixin flex-row-even {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin fixed-menu($header: true) {
+    position: fixed;
+    height: $size-large;
+    width: $full-width;
+    @if $header {
+        top: 0;
+        @include flex-row-between;
+    } @else {
+        bottom: 0;
+        @include flex-row-even;
+    }
+}
