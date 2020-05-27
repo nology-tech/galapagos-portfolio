@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+* header {
+  text-align: center;
+  background-color: darkgray;
+  opacity: 0.8;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* header h1 {
+  background-color: indianred;
+  font-size: 3em;
+  padding: 20px;
+  font-family: 'Chelsea Market', cursive;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  * header h1 {
+    font-size: 4em;
+  }
+}
+
+* header h1#name {
+  padding-bottom: 0;
+}
+
+* header h1#surname {
+  padding-top: 0;
+}
+
+* header h2 {
+  background-color: darkmagenta;
+  padding: 15px;
+  font-variant: small-caps;
+  letter-spacing: 6px;
+}
+
+@media (min-width: 768px) {
+  * header h2 {
+    letter-spacing: 10px;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  * header h2:before,
+  * header h2:after {
+    content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+    text-decoration: line-through;
+    margin: auto 0.5em;
+  }
+}
+
+* header nav {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  * header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1.5em;
+  }
+}
+
+* header nav i {
+  color: #202020;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  * header nav i {
+    font-size: 3em;
+    padding: 1em;
+  }
+}
+
+@media (min-width: desktop) {
+  * header nav i i:hover {
+    background-color: blue;
+    color: black;
+  }
+}
+/*# sourceMappingURL=main.css.map */
