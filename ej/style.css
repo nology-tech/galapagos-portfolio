@@ -1,0 +1,105 @@
+* {
+  color: #383838;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  height: 100vh;
+  padding-top: 40px;
+  max-width: 95vw;
+  margin: auto;
+}
+
+main {
+  margin-top: 50px;
+}
+
+main .email {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+}
+
+main .email a {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+main .email a:hover {
+  color: #0000ee;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  padding-left: 30px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+header nav a:hover {
+  color: #0000ee;
+}
+
+header span {
+  color: #0000ee;
+}
+
+.landing {
+  padding: 40px 0px;
+  width: 100%;
+}
+
+.landing h1 {
+  font-family: harbour-medium;
+  font-size: 130px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #383838;
+}
+
+.landing p {
+  width: 1000px;
+  margin-bottom: 40px;
+  font-size: 72px;
+}
+
+.landing p span {
+  border-bottom: 2px dotted #383838;
+  font-size: 72px;
+}
+
+.landing a {
+  border-bottom: 1px dotted #0000ee;
+  font-size: 50px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.landing a:hover {
+  color: #0000ee;
+}
+
+.landing .contact-links {
+  font-size: 64px;
+}
+/*# sourceMappingURL=style.css.map */

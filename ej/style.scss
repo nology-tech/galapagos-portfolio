@@ -1,0 +1,83 @@
+$color: #0000ee;
+$outline: 130px;
+
+* {
+  color: #383838;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  height: 100vh;
+  padding-top: 40px;
+  max-width: 95vw;
+  margin: auto;
+}
+main {
+  margin-top: 50px;
+  .email {
+    writing-mode: vertical-rl;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    a {
+      transition: ease 0.5s;
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    a {
+      padding-left: 30px;
+      transition: ease 0.5s;
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+  span {
+    color: $color;
+  }
+}
+.landing {
+  padding: 40px 0px;
+  width: 100%;
+  h1 {
+    font-family: harbour-medium;
+    font-size: $outline;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #383838;
+  }
+
+  p {
+    width: 1000px;
+    margin-bottom: 40px;
+    font-size: 72px;
+    span {
+      border-bottom: 2px dotted #383838;
+      font-size: 72px;
+    }
+  }
+  a {
+    border-bottom: 1px dotted $color;
+    font-size: 50px;
+    transition: ease 0.5s;
+    &:hover {
+      color: $color;
+    }
+  }
+  .contact-links {
+    font-size: 64px;
+  }
+}
