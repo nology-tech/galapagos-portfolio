@@ -6,18 +6,6 @@
 
 $border: 2px solid black;
 
-@mixin h2Style {
-    text-align: center;
-    padding: 10px;
-    font-size: 2em;
-}
-
-@mixin pStyle {
-    border: $border;
-    text-align: justify;
-    font-size: 1.5em;
-}
-
 .video {
     position: fixed;
     right: 0;
@@ -26,7 +14,6 @@ $border: 2px solid black;
     min-height: 100%;
     opacity: 0.2;
     } 
-
 
 header {
     background-image: linear-gradient(rgb(112, 112, 238), rgb(170, 227, 227));
@@ -83,11 +70,9 @@ nav {
 
 
 #projects {
-    h2 {
-        @include h2Style();
-    }
 
     .container {
+
         div {
             display: grid;
             flex-direction: column;
@@ -96,31 +81,16 @@ nav {
             text-align: center;    
         }
     }
-
 }
 
-#skills {
-    h2 {
-        @include h2Style();
-    }
-
-    p {
-        @include pStyle();
-    }
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
 }
 
-#about {
-    h2 {
-        @include h2Style();
-    }
-
-    p {
-        @include pStyle();
-    }
-}
-
-#contact {
-    h2 {
-        @include h2Style();
-    }
+P {
+    border: $border;
+    text-align: justify;
+    font-size: 1.5em;
 }
