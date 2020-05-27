@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$border: 2px solid black;
+
+@mixin h2Style {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+@mixin pStyle {
+    border: $border;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.2;
+    } 
+
+
+header {
+    background-image: linear-gradient(rgb(112, 112, 238), rgb(170, 227, 227));
+    color:  white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    #photo {
+        border: $border;
+        border-radius: 15px 50px;
+        margin: 10px;
+        box-shadow: 5px 10px rgb(99, 99, 99);
+    }
+
+    #arrow {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    h1 {
+        font-size: 3em;    
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2em;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(74, 232, 235);
+    }
+}
+
+
+#projects {
+    h2 {
+        @include h2Style();
+    }
+
+    .container {
+        div {
+            display: grid;
+            flex-direction: column;
+            border: $border;
+            margin: 10px;
+            text-align: center;    
+        }
+    }
+
+}
+
+#skills {
+    h2 {
+        @include h2Style();
+    }
+
+    p {
+        @include pStyle();
+    }
+}
+
+#about {
+    h2 {
+        @include h2Style();
+    }
+
+    p {
+        @include pStyle();
+    }
+}
+
+#contact {
+    h2 {
+        @include h2Style();
+    }
+}
