@@ -5,6 +5,18 @@ header {
     };
 }
 
+h1 {
+    margin: $margin-large 0;
+}
+
+h2 {
+    margin: $margin-medium 0;
+}
+
+p {
+    margin: $margin-small;
+}
+
 section {
     @include flex-column;
 }
