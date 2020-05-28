@@ -1,7 +1,3 @@
-document.getElementById('burger').addEventListener('click', e => {
-
-})
-
 const toggle = () => {
   let navBarClasses = document.getElementById('nav-bar');
   // console.log(navBarClasses);
@@ -11,6 +7,10 @@ const toggle = () => {
     navBarClasses.classList.add('show');
   }
 };
+
+document.getElementById('burger').addEventListener('click', () => {
+  toggle();
+});
 
 const typeWriter = (id, ms=50) => {
   let store = document.getElementById(id).innerHTML;
@@ -27,12 +27,6 @@ const typeWriter = (id, ms=50) => {
   }
   typing();
 };
-
-
-
-
-
-
 
 const boxFocus = (id) => {
 
@@ -52,6 +46,19 @@ const boxFocus = (id) => {
     }
   });
 };
+
+document.getElementById('boxOne').addEventListener('click', () => {
+  boxFocus('boxOne');
+});
+document.getElementById('boxTwo').addEventListener('click', () => {
+  boxFocus('boxTwo');
+});
+document.getElementById('boxThree').addEventListener('click', () => {
+  boxFocus('boxThree');
+});
+document.getElementById('boxFour').addEventListener('click', () => {
+  boxFocus('boxFour');
+});
 
 document.getElementById('submit').addEventListener('click', (e)=>{
   e.preventDefault();
