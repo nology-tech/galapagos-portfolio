@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="typeWriter('ed-span')">
 
     <header>
         <div>
@@ -30,7 +30,7 @@
             <!-- <div class="background"> -->
             <article>
                 <h2>Hi, I'm Ed</h2>
-                <span class="span-one">I'm a musician turned software developer. Please have a look through my projects, download my CV and feel free to get in touch.</span>
+                <span id="ed-span">I'm a musician turned software developer. Please have a look through my projects, download my CV and feel free to get in touch.</span>
             </article>
         <!-- </div> -->
         </section>
@@ -38,12 +38,25 @@
         <section class="solid projects" id="projects">
             <h2>Projects</h2>
             <div class="container">
-                <article class="box" id="boxOne" onclick="boxFocus('boxOne')">One (click in here)</article>
-                <article class="box" id="boxTwo" onclick="boxFocus('boxTwo')">Two</article>
-                <article class="box" id="boxThree" onclick="boxFocus('boxThree')">Three</article>
-                <article class="box" id="boxFour" onclick="boxFocus('boxFour')">Four</article>
-                <!-- <article class="box" id="boxFive" onclick="boxFocus('boxFive')">Five</article>
-                <article class="box" id="boxSix" onclick="boxFocus('boxSix')">Six</article> -->
+                <article class="box" id="boxOne" onclick="boxFocus('boxOne')">
+                    <h3>One (click in here)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur est modi eum rerum necessitatibus repudiandae et voluptatibus possimus aperiam fugit saepe.</p>
+                </article>
+                
+                <article class="box" id="boxTwo" onclick="boxFocus('boxTwo')">
+                    <h3>Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur est modi eum rerum necessitatibus repudiandae et voluptatibus possimus aperiam fugit saepe.</p>
+                </article>
+                
+                <article class="box" id="boxThree" onclick="boxFocus('boxThree')">
+                    <h3>Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur est modi eum rerum necessitatibus repudiandae et voluptatibus possimus aperiam fugit saepe.</p>
+                </article>
+                
+                <article class="box" id="boxFour" onclick="boxFocus('boxFour')">
+                    <h3>Four</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur est modi eum rerum necessitatibus repudiandae et voluptatibus possimus aperiam fugit saepe.</p>
+                </article>
             </div>
         </section>
 
@@ -60,9 +73,9 @@
                         <li>Skill#</li>
                         <li>Skill#</li>
                         <li>Skill#</li>
-     
                     </ul>
                 </div>
+
                 <div class="contact-right">
                     <h2>Get in touch</h2>
                     <form action="https://webhook.site/68338fa3-cdeb-45ae-b114-04bd589b2726" method="POST" target="blank">
@@ -72,7 +85,6 @@
                         <input type="email" name="email" placeholder="Email address">
                         <textarea name="message" placeholder="Enter your message"></textarea>
                         <input type="submit" id="submit" value="Contact me">
-
                     </form>
                 </div>
             </div>
@@ -82,6 +94,7 @@
                 <a href=""><i class="fa fa-github"></i></a>
             </div>
         </section>
+
     </main>
 
 

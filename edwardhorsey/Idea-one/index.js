@@ -8,33 +8,44 @@ console.log(navBarClasses)
   }
 }
 
+const typeWriter = (id) => {
+  let store = document.getElementById(id).innerHTML;
+  document.getElementById(id).innerHTML = '';
+
+  let i=0;
+
+  function typing() {
+    if (i<store.length){
+      document.getElementById(id).innerHTML += store[i];
+      i++;
+      setTimeout(typing,50);
+    }
+  }
+  typing();
+  // Can I use use a delay feature differently?
+  // Can I do this with a code block instead? 
+}
+
+
+
+
+
+
+
 const boxFocus = (id) => {
-  console.log(id); // for info
-  // list of boxes (could probs use queryselectorall to find these..)
+
   let boxes = Array.from(document.getElementsByClassName('box')).map(e=>{return e.id});
   // ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
 
-  // remove existing styles
   boxes.forEach(e=>{
     document.getElementById(e).classList.remove('focus');
     document.getElementById(e).classList.remove('sub');
     document.getElementById(e).style.order = '';
     if (e===id){
       document.getElementById(e).classList.add('focus');
-      document.getElementById(e).style.order = '-3';
+      document.getElementById(e).style.order = `-${boxes.indexOf(e)}`;
     } else {
     document.getElementById(e).classList.add('sub');
     }
   });
-
-  // // locate chosen box & resize chosen box
-  // boxes.splice(boxes.indexOf(String(id)), 1);
-  // document.getElementById(id).classList.add('focus');
-  // document.getElementById(id).style.order = '-3';
-  // // resize remaining boxes
-  // boxes.forEach(e=>{
-  //   // console.log(e);
-  //   document.getElementById(e).classList.add('sub');
-  // });
-
 }
