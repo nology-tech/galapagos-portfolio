@@ -1,0 +1,21 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: unset;
+}
+
+h1 {
+  font-size: $large-font;
+  text-align: center;
+}
+
+h2,
+i,
+li {
+  font-size: $medium-font;
+  text-align: center;
+}
+
+p {
+  font-size: $small-font;
+  text-align: justify;
+}
