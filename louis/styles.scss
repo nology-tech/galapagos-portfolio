@@ -5,10 +5,11 @@
 }
 
 $bannercolor: rgb(176, 180, 178);
-$hoverhighlight: 0 0 6px 6px #e7f4f8;
+$hoverhighlight: 0 0 20px 20px #e7f4f8;
 $articlecolor: #757070;
 $titlefontsize: 10px;
 $iconcolour: rgba(48, 96, 174, 0.898);
+
 
 body {
   background-color: lighten($bannercolor, 16%);
@@ -120,6 +121,7 @@ body {
     }
 
     a {
+    
       text-decoration: none;
       font-weight: 700;
       margin: 0 10px;
