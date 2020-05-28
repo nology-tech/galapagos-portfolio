@@ -31,66 +31,66 @@ $desktop: 1024px;
       }
       @media (min-width: $desktop) {
         font-size: 5em;
-        }
       }
+    }
         
-      &#name {
-        padding-bottom: 0;
-      }
-
-      &#surname {
-        padding-top: 0;
-      }
+    & #name {
+      padding-bottom: 0;
     }
 
-
-    h2 {
-      background-color: darkmagenta;
-      padding: 15px;
-      font-variant: small-caps;
-      letter-spacing: 6px;
-      @media (min-width: $tablet) {
-        letter-spacing: 10px;
-        font-size: 2em;
-      }
-      @media (min-width: $desktop) {
-        font-size: 3em;
-        }
+    & #surname {
+      padding-top: 0;
     }
+  }
 
+
+  h2 {
+    background-color: darkmagenta;
+    padding: 15px;
+    font-variant: small-caps;
+    letter-spacing: 6px;
     @media (min-width: $tablet) {
-      h2:before, 
-      h2:after {
-      content:'\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+      letter-spacing: 10px;
+      font-size: 2em;
+    }
+    @media (min-width: $desktop) {
+      font-size: 3em;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    h2::before,
+    h2::after {
+      content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
       text-decoration: line-through;
       margin: auto 0.5em;
-      }
     }
+  }
 
 
-    nav {
-      height: 30vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      @media (min-width: $tablet) {
-        flex-direction: row;
-        justify-content: center;
-        margin: 1.5em;
-      }
+  nav {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: center;
+      margin: 1.5em;
     }
+  }
       
 
-      i {
-        color: #202020;
-        font-size: 2em;
+  i {
+    color: #202020;
+    font-size: 2em;
         
-        @media (min-width: $tablet) {
-          font-size: 3em;
-          padding: 1em;
-          }
-        }
-      }
+    @media (min-width: $tablet) {
+      font-size: 3em;
+      padding: 1em;
+    }
+    }
+}
     
   
 
