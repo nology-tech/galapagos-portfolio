@@ -99,7 +99,7 @@ nav #dropdown ul a {
 }
 
 nav #dropdown ul li {
-  color: lightgray;
+  color: black;
   font-size: 1.5em;
 }
 
@@ -127,6 +127,23 @@ main .jumbotron h2 {
 
 main .jumbotron p {
   color: white;
+  text-align: center;
+}
+
+main .header {
+  background-color: transparent;
+  background-image: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
+main .header h2 {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 30px 20px 5px 20px;
 }
 
 main .about-me {
@@ -135,9 +152,16 @@ main .about-me {
   color: black;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 80%vw;
   padding: 20%vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about-me p {
+  text-align: center;
 }
 
 main .my-work {
@@ -146,7 +170,7 @@ main .my-work {
   color: black;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 80%vw;
   background-color: transparent;
   color: white;
@@ -194,7 +218,22 @@ main .get-in-touch {
   color: black;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 80%vw;
+}
+
+@media only screen and (min-width: 1067px) {
+  #dropdown :hover {
+    color: black;
+    background-color: lightgray;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .column div :hover {
+    background-color: red;
+    -webkit-box-shadow: 2px 2px 20px white;
+            box-shadow: 2px 2px 20px white;
+    border: solid 2px white;
+  }
 }
 /*# sourceMappingURL=style.css.map */
