@@ -87,57 +87,88 @@ main {
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
 @media only screen and (min-width: 768px) {
 
-  // $tabletparawidthandheight: 250px;
+  $tabletparawidthandheight: 250px;
 
   main .bexface {
     height: auto;
     width: 295px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
   }   
+
+  .bexfaceparent { 
+    position: relative;
+    background-color: rgb(230, 219, 208);
+  }
+
 
   .para1 {
     font-size: 1.5em;
     // margin-bottom: 200px;
-    margin-right: 5px;
+    margin-right: 150px;
     padding-left: 14px;
     width: 250px;
     height: 250px;
   }
 
-  //     .para2 {
-  //         font-size: 1.5em;
-  //         margin-left: 5px;
-  //         padding-right: 14px;
-  //         width: $tabletparawidthandheight;
-  //         height: $tabletparawidthandheight;
-}
+  .para2 {
+    font-size: 1.5em;
+    margin-left: 14px;
+    padding-right: 14px;
+    width: $tabletparawidthandheight;
+    height: $tabletparawidthandheight;
+  }
     
 
 
 
-/* AFTER MEDIA QUERY FOR  SIZE */
+  /* AFTER MEDIA QUERY FOR  SIZE */
 
-@media only screen and (min-width: 991px) {
+  @media only screen and (min-width: 991px) {
    
-  $headerwidth: 350px;
+    $headerwidth: 350px;
 
-  body {
-    display: flex;
-    height: 100vh;
-
-    header {
+    body {
+      display: flex;
       height: 100vh;
-      width: 350px;
-    }
 
-    main {
-      width: calc(100vw - #{$headerwidth});
-      height: 100vh;
-    }
+      header {
+        height: 100vh;
+        width: 350px;
+      }
+
+      main {
+        width: calc(100vw - #{$headerwidth});
+        min-height: 100vh;
+      }
+
+      #parawrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: calc(100vh - #{$headerheight + $bexfaceparentheight});
+        height: 100vw;
+        font-size: 40px;
+        color: rgb(29, 26, 47);
+        background-color: rgb(230, 219, 208);
+        padding-top: 40px;
+      }
       
-    .bexface {
-      height: auto;
-      width: 360px;
-    }
+      .bexface {
+        height: auto;
+        width: 360px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+      }
 
+      .bexfaceparent { 
+        position: relative;
+        width: 360px;
+        background-color: rgb(230, 219, 208);
+
+      }
+    }
   }
 }

@@ -87,18 +87,32 @@ main .bexface {
   main .bexface {
     height: auto;
     width: 295px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  .bexfaceparent {
+    position: relative;
+    background-color: #e6dbd0;
   }
   .para1 {
     font-size: 1.5em;
-    margin-right: 5px;
+    margin-right: 150px;
     padding-left: 14px;
     width: 250px;
     height: 250px;
   }
+  .para2 {
+    font-size: 1.5em;
+    margin-left: 14px;
+    padding-right: 14px;
+    width: 250px;
+    height: 250px;
+  }
+  /* AFTER MEDIA QUERY FOR  SIZE */
 }
 
-/* AFTER MEDIA QUERY FOR  SIZE */
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 768px) and (min-width: 991px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,11 +125,36 @@ main .bexface {
   }
   body main {
     width: calc(100vw - 350px);
-    height: 100vh;
+    min-height: 100vh;
+  }
+  body #parawrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: calc(100vh - 352px);
+    height: 100vw;
+    font-size: 40px;
+    color: #1d1a2f;
+    background-color: #e6dbd0;
+    padding-top: 40px;
   }
   body .bexface {
     height: auto;
     width: 360px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  body .bexfaceparent {
+    position: relative;
+    width: 360px;
+    background-color: #e6dbd0;
   }
 }
 /*# sourceMappingURL=main.css.map */
