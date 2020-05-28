@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #bbbfbd;
+  background-color: #dadcdb;
   font-family: 'Courier New', Courier, monospace;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,8 +26,19 @@ body header {
   position: fixed;
   top: 0;
   width: 100vw;
-  text-align: center;
-  background-color: #919894;
+  background-color: #b0b4b2;
+  padding: 0.8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+}
+
+body header h1 {
+  font-size: 25px;
 }
 
 body main {
@@ -46,33 +57,19 @@ body main {
   justify-items: center;
 }
 
-body main h1 {
-  margin-top: 3vh;
-  margin-bottom: 4vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  font-size: 40px;
-}
-
 body main section {
   width: 50%;
-  height: 75%;
+  height: 80%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  row-gap: 1.5vh;
+  row-gap: 2vh;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 body main section article {
@@ -80,11 +77,10 @@ body main section article {
   border-radius: 4px;
   width: 50vw;
   height: auto;
-  color: rgba(233, 231, 231, 0.898);
   font-size: 20px;
   font-weight: 900;
   padding: 3%;
-  -webkit-text-stroke: 1px #474343;
+  color: black;
 }
 
 body main section article:hover {
@@ -100,8 +96,10 @@ body main section article.welcome {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #786c6c;
+  background-color: #757070;
   font-size: 30px;
+  color: rgba(233, 231, 231, 0.898);
+  -webkit-text-stroke: 1px black;
 }
 
 body main section article.code {
@@ -112,7 +110,7 @@ body main section article.code {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #8d8080;
+  background-color: #8a8484;
 }
 
 body main section article.baking {
@@ -123,7 +121,7 @@ body main section article.baking {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #a09696;
+  background-color: #9d9999;
 }
 
 body main section article.botany {
@@ -134,29 +132,7 @@ body main section article.botany {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #b3abab;
-}
-
-body main section article.amt {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: 5 / 2 / 5 / 4;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  background-color: #c7c0c0;
-}
-
-body main section article.personal {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 6 / 1 / 6 / 3;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  background-color: #dad6d6;
+  background-color: #b1aeae;
 }
 
 body footer {
@@ -174,18 +150,21 @@ body footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: #919894;
+  background-color: #b0b4b2;
 }
 
 body footer i {
-  font-size: 30px;
-  margin: 0 20px 0 20px;
+  font-size: 20px;
 }
 
 body footer a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 25px;
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
+  color: black;
+}
+
+body footer a:hover {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
