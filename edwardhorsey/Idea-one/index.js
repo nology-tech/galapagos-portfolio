@@ -1,12 +1,12 @@
 const toggle = () => {
   let navBarClasses = document.getElementById('nav-bar');
-console.log(navBarClasses)
-  if (navBarClasses.classList.contains("show")) {
-    navBarClasses.classList.remove("show");
+  console.log(navBarClasses);
+  if (navBarClasses.classList.contains('show')) {
+    navBarClasses.classList.remove('show');
   } else {
-    navBarClasses.classList.add("show");
+    navBarClasses.classList.add('show');
   }
-}
+};
 
 const typeWriter = (id) => {
   let store = document.getElementById(id).innerHTML;
@@ -24,7 +24,7 @@ const typeWriter = (id) => {
   typing();
   // Can I use use a delay feature differently?
   // Can I do this with a code block instead? 
-}
+};
 
 
 
@@ -34,7 +34,7 @@ const typeWriter = (id) => {
 
 const boxFocus = (id) => {
 
-  let boxes = Array.from(document.getElementsByClassName('box')).map(e=>{return e.id});
+  let boxes = Array.from(document.getElementsByClassName('box')).map(e=>{return e.id;});
   // ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
 
   boxes.forEach(e=>{
@@ -45,15 +45,13 @@ const boxFocus = (id) => {
       document.getElementById(e).classList.add('focus');
       document.getElementById(e).style.order = `-${boxes.indexOf(e)}`;
     } else {
-    document.getElementById(e).classList.add('sub');
+      document.getElementById(e).classList.add('sub');
     }
   });
-}
+};
 
-const submit = () => {
 
-}
 
-document.getElementById("submit").addEventListener("click", (e)=>{
-  e.preventDefault()
+document.getElementById('submit').addEventListener('click', (e)=>{
+  e.preventDefault();
 });
