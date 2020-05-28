@@ -20,3 +20,13 @@ $small-height: (100vh / $multiple) / 2;
 $medium-height: (100vh / $multiple);
 $large-height: (100vh / $multiple) * 2vh;
 $full-height: 100vh;
+
+$top-gradient: linear-gradient(
+    180deg, rgba(255,255,255,1) 70%, 
+    rgba(255,255,255,0.1) 100%
+    );
+$bottom-gradient: linear-gradient(
+    0deg, rgba(255,255,255,1) 70%,
+    rgba(255,255,255,0.1) 100%
+    );
+    
