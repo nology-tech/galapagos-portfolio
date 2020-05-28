@@ -1,0 +1,64 @@
+nav {
+  display: none;
+  z-index: 999;
+  position: fixed;
+
+  ul {
+    @include flex-column;
+    width: $full-width;
+    height: $full-height;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    margin: $margin-medium;
+  }
+}
+
+#fixed-header {
+  @include fixed-menu($header: true);
+  
+  i {
+    margin: $margin-medium;
+  };
+}
+
+h1 {
+  margin: $margin-large 0;
+}
+
+h2 {
+  margin: $margin-medium 0;
+}
+
+p {
+  margin: $margin-small;
+}
+
+section {
+  @include flex-column;
+}
+
+section,
+ul {
+  height: 100vh;
+}
+
+.project-links {
+  @include flex-row-even;
+  width: $large-width;
+}
+
+.project-header {
+  @include flex-row-start;
+  position: static;
+
+  h2 {
+    margin: 0 $margin-medium;
+  }
+}
+
+footer {
+  @include fixed-menu($header: false);
+}

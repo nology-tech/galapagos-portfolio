@@ -1,0 +1,30 @@
+$multiple: 8;
+
+$small-font: 0.15em * $multiple;
+$medium-font: 0.25em * $multiple;
+$large-font: 0.35em * $multiple;
+
+$margin-small: 2px * $multiple;
+$margin-medium: 3px * $multiple;
+$margin-large: 4px * $multiple;
+
+$padding-small: 2px * $multiple;
+$padding-medium: 3px * $multiple;
+
+$small-width: (100 / $multiple) * 2vw;
+$medium-width: (100 / $multiple) * 3vw;
+$large-width: (100 / $multiple) * 4vw;
+$full-width: 100vw;
+
+$small-height: (100vh / $multiple) / 2;
+$medium-height: (100vh / $multiple);
+$large-height: (100vh / $multiple) * 2vh;
+$full-height: 100vh;
+
+$top-gradient: linear-gradient
+  (180deg, white, 70%, 
+  rgba(255, 255, 255, 0.1) 100%);
+
+$bottom-gradient: linear-gradient
+  (0deg, white, 70%,
+  rgba(255, 255, 255, 0.1) 100%);
