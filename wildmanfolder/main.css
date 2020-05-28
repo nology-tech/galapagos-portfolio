@@ -1,0 +1,331 @@
+<<<<<<< HEAD
+
+/* ************************************** */
+
+/* Resets a few values:
+	stops horizontal spillage
+	corrects box sizing
+	sets font family */
+
+
+
+	* {
+	font-family: 'minecraftregular';
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+/* ************************************** */
+
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
+         url('minecraftregular-bmg3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Gets rid of the white space around the page, so everything is flush against the edge of the viewport. Also sets a default background color */
+
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: transparent;
+}
+
+body {
+	margin: 0px 0px;
+	height: 200%;
+}
+
+/* ************************************** */
+
+
+
+/* Background scrolling effect-banner contains a PNG with a transparent text mask and a background image with a gradient behind it */
+
+#mask {
+	position: fixed;
+	width: 100%;
+	height: 25%;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 8;
+}
+
+#background {
+	display: grid;
+	position: fixed;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	height: 100%;
+}
+
+#scroll {
+	position: relative;
+	width: 100%;
+	height: 1120px;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	z-index: 0;
+}
+
+header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	height: 186.6px;
+	z-index: 8;
+}
+
+.gradient {
+	position: relative;
+	top: -186.6px;
+	height: 186.6px;
+}
+
+div.background {
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	white-space: nowrap;
+	display: block;
+	box-sizing: border-box;
+	margin: auto, auto;
+	padding: auto, auto;
+	width: 100%;
+}
+
+/* ************************************** */
+
+/* Body text scrolling effects-using sticky positioning. Some of this code will be redundant, I played around with it for a long time trying to get it to work! */
+
+div.main {
+	position: sticky;
+	top: 186px;
+	left: 0px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	z-index: 6;
+}
+
+
+span {
+	top: 0vh;
+	max-width: 100%;
+	display: block;
+	text-align: justify;
+
+}
+
+	.david {
+		position: sticky;
+		top: 24.5vh;
+		z-index: 10;
+		border-top: rgb(70, 70, 70) solid thick;
+		border-width: 33px;
+		line-height: 1.8em;
+	}
+
+	.face {
+		position: sticky;
+		top: 0px;
+		z-index: 9;
+	}
+
+	.wildman {
+		position: sticky;
+		top: 87vh;
+		z-index: 10;
+		border-bottom: rgb(70, 70, 70) solid thick;
+		border-width: 33px;
+		line-height: 4em;
+	}
+
+	/* Hover effects */
+
+	.david h1:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
+	
+	.wildman h1:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
+
+	h2.bio {
+		line-height: 1.5em;
+		color: rgb(92, 0, 61);
+		opacity: 70%;
+		position: absolute;
+		top: 80vh;
+		right: 1vw;
+		text-align: right;
+		z-index: 10;
+	}
+
+	h3.bio {
+		line-height: 1.5em;
+		color: #2867B2;
+		opacity: 100%;
+		position: absolute;
+		top: 71vh;
+		left: 1vw;
+		text-align: left;
+		z-index: 10;
+	}
+
+
+	h2.personal:hover {
+		background-color: hotpink;
+	}
+
+	.personal h1:hover {
+		color: rgb(110, 2, 83);
+		background-color: hotpink;
+		opacity: 70%
+	}
+
+	h3.professional:hover {
+		background-color: black;
+		opacity: 70%;
+	}
+
+	.professional h1:hover {
+		color: black;
+		opacity: 50%;
+		background-color: #2867B2;
+	}
+
+
+ .professional a {
+	text-decoration: underline;
+	color: inherit;
+	font-size: 1.5em;
+} 
+
+/* Navigation styling */
+
+nav span.leftlink{
+	position: fixed;
+	display: inline;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	z-index: 9;
+	left: 0px;
+	top: 0px;
+	max-width: 50%
+}
+
+nav span.rightlink{
+	position: fixed;
+	display: inline;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	z-index: 9;
+	right: 0px;
+	top: 0px;
+	max-width: 50%
+}
+
+.leftlink img {
+	position: fixed;
+	width: 50%;
+	height: 25vh;
+	opacity: 0;
+}
+
+.rightlink img {
+	position: fixed;
+	right: 0px;
+	width: 50%;
+	height: 25vh;
+	opacity: 0;
+
+}
+
+.leftlink img:hover {
+	opacity: 1;
+	background-color: rgb(70, 70, 70);
+}
+
+.rightlink img:hover {
+	opacity: 01;
+
+}
+
+
+	#arrow {
+	display: block;
+	width: auto;
+	padding: auto;
+	margin: auto;
+	background-size: unset;
+	text-decoration: none;
+	font-weight: bolder;
+	color: transparent;
+	font-size: 8vh;
+} 
+
+	#arrow:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
+
+
+/* #personal {
+	position: absolute;
+	font-size: 5vw;
+	color: black;
+	bottom: 0px;
+	left: 0px;
+	width: 100%
+} */
+
+/* General styles and probably some other redundant code! */
+
+h1 {
+	position: relative;
+	margin: auto;
+	display: block;
+	font-weight: bolder;
+	font-size: 90px;
+	text-align: center;
+	color: rgb(70, 70, 70);
+	background-color: none;
+	width: auto;
+	z-index: 3;
+}
+
+
+#defaultface {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+main p {
+	text-align: center;
+}
+
+br {
+	font-size: 100px;
+}
