@@ -8,6 +8,6 @@
     "selector-max-compound-selectors": null,
     "string-quotes": null,
     "declaration-property-value-blacklist": {},
-    "unexpected-qualifying-type-sleector": null
+    "selector-no-qualifying-type": null
   }
 }
