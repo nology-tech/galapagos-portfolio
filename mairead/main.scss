@@ -28,6 +28,9 @@ $desktop: 1024px;
       font-weight: 600;
       @media (min-width: $tablet) {
         font-size: 4em;
+      @media (min-width: $desktop) {
+        font-size: 5em;
+        }
       }
         
 
@@ -48,6 +51,9 @@ $desktop: 1024px;
         letter-spacing: 10px;
         font-size: 2em;
       }
+      @media (min-width: $desktop) {
+        font-size: 3em;
+        }
     }
 
     @media (min-width: $tablet) {
@@ -56,9 +62,7 @@ $desktop: 1024px;
       content:'\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
       text-decoration: line-through;
       margin: auto 0.5em;
-      }
     }
-
 
 
     nav {
@@ -80,23 +84,24 @@ $desktop: 1024px;
         @media (min-width: $tablet) {
           font-size: 3em;
           padding: 1em;
-        }
-        @media (min-width: desktop) {
-          i:hover {
-            background-color: blue;
-            color: black;
           }
         }
       }
     }
-    
   }
-  
+
+@media (min-width: $desktop) {
+  i:hover {
+    background-color: lightgray;
+    color: black;
+    font-size: 4em;
+  }
 }
+  
+
 
 // desktop version:
 // add in fade in and/or typing text on screen
 
 // Questions:
-// How can I create a contact scss file and link it to a contact css file?
-// How to make the hover function work?
+
