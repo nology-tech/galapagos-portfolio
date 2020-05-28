@@ -11,7 +11,7 @@ nav {
     }
 }
 
-header {
+#fixed-header {
     @include fixed-menu($header: true);
     i {
         margin: $margin-medium;
