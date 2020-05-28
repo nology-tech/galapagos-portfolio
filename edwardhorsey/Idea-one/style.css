@@ -116,12 +116,12 @@ main .ed {
 }
 
 main .ed article {
-  width: 50%;
+  width: 30%;
   height: 50%;
 }
 
 main .ed span {
-  overflow: hidden;
+  width: 200px;
 }
 
 main .projects {
@@ -154,23 +154,11 @@ main .projects .container {
 main .projects .container .box {
   border: 2px solid #2b2b2b;
   height: 25vh;
-  width: 25vw;
+  width: 30vw;
   min-width: 320px;
   min-height: 200px;
   padding: 10px;
   margin: 10px;
-}
-
-main .projects .container .box.focus {
-  width: 70vw;
-  height: 40vh;
-}
-
-main .projects .container .box.sub {
-  min-height: 10%;
-  min-width: 18%;
-  height: 10%;
-  width: 20%;
 }
 
 main .cv-and-contact {
@@ -232,8 +220,9 @@ main .cv-and-contact .contact form input, main .cv-and-contact .contact form tex
 }
 
 main .cv-and-contact .contact form input#submit, main .cv-and-contact .contact form textarea#submit {
-  width: 60%;
-  margin: 20px auto;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 main .cv-and-contact .contact form textarea {
@@ -299,6 +288,24 @@ footer:hover {
   }
   header #burger {
     display: none;
+  }
+  main .projects .container .box.focus {
+    width: 75vw;
+    height: 40vh;
+  }
+  main .projects .container .box.focus p {
+    color: white;
+    display: block;
+  }
+  main .projects .container .box.sub {
+    min-height: 10%;
+    min-width: 18%;
+    height: 20%;
+    width: 25%;
+  }
+  main .projects .container .box.sub p {
+    color: greenyellow;
+    display: hide;
   }
 }
 /*# sourceMappingURL=style.css.map */
