@@ -104,11 +104,6 @@ main {
       width: 30%;
       height: 50%;
     }
-
-    span {
-      width: 200px;
-    }
-
   }
 
   .projects {
@@ -133,18 +128,15 @@ main {
         padding: 10px;
         margin: 10px;
 
-        // &.focus{
-        //   width: 75vw;
-        //   height: 40vh;
-        // }
+        span {
+          a {
+            font-size: 2em;
 
-        //  &.sub{
-        //   min-height: 10%;
-        //   min-width:18%;
-        //   height: 20%;
-        //   width: 25%;
-        // }
-
+            &:visited {
+              color: $black-font-color;
+            }
+          }
+        }
       }
     }
   }
@@ -275,8 +267,8 @@ footer {
             height: 20%;
             width: 25%;
 
-            p {
-              color: greenyellow;
+            p,
+            span {
               display: none;
             }
           }
