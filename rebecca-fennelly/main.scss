@@ -1,0 +1,143 @@
+$headerheight: 150px;
+$parawidthandheight: 150px;
+$bexfaceparentheight: 202px;
+
+
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+header {
+    
+    height: $headerheight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29,26,47);
+
+    li {
+    
+        list-style: none;
+        text-decoration: none;
+    }
+
+        a {
+            color: white;
+            font-size: 12px;
+    }
+
+}
+
+main {
+    #parawrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - #{$headerheight + $bexfaceparentheight});
+        width: 100vw;
+        font-size: 40px;
+        color:rgb(29,26,47);
+        background-color: rgb(230, 219, 208);
+        padding-top: 40px;
+}
+        .para1 {
+            width: $parawidthandheight;
+            height: $parawidthandheight;
+            text-align: right;
+            border-top: 3px solid rgb(29,26,47);
+            border-left: 3px dashed rgb(29,26,47);
+            // border-radius: 20px;
+            margin-bottom: 200px;
+            margin-right: 5px;
+            padding-left: 8px;
+        }
+
+        .para2 {
+            width: $parawidthandheight;
+            height: $parawidthandheight;
+            border-bottom: 3px solid rgb(29,26,47);
+            border-right: 3px dashed rgb(29,26,47);
+            // border-radius: 20px;
+            margin-left: 5px;
+            padding-right: 8px;
+        }
+
+    
+    .bexfaceparent { 
+        position: relative;
+        height: 242px;
+        background-color: rgb(230, 219, 208);
+    }
+
+    .bexface {
+            height: auto;
+            width: 250px;
+            position: fixed;
+            
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+
+
+/* AFTER MEDIA QUERY FOR TABLET SIZE */
+@media only screen and (min-width: 768px) {
+
+    // $tabletparawidthandheight: 250px;
+
+    main .bexface {
+        height: auto;
+        width: 295px;
+    }   
+
+    //     .para1 {
+    //         font-size: 1.5em;
+    //     // margin-bottom: 200px;
+    //             margin-right: 5px;
+    //             padding-left: 14px;
+    //             width: $tabletparawidthandheight;
+    //             height: $tabletparawidthandheight;
+    // }
+
+    //     .para2 {
+    //         font-size: 1.5em;
+    //         margin-left: 5px;
+    //         padding-right: 14px;
+    //         width: $tabletparawidthandheight;
+    //         height: $tabletparawidthandheight;
+    }
+    
+
+
+
+/* AFTER MEDIA QUERY FOR  SIZE */
+
+@media only screen and (min-width: 991px) {
+   
+$headerwidth: 350px;
+
+body {
+    display: flex;
+}
+header {
+    height: 100vh;
+    width: $headerwidth;
+     }
+
+main {
+    width: calc(100vw - #{$headerwidth});
+    height: 100vh;
+    
+    .bexface {
+        height: auto;
+        width: 360px;
+    }   
+}
+}
