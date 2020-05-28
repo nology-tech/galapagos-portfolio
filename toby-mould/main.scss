@@ -226,13 +226,16 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         i {
           &:nth-of-type(1) {
             color: $GIT;
           }
+
           &:nth-of-type(2) {
             color: black;
           }
+
           &:nth-of-type(3) {
             color: $NPM;
           }
@@ -280,23 +283,30 @@ body {
       background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+
       &:nth-child(even) {
-        margin: 10px 0px;
+        margin: 10px 0;
       }
+
       &:nth-of-type(1) {
         background: $linearGrad, $project1Image no-repeat center center/cover;
+
         &:hover {
           background: $linearGrad3D, $project1Image no-repeat center center/cover;
         }
       }
+
       &:nth-of-type(2) {
         background: $linearGrad, $project2Image no-repeat center center/cover;
+
         &:hover {
           background: $linearGrad3D, $project2Image no-repeat center center/cover;
         }
       }
+
       &:nth-of-type(3) {
         background: $linearGrad, $project3Image no-repeat center center/cover;
+
         &:hover {
           background: $linearGrad3D, $project3Image no-repeat center center/cover;
         }

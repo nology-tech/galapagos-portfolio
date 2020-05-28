@@ -1,8 +1,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 body .container {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 body h2 {
@@ -64,8 +64,8 @@ body p {
   position: absolute;
   height: 92.5vh;
   width: 100vw;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
@@ -85,12 +85,12 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  margin: 0px auto 0px auto;
+  margin: 0 auto;
   z-index: 2;
 }
 
 #home #home-content h1 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #home #home-content h2 {
@@ -157,7 +157,7 @@ body p {
 
 #navbar ul a {
   padding: 10px;
-  margin: 0px 5px;
+  margin: 0 5px;
 }
 
 #navbar ul a li {
@@ -187,7 +187,7 @@ body p {
           align-items: center;
   width: 100%;
   border-radius: 10px;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 #skills .items #frontend {
@@ -304,7 +304,7 @@ body p {
 }
 
 #portfolio .items .item:nth-child(even) {
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 #portfolio .items .item:nth-of-type(1) {
