@@ -7,32 +7,32 @@ $tn-width: 7vw;
 $tn-height: 7vh;
 $btn-width: 22vw;
 $btn-height: 4vh;
-$primary-border:2px solid $primary-color;
+$primary-border: 2px solid $primary-color;
 
-*{
-    margin: 0px;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Fjalla One';
-    color: $primary-color;
-    text-decoration: none;
+* {
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      font-family: 'Fjalla One';
+      color: $primary-color;
+      text-decoration: none;
 }
 
-body{
-    display: flex;
+body {
+     display: flex;
 }
 
-nav{
+nav {
     background-color: $secondary-color;
     display: fixed;
     flex-direction: column;
-    padding:5px;   
+    padding: 5px;   
     font-size: $font-main;
-    height:100vh;
+    height: 100vh;
     
-    .burger{
-        display: inline-block;
-        cursor: pointer;
+    .burger {
+            display: inline-block;
+            cursor: pointer;
     }
 
     .bar1, .bar2, .bar3 {
@@ -195,7 +195,7 @@ main{
         .project4 {
             grid-area: project4;
         }
-        
+
         i {
             display: block;
             height:50px;
@@ -213,11 +213,11 @@ h2 {
     font-size: 50px;
 }
     
-    .btn-outline{
+    .btn-outline {
             font-size: 19px;
     }     
     
-    .btn-primary{
+    .btn-primary {
             font-size: 19px;
     }   
 }
