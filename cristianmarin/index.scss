@@ -160,3 +160,53 @@ p {
 #lab_social_footer #social-em:hover {
   color: #e7e419;
 }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+// @media only screen and (min-width: 425px) {
+//   h1 {
+//     font-size: 20px;
+//   }
+
+//   p {
+//     font-size: 15px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//     color: yellow;
+//   }
+// }
+
+// @media only screen and (min-width: 375px) {
+//   h1 {
+//     font-size: 15px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//   }
+
+//   .middlebtn {
+//     font-size: 10px;
+//   }
+// }
+
+// @media only screen and (max-width: 320px) {
+//   h1 {
+//     font-size: 13px;
+//   }
+
+//   .middlebtn {
+//     font-size: 7px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//     color: yellow;
+//   }
+// }

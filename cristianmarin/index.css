@@ -26,23 +26,23 @@ h1,
 h2,
 h3 {
   padding-bottom: 20px;
-  color: #fff;
+  color: white;
 }
 
 p {
   margin: 10px 0;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
 #navbar {
-  background: #000000;
-  color: #fff;
+  background: black;
+  color: white;
   overflow: auto;
 }
 
 #navbar a {
-  color: #fff;
+  color: white;
 }
 
 #navbar h1 {
@@ -68,7 +68,7 @@ p {
 #navbar ul li a:hover {
   border-radius: 25px;
   background: #1e44b4;
-  color: #fff;
+  color: white;
 }
 
 .primary-text {
@@ -85,7 +85,7 @@ p {
   text-align: center;
 }
 
-.downloadCv {
+.downloadcv {
   display: inline-block;
   text-align: center;
   display: block;
@@ -103,7 +103,7 @@ p {
   cursor: pointer;
 }
 
-.downloadCv:hover {
+.downloadcv:hover {
   background-color: #e7e419;
 }
 
@@ -117,11 +117,11 @@ p {
   text-align: center;
   letter-spacing: 20px;
   font-size: 10px;
-  color: #fff;
+  color: white;
 }
 
 #footer {
-  color: #fff;
+  color: white;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -164,5 +164,11 @@ p {
 
 #lab_social_footer #social-em:hover {
   color: #e7e419;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
