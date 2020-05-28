@@ -103,7 +103,7 @@ nav #dropdown ul li {
   font-size: 1.5em;
 }
 
-nav #dropdown ul li:hover {
+nav #dropdown ul li:active {
   color: black;
   background-color: lightgray;
   -webkit-transition: 0.2s;
@@ -181,7 +181,7 @@ main .my-work .grid .column div {
   padding: 10px;
 }
 
-main .my-work .grid .column div:hover {
+main .my-work .grid .column div:active {
   background-color: red;
   -webkit-box-shadow: 2px 2px 20px white;
           box-shadow: 2px 2px 20px white;
