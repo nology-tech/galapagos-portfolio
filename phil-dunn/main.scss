@@ -5,8 +5,8 @@ $tertiary-color: #536a8e;
 $font-main: 16px;
 $tn-width: 7vw;
 $tn-height: 7vh;
-$btn-width: 22vw;
-$btn-height: 4vh;
+$btn-width: 27vw;
+$btn-height: 7vh;
 $primary-border: 2px solid $primary-color;
 
 * {
@@ -35,7 +35,9 @@ nav {
     cursor: pointer;
   }
 
-  .bar1, .bar2, .bar3 {
+  .bar1,
+  .bar2,
+  .bar3 {
     width: 40px;
     height: 5px;
     background-color: $primary-color;
@@ -44,7 +46,6 @@ nav {
   }   
 
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }        
 
@@ -53,7 +54,6 @@ nav {
   }  
 
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
     
@@ -111,7 +111,7 @@ main {
   background-position: center;
   background-attachment: fixed;
   background-color: $tertiary-color;
-  width: 100vw;  
+  width: 100vw;
 
   section {
     display: grid;
@@ -140,7 +140,7 @@ main {
       font-size: $font-main;
       width: $btn-width;
       height: $btn-height;
-      text-align: center;  
+      text-align: center;
 
       &:hover {
         cursor: pointer;
@@ -151,7 +151,7 @@ main {
       grid-area: btn-primary;
       border: $primary-border;
       background-color: $primary-color;
-      color:#536a8e;
+      color: #536a8e;
       padding: 5px;
       font-size: $font-main;
       width: $btn-width;
@@ -175,42 +175,46 @@ main {
     ". . . .";
 
   article {
-  border: $primary-border;
-  font-size: $font-main;
-  padding: 5px;
+    border: $primary-border;
+    font-size: $font-main;
+    padding: 5px;
   
-  .project1 {
+    .project1 {
       grid-area: project1;
-  
-  .project2 {
+    }
+
+    .project2 {
       grid-area: project2;
-  
-  .project3 {
+    }
+
+    .project3 {
       grid-area: project3;
-  
-  .project4 {
+    }
+
+    .project4 {
       grid-area: project4;
-  
-  i {
+    }
+
+    i {
       display: block;
       height: 50px;
+    }
   }
-  
+}
 @media only screen and (min-wdith: 426px) {
-    
-h1 {
+  h1 {
     font-size: 80px;
-}
+  }
 
-h2 {
+  h2 {
     font-size: 50px;
-}
+  }
     
-    .btn-outline {
-            font-size: 19px;
-    }     
+  .btn-outline {
+    font-size: 19px;
+  }     
     
-    .btn-primary {
-            font-size: 19px;
-    }   
+  .btn-primary {
+    font-size: 19px;
+  }
 }
