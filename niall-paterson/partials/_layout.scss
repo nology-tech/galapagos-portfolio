@@ -31,7 +31,7 @@ h1 {
 
 h2 {
   margin: $margin-large;
-  padding: $padding-medium 0;
+  padding: $padding-small 0;
 }
 
 
@@ -47,7 +47,6 @@ section {
 
   &#home {
   @include flex-column-center;
-  margin-top: -1vh * $multiple;
   }
 }
 
