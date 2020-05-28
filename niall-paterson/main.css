@@ -30,11 +30,13 @@ nav button {
   margin: 24px;
 }
 
-header {
+#fixed-header {
   position: fixed;
   height: 12.5vh;
   width: 100vw;
   top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(180deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +48,7 @@ header {
           align-items: center;
 }
 
-header i {
+#fixed-header i {
   margin: 24px;
 }
 
@@ -117,6 +119,8 @@ footer {
   height: 12.5vh;
   width: 100vw;
   bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
