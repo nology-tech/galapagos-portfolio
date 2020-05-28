@@ -51,7 +51,7 @@ nav button {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  background: linear-gradient 180deg, white 70%, rgba(255, 255, 255, 0.1) 100%;
+  background: linear-gradient 180deg, white, 70%, rgba(255, 255, 255, 0.1) 100%;
 }
 
 #fixed-header i {
@@ -135,8 +135,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient 0deg, white, 70%, rgba(255, 255, 255, 0.1) 100%;
 }
 
 * {
