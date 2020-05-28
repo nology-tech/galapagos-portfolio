@@ -29,9 +29,11 @@
     width: $full-width;
     @if $header {
         top: 0;
+        background: $top-gradient;
         @include flex-row-between;
     } @else {
         bottom: 0;
+        background: $bottom-gradient;
         @include flex-row-even;
     }
 }
