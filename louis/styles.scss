@@ -5,10 +5,23 @@
 }
 
 $bannercolor: rgb(176, 180, 178);
-$hoverhighlight: 0 0 20px 20px #e7f4f8;
-$articlecolor: #757070;
+$hoverhighlight: 0 0 6px 6px #eaecec;
+$articlecolor: #827f7f;
 $titlefontsize: 10px;
 $iconcolour: rgba(48, 96, 174, 0.898);
+
+
+input[type=checkbox] {
+  display: none;
+}
+
+.clickspin i {
+  transition: transform 1s;
+}
+
+input[type=checkbox]:checked ~ label > i {
+  transform: translate(-30vw) rotate(180deg) scaleX(-1);
+}
 
 
 body {
@@ -32,11 +45,17 @@ body {
     font-size: 2.5*$titlefontsize;
 
     h1 {
-      font-size: 2.5*$titlefontsize;
+      font-size: 2.3*$titlefontsize;
     }
 
     i {
       color: $iconcolour;
+      -webkit-text-stroke: 1px black;
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 
@@ -68,9 +87,17 @@ body {
         font-weight: 900;
         padding: 3%;
         color: black;
+        position: relative;
+
+        i {
+          position: absolute;
+          left: 3%;
+          bottom: 5%;
+        }
                 
         &:hover {
           box-shadow: $hoverhighlight;
+          cursor: pointer;
         }
     
         &.welcome {
@@ -79,7 +106,7 @@ body {
           background-color: $articlecolor;
           font-size: 3*$titlefontsize;
           color: $iconcolour;
-          -webkit-text-stroke: 1px black; 
+          -webkit-text-stroke: 1px black;
         }
 
         &.code {
@@ -117,11 +144,10 @@ body {
 
     i {
       font-size: 2*$titlefontsize;
-      -webkit-text-stroke: 1px black;
     }
 
     a {
-    
+      -webkit-text-stroke: 1px black;
       text-decoration: none;
       font-weight: 700;
       margin: 0 10px;

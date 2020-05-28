@@ -5,6 +5,22 @@
           box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+.clickspin i {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+input[type=checkbox]:checked ~ label > i {
+  -webkit-transform: translate(-30vw) rotate(180deg) scaleX(-1);
+          transform: translate(-30vw) rotate(180deg) scaleX(-1);
+}
+
 body {
   background-color: #dadcdb;
   font-family: 'Courier New', Courier, monospace;
@@ -38,11 +54,17 @@ body header {
 }
 
 body header h1 {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 body header i {
   color: rgba(48, 96, 174, 0.898);
+  -webkit-text-stroke: 1px black;
+}
+
+body header i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 body main {
@@ -85,11 +107,19 @@ body main section article {
   font-weight: 900;
   padding: 3%;
   color: black;
+  position: relative;
+}
+
+body main section article i {
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
 }
 
 body main section article:hover {
-  -webkit-box-shadow: 0 0 6px 6px #e7f4f8;
-          box-shadow: 0 0 6px 6px #e7f4f8;
+  -webkit-box-shadow: 0 0 6px 6px #eaecec;
+          box-shadow: 0 0 6px 6px #eaecec;
+  cursor: pointer;
 }
 
 body main section article.welcome {
@@ -100,7 +130,7 @@ body main section article.welcome {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #757070;
+  background-color: #827f7f;
   font-size: 30px;
   color: rgba(48, 96, 174, 0.898);
   -webkit-text-stroke: 1px black;
@@ -114,7 +144,7 @@ body main section article.code {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #8a8484;
+  background-color: #969494;
 }
 
 body main section article.baking {
@@ -125,7 +155,7 @@ body main section article.baking {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #9d9999;
+  background-color: #aaa8a8;
 }
 
 body main section article.botany {
@@ -136,7 +166,7 @@ body main section article.botany {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  background-color: #b1aeae;
+  background-color: #bebdbd;
 }
 
 body footer {
@@ -160,10 +190,10 @@ body footer {
 
 body footer i {
   font-size: 20px;
-  -webkit-text-stroke: 1px black;
 }
 
 body footer a {
+  -webkit-text-stroke: 1px black;
   text-decoration: none;
   font-weight: 700;
   margin: 0 10px;
