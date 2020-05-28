@@ -45,7 +45,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #00ee;
+  color: #df15a2;
 }
 
 header span {
@@ -59,10 +59,10 @@ header span {
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[12];
       grid-template-rows: repeat(12, 1fr);
-  grid-gap: 20px;
+  grid-gap: 20px 20px;
 }
 
-.container-landing div {
+.container-landing > div {
   border-radius: 10px;
 }
 
@@ -81,7 +81,7 @@ header span {
   font-family: youngserif;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #000;
 }
 
 .container-landing .landing-text {
@@ -150,18 +150,11 @@ header span {
       grid-template-rows: repeat(14, 1fr);
 }
 
-.container-work div {
-  border-radius: 10px;
-}
-
-.container-work div p {
-  padding: 20px;
-}
-
 .container-work .title {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 6;
-  grid-column: 2 / span 6;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .container-work .card-1 {
@@ -172,6 +165,11 @@ header span {
   -ms-grid-row: 3;
   -ms-grid-row-span: 8;
   grid-row: 3 / span 8;
+  border-radius: 10px;
+}
+
+.container-work .card-1 p {
+  padding: 20px;
 }
 
 .container-work .card-2 {
@@ -183,6 +181,11 @@ header span {
   -ms-grid-row-span: 8;
   grid-row: 4 / span 8;
   margin-left: 20px;
+  border-radius: 10px;
+}
+
+.container-work .card-2 p {
+  padding: 20px;
 }
 
 .container-resume {
@@ -196,8 +199,9 @@ header span {
 
 .container-resume .title {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / span 4;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .container-resume .card-3 {
@@ -258,8 +262,10 @@ header span {
 
 .container-about .title {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / span 4;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 40px;
 }
 
 .container-about .card-7 {
@@ -304,11 +310,15 @@ footer .email {
 }
 
 footer .email a {
+  color: #8d8787;
+}
+
+footer .email a {
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
 
 footer .email a:hover {
-  color: #00ee;
+  color: #df15a2;
 }
 /*# sourceMappingURL=style.css.map */
