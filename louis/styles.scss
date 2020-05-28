@@ -5,7 +5,7 @@
 }
 
 $bannercolor: rgb(176, 180, 178);
-$hoverhighlight: 0 0 6px 6px #eaecec;
+$hoverhighlight: 0 0 6px 6px white;
 $articlecolor: #827f7f;
 $titlefontsize: 10px;
 $iconcolour: rgba(48, 96, 174, 0.898);
@@ -39,7 +39,7 @@ body {
     top: 0;
     width: 100vw;
     background-color: $bannercolor;
-    padding: 0.9vh;
+    padding: 1vh 2vw 0 2vw;
     display: flex;
     justify-content: space-between;
     font-size: 2.5*$titlefontsize;

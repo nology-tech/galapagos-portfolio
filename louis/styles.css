@@ -43,7 +43,7 @@ body header {
   top: 0;
   width: 100vw;
   background-color: #b0b4b2;
-  padding: 0.9vh;
+  padding: 1vh 2vw 0 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,8 +117,8 @@ body main section article i {
 }
 
 body main section article:hover {
-  -webkit-box-shadow: 0 0 6px 6px #eaecec;
-          box-shadow: 0 0 6px 6px #eaecec;
+  -webkit-box-shadow: 0 0 6px 6px white;
+          box-shadow: 0 0 6px 6px white;
   cursor: pointer;
 }
 
