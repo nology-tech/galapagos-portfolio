@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a:visited {
+    color: black;
+}
+.logo {
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 80px;
+}
+header {
+    padding: 20px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navlinks {
+    list-style: none;
+    padding: 15px;
+}
+#navlinks a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+#navlinks li a:hover{
+    cursor: pointer;
+    background-color: darkgray;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    font-weight: bold;
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;;
+}
+#jobtag {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.container {
+    background-image: url("northernlights.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 500px; 
+}
+.abtme {
+    background-color: darkgrey;
+    padding: 20px;
+    border-bottom: 3px solid yellow;
+    margin: 40px;
+    padding-bottom: 40px;
+}
+#abouttitle h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+.abtme p {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+}
+.portfolio h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+.portfolio div {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+
+}
+main {
+    background-color: #177e89;
+}
