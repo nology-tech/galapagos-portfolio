@@ -59,10 +59,10 @@ header span {
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[12];
       grid-template-rows: repeat(12, 1fr);
-  grid-gap: 20px 20px;
+  grid-gap: 20px;
 }
 
-.container-landing > div {
+.container-landing div {
   border-radius: 10px;
 }
 
@@ -81,7 +81,7 @@ header span {
   font-family: youngserif;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-color: black;
 }
 
 .container-landing .landing-text {
@@ -310,7 +310,7 @@ footer .email {
 }
 
 footer .email a {
-  color: #8d8787;
+  color: #8a8a8a;
 }
 
 footer .email a {
