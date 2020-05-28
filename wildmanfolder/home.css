@@ -37,7 +37,6 @@
 	font-style: normal;
 }
 
-
 	/* These colors were inspired by a funky Ted Baker wallet
 	which I was given when I left my last sales job */
 
@@ -121,14 +120,14 @@ section.bold-opening-gambit {
 	background-repeat: no-repeat;
 }
 
-section.bold-opening-gambit #headline {
+section.bold-opening-gambit #bold-opening-gambit-headline {
 	height: 68%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-section.bold-opening-gambit #headline div.text p {
+section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
 	line-height: 3em;
 	text-align: center;
 	text-shadow: 0px 0px 70px #8EA8C3;
@@ -136,7 +135,7 @@ section.bold-opening-gambit #headline div.text p {
 	font-size: 1.5em;
 }
 
-section.bold-opening-gambit #headline div.text.first-line p {
+section.bold-opening-gambit #bold-opening-gambit-headline div.text.first-line p {
 	background-color: #5B2E4833;
 	border-top-right-radius: 2em;
 	border-bottom-right-radius: 2em;
@@ -144,7 +143,7 @@ section.bold-opening-gambit #headline div.text.first-line p {
 	width: 45%;
 }
 
-section.bold-opening-gambit #headline div.text.second-line p {
+section.bold-opening-gambit #bold-opening-gambit-headline div.text.second-line p {
 	background-color: #5B2E4833;
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em;
@@ -153,19 +152,19 @@ section.bold-opening-gambit #headline div.text.second-line p {
 	width: 65%;
 }
 
-section.bold-opening-gambit #headline div.text.third-line p {
+section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
 	background-color: #36394633;
 	color: var(--portfolio-blue);
 	font-size: 1.8em;
 }
 
-section.bold-opening-gambit #headline div.text.fourth-line p {
+section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
 	color: var(--portfolio-black);
 	background-color: #406E8E33;
 	font-size: 2.4em;
 }
 
-section.bold-opening-gambit #caption {
+section.bold-opening-gambit #bold-opening-gambit-caption {
 	height: 32%;
 	display: flex;
 	flex-direction: column;
@@ -174,7 +173,7 @@ section.bold-opening-gambit #caption {
 	text-align: center;
 }
 
-section.bold-opening-gambit #caption > div.text.fifth-line {
+section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -185,7 +184,7 @@ section.bold-opening-gambit #caption > div.text.fifth-line {
 	margin: 0 auto;
 }
 
-section.bold-opening-gambit #caption > div.text.fifth-line > p {
+section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line > p {
 	text-shadow: 0px 0px 5px #5B2E48FF;
 	transform: rotate(-0.03turn);
 	font-family: 'scriptina';
@@ -204,7 +203,7 @@ section.first-content {
 	background-repeat: no-repeat;
 }
 
-section.first-content #headline {
+section.first-content #first-content-headline {
 	height: 60%;
 	display: flex;
 	flex-direction: column;
@@ -212,7 +211,7 @@ section.first-content #headline {
 	align-items: left;
 }
 
-section.first-content #headline div.text p {
+section.first-content #first-content-headline div.text p {
 	line-height: 3em;
 	text-align: center;
 	text-shadow: 0px 0px 70px #8EA8C3;
@@ -220,7 +219,7 @@ section.first-content #headline div.text p {
 	font-size: 1.5em;
 }
 
-section.first-content #headline div.text.first-line p {
+section.first-content #first-content-headline div.text.first-line p {
 	background-color: #5B2E4833;
 	border-bottom-right-radius: 70%; 
 	color: var(--portfolio-blue);
@@ -228,14 +227,14 @@ section.first-content #headline div.text.first-line p {
 	float: middle;
 }
 
-section.first-content #headline div.text.second-line p {
+section.first-content #first-content-headline div.text.second-line p {
 	color: var(--portfolio-black);
 	background-color: #406E8E33;
 	font-size: 2.5em;
 	line-height: 1em;
 }
 
-section.first-content #headline div.text.third-line p {
+section.first-content #first-content-headline div.text.third-line p {
 	background-color: #5B2E4833;
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em;
@@ -244,11 +243,11 @@ section.first-content #headline div.text.third-line p {
 	width: 65%;
 }
 
-section.first-content #headline > div.text.fourth-line {
+section.first-content #first-content-headline > div.text.fourth-line {
 	display: none;
 }
 
-section.first-content #caption {
+section.first-content #first-content-caption {
 	height: 30%;
 	display: flex;
 	justify-content: center;
@@ -258,11 +257,11 @@ section.first-content #caption {
 
 
 
-section.first-content #caption > div.text.fourth-line {
+section.first-content #first-content-caption > div.text.fourth-line {
 	display: initial;
 }
 
-section.first-content #caption > div.text.fourth-line > p {
+section.first-content #first-content-caption > div.text.fourth-line > p {
 	font-family: 'streamster';
 	color: var(--portfolio-blue);
 	text-shadow: none;
@@ -354,35 +353,36 @@ body > footer {
 	border-top: 1px double var(--portfolio-light-blue);
 }
 
-footer > ul {
-	list-style: none;
+footer > nav {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+footer > nav > ul {
 	width: 100%;
 	height: 100%;
+	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-
+	letter-spacing: initial;
 }
 
-footer > ul > li {
+footer > nav > ul > li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	color: inherit;
 }
 
+footer > nav > ul > li > a {
 
-header > nav > ul {
 	width: 100%;
-	height: 100%;
-	list-style: none;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	letter-spacing: initial;
+	height: auto;
+	color: var(--portfolio-light-blue);
+	text-decoration: none;
 }
 
 	/* This is where it gets funky... */
@@ -403,85 +403,8 @@ header > nav > ul {
 
 	}
 
-	
-	nav:hover *.hover-nav {
-		display: inherit;
-		letter-spacing: 0em;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: letter-spacing 2s, text-shadow 2s, color 2s;
-		color: var(--portfolio-blue);
-		cursor: pointer;
-	}
-
-	nav:hover * > span.char {
-		color: transparent;
-		text-decoration-color: var(--portfolio-blue);
-		transition: text-decoration 2s;
-	}
 		
-	a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
-		letter-spacing: 0.05em;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: letter-spacing 0.5s, color 0.5s;
-		color: var(--portfolio-light-blue);
-		cursor: pointer;
-		text-shadow: 0px 0px 30px var(--portfolio-light-blue);
-	}
 
-	section.first-content #caption > div.text.fourth-line {
-		display: none;
-	}
-
-	section.first-content #headline {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	#headline > div.text.blink-three.eighties.fourth-line {
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-	}
-
-
-	section.first-content #caption > div.text.fourth-line > p {
-	}
-
-
-	/* section.first-content #headline div.text.fourth-line p {
-		border-top-right-radius: 100%;
-		border-top-left-radius: 100%;
-		border-bottom-right-radius: 100%;
-		background-color: #363946FF;
-		font-family: 'streamster';
-		color: var(--portfolio-blue);
-		text-shadow: unset;
-		font-size: 9em;
-		line-height: 5em;
-	} */
-
-	section.first-content #caption > div.text.fourth-line:hover > p {
-		width: 100%;
-		background-color: #36394633;
-		border-top-right-radius: 0em;
-		border-top-left-radius: 0em;
-		border-bottom-right-radius: 0em;
-		letter-spacing: 0.1em;
-		font-size: 16em;
-		line-height: 2em;
-		color: var(--portfolio-purple);
-		text-shadow: 0px 0px 20px #8EA8C3;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: width 1.5s, background-color 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
-
-	}
-	
-	section {
-		height: 88vh;
-		border-bottom: 1px var(--portfolio-light-blue) double
-	}
 
 	header {
 		position: sticky;
@@ -518,6 +441,80 @@ header > nav > ul {
 		text-decoration: none;
 		font-size: 2em;
 	}
+	
+	nav:hover *.hover-nav {
+		display: inherit;
+		letter-spacing: 0em;
+		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+		transition: letter-spacing 2s, text-shadow 2s, color 2s;
+		color: var(--portfolio-blue);
+		cursor: pointer;
+	}
+
+	nav:hover * > span.char {
+		color: transparent;
+		text-decoration-color: var(--portfolio-blue);
+		transition: text-decoration 2s;
+	}
+		
+	a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
+		letter-spacing: 0.05em;
+		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+		transition: letter-spacing 0.5s, color 0.5s;
+		color: var(--portfolio-light-blue);
+		cursor: pointer;
+		text-shadow: 0px 0px 30px var(--portfolio-light-blue);
+	}
+
+	section {
+		height: 88vh;
+		border-bottom: 1px var(--portfolio-light-blue) double
+	}
+
+	section.first-content #first-content-caption > div.text.fourth-line {
+		display: none;
+	}
+
+	section.first-content #first-content-headline {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	section.first-content #first-content-headline > div.text.fourth-line {
+		display: unset;
+	}
+
+	section.first-content #first-content-headline > div.text.fourth-line > p {
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	background-color: #36394633;
+	font-family: 'streamster';
+	color: var(--portfolio-blue);
+	text-shadow: unset;
+	font-size: 9em;
+	line-height: 2em;
+	}
+
+
+	section.first-content #first-content-headline > div.text.fourth-line:hover > p {
+		width: 100%;
+		background-color: #36394633;
+		border-top-right-radius: 0em;
+		border-top-left-radius: 0em;
+		border-bottom-right-radius: 0em;
+		letter-spacing: 0.1em;
+		font-size: 16em;
+		line-height: 2em;
+		color: var(--portfolio-purple);
+		text-shadow: 0px 0px 20px #8EA8C3;
+		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+		transition: width 1.5s, background-color 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
+
+	}
+
 }
 
 @media screen and (min-width: 1080px) {
@@ -541,4 +538,14 @@ header > nav > ul {
 
 .hover-io {
 	color: inherit;
+}
+
+@media screen and (max-height: 568px) {
+	body > header {
+		height: 100vh;
+		position: static;
+	}
+	section {
+		height: 200vh;
+	}
 }
