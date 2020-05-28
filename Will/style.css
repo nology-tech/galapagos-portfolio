@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/ocean-water-wave-photo-1295138.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Courier New';
+}
+
+body nav .will {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+body nav .dropbtn {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  font-family: 'Courier New';
+  font-weight: bold;
+}
+
+body nav .dropdown-content {
+  display: none;
+}
+
+body nav .dropdown-content a {
+  color: black;
+  padding-top: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+}
+
+body nav .dropdown-content a:hover {
+  color: burlywood;
+}
+
+body nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body nav .dropdown:hover .dropbtn {
+  color: purple;
+}
+/*# sourceMappingURL=style.css.map */
