@@ -20,7 +20,6 @@
     }git 
   </script>
 </head>
-
 <body>
   <video autoplay muted loop class="video">
     <source src="./vid/office.mp4" type="video/mp4">
@@ -65,7 +64,7 @@
         <img src="./icon/icon-js.png" alt="js">
         <img src="./icon/icon-sass.png" alt="sass">
         <img src="./icon/icon-github.png" alt="github">
-        <a href="www.nology.io"><img src="./icon/icon-nology.png" alt="nology"></a>
+        <a href="https:www.nology.io" target="_blank"><img src="./icon/icon-nology.png" alt="nology"></a>
       </div>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus quibusdam explicabo a!
         Ipsam magni neque eligendi beatae autem laboriosam assumenda nostrum ipsum blanditiis animi,
@@ -85,17 +84,19 @@
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eveniet dolorem cum quas
         corrupti explicabo quo id facere obcaecati officiis inventore, quam adipisci ipsam reiciendis
-        consequatur, ea dolorum quae eligendi!Lorem</p>
+        consequatur, ea dolorum quae eligendi!Lorembr<br>Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Tempora rerum nisi dolore alias sint! Harum vero, corrupti unde blanditiis recusandae at 
+        eligendi impedit earum maxime labore consequuntur numquam rem quis?</p>
     </section>
     <section id="contact">
       <h2>Contact</h2>
       <form id="form">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-        <label for="phone">Phone (Optional):</label>
-        <input type="text" name="phone" id="phone">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <label for="phone"></label>
+        <input type="text" name="phone" id="phone" placeholder="Phone number">
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your message"></textarea>
         <input type="submit" value="Submit" onclick="getData()" class="submit">
         <input type="button" onclick="wipe()" value="Reset" class="wipe">
