@@ -122,10 +122,10 @@ section.bold-opening-gambit {
 }
 
 section.bold-opening-gambit #headline {
-	height: 68vh;
+	height: 68%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 section.bold-opening-gambit #headline div.text p {
@@ -162,10 +162,39 @@ section.bold-opening-gambit #headline div.text.third-line p {
 section.bold-opening-gambit #headline div.text.fourth-line p {
 	color: var(--portfolio-black);
 	background-color: #406E8E33;
-	font-size: 2.5em;
+	font-size: 2.4em;
 }
 
-	/* Whew, that was long. Alright, first proper bit ofhomepage content now. */
+section.bold-opening-gambit #caption {
+	height: 32%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+section.bold-opening-gambit #caption > div.text.fifth-line {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
+	width: 60%;
+	margin: 0 auto;
+}
+
+section.bold-opening-gambit #caption > div.text.fifth-line > p {
+	text-shadow: 0px 0px 5px #5B2E48FF;
+	transform: rotate(-0.03turn);
+	font-family: 'scriptina';
+	color: #5B2E48FF;
+	font-size: 5em;
+	line-height: 2em;
+}
+
+	/* Whew, that was long. Alright, first proper bit of homepage content now. */
 
 	/* Remember, we're still on mobile here—this all goes out the window after 768 pixels. */
 
@@ -176,7 +205,7 @@ section.first-content {
 }
 
 section.first-content #headline {
-	height: 100%;
+	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -193,10 +222,8 @@ section.first-content #headline div.text p {
 
 section.first-content #headline div.text.first-line p {
 	background-color: #5B2E4833;
-	border-top-right-radius: 100%;
-	border-bottom-right-radius: 2em;
-	border-bottom-left-radius: 100%;
-	color: var(--portfolio-gray);
+	border-bottom-right-radius: 70%; 
+	color: var(--portfolio-blue);
 	width: 45%;
 	float: middle;
 }
@@ -213,76 +240,92 @@ section.first-content #headline div.text.third-line p {
 	border-top-left-radius: 2em;
 	border-bottom-left-radius: 2em;
 	float: right;
-	color: var(--portfolio-blue);
+	color: var(--portfolio-gray);
 	width: 65%;
 }
 
-
-section.first-content #headline div.text.fourth-line p {
-	border-top-right-radius: 1em;
-	border-top-left-radius: 1em;
-	border-bottom-right-radius: 1em;
-	font-family: 'streamster';
-	color: #5B2E48FF;
-	text-shadow: 0px 0px 20px #8EA8C3;
-	background-color: #406E8E66;
-	font-size: 9em;
-	line-height: 2em;
+section.first-content #headline > div.text.fourth-line {
+	display: none;
 }
+
+section.first-content #caption {
+	height: 30%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+
+
+
+
+section.first-content #caption > div.text.fourth-line {
+	display: initial;
+}
+
+section.first-content #caption > div.text.fourth-line > p {
+	font-family: 'streamster';
+	color: var(--portfolio-blue);
+	text-shadow: none;
+	background-color: none;
+	font-size: 10em;
+	line-height: 50%;
+}
+
+
 
 	/* NICE. Ok, second bit of the homepage comin' up.
 	This will probably be a form but I'll change it later.
 	Also, this needs to be a bit shorter so we can fit the footer in. */
 
-	section.second-content {
-		background-image: url(./assets/images/background-four.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	
-	section.second-content #headline {
-		height: 68vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: justify;
-	}
-	
-	section.second-content #headline div.text p {
-		line-height: 3em;
-		text-align: center;
-		text-shadow: 0px 0px 70px #8EA8C3;
-		overflow: visible;
-		font-size: 1.5em;
-	}
-	
-	section.second-content #headline div.text.first-line p {
-		background-color: #5B2E4833;
-		border-top-right-radius: 2em;
-		border-bottom-right-radius: 2em;
-		color: var(--portfolio-purple);
-		width: 45%;
-	}
-	
-	section.second-content #headline div.text.second-line p {
-		background-color: #5B2E4833;
-		border-top-left-radius: 2em;
-		border-bottom-left-radius: 2em;
-		float: right;
-		color: var(--portfolio-purple);
-		width: 65%;
-	}
-	
-	section.second-content #headline div.text.third-line p {
-		background-color: #36394633;
-		color: var(--portfolio-blue);
-		font-size: 1.8em;
-	}
+section.second-content {
+	background-image: url(./assets/images/background-four.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.second-content #headline {
+	height: 68vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: justify;
+}
+
+section.second-content #headline div.text p {
+	line-height: 3em;
+	text-align: center;
+	text-shadow: 0px 0px 70px #8EA8C3;
+	overflow: visible;
+	font-size: 1.5em;
+}
+
+section.second-content #headline div.text.first-line p {
+	background-color: #5B2E4833;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	color: var(--portfolio-purple);
+	width: 45%;
+}
+
+section.second-content #headline div.text.second-line p {
+	background-color: #5B2E4833;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	float: right;
+	color: var(--portfolio-purple);
+	width: 65%;
+}
+
+section.second-content #headline div.text.third-line p {
+	background-color: #36394633;
+	color: var(--portfolio-blue);
+	font-size: 1.8em;
+}
 
 .char {
 	color: transparent;
 	text-decoration: underline;
-	text-decoration-color: var(--portfolio-purple);
+	text-decoration-color: var(--portfolio-blue);
 }
 
 .first-content {
@@ -299,11 +342,11 @@ section.first-content #headline div.text.fourth-line p {
 
 	/* Last but not least. If you're still reading, I applaud you. */
 
-header {
+/* header {
 	width: 100%;
 	height: 32vh;
 	background-color: #0B001499;
-}
+} */
 
 body > footer {
 	height: 12vh;
@@ -342,13 +385,24 @@ header > nav > ul {
 	letter-spacing: initial;
 }
 
+	/* This is where it gets funky... */
 
 @media screen and (min-width: 768px) {
+
+	header {
+		z-index: 1;
+	}
 
 	.hover-nav {
 		letter-spacing: 0.05em;
 		color: var(--portfolio-purple);
 	}
+
+	span.char {
+		text-decoration-color: var(--portfolio-purple);
+
+	}
+
 	
 	nav:hover *.hover-nav {
 		display: inherit;
@@ -374,8 +428,29 @@ header > nav > ul {
 		text-shadow: 0px 0px 30px var(--portfolio-light-blue);
 	}
 
-	section.first-content #headline div.text.fourth-line p {
-		width: 20%;
+	section.first-content #caption > div.text.fourth-line {
+		display: none;
+	}
+
+	section.first-content #headline {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	#headline > div.text.blink-three.eighties.fourth-line {
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+
+
+	section.first-content #caption > div.text.fourth-line > p {
+	}
+
+
+	/* section.first-content #headline div.text.fourth-line p {
 		border-top-right-radius: 100%;
 		border-top-left-radius: 100%;
 		border-bottom-right-radius: 100%;
@@ -384,10 +459,10 @@ header > nav > ul {
 		color: var(--portfolio-blue);
 		text-shadow: unset;
 		font-size: 9em;
-		line-height: 1em;
-	}
+		line-height: 5em;
+	} */
 
-	section.first-content #headline div.text.fourth-line:hover > p {
+	section.first-content #caption > div.text.fourth-line:hover > p {
 		width: 100%;
 		background-color: #36394633;
 		border-top-right-radius: 0em;
