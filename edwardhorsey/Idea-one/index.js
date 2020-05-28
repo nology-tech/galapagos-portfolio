@@ -15,7 +15,7 @@ const typeWriter = (id) => {
   let i=0;
 
   function typing() {
-    if (i<store.length){
+    if (i < store.length) {
       document.getElementById(id).innerHTML += store[i];
       i++;
       setTimeout(typing,50);
@@ -49,3 +49,11 @@ const boxFocus = (id) => {
     }
   });
 }
+
+const submit = () => {
+
+}
+
+document.getElementById("submit").addEventListener("click", (e)=>{
+  e.preventDefault()
+});
