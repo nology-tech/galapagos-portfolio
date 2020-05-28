@@ -8,7 +8,33 @@ console.log(navBarClasses)
   }
 }
 
+const boxFocus = (id) => {
+  console.log(id); // for info
+  // list of boxes (could probs use queryselectorall to find these..)
+  let boxes = Array.from(document.getElementsByClassName('box')).map(e=>{return e.id});
+  // boxes = ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
 
-console.log('abc def ghi')
+  // remove existing styles
+  boxes.forEach(e=>{
+    document.getElementById(e).classList.remove('focus');
+    document.getElementById(e).classList.remove('sub');
+    document.getElementById(e).style.order = '';
+    if (e===id){
+      document.getElementById(e).classList.add('focus');
+      document.getElementById(e).style.order = '-3';
+    } else {
+    document.getElementById(e).classList.add('sub');
+    }
+  });
 
-console.log('abc def ghi'.includes('abc'))
+  // // locate chosen box & resize chosen box
+  // boxes.splice(boxes.indexOf(String(id)), 1);
+  // document.getElementById(id).classList.add('focus');
+  // document.getElementById(id).style.order = '-3';
+  // // resize remaining boxes
+  // boxes.forEach(e=>{
+  //   // console.log(e);
+  //   document.getElementById(e).classList.add('sub');
+  // });
+
+}
