@@ -103,6 +103,7 @@ main section {
 
 main section h2 {
   padding: 1em;
+  font-size: 30px;
   color: #28427a;
 }
 
@@ -305,7 +306,7 @@ footer:hover {
   }
   main .projects .container .box.sub p {
     color: greenyellow;
-    display: hide;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
