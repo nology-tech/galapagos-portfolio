@@ -7,7 +7,7 @@
 }
 
 header {
-  height: 110px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,22 +31,28 @@ header a {
 }
 
 main #parawrapper {
-  position: relative;
-  min-height: calc(100vh - 110px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 352px);
   width: 100vw;
   font-size: 40px;
   color: #1d1a2f;
   background-color: #e6dbd0;
+  padding-top: 40px;
 }
 
 main .para1 {
-  position: absolute;
-  top: 50px;
-  left: 120px;
   width: 150px;
   height: 150px;
   text-align: right;
-  border-top: 3px dashed #1d1a2f;
+  border-top: 3px solid #1d1a2f;
   border-left: 3px dashed #1d1a2f;
   margin-bottom: 200px;
   margin-right: 5px;
@@ -54,12 +60,9 @@ main .para1 {
 }
 
 main .para2 {
-  position: absolute;
-  top: 180px;
-  left: 250px;
   width: 150px;
   height: 150px;
-  border-bottom: 3px dashed #1d1a2f;
+  border-bottom: 3px solid #1d1a2f;
   border-right: 3px dashed #1d1a2f;
   margin-left: 5px;
   padding-right: 8px;
@@ -67,6 +70,8 @@ main .para2 {
 
 main .bexfaceparent {
   position: relative;
+  height: 242px;
+  background-color: #e6dbd0;
 }
 
 main .bexface {
@@ -93,11 +98,11 @@ main .bexface {
     display: flex;
   }
   header {
-    width: 50vw;
     height: 100vh;
+    width: 350px;
   }
   main {
-    width: 80vw;
+    width: calc(100vw - 350px);
     height: 100vh;
   }
   main .bexface {
