@@ -223,12 +223,6 @@ body nav:hover {
   color: transparent;
 }
 
-@supports not (-webkit-background-clip: text) {
-  .inverse-container .name {
-    color: black;
-  }
-}
-
 @media screen and (orientation: portrait) and (min-width: 400px) {
   .inverse-container .name {
     font-size: 1.1em;
