@@ -12,10 +12,10 @@
   "scripts": {
     "build-css": "sass .:.",
     "test": "jest",
-    "css-lint": "stylelint \"**/*.css\" \"**/*.scss\"",
+    "scss-lint": "stylelint \"**/*.scss\" --aei",
     "js-lint": "eslint ./",
     "html-lint": "htmlhint **/*.html",
-    "lint": "yarn html-lint && yarn css-lint && yarn js-lint"
+    "lint": "yarn html-lint && yarn scss-lint && yarn js-lint"
   },
   "dependencies": {}
 }
