@@ -145,7 +145,9 @@ nav a:hover {
           flex-direction: column;
 }
 
-#contact form label, #contact form input, #contact form textarea {
+#contact form label,
+#contact form input,
+#contact form textarea {
   font-size: 1.5em;
 }
 
@@ -153,7 +155,8 @@ nav a:hover {
   text-align: center;
 }
 
-#contact form input[type=text], #contact form [type=email] {
+#contact form input[type="text"],
+#contact form [type="email"] {
   width: 50%;
   margin: 0 auto;
   border-radius: 10px;
@@ -167,14 +170,16 @@ nav a:hover {
   z-index: 1;
 }
 
-#contact form input[type=submit], #contact form [type=button] {
+#contact form input[type="submit"],
+#contact form [type="button"] {
   width: 25%;
   margin: 5px auto;
   border-radius: 10px;
   z-index: 1;
 }
 
-#contact form input[type=submit]:hover, #contact form [type=button]:hover {
+#contact form input[type="submit"]:hover,
+#contact form [type="button"]:hover {
   cursor: pointer;
 }
 
