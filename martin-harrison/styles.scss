@@ -143,7 +143,7 @@ body {
   background-image: linear-gradient(95deg, $light-color, $light-color 38%, transparent 38.2%, transparent), url("./images/stars-landscape.jpg");
   background-size: contain;
   background-clip: text;
-  -webkit-background-clip: text;
+  // -webkit-background-clip: text;
 
   // -webkit-background-clip: text;
   min-height: 100vh;
@@ -182,9 +182,9 @@ body {
 
     // Microsoft browsers don't support background-clip text, apply transparency for those that do
 
-    @supports not (-webkit-background-clip: text) {
-    color: black;
-    }
+    // @supports not (-webkit-background-clip: text) {
+    //   color: black;
+    // }
 
 
     @media screen and (orientation: portrait) {
@@ -269,118 +269,118 @@ body {
 
   /* BIO */
   #bio {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      padding: 2em 2em 3em 37vw;
-      color: white;
-      transform: skewX(-5deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 2em 2em 3em 37vw;
+    color: white;
+    transform: skewX(-5deg);
+
+    @media screen and (orientation: portrait) {
+
+      @media (min-width: 350px) {
+        padding-left: 40vw;
+      }
+
+      @media (min-width: 600px) {
+        padding-left: 42vw;
+      }
+
+      @media (min-width: 720px) {
+        padding-right: 5em;
+      }
+
+      @media (min-width: 900px) {
+        padding-right: 7em;
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+
+      padding-left: 50vw;
+      padding-right: 5em;
+
+      @media (min-width: 960px) {
+        padding-left: 46vw;
+      }
+
+      @media (min-width: 1024px) {
+        padding-left: 44vw;
+      }
+
+      @media (min-width: 1280px) {
+        padding-left: 46vw;
+      }
+    }
+
+    h2,
+    p {
+      text-align: justify;
+      line-height: 2em;
+      color: $dark-color;
+      /* color: transparent; -- need to fix this */
+    }
+
+    h2 {
+      @media screen and (min-width: 1440px) {
+        font-size: 2em;
+      }
+
+      @media screen and (orientation: landscape) and (min-width: 2560px) {
+        font-size: 2.5em;
+      }
+    }
+
+    p {
+      font-size: 0.8em;
+      font-weight: 500;
 
       @media screen and (orientation: portrait) {
 
-          @media (min-width: 350px) {
-              padding-left: 40vw;
-          }
+        @media (min-width: 350px) {
+          font-size: 1em;
+        }
 
-          @media (min-width: 600px) {
-              padding-left: 42vw;
-          }
+        @media (min-width: 450px) {
+          font-size: 1.2em;
+        }
 
-          @media (min-width: 720px) {
-              padding-right: 5em;
-          }
+        @media (min-width: 600px) {
+          font-size: 1.3em;
+        }
 
-          @media (min-width: 900px) {
-              padding-right: 7em;
-          }
+        @media (min-width: 900px) {
+          font-size: 1.5em;
+        }
+
       }
 
       @media screen and (orientation: landscape) {
 
-          padding-left: 50vw;
-          padding-right: 5em;
+        @media (min-width: 1024px) {
+          font-size: 0.9em;
+          padding-right: 7em;
+        }
 
-          @media (min-width: 960px) {
-              padding-left: 46vw;
-          }
+        @media (min-width: 1280px) {
+          font-size: 1em;
+          padding-right: 9em;
+        }
 
-          @media (min-width: 1024px) {
-              padding-left: 44vw;
-          }
+        @media (min-width: 1440px) {
+          font-size: 1em;
+          padding-right: 16em;
+        }
 
-          @media (min-width: 1280px) {
-              padding-left: 46vw;
-          }
+        @media (min-width: 2560px) {
+          font-size: 1.4em;
+          padding-right: 25em;
+
+        }
       }
 
-      h2,
-      p {
-          text-align: justify;
-          line-height: 2em;
-          color: $dark-color;
-          /* color: transparent; -- need to fix this */
-      }
-
-      h2 {
-          @media screen and (min-width: 1440px) {
-              font-size: 2em;
-          }
-
-          @media screen and (orientation: landscape) and (min-width: 2560px) {
-              font-size: 2.5em;
-          }
-      }
-
-      p {
-          font-size: 0.8em;
-          font-weight: 500;
-
-          @media screen and (orientation: portrait) {
-
-              @media (min-width: 350px) {
-                  font-size: 1em;
-              }
-
-              @media (min-width: 450px) {
-                  font-size: 1.2em;
-              }
-
-              @media (min-width: 600px) {
-                  font-size: 1.3em;
-              }
-
-              @media (min-width: 900px) {
-                  font-size: 1.5em;
-              }
-
-          }
-
-          @media screen and (orientation: landscape) {
-
-              @media (min-width: 1024px) {
-                  font-size: 0.9em;
-                  padding-right: 7em;
-              }
-
-              @media (min-width: 1280px) {
-                  font-size: 1em;
-                  padding-right: 9em;
-              }
-
-              @media (min-width: 1440px) {
-                  font-size: 1em;
-                  padding-right: 16em;
-              }
-
-              @media (min-width: 2560px) {
-                  font-size: 1.4em;
-                  padding-right: 25em;
-
-              }
-          }
-
-      }
+    }
   }
 
   /* PORTFOLIO */
@@ -430,7 +430,7 @@ body {
           padding-left: 40.5vw;
         }
 
-          @media (min-width: 1280px) {
+        @media (min-width: 1280px) {
           padding-left: 43vw;
         }
 
