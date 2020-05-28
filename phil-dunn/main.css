@@ -22,10 +22,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 10vw;
-  height: 100vh;
   padding: 5px;
   font-size: 16px;
+  height: 100vh;
 }
 
 nav .burger {
@@ -205,13 +204,12 @@ main section .btn-primary {
   grid-area: project4;
 }
 
-/*@media only screen and (min-wdith:347px) {
-    .portfoli {
-      grid-template-rows:1fr 1fr 1fr 1fr;
-
+@media only screen and (min-wdith: 424px) {
+  .btn-outline {
+    font-size: 19px;
+  }
+  .btn-primary {
+    font-size: 19px;
+  }
 }
-
-@media only screen and (min-wdith:426px) {
-
-}*/
 /*# sourceMappingURL=main.css.map */
