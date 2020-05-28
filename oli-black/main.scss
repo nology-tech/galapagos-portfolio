@@ -1,0 +1,417 @@
+$background_color: #3C5870;
+$primary_color: #DEF1FE;
+$secondary_color: #6C63FF;
+$tertiary_color: #ABDCFF;
+
+$random_number1: (random(10) + 95)/100;
+$random_number2: (random(10) + 95)/100;
+$random_number3: (random(10) + 95)/100;
+$random_number4: (random(10) + 95)/100;
+$random_number5: (random(10) + 95)/100;
+$random_number6: (random(10) + 95)/100;
+
+@keyframes stretch_animation1 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number1, $random_number2) translateY(-0.5%) translateX(0.5%)}
+    50%  {transform: scale($random_number3, $random_number5) translateY(0.5%) translateX(0%)}
+    75%  {transform: scale($random_number4, $random_number1) translateY(-0.5%) translateX(0.5%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes stretch_animation2 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number4, $random_number6) translateY(0%) translateX(-0.5%)}
+    50%  {transform: scale($random_number5, $random_number2) translateY(0%) translateX(0.5%)}
+    75%  {transform: scale($random_number1, $random_number3) translateY(-0.5%) translateX(0%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes stretch_animation3 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number2, $random_number4) translateY(0.5%) translateX(0%)}
+    50%  {transform: scale($random_number1, $random_number3) translateY(0%) translateX(0.5%)}
+    75%  {transform: scale($random_number6, $random_number5) translateY(-0.5%) translateX(0%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes stretch_animation4 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number3, $random_number1) translateY(0%) translateX(0.5%)}
+    50%  {transform: scale($random_number5, $random_number6) translateY(0.5%) translateX(0%)}
+    75%  {transform: scale($random_number2, $random_number4) translateY(0%) translateX(-0.5%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes stretch_animation5 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number1, $random_number5) translateY(0.5%) translateX(-0.5%)}
+    50%  {transform: scale($random_number4, $random_number2) translateY(0%) translateX(0%)}
+    75%  {transform: scale($random_number3, $random_number6) translateY(0.5%) translateX(-0.5%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes stretch_animation6 {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: scale($random_number5, $random_number4) translateY(-0.5%) translateX(0%)}
+    50%  {transform: scale($random_number3, $random_number6) translateY(0%) translateX(0.5%)}
+    75%  {transform: scale($random_number2, $random_number1) translateY(0.5%) translateX(0.5%)}
+    100% {transform: scale(1, 1)}
+  }
+
+  @keyframes main_text_animation {
+    0%   {transform: scale(1, 1)}
+    25%  {transform: skewX(2deg) translateY(-0.5%) translateX(0%)}
+    50%  {transform: rotate(1deg) translateY(0%) translateX(0.5%)}
+    75%  {transform: skewY(2deg) rotate(-1deg) translateY(0.5%) translateX(0.5%)}
+    100% {transform: scale(1, 1)}
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $background_color;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Varela Round', sans-serif;
+}
+
+//menu section
+
+.menu_section{
+    padding: 50px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    position: fixed;
+}
+
+//menu button
+
+.menu_button {
+    filter: invert(88%) sepia(5%) saturate(1399%) hue-rotate(185deg) brightness(104%) contrast(104%) drop-shadow( 3px 3px 2px $secondary_color);
+    height: 100px;
+    width: 100px;
+    transition: 0.3s;
+    
+
+    &:hover {
+        filter: invert(37%) sepia(77%) saturate(928%) hue-rotate(215deg) brightness(99%) contrast(107%) drop-shadow( 0px 0px 2px $tertiary_color);
+        transition: 0.3s;
+    }
+
+    &:active {
+        transform: translateY(2px) translateX(2px);
+      }
+}
+
+//menu background
+
+.menu_background {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+    .menu_items{
+        height: 40%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        opacity: 0;
+        
+        a {
+            height: 50%;
+            width: 100%;
+            color: $primary_color;
+            font-size: 2vw;
+            text-shadow: 4px 4px $background_color;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.menu_svg_bottom {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    opacity: 0.0;
+    position: fixed;
+    transform: rotate(5deg);
+    fill: $secondary_color;
+    visibility: hidden;
+    z-index: -1;
+    animation: stretch_animation1 12s ease infinite;
+    transform-origin: center;
+}
+
+.menu_svg_middle {
+    height: 90%;
+    width: 90%;
+    overflow: visible;
+    opacity: 0.0;
+    position: fixed;
+    fill: $secondary_color;
+    visibility: hidden;
+    z-index: -1;
+    animation: stretch_animation2 12s ease infinite;
+    transform-origin: center;
+}
+
+.menu_svg_top {
+    height: 75%;
+    width: 75%;
+    overflow: visible;
+    opacity: 0.0;
+    position: fixed;
+    transform: rotate(120deg);
+    fill: $secondary_color;
+    visibility: hidden;
+    z-index: -1;
+    animation: stretch_animation3 12s ease infinite;
+    transform-origin: center;
+
+}
+
+.menu_section_filler {
+    height: 100px;
+    width: 100px;
+}
+
+.home_section {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    h1 {
+        width: 50%;
+        color: $primary_color;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 4px 4px $secondary_color;
+        animation: main_text_animation 10s ease-in-out infinite;
+        transform-origin: center;
+    }
+}
+
+//skills background
+
+.skills_background {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_div {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 4vw;
+        color: $background_color;
+        text-shadow: 2px 2px $tertiary_color;
+    }
+}
+
+.skills_svg_bottom {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    transform: rotate(2deg);
+    fill: $primary_color;
+    z-index: -1;
+    animation: stretch_animation4 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.skills_svg_middle {
+    height: 92%;
+    width: 92%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    fill: $primary_color;
+    z-index: -1;
+    animation: stretch_animation5 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+.skills_svg_top {
+    height: 85%;
+    width: 85%;
+    overflow: visible;
+    position: absolute;
+    transform: rotate(-1.5deg);
+    fill: $primary_color;
+    z-index: -1;
+    animation: stretch_animation6 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+//portfolio background
+
+.portfolio_background {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_div {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 4vw;
+        color: $background_color;
+        text-shadow: 2px 2px $primary_color;
+    }
+}
+
+.portfolio_svg_bottom {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    transform: rotate(2deg);
+    fill: $tertiary_color;
+    z-index: -1;
+    animation: stretch_animation2 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.portfolio_svg_middle {
+    height: 92%;
+    width: 92%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    fill: $tertiary_color;
+    z-index: -1;
+    animation: stretch_animation1 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.portfolio_svg_top {
+    height: 85%;
+    width: 85%;
+    overflow: visible;
+    position: absolute;
+    transform: rotate(-1.5deg);
+    fill: $tertiary_color;
+    z-index: -1;
+    animation: stretch_animation5 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+//contact background
+
+.contact_background {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_div {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    h2 {
+        font-size: 4vw;
+        color: $primary_color;
+        text-shadow: 2px 2px $background_color;
+    }
+
+    p {
+        width: 50%;
+        padding: 2%;
+        font-size: 2vw;
+        color: $primary_color;
+        text-align: center;
+        text-shadow: 2px 2px $background_color;
+    }
+    a {
+        z-index: 100;
+        width: 50%;
+        padding: 2%;
+        font-size: 2vw;
+        color: $primary_color;
+        text-align: center;
+        text-shadow: 2px 2px $background_color;
+    }
+}
+
+.contact_svg_bottom {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    transform: rotate(2deg);
+    fill: $secondary_color;
+    z-index: -1;
+    animation: stretch_animation3 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.contact_svg_middle {
+    height: 92%;
+    width: 92%;
+    overflow: visible;
+    opacity: 0.5;
+    position: absolute;
+    fill: $secondary_color;
+    z-index: -1;
+    animation: stretch_animation6 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.contact_svg_top {
+    height: 85%;
+    width: 85%;
+    overflow: visible;
+    position: absolute;
+    transform: rotate(-1.5deg);
+    fill: $secondary_color;
+    z-index: -2;
+    animation: stretch_animation4 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+
+
+
