@@ -12,7 +12,7 @@ const boxFocus = (id) => {
   console.log(id); // for info
   // list of boxes (could probs use queryselectorall to find these..)
   let boxes = Array.from(document.getElementsByClassName('box')).map(e=>{return e.id});
-  // boxes = ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
+  // ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
 
   // remove existing styles
   boxes.forEach(e=>{
