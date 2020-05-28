@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.9em;
+}
+
+a {
+  color: rgb(44, 83, 190);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+p {
+  margin: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+#navbar {
+  background: #000000;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  border-radius: 25px;
+  background: rgb(30, 68, 180);
+  color: #fff;
+}
+
+.primary-text {
+  font-family: "Courier New", Courier, monospace;
+  padding: 100px;
+  margin: 30px;
+  text-align: center;
+  text-decoration-color: rgb(30, 68, 180);
+  line-height: 1.4;
+}
+
+.secondary-text {
+  text-align: center;
+}
+
+.downloadCv {
+  display: inline-block;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(30, 68, 180);
+  letter-spacing: 1.9px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+.downloadCv:hover {
+  background-color: #e7e419;
+}
+
+.list {
+  text-align: center;
+  color: white;
+}
+
+.box {
+  margin: 30px;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 10px;
+  color: #fff;
+}
+
+#footer {
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Footer */
+
+#lab_social_icon_footer {
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+  height: 25vh;
+
+  p {
+    color: white;
+    padding: 20px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+#lab_social_icon_footer .social:hover {
+  transform: -webkit-transform scale(1.1);
+  transform: -moz-transform scale(1.1);
+  transform: -o-transform scale(1.1);
+}
+/*
+      Multicoloured Hover Variations
+  */
+
+#lab_social_footer #social-gh:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-li:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-em:hover {
+  color: #e7e419;
+}
