@@ -27,7 +27,7 @@ body header {
   top: 0;
   width: 100vw;
   background-color: #b0b4b2;
-  padding: 0.8vh;
+  padding: 0.9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +39,10 @@ body header {
 
 body header h1 {
   font-size: 25px;
+}
+
+body header i {
+  color: rgba(48, 96, 174, 0.898);
 }
 
 body main {
@@ -98,7 +102,7 @@ body main section article.welcome {
       align-self: stretch;
   background-color: #757070;
   font-size: 30px;
-  color: rgba(233, 231, 231, 0.898);
+  color: rgba(48, 96, 174, 0.898);
   -webkit-text-stroke: 1px black;
 }
 
@@ -151,17 +155,19 @@ body footer {
   bottom: 0;
   text-align: center;
   background-color: #b0b4b2;
+  -webkit-text-stroke: 1px black;
 }
 
 body footer i {
   font-size: 20px;
+  -webkit-text-stroke: 1px black;
 }
 
 body footer a {
   text-decoration: none;
   font-weight: 700;
   margin: 0 10px;
-  color: black;
+  color: rgba(48, 96, 174, 0.898);
 }
 
 body footer a:hover {

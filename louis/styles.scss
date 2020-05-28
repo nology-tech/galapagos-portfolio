@@ -8,6 +8,7 @@ $bannercolor: rgb(176, 180, 178);
 $hoverhighlight: 0 0 6px 6px #e7f4f8;
 $articlecolor: #757070;
 $titlefontsize: 10px;
+$iconcolour: rgba(48, 96, 174, 0.898);
 
 body {
   background-color: lighten($bannercolor, 16%);
@@ -24,13 +25,17 @@ body {
     top: 0;
     width: 100vw;
     background-color: $bannercolor;
-    padding: 0.8vh;
+    padding: 0.9vh;
     display: flex;
     justify-content: space-between;
     font-size: 2.5*$titlefontsize;
 
     h1 {
       font-size: 2.5*$titlefontsize;
+    }
+
+    i {
+      color: $iconcolour;
     }
   }
 
@@ -72,7 +77,7 @@ body {
           align-self: stretch;
           background-color: $articlecolor;
           font-size: 3*$titlefontsize;
-          color: rgba(233, 231, 231, 0.898);
+          color: $iconcolour;
           -webkit-text-stroke: 1px black; 
         }
 
@@ -107,16 +112,18 @@ body {
     bottom: 0;
     text-align: center;
     background-color: $bannercolor;
+    -webkit-text-stroke: 1px black;
 
     i {
       font-size: 2*$titlefontsize;
+      -webkit-text-stroke: 1px black;
     }
 
     a {
       text-decoration: none;
       font-weight: 700;
       margin: 0 10px;
-      color: black;
+      color: $iconcolour;
         
       &:hover {
         color: white;
