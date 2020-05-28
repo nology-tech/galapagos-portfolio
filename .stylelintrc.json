@@ -3,8 +3,11 @@
   "rules": {
     "order/properties-alphabetical-order": null,
     "color-named": "always-where-possible",
-    "selector-max-id": 1,
-    "string-quotes": "double",
-    "declaration-property-value-blacklist": {}
+    "selector-max-id": null,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "string-quotes": null,
+    "declaration-property-value-blacklist": {},
+    "selector-no-qualifying-type": null
   }
 }
