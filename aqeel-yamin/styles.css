@@ -53,7 +53,7 @@ h1 {
 .abtme {
     background-color: darkgrey;
     padding: 20px;
-    border-bottom: 3px solid yellow;
+    border: 3px solid yellow;
     margin: 40px;
     padding-bottom: 40px;
 }
@@ -82,13 +82,65 @@ h1 {
     text-align: center;
     color: white;
 }
-.portfolio div {
+.projects{
     display: flex;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 70vw;
+    margin: 0 auto;
+}
+.projects div {
+    width: 500px;
+    height: 250px;
+    border: 3px solid darkgray;
+    background-color:yellow;
+    margin: 10px;
+    color: black;
+}
+.projects div:hover {
+    background-color: darkgray;
+    color: #177e89;
+    cursor: pointer;
 }
 main {
     background-color: #177e89;
+}
+footer h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+footer .social i {
+    font-size: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    display: inline-block;
+    align-items: center;
+    color: white;
+}
+footer .social i:hover {
+    color: yellow;
+    cursor: pointer;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 40px 0px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    #navlinks li {
+        display: block;
+    }
+    .projects div{
+        display: grid;
+        width: 200px;
+
+    }
 }
