@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sumit Gurung</title>
+    <script>
+        function wipe(){
+            document.getElementById('form').reset();    
+        }
+
+        function getData() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let comment = document.getElementById('comment').value;
+            
+            console.log(name, email, phone, comment);
+        }
+    </script>
 </head>
 <body>
     <video autoplay muted loop class="video">
         <source src="./vid/office.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
     </video>
     <header>
         <div>
@@ -75,7 +88,18 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <div>
+                <form id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Phone (Optional):</label>
+                    <input type="text" name="phone" id="phone">
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your message"></textarea>
+                    <input type="submit" value="Submit" onclick="getData()" class="submit">
+                    <input type="button" onclick="wipe()" value="Reset" class="wipe">
+                </form>
+            <div class="contact-icon">
                 <img src="./icon/icon-linkedin.png" alt="linkedin">
                 <img src="./icon/icon-telephone.png" alt="telephone">
                 <img src="./icon/icon-email.png" alt="email">

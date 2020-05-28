@@ -9,8 +9,8 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   opacity: 0.2;
 }
 
@@ -118,12 +118,54 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#contact div {
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact form label, #contact form input, #contact form textarea {
+  font-size: 1.5em;
+}
+
+#contact form label {
+  text-align: center;
+}
+
+#contact form input[type=text], #contact form [type=email] {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#contact form textarea {
+  margin: 15px 60px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#contact form input[type=submit], #contact form [type=button] {
+  width: 25%;
+  margin: 5px auto;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#contact form input[type=submit]:hover, #contact form [type=button]:hover {
+  cursor: pointer;
+}
+
+#contact .contact-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,5 +177,6 @@ nav a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 60px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
