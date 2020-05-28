@@ -4,7 +4,7 @@ nav {
   position: fixed;
 
   ul {
-    @include flex-column;
+    @include flex-column-around;
     width: $full-width;
     height: $full-height;
   }
@@ -26,18 +26,29 @@ nav {
 
 h1 {
   margin: $margin-large 0;
+  padding: $padding-medium;
 }
 
 h2 {
-  margin: $margin-medium 0;
+  margin: $margin-large;
+  padding: $padding-medium 0;
 }
+
+
 
 p {
   margin: $margin-small;
+  padding: $padding-medium 0;
 }
 
 section {
-  @include flex-column;
+
+  @include flex-column-around;
+
+  &#home {
+  @include flex-column-center;
+  margin-top: -1vh * $multiple;
+  }
 }
 
 section,
@@ -48,6 +59,8 @@ ul {
 .project-links {
   @include flex-row-even;
   width: $large-width;
+  margin: $margin-large 0;
+  padding: $padding-medium 0;
 }
 
 .project-header {
