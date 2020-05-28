@@ -1,9 +1,8 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing:  border-box;
-          box-sizing:  border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Fjalla One';
   color: whitesmoke;
   text-decoration: none;
@@ -100,7 +99,7 @@ nav #profile {
     }
 }*/
 main {
-  background-image: url(./Images/web-build1.png);
+  background-image: url("./Images/web-build1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
