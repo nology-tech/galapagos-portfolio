@@ -137,13 +137,11 @@ main .header {
   padding-bottom: 20px;
   color: white;
   text-align: center;
-  margin-top: 200px;
-}
-
-main .header h2 {
-  font-size: 48px;
-  font-weight: 100;
-  margin: 30px 20px 5px 20px;
+  text-shadow: h2;
+  text-shadow-font-size: 48px;
+  text-shadow-font-weight: 100;
+  text-shadow-margin: 30px 20px 5px 20px;
+  text-shadow-padding: 20px;
 }
 
 main .about-me {
@@ -155,13 +153,26 @@ main .about-me {
   margin-top: 100px;
   width: 80%vw;
   padding: 20%vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+main .about-me h2 {
+  margin-top: 20px;
+}
+
 main .about-me p {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 main .my-work {
