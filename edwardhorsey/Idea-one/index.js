@@ -1,6 +1,10 @@
+document.getElementById('burger').addEventListener('click', e => {
+
+})
+
 const toggle = () => {
   let navBarClasses = document.getElementById('nav-bar');
-  console.log(navBarClasses);
+  // console.log(navBarClasses);
   if (navBarClasses.classList.contains('show')) {
     navBarClasses.classList.remove('show');
   } else {
@@ -8,7 +12,7 @@ const toggle = () => {
   }
 };
 
-const typeWriter = (id) => {
+const typeWriter = (id, ms=50) => {
   let store = document.getElementById(id).innerHTML;
   document.getElementById(id).innerHTML = '';
 
@@ -18,12 +22,10 @@ const typeWriter = (id) => {
     if (i < store.length) {
       document.getElementById(id).innerHTML += store[i];
       i++;
-      setTimeout(typing,50);
+      setTimeout(typing,ms);
     }
   }
   typing();
-  // Can I use use a delay feature differently?
-  // Can I do this with a code block instead? 
 };
 
 
@@ -44,6 +46,7 @@ const boxFocus = (id) => {
     if (e===id){
       document.getElementById(e).classList.add('focus');
       document.getElementById(e).style.order = `-${boxes.indexOf(e)}`;
+      typeWriter(`${id}P`, 25);
     } else {
       document.getElementById(e).classList.add('sub');
     }
@@ -53,3 +56,6 @@ const boxFocus = (id) => {
 document.getElementById('submit').addEventListener('click', (e)=>{
   e.preventDefault();
 });
+
+const theYear = new Date;
+document.getElementById('year').innerHTML = `${theYear.getFullYear()}`;
