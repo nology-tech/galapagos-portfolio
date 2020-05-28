@@ -4,6 +4,13 @@
   list-style: none;
   text-decoration: none;
   color: inherit;
+  background-color: white;
+}
+
+nav {
+  display: none;
+  z-index: 999;
+  position: fixed;
 }
 
 nav ul {
@@ -34,9 +41,6 @@ nav button {
   position: fixed;
   height: 12.5vh;
   width: 100vw;
-  top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(180deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,6 +50,8 @@ nav button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  top: 0;
+  background: linear-gradient 180deg, white 70%, rgba(255, 255, 255, 0.1) 100%;
 }
 
 #fixed-header i {
@@ -80,7 +86,8 @@ section {
           align-items: center;
 }
 
-section, ul {
+section,
+ul {
   height: 100vh;
 }
 
@@ -98,7 +105,6 @@ section, ul {
 }
 
 .project-header {
-  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,6 +114,7 @@ section, ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: static;
 }
 
 .project-header h2 {
@@ -118,9 +125,6 @@ footer {
   position: fixed;
   height: 12.5vh;
   width: 100vw;
-  bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +134,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(0deg, white 70%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 * {
@@ -142,7 +149,9 @@ h1 {
   text-align: center;
 }
 
-h2, i, li {
+h2,
+i,
+li {
   font-size: 2em;
   text-align: center;
 }
