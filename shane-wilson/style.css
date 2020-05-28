@@ -6,17 +6,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-}
-
 body {
   background: url(./img/background2.jpg);
   background-size: 100%;
-}
-
-body {
   display: -ms-inline-grid;
   display: inline-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -44,7 +36,6 @@ header {
 }
 
 header h1 {
-  color: white;
   text-align: center;
   margin: 40px;
 }
@@ -64,6 +55,10 @@ header h1 {
   border-radius: 10px;
 }
 
+#navb img {
+  display: none;
+}
+
 article {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
@@ -74,7 +69,14 @@ article {
   border: purple solid 1px;
   border-top: solid purple 20px;
   border-radius: 10px;
-  display: block;
+}
+
+aside .social i {
+  color: purple;
+  padding: 8px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 8%;
 }
 
 aside {
@@ -88,10 +90,6 @@ aside {
   border-radius: 10px;
 }
 
-*h3 {
-  text-align: center;
-}
-
 footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
@@ -103,29 +101,11 @@ footer {
 }
 
 footer {
-  bottom: 0px;
   width: auto;
   font-size: 12px;
-  background-color: black;
   color: white;
   padding: 25px;
   background: url(./img/background3.jpg);
-}
-
-footer .social i {
-  float: right;
-  cursor: pointer;
-  margin-left: 10px;
-  color: white;
-}
-
-footer .social i:hover {
-  color: purple;
-}
-
-#navb p {
-  background-color: purple;
-  color: purple;
 }
 
 #navb a {
@@ -133,22 +113,10 @@ footer .social i:hover {
   padding: 8px;
 }
 
-article p {
-  background-color: purple;
-  color: purple;
-}
-
-aside p {
-  background-color: purple;
-  color: purple;
-}
-
 @media only screen and (min-width: 780px) {
   body {
     background: url(./img/background2.jpg);
     background-size: 100%;
-  }
-  body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -163,19 +131,18 @@ aside p {
   }
   body h3 {
     padding: 16px;
+    position: relative;
   }
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-area: header;
-    background-color: purple;
     border-radius: 10px;
     border: solid 1px purple;
     background: url(./img/background3.jpg);
   }
   header h1 {
-    color: white;
     text-align: center;
   }
   .mob {
@@ -195,7 +162,6 @@ aside p {
     border-radius: 10px;
   }
   #navb a {
-    display: block;
     padding: 8px;
   }
   article {
@@ -219,27 +185,21 @@ aside p {
     border-top: solid purple 20px;
     border-radius: 10px;
   }
+  aside .social i {
+    color: purple;
+    padding: 8px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+  }
   footer {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-area: footer;
-    background-color: black;
     border-radius: 10px;
     border: solid 1px purple;
     background: url(./img/background3.jpg);
-  }
-  #navb p {
-    background-color: purple;
-    color: purple;
-  }
-  article p {
-    background-color: purple;
-    color: purple;
-  }
-  aside p {
-    background-color: purple;
-    color: purple;
   }
 }
 /*# sourceMappingURL=style.css.map */
