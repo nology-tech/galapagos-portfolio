@@ -10,16 +10,14 @@ $highlight-color: rgb(204, 157, 70);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
+  a {
+    color: $black-font-color;
+  }
   i {
     padding: 5px 10px;
-
-    &:hover {
-      background-color: $highlight-color;
-      border-radius: 5px;
     }
-  }
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -134,11 +132,15 @@ main {
         justify-content: space-between;
         border: 2px solid $black-font-color;
         height: 25vh;
-        width: 30vw;
-        min-width: 320px;
-        min-height: 200px;
+        width: 65vw;
+        min-width: 256px;
+        min-height: 180px;
         padding: 20px;
         margin: 10px;
+        
+        &.order-override {
+          order: 0;
+        }
 
         p {
           width: 80%;
@@ -176,6 +178,7 @@ main {
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 5px;
         padding: 20px;
+        margin-bottom: 20px;
 
         ul li {
           list-style-type: none;
@@ -187,6 +190,7 @@ main {
       form {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
 
         input,
         textarea {
@@ -196,8 +200,8 @@ main {
           border-radius: 10px;
           border: 2px solid $main-grey-color;
           margin: 10px;
-          height: 40px;
-          width: 260px;
+          height: 35px;
+          width: 240px;
           max-width: 260px;
 
           #submit {
@@ -210,7 +214,7 @@ main {
         textarea {
           height: 150px;
           max-height: 200px;
-          min-width: 260px;
+          min-width: 240px;
           padding-top: 10px;
         }
       }
@@ -249,6 +253,15 @@ footer {
 
 
 @media only screen and (min-width: 600px) {
+
+
+  i {
+    &:hover {
+      background-color: $highlight-color;
+      border-radius: 5px;
+    }
+  }
+
   header {
     display: flex;
     flex-direction: row;
@@ -275,6 +288,10 @@ footer {
     .projects {
       .container {
         .box {
+          width: 30vw;
+          min-width: 320px;
+          min-height: 200px;
+
           &.focus {
             width: 75vw;
             height: 40vh;
