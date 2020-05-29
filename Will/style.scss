@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-image: url(./images/abstract-background-dew-insubstantial-2259232.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-family: 'Courier New';
+        
+        .will {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .dropbtn {
+            font-size: 30px;
+            border: none;
+            background-color: transparent;
+            font-family: 'Courier New';
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding-top: 10px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .dropdown-content a:hover {
+            color: burlywood;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            color: burlywood;
+        }
+    }
+    
+    footer {
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        background-color: black;
+    }
+
+    footer .social i {
+        font-size: 40px;
+        cursor: pointer;
+        margin-left: 20px;
+        color: yellow;
+    }
+
+}
+
+.aboutmain {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 3%
+}
+
+.aboutcontent {
+    border: 2px solid black;
+    width: 20%;
+    background-color: burlywood;
+}
+ 
+input {
+    margin-top: 4%;
+    width: 375px;
+    height: 50px;
+    font-size: 30px;
+}
+
+textarea {
+    margin-top: 4%;
+    height: 300px;
+    width: 375px;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .dropdown-content a {
+        display: block;
+    }
+}
