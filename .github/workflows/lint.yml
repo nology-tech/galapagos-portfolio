@@ -18,7 +18,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
       - run: yarn html-lint
-      - run: yarn css-lint
-      - run: yarn js-lint
+      - run: yarn scss-lint
+        # - run: yarn js-lint
         env:
           CI: true

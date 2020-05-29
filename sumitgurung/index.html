@@ -1,10 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sumit Gurung</title>
+  <script>
+    function wipe() {
+      document.getElementById('form').reset();
+    }
+
+    function getData() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let phone = document.getElementById('phone').value;
+      let comment = document.getElementById('comment').value;
+
+      console.log(name, email, phone, comment);
+    }git 
+  </script>
 </head>
 <body>
-    <p>hello</p>
+  <video autoplay muted loop class="video">
+    <source src="./vid/office.mp4" type="video/mp4">
+  </video>
+  <header>
+    <div>
+      <img src="./img/sumit-gurung.png" alt="Sumit" id="photo">
+    </div>
+    <div>
+      <h1>Sumit Gurung</h1>
+      <h2>Junior Web Developer</h2>
+    </div>
+    <div>
+      <img src="./icon/arrow_down.png" alt="down arrow" id="arrow">
+    </div>
+  </header>
+  <main>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="container">
+        <div>Project 1</div>
+        <div>Project 2</div>
+        <div>Project 3</div>
+        <div>Project 4</div>
+        <div>Project 5</div>
+        <div>Project 6</div>
+      </div>
+    </section>
+    <section id="skills">
+      <div>
+        <h2>Skills</h2>
+      </div>
+      <div class="icon">
+        <img src="./icon/icon-html5.png" alt="html5">
+        <img src="./icon/icon-css3.png" alt="css3">
+        <img src="./icon/icon-js.png" alt="js">
+        <img src="./icon/icon-sass.png" alt="sass">
+        <img src="./icon/icon-github.png" alt="github">
+        <a href="https:www.nology.io" target="_blank"><img src="./icon/icon-nology.png" alt="nology"></a>
+      </div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus quibusdam explicabo a!
+        Ipsam magni neque eligendi beatae autem laboriosam assumenda nostrum ipsum blanditiis animi,
+        doloribus, voluptate vero voluptates odit? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Assumenda, velit? Iure at aspernatur repellat ad sint tempore repudiandae molestias, nisi
+        accusantium ab nemo vel saepe. Dolore vel praesentium assumenda repellendus. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur assumenda odit
+        molestiae vel recusandae atque numquam cumque, illo ex quaerat sit, facilis placeat temporibus.
+        Minus ducimus modi sequi quidem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+        natus corrupti dolorum quo iste, quia in neque recusandae cumque? Facilis enim vitae ab nesciunt
+        laborum quaerat sit iste reprehenderit in!
+      </p>
+    </section>
+    <section id="about">
+      <div>
+        <h2>About</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eveniet dolorem cum quas
+        corrupti explicabo quo id facere obcaecati officiis inventore, quam adipisci ipsam reiciendis
+        consequatur, ea dolorum quae eligendi!Lorembr<br>Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Tempora rerum nisi dolore alias sint! Harum vero, corrupti unde blanditiis recusandae at 
+        eligendi impedit earum maxime labore consequuntur numquam rem quis?</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="form">
+        <label for="name"></label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <label for="phone"></label>
+        <input type="text" name="phone" id="phone" placeholder="Phone number">
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your message"></textarea>
+        <input type="submit" value="Submit" onclick="getData()" class="submit">
+        <input type="button" onclick="wipe()" value="Reset" class="wipe">
+      </form>
+      <div class="contact-icon">
+        <img src="./icon/icon-linkedin.png" alt="linkedin">
+        <img src="./icon/icon-telephone.png" alt="telephone">
+        <img src="./icon/icon-email.png" alt="email">
+      </div>
+    </section>
+  </main>
 </body>
 </html>
