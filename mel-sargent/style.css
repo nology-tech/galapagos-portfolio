@@ -275,7 +275,7 @@ main .get-in-touch .icons {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  .frame:hover {
+  .frame :hover {
     background-color: red;
     -webkit-box-shadow: 2px 2px 20px white;
             box-shadow: 2px 2px 20px white;
