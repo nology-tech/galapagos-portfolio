@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/af9dd918fd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,7 +14,7 @@
         </h1>
         
         <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
+            <button class="dropbtn"><i class="fas fa-bars"></i> Navigate</button>
             <div class="dropdown-content">
                 <a href="AboutMe.html">About Me</a>
                 <a href="#">Link #2</a>
@@ -24,10 +25,26 @@
         </div>
     </nav>
 
+    <section class="contact">
+        <form action="" target="_blank" method="get">
 
-    <form action=""></form>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Full name" required>
+                <br>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <textarea name="reason" id="reason" placeholder="Enquiries here..."></textarea>
+
+        </form>
+    </section>
     
-
+    <footer>
+        <span class="social">
+          <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </span>
+    </footer>
 
 
 </body>
