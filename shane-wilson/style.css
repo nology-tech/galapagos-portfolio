@@ -59,6 +59,21 @@ header h1 {
   display: none;
 }
 
+#menu-button {
+  font-size: 28px;
+  float: right;
+  cursor: pointer;
+  margin: 8px 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 article {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
@@ -163,6 +178,18 @@ footer {
   }
   #navb a {
     padding: 8px;
+  }
+  #menu-button {
+    font-size: 28px;
+    float: right;
+    cursor: pointer;
+    margin: 8px 0px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
   }
   article {
     -ms-grid-row: 3;
