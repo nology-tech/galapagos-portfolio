@@ -1,5 +1,5 @@
-// document.querySelector('burger').addEventListener('click', function expand(x) {
-//   x.classList.toggle('change');
+// document.querySelector('burger').addEventListener('click', function expand() {
+//   alert (this works Mel!);
 // });
 
 const expand = (x) => {

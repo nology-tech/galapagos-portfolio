@@ -100,7 +100,7 @@ nav {
     }
 
     &.show {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
     }
 
@@ -109,7 +109,8 @@ nav {
       list-style-type: none;
 
       a {
-        text-decoration: none;    
+        text-decoration: none;  
+        margin-bottom: 10px;  
       }
 
       li {
