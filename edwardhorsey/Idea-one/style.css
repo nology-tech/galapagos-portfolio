@@ -342,7 +342,7 @@ footer {
     height: 40vh;
   }
   main .projects .container .box.focus p {
-    color: white;
+    color: whitesmoke;
     display: block;
     width: 60%;
   }

@@ -10,12 +10,14 @@ $highlight-color: rgb(204, 157, 70);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
   a {
     color: $black-font-color;
   }
+
   i {
     padding: 5px 10px;
-    }
+  }
 }
 
 
@@ -137,7 +139,7 @@ main {
         min-height: 180px;
         padding: 20px;
         margin: 10px;
-        
+
         &.order-override {
           order: 0;
         }
@@ -253,8 +255,6 @@ footer {
 
 
 @media only screen and (min-width: 600px) {
-
-
   i {
     &:hover {
       background-color: $highlight-color;
@@ -297,7 +297,7 @@ footer {
             height: 40vh;
 
             p {
-              color: white;
+              color: whitesmoke;
               display: block;
               width: 60%;
             }
