@@ -37,21 +37,21 @@
   }
 }
 
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   * header h1 {
     font-size: 5em;
   }
 }
 
-* header h1#name {
+* header #name {
   padding-bottom: 0;
 }
 
-* header h1#surname {
+* header #surname {
   padding-top: 0;
 }
 
-* header h2 {
+* h2 {
   background-color: darkmagenta;
   padding: 15px;
   font-variant: small-caps;
@@ -59,19 +59,28 @@
 }
 
 @media (min-width: 768px) {
-  * header h2 {
+  * h2 {
     letter-spacing: 10px;
     font-size: 2em;
   }
 }
 
 @media (min-width: 1024px) {
-  * header h2 {
+  * h2 {
     font-size: 3em;
   }
 }
 
-* header nav {
+@media (min-width: 768px) {
+  * h2::before,
+  * h2::after {
+    content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+    text-decoration: line-through;
+    margin: auto 0.5em;
+  }
+}
+
+* nav {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +95,7 @@
 }
 
 @media (min-width: 768px) {
-  * header nav {
+  * nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -98,13 +107,13 @@
   }
 }
 
-* header nav i {
+* i {
   color: #202020;
   font-size: 2em;
 }
 
 @media (min-width: 768px) {
-  * header nav i {
+  * i {
     font-size: 3em;
     padding: 1em;
   }
@@ -115,15 +124,6 @@
     background-color: lightgray;
     color: black;
     font-size: 4em;
-  }
-}
-
-@media (min-width: 768px) {
-  h2:before,
-  h2:after {
-    content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-    text-decoration: line-through;
-    margin: auto 0.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
