@@ -1,4 +1,4 @@
-  * {
+* {
     margin: 0;
   padding: 0;
     text-decoration: none;
@@ -6,25 +6,22 @@
   }
 
 
-  .navbar {
+.navbar {
     height: 40px;
     position: fixed;
     width: 100%;
     top: 0;
-    /* background-color:rgba(91,30,214, 1); */
-    /* background-color: white; */
     background-color: rgba(14, 24, 39, 0.8);
     font-family: Helvetica, sans-serif;
     display: flex;
     justify-content: space-evenly;
   justify-content: flex-start;
   z-index: 1;
-  padding: 30px;
+  padding: 40px;
   
   }
 
-
-  .navbar ul {
+.navbar ul {
     white-space: nowrap;
     max-width: 100%;
     height: 100%;
@@ -32,14 +29,15 @@
   
   }
 
-  .navbar li {
+.navbar li {
   font-size: 25px;
   margin:  0 50px;
   }
 
-  .navbar li a:hover {
+.navbar li a:hover {
     text-decoration: underline;
   }
+
   ul {
     list-style: none;
   }
@@ -48,9 +46,10 @@
     color: white;
   }
 
-  .me a {
+.me a {
     font-size: 25px;
-    color: #e569f3;
+    background-color: #e569f3;
+    padding: 10px;
   }
 
   li:hover {
@@ -58,15 +57,14 @@
     background-color: black;
   }  
 
-  .wave {
+.wave {
     position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: -1;
   }
-
-  .container {
-    /* color: rgba(42, 36, 43, 0.801); */
+  
+.container {
     height: 100vh;
     width: 100vw;
     /* position: relative; */
@@ -77,7 +75,7 @@
   }
 
 
-  .name {
+.name {
     display: flex;
     flex-direction: column;
     padding-left: 500px;
@@ -91,20 +89,19 @@
     font-size: 80px;
   }
 
-  @keyframes name {
+@keyframes name {
     0%   { opacity: 0; font-size: 0px; }
     85%  {font-size: 80px;}
     100% { opacity: 1; }
   }  
 
-  .name h3 {
+.name h3 {
     font-size: 50px;
-    margin-top: -10px;
     color: purple;
   }
 
 
-  .image {
+.image {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -113,74 +110,78 @@
     
   }
 
-  .image img {
-    width: 1100px;
+.image img {
+    width: 1000px;
   }
 
-  section {
-  background-color: white;
-  padding: 100px 0;
+section {
+  background-color: whitesmoke;
+  color: black;
   }
 
 
-  #about {
+#about {
     width: 100%;
-    margin: 70px auto;
+    margin: 20px auto;
     line-height: 40px;
-    /* background-color:rgba(14, 24, 39, 0.3); */
-    padding: 100px 0;
+    padding: 20px 0;
     color: black;
     text-align: center;
   }
-  hr {
+hr {
     width: 1000px;
-    margin: 200px auto;
+    margin: 30px auto;
   }
 
-  #about h2 {
+#about h2 {
     font-size: 50px;
     /* width: 700px; */
     margin: 0 auto;
     font-family: 'Lobster', cursive;
+    color: purple;
   }
 
-  #about p {
+#about p {
     width: 700px;
     margin: 30px auto; 
+    font-size: 30px;
   } 
 
-  .container2 {
-  width: 90%; 
-    background-color: gray;  
-    margin: 20px auto;
-  } 
-
-  .divp p{
+.divp p{
     margin: 50px auto;
     text-align: center;
-    font-size: 20px;
     width: 700px;
   }
 
-  .divp h3 {
+.divp h3 {
     text-align: center;
     font-family: 'Lobster', cursive;
     font-size: 50px;
+    color: purple;
   }
 
-  .skills {
+  .container2 {
+    width: 50%; 
+      background-color: gray;  
+      margin: 20px auto;
+    } 
+
+.skills {
     text-align: right; 
     padding-top: 10px; 
     padding-bottom: 4px; 
     color: white;
   }
+.skill-p {
+  font-size: 30px;
+}
 
-  .html {width: 40%; background-color: #4CAF50;} 
-  .css {width: 40%; background-color: #2196F3;} 
-  .js {width: 5%; background-color: yellow; color: black;} 
+.html {width: 40%; background-color: #4CAF50;} 
+.css {width: 40%; background-color: #2196F3;} 
+.js {width: 5%; background-color: yellow; color: black;} 
 
 
-  #projects {
+#projects {
     display: flex;
     flex-direction: row;
     justify-items: space-evenly;
@@ -191,7 +192,7 @@
   }
   
   
-  .project { 
+.project { 
     position: relative;
     display: flex;
     flex-direction: row;
@@ -200,170 +201,72 @@
     
   }  
   
-  article {
+article {
     display: flex;
     height: 500px;
     width: 400px;
     margin: 10px;
     padding: 20px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
   }
-  #project1 {
-    background-color:  rgb(245, 230, 149);
+#project1 {
+    background-color:  rgb(222, 203, 93);
   }
   
-  #project2 {
+#project2 {
     background-color:  rgb(172, 252, 244);
   }
   
-  #project3 {
+#project3 {
     background-color:lightpink;
   }
-  #project4 {
+#project4 {
     background-color: #6DFFAF;
   } 
 
-  article p {
+article p {
     position: absolute;
     opacity:0 ;
     width: 90%;
   }
 
-  article:hover p {
+article:hover p {
     opacity: 1;
     transition: .5s ease;
   }
 
-  article:hover h2 {
+article:hover h2 {
     display: none;
   }
   
-  .h3 {
+.h3 {
     color: purple;
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 50px;
   }
 
-  footer {
-      /* background-color:rgba(91,30,214, 1) ; */
-      background-color: rgba(14, 24, 39, 0.8);
-      padding: 200px;
+footer {
+      background-color:rgba(91,30,214, 1) ; 
+       background-color: rgba(14, 24, 39, 0.8);
+      padding: 100px;
       text-align: center;
       color: #e569f3;
-      font-size: 50px;
+      font-size: 40px; 
       
-    }
-    
-    .social {
+    } 
+   .social {
      display: flex;
      flex-direction: row;
      justify-content: center;
      cursor: pointer;
      margin: 30px 0;
-    
+  
     }
     
     .social i {
      color: white;
      margin: 0 10px;
     } 
-    
-    @media only screen and (max-width: 1005px) {
-     * {
-        margin: 0;
-        padding: 0;
-          text-decoration: none;
-          box-sizing: border-box;
-          
-      }
-  
-
-      .navbar {
-        position: fixed;
-        width: 100%;
-        background-color: rgba(14, 24, 39, 0.8);
-        font-family: Helvetica, sans-serif;
-        display: flex;
-        justify-content: space-evenly;
-      justify-content: flex-start;
-      z-index: 1;
-      padding: 10px;
-      overflow: hidden;
-      
-      }
-  
-      .navbar li {
-      font-size: 20px;
-      margin:  0 15px;
-      }
-    
-      .navbar li a:hover {
-        text-decoration: underline;
-      }
-    
-      .me a {
-        font-size: 20px;
-      }
-
-      
-
-
-
-       /* .wave {
-        position: fixed;
-        height: 100vh;
-         width: 100%; 
-        z-index: -1;
-      }
-    
-      .container {
-       color: rgba(42, 36, 43, 0.801); 
-       height: 100vh;
-       max-width: 100%; 
-       position: relative; 
-         display: flex;
-      }
-   
-     */
-      .name {
-        display: flex;
-        flex-direction: column;
-        padding-left:300px;
-        margin-top: 400px;
-      }
-    
-      h1{
-        animation: name;
-      animation-duration: 5s;
-      animation-fill-mode: forwards;
-        font-size: 30px;
-      }
-    
-      @keyframes name {
-        0%   { opacity: 0; font-size: 0px; }
-        85%  {font-size: 30px;}
-        100% { opacity: 1; }
-      }  
-    
-      .name h3 {
-        font-size: 20px;
-        margin-top: -10px;
-        color: purple;
-      }
-    
-    
-      .image {
-        display: none;
-       
-      }
-      main {
-        background-color: white;
-        /* padding: 100px 0; */
-       width: 1000px;
-        }
      
-
-
-
-    }
+    
