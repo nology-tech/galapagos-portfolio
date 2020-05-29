@@ -12,7 +12,7 @@ window.onload = () => {
 
   document.querySelectorAll('#menuToggle, a').forEach(element => {
     element.addEventListener('click', () => {
-    toggleMenu();
+      toggleMenu();
+    });
   });
-});
 };

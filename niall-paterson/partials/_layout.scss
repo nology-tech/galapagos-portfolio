@@ -20,6 +20,7 @@ nav {
 #fixed-header {
   @include fixed-menu($header: true);
   z-index: 999;
+
   img {
     margin: $margin-medium;
   };
@@ -45,7 +46,7 @@ section {
   @include flex-column-around;
 
   &#home {
-  @include flex-column-center;
+    @include flex-column-center;
   }
 }
 
@@ -73,7 +74,6 @@ ul {
 footer {
   @include fixed-menu($header: false);
 }
-
 
 img {
   width: 50px;
