@@ -390,30 +390,29 @@ body {
       width: 100%;
       text-transform: uppercase;
       color: transparent;
-      padding-left: 22vw;
+      padding-left: 28vw;
       color: $dark-color;
       transform: skewX(-5deg);
 
       @media screen and (orientation: portrait) {
 
         @media (min-width: 350px) {
-          padding-left: 25vw;
+          padding-left: 31vw;
         }
 
         @media (min-width: 400px) {
-          padding-left: 26vw;
+          padding-left: 31vw;
         }
 
         @media (min-width: 480px) {
-          padding-left: 28vw;
-        }
-
-        @media (min-width: 600px) {
           padding-left: 29vw;
         }
 
+        @media (min-width: 600px) {
+          padding-left: 34vw;
+        }
+
         @media (min-width: 900px) {
-          padding-left: 30vw;
           font-size: 2em;
         }
       }
