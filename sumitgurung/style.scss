@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$border: 2px solid black;
+
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+header {
+  background-image: linear-gradient(rgb(112, 112, 238), rgb(170, 227, 227));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  #photo {
+    border: $border;
+    border-radius: 15px 50px;
+    margin: 10px;
+    box-shadow: 5px 10px rgb(99, 99, 99);
+  }
+
+  #arrow {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+P {
+  border: $border;
+  max-width: 90vw;
+  margin: 5px auto;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(74, 232, 235);
+  }
+}
+
+#projects {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+      border: $border; //remove when content is added (i.e. projects)
+      text-align: center;
+      max-width: 90vw;
+      margin: 40px auto;
+      padding: 150px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+#skills {
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    a {
+      z-index: 1;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+#contact {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label,
+    input,
+    textarea {
+      font-size: 1.5em;
+    }
+
+    label {
+      text-align: center;
+    }
+
+    input[type="text"],
+    [type="email"] {
+      width: 50%;
+      margin: 10px auto;
+      border-radius: 10px;
+      z-index: 1;
+      border: none;
+    }
+
+    textarea {
+      width: 50%;
+      margin: 15px auto;
+      border-radius: 10px;
+      z-index: 1;
+      border: none;
+    }
+
+    input[type="submit"],
+    [type="button"] {
+      width: 25%;
+      margin: 5px auto;
+      border-radius: 10px;
+      z-index: 1;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contact-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60px;
+    margin: 10px;
+  }
+}
