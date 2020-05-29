@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
 
-  }
-  
+}
+
 body {
     background-image: url(./images/abstract-background-dew-insubstantial-2259232.jpg);
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ body {
     display: flex;
     justify-content: space-around;
     font-size: 30px;
-    margin-top: 3%
+    margin-top: 3%;
 }
 
 .aboutcontent {
@@ -107,7 +107,6 @@ textarea {
 
 
 @media only screen and (max-width: 600px) {
-
     .dropdown-content a {
         display: block;
     }
