@@ -24,3 +24,27 @@
     font-style: normal;
 
 }
+
+
+@font-face {
+    font-family: 'scriptinaregular';
+    src: url('scriptina-style.woff2') format('woff2'),
+         url('scriptina-style.woff') format('woff'),
+         url('scriptina-style.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'streamsterregular';
+    src: url('streamster-style.woff2') format('woff2'),
+         url('streamster-style.woff') format('woff'),
+         url('streamster-style.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

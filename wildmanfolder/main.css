@@ -1,293 +1,331 @@
-* {
-	margin: 0;
-	padding: 0;
+<<<<<<< HEAD
+
+/* ************************************** */
+
+/* Resets a few values:
+	stops horizontal spillage
+	corrects box sizing
+	sets font family */
+
+
+
+	* {
+	font-family: 'minecraftregular';
 	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+/* ************************************** */
+
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
+         url('minecraftregular-bmg3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Gets rid of the white space around the page, so everything is flush against the edge of the viewport. Also sets a default background color */
+
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: transparent;
 }
 
 body {
-	width: 100%;
-	height: 500vh;
-	background-image: linear-gradient(to bottom right, rgb(162, 0, 255) 0%, rgb(255, 0, 191) 50%, rgb(255, 0, 64) 100%);
-	color: transparent;
+	margin: 0px 0px;
+	height: 200%;
 }
 
-#landing-page {
-	position: sticky;
-	top: 0;
-	left: 0;
-	background-color: transparent;
-	width: 100%;
-}
+/* ************************************** */
 
-nav {
-	height: 8vh;
-	background-color: #0B0014;
-}
 
-@font-face {
-    font-family: 'sfalienencsolid';
-	src:	url('./assets/fonts/sfalienencsolid.woff2') format('woff2'),
-			url('./assets//fonts/sfalienencsolid.woff') format('woff'),
-			url('./assets//fonts/sfalienencsolid.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 
-@font-face {
-    font-family: 'sfalienenc';
-	src:	url('./assets/fonts/sfalienenc.woff2') format('woff2'),
-			url('./assets//fonts/sfalienenc.woff') format('woff'),
-			url('./assets//fonts/sfalienenc.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+/* Background scrolling effect-banner contains a PNG with a transparent text mask and a background image with a gradient behind it */
 
-section {
-	line-height: 1.4em;
-	font-family: 'sfalienencsolid';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 12vmin;
-	height: 88vh;
-	/* background-color: red 0.6 0%; */
-	/* background-size: cover;
-	background-blend-mode: color;
-	opacity: 100%; */
-}
-
-#background-image {
+#mask {
 	position: fixed;
-	top: 8vh;
-	left: 0;
-	height: 88vh;
 	width: 100%;
-	background-image: url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp), url(./assets/vector.jpg);
-	background-size: cover;
-	background-blend-mode: luminosity;
-	z-index: -1;
-	opacity: 50%;
-
+	height: 25%;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 8;
 }
 
-#container {
-	opacity: 100;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 88vh;
+#background {
+	display: grid;
+	position: fixed;
 	width: 100%;
-	/* background-color: rgba(0, 0, 0, 0.4) */
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	height: 100%;
 }
 
-.text {
-	background-color: #0b001466;
+#scroll {
+	position: relative;
 	width: 100%;
-	text-align: center;
-	text-shadow: 0px 0px 50px;
+	height: 1120px;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	z-index: 0;
 }
 
-#youve {
-	padding-left: 16vw;
-	padding-right: 24vw;
+header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	height: 186.6px;
+	z-index: 8;
 }
 
-
-
-
-#found {
-	padding-left: 24vw;
-	padding-right: 16vw;
+.gradient {
+	position: relative;
+	top: -186.6px;
+	height: 186.6px;
 }
 
-#david {
-	padding-left: 32vw;
-	padding-right: 8vw;
-	color: transparent;
-}
-
-p {
+div.background {
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	white-space: nowrap;
+	display: block;
+	box-sizing: border-box;
+	margin: auto, auto;
+	padding: auto, auto;
 	width: 100%;
-	background-color: rgba(11, 0, 20, 0.4);
 }
 
-.my-name {
-	font-family: "sfalienenc";
+/* ************************************** */
+
+/* Body text scrolling effects-using sticky positioning. Some of this code will be redundant, I played around with it for a long time trying to get it to work! */
+
+div.main {
+	position: sticky;
+	top: 186px;
+	left: 0px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	z-index: 6;
+}
+
+
+span {
+	top: 0vh;
+	max-width: 100%;
+	display: block;
+	text-align: justify;
 
 }
 
-footer {
-	height: 4vh;
-	background-color: #0b0014;
-}
-
-@media screen and (max-width: 425px) and (orientation: portrait) {
-	.text {
-		margin: 2vh;
-		font-size: 36px;
+	.david {
+		position: sticky;
+		top: 24.5vh;
+		z-index: 10;
+		border-top: rgb(70, 70, 70) solid thick;
+		border-width: 33px;
+		line-height: 1.8em;
 	}
 
+	.face {
+		position: sticky;
+		top: 0px;
+		z-index: 9;
+	}
+
+	.wildman {
+		position: sticky;
+		top: 87vh;
+		z-index: 10;
+		border-bottom: rgb(70, 70, 70) solid thick;
+		border-width: 33px;
+		line-height: 4em;
+	}
+
+	/* Hover effects */
+
+	.david h1:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
+	
+	.wildman h1:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
+
+	h2.bio {
+		line-height: 1.5em;
+		color: rgb(92, 0, 61);
+		opacity: 70%;
+		position: absolute;
+		top: 80vh;
+		right: 1vw;
+		text-align: right;
+		z-index: 10;
+	}
+
+	h3.bio {
+		line-height: 1.5em;
+		color: #2867B2;
+		opacity: 100%;
+		position: absolute;
+		top: 71vh;
+		left: 1vw;
+		text-align: left;
+		z-index: 10;
+	}
+
+
+	h2.personal:hover {
+		background-color: hotpink;
+	}
+
+	.personal h1:hover {
+		color: rgb(110, 2, 83);
+		background-color: hotpink;
+		opacity: 70%
+	}
+
+	h3.professional:hover {
+		background-color: black;
+		opacity: 70%;
+	}
+
+	.professional h1:hover {
+		color: black;
+		opacity: 50%;
+		background-color: #2867B2;
+	}
+
+
+ .professional a {
+	text-decoration: underline;
+	color: inherit;
+	font-size: 1.5em;
+} 
+
+/* Navigation styling */
+
+nav span.leftlink{
+	position: fixed;
+	display: inline;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	z-index: 9;
+	left: 0px;
+	top: 0px;
+	max-width: 50%
 }
 
-@media screen and (min-width: 768px) {
-	section {
-		font-size: 92.16px;
-	}  
+nav span.rightlink{
+	position: fixed;
+	display: inline;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	z-index: 9;
+	right: 0px;
+	top: 0px;
+	max-width: 50%
+}
+
+.leftlink img {
+	position: fixed;
+	width: 50%;
+	height: 25vh;
+	opacity: 0;
+}
+
+.rightlink img {
+	position: fixed;
+	right: 0px;
+	width: 50%;
+	height: 25vh;
+	opacity: 0;
+
+}
+
+.leftlink img:hover {
+	opacity: 1;
+	background-color: rgb(70, 70, 70);
+}
+
+.rightlink img:hover {
+	opacity: 01;
 
 }
 
 
-.blink-one {
-	animation:blink-one 12s infinite;
-}
+	#arrow {
+	display: block;
+	width: auto;
+	padding: auto;
+	margin: auto;
+	background-size: unset;
+	text-decoration: none;
+	font-weight: bolder;
+	color: transparent;
+	font-size: 8vh;
+} 
 
-.blink-two {
-	animation:blink-two 12s infinite;
-}
+	#arrow:hover {
+		color: rgb(230 230 230);
+		background-color: rgb(70, 70, 70);
+		opacity: 1;
+	}
 
-.blink-three {
-	animation:blink-three 12s infinite;
-}
 
-@keyframes blink-one{
+/* #personal {
+	position: absolute;
+	font-size: 5vw;
+	color: black;
+	bottom: 0px;
+	left: 0px;
+	width: 100%
+} */
 
-	0%	{color: transparent;}
-	5%	{color: #ff00ff;}
-	10%	{color: #ff00ff;}
-	15%	{color: transparent;}
-	20%	{color: transparent;}
-	25%	{color: transparent;}
-	30%	{color: transparent;}
-	35%	{color: #ccff00;}
-	40%	{color: #ccff00;}
-	45%	{color: transparent;}
-	50%	{color: transparent	;}
-	55%	{color: transparent;}
-	60%	{color: transparent;}
-	65%	{color: #ff8D03;}
-	70%	{color: #ff8D03;}
-	75%	{color: transparent;}
-	80%	{color: transparent;}
-	85%	{color: transparent;}
-	90% {color: transparent}
-	91% {color: #FF3103;}
-	92% {color: transparent;}
-	93%	{color: #FF3103;}
-	94%	{color: transparent;}
-	95% {color: #FF3103;}
-	96%	{color: transparent;}
-	97% {color: #FF3103;}
-	98%	{color: transparent;}
-	99% {color: #FF3103;}
-	100%{color: transparent;}
-}
+/* General styles and probably some other redundant code! */
 
-@keyframes blink-two{
-	0%	{color: transparent;}
-	5%	{color: transparent;}
-	10%	{color: transparent;}
-	15%	{color: #F205CB}
-	20%	{color: #F205CB}
-	25%	{color: transparent;}
-	30%	{color: transparent;}
-	35%	{color: transparent;}
-	40%	{color: transparent;}
-	45%	{color: #E6ED07;}
-	50%	{color: #E6ED07 ;}
-	55%	{color: transparent;}
-	60%	{color: transparent;}
-	65%	{color: transparent;}
-	70%	{color: transparent;}
-	75%	{color: #ff6103;}
-	80%	{color: #ff6103;}
-	85%	{color: transparent;}
-	90% {color: transparent}
-	91% {color: #FF3103;}
-	92% {color: transparent;}
-	93%	{color: #FF3103;}
-	94%	{color: transparent;}
-	95% {color: #FF3103;}
-	96%	{color: transparent;}
-	97% {color: #FF3103;}
-	98%	{color: transparent;}
-	99% {color: #FF3103;}
-	100%{color: transparent;}
-}
-
-@keyframes blink-three{
-	0%	{color: transparent;}
-	5%	{color: transparent;}
-	10%	{color: transparent;}
-	15%	{color: transparent;}
-	20% {color: transparent;}
-	25%	{color: #FF1493;}
-	30%	{color: #FF1493;}
-	35%	{color: transparent;}
-	40%	{color: transparent;}
-	45%	{color: transparent;}
-	50%	{color: transparent;}
-	55%	{color: #7FFF00;}
-	60%	{color: #7FFF00;}
-	65%	{color: transparent;}
-	70%	{color: transparent;}
-	75%	{color: transparent;}
-	80%	{color: transparent;}
-	85%	{color: #FF3103;}
-	89%	{color: #FF3103;}
-	90% {color: transparent}
-	91% {color: #FF3103;}
-	92% {color: transparent;}
-	93%	{color: #FF3103;}
-	94%	{color: transparent;}
-	95% {color: #FF3103;}
-	96%	{color: transparent;}
-	97% {color: #FF3103;}
-	98%	{color: transparent;}
-	99% {color: #FF3103;}
-	100%{color: transparent;}
+h1 {
+	position: relative;
+	margin: auto;
+	display: block;
+	font-weight: bolder;
+	font-size: 90px;
+	text-align: center;
+	color: rgb(70, 70, 70);
+	background-color: none;
+	width: auto;
+	z-index: 3;
 }
 
 
+#defaultface {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
 
+main p {
+	text-align: center;
+}
 
-/* 
-
-	Animation colors:
-
-5%	{color: hotpink;}
-30%	{color: rgb(214, 0, 221);}
-50%	{color: rgb(87, 0, 201);}
-70%	{color: rgb(172, 66, 66);}
-90%	{color: rgb(252, 192, 82);}
-
-*/
-
-
-
-Plastic Pink:
-#FF1493
-
-Bright Pink:
-#F205CB
-
-Magenta:
-#ff00ff
-
-Dark Magenta:
-#7700b3
-
-Purple:
-#D705F2
-
-Proton Purple:
-#8A2BE2
-
-Absinthe:
-#E6ED07
-
-Neon Green:
-#7FFF00;
-
-Electric Lime:
-#ccff00
-
+br {
+	font-size: 100px;
+}
