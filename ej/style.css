@@ -1,0 +1,319 @@
+* {
+  color: #383838;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  padding-top: 20px;
+  max-width: 95vw;
+  margin: auto;
+}
+
+body h2 {
+  font-size: 56px;
+}
+
+body h3 {
+  font-size: 32px;
+}
+
+main {
+  max-width: 85vw;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  padding-left: 10px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+header nav a:hover {
+  color: #df15a2;
+}
+
+header span {
+  color: #00ee;
+}
+
+.container-landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.container-landing .big-type {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+}
+
+.container-landing .big-type h1 {
+  font-weight: 100;
+  font-size: 120px;
+  font-family: youngserif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.container-landing .landing-text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / span 8;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 6;
+  grid-row: 4 / span 6;
+}
+
+.container-landing .landing-text p,
+.container-landing .landing-text span {
+  font-size: 48px;
+}
+
+.container-landing .landing-text p span,
+.container-landing .landing-text span span {
+  font-size: 48px;
+  border-bottom: 1px dotted #383838;
+}
+
+.container-landing .contact-links {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1 / span 10;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 10;
+  grid-row: 7 / span 10;
+}
+
+.container-landing .contact-links p {
+  font-size: 48px;
+}
+
+.container-landing .headshot-1 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9 / span 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3/ span 4;
+  text-align: center;
+}
+
+.container-landing a {
+  border-bottom: 1px dotted #383838;
+  font-size: 40px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  color: #00ee;
+}
+
+.container-landing a:hover {
+  color: #df15a2;
+}
+
+.container-work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  -ms-grid-rows: (1fr)[14];
+      grid-template-rows: repeat(14, 1fr);
+}
+
+.container-work .title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.container-work .card-1 {
+  border: 1px solid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 8;
+  grid-row: 3 / span 8;
+  border-radius: 10px;
+}
+
+.container-work .card-1 p {
+  padding: 20px;
+}
+
+.container-work .card-2 {
+  border: 1px solid;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8 / span 5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 8;
+  grid-row: 4 / span 8;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.container-work .card-2 p {
+  padding: 20px;
+}
+
+.container-resume {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+
+.container-resume .title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.container-resume .card-3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / span 6;
+}
+
+.container-resume .card-4 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-column: 7 / span 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / span 6;
+  margin-left: 20px;
+}
+
+.container-resume .card-5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / span 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / span 6;
+}
+
+.container-resume .card-6 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-column: 7 / span 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / span 6;
+  margin-left: 20px;
+}
+
+.container-resume h3 {
+  margin-bottom: 40px;
+}
+
+.container-resume p {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.container-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+
+.container-about .title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 40px;
+}
+
+.container-about .card-7 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2 / span 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2 / span 7;
+}
+
+.container-about .card-7 p {
+  line-height: 2;
+  font-size: 24px;
+}
+
+.container-about .headshot-2 {
+  border: 1px solid;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / span 2;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 2;
+  grid-column: 10 / span 2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  bottom: 10px;
+  left: 10px;
+}
+
+footer .email {
+  position: fixed;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+footer .email a {
+  color: #8a8a8a;
+}
+
+footer .email a {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+footer .email a:hover {
+  color: #df15a2;
+}
+/*# sourceMappingURL=style.css.map */
