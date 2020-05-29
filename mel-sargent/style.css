@@ -4,12 +4,12 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9))), url(./images/lights.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(./images/lights.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9))), url("./images/lights.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("./images/lights.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .burger {
@@ -20,16 +20,13 @@ body {
   cursor: pointer;
   margin: 4px 10px;
   z-index: 2;
-  /* Rotate first bar */
-  /* Fade out the second bar */
-  /* Rotate last bar */
 }
 
 .burger .bar1, .burger .bar2, .burger .bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
-  margin: 6px 0px;
+  margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 1px 2px 2px black;
@@ -38,6 +35,7 @@ body {
 
 .burger.change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
   background-color: black;
 }
@@ -48,12 +46,13 @@ body {
 
 .burger.change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: black;
 }
 
 nav {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: transparent;
   display: relative;
 }
@@ -122,7 +121,7 @@ main .jumbotron {
 main .jumbotron h2 {
   font-size: 48px;
   font-weight: 100;
-  margin: 30px 20px 5px 20px;
+  margin: 30px 20px 5px;
 }
 
 main .jumbotron p {
@@ -137,11 +136,14 @@ main .header {
   padding-bottom: 20px;
   color: white;
   text-align: center;
-  text-shadow: h2;
-  text-shadow-font-size: 48px;
-  text-shadow-font-weight: 100;
-  text-shadow-margin: 30px 20px 5px 20px;
-  text-shadow-padding: 20px;
+  text-shadow: 1px 2px 2px black;
+}
+
+main .header .header h2 {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 30px 20px 5px;
+  padding: 20px;
 }
 
 main .about-me {
@@ -231,6 +233,27 @@ main .get-in-touch {
   padding: 15px;
   margin-top: 100px;
   width: 80%vw;
+}
+
+main .get-in-touch .icons {
+  width: 400px;
+  height: 100px;
+  color: black;
+  opacity: 1;
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+main .get-in-touch .icons .fa {
+  height: 25px;
 }
 
 @media only screen and (min-width: 1067px) {
