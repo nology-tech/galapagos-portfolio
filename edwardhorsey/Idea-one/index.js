@@ -34,15 +34,18 @@ const boxFocus = (id) => {
   // ['boxOne', 'boxTwo', 'boxThree', 'boxFour'];
 
   boxes.forEach(e=>{
+    let media = window.matchMedia("(min-width: 800px)");
     document.getElementById(e).classList.remove('focus');
     document.getElementById(e).classList.remove('sub');
     document.getElementById(e).style.order = '';
+    if (media.matches){
     if (e===id){
       document.getElementById(e).classList.add('focus');
       document.getElementById(e).style.order = `-${boxes.indexOf(e)}`;
-      typeWriter(`${id}P`, 25);
+      typeWriter(`${id}P`, 15);
     } else {
       document.getElementById(e).classList.add('sub');
+    }
     }
   });
 };
