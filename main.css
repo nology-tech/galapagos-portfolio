@@ -37,7 +37,7 @@ nav {
 }
 
 a {
-  width: 275px;
+  width: 280px;
   color: white;
   text-decoration: none;
 }
@@ -56,7 +56,8 @@ a:hover > .trainee-img {
 }
 
 .trainee-img {
-  width: 100%;
+  width: 280px;
+  height: 350px;
   border: solid 2px rgb(70, 50, 111);
   border-bottom: none;
   display: block;
