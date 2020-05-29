@@ -1,3 +1,7 @@
+// document.querySelector('burger').addEventListener('click', function expand(x) {
+//   x.classList.toggle('change');
+// });
+
 const expand = (x) => {
   x.classList.toggle('change');
   const mainNav = document.getElementById('dropdown');
