@@ -95,7 +95,7 @@ section {
 	font-family: 'sfalienencsolid';
 	font-weight: normal;
 	font-style: normal;
-	font-size: 12vmin;
+	font-size: 6vmin;
 	height: 84vh;
 	/* background-color: red 0.6 0%; */
 	/* background-size: cover;
@@ -175,6 +175,12 @@ p {
 		font-size: 92.16px;
 	}  
 
+}
+
+@media screen and (max-height: 550px) {
+	p {
+		line-height: 0.9em;
+	}
 }
 
 /* Text animations for flashing neon lights */
