@@ -20,7 +20,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ label > i {
-  transform: translate(-30vw) rotate(180deg) scaleX(-1);
+  transform: translate(-110px) rotate(180deg) scaleX(-1);
 }
 
 
@@ -39,7 +39,7 @@ body {
     top: 0;
     width: 100vw;
     background-color: $bannercolor;
-    padding: 1vh 2vw 0 2vw;
+    padding: 10px 12px 10px 12px;
     display: flex;
     justify-content: space-between;
     font-size: 2.5*$titlefontsize;
@@ -85,14 +85,14 @@ body {
         height: auto;
         font-size: 2*$titlefontsize;
         font-weight: 900;
-        padding: 3%;
+        padding: 10px;
         color: black;
         position: relative;
 
         i {
           position: absolute;
-          left: 3%;
-          bottom: 5%;
+          left: 10px;
+          bottom: 8px;
         }
                 
         &:hover {

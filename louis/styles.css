@@ -17,8 +17,8 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ label > i {
-  -webkit-transform: translate(-30vw) rotate(180deg) scaleX(-1);
-          transform: translate(-30vw) rotate(180deg) scaleX(-1);
+  -webkit-transform: translate(-110px) rotate(180deg) scaleX(-1);
+          transform: translate(-110px) rotate(180deg) scaleX(-1);
 }
 
 body {
@@ -43,7 +43,7 @@ body header {
   top: 0;
   width: 100vw;
   background-color: #b0b4b2;
-  padding: 1vh 2vw 0 2vw;
+  padding: 10px 12px 10px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,15 +105,15 @@ body main section article {
   height: auto;
   font-size: 20px;
   font-weight: 900;
-  padding: 3%;
+  padding: 10px;
   color: black;
   position: relative;
 }
 
 body main section article i {
   position: absolute;
-  left: 3%;
-  bottom: 5%;
+  left: 10px;
+  bottom: 8px;
 }
 
 body main section article:hover {
