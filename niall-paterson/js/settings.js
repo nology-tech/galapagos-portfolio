@@ -1,6 +1,6 @@
 export const settings = {
   colorMode: 'light',
-  menu: "off"
+  menu: 'off'
 };
 
 export const updateSettings = function () {

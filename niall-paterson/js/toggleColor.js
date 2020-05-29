@@ -1,7 +1,7 @@
 import { settings } from './settings.js';
 
-const colorToggleBtn = document.querySelector("#colorToggle");
-const menuToggleBtn = document.querySelector("#menuToggle");
+const colorToggleBtn = document.querySelector('#colorToggle');
+const menuToggleBtn = document.querySelector('#menuToggle');
 
 export const toggleColor = function () {
   document.querySelectorAll('*').forEach(element => {
@@ -14,15 +14,15 @@ export const toggleColor = function () {
     }
   });
 
-  if (colorToggleBtn.src.includes("light")) {
-    colorToggleBtn.src = "./assets/toggle-dark.svg";
+  if (colorToggleBtn.src.includes('light')) {
+    colorToggleBtn.src = './assets/toggle-dark.svg';
   } else {
-    colorToggleBtn.src = "./assets/toggle-light.svg";
+    colorToggleBtn.src = './assets/toggle-light.svg';
   }
 
-  if (menuToggleBtn.src.includes("light")) {
-    menuToggleBtn.src = "./assets/hamburger-dark.svg";
+  if (menuToggleBtn.src.includes('light')) {
+    menuToggleBtn.src = './assets/hamburger-dark.svg';
   } else {
-    menuToggleBtn.src = "./assets/hamburger-light.svg";
+    menuToggleBtn.src = './assets/hamburger-light.svg';
   }
 };
