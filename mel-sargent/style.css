@@ -269,7 +269,7 @@ main .get-in-touch .icons {
 }
 
 @media only screen and (min-width: 900px) {
-  #dropdown :hover {
+  #dropdown:hover {
     color: black;
     background-color: lightgray;
     -webkit-transition: 0.2s;
