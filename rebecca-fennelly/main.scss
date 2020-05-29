@@ -10,8 +10,8 @@ $bexfaceparentheight: 202px;
 }
 
 body {
-    // background-image: url("./images/greentriangles.jpg");
-    background-color: rgb(248, 233, 161);
+  // background-image: url("./images/greentriangles.jpg");
+  background-color: rgb(248, 233, 161);
 }
 
 header {
@@ -36,9 +36,9 @@ header {
 }
 
 main {
-    // background-image: url("./images/paint.jpg");
+  // background-image: url("./images/paint.jpg");
 
-    #parawrapper {
+  #parawrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ main {
     position: relative;
     height: 242px;
     // background-color: rgb(230, 219, 208);
-    background-color: rgb(248, 233, 161)
+    background-color: rgb(248, 233, 161);
   }
 
   .bexface {
