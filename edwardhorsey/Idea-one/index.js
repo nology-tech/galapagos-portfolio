@@ -63,9 +63,9 @@ document.getElementById('boxFour').addEventListener('click', () => {
   boxFocus('boxFour');
 });
 
-document.getElementById('submit').addEventListener('click', (e)=>{
-  e.preventDefault();
-});
+// document.getElementById('submit').addEventListener('click', (e)=>{
+//   e.preventDefault();
+// });
 
 const theYear = new Date;
 document.getElementById('year').innerHTML = `${theYear.getFullYear()}`;
