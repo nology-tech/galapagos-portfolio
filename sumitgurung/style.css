@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7070ee), to(#aae3e3));
+  background-image: linear-gradient(#7070ee, #aae3e3);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header #photo {
+  border: 2px solid black;
+  border-radius: 15px 50px;
+  margin: 10px;
+  -webkit-box-shadow: 5px 10px #636363;
+          box-shadow: 5px 10px #636363;
+}
+
+header #arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+P {
+  border: 2px solid black;
+  max-width: 90vw;
+  margin: 5px auto;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4ae8eb;
+}
+
+#projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects .container div {
+  border: 2px solid black;
+  text-align: center;
+  max-width: 90vw;
+  margin: 40px auto;
+  padding: 150px;
+  font-size: 1.5em;
+}
+
+#skills .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#skills .icon a {
+  z-index: 1;
+}
+
+#skills .icon a:hover {
+  opacity: 0.5;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea {
+  font-size: 1.5em;
+}
+
+#contact form label {
+  text-align: center;
+}
+
+#contact form input[type="text"],
+#contact form [type="email"] {
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+  z-index: 1;
+  border: none;
+}
+
+#contact form textarea {
+  width: 50%;
+  margin: 15px auto;
+  border-radius: 10px;
+  z-index: 1;
+  border: none;
+}
+
+#contact form input[type="submit"],
+#contact form [type="button"] {
+  width: 25%;
+  margin: 5px auto;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#contact form input[type="submit"]:hover,
+#contact form [type="button"]:hover {
+  cursor: pointer;
+}
+
+#contact .contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 60px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
