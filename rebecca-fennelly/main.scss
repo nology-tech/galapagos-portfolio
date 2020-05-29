@@ -9,6 +9,10 @@ $bexfaceparentheight: 202px;
   font-family: 'Shadows Into Light', cursive;
 }
 
+body {
+    // background-image: url("./images/greentriangles.jpg");
+    background-color: rgb(248, 233, 161);
+}
 
 header {
     
@@ -32,7 +36,9 @@ header {
 }
 
 main {
-  #parawrapper {
+    // background-image: url("./images/paint.jpg");
+
+    #parawrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +46,10 @@ main {
     width: 100vw;
     font-size: 40px;
     color: rgb(29, 26, 47);
-    background-color: rgb(230, 219, 208);
+    // background-color: rgb(230, 219, 208);
+    background-color: rgb(248, 233, 161);
     padding-top: 40px;
+
   }
       
   .para1 {
@@ -54,6 +62,7 @@ main {
     margin-bottom: 200px;
     margin-right: 5px;
     padding-left: 8px;
+    
   }
 
   .para2 {
@@ -64,13 +73,15 @@ main {
     // border-radius: 20px;
     margin-left: 5px;
     padding-right: 8px;
+    
   }
 
     
   .bexfaceparent { 
     position: relative;
     height: 242px;
-    background-color: rgb(230, 219, 208);
+    // background-color: rgb(230, 219, 208);
+    background-color: rgb(248, 233, 161)
   }
 
   .bexface {
@@ -151,7 +162,7 @@ main {
         height: 100vw;
         font-size: 40px;
         color: rgb(29, 26, 47);
-        background-color: rgb(230, 219, 208);
+        background-color: rgb(248, 233, 161);
         padding-top: 40px;
       }
       
@@ -166,7 +177,7 @@ main {
       .bexfaceparent { 
         position: relative;
         width: 360px;
-        background-color: rgb(230, 219, 208);
+        background-color: rgb(248, 233, 161);
 
       }
     }

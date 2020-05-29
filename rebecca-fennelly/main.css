@@ -6,6 +6,10 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
+body {
+  background-color: #f8e9a1;
+}
+
 header {
   height: 150px;
   display: -webkit-box;
@@ -44,7 +48,7 @@ main #parawrapper {
   width: 100vw;
   font-size: 40px;
   color: #1d1a2f;
-  background-color: #e6dbd0;
+  background-color: #f8e9a1;
   padding-top: 40px;
 }
 
@@ -71,7 +75,7 @@ main .para2 {
 main .bexfaceparent {
   position: relative;
   height: 242px;
-  background-color: #e6dbd0;
+  background-color: #f8e9a1;
 }
 
 main .bexface {
@@ -141,7 +145,7 @@ main .bexface {
     height: 100vw;
     font-size: 40px;
     color: #1d1a2f;
-    background-color: #e6dbd0;
+    background-color: #f8e9a1;
     padding-top: 40px;
   }
   body .bexface {
@@ -154,7 +158,7 @@ main .bexface {
   body .bexfaceparent {
     position: relative;
     width: 360px;
-    background-color: #e6dbd0;
+    background-color: #f8e9a1;
   }
 }
 /*# sourceMappingURL=main.css.map */
