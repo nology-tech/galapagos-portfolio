@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EJ | Portfolio</title>
   </head>
   <body>
-    <p>
-      HI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    </p>
+    <header>
+      <nav>
+        <a href="#about"><span>01.</span>Work </a>
+        <a href="#resume"><span>02.</span> Resumé</a>
+        <a href="#about"><span>03.</span> About</a>
+        <a href="#contact"><span>04.</span> Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="container-landing" data-aos="fade-in">
+        <div class="big-type">
+          <h1>Hi, I'm EJ.</h1>
+        </div>
+        <div class="landing-text">
+          <p>
+            I’m a <span>Creative Designer</span> & <span> Junior Developer </span>from London,
+            United Kingdom. I am currently on on a 12-week intensive web development course at
+            _nology.io.
+          </p>
+        </div>
+        <div class="contact-links">
+          <p>
+            &#128073; Find me on
+            <a href=""> LinkedIn</a>, <a href="">Twitter</a>, <a href="">Github</a>.
+          </p>
+        </div>
+        <div class="headshot-1"><img src="./Portrait.png" alt=""></div>
+      </section>
+
+      <section class="container-work" data-aos="fade-in" >
+        <div class="title" id="work"><h2>Selected Work</h2></div>
+        <div class="card-1">
+          <p>Project 1</p>
+        </div>
+        <div class="card-2">
+          <p>Project 2</p>
+        </div>
+      </section>
+
+      <section class="container-resume" data-aos="fade-in">
+        <div class="title" id="resume"><h2>Resumé</h2></div>
+        <div class="card-3">
+          <h3>Work Experience</h3>
+          <p>HSBC UK</p>
+          <li>Personal Banker (Retail)</li>
+          <p>_nology.io</p>
+          <li>Trainee Software Developer</li>
+        </div>
+        <div class="card-4">
+          <h3>Education</h3>
+          <p>Univeristy of Hertfordshire</p>
+          <li>BA (Hons) Economics, 2014-2017</li>
+          <p>_nology.io</p>
+          <li>Software Development 12-Week intensive course</li>
+          <p>SuperHi</p>
+          <li>UX/UI & Web Development</li>
+        </div>
+      </section>
+
+      <section class="container-resume" data-aos="fade-in">
+        <div class="title" id="skills"><h2>Skills</h2></div>
+        <div class="card-5">
+          <h3>
+            Development
+          </h3>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>SASS</p>
+          <p>JavaScript</p>
+        </div>
+        <div class="card-6">
+          <h3>Tools</h3>
+          <p>Git</p>
+          <p>Github</p>
+        </div>
+      </section>
+      <section class="container-about" data-aos="fade-in">
+        <div class="title" id="about"><h2>About Me</h2></div>
+        <div class="card-7">
+          <p>
+            Hi! My name is EJ, I am a 24 year old British-Nigerian with a passion for all things
+            computer science!, I have been self teaching my self coding for a few months in my spare
+            time, but have significantly increased my time spent learning since quitting my job in
+            retail banking a few months ago to pursue my dream career! When I'm not writing code, I
+            enjoy working out in the gym, socialising and plenty of netflix!
+          </p>
+        </div>
+        <div class="headshot-2"><p>Headshot 2</p></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="email">
+        <a href="mailto:emmanuel.ichiebuka@gmail.com">emmanuel.ichiebuka@gmail.com</a>
+      </div>
+      <p>Created by EJ &#129304;</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
