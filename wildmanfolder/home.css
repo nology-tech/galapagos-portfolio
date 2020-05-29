@@ -334,10 +334,28 @@ section.second-content #headline div.text.third-line p {
 }
 
 .second-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: url(./assets/images/background-four.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 76vh;
+	width: 100%;
 }
+
+	/* The form */
+
+	body > section.second-content > div > div > p {
+		font-family: 'scriptina';
+		font-size: 15vmin;
+		color: var(--portfolio-purple);
+		line-height: 1em;
+		text-align: center;
+	}
+
+
+
 
 	/* Last but not least. If you're still reading, I applaud you. */
 
@@ -364,8 +382,8 @@ footer > nav > ul {
 	height: 100%;
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 2fr 2fr 1fr 1fr;
+	grid-template-rows: 5fr;
 	letter-spacing: initial;
 }
 
@@ -381,15 +399,19 @@ footer > nav > ul > li > a {
 
 	width: 100%;
 	height: auto;
-	color: var(--portfolio-light-blue);
+	color: var(--portfolio-blue);
 	text-decoration: none;
 }
 
 	/* This is where it gets funky... */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 823px) {
 
 	header {
+		z-index: 2;
+	}
+
+	#bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line {
 		z-index: 1;
 	}
 
@@ -471,6 +493,25 @@ footer > nav > ul > li > a {
 		border-bottom: 1px var(--portfolio-light-blue) double
 	}
 
+	section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
+		line-height: 1.2em;
+		font-size: 2.5em;
+	}
+
+	section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
+		font-size: 4em;
+	}
+
+	section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
+		font-size: 6em;
+		background-color: unset;
+	}
+
+	section.first-content #first-content-headline div.text p {
+		line-height: 2;
+		font-size: 2em;
+	}
+
 	section.first-content #first-content-caption > div.text.fourth-line {
 		display: none;
 	}
@@ -483,44 +524,78 @@ footer > nav > ul > li > a {
 	}
 
 	section.first-content #first-content-headline > div.text.fourth-line {
-		display: unset;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
 	}
 
 	section.first-content #first-content-headline > div.text.fourth-line > p {
-	border-top-right-radius: 2em;
-	border-top-left-radius: 2em;
-	border-bottom-right-radius: 2em;
-	background-color: #36394633;
-	font-family: 'streamster';
-	color: var(--portfolio-blue);
-	text-shadow: unset;
-	font-size: 9em;
-	line-height: 2em;
+		width: 30%;
+		border-top-right-radius: 100%;
+		border-top-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		background-color: rgba(91, 46, 72, 0);
+		font-family: 'streamster';
+		color: var(--portfolio-blue);
+		text-shadow: unset;
+		font-size: 5em;
+		line-height: 2em;
 	}
 
 
 	section.first-content #first-content-headline > div.text.fourth-line:hover > p {
 		width: 100%;
-		background-color: #36394633;
+		background-color: transparent;
+		background-image: linear-gradient(to bottom, rgba(91, 46, 72, 0), rgba(91, 46, 72, 1));
 		border-top-right-radius: 0em;
 		border-top-left-radius: 0em;
 		border-bottom-right-radius: 0em;
-		letter-spacing: 0.1em;
-		font-size: 16em;
+		letter-spacing: 0.3em;
+		font-size: 10em;
 		line-height: 2em;
-		color: var(--portfolio-purple);
-		text-shadow: 0px 0px 20px #8EA8C3;
+		color: var(--portfolio-black);
+		text-shadow: 0px 0px 5px #8EA8C3;
 		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: width 1.5s, background-color 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
+		transition: width 1.5s, background-color 1.5s, background-image 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
 
 	}
 
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
+
+	section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
+		line-height: 1.2em;
+		font-size: 3.5em;
+	}
+
+	section.first-content #first-content-headline div.text.second-line p {
+		font-size: 4em;
+	}
+
+	section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
+		font-size: 6em;
+		background-color: unset;
+	}
+
+	section.first-content #first-content-headline div.text p {
+		line-height: 1.5;
+		font-size: 4em;
+	}
+
+
+	section.first-content #first-content-headline > div.text.fourth-line > p {
+		font-size: 7em;
+	}
+
+
+	section.first-content #first-content-headline > div.text.fourth-line:hover > p {
+		font-size: 12em;
+	}
 
 	header > nav > ul > li > a {
-		font-size: 2.4em;
+		font-size: 2.6em;
 	}
 }
 
