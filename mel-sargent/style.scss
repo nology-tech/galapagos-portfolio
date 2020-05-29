@@ -1,4 +1,4 @@
-$font: 'Raleway', sans-serif;
+
 
 @mixin section-top {
   background-color: white;
@@ -20,7 +20,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  font-family: $font;
+  font-family: 'Raleway', sans-serif;
 }
 
 .burger {
@@ -78,7 +78,7 @@ body {
 }
 
 nav {
-  font-family: $font;
+  font-family: 'Raleway', sans-serif;
   background-color: transparent;
   display: relative;
 
@@ -206,12 +206,6 @@ main {
           background-color: darkgray;
           border: solid 2px black;
           padding: 10px;
-
-          :active {
-            background-color: red;
-            box-shadow: 2px 2px 20px white;
-            border: solid 2px white;
-          }
         }
       }
     }
@@ -235,14 +229,14 @@ main {
   }
 }
 
-@media only screen and (min-width: 1067px) {
+@media only screen and (min-width: 900px) {
   #dropdown &:hover {
     color: black;
     background-color: lightgray;
     transition: 0.2s;
   }
 
-  .column &div &:hover {
+  .frame &:hover {
     background-color: red;
     box-shadow: 2px 2px 20px white;
     border: solid 2px white;

@@ -21,11 +21,6 @@ const expand = (x) => {
 // mainNav.classList.toggle('show');
 // };
 
-// const expand = (x) => {
-//   x.classList.toggle('change');
-//   const mainNav = document.getElementById('dropdown');
-//   mainNav.classList.toggle('show');
-// };
 
 // const menu = document.getElementsByClassName('burger');
 // menu.onclick = expand = (x) => {

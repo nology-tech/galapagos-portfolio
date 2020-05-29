@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .burger {
@@ -74,7 +74,7 @@ body {
 }
 
 nav {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: transparent;
   display: relative;
 }
@@ -240,13 +240,6 @@ main .my-work .grid .column div {
   padding: 10px;
 }
 
-main .my-work .grid .column div :active {
-  background-color: red;
-  -webkit-box-shadow: 2px 2px 20px white;
-          box-shadow: 2px 2px 20px white;
-  border: solid 2px white;
-}
-
 main .get-in-touch {
   background-color: white;
   opacity: 0.97;
@@ -274,14 +267,14 @@ main .get-in-touch .icons {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1067px) {
+@media only screen and (min-width: 900px) {
   #dropdown :hover {
     color: black;
     background-color: lightgray;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  .column div :hover {
+  .frame :hover {
     background-color: red;
     -webkit-box-shadow: 2px 2px 20px white;
             box-shadow: 2px 2px 20px white;
