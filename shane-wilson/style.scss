@@ -41,6 +41,12 @@ header h1 {
     margin: 40px;
 }
 
+header i {
+    color: $colour;
+    margin: 8px;
+    padding: 12px;
+}
+
 .dt {
     display: none;
 }
@@ -51,10 +57,6 @@ header h1 {
     border: $colour solid 1px;
     border-top: solid $colour 20px;
     border-radius: 10px;
-}
-
-#navb img {
-    display: none;
 }
 
 #menu-button {
@@ -78,6 +80,30 @@ article {
     border: $colour solid 1px;
     border-top: solid $colour 20px;
     border-radius: 10px;
+}
+
+article p {
+    margin: 10px;
+    padding: 8px;
+    color: grey;
+}
+
+article .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vh;
+    width: 100vw;
+    margin: 0 auto;
+    gap: 12px;
+    padding: 20px;
+}
+
+article div {
+    border: 2px solid $colour;
+    border-radius: 10px;
+    background: url(./img/background3.jpg);
+    background-size: contain;
 }
 
 aside .social i {
@@ -132,12 +158,12 @@ footer {
         "navb navb navb navb navb"
         "article article article article aside"
         "article article article article aside"
-        "article article article article aside"
+        "article article article article ."
         "footer footer footer footer footer"
     }
 
     body h3 {
-        padding: 16px;
+        
         position: relative;
     }
 
@@ -150,6 +176,12 @@ footer {
     
     header h1 {
         text-align: center;  
+    }
+
+    header i {
+        color: $colour;
+        margin: 8px;
+        padding: 12px;
     }
 
     .mob {
@@ -193,6 +225,24 @@ footer {
         border: $colour solid 1px;
         border-top: solid $colour 20px;
         border-radius: 10px;
+    }
+
+    article .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 30vh;
+        width: 50vw;
+        margin: 0 auto;
+        gap: 12px;
+        padding: 20px;
+    }
+    
+    article div {
+        border: 2px solid $colour;
+        border-radius: 10px;
+        background: url(./img/background3.jpg);
+        background-size: contain;
     }
 
     aside { 
