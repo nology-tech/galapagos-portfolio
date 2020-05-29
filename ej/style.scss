@@ -37,7 +37,7 @@ header {
     a {
       padding-left: 10px;
       transition: ease 0.3s;
-      
+
       &:hover {
         color: #df15a2;
       }
@@ -54,12 +54,7 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-
   grid-gap: 20px;
-
-  div {
-    border-radius: 10px;
-  }
 
   .big-type {
     grid-column: 1 / span 12;
@@ -93,7 +88,7 @@ header {
   .contact-links {
     margin-top: 20px;
     grid-column: 1 / span 10;
-    grid-row: 8 / span 10;
+    grid-row: 7 / span 10;
 
     p {
       font-size: 48px;
@@ -101,9 +96,8 @@ header {
   }
 
   .headshot-1 {
-    border: 1px solid;
-    grid-column: 10 / span 4;
-    grid-row: 4 / span 4;
+    grid-column: 9 / span 4;
+    grid-row: 3/ span 4;
     text-align: center;
   }
 
@@ -147,7 +141,7 @@ header {
     grid-row: 4 / span 8;
     margin-left: 20px;
     border-radius: 10px;
-    
+
     p {
       padding: 20px;
     }
@@ -246,7 +240,7 @@ footer {
 
     a {
       transition: ease 0.5s;
-      
+
       &:hover {
         color: #df15a2;
       }
