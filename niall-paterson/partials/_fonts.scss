@@ -13,6 +13,10 @@ i,
 li {
   font-size: $medium-font;
   text-align: center;
+  
+  &#about-title {
+    text-align: left;
+  }
 }
 
 p {
