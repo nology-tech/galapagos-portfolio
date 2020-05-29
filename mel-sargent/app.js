@@ -5,9 +5,9 @@ const expand = (x) => {
 };
 
 // function expand(x) {
-  // x.classList.toggle('change');
-  // const mainNav = document.getElementById('dropdown');
-  // mainNav.classList.toggle('show');
+// x.classList.toggle('change');
+// const mainNav = document.getElementById('dropdown');
+// mainNav.classList.toggle('show');
 // }
 
 // const menu = document.getElementById('burger');
