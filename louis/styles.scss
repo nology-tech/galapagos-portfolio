@@ -4,24 +4,11 @@
   box-sizing: border-box;
 }
 
-$bannercolor: rgb(176, 180, 178);
+$bannercolor: rgb(159, 160, 160);
 $hoverhighlight: 0 0 6px 6px white;
-$articlecolor: #827f7f;
+$articlecolor: #797777;
 $titlefontsize: 10px;
 $iconcolour: rgba(48, 96, 174, 0.898);
-
-
-input[type=checkbox] {
-  display: none;
-}
-
-.clickspin i {
-  transition: transform 1s;
-}
-
-input[type=checkbox]:checked ~ label > i {
-  transform: translate(-110px) rotate(180deg) scaleX(-1);
-}
 
 
 body {
@@ -38,11 +25,19 @@ body {
     position: fixed;
     top: 0;
     width: 100vw;
+    min-height: 50px;
     background-color: $bannercolor;
-    padding: 10px 12px;
+    padding: 9px;
     display: flex;
     justify-content: space-between;
     font-size: 2.5*$titlefontsize;
+
+    input[type=checkbox] {
+      display: none;
+    }
+    input[type=checkbox]:checked ~ label > i {
+    transform: translate(-117px) rotate(180deg) scaleX(-1);
+    }
 
     h1 {
       font-size: 2.3*$titlefontsize;
@@ -51,11 +46,69 @@ body {
     i {
       color: $iconcolour;
       -webkit-text-stroke: 1px black;
-
+      transition: transform 1s;
+    
       &:hover {
         color: white;
         cursor: pointer;
       }
+    }
+
+    nav {
+    
+        ul {
+        width: 120px;
+        height: 30px;
+        padding: 3px;
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        right: 2px;
+        top: 9px;
+        font-size: 2*$titlefontsize;
+                
+        li {
+          &#link1 {
+            &.spinicon {
+              transform: rotate(180deg);
+              transition: transform 1s;
+              transition-delay: 1s;
+            }  
+          }
+          &#link2 {
+            &.spinicon2 {
+              transform: rotate(180deg);
+              transition: transform 1s;
+              transition-delay: 1s;
+            }  
+          }
+          &#link3 {
+            &.spinicon3 {
+              transform: rotate(180deg);
+              transition: transform 1s;
+              transition-delay: 1s;
+            }  
+          }
+          &#link4 {
+            &.spinicon4 {
+              transform: rotate(180deg);
+              transition: transform 1s;
+              transition-delay: 1s;
+            }  
+          }
+        }
+          i {
+          padding: 0 3px;
+          color: rgb(220, 145, 145);
+          }
+
+        &.show {display: flex;}
+      }
+    }
+    
+
+    li {
+      list-style: none;
     }
   }
 
@@ -82,6 +135,7 @@ body {
         border: 1px solid rgba(0, 0, 0, 0.548);
         border-radius: 4px;
         width: 50vw;
+        max-width: 500px;
         height: auto;
         font-size: 2*$titlefontsize;
         font-weight: 900;
@@ -102,7 +156,6 @@ body {
     
         &.welcome {
           grid-area: 1 / 2 / 1 / 4;
-          align-self: stretch;
           background-color: $articlecolor;
           font-size: 3*$titlefontsize;
           color: $iconcolour;
@@ -111,19 +164,16 @@ body {
 
         &.code {
           grid-area: 2 / 1 / 2 / 3;
-          align-self: stretch;
           background-color: lighten($articlecolor, 8%);
         }
 
-        &.baking {
+        &.bio {
           grid-area: 3 / 2 / 3 / 4;
-          align-self: stretch;
           background-color: lighten($articlecolor, 16%);
         }
 
-        &.botany {
+        &.contact {
           grid-area: 4 / 1 / 4 / 3;
-          align-self: stretch;
           background-color: lighten($articlecolor, 24%);
         }        
       }
