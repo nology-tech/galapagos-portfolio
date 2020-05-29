@@ -1,12 +1,13 @@
 nav {
   display: none;
-  z-index: 999;
+  z-index: 998;
   position: fixed;
 
   ul {
-    @include flex-column;
+    @include flex-column-around;
     width: $full-width;
-    height: $full-height;
+    height: 80vh;
+    padding-top: 10vh;
   }
 
   button {
@@ -18,26 +19,35 @@ nav {
 
 #fixed-header {
   @include fixed-menu($header: true);
-  
-  i {
+  z-index: 999;
+
+  img {
     margin: $margin-medium;
   };
 }
 
 h1 {
   margin: $margin-large 0;
+  padding: $padding-medium;
 }
 
 h2 {
-  margin: $margin-medium 0;
+  margin: $margin-large;
+  padding: $padding-small 0;
 }
 
 p {
   margin: $margin-small;
+  padding: $padding-medium 0;
 }
 
 section {
-  @include flex-column;
+
+  @include flex-column-around;
+
+  &#home {
+    @include flex-column-center;
+  }
 }
 
 section,
@@ -48,6 +58,8 @@ ul {
 .project-links {
   @include flex-row-even;
   width: $large-width;
+  margin: $margin-large 0;
+  padding: $padding-medium 0;
 }
 
 .project-header {
@@ -61,4 +73,9 @@ ul {
 
 footer {
   @include fixed-menu($header: false);
+}
+
+img {
+  width: 50px;
+  height: 25px;
 }
