@@ -8,13 +8,14 @@
 
 body {
   background: url(./img/background2.jpg);
+  background: contain;
   background-size: 100%;
   display: -ms-inline-grid;
   display: inline-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 200px 200px 1fr 1fr 1fr 200px;
+      grid-template-rows: 200px 200px 1fr 1fr 1fr 200px;
   height: 100%;
   width: 100%;
   gap: 10px;
@@ -22,7 +23,8 @@ body {
 }
 
 body h3 {
-  padding: 16px;
+  position: relative;
+  text-align: center;
 }
 
 header {
@@ -42,11 +44,15 @@ header h1 {
 
 header i {
   color: purple;
-  margin: 8px;
-  padding: 12px;
+  margin: 12px;
+  padding-right: 8px;
 }
 
-.dt {
+header i:hover {
+  color: #fa0a82;
+}
+
+header .dt {
   display: none;
 }
 
@@ -59,6 +65,15 @@ header i {
   border: purple solid 1px;
   border-top: solid purple 20px;
   border-radius: 10px;
+}
+
+#navb a {
+  display: block;
+  padding: 8px;
+}
+
+#navb div:hover {
+  color: #fa0a82;
 }
 
 #menu-button {
@@ -108,19 +123,15 @@ article .projects {
   padding: 20px;
 }
 
+article .projects:hover {
+  color: #fa0a82;
+}
+
 article div {
   border: 2px solid purple;
   border-radius: 10px;
   background: url(./img/background3.jpg);
   background-size: contain;
-}
-
-aside .social i {
-  color: purple;
-  padding: 8px;
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-bottom: 8%;
 }
 
 aside {
@@ -134,6 +145,22 @@ aside {
   border-radius: 10px;
 }
 
+aside i {
+  color: purple;
+  font-size: 400%;
+  padding: 20px;
+  margin: 8px;
+}
+
+aside .social .box {
+  display: inline;
+  padding: 20px;
+}
+
+aside i:hover {
+  color: #fa0a82;
+}
+
 footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
@@ -142,19 +169,11 @@ footer {
   background-color: black;
   border-radius: 10px;
   border: solid 1px purple;
-}
-
-footer {
   width: auto;
   font-size: 12px;
   color: white;
   padding: 25px;
   background: url(./img/background3.jpg);
-}
-
-#navb a {
-  display: block;
-  padding: 8px;
 }
 
 @media only screen and (min-width: 780px) {
@@ -165,16 +184,17 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 200px 200px 1fr 1fr 1fr 200px;
+        grid-template-rows: 200px 200px 1fr 1fr 1fr 200px;
     min-height: 50vh;
-    max-width: 80%;
+    max-width: 90%;
     gap: 20px;
     margin: 0 auto;
         grid-template-areas: "header header header header header" "navb navb navb navb navb" "article article article article aside" "article article article article aside" "article article article article ." "footer footer footer footer footer";
   }
   body h3 {
     position: relative;
+    text-align: center;
   }
   header {
     -ms-grid-row: 1;
@@ -192,11 +212,15 @@ footer {
     color: purple;
     margin: 8px;
     padding: 12px;
+    float: left;
   }
-  .mob {
+  header i:hover {
+    color: #fa0a82;
+  }
+  header .mob {
     display: none;
   }
-  .dt {
+  header .dt {
     display: block;
   }
   #navb {
@@ -264,12 +288,21 @@ footer {
     border-top: solid purple 20px;
     border-radius: 10px;
   }
-  aside .social i {
+  aside i {
     color: purple;
-    padding: 8px;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 4%;
+    font-size: 250%;
+    padding: 10px;
+    margin: 10px;
+  }
+  aside .social .box {
+    display: inline;
+    padding: 10px;
+  }
+  aside i:hover {
+    color: #fa0a82;
+  }
+  aside .social .box {
+    display: inline;
   }
   footer {
     -ms-grid-row: 6;
