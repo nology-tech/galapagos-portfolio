@@ -2,6 +2,7 @@ import { toggleGradient } from './toggleGradient.js';
 import { updateSettings } from './settings.js';
 import { toggleColorMode } from './toggleColorMode.js';
 
+/* global SVG */
 
 export const drawColorToggle = (settings) => {
   const colorToggleSVG = SVG().addTo('#color-toggle').size(75, 75);
