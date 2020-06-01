@@ -1,4 +1,4 @@
-import { settings } from "./settings.js";
+import { settings } from './settings.js';
 
 export const toggleColorMode = function () {
 
@@ -22,13 +22,13 @@ export const toggleColorMode = function () {
     toggleBevel.style.fill = 'white';
     toggleButton.style.fill = 'black';
     menuToggle.forEach(line => {
-      line.style.stroke = "white";
+      line.style.stroke = 'white';
     });
   } else {
     toggleBevel.style.fill = 'black';
     toggleButton.style.fill = 'white';
     menuToggle.forEach(line => {
-      line.style.stroke = "black";
+      line.style.stroke = 'black';
     });
   }
 };

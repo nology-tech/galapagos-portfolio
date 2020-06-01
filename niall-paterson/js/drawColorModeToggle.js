@@ -1,6 +1,6 @@
 import { toggleGradient } from './toggleGradient.js';
 import { updateSettings } from './settings.js';
-import { toggleColorMode } from "./toggleColorMode.js";
+import { toggleColorMode } from './toggleColorMode.js';
 
 
 export const drawColorToggle = (settings) => {
@@ -9,8 +9,8 @@ export const drawColorToggle = (settings) => {
   const toggleButton = colorToggleSVG.circle(16).move(32.5, 47).attr({ fill: 'white' });
 
   colorToggleSVG.click(() => {
-    if (settings.colorMode === "dark") {
-      toggleButton.animate(300).ease("<>").move(32.5, 47);
+    if (settings.colorMode === 'dark') {
+      toggleButton.animate(300).ease('<>').move(32.5, 47);
       
       toggleButton.attr({ fill: 'white' });
       toggleBevel.attr({ fill: 'black' });
@@ -18,7 +18,7 @@ export const drawColorToggle = (settings) => {
       toggleGradient();
       updateSettings();
     } else {
-      toggleButton.animate(300).ease("<>").move(52.5, 47);
+      toggleButton.animate(300).ease('<>').move(52.5, 47);
       toggleButton.attr({ fill: 'black' });
       toggleBevel.attr({ fill: 'white' });
       toggleColorMode();
