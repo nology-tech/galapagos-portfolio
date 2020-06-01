@@ -15,7 +15,7 @@ nav {
   @include fixed-menu($header: true);
   z-index: 999;
 
-  img {
+  div {
     margin: $margin-medium;
   };
 }
