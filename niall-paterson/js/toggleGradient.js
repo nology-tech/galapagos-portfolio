@@ -6,7 +6,7 @@ const darkGradientTop = 'linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0
 const darkGradientBottom = 'linear-gradient(0deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1) 100%)';
 
 export const toggleGradient = function () {
-  console.log(document.querySelector('#fixed-footer'));
+
   if (settings.colorMode === 'light') {
     document.querySelector('#fixed-header')
       .style.background = darkGradientTop;
