@@ -1,13 +1,16 @@
 nav {
-  display: none;
   z-index: 998;
   position: fixed;
-
+  height: 100vh;
+  left: -100vw;
+  width: 100vw;
+  transition: left 1s;
   ul {
     @include flex-column-around;
-    width: $full-width;
     height: 80vh;
     padding-top: 10vh;
+    opacity: 0;
+    transition: opacity 1.25s;
   }
 }
 
