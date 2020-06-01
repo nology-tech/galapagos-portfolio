@@ -1,18 +1,16 @@
-import { toggleColor } from './toggleColor.js';
-import { toggleGradient } from './toggleGradient.js';
-import { updateSettings } from './settings.js';
-import { toggleMenu } from './toggleMenu.js';
+import { drawColorToggle } from './drawColorModeToggle.js';
+import { drawMenuToggle } from "./drawMenuToggle.js";
+import { updateSettings, settings } from './settings.js';
+import { toggleMenuVisibility } from "./toggleMenu.js";
 
 window.onload = () => {
-  document.getElementById('colorToggle').addEventListener('click', () => {
-    toggleColor();
-    toggleGradient();
-    updateSettings();
-  });
 
-  document.querySelectorAll('#menuToggle, a').forEach(element => {
+  drawMenuToggle(settings);
+  drawColorToggle(settings);
+
+  document.querySelectorAll('a').forEach(element => {
     element.addEventListener('click', () => {
-      toggleMenu();
+      toggleMenuVisibility(settings);
     });
   });
 };
