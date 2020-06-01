@@ -1,7 +1,7 @@
 import { drawColorToggle } from './drawColorModeToggle.js';
-import { drawMenuToggle } from "./drawMenuToggle.js";
-import { updateSettings, settings } from './settings.js';
-import { toggleMenuVisibility } from "./toggleMenu.js";
+import { drawMenuToggle } from './drawMenuToggle.js';
+import { settings } from './settings.js';
+import { toggleMenuVisibility } from './toggleMenu.js';
 
 window.onload = () => {
 
