@@ -1,4 +1,6 @@
-import { toggleMenuVisibility } from './toggleMenu.j';
+import { toggleMenuVisibility } from './toggleMenu.js';
+
+/* global SVG */
 
 export const drawMenuToggle = (settings) => {
 
