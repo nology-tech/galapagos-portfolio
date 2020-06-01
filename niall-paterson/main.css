@@ -31,12 +31,6 @@ nav ul {
   padding-top: 10vh;
 }
 
-nav button {
-  position: absolute;
-  right: 0;
-  margin: 24px;
-}
-
 #fixed-header {
   position: fixed;
   height: 12.5vh;
@@ -56,7 +50,7 @@ nav button {
   z-index: 999;
 }
 
-#fixed-header img {
+#fixed-header div {
   margin: 24px;
 }
 
