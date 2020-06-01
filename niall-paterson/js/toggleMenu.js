@@ -1,11 +1,10 @@
-import { settings } from './settings.js';
-
-export const toggleMenu = function() {
-  if (settings.menu === 'off') {
-    document.querySelector('nav').style.display = 'block';
-    settings.menu = 'on';
-  } else {
+export const toggleMenuVisibility = (settings) => {
+  if (settings.menuVisible) {
     document.querySelector('nav').style.display = 'none';
-    settings.menu = 'off';
+    settings.menuVisible = false;
+  } else {
+    document.querySelector('nav').style.display = 'block';
+    settings.menuVisible = true;
   }
 };
+
