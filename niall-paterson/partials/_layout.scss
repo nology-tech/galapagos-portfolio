@@ -35,7 +35,7 @@ h2 {
 
 p {
   margin: $margin-small;
-  padding: $padding-medium 0;
+  padding: $padding-small 0;
 }
 
 section {
@@ -47,10 +47,30 @@ section {
   height: 75vh;
 }
 
-
 section,
 ul {
   height: 100vh;
+}
+
+
+#languages-wrapper {
+  @include flex-column-center;
+  width: $large-width;
+  p {
+    text-align: center;
+    width: $large-width;
+  }
+}
+
+
+#languages-icon-wrapper {
+  width: $large-width;
+  text-align: center;
+  i {
+    width: $tiny-width;
+    min-width: 40px;
+    height: $tiny-height;
+  }
 }
 
 .project-links {
