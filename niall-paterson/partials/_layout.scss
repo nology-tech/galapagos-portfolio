@@ -74,18 +74,21 @@ ul {
 
 .project-links {
   @include flex-row-even;
-  width: $large-width;
+  width: $medium-width;
   margin: 0 auto;
-  padding: $padding-medium 0;
+  padding: $padding-small 0;
 }
 
 
 .project-header {
   @include flex-row-start;
   position: static;
+}
 
+header {
   h2 {
     margin: 0 $margin-medium;
+    display: block;
   }
 }
 
