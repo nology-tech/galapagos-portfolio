@@ -4,32 +4,37 @@ import { toggleMenuVisibility } from './toggleMenu.js';
 
 export const drawMenuToggle = (settings) => {
 
-  const menuSVG = SVG().addTo('#menu-toggle').size(75, 75);
+  const menuSVG = SVG().addTo('#menu-toggle').size(50, 50);
   
-  const lineTop = menuSVG.line(25, 50, 50, 50);
-  const lineMid = menuSVG.line(25, 60, 50, 60);
-  const lineBot = menuSVG.line(25, 70, 50, 70);
+  const lineTop = menuSVG.line(10, 20, 40, 20);
+  const lineBot = menuSVG.line(10, 35, 40, 35);
 
   lineTop.stroke({ color: 'black', width: 2, linecap: 'round' });
-  lineMid.stroke({ color: 'black', width: 2, linecap: 'round' });
   lineBot.stroke({ color: 'black', width: 2, linecap: 'round' });
 
   menuSVG.click( () => {
     if (settings.menuVisible) {
-      lineTop.animate(400).plot([[25, 50], [50, 50]]);
-      lineMid.animate(300, 200).plot([[25, 60], [50, 60]]);
-      lineBot.animate(400).plot([[25, 70], [50, 70]]);
+      lineTop.
+      animate(400, 0, "now").plot([[12, 15], [38, 27]])
+      .animate(1000, 100, "after").plot([[10, 20], [40, 20]]);
+
+      lineBot
+      .animate(400, 100, "now").plot([[38, 20], [12, 35]])
+      .animate(1000, 100, "after").plot([[10, 35], [40, 35]]);
 
       toggleMenuVisibility(settings);
 
     } else {
-      lineTop.animate(400).plot([[27.5, 70], [47.5, 50]]);
-      lineMid.animate(300).plot([[37.5, 60], [37.5, 60]]);
-      lineBot.animate(400).plot([[27.5, 50], [47.5, 70]]);
+      lineTop
+      .animate(400, 0, "now").plot([[12, 15], [38, 27]])
+      .animate(1000, 100, "after").plot([[37.5, 12.5], [12.5, 37.5]]);
+
+      lineBot
+      .animate(400, 0, "now").plot([[38, 20], [12, 35]])
+      .animate(1000, 100, "after").plot([[12.5, 12.5], [37, 37.5]]);
 
       toggleMenuVisibility(settings);
     }
   });
 };
-
 
