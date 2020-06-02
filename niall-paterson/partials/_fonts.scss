@@ -13,8 +13,10 @@ i,
 li {
   font-size: $medium-font;
   text-align: center;
-  
-  &#about-title {
+}
+
+header {
+  h2 {
     text-align: left;
   }
 }
@@ -22,4 +24,11 @@ li {
 p {
   font-size: $small-font;
   text-align: justify;
+}
+
+
+.project-links {
+  i {
+    font-size: $small-font * 1.25;
+  }
 }
