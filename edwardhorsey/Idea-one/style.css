@@ -190,6 +190,29 @@ main .projects .container .box.order-override {
           order: 0;
 }
 
+main .projects .container .box#boxTwo {
+  background-image: url("../Idea-one/img/box-two.jpg");
+  background-position: center;
+}
+
+main .projects .container .box div {
+  background-color: #f0efef;
+  border-radius: 5px;
+  border: 2px solid rgba(136, 136, 136, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 2px;
+}
+
 main .projects .container .box p {
   width: 80%;
   margin: 0 auto;
@@ -352,12 +375,17 @@ footer {
     min-width: 320px;
     min-height: 200px;
   }
+  main .projects .container .box div {
+    height: auto;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
   main .projects .container .box.focus {
-    width: 75vw;
+    width: 90%;
     height: 40vh;
   }
   main .projects .container .box.focus p {
-    color: whitesmoke;
     display: block;
     width: 60%;
   }
@@ -370,6 +398,12 @@ footer {
   main .projects .container .box.sub p,
   main .projects .container .box.sub span {
     display: none;
+  }
+  main .skills i:hover {
+    background-color: initial;
+    border-radius: initial;
+    -webkit-transition: initial;
+    transition: initial;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -62,6 +62,12 @@ document.getElementById('boxThree').addEventListener('click', () => {
 document.getElementById('boxFour').addEventListener('click', () => {
   boxFocus('boxFour');
 });
+document.getElementById('boxFive').addEventListener('click', () => {
+  boxFocus('boxFive');
+});
+document.getElementById('boxSix').addEventListener('click', () => {
+  boxFocus('boxSix');
+});
 
 // document.getElementById('submit').addEventListener('click', (e)=>{
 //   e.preventDefault();
