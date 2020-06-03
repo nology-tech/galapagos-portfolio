@@ -69,8 +69,11 @@ header nav a:visited {
 header nav a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
+/* Main section hovers and styling */
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,11 +90,19 @@ main .transparent {
 }
 
 main .transparent:hover {
-  background-color: rgba(136, 136, 136, 0.12);
+  background-color: rgba(136, 136, 136, 0.15);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 main .solid {
   background-color: rgba(115, 126, 150, 0.8);
+}
+
+main .solid:hover {
+  background-color: rgba(115, 126, 150, 0.9);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 main section {
@@ -295,6 +306,8 @@ main .cv-and-contact .icons a:visited {
 main .cv-and-contact .icons a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 footer {
@@ -307,6 +320,8 @@ footer {
   i:hover {
     background-color: #cc9d46;
     border-radius: 5px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   header {
     display: -webkit-box;
