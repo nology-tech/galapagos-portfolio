@@ -43,7 +43,7 @@
   @if $header {
     @include flex-row-between;
     top: 0;
-    background: $top-gradient;
+    background-color: $top-gradient;
   } @else {
     @include flex-row-center;
     bottom: 0;
