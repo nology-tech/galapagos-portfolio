@@ -23,6 +23,24 @@ nav {
   };
 }
 
+#home {
+
+  position: relative;
+  footer {
+
+    position: absolute;
+    bottom: 0;
+    ul {
+
+    @include flex-row-even;
+    width: $large-width;
+    min-width: 300px;
+    max-width: 500px;
+    height: 12.5vh;
+    }
+  }
+}
+
 h1 {
   margin: $margin-large 0;
   padding: $padding-medium;
@@ -90,10 +108,6 @@ header {
     margin: 0 $margin-medium;
     display: block;
   }
-}
-
-footer {
-  @include fixed-menu($header: false);
 }
 
 img {

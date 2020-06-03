@@ -21,6 +21,12 @@ header {
   }
 }
 
+.social-media-wrapper {
+    i {
+      font-size: $small-font * 0.9;
+    }
+}
+
 p {
   font-size: $small-font;
   text-align: justify;
