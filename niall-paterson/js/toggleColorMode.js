@@ -4,13 +4,13 @@ export const toggleColorMode = function () {
 
   document.querySelectorAll('*').forEach(element => {
     if (settings.colorMode === 'light') {
-      element.style.backgroundColor = 'black';
-      element.style.fill = 'white';
-      element.style.color = 'white';
+      element.style.backgroundColor = '#1F1F1F';
+      element.style.fill = '#FBFEF9';
+      element.style.color = '#FBFEF9';
     } else {
       element.style.backgroundColor = '';
-      element.style.fill = 'black';
-      element.style.color = 'black';
+      element.style.fill = '#1F1F1F';
+      element.style.color = '#1F1F1F';
     }
   });
 
@@ -19,16 +19,16 @@ export const toggleColorMode = function () {
   const menuToggle = document.querySelectorAll('#menu-toggle > svg > line');
   console.log(menuToggle);
   if (settings.colorMode === 'light') {
-    toggleBevel.style.fill = 'white';
-    toggleButton.style.fill = 'black';
+    toggleBevel.style.fill = '#FBFEF9';
+    toggleButton.style.fill = '#1F1F1F';
     menuToggle.forEach(line => {
-      line.style.stroke = 'white';
+      line.style.stroke = '#FBFEF9';
     });
   } else {
-    toggleBevel.style.fill = 'black';
-    toggleButton.style.fill = 'white';
+    toggleBevel.style.fill = '#1F1F1F';
+    toggleButton.style.fill = '#FBFEF9';
     menuToggle.forEach(line => {
-      line.style.stroke = 'black';
+      line.style.stroke = '#1F1F1F';
     });
   }
 };
