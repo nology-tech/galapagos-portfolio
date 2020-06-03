@@ -4,7 +4,7 @@
   list-style: none;
   text-decoration: none;
   color: inherit;
-  background-color: white;
+  background-color: #FBFEF9;
 }
 
 nav {
@@ -51,9 +51,10 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(80%), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(180deg, white, 80%, rgba(255, 255, 255, 0.1) 100%);
+  background-color: linear-gradient(180deg, #fbfef9 80%, rgba(251, 254, 249, 0.1) 100%);
   z-index: 999;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #fbfef9), to(rgba(251, 254, 249, 0.1)));
+  background: linear-gradient(180deg, #fbfef9 80%, rgba(251, 254, 249, 0.1) 100%);
 }
 
 #fixed-header div {
@@ -225,6 +226,11 @@ header h2 {
 img {
   width: 50px;
   height: 25px;
+}
+
+svg {
+  background-color: linear-gradient(180deg, #fbfef9 80%, rgba(251, 254, 249, 0.1) 100%);
+  fill: green;
 }
 
 * {
