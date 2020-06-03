@@ -6,8 +6,9 @@ function sendMail() {
 
 function myFunction() {
   document.getElementById('burger').classList.toggle('change');
+  //here
 }
 
-document.getElementById('email').addEventListener('click', sendMail);
+//document.getElementsByClassName('btn-outltine').addEventListener('click', sendMail);
 
 document.getElementById('burger').addEventListener('click', myFunction);
