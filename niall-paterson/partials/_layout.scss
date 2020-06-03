@@ -54,7 +54,13 @@ p {
   margin: $margin-small;
 }
 
+main {
+
+  @include flex-column-center;
+}
+
 section {
+
   @include flex-column-center;
 }
 
@@ -71,7 +77,8 @@ ul {
 
 article {
   // 2 projects per 100vh, minus header height
-  height: (100vh - $medium-height) / 2
+  height: (100vh - $medium-height) / 2;
+  margin: 0 auto;
 }
 
 
