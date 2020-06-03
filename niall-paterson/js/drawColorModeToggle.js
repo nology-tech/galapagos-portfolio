@@ -1,5 +1,5 @@
 import { toggleGradient } from './toggleGradient.js';
-import { settings, updateSettings } from './settings.js';
+import { updateSettings } from './settings.js';
 import { toggleColorMode } from './toggleColorMode.js';
 
 /* global SVG */
