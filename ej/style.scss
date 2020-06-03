@@ -5,7 +5,7 @@ $color: #00ee;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -15,11 +15,11 @@ body {
   margin: auto;
 
   h2 {
-    font-size: 56px;
+    font-size: 80px;
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 50px;
   }
 }
 
@@ -37,6 +37,7 @@ header {
     a {
       padding-left: 10px;
       transition: ease 0.3s;
+      font-size: 18px;
 
       &:hover {
         color: #df15a2;
@@ -53,8 +54,8 @@ header {
 .container-landing {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-gap: 20px;
+  grid-template-rows: repeat(8, 1fr);
+  height: 100vh;
 
   .big-type {
     grid-column: 1 / span 12;
@@ -62,7 +63,7 @@ header {
 
     h1 {
       font-weight: 100;
-      font-size: 120px;
+      font-size: 180px;
       font-family: youngserif;
       -webkit-text-fill-color: white;
       -webkit-text-stroke-width: 2px;
@@ -88,7 +89,7 @@ header {
   .contact-links {
     margin-top: 20px;
     grid-column: 1 / span 10;
-    grid-row: 7 / span 10;
+    grid-row: 6 / span 10;
 
     p {
       font-size: 48px;
@@ -96,8 +97,8 @@ header {
   }
 
   .headshot-1 {
-    grid-column: 9 / span 4;
-    grid-row: 3/ span 4;
+    grid-column: 10 / span 4;
+    grid-row: 3 / span 4;
     text-align: center;
   }
 
@@ -115,20 +116,21 @@ header {
 
 // SELECTED WORK SECTION
 .container-work {
+
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(14, 1fr);
 
   .title {
-    grid-column: 2 / span 5;
+    grid-column: 1 / span 5;
     border-bottom: 1px solid rgb(197, 197, 197);
   }
 
   .card-1 {
-    border: 1px solid;
-    grid-column: 2 / span 5;
-    grid-row: 3 / span 8;
-    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    grid-column: 2 / span 6;
+    grid-row: 3 / span 4;
 
     p {
       padding: 20px;
@@ -136,15 +138,23 @@ header {
   }
 
   .card-2 {
-    border: 1px solid;
-    grid-column: 8 / span 5;
-    grid-row: 4 / span 8;
+    border: 1px solid rgb(197, 197, 197);
+    grid-column: 8 / span 6;
+    grid-row: 3 / span 4;
     margin-left: 20px;
-    border-radius: 10px;
 
     p {
       padding: 20px;
     }
+  }
+  .extra-1 {
+    border: 1px solid rgb(197, 197, 197);
+    grid-row: 8 / span 4;
+  }
+
+  .extra-2 {
+    border: 1px solid rgb(197, 197, 197);
+    grid-row: 8 / span 4;
   }
 }
 
@@ -153,11 +163,18 @@ header {
 .container-resume {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+
+  li {
+    font-size: 20px;
+    line-height: 2;
+    color: $color;
+  }
 
   .title {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     border-bottom: 1px solid rgb(197, 197, 197);
+    margin-top: 20px;
   }
 
   .card-3 {
@@ -187,8 +204,17 @@ header {
   }
 
   p {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 2;
+  }
+}
+
+.skills {
+  grid-template-rows: repeat(7, 1fr);
+
+  li {
+    font-size: 30px;
+    list-style: none;
   }
 }
 
@@ -196,16 +222,16 @@ header {
 .container-about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 
   .title {
-    grid-column: 2 / span 3;
+    grid-column: 1 / span 3;
     border-bottom: 1px solid rgb(197, 197, 197);
-    margin-bottom: 40px;
+    margin-top: 20px;
   }
 
   .card-7 {
-    grid-row: 2 / span 4;
+    grid-row: 3 / span 4;
     grid-column: 2 / span 7;
 
     p {
@@ -218,32 +244,150 @@ header {
     border: 1px solid;
     grid-row: 3 / span 2;
     grid-column: 10 / span 2;
-    border-radius: 10px;
     text-align: center;
   }
 }
 
 footer {
-  bottom: 10px;
-  left: 10px;
+  margin-bottom: 10px;
 
-  .email {
-    position: fixed;
-    writing-mode: vertical-rl;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+  p {
+    font-size: 20px;
+  }
+}
 
-    a {
-      color: rgb(138, 138, 138);
+@media (max-width: 600px) {
+  body {
+    h2 {
+      font-size: 40px;
     }
 
-    a {
-      transition: ease 0.5s;
+    h3 {
+      font-size: 20px;
+    }
+  }
 
-      &:hover {
-        color: #df15a2;
+  header {
+    display: none;
+  }
+
+  .container-landing {
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    gap: 0px;
+
+    .big-type {
+      grid-column: 1 / span 12;
+      grid-row: 1 / span 2;
+
+      h1 {
+        font-size: 80px;
       }
+    }
+
+    .landing-text {
+      grid-column: 1 / span 12;
+      grid-row: 3 / span 6;
+
+      p,
+      span {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+          border-bottom: 1px dotted #383838;
+        }
+      }
+    }
+
+    .contact-links {
+      grid-column: 1 / span 10;
+      grid-row: 6 / span 10;
+
+      p {
+        font-size: 30px;
+      }
+
+      a {
+        font-size: 22px;
+      }
+    }
+
+    .headshot-1 {
+      grid-column: 4 / span 4;
+      grid-row: 7 / span 4;
+      margin-top: 60px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+  // SELECTED WORK SECTION
+  .container-work {
+    grid-template-rows: repeat(10, 1fr);
+
+    .title {
+      grid-column: 2 / span 5;
+      border-bottom: 1px solid rgb(197, 197, 197);
+    }
+
+    .card-1 {
+      border: 1px solid;
+      grid-column: 2 / span 6;
+      grid-row: 3 / span 3;
+      border-radius: 10px;
+
+      p {
+        padding: 20px;
+      }
+    }
+
+    .card-2 {
+      border: 1px solid;
+      grid-column: 8 / span 7;
+      grid-row: 3 / span 3;
+      border-radius: 10px;
+
+      p {
+        padding: 20px;
+      }
+    }
+
+    .extra-1 {
+      border: 1px solid;
+      border-radius: 10px;
+      grid-row: 7 / span 3;
+    }
+
+    .extra-2 {
+      border: 1px solid;
+      border-radius: 10px;
+      grid-row: 7 / span 3;
+    }
+  }
+  .container-about {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    .title {
+      grid-column: 2 / span 5;
+      border-bottom: 1px solid rgb(197, 197, 197);
+      margin-bottom: 0px;
+    }
+
+    .card-7 {
+      grid-row: 3 / span;
+      grid-column: 2 / span 12;
+
+      p {
+        line-height: 2;
+        font-size: 16px;
+      }
+    }
+
+    .headshot-2 {
+      display: none;
     }
   }
 }
