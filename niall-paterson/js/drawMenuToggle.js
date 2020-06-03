@@ -5,7 +5,7 @@ import { toggleMenuVisibility } from './toggleMenu.js';
 export const drawMenuToggle = (settings) => {
 
   const menuSVG = SVG().addTo('#menu-toggle').size(50, 50);
-  
+
   const lineTop = menuSVG.line(10, 20, 40, 20);
   const lineBot = menuSVG.line(10, 35, 40, 35);
 
@@ -13,6 +13,10 @@ export const drawMenuToggle = (settings) => {
   lineBot.stroke({ color: '#1F1F1F', width: 2, linecap: 'round' });
 
   menuSVG.click( () => {
+    animateMenu();
+  });
+
+  const animateMenu = () => {
     if (settings.menuVisible) {
       lineTop.
       animate(400, 0, "now").plot([[12, 15], [38, 27]])
@@ -35,6 +39,12 @@ export const drawMenuToggle = (settings) => {
 
       toggleMenuVisibility(settings);
     }
+  };
+
+  document.querySelectorAll('a').forEach(element => {
+    element.addEventListener('click', () => {
+      toggleMenuVisibility(settings);
+      animateMenu();
+    });
   });
 };
-
