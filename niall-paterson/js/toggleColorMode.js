@@ -17,7 +17,6 @@ export const toggleColorMode = function () {
   const toggleBevel = document.querySelector('#color-toggle > svg > rect');
   const toggleButton = document.querySelector('#color-toggle > svg > circle');
   const menuToggle = document.querySelectorAll('#menu-toggle > svg > line');
-  console.log(menuToggle);
   if (settings.colorMode === 'light') {
     toggleBevel.style.fill = '#FBFEF9';
     toggleButton.style.fill = '#1F1F1F';
