@@ -60,6 +60,31 @@ nav ul {
   margin: 24px;
 }
 
+#home {
+  position: relative;
+}
+
+#home footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#home footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 500px;
+  height: 12.5vh;
+}
+
 h1 {
   margin: 32px 0;
   padding: 24px;
@@ -71,6 +96,22 @@ h2 {
 
 p {
   margin: 16px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -102,12 +143,17 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
+  height: 87.5vh;
 }
 
 section,
 ul {
   height: 100vh;
+}
+
+article {
+  height: 43.75vh;
+  margin: 0 auto;
 }
 
 #languages-wrapper {
@@ -176,37 +222,6 @@ header h2 {
   display: block;
 }
 
-footer {
-  position: fixed;
-  height: 12.5vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 0;
-  background: white;
-}
-
-footer .social-media-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  max-width: 400px;
-}
-
 img {
   width: 50px;
   height: 25px;
@@ -233,6 +248,10 @@ header h2 {
   text-align: left;
 }
 
+.social-media-wrapper i {
+  font-size: 0.96em;
+}
+
 p {
   font-size: 1.2em;
   text-align: justify;
@@ -240,5 +259,30 @@ p {
 
 .project-links i {
   font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  #about {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  article {
+    width: 80vw;
+    height: 29.16667vh;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2,
+  i,
+  li {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .project-links i {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
