@@ -1,0 +1,345 @@
+$colour: purple;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+background: url(./img/background2.jpg);
+background:  contain;
+background-size: 100%;
+display: inline-grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 200px 200px 1fr 1fr 1fr 200px;
+height: 100%;
+width: 100%;
+gap: 10px;
+grid-template-areas:
+"header header header header header"
+"navb navb navb navb navb"
+"article article article article article"
+"article article article article article"
+"aside aside aside aside aside"
+"footer footer footer footer footer"
+}
+
+body h3 {
+    position: relative;
+    text-align: center;
+    }
+
+header {
+grid-area: header;
+border-radius: 10px;
+border: solid 1px $colour;
+background: url(./img/background3.jpg);
+}
+
+header h1 {
+    text-align: center;
+    margin: 40px;
+}
+    
+header i {
+    color: $colour;
+    margin: 12px;
+    padding-right: 8px;
+}
+    
+header i:hover {
+    color: rgb(250, 10, 130);
+}
+ 
+header .dt {   
+    display: none;  
+}
+
+#navb {
+grid-area: navb;
+background-color: white;
+border: $colour solid 1px;
+border-top: solid $colour 20px;
+border-radius: 10px;
+} 
+
+#navb a {
+    display: block;
+    padding: 8px;
+}
+
+#navb .link1:hover {
+    background-color: rgb(250, 10, 130);
+}
+
+#navb .link2:hover {
+    background-color: rgb(250, 10, 130);
+}
+
+#navb .link3:hover {
+    background-color: rgb(250, 10, 130);
+}
+
+#menu-button {
+    font-size: 28px;
+    float: right;
+    cursor: pointer;
+    margin: 8px 0px;
+}
+
+.hide {
+    display: none;
+}
+  
+.show {
+    display: block;
+}
+
+article {
+    grid-area: article;
+    background-color: white;
+    border: $colour solid 1px;
+    border-top: solid $colour 20px;
+    border-radius: 10px;
+}
+
+
+article p {
+    margin: 10px;
+    padding: 8px;
+    color: grey;
+}
+    
+article .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vh;
+    width: 100vw;
+    margin: 0 auto;
+    gap: 12px;
+    padding: 20px;
+}
+    
+    
+article div {
+    border: 3px solid $colour;
+    border-radius: 10px;
+    background: url(./img/background3.jpg);
+    background-size: contain;
+}
+
+article .projects div:hover {
+    border-color: rgb(250, 10, 130);
+}
+
+
+
+
+aside { 
+grid-area: aside;
+background-color: white;
+border: $colour solid 1px;
+border-top: solid $colour 20px;
+border-radius: 10px;
+
+}
+
+aside i {
+    color: $colour;
+    font-size: 400%;
+    padding: 20px;
+    margin: 8px;
+}
+
+aside .social .box {
+    display: inline;
+    padding: 20px;
+    
+}
+
+aside i:hover {
+    color: rgb(250, 10, 130);
+}
+    
+
+footer {
+grid-area: footer;
+background-color: black;
+border-radius: 10px;
+border: solid 1px $colour;
+width: auto;
+font-size: 12px;
+color: white;
+padding: 25px;
+background: url(./img/background3.jpg);
+}
+
+
+
+@media only screen and (min-width: 780px) {
+    body {
+    background: url(./img/background2.jpg);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 1fr 1fr 1fr 200px;
+    min-height: 50vh;
+    max-width: 90%;
+    gap: 20px;
+    margin: 0 auto;
+    grid-template-areas:
+    "header header header header header"
+    "navb navb navb navb navb"
+    "article article article article aside"
+    "article article article article aside"
+    "article article article article ."
+    "footer footer footer footer footer"
+    }
+
+    body h3 {
+    position: relative;
+    text-align: center;
+    }
+    
+    header {
+    grid-area: header;
+    border-radius: 10px;
+    border: solid 1px $colour;
+    background: url(./img/background3.jpg);
+    }
+
+    header h1 {
+    text-align: center;  
+    }
+    
+    header i {
+    color: $colour;
+    margin: 8px;
+    padding: 12px;
+    float: left;
+    }
+    
+    header i:hover {
+    color: rgb(250, 10, 130);
+    }
+    
+    header .mob {
+    display: none;
+    }
+
+    header .dt {
+    display: block;
+    }
+
+    #navb {
+    grid-area: navb;
+    background-color: white;
+    border: $colour solid 1px;
+    border-top: solid $colour 20px;
+    border-radius: 10px;
+    }
+
+    #navb a {
+    padding: 8px;
+    }
+
+    #navb .link1:hover {
+        background-color: rgb(250, 10, 130);
+    }
+    
+    #navb .link2:hover {
+        background-color: rgb(250, 10, 130);
+    }
+    
+    #navb .link3:hover {
+        background-color: rgb(250, 10, 130);
+    }
+       
+    #menu-button {
+    font-size: 28px;
+    float: right;
+    cursor: pointer;
+    margin: 8px 0px;
+    }
+
+    .hide {
+    display: none;
+    }
+      
+    .show {
+    display: block;
+    }
+
+    article {
+    grid-area: article;
+    background-color: white;
+    border: $colour solid 1px;
+    border-top: solid $colour 20px;
+    border-radius: 10px;
+    }
+
+    article .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 30vh;
+    width: 50vw;
+    margin: 0 auto;
+    gap: 12px;
+    padding: 20px;
+    }
+
+    article .projects div:hover {
+        border-color: rgb(250, 10, 130);
+    }
+        
+    article div {
+    border: 3px solid $colour;
+    border-radius: 10px;
+    background: url(./img/background3.jpg);
+    background-size: contain;
+    }
+    
+    
+    aside { 
+    grid-area: aside;
+    background-color: white;
+    border: $colour solid 1px;
+    border-top: solid $colour 20px;
+    border-radius: 10px;
+    }
+
+    aside i {
+        color: $colour;
+        font-size: 250%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    aside .social .box {
+        display: inline;
+        padding: 10px;
+        
+    }
+
+    aside i:hover {
+        color: rgb(250, 10, 130);
+    }
+
+    aside .social .box {
+        display: inline;
+    }
+    
+    footer {
+        grid-area: footer;
+        border-radius: 10px;
+        border: solid 1px $colour;
+        background: url(./img/background3.jpg);
+    }
+    
+}
+
+
