@@ -156,21 +156,40 @@ main {
           order: 0;
         }
 
+        
+
+        &#boxTwo {
+          background-image: url("../Idea-one/img/box-two.jpg");
+          background-position: center;
+        }
+
+        div {
+          background-color: rgb(240, 239, 239);
+          border-radius: 5px;
+          border: 2px solid $main-grey-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          padding: 2px;
+        }
+
         p {
           width: 80%;
           margin: 0 auto;
         }
-
+        
         span {
           a {
             font-size: 2em;
             padding: 15px;
-
+            
             &:visited {
               color: $black-font-color;
             }
           }
         }
+
       }
     }
   }
@@ -259,14 +278,11 @@ main {
   }
 }
 
-
 footer {
   background-color: $footer-black-color;
   color: white;
   padding: 20px;
 }
-
-
 
 @media only screen and (min-width: 600px) {
   i {
@@ -307,12 +323,18 @@ footer {
           min-width: 320px;
           min-height: 200px;
 
+          div {
+            height: auto;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+          }
+          
           &.focus {
-            width: 75vw;
+            width: 90%;
             height: 40vh;
 
             p {
-              color: whitesmoke;
               display: block;
               width: 60%;
             }
@@ -329,6 +351,16 @@ footer {
               display: none;
             }
           }
+        }
+      }
+    }
+
+    .skills {
+      i {
+        &:hover {
+          background-color: initial;
+          border-radius: initial;
+          transition: initial;
         }
       }
     }
