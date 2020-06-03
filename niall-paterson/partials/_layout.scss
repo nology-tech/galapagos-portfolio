@@ -60,12 +60,18 @@ section {
 
 .section-wrapper {
   @include flex-column-around;
-  height: 75vh;
+  height: 87.5vh;
 }
 
 section,
 ul {
-  height: 100vh;
+  // minus header height
+  height: 100vh - $medium-height;
+}
+
+article {
+  // 2 projects per 100vh, minus header height
+  height: (100vh - $medium-height) / 2
 }
 
 
