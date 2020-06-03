@@ -17,7 +17,7 @@ nav {
 #fixed-header {
   @include fixed-menu($header: true);
   z-index: 999;
-
+  background: $top-gradient;
   div {
     margin: $margin-medium;
   };
@@ -126,4 +126,10 @@ header {
 img {
   width: 50px;
   height: 25px;
+}
+
+
+svg {
+  background-color: $top-gradient;
+  fill: green;
 }
