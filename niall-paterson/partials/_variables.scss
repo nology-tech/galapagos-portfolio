@@ -23,8 +23,8 @@ $medium-height: (100vh / $multiple);
 $large-height: (100vh / $multiple) * 2vh;
 $full-height: 100vh;
 
-$top-gradient: linear-gradient(180deg, rgba(251, 254, 249, 1, 80%, 
-rgba(251, 254, 249, 0.1) 100%));
+$top-gradient: linear-gradient(180deg, rgba(251, 254, 249, 1) 80%, 
+rgba(251, 254, 249, 0.1) 100%);
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 900px;
