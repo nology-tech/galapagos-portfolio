@@ -342,7 +342,6 @@ footer p {
         grid-template-rows: repeat(10, 1fr);
     -ms-grid-columns: (1fr)[16];
         grid-template-columns: repeat(16, 1fr);
-    gap: 0px;
   }
   .container-landing .big-type {
     -ms-grid-column: 1;
@@ -461,7 +460,7 @@ footer p {
     -ms-grid-column-span: 5;
     grid-column: 2 / span 5;
     border-bottom: 1px solid #c5c5c5;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
   }
   .container-about .card-7 {
     grid-row: 3 / span;

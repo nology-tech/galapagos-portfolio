@@ -274,7 +274,6 @@ footer {
   .container-landing {
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(16, 1fr);
-    gap: 0px;
 
     .big-type {
       grid-column: 1 / span 12;
@@ -375,7 +374,7 @@ footer {
     .title {
       grid-column: 2 / span 5;
       border-bottom: 1px solid rgb(197, 197, 197);
-      margin-bottom: 0px;
+      margin-bottom: 1px;
     }
 
     .card-7 {
