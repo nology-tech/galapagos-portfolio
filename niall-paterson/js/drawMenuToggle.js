@@ -9,8 +9,8 @@ export const drawMenuToggle = (settings) => {
   const lineTop = menuSVG.line(10, 20, 40, 20);
   const lineBot = menuSVG.line(10, 35, 40, 35);
 
-  lineTop.stroke({ color: 'black', width: 2, linecap: 'round' });
-  lineBot.stroke({ color: 'black', width: 2, linecap: 'round' });
+  lineTop.stroke({ color: '#1F1F1F', width: 2, linecap: 'round' });
+  lineBot.stroke({ color: '#1F1F1F', width: 2, linecap: 'round' });
 
   menuSVG.click( () => {
     if (settings.menuVisible) {

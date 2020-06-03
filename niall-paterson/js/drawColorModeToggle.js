@@ -6,8 +6,8 @@ import { toggleColorMode } from './toggleColorMode.js';
 
 export const drawColorToggle = (settings) => {
   const colorToggleSVG = SVG().addTo('#color-toggle').size(50, 50);
-  const toggleBevel = colorToggleSVG.rect(40, 20).center(25, 25).radius(10).attr({ fill: 'black' });
-  const toggleButton = colorToggleSVG.circle(16).center(15, 25).attr({ fill: 'white' });
+  const toggleBevel = colorToggleSVG.rect(40, 20).center(25, 25).radius(10).attr({ fill: '#1F1F1F' });
+  const toggleButton = colorToggleSVG.circle(16).center(15, 25).attr({ fill: '#FBFEF9' });
 
   colorToggleSVG.click(() => {
     if (settings.colorMode === 'dark') {
