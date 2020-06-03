@@ -173,7 +173,7 @@ main section .btn-outline {
   -ms-grid-column: 1;
   grid-area: btn-outline;
   border: 2px solid whitesmoke;
-  padding: 18px;
+  padding: 10px;
   font-size: 14px;
   width: 27vw;
   height: 7vh;
@@ -191,7 +191,7 @@ main section .btn-primary {
   border: 2px solid whitesmoke;
   background-color: whitesmoke;
   color: #536a8e;
-  padding: 18px;
+  padding: 10px;
   font-size: 14px;
   width: 27vw;
   height: 7vh;
@@ -259,24 +259,26 @@ main section .btn-primary {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 150px 50px 100px 100px 100px;
-      grid-template-rows: 150px 50px 100px 100px 100px;
-  -ms-grid-columns: 80px 200px;
-      grid-template-columns: 80px 200px;
+  -ms-grid-rows: 150px 50px 60px 60px 60px 60px;
+      grid-template-rows: 150px 50px 60px 60px 60px 60px;
+  -ms-grid-columns: 120px 167px;
+      grid-template-columns: 120px 167px;
   margin: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
       grid-template-areas: "phil phil phil" "frontend frontend frontend" "skills skillsp " ". . experience" "qualifications qualificationsp .";
 }
 
 .about h3 {
   border: 2px solid whitesmoke;
-  font-size: 14px;
-  padding: 5px;
+  font-size: 17px;
+  padding: 15px;
   text-align: center;
 }
 
 .about h3 p {
-  font-size: 23px;
-  padding: 5px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -284,6 +286,10 @@ main section .btn-primary {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: skills;
+}
+
+.about h3 .domain {
+  grid-area: domain;
 }
 
 .about h3 .experience {
@@ -304,6 +310,10 @@ main section .btn-primary {
   grid-area: skillsp;
 }
 
+.about h3 .domainp {
+  grid-area: domainp;
+}
+
 .about h3 .experiencep {
   grid-area: experiencep;
 }
@@ -314,6 +324,30 @@ main section .btn-primary {
   grid-area: qualificationsp;
 }
 
+#bgc {
+  height: 39px;
+  width: 39px;
+  border-radius: 3px;
+}
+
+#fd {
+  height: 39px;
+  width: 39px;
+  border-radius: 3px;
+}
+
+#pwc {
+  height: 39px;
+  width: 39px;
+  border-radius: 3px;
+}
+
+#kip {
+  height: 39px;
+  width: 39px;
+  border-radius: 3px;
+}
+
 @media only screen and (min-width: 425px) {
   main section .btn-primary {
     font-size: 17px;
@@ -322,7 +356,15 @@ main section .btn-primary {
     font-size: 17px;
   }
   .portfolio article {
+    font-size: 17px;
+  }
+  .about {
+    -ms-grid-columns: 130px 185px;
+        grid-template-columns: 130px 185px;
+  }
+  .about h3 {
     font-size: 20px;
+    padding: 10px;
   }
 }
 
@@ -336,6 +378,16 @@ main section .btn-primary {
   .portfolio article {
     font-size: 23px;
   }
+  .about {
+    -ms-grid-columns: 130px 280px;
+        grid-template-columns: 130px 280px;
+  }
+  .about h3 {
+    font-size: 22px;
+  }
+  .about p {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -347,14 +399,24 @@ main section .btn-primary {
   }
   main section .btn-primary {
     font-size: 26px;
-    padding: 12px;
+    padding: 7px;
   }
   main section .btn-outline {
     font-size: 26px;
-    padding: 12px;
+    padding: 7px;
   }
   .portfolio article {
     font-size: 25px;
+  }
+  .about {
+    -ms-grid-columns: 160px 400px;
+        grid-template-columns: 160px 400px;
+  }
+  .about h3 {
+    font-size: 25px;
+  }
+  .about p {
+    font-size: 20px;
   }
 }
 
@@ -367,9 +429,21 @@ main section .btn-primary {
   }
   main section .btn-primary {
     font-size: 29px;
+    padding: 4px;
   }
   main section .btn-outline {
     font-size: 29px;
+    padding: 4px;
+  }
+  .about {
+    -ms-grid-columns: 180px 450px;
+        grid-template-columns: 180px 450px;
+  }
+  .about h3 {
+    font-size: 27px;
+  }
+  .about p {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=main.css.map */
