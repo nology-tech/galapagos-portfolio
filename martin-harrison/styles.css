@@ -447,7 +447,7 @@ body nav:hover {
   width: 100%;
   text-transform: uppercase;
   color: transparent;
-  padding-left: 22vw;
+  padding-left: 28vw;
   color: #1c3041;
   -webkit-transform: skewX(-5deg);
           transform: skewX(-5deg);
@@ -455,31 +455,30 @@ body nav:hover {
 
 @media screen and (orientation: portrait) and (min-width: 350px) {
   .inverse-container #portfolio h2 {
-    padding-left: 25vw;
+    padding-left: 31vw;
   }
 }
 
 @media screen and (orientation: portrait) and (min-width: 400px) {
   .inverse-container #portfolio h2 {
-    padding-left: 26vw;
+    padding-left: 31vw;
   }
 }
 
 @media screen and (orientation: portrait) and (min-width: 480px) {
   .inverse-container #portfolio h2 {
-    padding-left: 28vw;
+    padding-left: 29vw;
   }
 }
 
 @media screen and (orientation: portrait) and (min-width: 600px) {
   .inverse-container #portfolio h2 {
-    padding-left: 29vw;
+    padding-left: 34vw;
   }
 }
 
 @media screen and (orientation: portrait) and (min-width: 900px) {
   .inverse-container #portfolio h2 {
-    padding-left: 30vw;
     font-size: 2em;
   }
 }
