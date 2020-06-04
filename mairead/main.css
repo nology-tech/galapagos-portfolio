@@ -21,6 +21,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: center;
 }
 
 * header h1 {
@@ -37,41 +38,86 @@
   }
 }
 
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   * header h1 {
     font-size: 5em;
   }
 }
 
-* header h1#name {
+* header #name {
   padding-bottom: 0;
 }
 
-* header h1#surname {
+* header #surname {
   padding-top: 0;
 }
 
-* header h2 {
+* #purple-banner {
   background-color: darkmagenta;
   padding: 15px;
+}
+
+* #purple-banner h2 {
   font-variant: small-caps;
   letter-spacing: 6px;
+  color: black;
+  text-align: center;
+  width: 14em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 3s steps(300, end);
+          animation: type 3s steps(300, end);
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 
 @media (min-width: 768px) {
-  * header h2 {
+  * #purple-banner h2 {
     letter-spacing: 10px;
     font-size: 2em;
+    width: 23em;
   }
 }
 
 @media (min-width: 1024px) {
-  * header h2 {
+  * #purple-banner h2 {
     font-size: 3em;
+    width: 20em;
   }
 }
 
-* header nav {
+@media (min-width: 1366px) {
+  * #purple-banner h2 {
+    width: 28em;
+  }
+}
+
+@media (min-width: 2560px) {
+  * #purple-banner h2 {
+    width: 52em;
+  }
+}
+
+@media (min-width: 768px) {
+  * h2::before,
+  * h2::after {
+    content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+    text-decoration: line-through;
+    margin: auto 0.5em;
+  }
+}
+
+* nav {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +132,7 @@
 }
 
 @media (min-width: 768px) {
-  * header nav {
+  * nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -98,15 +144,86 @@
   }
 }
 
-* header nav i {
+* i {
   color: #202020;
   font-size: 2em;
 }
 
 @media (min-width: 768px) {
-  * header nav i {
+  * i {
     font-size: 3em;
     padding: 1em;
+  }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+main div {
+  height: 30vh;
+  border: solid 2px #cd5555;
+  background-color: #f9ebeb;
+  margin: 3em;
+  font-variant: small-caps;
+  padding: 2em;
+  text-align: center;
+}
+
+#contact-header {
+  height: 40vh;
+}
+
+form {
+  height: 40vh;
+  width: auto;
+  margin: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form input {
+  height: 4em;
+  background-color: #f9ebeb;
+  border-color: #8b3a3a;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+form #message {
+  height: 10em;
+}
+
+form #submit {
+  width: 7em;
+  background-color: #8b3a3a;
+  color: white;
+  padding: 0.2em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  form form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  form {
+    width: 40%;
   }
 }
 
@@ -115,15 +232,6 @@
     background-color: lightgray;
     color: black;
     font-size: 4em;
-  }
-}
-
-@media (min-width: 768px) {
-  h2:before,
-  h2:after {
-    content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-    text-decoration: line-through;
-    margin: auto 0.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
