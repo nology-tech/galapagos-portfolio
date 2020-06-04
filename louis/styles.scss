@@ -35,12 +35,13 @@ body {
     input[type=checkbox] {
       display: none;
     }
+
     input[type=checkbox]:checked ~ label > i {
-    transform: translate(-130px) rotate(180deg) scaleX(-1);
+      transform: translate(-130px) rotate(180deg) scaleX(-1);
     }
 
     h1 {
-      font-size: 2.0*$titlefontsize;
+      font-size: 2*$titlefontsize;
     }
 
 
@@ -61,15 +62,14 @@ body {
       right: -200px;
       
       ul {
-      width: 160px;
-      height: 30px;
-      position: relative;
-      right: 2px;
-      top: 9px;
-      font-size: 2*$titlefontsize;
+        width: 160px;
+        height: 30px;
+        position: relative;
+        right: 2px;
+        top: 9px;
+        font-size: 2*$titlefontsize;
                 
-        li 
-        {
+        li {
           display: inline-block;
 
           &#link1 {
@@ -79,6 +79,7 @@ body {
               transition-delay: 0.4s;
             }  
           }
+          
           &#link2 {
             &.spinicon2 {
               transform: translate(-180px) rotate(360deg) scaleX(-1);
@@ -86,6 +87,7 @@ body {
               transition-delay: 0.3s;             
             }  
           }
+          
           &#link3 {
             &.spinicon3 {
               transform: translate(-190px) rotate(360deg) scaleX(-1);
@@ -93,6 +95,7 @@ body {
               transition-delay: 0.2s;              
             }  
           }
+          
           &#link4 {
             &.spinicon4 {
               transform: translate(-200px) rotate(360deg) scaleX(-1);
@@ -101,10 +104,11 @@ body {
             }  
           }
         }
-          i {
+          
+        i {
           padding: 0 3px;
           color: rgb(245, 120, 120);
-          }
+        }
 
         &.show {
           display: flex;
@@ -136,9 +140,6 @@ body {
       row-gap: 2vh;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-
-      
-
       
       article {
         border: 1px solid rgba(0, 0, 0, 0.548);
@@ -154,15 +155,16 @@ body {
         input[type=checkbox] {
           display: none;
         }
+
         input[type=checkbox]:checked ~ label > div {
           transform: translate(-130px) rotate(180deg) scaleX(-1);
         }
         
         label {
           div {
-          height: 100%;
-          width: 100%;
-          padding: 10px
+            height: 100%;
+            width: 100%;
+            padding: 10px;
           }
         }
 
