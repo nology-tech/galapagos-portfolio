@@ -143,9 +143,7 @@ body {
   background-image: linear-gradient(95deg, $light-color, $light-color 38%, transparent 38.2%, transparent), url("./images/stars-landscape.jpg");
   background-size: contain;
   background-clip: text;
-  // -webkit-background-clip: text;
-
-  // -webkit-background-clip: text;
+  -webkit-background-clip: text; /* stylelint-disable-line */
   min-height: 100vh;
   width: 100vw;
 
@@ -390,30 +388,29 @@ body {
       width: 100%;
       text-transform: uppercase;
       color: transparent;
-      padding-left: 22vw;
+      padding-left: 28vw;
       color: $dark-color;
       transform: skewX(-5deg);
 
       @media screen and (orientation: portrait) {
 
         @media (min-width: 350px) {
-          padding-left: 25vw;
+          padding-left: 31vw;
         }
 
         @media (min-width: 400px) {
-          padding-left: 26vw;
+          padding-left: 31vw;
         }
 
         @media (min-width: 480px) {
-          padding-left: 28vw;
-        }
-
-        @media (min-width: 600px) {
           padding-left: 29vw;
         }
 
+        @media (min-width: 600px) {
+          padding-left: 34vw;
+        }
+
         @media (min-width: 900px) {
-          padding-left: 30vw;
           font-size: 2em;
         }
       }
@@ -572,3 +569,21 @@ body {
 
   /* CONTACT */
 }
+// ANIMATIONS
+// @keyframes fade-in {
+//   from {
+//     opacity: 0;
+//     transform: scaleX(.5);
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .fade-in {
+//   animation: fade-in 1s;
+// }
+
+// .hidden {
+//   opacity: 0;
+// }
