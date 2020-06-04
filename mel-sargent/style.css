@@ -138,6 +138,28 @@ body nav .burger.change .bar3 {
   background-color: black;
 }
 
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideup {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 body main .splash {
   height: 100vh;
 }
@@ -163,6 +185,9 @@ body main .splash .jumbotron h2 {
   font-size: 48px;
   font-weight: 100;
   margin: 30px 20px 5px;
+  -webkit-animation: slideup 3s;
+          animation: slideup 3s;
+  overflow-y: hidden;
 }
 
 body main .splash .jumbotron p {
@@ -191,7 +216,7 @@ body main .header h2 {
 
 body main .about-me {
   background-color: white;
-  opacity: 0.80;
+  opacity: 0.8;
   color: black;
   text-align: center;
   padding: 15px;
@@ -234,7 +259,7 @@ body main .about-me p {
 
 body main .my-work {
   background-color: white;
-  opacity: 0.80;
+  opacity: 0.8;
   color: black;
   text-align: center;
   padding: 15px;
@@ -269,13 +294,12 @@ body main .my-work .grid .frame {
 
 body main .get-in-touch {
   background-color: white;
-  opacity: 0.80;
+  opacity: 0.8;
   color: black;
   text-align: center;
   padding: 15px;
   margin-top: 10px;
   width: 70vw;
-  margin: 0 auto;
   margin: 0 auto;
   display: inline-flexbox;
   -webkit-box-pack: space-evenly;
@@ -297,15 +321,20 @@ body main .get-in-touch .icons {
 body main .get-in-touch .icons i {
   opacity: 1;
   padding: 20px;
+  color: grey;
 }
 
-body main .get-in-touch .footer {
+body main .get-in-touch .icons i:hover {
+  color: black;
+}
+
+body main .get-in-touch .footer div {
   position: fixed;
   background-color: black;
   display: block;
   color: white;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 16px;
   display: block;
   padding: 30px;
@@ -319,7 +348,6 @@ body main .get-in-touch .footer {
     transition: 0.2s;
   }
   body .frame:hover {
-    background-color: red;
     -webkit-box-shadow: 2px 2px 20px white;
             box-shadow: 2px 2px 20px white;
     border: solid 2px white;
