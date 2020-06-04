@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
@@ -38,20 +40,18 @@
         </div>
       </section>
 
-      <section class="container-work" data-aos="fade-in">
-        <div class="title" id="work"><h2>Selected Work</h2></div>
-        <div class="card-1">
-          <p>Project 1</p>
+      <div class="title-1" id="work" data-aos="fade-in"><h2>Selected Work</h2></div>
+      <section class="container-work swiper-container" data-aos="fade-in">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Project 1</div>
+          <div class="swiper-slide">Project 2</div>
+          <div class="swiper-slide">Project 3</div>
+          <div class="swiper-slide">Project 4</div>
+          <div class="swiper-slide">Project 5</div>
+          <div class="swiper-slide">Project 6</div>
         </div>
-        <div class="card-2">
-          <p>Project 2</p>
-        </div>
-        <div class="card-1 extra-1">
-          <p>Project 3</p>
-        </div>
-        <div class="card-2 extra-2">
-          <p>Project 4</p>
-        </div>
+        <div class="swiper-pagination"></div>
       </section>
 
       <section class="container-resume" data-aos="fade-in">
@@ -106,7 +106,7 @@
     </main>
 
     <footer>
-      <p>Created with &#10084; by EJ</p>
+      <p>Created by EJ &#129304;</p>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -116,6 +116,33 @@
         duration: 1000,
       });
     </script>
-    <script src="./scripts.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // init: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
