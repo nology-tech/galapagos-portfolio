@@ -2,6 +2,8 @@ import { toggleGradient } from './toggleGradient.js';
 import { updateSettings } from './settings.js';
 import { toggleColorMode } from './toggleColorMode.js';
 
+/* global SVG */
+
 export const toggleButton = {
   svgFrame: undefined,
   bevel: undefined,
@@ -26,27 +28,27 @@ export const toggleButton = {
     return this;
   },
   addAnimateClickListener(settings) {
-  this.svgFrame.click(() => {
-    this.runAnimation(settings);
-  });
-  return this;
+    this.svgFrame.click(() => {
+      this.runAnimation(settings);
+    });
+    return this;
   },
   runAnimation(settings) {
     if (settings.colorMode === 'dark') {
       this.button
-        .animate(100, 100, "now").size(40)
-        .animate(250, 0, "after").size(10)
-        .animate(300, 0, "after").size(16)
-        .animate(300, 0, "after").center(15, 25);
+        .animate(100, 100, 'now').size(40)
+        .animate(250, 0, 'after').size(10)
+        .animate(300, 0, 'after').size(16)
+        .animate(300, 0, 'after').center(15, 25);
 
       setTimeout(toggleColorMode, 100);
       setTimeout(toggleGradient, 100);
       setTimeout(updateSettings, 1000);
     } else {
-      this.button.animate(300, 0, "now").center(35, 25)
-        .animate(100, 100, "after").size(40)
-        .animate(250, 0, "after").size(10)
-        .animate(300, 0, "after").size(16);
+      this.button.animate(300, 0, 'now').center(35, 25)
+        .animate(100, 100, 'after').size(40)
+        .animate(250, 0, 'after').size(10)
+        .animate(300, 0, 'after').size(16);
 
       setTimeout(toggleColorMode, 400);
       setTimeout(toggleGradient, 400);
