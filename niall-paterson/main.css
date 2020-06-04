@@ -4,7 +4,7 @@
   list-style: none;
   text-decoration: none;
   color: inherit;
-  background-color: #FBFEF9;
+  background-color: #fbfef9;
 }
 
 nav {
@@ -292,8 +292,8 @@ p {
     margin: 25vh;
     border: 1px solid transparent;
     border-radius: 25px;
-    -webkit-box-shadow: 0px 0px 16px -3px rgba(31, 31, 31, 0.19);
-            box-shadow: 0px 0px 16px -3px rgba(31, 31, 31, 0.19);
+    -webkit-box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+            box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
   }
   article header {
     border: 1px solid transparent;
