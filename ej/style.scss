@@ -92,71 +92,45 @@ header {
     grid-column: 1 / span 10;
     grid-row: 6 / span 10;
     margin-top: 50px;
-    
-    p {
-      font-size: 48px;
-    }
-  }
-
-  .headshot-1 {
-    grid-column: 10 / span 4;
-    grid-row: 3 / span 4;
-    text-align: center;
-  }
-
-  a {
-    border-bottom: 1px dotted #383838;
-    font-size: 40px;
-    transition: ease 0.3s;
-    color: $color;
-
-    &:hover {
-      color: #df15a2;
-    }
+    font-size: 48px;
   }
 }
 
-// SELECTED WORK SECTION
-.container-work {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+.headshot-1 {
+  grid-column: 10 / span 4;
+  grid-row: 3 / span 4;
+  text-align: center;
+}
 
-  .title {
-    grid-column: 1 / span 5;
-    border-bottom: 1px solid rgb(197, 197, 197);
+a {
+  border-bottom: 1px dotted #383838;
+  font-size: 40px;
+  transition: ease 0.3s;
+  color: $color;
+
+  &:hover {
+    color: #df15a2;
   }
+}
 
-  .card-1 {
-    border: 1px solid rgb(197, 197, 197);
-    grid-column: 2 / span 6;
-    grid-row: 3 / span 4;
+// SELECTED WORK
+.title-1 {
+  border-bottom: solid 1px rgb(197, 197, 197);
+  margin-bottom: 100px;
+  width: 530px;
+}
 
-    p {
-      padding: 20px;
-    }
-  }
+.swiper-container {
+  height: 500px;
+  margin-bottom: 100px;
 
-  .card-2 {
-    border: 1px solid rgb(197, 197, 197);
-    grid-column: 8 / span 6;
-    grid-row: 3 / span 4;
-    margin-left: 20px;
-
-    p {
-      padding: 20px;
-    }
-  }
-
-  .extra-1 {
-    border: 1px solid rgb(197, 197, 197);
-    grid-row: 8 / span 4;
-  }
-
-  .extra-2 {
-    border: 1px solid rgb(197, 197, 197);
-    grid-row: 8 / span 4;
+  .swiper-slide {
+    background: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    width: 100px;
   }
 }
 
