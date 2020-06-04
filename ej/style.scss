@@ -92,6 +92,7 @@ header {
     grid-column: 1 / span 10;
     grid-row: 6 / span 10;
     margin-top: 50px;
+
     p {
       font-size: 48px;
     }
@@ -190,9 +191,11 @@ header {
 .skills {
   grid-template-rows: repeat(5, 1fr);
   margin-bottom: 80px;
-.title{
-  width: 210px;
-}
+
+  .title {
+    width: 210px;
+  }
+  
   li {
     font-size: 30px;
     list-style: none;
