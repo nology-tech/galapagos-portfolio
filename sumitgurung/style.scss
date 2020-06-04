@@ -185,12 +185,12 @@ P {
 
 /* The typing effect */
 @keyframes typing {
-  from {width: 0};
-  to {width: 100%};
+  from {width: 0;}
+  to {width: 100%;}
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  to {border-color: transparent};
-  50% {border-color: rgb(255, 255, 254)};
+  to {border-color: transparent;}
+  50% {border-color: rgb(255, 255, 254);}
 }
