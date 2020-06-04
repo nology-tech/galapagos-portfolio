@@ -60,9 +60,10 @@ nav {
   .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
   }
-    
+
   .menu {
     display: none;
+    text-align: center;
   }  
 
   .social {
@@ -83,20 +84,16 @@ nav {
   background-color: red;
 }
 
-/* open menu*/
-/*main{
-  display: none;
-}
-
 a:hover{
   color: red;
+  text-decoration: underline;
 }
 
 i:hover{
   color: red;
 }
 
-nav {
+.open {
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
@@ -107,7 +104,9 @@ nav {
     padding: 5px;   
     font-size: 25px;
     text-align: center;
-    opacity: 0.7;
+    position: absolute;
+    top:0;
+    left: 0;
 
     .burger{
         display:none;
@@ -141,7 +140,26 @@ nav {
     .redline {
     display: none;
     }
-  } */
+
+    .menu {
+      display: unset;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }  
+  
+    .social {
+      display: unset;  
+    }
+  
+    #logo {
+      display: unset;
+    }
+    
+    #profile {
+      display: unset;
+    }
+}
 
 main {
   background-image: url('./Images/web-build1.png');
@@ -271,11 +289,6 @@ main {
     font-size: 17px;
     padding: 15px;
     text-align: center;
-
-    p {
-      font-size: $font-main;
-      text-align: center;
-    }
     
     .skills {
       grid-area: skills;
@@ -359,10 +372,12 @@ main {
 @media only screen and (min-width: $breakpoint-s-tablet) {
   main section .btn-primary {
     font-size: 20px;
+    padding:7px;
   }
 
   main section .btn-outline {
     font-size: 20px;
+    padding:7px;
   }
 
   .portfolio article {
@@ -392,12 +407,12 @@ main {
 
   main section .btn-primary {
     font-size: 26px;
-    padding: 7px;
+    padding: 3px;
   }
 
   main section .btn-outline {
     font-size: 26px;
-    padding: 7px;
+    padding: 3px;
   }
 
   .portfolio article {
@@ -427,12 +442,12 @@ main {
 
   main section .btn-primary {
     font-size: 29px;
-    padding: 4px;
+    padding: 1px;
   }
 
   main section .btn-outline {
     font-size: 29px;
-    padding: 4px;
+    padding: 1px;
   }
 
   .about{
