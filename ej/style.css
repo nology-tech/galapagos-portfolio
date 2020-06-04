@@ -42,7 +42,7 @@ header nav a {
   padding-left: 10px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 header nav a:hover {
@@ -50,7 +50,8 @@ header nav a:hover {
 }
 
 header span {
-  color: #00ee;
+  font-size: 16px;
+  color: #4630eb;
 }
 
 .container-landing {
@@ -109,6 +110,7 @@ header span {
   -ms-grid-row: 6;
   -ms-grid-row-span: 10;
   grid-row: 6 / span 10;
+  margin-top: 50px;
 }
 
 .container-landing .contact-links p {
@@ -130,7 +132,7 @@ header span {
   font-size: 40px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  color: #00ee;
+  color: #4630eb;
 }
 
 .container-landing a:hover {
@@ -209,7 +211,7 @@ header span {
 .container-resume li {
   font-size: 20px;
   line-height: 2;
-  color: #00ee;
+  color: #4630eb;
 }
 
 .container-resume .title {
