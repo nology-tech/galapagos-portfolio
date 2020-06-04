@@ -109,7 +109,9 @@ header > nav > ul > li > a {
 section {
   height: 100vh;
   border-bottom: 1px #8EA8C3 double;
-  background-color: #0b0014;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0.5))), url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp);
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 100%), url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp);
+  background-size: cover;
 }
 
 section.bold-opening-gambit #bold-opening-gambit-headline {
