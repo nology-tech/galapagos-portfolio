@@ -1,6 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -9,77 +15,16 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
-.burger {
-  position: fixed;
-  display: inline-block;
-  width: 10%vw;
-  background-color: none;
-  cursor: pointer;
-  margin: 4px 10px;
-  z-index: 2;
-}
-
-.burger .bar1 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-box-shadow: 1px 2px 2px black;
-          box-shadow: 1px 2px 2px black;
-}
-
-.burger .bar2 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-box-shadow: 1px 2px 2px black;
-          box-shadow: 1px 2px 2px black;
-}
-
-.burger .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-box-shadow: 1px 2px 2px black;
-          box-shadow: 1px 2px 2px black;
-}
-
-.burger.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-  background-color: black;
-}
-
-.burger.change .bar2 {
-  opacity: 0;
-}
-
-.burger.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-  background-color: black;
-}
-
-nav {
-  font-family: 'Raleway', sans-serif;
+body nav {
+  font-family: 'Montserrat', sans-serif;
   background-color: transparent;
   display: relative;
 }
 
-nav #dropdown {
+body nav #dropdown {
   position: fixed;
   z-index: 1;
   background-color: white;
@@ -96,11 +41,11 @@ nav #dropdown {
           align-items: space-between;
 }
 
-nav #dropdown.hide {
+body nav #dropdown.hide {
   display: none;
 }
 
-nav #dropdown.show {
+body nav #dropdown.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,49 +55,123 @@ nav #dropdown.show {
           flex-direction: column;
 }
 
-nav #dropdown ul {
+body nav #dropdown ul {
   margin-top: 40px;
   list-style-type: none;
 }
 
-nav #dropdown ul a {
+body nav #dropdown ul a {
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-nav #dropdown ul li {
+body nav #dropdown ul li {
   color: black;
   font-size: 1.5em;
 }
 
-nav #dropdown ul li:active {
+body nav #dropdown ul li:active {
   color: black;
   background-color: lightgray;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-main .jumbotron {
-  background-color: transparent;
-  background-image: none;
-  padding-top: 350px;
-  padding-bottom: 20px;
-  color: white;
-  text-align: center;
+body nav .burger {
+  position: fixed;
+  display: inline-block;
+  width: 10%vw;
+  background-color: none;
+  cursor: pointer;
+  margin: 4px 10px;
+  z-index: 2;
 }
 
-main .jumbotron h2 {
+body nav .burger .bar1 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black;
+}
+
+body nav .burger .bar2 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black;
+}
+
+body nav .burger .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black;
+}
+
+body nav .burger.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: black;
+}
+
+body nav .burger.change .bar2 {
+  opacity: 0;
+}
+
+body nav .burger.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: black;
+}
+
+body main .splash {
+  height: 100vh;
+}
+
+body main .splash .jumbotron {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding-top: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .splash .jumbotron h2 {
   font-size: 48px;
   font-weight: 100;
   margin: 30px 20px 5px;
 }
 
-main .jumbotron p {
+body main .splash .jumbotron p {
   color: white;
   text-align: center;
+  font-size: 30px;
 }
 
-main .header {
+body main .header {
   background-color: transparent;
   background-image: none;
   padding-top: 20px;
@@ -160,122 +179,146 @@ main .header {
   color: white;
   text-align: center;
   text-shadow: 1px 2px 2px black;
+  font-size: 48px;
 }
 
-main .header .header h2 {
+body main .header h2 {
   font-size: 48px;
   font-weight: 100;
   margin: 30px 20px 5px;
   padding: 20px;
 }
 
-main .about-me {
+body main .about-me {
   background-color: white;
-  opacity: 0.97;
+  opacity: 0.80;
   color: black;
   text-align: center;
   padding: 15px;
-  margin-top: 100px;
-  width: 80%vw;
-  padding: 20%vw;
+  margin-top: 10px;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .about-me h2 {
-  margin-top: 20px;
-}
-
-main .about-me p {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-main .my-work {
-  background-color: white;
-  opacity: 0.97;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  margin-top: 100px;
-  width: 80%vw;
-  background-color: transparent;
-  color: white;
-}
-
-main .my-work .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main .my-work .grid .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 40px;
-  height: 50%;
-  width: 100%;
-}
-
-main .my-work .grid .column div {
-  height: 200px;
-  width: 150px;
-  background-color: darkgray;
-  border: solid 2px black;
-  padding: 10px;
-}
-
-main .get-in-touch {
-  background-color: white;
-  opacity: 0.97;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  margin-top: 100px;
-  width: 80%vw;
-}
-
-main .get-in-touch .icons {
-  width: 400px;
-  height: 100px;
-  color: black;
-  opacity: 1;
-  background-color: lightgrey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body main .about-me h2 {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+body main .about-me h3 {
+  font-size: 25px;
+}
+
+body main .about-me p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+body main .my-work {
+  background-color: white;
+  opacity: 0.80;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  width: 70vw;
   margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .my-work .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .my-work .grid .frame {
+  height: 200px;
+  min-width: 150px;
+  background-color: darkgray;
+  border: solid 2px black;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+body main .get-in-touch {
+  background-color: white;
+  opacity: 0.80;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  width: 70vw;
+  margin: 0 auto;
+  margin: 0 auto;
+  display: inline-flexbox;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .get-in-touch .icons {
+  display: inline-flexbox;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 80px;
+}
+
+body main .get-in-touch .icons i {
+  opacity: 1;
+  padding: 20px;
+}
+
+body main .get-in-touch .footer {
+  position: fixed;
+  background-color: black;
+  display: block;
+  color: white;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  display: block;
+  padding: 30px;
 }
 
 @media only screen and (min-width: 900px) {
-  #dropdown:hover {
+  body #dropdown:hover {
     color: black;
-    background-color: lightgray;
+    background-color: white;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  .frame :hover {
+  body .frame:hover {
     background-color: red;
     -webkit-box-shadow: 2px 2px 20px white;
             box-shadow: 2px 2px 20px white;
