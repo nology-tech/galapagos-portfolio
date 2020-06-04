@@ -73,7 +73,7 @@ $random-number6: (random(10) + 95)/100;
   0% {transform: scale(1, 1);}
   25% {transform: skewX(1deg) translateY(-0.5%) translateX(-0.5%);}
   50% {transform: rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  75% {transform: skewY(1deg) rotate(-1deg) translateY(0.5%) translateX(0.0%);}
+  75% {transform: skewY(1deg) rotate(-1deg) translateY(0.5%) translateX(0%);}
   100% {transform: scale(1, 1);}
 }
 
@@ -182,7 +182,7 @@ body {
       text-align: center;
       text-decoration: none;
      
-      &:hover{
+      &:hover {
         color: $background-color;
         text-shadow: 2px 2px $background-color;
       }
@@ -198,6 +198,7 @@ body {
 
     }
   }
+
   .menu-svg-bottom {
     height: 100%;
     width: 100%;
@@ -374,18 +375,23 @@ body {
     #skills-1 {
       animation: menu_text_animation3 5s ease-in-out infinite;
     }
+
     #skills-2 {
       animation: menu_text_animation2 5s ease-in-out infinite;
     }
+
     #skills-3 {
       animation: menu_text_animation1 5s ease-in-out infinite;
     }
+
     #skills-4 {
       animation: menu_text_animation4 5s ease-in-out infinite;
     }
+
     #skills-5 {
       animation: menu_text_animation5 5s ease-in-out infinite;
     }
+
     #skills-6 {
       animation: menu_text_animation6 5s ease-in-out infinite;    
     }
@@ -454,10 +460,9 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
-      height: 2.75*85%;
-      width: 2.75*85%;
+    height: 2.75*85%;
+    width: 2.75*85%;
   }
-
 }
 
 //portfolio background
@@ -474,7 +479,7 @@ body {
   margin: 0 auto;
   position: relative;
 
-   h2 {
+  h2 {
     font-size: 8vw;
     color: $background-color;
     text-shadow: 2px 2px $primary-color;
@@ -488,7 +493,7 @@ body {
   }
 
 
-  .portfolio-list{
+  .portfolio-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -565,19 +570,24 @@ body {
     #portfolio-1-outer {
       animation: menu_text_animation3 5s ease-in-out infinite;
     }
-    #portfolio-1-inner  {
+
+    #portfolio-1-inner {
       animation: menu_text_animation2 5s ease-in-out infinite;
     }
+
     #portfolio-2-outer {
       animation: menu_text_animation1 5s ease-in-out infinite;
     }
-    #portfolio-2-inner  {
+
+    #portfolio-2-inner {
       animation: menu_text_animation4 5s ease-in-out infinite;
     }
+
     #portfolio-3-outer {
       animation: menu_text_animation5 5s ease-in-out infinite;
     }
-    #portfolio-3-inner  {
+
+    #portfolio-3-inner {
       animation: menu_text_animation6 5s ease-in-out infinite;    
     }
   }
@@ -645,8 +655,8 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
-      height: 3*95%;
-      width: 3*95%;
+    height: 3*95%;
+    width: 3*95%;
   }
 }
 
@@ -805,9 +815,11 @@ body {
 #contact-1 {
   animation: menu_text_animation3 5s ease-in-out infinite;
 }
+
 #contact-2 {
   animation: menu_text_animation2 5s ease-in-out infinite;
 }
+
 #contact-3 {
   animation: menu_text_animation1 5s ease-in-out infinite;
 }
