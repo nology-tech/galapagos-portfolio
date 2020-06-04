@@ -25,7 +25,6 @@ h5 {
 h3 {
   text-transform: capitalize;
   font-size: 1.8em;
-  padding: 0 0 5%;
   color: #001833;
   font-weight: 800;
 }
@@ -68,6 +67,26 @@ header {
   font-family: proxima-nova, sans-serif;
 }
 
+.my-skills {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.buttons {
+  background-color: $primary-color;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  margin-bottom: 8px;
+}
+
 .wrapper2 {
   max-width: 960px;
   margin: 0 auto;
@@ -86,11 +105,6 @@ header {
   margin: 10px auto;
   font-size: 1.5em;
   padding: 2% 0;
-}
-
-.about p a {
-  color: #e1ccc9;
-  border-bottom: 2px solid;
 }
 
 .work {
@@ -176,8 +190,8 @@ header {
 }
 
 .contact-content a {
-  color: $primary-color;
-  text-decoration: none;
+  color: $secondary-color;
+  text-decoration: underline;
 }
 
 footer {
