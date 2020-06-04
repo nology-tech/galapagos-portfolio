@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
   <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
   <script src="https://kit.fontawesome.com/8349255796.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <title>niall j. paterson</title>
 </head>
 
 <body>
+
   <nav>
-    <button class="nav-btn"><i class="fas fa-times"></i></button>
     <ul>
       <li><a href="#about">about</a></li>
       <li><a href="#project-0">0</a></li>
@@ -23,40 +25,122 @@
       <li><a href="#project-4">4</a></li>
     </ul>
   </nav>
+
   <header id="fixed-header">
-    <i class="fas fa-toggle-on" id="colorToggle"></i>
-    <i class="fas fa-bars"></i>
+    <div id="color-toggle"></div>
+    <div id="menu-toggle"></div>
   </header>
-  <section>
+
+  <section id="home">
     <h1 class="name">niall j. <br> paterson</h1>
     <h2 class="dev-portfolio">development portfolio</h2>
+    <footer id="home-footer">
+      <ul class="social-media-wrapper">
+        <li>
+          <a href="https://github.com/niallpaterson" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+        <a href="https://www.linkedin.com/in/niall-paterson-1793b81a2" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/some_unique_x" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="http://orcid.org/0000-0003-1178-0463" target="_blank"><i class="fab fa-orcid"></i></a>
+        </li>
+      </ul>
+    </footer>
   </section>
+
   <section id="about">
-    <h2 id="about-title">about</h2>
-    <p id="about-content">this is a space for a short, pithy about me page content stuff and so on etc.</p>
-    <p id="about-see-projects">see my projects:</p>
-    <footer></footer>
-  </section>
-  <section id="project-0">
-    <header class="project-header">
-      <h2 class="project-num">0</h2>
-      <h2 class="project-title">project-title</h2>
-    </header>
-    <p class="project-content">a short description of the text should go here. This text should be written such that
-      it can look appealing when text is justified.</p>
-    <div class="project-links">
-      <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-      <a href="#" target="_blank"><i class="fas fa-eye"></i></a>
+    <div class="section-wrapper">
+      <div class="about-wrapper">
+        <header class="about-header">
+          <h2 id="about-title">about</h2>
+        </header>
+        <p id="about-content">niall j paterson is a bristol based analytic philosopher turned software developer with a
+          passion for formal logic, test-driven development, and clean, functional code </p>
+      </div>
+      <p>he works with:</p>
+      <div id="languages-wrapper">
+        <div id="languages-icon-wrapper">
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-git-alt"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+        </div>
+      </div>
+      <p>↯ &nbsp; see his projects &nbsp; ↯ </p>
     </div>
   </section>
-  <footer id="fixed-footer">
-    <a href="https://github.com/niallpaterson" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/niall-paterson-1793b81a2" target="_blank"><i
-        class="fab fa-linkedin-in"></i></a>
-    <a href="https://twitter.com/some_unique_x" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="http://orcid.org/0000-0003-1178-0463" target="_blank"><i class="fab fa-orcid"></i></a>
-  </footer>
-</body>
-<script src="./js/main.js" type="module"></script>
 
+  <main>
+    
+    <article class="project-wrapper" id="project-0">
+      <header class="project-header">
+        <h2 class="project-num">0 &nbsp; sigma-calc</h2>
+      </header>
+      <p class="project-content">web application that allows users to calculate in sigma and pi notation, built using
+        javascript and SCSS</p>
+      <div class="project-links">
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+      </div>
+    </article>
+
+    <article class="project-wrapper" id="project-1">
+      <header class="section-header">
+        <h2 class="project-num">1 &nbsp; conjunctive-props</h2>
+      </header>
+      <p class="project-content">web application that constructs and displays conjunctive properties from arbitraty
+        sets of atomic properties, built using javascript and SCSS</p>
+      <div class="project-links">
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+      </div>
+    </article>
+
+    <article class="project-wrapper" id="project-2">
+      <header class="section-header">
+        <h2 class="project-num">2 &nbsp; equivalent-boole</h2>
+      </header>
+      <p class="project-content">simple game in which users must write distinct, logically equivalent sentence of
+        propositional logic, built using javascript and SCSS</p>
+      <div class="project-links">
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+      </div>
+    </article>
+
+    <article class="project-wrapper" id="project-3">
+      <header class="section-header">
+        <h2 class="project-num">3 &nbsp; fix-btc-key</h2>
+      </header>
+      <p class="project-content">web application that fixes incorrectly copied private bitcoin keys, built using
+        javascript and SCSS</p>
+      <div class="project-links">
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+      </div>
+    </article>
+
+    <article class="project-wrapper" id="project-4">
+      <header class="section-header">
+        <h2 class="project-num">4 &nbsp; comparative-risk</h2>
+      </header>
+      <p class="project-content">define local universes and calculate comparative risk on probabilistic, modal, and unified interpretations</p>
+      <div class="project-links">
+        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+      </div>
+    </article>
+
+  </main>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
 </html>

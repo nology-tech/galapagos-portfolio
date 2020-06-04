@@ -4,7 +4,6 @@ $laptop: 1024px;
 $desktop: 1366px;
 $largescreen: 2560px;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -50,11 +49,12 @@ $largescreen: 2560px;
   #purple-banner {
     background-color: darkmagenta;
     padding: 15px;
+
     h2 {
       font-variant: small-caps;
       letter-spacing: 6px;
       //TYPING ANIMATION
-      color: #000;
+      color: black;
       text-align: center;
       width: 14em;
       white-space: nowrap;

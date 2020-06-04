@@ -10,16 +10,29 @@
   align-items: center;
 }
 
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flex-row-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin flex-column {
+@mixin flex-column-center {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -30,10 +43,16 @@
   @if $header {
     @include flex-row-between;
     top: 0;
-    background: $top-gradient;
+    background-color: $top-gradient;
   } @else {
-    @include flex-row-even;
+    @include flex-row-center;
     bottom: 0;
     background: $bottom-gradient;
+
+    .social-media-wrapper {
+      @include flex-row-even;
+      width: $full-width;
+      max-width: 400px;
+    }
   }
 }
