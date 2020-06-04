@@ -176,10 +176,14 @@ main section {
   gap: 20px;
   margin: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
       grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "btn-outline btn-primary . .";
 =======
       grid-template-areas: "phil phil" "frontend frontend" "btn-outline btn-primary";
 >>>>>>> 133d9020faa9994925ca8feefd53acaff1145e0e
+=======
+      grid-template-areas: "phil phil" "frontend frontend" "btn-outline btn-primary";
+>>>>>>> b9c7d34112850aaf8b910c168bbd2fc384e367d7
 }
 
 main section h1 {
@@ -236,10 +240,14 @@ main section .btn-primary {
   gap: 20px;
   margin: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
       grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "project1 project2 . ." ". . . ." "project3 project4 . ." ". . . .";
 =======
       grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
 >>>>>>> 133d9020faa9994925ca8feefd53acaff1145e0e
+=======
+      grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
+>>>>>>> b9c7d34112850aaf8b910c168bbd2fc384e367d7
 }
 
 .portfolio article {
@@ -298,7 +306,7 @@ main section .btn-primary {
   -ms-grid-columns: 80px 200px;
       grid-template-columns: 80px 200px;
   margin: 20px;
-      grid-template-areas: "phil phil phil" "frontend frontend frontend" "skills skillsp " ". . experience" "qualifications qualificationsp .";
+      grid-template-areas: "phil phil phil" "frontend frontend frontend" "skills skillsp " ". . experience" "qualifications qualificationsp .";
 }
 
 .about h3 {
