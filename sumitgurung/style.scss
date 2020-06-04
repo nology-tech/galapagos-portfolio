@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 $border: 2px solid black;
@@ -14,6 +15,27 @@ $border: 2px solid black;
   min-height: 100vh;
   opacity: 0.2;
   z-index: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(74, 232, 235);
+  }
 }
 
 header {
@@ -62,26 +84,6 @@ P {
   font-size: 1.5em;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 2em;
-  background-color: black;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: rgb(74, 232, 235);
-  }
-}
 
 #projects {
   .container {
@@ -168,4 +170,32 @@ nav {
     height: 60px;
     margin: 10px;
   }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 254); }
+}
+
+
+@media screen and (min-width: 900px) {
+
 }
