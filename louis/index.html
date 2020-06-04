@@ -13,7 +13,7 @@
 
   <header>
 
-  <h1>Louis Burrows</h1>
+  <h1 id="title">Louis Burrows</h1>
   
 
   <div>
@@ -22,11 +22,11 @@
       <i class="fas fa-bars" onclick="dropdown()"></i>
     </label>
     <nav>
-      <ul id="dropdownLinks">
-        <li id="link1" onclick="spin()"><i class="fas fa-home"></i></li>
-        <li id="link2" onclick="spin2()"><i class="fas fa-code"></i></li>
-        <li id="link3" onclick="spin3()"><i class="fas fa-leaf"></i></li>
-        <li id="link4" onclick="spin4()"><i class="far fa-envelope"></i></li>
+      <ul>
+        <li id="link1"><i class="fas fa-home"></i></li>
+        <li id="link2"><i class="fas fa-code"></i></li>
+        <li id="link3"><i class="fas fa-leaf"></i></li>
+        <li id="link4"><i class="far fa-envelope"></i></li>
       </ul>
     </nav>
   </div>
@@ -41,10 +41,22 @@
   <main>
 
     <section>
-      <article class="welcome">Welcome</article>
+
+      <article class="welcome">
+        <!-- <input type="checkbox" id="welcomebox"> -->
+        <label for="welcomebox">
+          <div>Welcome</div>
+        </label>
+      </article>
+
+
+      
       <article class="code"><p>Coding</p><i class="fas fa-code"></i></article>
+      
       <article class="bio"><p>Bio</p><i class="fas fa-leaf"></i></article>
+      
       <article class="contact"><p>Contact</p><i class="far fa-envelope"></i></article>
+    
     </section>
 
   </main>
