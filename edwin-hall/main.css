@@ -10,21 +10,25 @@ img {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
 }
 
 h3 {
   text-transform: capitalize;
-  font-size: 1.875em;
-  padding: 0 0 5% 0;
+  font-size: 1.8em;
+  padding: 0 0 5%;
   color: #001833;
   font-weight: 800;
 }
 
 header {
-  background-color: #6B8E23;
+  background-color: olivedrab;
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -39,7 +43,7 @@ header {
 .intro h1 {
   font-size: 6em;
   text-align: center;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 800;
@@ -49,13 +53,19 @@ header {
 .intro h2 {
   font-size: 2em;
   text-align: center;
-  color: #fff;
+  color: white;
   font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 0.09em;
 }
 
 .wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: proxima-nova, sans-serif;
+}
+
+.wrapper2 {
   max-width: 960px;
   margin: 0 auto;
   font-family: proxima-nova, sans-serif;
@@ -76,14 +86,8 @@ header {
 }
 
 .about p a {
-  color: #E1CCC9;
+  color: #e1ccc9;
   border-bottom: 2px solid;
-}
-
-.edwin-image {
-  padding: 15% 0;
-  width: 100%;
-  background: url("Edwin.JPG");
 }
 
 .work {
@@ -99,7 +103,7 @@ header {
   float: left;
   text-align: left;
   width: 480px;
-  background-color: #fff;
+  background-color: white;
   height: 100%;
 }
 
@@ -110,16 +114,16 @@ header {
 .text-box-content p {
   line-height: 1.8;
   color: #616569;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   font-size: 1em;
 }
 
 .button {
   padding: 5% 3%;
-  border: 3px solid #6B8E23;
+  border: 3px solid olivedrab;
   letter-spacing: 0.2em;
   text-decoration: none;
-  color: #6B8E23;
+  color: olivedrab;
   text-align: center;
   display: block;
   font-weight: 600;
@@ -128,8 +132,8 @@ header {
 }
 
 .button:hover {
-  color: #fff;
-  background-color: #e0ccc8;
+  color: white;
+  background-color: olivedrab;
 }
 
 .image-area {
@@ -163,19 +167,19 @@ header {
 .contact-content h4 {
   font-size: 1.875em;
   padding: 1% 0;
-  color: #fff;
+  color: white;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
 
 .contact-content a {
-  color: #6B8E23;
+  color: olivedrab;
   text-decoration: none;
 }
 
 footer {
-  background-color: #6B8E23;
-  color: #fff;
+  background-color: olivedrab;
+  color: white;
   padding: 2% 0;
   width: 100%;
   clear: both;
@@ -190,8 +194,8 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: 1.4;
-  color: #fff;
-  letter-spacing: .03em;
+  color: white;
+  letter-spacing: 0.03em;
   font-size: 1em;
 }
 
@@ -204,7 +208,7 @@ footer {
 }
 
 .social li a {
-  color: #fff;
+  color: white;
   padding: 0.2em;
   font-size: 1.8em;
   font-weight: 600;
@@ -212,5 +216,62 @@ footer {
 
 .social li a:hover {
   color: #011833;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0% 4%;
+  }
+  .work {
+    padding: 4% 0;
+  }
+  .image-area {
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+  .text-box {
+    width: 100%;
+    height: auto;
+  }
+  .social li a {
+    font-size: 1.4em;
+  }
+  .footer-content {
+    padding: 3.5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro h1 {
+    font-size: 4em;
+    line-height: 1.2;
+  }
+  .intro h2 {
+    font-size: 1.8em;
+    padding-top: 3%;
+  }
+  .about p {
+    font-size: 1em;
+    line-height: 2;
+  }
+  footer {
+    height: 130px;
+    line-height: 1.3em;
+  }
+  .footer-content {
+    padding: 4%;
+    font-size: 14px;
+  }
+  .social {
+    float: left;
+  }
+  .social li a {
+    font-size: 1.3em;
+  }
+  .contact-content {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=main.css.map */

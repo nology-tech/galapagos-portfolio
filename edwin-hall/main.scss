@@ -1,31 +1,37 @@
-$primary-color:#6B8E23;
+$primary-color: olivedrab;
+$secondary-color: white;
 
 body {
-    background-color: #f9f9f9;
-  }
+  background-color: #f9f9f9;
+}
 
-  strong {
-    font-style: bold;
-  }
-  img {
-    width: 100%;
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-  }
+strong {
+  font-style: bold;
+}
 
-  h3 {
-    text-transform: capitalize;
-    font-size: 1.875em;
-    padding: 0 0 5% 0;
-    color: #001833;
-    font-weight: 800;
-  }
+img {
+  width: 100%;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 1.8em;
+  padding: 0 0 5%;
+  color: #001833;
+  font-weight: 800;
+}
 
 header {
-  background-color:$primary-color;
+  background-color: $primary-color;
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -40,7 +46,7 @@ header {
 .intro h1 {
   font-size: 6em;
   text-align: center;
-  color: #fff;
+  color: $secondary-color;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 800;
@@ -50,13 +56,19 @@ header {
 .intro h2 {
   font-size: 2em;
   text-align: center;
-  color: #fff;
+  color: $secondary-color;
   font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 0.09em;
 }
 
 .wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: proxima-nova, sans-serif;
+}
+
+.wrapper2 {
   max-width: 960px;
   margin: 0 auto;
   font-family: proxima-nova, sans-serif;
@@ -77,15 +89,8 @@ header {
 }
 
 .about p a {
-  color: #E1CCC9;
+  color: #e1ccc9;
   border-bottom: 2px solid;
-}
-
-.edwin-image {
-  padding: 15% 0;
-  width:100%;
-  background: /* bottom, image */
-  url("Edwin.JPG");
 }
 
 .work {
@@ -101,7 +106,7 @@ header {
   float: left;
   text-align: left;
   width: 480px;
-  background-color: #fff;
+  background-color: $secondary-color;
   height: 100%;
 }
 
@@ -112,7 +117,7 @@ header {
 .text-box-content p {
   line-height: 1.8;
   color: #616569;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   font-size: 1em;
 }
 
@@ -130,8 +135,8 @@ header {
 }
 
 .button:hover {
-  color: #fff;
-  background-color: #e0ccc8;
+  color: $secondary-color;
+  background-color: $primary-color;
 }
 
 .image-area {
@@ -149,61 +154,138 @@ header {
 }
 
 .contact {
+  width: 100%;
+  background-color: #011833;
+  padding: 5% 0;
+  margin-top: 5%;
+  clear: both;
+}
+
+.contact-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
+  padding: 1% 0;
+  color: $secondary-color;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.contact-content a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 2% 0;
+  width: 100%;
+  clear: both;
+  height: 100px;
+}
+
+.footer-content {
+  max-width: 960px;
+  padding: 2% 0;
+  margin: 0 auto;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.4;
+  color: $secondary-color;
+  letter-spacing: 0.03em;
+  font-size: 1em;
+}
+
+.social {
+  float: right;
+}
+
+.social li {
+  display: inline;
+}
+
+.social li a {
+  color: $secondary-color;
+  padding: 0.2em;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.social li a:hover {
+  color: #011833;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0% 4%;
+  }
+
+  .work {
+    padding: 4% 0;
+  }
+
+  .image-area {
+    float: left;
     width: 100%;
-    background-color: #011833;
-    padding: 5% 0;
-    margin-top: 5%;
-    clear: both;
+    height: auto;
   }
-  .contact-content {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
+
+  .text-box {
+    width: 100%;
+    height: auto;
   }
-  .contact-content h4 {
-    font-size: 1.875em;
-    padding: 1% 0;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.04em;
+
+  .social li a {
+    font-size: 1.4em;
   }
-  .contact-content a {
-    color: $primary-color;
-    text-decoration: none;
+
+  .footer-content {
+    padding: 3.5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro h1 {
+    font-size: 4em;
+    line-height: 1.2;
+  }
+
+  .intro h2 {
+    font-size: 1.8em;
+    padding-top: 3%;
+  }
+
+  .about p {
+    font-size: 1em;
+    line-height: 2;
   }
 
   footer {
-    background-color: $primary-color;
-    color: #fff;
-    padding: 2% 0;
-    width: 100%;
-    clear: both;
-    height: 100px;
+    height: 130px;
+    line-height: 1.3em;
   }
+
   .footer-content {
-    max-width: 960px;
-    padding: 2% 0;
-    margin: 0 auto;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.4;
-    color: #fff;
-    letter-spacing: .03em;
-    font-size: 1em;
+    padding: 4%;
+    font-size: 14px;
   }
+
   .social {
-    float: right;
+    float: left;
   }
-  .social li {
-    display: inline;
-  }
+
   .social li a {
-    color: #fff;
-    padding: 0.2em;
-    font-size: 1.8em;
-    font-weight: 600;
+    font-size: 1.3em;
   }
-  .social li a:hover {
-    color: #011833;
+
+  .contact-content {
+    font-size: 12px;
+    line-height: 1.5;
   }
+}
