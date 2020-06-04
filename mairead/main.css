@@ -21,6 +21,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: center;
 }
 
 * header h1 {
@@ -51,23 +52,59 @@
   padding-top: 0;
 }
 
-* h2 {
+* #purple-banner {
   background-color: darkmagenta;
   padding: 15px;
+}
+
+* #purple-banner h2 {
   font-variant: small-caps;
   letter-spacing: 6px;
+  color: #000;
+  text-align: center;
+  width: 14em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 3s steps(300, end);
+          animation: type 3s steps(300, end);
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 
 @media (min-width: 768px) {
-  * h2 {
+  * #purple-banner h2 {
     letter-spacing: 10px;
     font-size: 2em;
+    width: 23em;
   }
 }
 
 @media (min-width: 1024px) {
-  * h2 {
+  * #purple-banner h2 {
     font-size: 3em;
+    width: 20em;
+  }
+}
+
+@media (min-width: 1366px) {
+  * #purple-banner h2 {
+    width: 28em;
+  }
+}
+
+@media (min-width: 2560px) {
+  * #purple-banner h2 {
+    width: 52em;
   }
 }
 
@@ -126,8 +163,8 @@ main {
 
 main div {
   height: 30vh;
-  border: solid 4px darkmagenta;
-  background-color: #F9EBEB;
+  border: solid 2px #cd5555;
+  background-color: #f9ebeb;
   margin: 3em;
   font-variant: small-caps;
   padding: 2em;
@@ -156,8 +193,8 @@ form {
 
 form input {
   height: 4em;
-  background-color: #F9EBEB;
-  border-color: #8B3A3A;
+  background-color: #f9ebeb;
+  border-color: #8b3a3a;
   margin: 1em;
   padding: 0.5em;
   border-radius: 5px;
@@ -169,13 +206,25 @@ form #message {
 
 form #submit {
   width: 7em;
-  background-color: #8B3A3A;
+  background-color: #8b3a3a;
   color: white;
   padding: 0.2em;
   font-size: 0.8em;
   text-transform: uppercase;
   border-radius: 15px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  form form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  form {
+    width: 40%;
+  }
 }
 
 @media (min-width: 1024px) {
