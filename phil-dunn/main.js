@@ -9,6 +9,6 @@
 function myFunction() {
   document.getElementById('burger').classList.toggle('change');
   document.querySelector('nav').classList.toggle('open');
-};
+}
 
 document.getElementById('burger').addEventListener('click', myFunction);
