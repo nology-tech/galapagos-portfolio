@@ -134,6 +134,11 @@ main .para2 {
   color: #16db93;
 }
 
+main #insta {
+  color: #16db93;
+  font-size: 40px;
+}
+
 .bexface {
   height: auto;
   width: 250px;
@@ -167,6 +172,9 @@ article div {
     height: auto;
     width: 300px;
   }
+  #parawrapper {
+    padding-top: 90px;
+  }
   /* AFTER MEDIA QUERY FOR  SIZE */
 }
 
@@ -191,6 +199,7 @@ article div {
   body #parawrapper {
     width: calc(100% - 200px);
     height: 100vh;
+    padding-top: 150px;
   }
   .bexface {
     height: auto;
