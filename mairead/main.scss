@@ -57,7 +57,7 @@ $desktop: 1024px;
       font-size: 3em;
     }
   }
-
+  
   @media (min-width: $tablet) {
     h2::before,
     h2::after {
@@ -91,7 +91,60 @@ $desktop: 1024px;
     }
   }
 }
-    
+
+
+//PROJECTS STYLING
+main {
+  display: grid;
+  div {
+    height: 30vh;
+    border: solid 4px darkmagenta;
+    background-color: #F9EBEB;
+    margin: 3em;
+    font-variant: small-caps;
+    padding: 2em;
+    text-align: center;
+  }
+}
+
+
+
+
+//CONTACT PAGE STYLING:
+#contact-header {
+  height: 40vh;
+}
+
+form {
+  height: 40vh;
+  width: auto;
+  margin: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    input {
+    height: 4em;
+    background-color: #F9EBEB;
+    border-color: #8B3A3A;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  #message {
+    height: 10em;
+  }
+  #submit {
+    width: 7em;
+    background-color: #8B3A3A;
+    color: white;
+    padding: 0.2em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    // text-align: center;
+  }
+}
   
 
 @media (min-width: $desktop) {
