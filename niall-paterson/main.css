@@ -155,6 +155,7 @@ ul {
 article {
   height: auto;
   margin: 25vh;
+  padding: 5px;
   width: 90vw;
   border: 1px solid transparent;
   border-radius: 25px;
@@ -197,6 +198,7 @@ article .project-links {
 
 #languages-icon-wrapper {
   width: 50vw;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -235,7 +237,7 @@ article .project-links {
 }
 
 header h2 {
-  margin: 0 24px;
+  margin: 0 16px;
   display: block;
 }
 
@@ -279,6 +281,10 @@ p {
   text-align: justify;
 }
 
+#about p {
+  line-height: 30px;
+}
+
 .project-links i {
   font-size: 1.5em;
 }
@@ -290,6 +296,7 @@ p {
   }
   article {
     width: 80vw;
+    padding: 20px;
   }
 }
 
@@ -303,6 +310,23 @@ p {
   #about {
     width: 60vw;
     margin: 0 auto;
+  }
+  h1 {
+    font-size: 3.15em;
+  }
+  h2,
+  i,
+  li {
+    font-size: 2.25em;
+  }
+  p {
+    font-size: 1.35em;
+  }
+  header .social-media-wrapper i {
+    font-size: 1.35em;
+  }
+  header .project-links i {
+    font-size: 2.1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
