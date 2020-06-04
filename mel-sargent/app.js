@@ -2,15 +2,15 @@
 //   alert (this works Mel!);
 // });
 
-// const expand = (x) => {
-//   x.classList.toggle('change');
-//   const mainNav = document.getElementById('dropdown');
-//   mainNav.classList.toggle('show');
-// };
+const expand = (x) => {
+  x.classList.toggle('change');
+  const mainNav = document.getElementById('dropdown');
+  mainNav.classList.toggle('show');
+};
 
 AOS.init({
   duration: 1200
- });
+});
 
 // function expand(x) {
 // x.classList.toggle('change');
