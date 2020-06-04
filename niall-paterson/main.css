@@ -276,19 +276,31 @@ p {
     width: 80vw;
     height: 29.16667vh;
   }
-  h1 {
-    font-size: 3.5em;
+}
+
+@media (min-width: 900px) {
+  main {
+    margin: 0 auto;
   }
-  h2,
-  i,
-  li {
-    font-size: 2.5em;
+  #about {
+    width: 60vw;
+    margin: 0 auto;
   }
-  p {
-    font-size: 1.5em;
+  article {
+    width: 40vw;
+    height: auto;
+    margin: 25vh;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 16px -3px rgba(31, 31, 31, 0.19);
+            box-shadow: 0px 0px 16px -3px rgba(31, 31, 31, 0.19);
   }
-  .project-links i {
-    font-size: 2em;
+  article header {
+    border: 1px solid transparent;
+    border-radius: 25px;
+  }
+  article .project-links {
+    width: 10vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
