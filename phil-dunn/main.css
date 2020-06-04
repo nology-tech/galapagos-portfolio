@@ -111,19 +111,15 @@ i:hover {
   display: none;
 }
 
-.open ul {
-  list-style: none;
-}
-
 .open li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto  15px auto;
+  margin: auto  15px;
 }
 
 .open i {
-  margin: auto 15px auto 15px;
+  margin: auto 15px;
 }
 
 .open #logo {
@@ -150,7 +146,6 @@ i:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .open .social {
