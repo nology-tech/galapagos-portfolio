@@ -382,7 +382,7 @@ footer {
     margin: 0 auto;
   }
   main .projects .container .box.focus {
-    width: 90%;
+    width: 80vw;
     height: 40vh;
   }
   main .projects .container .box.focus p {
