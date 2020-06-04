@@ -4,8 +4,8 @@
     width: 80vw;
   }
   
-  article{
-  width: 80vw;
+  article {
+    width: 80vw;
     // 3 projects per 100vh, minus header height
     height: (100vh - $medium-height) / 3;
   }
@@ -14,7 +14,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   main {
-   margin: 0 auto;
+    margin: 0 auto;
   }
 
   #about {
@@ -28,7 +28,7 @@
     margin: 25vh;
     border: 1px solid transparent;
     border-radius: 25px;
-    box-shadow: 0px 0px 16px -3px rgba(31,31,31,0.19);
+    box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
   }
 
   article {

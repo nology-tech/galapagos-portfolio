@@ -5,6 +5,7 @@ nav {
   left: -100vw;
   width: 100vw;
   transition: left 1s;
+
   ul {
     @include flex-column-around;
     height: 80vh;
@@ -15,9 +16,11 @@ nav {
 }
 
 #fixed-header {
+
   @include fixed-menu($header: true);
   z-index: 999;
   background: $top-gradient;
+
   div {
     margin: $margin-medium;
   };
@@ -26,17 +29,17 @@ nav {
 #home {
 
   position: relative;
-  footer {
 
+  footer {
     position: absolute;
     bottom: 0;
-    ul {
 
-    @include flex-row-even;
-    width: $large-width;
-    min-width: 300px;
-    max-width: 500px;
-    height: 12.5vh;
+    ul {
+      @include flex-row-even;
+      width: $large-width;
+      min-width: 300px;
+      max-width: 500px;
+      height: 12.5vh;
     }
   }
 }
@@ -85,6 +88,7 @@ article {
 #languages-wrapper {
   @include flex-column-center;
   width: $large-width;
+
   p {
     text-align: center;
     width: $large-width;
@@ -95,6 +99,7 @@ article {
 #languages-icon-wrapper {
   width: $large-width;
   text-align: center;
+
   i {
     width: $tiny-width;
     min-width: 40px;
@@ -102,14 +107,12 @@ article {
   }
 }
 
-
 .project-links {
   @include flex-row-even;
   width: $medium-width;
   margin: 0 auto;
   padding: $padding-small 0;
 }
-
 
 .project-header {
   @include flex-row-start;

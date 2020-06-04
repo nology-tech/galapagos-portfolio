@@ -48,6 +48,7 @@
     @include flex-row-center;
     bottom: 0;
     background: $bottom-gradient;
+
     .social-media-wrapper {
       @include flex-row-even;
       width: $full-width;
