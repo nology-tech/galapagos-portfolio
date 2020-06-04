@@ -1,4 +1,4 @@
-$color: #00ee;
+$color: #4630eb;
 
 * {
   color: #383838;
@@ -37,7 +37,7 @@ header {
     a {
       padding-left: 10px;
       transition: ease 0.3s;
-      font-size: 18px;
+      font-size: 20px;
 
       &:hover {
         color: #df15a2;
@@ -46,6 +46,7 @@ header {
   }
 
   span {
+    font-size: 16px;
     color: $color;
   }
 }
@@ -90,7 +91,8 @@ header {
     margin-top: 20px;
     grid-column: 1 / span 10;
     grid-row: 6 / span 10;
-
+    margin-top: 50px;
+    
     p {
       font-size: 48px;
     }
