@@ -42,7 +42,7 @@
 
 * {
 	--portfolio-light-blue: #8EA8C3;
-	--portfolio-black: #000000;
+	--portfolio-black: #0b0014;
 	--portfolio-gray: #363946;
 	--portfolio-blue: #406E8E;
 	--portfolio-purple: #5B2E48;
@@ -115,9 +115,8 @@ section {
 		/* What better way to start than a bold opening gambit? */
 
 section.bold-opening-gambit {
-	background-image: url(./assets/images/background-three.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* Previously: backgroundthree.jpg, cover, center */
+	background-color: #0B0014;
 }
 
 section.bold-opening-gambit #bold-opening-gambit-headline {
