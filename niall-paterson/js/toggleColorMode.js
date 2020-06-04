@@ -1,11 +1,7 @@
 import { settings } from './settings.js';
 
 export const toggleColorMode = function () {
-  
-  const toggleBevel = document.querySelector('#color-toggle > svg > rect');
-  const toggleButton = document.querySelector('#color-toggle > svg > circle');
-  const menuToggle = document.querySelectorAll('#menu-toggle > svg > line');
-
+  // all elements
   document.querySelectorAll('*').forEach(element => {
     if (settings.colorMode === 'light') {
       element.style.backgroundColor = '#1F1F1F';
@@ -17,4 +13,8 @@ export const toggleColorMode = function () {
       element.style.color = '#1F1F1F';
     }
   });
+
+  // svg button element
+  const toggleButton = document.querySelector('#color-toggle > svg > circle');
+  settings.colorMode === 'light' ? toggleButton.style.fill = '#1F1F1F' : toggleButton.style.fill = '#FBFEF9';
 };
