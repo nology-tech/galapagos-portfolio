@@ -117,7 +117,7 @@ main section {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   margin: 20px;
-      grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "btn-outline btn-primary . .";
+      grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "btn-outline btn-primary . .";
 }
 
 main section h1 {
@@ -173,7 +173,7 @@ main section .btn-primary {
       grid-template-rows: 1fr 1fr 1fr 0.1fr 1fr 0.1fr;
   gap: 20px;
   margin: 20px;
-      grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "project1 project2 . ." ". . . ." "project3 project4 . ." ". . . .";
+      grid-template-areas: "phil phil phil ." "frontend frontend frontend ." "project1 project2 . ." ". . . ." "project3 project4 . ." ". . . .";
 }
 
 .portfolio article {
