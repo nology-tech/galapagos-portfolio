@@ -1,6 +1,6 @@
 function wipe() {
   document.getElementById('form').reset();
-}
+};
 
 function getData() {
   let name = document.getElementById('name').value;
@@ -9,4 +9,4 @@ function getData() {
   let comment = document.getElementById('comment').value;
 
   console.log(name, email, phone, comment);
-}
+};
