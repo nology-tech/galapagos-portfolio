@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p>Hi everyone!</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Oli's portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88773380a0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+        <section class="menu-section" id="menu-section">
+            <img class="menu-button" id="menu-button" src="./assets/menu_button.png" alt="menu button" onclick="menuButtonClick()">
+        </section>
+        <div class="menu-background" id="menu-background">
+            <svg class="menu-svg-bottom" id="menu-svg-bottom" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.9,-50.5C40.9,-43.2,56.5,-42.4,65.1,-35.1C73.6,-27.7,75.1,-13.9,73.6,-0.9C72,12.1,67.4,24.2,59.1,31.9C50.8,39.7,38.9,43.1,28.4,52.5C17.9,61.9,9,77.3,-1.4,79.6C-11.7,82,-23.4,71.4,-36.9,63.8C-50.5,56.2,-65.9,51.6,-69.8,41.4C-73.6,31.3,-66,15.7,-64.9,0.6C-63.9,-14.5,-69.6,-29,-65.1,-38C-60.6,-47,-45.9,-50.6,-33.4,-57.6C-20.8,-64.7,-10.4,-75.2,-1,-73.5C8.5,-71.8,16.9,-57.9,28.9,-50.5Z" transform="translate(100 100)" />
+            </svg>
+            <svg class="menu-svg-middle" id="menu-svg-middle" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.9,-50.5C40.9,-43.2,56.5,-42.4,65.1,-35.1C73.6,-27.7,75.1,-13.9,73.6,-0.9C72,12.1,67.4,24.2,59.1,31.9C50.8,39.7,38.9,43.1,28.4,52.5C17.9,61.9,9,77.3,-1.4,79.6C-11.7,82,-23.4,71.4,-36.9,63.8C-50.5,56.2,-65.9,51.6,-69.8,41.4C-73.6,31.3,-66,15.7,-64.9,0.6C-63.9,-14.5,-69.6,-29,-65.1,-38C-60.6,-47,-45.9,-50.6,-33.4,-57.6C-20.8,-64.7,-10.4,-75.2,-1,-73.5C8.5,-71.8,16.9,-57.9,28.9,-50.5Z" transform="translate(100 100)" />
+            </svg>
+            <svg class="menu-svg-top" id="menu-svg-top" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.9,-50.5C40.9,-43.2,56.5,-42.4,65.1,-35.1C73.6,-27.7,75.1,-13.9,73.6,-0.9C72,12.1,67.4,24.2,59.1,31.9C50.8,39.7,38.9,43.1,28.4,52.5C17.9,61.9,9,77.3,-1.4,79.6C-11.7,82,-23.4,71.4,-36.9,63.8C-50.5,56.2,-65.9,51.6,-69.8,41.4C-73.6,31.3,-66,15.7,-64.9,0.6C-63.9,-14.5,-69.6,-29,-65.1,-38C-60.6,-47,-45.9,-50.6,-33.4,-57.6C-20.8,-64.7,-10.4,-75.2,-1,-73.5C8.5,-71.8,16.9,-57.9,28.9,-50.5Z" transform="translate(100 100)" />
+            </svg>
+            <div class="menu-items" id="menu-items">
+                <a id="menu-item-1" href="#home-section" onclick="menuItemClicked()">home</a>
+                <a id="menu-item-2" href="#skills-section" onclick="menuItemClicked()">skills</a>
+                <a id="menu-item-3" href="#portfolio-section" onclick="menuItemClicked()">portfolio</a>
+                <a id="menu-item-4" href="#contact-section" onclick="menuItemClicked()">get in touch</a>
+            </div>
+        </div>
+
+        <div class="container-class" id="container-class">
+            <section class="home-section" id="home-section">
+                <h1 id="welcome-text">hi, i'm oli, welcome to my website!</h1>
+            </section>
+
+            <section class="skills-section" id="skills-section">
+                <svg class="skills-svg-bottom"  viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M506.98-28.96c0,0,403.89-85.66,1143.12,146.85s629.09,526.21,629.09,526.21s-7.34,161.53-369.62,217.82 c-362.28,56.29-521.38,183.56-984.02,247.19s-575.23-85.66-575.23-85.66S-63.35,793.39-133.12,431.16S506.98-28.96,506.98-28.96z"/>
+                </svg>
+                <svg class="skills-svg-middle" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M506.98-28.96c0,0,403.89-85.66,1143.12,146.85s629.09,526.21,629.09,526.21s-7.34,161.53-369.62,217.82 c-362.28,56.29-521.38,183.56-984.02,247.19s-575.23-85.66-575.23-85.66S-63.35,793.39-133.12,431.16S506.98-28.96,506.98-28.96z"/>
+                </svg>
+                <svg class="skills-svg-top" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M506.98-28.96c0,0,403.89-85.66,1143.12,146.85s629.09,526.21,629.09,526.21s-7.34,161.53-369.62,217.82 c-362.28,56.29-521.38,183.56-984.02,247.19s-575.23-85.66-575.23-85.66S-63.35,793.39-133.12,431.16S506.98-28.96,506.98-28.96z"/>
+                </svg>
+                <div class="skills-div">
+                    <h2>skills</h2>
+                        <div id="skills-icons">
+                            <i class="fab fa-js-square" id="skills-1"></i>
+                            <i class="fab fa-html5" id="skills-2"></i>
+                            <i class="fab fa-css3-alt" id="skills-3"></i>
+                            <i class="fab fa-react" id="skills-4"></i>
+                            <i class="fab fa-node" id="skills-5"></i>
+                            <i class="fab fa-java" id="skills-6"></i>
+                        </div>
+                </div>
+            </section>
+
+
+            <section class="portfolio-section" id="portfolio-section">
+                <svg class="portfolio-svg-bottom"  viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1621.78,31.95c131.05,38.11,159.13,174.86,230.01,291.43c69.54,116.57,183.2,212.97,172.51,304.13 c-12.04,91.17-148.44,176.35-288.85,253.32c-139.08,76.22-280.82,144.22-441.3,165.89s-341-2.99-521.53-30.64 c-180.53-27.65-361.06-58.29-537.58-120.31C59.86,834.5-111.31,741.1-146.08,634.24c-34.77-106.11,66.86-226.42,183.2-332.53 c115-106.11,246.06-198.02,413.21-227.17c165.82-29.14,370.42,3.74,588.39-8.97C1258.05,52.87,1490.73-6.91,1621.78,31.95z"/>
+                </svg>
+                <svg class="portfolio-svg-middle" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1621.78,31.95c131.05,38.11,159.13,174.86,230.01,291.43c69.54,116.57,183.2,212.97,172.51,304.13 c-12.04,91.17-148.44,176.35-288.85,253.32c-139.08,76.22-280.82,144.22-441.3,165.89s-341-2.99-521.53-30.64 c-180.53-27.65-361.06-58.29-537.58-120.31C59.86,834.5-111.31,741.1-146.08,634.24c-34.77-106.11,66.86-226.42,183.2-332.53 c115-106.11,246.06-198.02,413.21-227.17c165.82-29.14,370.42,3.74,588.39-8.97C1258.05,52.87,1490.73-6.91,1621.78,31.95z"/>
+                </svg>
+                <svg class="portfolio-svg-top" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1621.78,31.95c131.05,38.11,159.13,174.86,230.01,291.43c69.54,116.57,183.2,212.97,172.51,304.13 c-12.04,91.17-148.44,176.35-288.85,253.32c-139.08,76.22-280.82,144.22-441.3,165.89s-341-2.99-521.53-30.64 c-180.53-27.65-361.06-58.29-537.58-120.31C59.86,834.5-111.31,741.1-146.08,634.24c-34.77-106.11,66.86-226.42,183.2-332.53 c115-106.11,246.06-198.02,413.21-227.17c165.82-29.14,370.42,3.74,588.39-8.97C1258.05,52.87,1490.73-6.91,1621.78,31.95z"/>
+                </svg>
+                    <h2>portfolio</h2>
+                    <div class="portfolio-list">
+                        <article class="portfolio-tab" id="portfolio-1-outer">
+                            <div class="portfolio-inner" id="portfolio-1-inner">
+                                <h3>Portfolio Website 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </article>
+                        <article class="portfolio-tab" id="portfolio-2-outer">
+                            <div class="portfolio-inner" id="portfolio-2-inner">
+                                <h3>Mobile App</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </article>
+                        <article class="portfolio-tab" id="portfolio-3-outer">
+                            <div class="portfolio-inner" id="portfolio-3-inner">
+                                <h3>Coding Tutorials</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </article>
+                    </div>
+            </section>
+
+            <section class="contact-section" id="contact-section">
+                <svg class="contact-svg-bottom"  viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1508,1131.68c239.81-81.33,147-457.37,353-555.45c475.43-226.36,310-289.08,310-289.08s-49-16.52-135-22.71 c-86-6.19-246-61.95-246-61.95S1070-196.03,330,37.3S-295,637.14,37,723.87S1027,1294.8,1508,1131.68z"/>
+                </svg>
+                <svg class="contact-svg-middle" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1508,1131.68c239.81-81.33,147-457.37,353-555.45c475.43-226.36,310-289.08,310-289.08s-49-16.52-135-22.71 c-86-6.19-246-61.95-246-61.95S1070-196.03,330,37.3S-295,637.14,37,723.87S1027,1294.8,1508,1131.68z"/>
+                </svg>
+                <svg class="contact-svg-top" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1508,1131.68c239.81-81.33,147-457.37,353-555.45c475.43-226.36,310-289.08,310-289.08s-49-16.52-135-22.71 c-86-6.19-246-61.95-246-61.95S1070-196.03,330,37.3S-295,637.14,37,723.87S1027,1294.8,1508,1131.68z"/>
+                </svg>
+                <div class="contact-div">
+                    <h2>get in touch</h2>
+                    <p>email me on oli.black@nology.io or call me on 07913086545</p>
+                    <div id="contact-icons">
+                        <i class="fab fa-github" id="contact-1"></i>
+                        <i class="fab fa-facebook" id="contact-2"></i>
+                        <i class="fab fa-twitter" id="contact-3"></i>  
+                    </div>   
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
 </html>
