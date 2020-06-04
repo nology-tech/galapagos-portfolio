@@ -7,7 +7,7 @@ export const toggleButton = {
   bevel: undefined,
   button: undefined,
   drawFrame() {
-    this.svgFrame = SVG().addTo('#color-toggle').size(50, 50);
+    this.svgFrame = SVG().addTo('#color-toggle').size(60, 50);
     return this;
   },
   drawBevel() {
