@@ -110,6 +110,7 @@ article {
 
 #languages-icon-wrapper {
   width: $large-width;
+  max-width: 500px;
   text-align: center;
 
   i {
@@ -133,7 +134,7 @@ article {
 
 header {
   h2 {
-    margin: 0 $margin-medium;
+    margin: 0 $margin-small;
     display: block;
   }
 }
