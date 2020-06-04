@@ -212,7 +212,7 @@ P {
 .typewriter {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
+  border-right: 0.15em solid #9a9a9a;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -244,7 +244,7 @@ P {
 
 /* The typewriter cursor effect */
 @-webkit-keyframes blink-caret {
-  from, to {
+  to {
     border-color: transparent;
   }
   50% {
@@ -252,7 +252,7 @@ P {
   }
 }
 @keyframes blink-caret {
-  from, to {
+  to {
     border-color: transparent;
   }
   50% {
