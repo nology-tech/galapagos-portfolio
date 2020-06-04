@@ -197,7 +197,7 @@ section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line >
 	/* Remember, we're still on mobile here—this all goes out the window after 768 pixels. */
 
 section.first-content {
-	background-color: var(--portfolio-black);
+	background-color: white;
 	/* background-image: url(./assets/images/background-five.jpg);
 	background-size: cover;
 	background-repeat: no-repeat; */
