@@ -112,10 +112,8 @@ i:hover {
 }
 
 .open li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto  15px;
+  list-style: none;
+  margin: 10px;
 }
 
 .open i {
@@ -205,7 +203,7 @@ main section .btn-outline {
   padding: 10px;
   font-size: 14px;
   width: 27vw;
-  height: 7vh;
+  height: 40px;
   text-align: center;
 }
 
@@ -223,7 +221,7 @@ main section .btn-primary {
   padding: 10px;
   font-size: 14px;
   width: 27vw;
-  height: 7vh;
+  height: 40px;
   text-align: center;
 }
 
@@ -375,9 +373,11 @@ main section .btn-primary {
 @media only screen and (min-width: 425px) {
   main section .btn-primary {
     font-size: 17px;
+    padding: 7px;
   }
   main section .btn-outline {
     font-size: 17px;
+    padding: 7px;
   }
   .portfolio article {
     font-size: 17px;
@@ -455,11 +455,13 @@ main section .btn-primary {
   }
   main section .btn-primary {
     font-size: 29px;
-    padding: 1px;
+    padding: 5px;
+    height: 50px;
   }
   main section .btn-outline {
     font-size: 29px;
-    padding: 1px;
+    padding: 5px;
+    height: 50px;
   }
   .about {
     -ms-grid-columns: 180px 450px;
@@ -470,6 +472,31 @@ main section .btn-primary {
   }
   .about p {
     font-size: 22px;
+  }
+  nav ul {
+    font-size: 40px;
+  }
+  .social {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main section .btn-primary {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+  main section .btn-outline {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+  nav ul {
+    font-size: 50px;
+  }
+  .social {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
