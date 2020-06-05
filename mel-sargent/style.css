@@ -143,9 +143,15 @@ body nav .burger.change .bar3 {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
   }
+  0% {
+    opacity: 0;
+  }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -154,9 +160,49 @@ body nav .burger.change .bar3 {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
   }
+  0% {
+    opacity: 0;
+  }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slidedown {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -187,13 +233,22 @@ body main .splash .jumbotron h2 {
   margin: 30px 20px 5px;
   -webkit-animation: slideup 3s;
           animation: slideup 3s;
-  overflow-y: hidden;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 body main .splash .jumbotron p {
   color: white;
   text-align: center;
   font-size: 30px;
+  -webkit-animation: slidedown 3s;
+          animation: slidedown 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 body main .header {
@@ -284,7 +339,7 @@ body main .my-work .grid {
 
 body main .my-work .grid .frame {
   height: 200px;
-  min-width: 150px;
+  min-width: 160px;
   background-color: darkgray;
   border: solid 2px black;
   padding: 10px;
@@ -328,16 +383,14 @@ body main .get-in-touch .icons i:hover {
   color: black;
 }
 
-body main .get-in-touch .footer div {
-  position: fixed;
+body main .footer {
   background-color: black;
   display: block;
   color: white;
-  width: 100%;
   font-family: 'Play', sans-serif;
   font-size: 16px;
-  display: block;
   padding: 30px;
+  height: 40px;
 }
 
 @media only screen and (min-width: 900px) {
