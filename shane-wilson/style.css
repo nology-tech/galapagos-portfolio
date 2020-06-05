@@ -6,8 +6,14 @@
           box-sizing: border-box;
 }
 
+* h1 {
+  font-size: 50px;
+  -webkit-text-decoration: underline purple;
+          text-decoration: underline purple;
+}
+
 header {
-  background-image: url(./img/background2.jpg);
+  background-image: url("./img/background2.jpg");
   height: 100vh;
   background: contain;
   color: white;
@@ -48,23 +54,6 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 60%;
-  padding: 10px;
-  text-align: center;
-}
-
-.landing {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 2;
   width: 60%;
   padding: 20px;
@@ -72,16 +61,17 @@ header {
 }
 
 body {
-  background-image: url(./img/background2.jpg);
+  background-image: url("./img/background2.jpg");
   background: contain;
 }
 
 nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  z-index: 2;
+  top: 0;
   background-color: purple;
-  padding: 0px;
+  padding: 0;
   color: black;
   letter-spacing: 1px;
   font-size: 24px;
@@ -90,7 +80,7 @@ nav {
 }
 
 .menu {
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -109,6 +99,30 @@ nav {
 .menu a:hover {
   background: #fa0a82;
   color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.image img {
+  border: solid 10px purple;
+  max-width: 80vw;
 }
 
 .about p {
@@ -132,6 +146,7 @@ nav {
       -ms-grid-row-align: center;
       align-self: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .projects {
@@ -153,10 +168,12 @@ nav {
           align-items: center;
   position: relative;
   padding-bottom: 50px;
+  z-index: -2;
 }
 
 .projects h1 {
   padding: 20px;
+  font-size: 50px;
 }
 
 .projects h3 {
@@ -166,6 +183,7 @@ nav {
 
 .grid {
   margin: 0 auto;
+  max-width: 90vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -183,6 +201,8 @@ nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-decoration: none;
+  font-size: 45px;
 }
 
 .project1 {
@@ -190,7 +210,8 @@ nav {
   -ms-grid-column: 1;
   grid-area: project1;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +239,8 @@ nav {
   -ms-grid-column: 2;
   grid-area: project2;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +268,8 @@ nav {
   -ms-grid-column: 1;
   grid-area: project3;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +297,8 @@ nav {
   -ms-grid-column: 2;
   grid-area: project4;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +326,8 @@ nav {
   -ms-grid-column: 1;
   grid-area: project5;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +355,8 @@ nav {
   -ms-grid-column: 2;
   grid-area: project6;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +411,7 @@ nav {
   display: block;
   text-align: justify;
   padding: 20px;
+  font-size: 50px;
 }
 
 .skills h3 {
@@ -413,7 +440,7 @@ nav {
 .social {
   background-color: white;
   max-width: 100%;
-  height: 300px;
+  height: 500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,6 +456,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .social i {
@@ -449,6 +477,7 @@ nav {
 .social h1 {
   color: purple;
   padding: 30px;
+  text-decoration: none;
 }
 
 .social h3 {
@@ -479,21 +508,21 @@ footer {
   font-size: 12px;
   color: white;
   padding: 25px;
-  background: url(./img/background3.jpg);
+  background: url("./img/background3.jpg");
   height: 200px;
 }
 
 @media only screen and (min-width: 780px) {
   body {
-    background-image: url(./img/background2.jpg);
+    background-image: url("./img/background2.jpg");
     background: contain;
   }
   nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 0;
     background-color: purple;
-    padding: 0px;
+    padding: 0;
     color: black;
     letter-spacing: 1px;
     font-size: 24px;
@@ -501,7 +530,7 @@ footer {
     font-style: none;
   }
   .menu {
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
   }
   .menu a {
@@ -519,6 +548,46 @@ footer {
     background: #fa0a82;
     color: white;
   }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin: 50px;
+    margin-bottom: 0;
+  }
+  .text {
+    margin-right: 50px;
+    min-width: 50vw;
+  }
+  .image .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: black 2px solid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    min-width: 30vw;
+  }
   .about p {
     color: grey;
     margin: 0 auto;
@@ -534,6 +603,7 @@ footer {
   .projects {
     background-color: white;
     max-width: 100%;
+    padding-top: 50px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,6 +647,7 @@ footer {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    text-decoration: none;
   }
   .project1 {
     -ms-grid-row: 1;
@@ -584,7 +655,7 @@ footer {
     -ms-grid-column: 1;
     grid-area: project1;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project1:hover {
@@ -598,7 +669,7 @@ footer {
     -ms-grid-column-span: 2;
     grid-area: project2;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project2:hover {
@@ -611,7 +682,7 @@ footer {
     -ms-grid-column: 4;
     grid-area: project3;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project3:hover {
@@ -625,7 +696,7 @@ footer {
     -ms-grid-column-span: 2;
     grid-area: project4;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project4:hover {
@@ -638,7 +709,7 @@ footer {
     -ms-grid-column: 3;
     grid-area: project5;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project5:hover {
@@ -651,7 +722,7 @@ footer {
     -ms-grid-column: 4;
     grid-area: project6;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project6:hover {
@@ -661,7 +732,7 @@ footer {
   .skills {
     background-color: purple;
     max-width: 100%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -713,7 +784,7 @@ footer {
   .social {
     background-color: white;
     max-width: 100%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -745,6 +816,7 @@ footer {
   .social h1 {
     color: purple;
     padding: 30px;
+    text-decoration: none;
   }
   .social h3 {
     color: purple;
@@ -772,7 +844,7 @@ footer {
     font-size: 12px;
     color: white;
     padding: 25px;
-    background: url(./img/background3.jpg);
+    background: url("./img/background3.jpg");
     height: 200px;
   }
 }

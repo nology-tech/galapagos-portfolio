@@ -5,67 +5,56 @@
     <meta charset="utf-8" />
     <title>rokiseydi.com/about</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <video src="./background.mp4" id="video"></video>
+    <div class="nav-bar">
+        <div class="left-side">
+            <div class="nav-link-bar">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+
+            </div>
+        </div>
+    </div>
 
     <div class="container">
-        <div class="nav-bar">
-            <div class="left-side">
-                <div class="nav-link-bar">
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="about.html">About</a>
+        <div class="carousel">
+            <div class="card">
+                <div class="content">
+                    <div class="item a">A
+                        <a href="openmodal">click for details</a>
+                    </div>
+                    <div class="item b">B
+                        <a href="openmodal">click for details</a>
+                    </div>
+                    <div class="item c">C
+                        <a href="openmodal">click for details</a>
+                    </div>
+                    <div class="item d">D
+                        <a href="openmodal">click for details</a>
+                    </div>
+                    <div class="item e">E
+                        <a href="openmodal">click for details</a>
+                    </div>
+                    <div class="item f">F
+                        <a href="openmodal">click for details</a>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 
-    <label for="lightswitch">Switch?</label>
-    <input type="checkbox" id="lightswitch" />
-
-    <div class="main">
-        <h2>Portfolio</h2>
-        <div class="features">
-            <p>The projects will be made with CSS, JavaScript, Node.js, Express, NoSQL databases and other programmes.</p>
-            <p>Hover or click on the box to break it open, and check each project individually</p>
-        </div>
-        <div class="headerimage"></div>
-
-        <div class="wrap">
-            <div class="cube">
-                <div class="front">
-                    <p>Front side</p>
-                    <p>project 1</p>
-                </div>
-                <div class="back">
-                    <p>Back side</p>
-                    <p>project 2</p>
-                </div>
-                <div class="top">
-                    <p>Top side</p>
-                    <p>project 3</p>
-                </div>
-                <div class="bottom">
-                    <p>Bottom side</p>
-                    <p>project 4</p>
-                </div>
-                <div class="left">
-                    <p>Left side</p>
-                    <p>project 5</p>
-                </div>
-                <div class="right">
-                    <p>Right side</p>
-                    <p>project 6</p>
-                </div>
-            </div>
-        </div>
+    <div class="next">Next</div>
+    <div class="prev">Prev</div>
 
 
-    </div>
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>
