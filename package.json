@@ -15,7 +15,7 @@
     "scss-lint": "stylelint \"**/*.scss\" --aei",
     "js-lint": "eslint ./",
     "html-lint": "htmlhint **/*.html",
-    "lint": "yarn html-lint && yarn scss-lint && yarn js-lint",
+    "lint": "yarn html-lint && yarn scss-lint && yarn js-lint"
   },
   "dependencies": {}
 }
