@@ -1,0 +1,58 @@
+{
+    "liveServer.settings.port": 5501,
+    "githubIssues.queries": [
+      {
+          "label": "Future log",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj -milestone:v1.0 sort:author-date-desc"
+      },
+      {
+          "label": "🏷Label",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj no:label sort:desc"
+      },
+      {
+          "label": "🐛Bug",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj milestone:v1.0 label:bug sort:desc"
+      },
+      {
+          "label": "🎉Feature",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj milestone:v1.0 label:feature sort:desc"
+      },
+      {
+          "label": "✨Refactor",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj milestone:v1.0 label:refactor sort:desc"
+      },
+      {
+          "label": "📄Else",
+          "query": "author:${user} state:open repo:niallpaterson/priv-gal-proj milestone:v1.0  -label:bug -label:feature -label:refactor sort:desc"
+      }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**sev/**",
+    "**david-wildman/**",
+    "**shane-wilson/**",
+    "**phil-dunn/**",
+    "**oli-black/**",
+    "**mel-sargent/**",
+    "**ej/**",
+    "**cristianmarin/**",
+    "**js-intro/**",
+    "**aqeel-yamin/**",
+    "**stephanie-hansen/**",
+    "**rebecca-fennelly/**",
+    "**sumitgurung/**",
+    "**roki-seydi/**",
+    "**toby-mould/**",
+    "**phil-dunn/**",
+    "**mairead/**",
+    "**louis/**",
+    "**martin-harrison/**",
+    "**edwardhorsey/**",
+    "**edwin-hall/**",
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  "[json]": {
+  
+  }
+}
+
