@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" async defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Play&display=swap" rel="stylesheet">
+    <title>Melissa Sargent</title>
 </head>
+
 <body>
-    <p>Mel is coding</p>
+  
+
+  <nav>  
+    <div id="dropdown" class="hide">
+      <ul>
+        <a href="#about-me"><li>About me</li></a>
+        <a href="#my-work"><li>My work</li></a>
+        <a href="#get-in-touch"><li>Get in touch</li></a>
+      </ul>
+    </div> 
+
+
+    <div class="burger" onclick="expand(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div> 
+  </nav> 
+  
+  <main>
+
+    <div class="splash">
+      <div class="jumbotron">
+        <h2>Melissa Sargent</h2>
+        <p>Junior web developer</p>
+      </div>
+      <div class="mask1"></div>
+      <div class="mask2"></div>
+    </div>
+
+
+    <section class="header" id="about-me">
+      <h2>About Me</h2>
+      <p></p>
+    </section>
+  
+    <section class="about-me">
+      <h3>Previous experience</h3>
+      <p>Before I discovered I had a love of coding I had a long career in live television graphics.</p>
+      <br>
+      <br>
+      <h3>My skills</h3>
+      <p>As well as all the skills I am currently aquiring with the _Nology course, I also have many transferable skills including a strong understanding of the importance of branding, attention to detail and working with deadlines.</p>
+      <br>
+      <br>
+      <h3>Hobbies</h3>
+      <p>Lots of exciting info about all my hobbies will go here when I am feeling a bit more wordy. In the mean time this is just a load of text to fill a gap.</p>
+    </section>
+
+    <br>
+    <br>
+
+
+
+    
+      <section class="header" id="my-work">
+        <h2>Future projects</h2>
+      </section>
+      <section class="my-work">
+        <div class="grid" data-aos="zoom-out">
+          <div class="frame" data-aos="zoom-out"></div>
+          <div class="frame" data-aos="zoom-out"></div>
+          <div class="frame" data-aos="zoom-out"></div>
+          <div class="frame" data-aos="zoom-out"></div>
+          <div class="frame" data-aos="zoom-out"></div>
+          <div class="frame" data-aos="zoom-out"></div> 
+        </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <section class="header">
+        <h2>Get in touch</h2>
+      </section>
+      
+      <section class="get-in-touch" id="get-in-touch">        
+        <h2>Where you can find me</h2>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/melissa-sargent-1982851ab/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/melliemelski/?hl=en>"><i class="fab fa-instagram-square"></i></a>
+          <i class="fab fa-github-square"></i>
+          <i class="fas fa-envelope-square"></i>
+        </div>  
+      </section>
+
+      <footer class="footer">
+        <div>
+          <p>&#169;opyright melissa sargent 2020</p>
+        </div>
+      </footer>
+  </main>
 </body>
+    
+
 </html>
