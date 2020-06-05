@@ -269,11 +269,37 @@ body nav:hover {
 .inverse-container .name h1 {
   font-size: 2.5em;
   font-weight: 1000;
+  -webkit-animation: slide-in-from-top 0.5s;
+          animation: slide-in-from-top 0.5s;
+}
+
+@-webkit-keyframes slide-in-from-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes slide-in-from-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .inverse-container .name h2 {
   font-size: 2em;
   font-weight: 100;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .inverse-container .name #cta-btn {
@@ -656,5 +682,197 @@ body nav:hover {
 
 .inverse-container #portfolio article:hover div {
   height: 50%;
+}
+
+.inverse-container footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  list-style: none;
+}
+
+.inverse-container footer ul li {
+  margin: .5em;
+}
+
+.inverse-container footer ul li i {
+  color: #1c3041;
+}
+
+.inverse-container footer #modal {
+  position: fixed;
+  display: none;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: #f5f0f6;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.inverse-container footer #modal #modal-content {
+  background-color: #1c3041;
+  width: 70%;
+  height: auto;
+  margin: 10% auto;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.5em;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+  position: relative;
+  -webkit-transform: skewX(-5deg);
+          transform: skewX(-5deg);
+}
+
+.inverse-container footer #modal #modal-content input,
+.inverse-container footer #modal #modal-content label {
+  display: block;
+  text-align: left;
+  margin: 0px;
+}
+
+.inverse-container footer #modal #modal-content #modal-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #f5f0f6;
+}
+
+.inverse-container footer #modal #modal-content #email-input,
+.inverse-container footer #modal #modal-content #textarea {
+  font-size: inherit;
+  border-radius: 5%;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: start;
+  width: 100%;
+  padding: 5px;
+}
+
+.inverse-container footer #modal #modal-content #textarea {
+  height: 10em;
+}
+
+.inverse-container footer #modal #modal-content #submit {
+  background-color: #f5f0f6;
+  color: #1c3041;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10%;
+  margin-top: 5%;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in .4s;
+          animation: fade-in .4s;
+}
+
+.hidden {
+  opacity: 0;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+/* Animate email modal */
+@-webkit-keyframes slide-up {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  -webkit-animation-name: slide-up;
+          animation-name: slide-up;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slide-back {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.slide-back {
+  -webkit-animation-name: slide-back;
+          animation-name: slide-back;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 /*# sourceMappingURL=styles.css.map */
