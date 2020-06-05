@@ -19,4 +19,14 @@ export const toggleColorMode = function () {
   // svg button element
   const toggleButton = document.querySelector('#color-toggle > svg > circle');
   settings.colorMode === 'light' ? toggleButton.style.fill = '#1F1F1F' : toggleButton.style.fill = '#FBFEF9';
+
+  // project card border shadows
+  const projectCards = document.querySelectorAll('.project-wrapper');
+  projectCards.forEach(card => {
+    if (settings.colorMode === 'light') {
+      card.style.boxShadow = '0 0 16px -3px rgba(251, 254, 249, 0.19)'; 
+    } else {
+      card.style.boxShadow = '0 0 16px -3px rgba(31, 31, 31, 0.19)';
+    }
+  });
 };
