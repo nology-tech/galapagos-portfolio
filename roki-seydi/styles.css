@@ -1,103 +1,112 @@
-    /* main styles*/
-    
-    * {
-        background-color: black;
+* {
+    background-color: black;
+}
+
+
+/* nav styles*/
+
+.nav-link-bar {
+    height: 30%;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.nav-link-bar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: inline-flex;
+}
+
+.nav-link-bar a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .nav-link-bar {
+        padding-top: 15px;
     }
-    
-    body {
-        margin: 0px;
-    }
-    /* nav styles*/
-    
-    .nav-bar {
-        word-spacing: 350%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .nav-bar>.left-side>div {
-        font-size: 0.9em;
-        text-transform: uppercase;
-    }
-    
     .nav-link-bar a {
-        color: #8a8a8a;
-        text-decoration: none;
-        transition: color 0.5s;
+        font-size: 18px;
     }
-    
-    .nav-link-bar a:hover {
-        color: black;
+}
+
+
+/* lettering */
+
+body {
+    margin: 0px;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+
+/*video*/
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.container p {
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    height: 1em;
+    overflow: hidden;
+    position: relative;
+    left: -0.8em;
+}
+
+.container p:nth-child(odd) {
+    transform: skewY(-30deg) skewX(45deg) scaleY(1.3333);
+}
+
+.container p:nth-child(even) {
+    transform: skewY(-30deg) scaleY(1.3333);
+}
+
+.container p:nth-child(2) {
+    margin-left: 1.3em;
+}
+
+.container p:nth-child(3) {
+    margin-left: 2.6em;
+}
+
+.container p span {
+    display: block;
+    text-align: center;
+    line-height: 1em;
+    animation: lettering 3s infinite ease-in-out alternate;
+}
+
+@keyframes lettering {
+    to {
+        transform: translateY(-100%);
     }
-    /* drawing board */
-    /*.drawing-board p {
-        font-size: 15px;
-        display: flex;
-        color: black;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #selectColor {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    
-    #myCanvas {
-        background-position: center;
-        background-size: 100% 120%;
-        background-image: url(background.jpg);
-    } */
-    /* Intro */
-    
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: black;
-    }
-    
-    .container p {
-        color: white;
-        font-size: 60px;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 0;
-        height: 1em;
-        overflow: hidden;
-        position: relative;
-        left: -0.8em;
-    }
-    
-    .container p:nth-child(odd) {
-        transform: skewY(-30deg) skewX(45deg) scaleY(1.3333);
-    }
-    
-    .container p:nth-child(even) {
-        transform: skewY(-30deg) scaleY(1.3333);
-    }
-    
-    .container p:nth-child(2) {
-        margin-left: 1.3em;
-    }
-    
-    .container p:nth-child(3) {
-        margin-left: 2.6em;
-    }
-    
-    .container p span {
-        display: block;
-        text-align: center;
-        line-height: 1em;
-        animation: lettering 3s infinite ease-in-out alternate;
-    }
-    
-    @keyframes lettering {
-        to {
-            transform: translateY(-100%);
-        }
-    }
+}
