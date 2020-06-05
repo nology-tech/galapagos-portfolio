@@ -10,33 +10,27 @@ body {
   background-attachment: fixed;
 }
 
-body nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+body header {
   font-family: 'Courier New';
 }
 
-body nav .will {
+body header .will {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 100px;
 }
 
-body nav h2 {
-  font-size: 28px;
+body header h2 {
+  font-size: 45px;
+}
+
+body nav .dropdown {
+  width: 40%;
 }
 
 body nav .dropbtn {
-  font-size: 30px;
+  font-size: 40px;
   border: none;
   background-color: transparent;
   font-family: 'Courier New';
@@ -51,14 +45,15 @@ body nav .dropdown-content {
 
 body nav .dropdown-content a {
   color: black;
-  padding-top: 10px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 body nav .dropdown-content a:hover {
   color: burlywood;
+  background-color: purple;
+  border-radius: 10px;
 }
 
 body nav .dropdown:hover .dropdown-content {
@@ -73,41 +68,41 @@ body footer {
   width: 100%;
   bottom: 0;
   position: fixed;
-  background-color: black;
+  background-color: #c0d3e2;
 }
 
 body footer .social i {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   margin-left: 20px;
   color: yellow;
 }
 
-.aboutmain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+body .aboutme {
   font-size: 30px;
   margin-top: 3%;
 }
 
-.aboutcontent {
+body .aboutcontent {
   border: 2px solid black;
-  width: 20%;
   background-color: burlywood;
+  width: 40%;
+  display: inline-block;
 }
 
-input {
-  margin-top: 4%;
+body input {
+  margin: 1%;
   width: 375px;
   height: 50px;
   font-size: 30px;
 }
 
-textarea {
-  margin-top: 4%;
+body #name {
+  margin-top: 2%;
+}
+
+body textarea {
+  margin: 1%;
   height: 300px;
   width: 375px;
   font-size: 20px;

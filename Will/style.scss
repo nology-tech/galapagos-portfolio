@@ -10,25 +10,29 @@ body {
     background-size: cover;
     background-attachment: fixed;
     
-    nav {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+    header {
+
         font-family: 'Courier New';
         
         .will {
             text-decoration: none;
             color: black;
             font-weight: bold;
-            font-size: 50px;
+            font-size: 100px;
         }
 
         h2 {
-            font-size: 28px;
+            font-size: 45px;
+        }
+    }
+        
+    nav {
+        .dropdown {
+            width: 40%;
         }
 
         .dropbtn {
-            font-size: 30px;
+            font-size: 40px;
             border: none;
             background-color: transparent;
             font-family: 'Courier New';
@@ -39,18 +43,20 @@ body {
         .dropdown-content {
             display: none;
             position: absolute;
+            
         }
         
         .dropdown-content a {
             color: black;
-            padding-top: 10px;
             text-decoration: none;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
         }
         
         .dropdown-content a:hover {
             color: burlywood;
+            background-color: purple;
+            border-radius: 10px;
         }
         
         .dropdown:hover .dropdown-content {
@@ -62,49 +68,55 @@ body {
         }
     }
     
+
     footer {
         width: 100%;
         bottom: 0;
         position: fixed;
-        background-color: black;
-    }
+        background-color: rgb(192, 211, 226);
+    
 
-    footer .social i {
-        font-size: 40px;
+        .social i {
+        font-size: 30px;
         cursor: pointer;
         margin-left: 20px;
         color: yellow;
+        }
     }
 
-}
+    .aboutme {
+        font-size: 30px;
+        margin-top: 3%;
+       
+    }  
+        .aboutcontent {
+            border: 2px solid black;
+            background-color: burlywood;
+            width: 40%;
+            display: inline-block;
+           
+        }
+      
+    
+    input {
+        margin: 1%;
+        width: 375px;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    #name {
+        margin-top: 2%;
+    }
 
-.aboutmain {
-    display: flex;
-    justify-content: space-around;
-    font-size: 30px;
-    margin-top: 3%;
+    textarea {
+        margin: 1%;
+        height: 300px;
+        width: 375px;
+        font-size: 20px;
+    }
+    
 }
-
-.aboutcontent {
-    border: 2px solid black;
-    width: 20%;
-    background-color: burlywood;
-}
- 
-input {
-    margin-top: 4%;
-    width: 375px;
-    height: 50px;
-    font-size: 30px;
-}
-
-textarea {
-    margin-top: 4%;
-    height: 300px;
-    width: 375px;
-    font-size: 20px;
-}
-
 
 @media only screen and (max-width: 600px) {
     .dropdown-content a {
