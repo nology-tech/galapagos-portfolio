@@ -10,7 +10,13 @@ body {
 }
 
 body .container {
-  margin: 0 20px;
+  margin: 0 10vw;
+}
+
+body h1 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: #c0c5ce;
 }
 
 body h2 {
@@ -38,7 +44,12 @@ body h4 {
 body p {
   text-align: justify;
   line-height: 1.5rem;
-  color: set-h3-color(#111);
+  color: black;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
 }
 
 #home {
@@ -50,29 +61,29 @@ body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 92.5vh;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/dist/img/SpaceSelfie.png") no-repeat 25% 100%/cover;
+  background: url("./img/SpaceSelfie.png") no-repeat 25% 100%/cover;
 }
 
 #home #home-overlay {
   position: absolute;
-  height: 92.5vh;
+  height: 100vh;
   width: 100vw;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
 #home #home-content {
   position: absolute;
-  top: 5%;
+  top: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,10 +98,6 @@ body p {
   color: white;
   margin: 0 auto;
   z-index: 2;
-}
-
-#home #home-content h1 {
-  margin-bottom: 0;
 }
 
 #home #home-content h2 {
@@ -136,11 +143,6 @@ body p {
   color: white;
 }
 
-#navbar div a {
-  text-decoration: none;
-  color: white;
-}
-
 #navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,139 +152,89 @@ body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #navbar ul a {
   padding: 10px;
   margin: 0 5px;
-}
-
-#navbar ul a li {
-  list-style-type: none;
-  border: 1px solid white;
-  background: blue;
+  border-radius: 10px;
 }
 
 #skills {
-  background: #999;
+  background: white;
   padding: 10px;
+  width: 100vw;
 }
 
 #skills .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#skills .items .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  border-radius: 10px;
-  margin: 10px 0;
 }
 
-#skills .items #frontend {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+#skills .items .item i {
+  margin: 20px auto;
 }
 
-#skills .items #frontend div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#skills .items #frontend div i:nth-of-type(1) {
+#skills .items .item .html {
   color: #f06529;
 }
 
-#skills .items #frontend div i:nth-of-type(2) {
+#skills .items .item .css {
   color: #2965f1;
 }
 
-#skills .items #frontend div i:nth-of-type(3) {
+#skills .items .item .sass {
   color: #cd6799;
 }
 
-#skills .items #frontend div i:nth-of-type(4) {
+#skills .items .item .javascript {
   color: #f0db4f;
 }
 
-#skills .items #libraries {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-
-#skills .items #libraries div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#skills .items #libraries div i:nth-of-type(1) {
+#skills .items .item .react {
   color: #61dbfb;
 }
 
-#skills .items #libraries div i:nth-of-type(2) {
+#skills .items .item .bootstrap {
   color: #563d7c;
 }
 
-#skills .items #support {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-
-#skills .items #support div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#skills .items #support div i:nth-of-type(1) {
+#skills .items .item .git {
   color: #f1502f;
 }
 
-#skills .items #support div i:nth-of-type(2) {
+#skills .items .item .github {
   color: black;
 }
 
-#skills .items #support div i:nth-of-type(3) {
+#skills .items .item .npm {
   color: #cc3534;
 }
 
 #portfolio {
   background: #a7adba;
-  padding: 20px;
-  min-height: 50vh;
+  padding-bottom: 30px;
 }
 
 #portfolio .items {
@@ -291,20 +243,16 @@ body p {
   display: grid;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  gap: 20px;
   padding: 10px;
 }
 
 #portfolio .items .item {
-  width: 100%;
-  height: 200px;
+  min-height: 200px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   -webkit-box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
           box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
-}
-
-#portfolio .items .item:nth-child(even) {
-  margin: 10px 0;
 }
 
 #portfolio .items .item:nth-of-type(1) {
@@ -332,5 +280,186 @@ body p {
 
 #portfolio .items .item:nth-of-type(3):hover {
   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
+}
+
+#about {
+  padding-bottom: 30px;
+}
+
+#about p {
+  padding-bottom: 10px;
+}
+
+#about .items {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+}
+
+#about .items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .items .item i {
+  padding-bottom: 10px;
+}
+
+#about .items .item p {
+  line-height: 1.8rem;
+  padding: 0 10px;
+  text-align: justify;
+}
+
+#footer {
+  background: #4f5b66;
+  padding: 10px 0;
+}
+
+#footer .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5fa4dc;
+}
+
+@media (min-width: 501px) and (max-width: 769px) {
+  #home #home-content {
+    top: 12%;
+  }
+  #home #home-content h1 {
+    font-size: 4rem;
+  }
+  #navbar {
+    font-size: 1.2rem;
+  }
+  #skills .items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio p {
+    text-align: center;
+  }
+  #portfolio .items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #portfolio .items .item {
+    height: 20px;
+  }
+  #portfolio .items .item h4 {
+    font-size: 1.2rem;
+  }
+  #about p {
+    text-align: center;
+  }
+  #about .items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #about .items .item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  #home #home-content {
+    top: 15%;
+  }
+  #home #home-content h1 {
+    font-size: 5rem;
+  }
+  #navbar {
+    font-size: 1.2rem;
+  }
+  #skills .items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio p {
+    text-align: center;
+  }
+  #portfolio .items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio .items .item {
+    height: 20px;
+  }
+  #portfolio .items .item h4 {
+    font-size: 1.2rem;
+  }
+  #about p {
+    text-align: center;
+  }
+  #about .items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #about .items .item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1201px) {
+  #home {
+    background: url("./img/SpaceSelfie.png") no-repeat 75% 70%/cover;
+  }
+  #home #home-content {
+    top: 5%;
+  }
+  #navbar {
+    font-size: 1.2rem;
+  }
+  #skills .items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio p {
+    text-align: center;
+  }
+  #portfolio .items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #portfolio .items .item {
+    height: 20px;
+  }
+  #portfolio .items .item h4 {
+    font-size: 1.2rem;
+  }
+  #about p {
+    text-align: center;
+  }
+  #about .items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #about .items .item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=main.css.map */
