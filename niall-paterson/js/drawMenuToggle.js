@@ -19,23 +19,23 @@ export const drawMenuToggle = (settings) => {
   const animateMenu = () => {
     if (settings.menuVisible) {
       lineTop.
-      animate(400, 0, "now").plot([[12, 15], [38, 27]])
-      .animate(1000, 100, "after").plot([[10, 20], [40, 20]]);
+        animate(400, 0, 'now').plot([[12, 15], [38, 27]])
+        .animate(1000, 100, 'after').plot([[10, 20], [40, 20]]);
 
       lineBot
-      .animate(400, 100, "now").plot([[38, 20], [12, 35]])
-      .animate(1000, 100, "after").plot([[10, 35], [40, 35]]);
+        .animate(400, 100, 'now').plot([[38, 20], [12, 35]])
+        .animate(1000, 100, 'after').plot([[10, 35], [40, 35]]);
 
       toggleMenuVisibility(settings);
 
     } else {
       lineTop
-      .animate(400, 0, "now").plot([[12, 15], [38, 27]])
-      .animate(1000, 100, "after").plot([[37.5, 12.5], [12.5, 37.5]]);
+        .animate(400, 0, 'now').plot([[12, 15], [38, 27]])
+        .animate(1000, 100, 'after').plot([[37.5, 12.5], [12.5, 37.5]]);
 
       lineBot
-      .animate(400, 0, "now").plot([[38, 20], [12, 35]])
-      .animate(1000, 100, "after").plot([[12.5, 12.5], [37, 37.5]]);
+        .animate(400, 0, 'now').plot([[38, 20], [12, 35]])
+        .animate(1000, 100, 'after').plot([[12.5, 12.5], [37, 37.5]]);
 
       toggleMenuVisibility(settings);
     }
