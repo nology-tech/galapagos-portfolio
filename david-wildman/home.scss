@@ -1,591 +1,381 @@
-$portfolio-light-blue: #8EA8C3;
-$portfolio-black: #0b0014;
-$portfolio-gray: #363946;
-$portfolio-blue: #406E8E;
-$portfolio-purple: #5B2E48;
 
-/* Let's get some out-of-this-world fonts */
+/*----------Fonts----------*/
 
 @font-face {
-  font-family: 'sfalienencsolid';
-  src:	url('./assets/fonts/sfalienencsolid.woff2') format('woff2'),
-      url('./assets//fonts/sfalienencsolid.woff') format('woff'),
-      url('./assets//fonts/sfalienencsolid.ttf') format('truetype');
+  font-family: "sfalienencsolid";
+  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"),
+    url("./assets//fonts/sfalienencsolid.woff") format("woff"),
+    url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'sfalienenc';
-  src:	url('./assets/fonts/sfalienenc.woff2') format('woff2'),
-      url('./assets//fonts/sfalienenc.woff') format('woff'),
-      url('./assets//fonts/sfalienenc.ttf') format('truetype');
+  font-family: "sfalienenc";
+  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets//fonts/sfalienenc.woff") format("woff"),
+    url("./assets//fonts/sfalienenc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'streamster';
-  src:	url('./assets/fonts/streamster.woff2') format('woff2'),
-      url('./assets//fonts/streamster.woff') format('woff'),
-      url('./assets//fonts/streamster.ttf') format('truetype');
+
+  font-family: "streamster";
+  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets//fonts/streamster.woff") format("woff"),
+    url("./assets//fonts/streamster.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'scriptina';
-  src:	url('./assets/fonts/scriptina.woff2') format('woff2'),
-      url('./assets//fonts/scriptina.woff') format('woff'),
-      url('./assets//fonts/scriptina.ttf') format('truetype');
+  font-family: "scriptina";
+  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets//fonts/scriptina.woff") format("woff"),
+    url("./assets//fonts/scriptina.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+/*---------- ----------*/
+
+/*----------CSS Reset----------*/
 
 * {
-
+  --portfolio-light-blue: #8ea8c3;
+  --portfolio-black: #0b0014;
+  --portfolio-gray: #363946;
+  --portfolio-blue: #406e8e;
+  --portfolio-purple: #5b2e48;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'sfalienencsolid', sans-serif;
-  color: inherit;
-  /* border: 1px hotpink dotted; */
+  scroll-behavior: smooth;
+  // outline: 1px greenyellow dotted;
 }
+/*---------- ----------*/
 
-a .hover-io, p .hover-io, li .hover-io {
-  letter-spacing: inherit;
-  transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-  transition: letter-spacing 0.5s, color 0.5s;
-  color: inherit;
-  z-index: 99;
-}
+/*----------Styling for hyperlinks and special characters----------*/
 
-body {
-  max-width: 100vw;
-  background-color: $portfolio-black; 
-}
-
-  /* Header styles. Because first impressions count. */
-
-header {
-  width: 100%;
-  height: 32vh;
-  background-color: #0B001499;
-  border-bottom: 1px solid $portfolio-light-blue;
-}
-
-header > nav {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-header > nav > ul {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  letter-spacing: initial;
-}
-
-header > nav > ul > li {
-  color: $portfolio-blue;
-  width: 85%;
-}
-
-header > nav > ul > li.home {
-  color: $portfolio-light-blue;
-}
-
-header > nav > ul > li:not(.home) {
-  border-left: 0.2em $portfolio-light-blue;
-}
-
-header > nav > ul > li > a {
-  text-decoration: none;
-  font-size: 2em;
-}
-
-  /* All the sections take up one viewport height except on very small mobiles. */
-
-section {
-  height: 100vh;
-  border-bottom: 1px $portfolio-light-blue double;
-  background-color: #0B0014;
-
-section.bold-opening-gambit #bold-opening-gambit-headline {
-  height: 68%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-  line-height: 3em;
-  text-align: center;
-  text-shadow: 0px 0px 70px $portfolio-blue;
-  overflow: visible;
-  font-size: 1.5em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.first-line p {
-  background-color: $portfolio-gray;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  color: $portfolio-blue;
-  width: 45%;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.second-line p {
-  background-color: $portfolio-gray;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: $portfolio-blue;
-  width: 65%;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-  background-color: $portfolio-purple;
-  color: $portfolio-blue;
-  font-size: 1.8em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-  color: $portfolio-black;
-  background-color: $portfolio-blue;
-  font-size: 2.4em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption {
-  height: 32%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line > p {
-  text-shadow: 0px 0px 5px #5B2E48FF;
-  transform: rotate(-0.03turn);
-  font-family: 'scriptina';
-  color: #5B2E48FF;
-  font-size: 5em;
-  line-height: 2em;
-}
-
-  /* Whew, that was long. Alright, first proper bit of homepage content now. */
-
-  /* Remember, we're still on mobile here—a lot of this goes out the window after 768 pixels. */
-
-section.first-content #first-content-headline {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: left;
-}
-
-section.first-content #first-content-headline div.text p {
-  line-height: 3em;
-  text-align: center;
-  text-shadow: 0px 0px 70px #8EA8C3;
-  overflow: visible;
-  font-size: 1.5em;
-}
-
-section.first-content #first-content-headline div.text.first-line p {
-  background-color: #5B2E4833;
-  border-bottom-right-radius: 70%; 
-  color: $portfolio-blue;
-  width: 45%;
-  float: middle;
-}
-
-section.first-content #first-content-headline div.text.second-line p {
-  color: $portfolio-black;
-  background-color: #406E8E33;
-  font-size: 2.5em;
-  line-height: 1em;
-}
-
-section.first-content #first-content-headline div.text.third-line p {
-  background-color: #5B2E4833;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: $portfolio-gray;
-  width: 65%;
-}
-
-section.first-content #first-content-headline > div.text.fourth-line {
-  display: none;
-}
-
-section.first-content #first-content-caption {
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-section.first-content #first-content-caption > div.text.fourth-line {
-  display: initial;
-}
-
-section.first-content #first-content-caption > div.text.fourth-line > p {
-  font-family: 'streamster';
-  color: $portfolio-blue;
-  text-shadow: none;
-  background-color: none;
-  font-size: 10em;
-  line-height: 50%;
-}
-
-
-
-  /* Second bit of the homepage comin' up.
-  This will probably be a form but I'll change it later.
-  Also, this needs to be a bit shorter so we can fit the footer in. */
-
-
-section.second-content #headline {
-  height: 68vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: justify;
-}
-
-section.second-content #headline div.text p {
-  line-height: 3em;
-  text-align: center;
-  text-shadow: 0px 0px 70px #8EA8C3;
-  overflow: visible;
-  font-size: 1.5em;
-}
-
-section.second-content #headline div.text.first-line p {
-  background-color: #5B2E4833;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  color: $portfolio-purple;
-  width: 45%;
-}
-
-section.second-content #headline div.text.second-line p {
-  background-color: #5B2E4833;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: $portfolio-purple;
-  width: 65%;
-}
-
-section.second-content #headline div.text.third-line p {
-  background-color: #36394633;
-  color: $portfolio-blue;
-  font-size: 1.8em;
-}
+//  My chosen font doesn't have much in it!! //
 
 .char {
   color: transparent;
   text-decoration: underline;
-  text-decoration-color: $portfolio-blue;
+  text-decoration-color: var(--portfolio-blue);
 }
-
-.second-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 76vh;
-  width: 100%;
-}
-
-  /* The form */
-
-  body > section.second-content > div > div > p {
-    font-family: 'scriptina';
-    font-size: 15vmin;
-    color: $portfolio-purple;
-    line-height: 1em;
-    text-align: center;
-  }
-
-
-
-
-  /* Last but not least. If you're still reading, I applaud you. */
-
-/* header {
-  width: 100%;
-  height: 32vh;
-  background-color: #0B001499;
-} */
-
-body > footer {
-  height: 12vh;
-  background-color: #0B001499;
-  border-top: 1px double $portfolio-light-blue;
-}
-
-footer > nav {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-footer > nav > ul {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr;
-  grid-template-rows: 5fr;
-  letter-spacing: initial;
-}
-
-footer > nav > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-footer > nav > ul > li > a {
-
-  width: 100%;
-  height: auto;
-  color: $portfolio-blue;
-  text-decoration: none;
-}
-
-  /* This is where it gets funky... */
 
 @media screen and (min-width: 823px) {
-
-  header {
-    z-index: 2;
-  }
-
-  #bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line {
-    z-index: 1;
-  }
-
-  .hover-nav {
-    letter-spacing: 0.05em;
-    color: $portfolio-purple;
-  }
-
   span.char {
-    text-decoration-color: $portfolio-purple;
+    text-decoration-color: var(--portfolio-purple);
+    // font-size: 1em;
+  }
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*---------- ----------*/
+
+/*----------General styles----------*/
+
+body {
+  max-width: 100vw;
+  background-color: var(--portfolio-black);
+  //  I've given the body this background image so I can see where it peeks through
+  // background-image: linear-gradient(to bottom right, yellow 0%, yellow 4%, black 5%, black 9%, yellow 10%,
+  // yellow 14%, black 15%, black 19%, yellow 20%,
+  // yellow 24%, black 25%, black 29%, yellow 30%,
+  // yellow 34%, black 35%, black 39%, yellow 40%,
+  // yellow 44%, black 45%, black 49%, yellow 50%,
+  // yellow 54%, black 55%, black 59%, yellow 60%,
+  // yellow 64%, black 65%, black 69%, yellow 70%,
+  // yellow 74%, black 75%, black 79%, yellow 80%,
+  // yellow 84%, black 85%, black 89%, yellow 90%,
+  // yellow 94%, black 95%, black 99%, yellow 100%);
+  font-size: 16px;
+  color: var(--portfolio-black);
+}
+/*---------- ----------*/
+
+/*----------Header and navbar styles----------*/
+
+header {
+  font-family: "sfalienencsolid", sans-serif;
+
+  .title {
+    height: 50vh;
   }
 
-    
-
-
-  header {
-    position: sticky;
-    top: 0;
-    height: 12vh;
-    border-bottom: 1px solid $portfolio-light-blue;
+  h1 {
+    background-image: linear-gradient(#0b0014bb 0%, #0b0014bb 100%),
+      url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
   }
 
-  header > nav {
-    text-align: center;
+  nav {
     width: 100%;
     height: 100%;
+
+    ul {
+      width: 100%;
+      height: 80%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: initial;
+
+      li {
+        width: 100%;
+        height: max-content;
+        line-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/*---------- ----------*/
+
+/*---------- Specific section stylings. Sections take up one viewport height.
+For very small devices sections take up two heights. ---------- */
+
+section {
+  font-family: "sfalienencsolid", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &.section-three {
+    height: 88vh;
+    // background-image: url(https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  header > nav > ul {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1.75fr 1.75fr 1.75fr;
-    grid-template-rows: 1fr;
+  article {
+    font-family: consolas, Arial, Helvetica, sans-serif;
+    height: 60%;
+    width: 75%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
 
+    div {
+      width: 100%;
+
+      h3 {
+        color: var(--portfolio-purple);
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+        padding: 0% 0% 2%;
+      }
+
+      h4 {
+        font-size: 0.5em;
+        text-align: left;
+        width: 100%;
+        padding: 0% 0% 2%;
+      }
+
+      p {
+        color: var(--portfolio-gray);
+        text-align: left;
+        width: 100%;
+        font-size: 0.5em;
+        padding: 0% 0% 3%;
+      }
+    }
   }
 
-  header > nav > ul > li {
+  .caption {
+    height: 20%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    text-align: center;
+  }
+}
+
+/*----------Page styling----------*/
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--portfolio-black);
+  border-top: 1px double var(--portfolio-light-blue);
+  border-bottom: 1px double var(--portfolio-light-blue);
+  border-radius: 1em;
+  box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
+  font-size: 2em;
+  color: var(--portfolio-blue);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline-color: transparent;
+
+    &.title {
+      height: 20%;
+      width: 100%;
+    }
+
+    h1,
+    h2 {
+      width: 80%;
+      padding: 2vmin;
+      text-align: center;
+      line-height: 100%;
+      height: max-content;
+      color: var(--portfolio-black);
+      text-shadow: 0 0 5px var(--portfolio-light-blue);
+      font-size: 1em;
+      border-top: 1px solid var(--portfolio-light-blue);
+      border-bottom: 2px solid var(--portfolio-light-blue);
+      border-radius: 1em;
+    }
+
+    .title-one,
+    .title-two {
+      display: block;
+    }
+  }
+}
+
+/*----------Responsive design----------*/
+
+@media screen and (min-width: 823px) {
+  h1,
+  h2 {
     width: 100%;
-    height: 50%;
-    color: inherit;
   }
-  
-  header > nav > ul > li > a {
-    text-decoration: none;
-    font-size: 2em;
+
+  header.page {
+    div.title {
+      height: 40vh;
+    }
+
+    nav {
+      height: 60vh;
+    }
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
   }
-  
-  nav:hover *.hover-nav {
-    display: inherit;
-    letter-spacing: 0em;
-    transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: letter-spacing 2s, text-shadow 2s, color 2s;
-    color: $portfolio-blue;
-    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  /*----------Page styling----------*/
+
+  // .page {
+  // 	width: 100%;
+  //   height: 100vh;
+  // 	background-color: var(--portfolio-black);
+  // 	border-top: 1px double var(--portfolio-light-blue);
+  // 	border-bottom: 1px double var(--portfolio-light-blue);
+  //   border-radius: 1em;
+  //   box-shadow: 0px 0px 5px 1px var(--portfolio-light-blue);
+  //   font-size: 2em;
+  //   color: var(--portfolio-blue);
+
+  //   div {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //   }
+  // }
+
+  ul {
+    color: var(--portfolio-gray);
   }
 
   nav:hover * > span.char {
     color: transparent;
-    text-decoration-color: $portfolio-blue;
+    text-decoration-color: var(--portfolio-blue);
     transition: text-decoration 2s;
   }
-    
-  a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
+
+  .hover-fx-subtle {
+    letter-spacing: 0.05em;
+    color: inherit;
+  }
+
+  :hover > .hover-fx-subtle {
+    // display: inherit;
+    letter-spacing: 0;
+    text-shadow: none;
+    transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+    transition: letter-spacing 2s, text-shadow 2s, color 1s;
+    color: var(--portfolio-blue);
+  }
+
+  *:hover > .hover-fx-highlight {
     letter-spacing: 0.05em;
     transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: letter-spacing 0.5s, color 0.5s;
-    color: $portfolio-light-blue;
+    transition: letter-spacing 0.5s, color 1s;
+    color: var(--portfolio-light-blue);
     cursor: pointer;
-    text-shadow: 0px 0px 30px $portfolio-light-blue;
+    text-shadow: 0 0 30px var(--portfolio-light-blue);
   }
 
-  section {
-    height: 88vh;
-    border-bottom: 1px $portfolio-light-blue double
+  .page .first-line:hover {
+    outline: 2px solid var(--portfolio-purple);
+    transition: outline 0.5s;
   }
 
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-    line-height: 1.2em;
-    font-size: 2.5em;
+  .page .second-line:hover {
+    outline: 1px solid var(--portfolio-blue);
+    transition: outline 0.5s;
   }
 
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-    font-size: 4em;
-  }
+  footer {
+    color: var(--portfolio-light-blue);
+    height: 12vh;
+    background-color: #0b0014;
+    border-top: 1px double var(--portfolio-light-blue);
+    border-radius: 2em;
 
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-    font-size: 6em;
-    background-color: $portfolio-blue;
-  }
+    nav {
+      height: 100%;
+      width: 100%;
 
-  section.first-content #first-content-headline div.text p {
-    line-height: 2;
-    font-size: 2em;
-  }
+      ul {
+        height: 100%;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        letter-spacing: initial;
 
-  section.first-content #first-content-caption > div.text.fourth-line {
-    display: none;
-  }
-
-  section.first-content #first-content-headline {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
-  section.first-content #first-content-headline > div.text.fourth-line {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-  }
-
-  section.first-content #first-content-headline > div.text.fourth-line > p {
-    width: 30%;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    background-color: rgba(91, 46, 72, 0);
-    font-family: 'streamster';
-    color: $portfolio-blue;
-    text-shadow: unset;
-    font-size: 5em;
-    line-height: 2em;
-  }
-
-
-  section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-    width: 100%;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(91, 46, 72, 0), rgba(91, 46, 72, 1));
-    border-top-right-radius: 0em;
-    border-top-left-radius: 0em;
-    border-bottom-right-radius: 0em;
-    letter-spacing: 0.3em;
-    font-size: 10em;
-    line-height: 2em;
-    color: $portfolio-black;
-    text-shadow: 0px 0px 5px #8EA8C3;
-    transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: width 1.5s, background-color 1.5s, background-image 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
-
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-    line-height: 1.2em;
-    font-size: 3.5em;
-  }
-
-  section.first-content #first-content-headline div.text.second-line p {
-    font-size: 4em;
-  }
-
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-    font-size: 6em;
-    background-color: unset;
-  }
-
-  section.first-content #first-content-headline div.text p {
-    line-height: 1.5;
-    font-size: 4em;
-  }
-
-
-  section.first-content #first-content-headline > div.text.fourth-line > p {
-    font-size: 7em;
-  }
-
-
-  section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-    font-size: 12em;
-  }
-
-  header > nav > ul > li > a {
-    font-size: 2.6em;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: auto;
+          color: inherit;
+        }
+      }
+    }
   }
 }
-
-@media screen and (max-height: 568px) {
-  body > header {
-    height: 100vh;
-    position: static;
-  }
-  section {
-    height: 200vh;
-  }
-}
-
-#bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line > p > span {
-  background-color: inherit;
-  z-index: 10;
-}
+>>>>>>> working-version

@@ -1,121 +1,104 @@
-@charset "UTF-8";
-/* Let's get some out-of-this-world fonts */
+/*----------Fonts----------*/
 @font-face {
-  font-family: 'sfalienencsolid';
+  font-family: "sfalienencsolid";
   src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets//fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'sfalienenc';
+  font-family: "sfalienenc";
   src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets//fonts/sfalienenc.woff") format("woff"), url("./assets//fonts/sfalienenc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'streamster';
+  font-family: "streamster";
   src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets//fonts/streamster.woff") format("woff"), url("./assets//fonts/streamster.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'scriptina';
+  font-family: "scriptina";
   src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets//fonts/scriptina.woff") format("woff"), url("./assets//fonts/scriptina.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+/*---------- ----------*/
+/*----------CSS Reset----------*/
 * {
+  --portfolio-light-blue: #8ea8c3;
+  --portfolio-black: #0b0014;
+  --portfolio-gray: #363946;
+  --portfolio-blue: #406e8e;
+  --portfolio-purple: #5b2e48;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'sfalienencsolid', sans-serif;
-  color: inherit;
-  /* border: 1px hotpink dotted; */
+  scroll-behavior: smooth;
 }
 
-a .hover-io, p .hover-io, li .hover-io {
-  letter-spacing: inherit;
-  -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-          transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-  -webkit-transition: letter-spacing 0.5s, color 0.5s;
-  transition: letter-spacing 0.5s, color 0.5s;
-  color: inherit;
-  z-index: 99;
+/*---------- ----------*/
+/*----------Styling for hyperlinks and special characters----------*/
+.char {
+  color: transparent;
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--portfolio-blue);
+          text-decoration-color: var(--portfolio-blue);
 }
 
+@media screen and (min-width: 823px) {
+  span.char {
+    -webkit-text-decoration-color: var(--portfolio-purple);
+            text-decoration-color: var(--portfolio-purple);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*---------- ----------*/
+/*----------General styles----------*/
 body {
   max-width: 100vw;
-  background-color: #0b0014;
+  background-color: var(--portfolio-black);
+  font-size: 16px;
+  color: var(--portfolio-black);
 }
 
-/* Header styles. Because first impressions count. */
+/*---------- ----------*/
+/*----------Header and navbar styles----------*/
 header {
-  width: 100%;
-  height: 32vh;
-  background-color: #0B001499;
-  border-bottom: 1px solid #8EA8C3;
+  font-family: "sfalienencsolid", sans-serif;
 }
 
-header > nav {
-  text-align: center;
-  width: 100%;
-  height: 100%;
+header .title {
+  height: 50vh;
 }
 
-header > nav > ul {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: initial;
-}
-
-header > nav > ul > li {
-  color: #406E8E;
-  width: 85%;
-}
-
-header > nav > ul > li.home {
-  color: #8EA8C3;
-}
-
-header > nav > ul > li:not(.home) {
-  border-left: 0.2em #8EA8C3;
-}
-
-header > nav > ul > li > a {
-  text-decoration: none;
-  font-size: 2em;
-}
-
-/* All the sections take up one viewport height except on very small mobiles. */
-section {
-  height: 100vh;
-  border-bottom: 1px #8EA8C3 double;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 0, 0, 0.5))), url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp);
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 100%), url(https://i.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.webp);
+header h1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0b0014bb), to(#0b0014bb)), url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
+  background-image: linear-gradient(#0b0014bb 0%, #0b0014bb 100%), url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
   background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline {
-  height: 68%;
+header nav {
+  width: 100%;
+  height: 100%;
+}
+
+header nav ul {
+  width: 100%;
+  height: 80%;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,49 +106,98 @@ section.bold-opening-gambit #bold-opening-gambit-headline {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: initial;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-  line-height: 3em;
-  text-align: center;
-  text-shadow: 0px 0px 70px #406E8E;
-  overflow: visible;
-  font-size: 1.5em;
+header nav ul li {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  line-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.first-line p {
-  background-color: #363946;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  color: #406E8E;
-  width: 45%;
+/*---------- ----------*/
+/*---------- Specific section stylings. Sections take up one viewport height.
+For very small devices sections take up two heights. ---------- */
+section {
+  font-family: "sfalienencsolid", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.second-line p {
-  background-color: #363946;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: #406E8E;
-  width: 65%;
+section.section-three {
+  height: 88vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-  background-color: #5B2E48;
-  color: #406E8E;
-  font-size: 1.8em;
+section article {
+  font-family: consolas, Arial, Helvetica, sans-serif;
+  height: 60%;
+  width: 75%;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-  color: #0b0014;
-  background-color: #406E8E;
-  font-size: 2.4em;
+section article div {
+  width: 100%;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-caption {
-  height: 32%;
+section article div h3 {
+  color: var(--portfolio-purple);
+  font-size: 1em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 2%;
+}
+
+section article div h4 {
+  font-size: 0.5em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 2%;
+}
+
+section article div p {
+  color: var(--portfolio-gray);
+  text-align: left;
+  width: 100%;
+  font-size: 0.5em;
+  padding: 0% 0% 3%;
+}
+
+section .caption {
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +214,21 @@ section.bold-opening-gambit #bold-opening-gambit-caption {
   text-align: center;
 }
 
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line {
+/*----------Page styling----------*/
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--portfolio-black);
+  border-top: 1px double var(--portfolio-light-blue);
+  border-bottom: 1px double var(--portfolio-light-blue);
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
+          box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
+  font-size: 2em;
+  color: var(--portfolio-blue);
+}
+
+.page div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,281 +236,136 @@ section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line > p {
-  text-shadow: 0px 0px 5px #5B2E48FF;
-  -webkit-transform: rotate(-0.03turn);
-          transform: rotate(-0.03turn);
-  font-family: 'scriptina';
-  color: #5B2E48FF;
-  font-size: 5em;
-  line-height: 2em;
-}
-
-/* Whew, that was long. Alright, first proper bit of homepage content now. */
-/* Remember, we're still on mobile here—a lot of this goes out the window after 768 pixels. */
-section.first-content #first-content-headline {
-  height: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-}
-
-section.first-content #first-content-headline div.text p {
-  line-height: 3em;
-  text-align: center;
-  text-shadow: 0px 0px 70px #8EA8C3;
-  overflow: visible;
-  font-size: 1.5em;
-}
-
-section.first-content #first-content-headline div.text.first-line p {
-  background-color: #5B2E4833;
-  border-bottom-right-radius: 70%;
-  color: #406E8E;
-  width: 45%;
-  float: middle;
-}
-
-section.first-content #first-content-headline div.text.second-line p {
-  color: #0b0014;
-  background-color: #406E8E33;
-  font-size: 2.5em;
-  line-height: 1em;
-}
-
-section.first-content #first-content-headline div.text.third-line p {
-  background-color: #5B2E4833;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: #363946;
-  width: 65%;
-}
-
-section.first-content #first-content-headline > div.text.fourth-line {
-  display: none;
-}
-
-section.first-content #first-content-caption {
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  outline-color: transparent;
 }
 
-section.first-content #first-content-caption > div.text.fourth-line {
-  display: initial;
+.page div.title {
+  height: 20%;
+  width: 100%;
 }
 
-section.first-content #first-content-caption > div.text.fourth-line > p {
-  font-family: 'streamster';
-  color: #406E8E;
-  text-shadow: none;
-  background-color: none;
-  font-size: 10em;
-  line-height: 50%;
-}
-
-/* Second bit of the homepage comin' up.
-  This will probably be a form but I'll change it later.
-  Also, this needs to be a bit shorter so we can fit the footer in. */
-section.second-content #headline {
-  height: 68vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: justify;
-      -ms-flex-align: justify;
-          align-items: justify;
-}
-
-section.second-content #headline div.text p {
-  line-height: 3em;
+.page div h1,
+.page div h2 {
+  width: 80%;
+  padding: 2vmin;
   text-align: center;
-  text-shadow: 0px 0px 70px #8EA8C3;
-  overflow: visible;
-  font-size: 1.5em;
+  line-height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: var(--portfolio-black);
+  text-shadow: 0 0 5px var(--portfolio-light-blue);
+  font-size: 1em;
+  border-top: 1px solid var(--portfolio-light-blue);
+  border-bottom: 2px solid var(--portfolio-light-blue);
+  border-radius: 1em;
 }
 
-section.second-content #headline div.text.first-line p {
-  background-color: #5B2E4833;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  color: #5B2E48;
-  width: 45%;
+.page div .title-one,
+.page div .title-two {
+  display: block;
 }
 
-section.second-content #headline div.text.second-line p {
-  background-color: #5B2E4833;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  float: right;
-  color: #5B2E48;
-  width: 65%;
-}
-
-section.second-content #headline div.text.third-line p {
-  background-color: #36394633;
-  color: #406E8E;
-  font-size: 1.8em;
-}
-
-.char {
-  color: transparent;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #406E8E;
-          text-decoration-color: #406E8E;
-}
-
-.second-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 76vh;
-  width: 100%;
-}
-
-/* The form */
-body > section.second-content > div > div > p {
-  font-family: 'scriptina';
-  font-size: 15vmin;
-  color: #5B2E48;
-  line-height: 1em;
-  text-align: center;
-}
-
-/* Last but not least. If you're still reading, I applaud you. */
-/* header {
-  width: 100%;
-  height: 32vh;
-  background-color: #0B001499;
-} */
-body > footer {
-  height: 12vh;
-  background-color: #0B001499;
-  border-top: 1px double #8EA8C3;
-}
-
-footer > nav {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-footer > nav > ul {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 2fr 1fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr 1fr;
-  -ms-grid-rows: 5fr;
-      grid-template-rows: 5fr;
-  letter-spacing: initial;
-}
-
-footer > nav > ul > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-footer > nav > ul > li > a {
-  width: 100%;
-  height: auto;
-  color: #406E8E;
-  text-decoration: none;
-}
-
-/* This is where it gets funky... */
+/*----------Responsive design----------*/
 @media screen and (min-width: 823px) {
-  header {
-    z-index: 2;
-  }
-  #bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line {
-    z-index: 1;
-  }
-  .hover-nav {
-    letter-spacing: 0.05em;
-    color: #5B2E48;
-  }
-  span.char {
-    -webkit-text-decoration-color: #5B2E48;
-            text-decoration-color: #5B2E48;
-  }
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 12vh;
-    border-bottom: 1px solid #8EA8C3;
-  }
-  header > nav {
-    text-align: center;
+  h1,
+  h2 {
     width: 100%;
-    height: 100%;
   }
-  header > nav > ul {
+  header.page div.title {
+    height: 40vh;
+  }
+  header.page nav {
+    height: 60vh;
+  }
+  header.page ul {
     width: 100%;
     height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1.75fr 1.75fr 1.75fr;
-        grid-template-columns: 1fr 1.75fr 1.75fr 1.75fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
-  header > nav > ul > li {
+}
+
+@media screen and (min-width: 1024px) {
+  /*----------Page styling----------*/
+  ul {
+    color: var(--portfolio-gray);
+  }
+  nav:hover * > span.char {
+    color: transparent;
+    -webkit-text-decoration-color: var(--portfolio-blue);
+            text-decoration-color: var(--portfolio-blue);
+    -webkit-transition: -webkit-text-decoration 2s;
+    transition: -webkit-text-decoration 2s;
+    transition: text-decoration 2s;
+    transition: text-decoration 2s, -webkit-text-decoration 2s;
+  }
+  .hover-fx-subtle {
+    letter-spacing: 0.05em;
+    color: inherit;
+  }
+  :hover > .hover-fx-subtle {
+    letter-spacing: 0;
+    text-shadow: none;
+    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+    -webkit-transition: letter-spacing 2s, text-shadow 2s, color 1s;
+    transition: letter-spacing 2s, text-shadow 2s, color 1s;
+    color: var(--portfolio-blue);
+  }
+  *:hover > .hover-fx-highlight {
+    letter-spacing: 0.05em;
+    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+    -webkit-transition: letter-spacing 0.5s, color 1s;
+    transition: letter-spacing 0.5s, color 1s;
+    color: var(--portfolio-light-blue);
+    cursor: pointer;
+    text-shadow: 0 0 30px var(--portfolio-light-blue);
+  }
+  .page .first-line:hover {
+    outline: 2px solid var(--portfolio-purple);
+    -webkit-transition: outline 0.5s;
+    transition: outline 0.5s;
+  }
+  .page .second-line:hover {
+    outline: 1px solid var(--portfolio-blue);
+    -webkit-transition: outline 0.5s;
+    transition: outline 0.5s;
+  }
+  footer {
+    color: var(--portfolio-light-blue);
+    height: 12vh;
+    background-color: #0b0014;
+    border-top: 1px double var(--portfolio-light-blue);
+    border-radius: 2em;
+  }
+  footer nav {
+    height: 100%;
+    width: 100%;
+  }
+  footer nav ul {
+    height: 100%;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    letter-spacing: initial;
+  }
+  footer nav ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -475,159 +376,8 @@ footer > nav > ul > li > a {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 50%;
+    height: auto;
     color: inherit;
   }
-  header > nav > ul > li > a {
-    text-decoration: none;
-    font-size: 2em;
-  }
-  nav:hover *.hover-nav {
-    display: inherit;
-    letter-spacing: 0em;
-    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    -webkit-transition: letter-spacing 2s, text-shadow 2s, color 2s;
-    transition: letter-spacing 2s, text-shadow 2s, color 2s;
-    color: #406E8E;
-    cursor: pointer;
-  }
-  nav:hover * > span.char {
-    color: transparent;
-    -webkit-text-decoration-color: #406E8E;
-            text-decoration-color: #406E8E;
-    -webkit-transition: -webkit-text-decoration 2s;
-    transition: -webkit-text-decoration 2s;
-    transition: text-decoration 2s;
-    transition: text-decoration 2s, -webkit-text-decoration 2s;
-  }
-  a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
-    letter-spacing: 0.05em;
-    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    -webkit-transition: letter-spacing 0.5s, color 0.5s;
-    transition: letter-spacing 0.5s, color 0.5s;
-    color: #8EA8C3;
-    cursor: pointer;
-    text-shadow: 0px 0px 30px #8EA8C3;
-  }
-  section {
-    height: 88vh;
-    border-bottom: 1px #8EA8C3 double;
-  }
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-    line-height: 1.2em;
-    font-size: 2.5em;
-  }
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-    font-size: 4em;
-  }
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-    font-size: 6em;
-    background-color: #406E8E;
-  }
-  section.first-content #first-content-headline div.text p {
-    line-height: 2;
-    font-size: 2em;
-  }
-  section.first-content #first-content-caption > div.text.fourth-line {
-    display: none;
-  }
-  section.first-content #first-content-headline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 100%;
-  }
-  section.first-content #first-content-headline > div.text.fourth-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  section.first-content #first-content-headline > div.text.fourth-line > p {
-    width: 30%;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    background-color: rgba(91, 46, 72, 0);
-    font-family: 'streamster';
-    color: #406E8E;
-    text-shadow: unset;
-    font-size: 5em;
-    line-height: 2em;
-  }
-  section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-    width: 100%;
-    background-color: transparent;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 46, 72, 0)), to(#5b2e48));
-    background-image: linear-gradient(to bottom, rgba(91, 46, 72, 0), #5b2e48);
-    border-top-right-radius: 0em;
-    border-top-left-radius: 0em;
-    border-bottom-right-radius: 0em;
-    letter-spacing: 0.3em;
-    font-size: 10em;
-    line-height: 2em;
-    color: #0b0014;
-    text-shadow: 0px 0px 5px #8EA8C3;
-    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    -webkit-transition: width 1.5s, background-color 1.5s, background-image 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
-    transition: width 1.5s, background-color 1.5s, background-image 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-    line-height: 1.2em;
-    font-size: 3.5em;
-  }
-  section.first-content #first-content-headline div.text.second-line p {
-    font-size: 4em;
-  }
-  section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-    font-size: 6em;
-    background-color: unset;
-  }
-  section.first-content #first-content-headline div.text p {
-    line-height: 1.5;
-    font-size: 4em;
-  }
-  section.first-content #first-content-headline > div.text.fourth-line > p {
-    font-size: 7em;
-  }
-  section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-    font-size: 12em;
-  }
-  header > nav > ul > li > a {
-    font-size: 2.6em;
-  }
-}
-
-@media screen and (max-height: 568px) {
-  body > header {
-    height: 100vh;
-    position: static;
-  }
-  section {
-    height: 200vh;
-  }
-}
-
-#bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line > p > span {
-  background-color: inherit;
-  z-index: 10;
 }
 /*# sourceMappingURL=home.css.map */
