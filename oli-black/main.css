@@ -4,16 +4,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.02, 0.97) translateY(-0.5%) translateX(0.5%);
-            transform: scale(1.02, 0.97) translateY(-0.5%) translateX(0.5%);
+    -webkit-transform: scale(1.05, 0.97) translateY(-0.5%) translateX(0.5%);
+            transform: scale(1.05, 0.97) translateY(-0.5%) translateX(0.5%);
   }
   50% {
-    -webkit-transform: scale(1.03, 0.99) translateY(0.5%) translateX(0%);
-            transform: scale(1.03, 0.99) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(1.03, 0.96) translateY(0.5%) translateX(0%);
+            transform: scale(1.03, 0.96) translateY(0.5%) translateX(0%);
   }
   75% {
-    -webkit-transform: scale(0.99, 1.02) translateY(-0.5%) translateX(0.5%);
-            transform: scale(0.99, 1.02) translateY(-0.5%) translateX(0.5%);
+    -webkit-transform: scale(0.97, 1.05) translateY(-0.5%) translateX(0.5%);
+            transform: scale(0.97, 1.05) translateY(-0.5%) translateX(0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -27,16 +27,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.02, 0.97) translateY(-0.5%) translateX(0.5%);
-            transform: scale(1.02, 0.97) translateY(-0.5%) translateX(0.5%);
+    -webkit-transform: scale(1.05, 0.97) translateY(-0.5%) translateX(0.5%);
+            transform: scale(1.05, 0.97) translateY(-0.5%) translateX(0.5%);
   }
   50% {
-    -webkit-transform: scale(1.03, 0.99) translateY(0.5%) translateX(0%);
-            transform: scale(1.03, 0.99) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(1.03, 0.96) translateY(0.5%) translateX(0%);
+            transform: scale(1.03, 0.96) translateY(0.5%) translateX(0%);
   }
   75% {
-    -webkit-transform: scale(0.99, 1.02) translateY(-0.5%) translateX(0.5%);
-            transform: scale(0.99, 1.02) translateY(-0.5%) translateX(0.5%);
+    -webkit-transform: scale(0.97, 1.05) translateY(-0.5%) translateX(0.5%);
+            transform: scale(0.97, 1.05) translateY(-0.5%) translateX(0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -50,16 +50,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.99, 1) translateY(0%) translateX(-0.5%);
-            transform: scale(0.99, 1) translateY(0%) translateX(-0.5%);
+    -webkit-transform: scale(0.97, 1) translateY(0%) translateX(-0.5%);
+            transform: scale(0.97, 1) translateY(0%) translateX(-0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 0.97) translateY(0%) translateX(0.5%);
-            transform: scale(0.99, 0.97) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(0.96, 0.97) translateY(0%) translateX(0.5%);
+            transform: scale(0.96, 0.97) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(1.02, 1.03) translateY(-0.5%) translateX(0%);
-            transform: scale(1.02, 1.03) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(1.05, 1.03) translateY(-0.5%) translateX(0%);
+            transform: scale(1.05, 1.03) translateY(-0.5%) translateX(0%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -73,16 +73,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.99, 1) translateY(0%) translateX(-0.5%);
-            transform: scale(0.99, 1) translateY(0%) translateX(-0.5%);
+    -webkit-transform: scale(0.97, 1) translateY(0%) translateX(-0.5%);
+            transform: scale(0.97, 1) translateY(0%) translateX(-0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 0.97) translateY(0%) translateX(0.5%);
-            transform: scale(0.99, 0.97) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(0.96, 0.97) translateY(0%) translateX(0.5%);
+            transform: scale(0.96, 0.97) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(1.02, 1.03) translateY(-0.5%) translateX(0%);
-            transform: scale(1.02, 1.03) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(1.05, 1.03) translateY(-0.5%) translateX(0%);
+            transform: scale(1.05, 1.03) translateY(-0.5%) translateX(0%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -96,16 +96,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.97, 0.99) translateY(0.5%) translateX(0%);
-            transform: scale(0.97, 0.99) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0.5%) translateX(0%);
+            transform: scale(0.97, 0.97) translateY(0.5%) translateX(0%);
   }
   50% {
-    -webkit-transform: scale(1.02, 1.03) translateY(0%) translateX(0.5%);
-            transform: scale(1.02, 1.03) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(1.05, 1.03) translateY(0%) translateX(0.5%);
+            transform: scale(1.05, 1.03) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(1, 0.99) translateY(-0.5%) translateX(0%);
-            transform: scale(1, 0.99) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(1, 0.96) translateY(-0.5%) translateX(0%);
+            transform: scale(1, 0.96) translateY(-0.5%) translateX(0%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -119,16 +119,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.97, 0.99) translateY(0.5%) translateX(0%);
-            transform: scale(0.97, 0.99) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0.5%) translateX(0%);
+            transform: scale(0.97, 0.97) translateY(0.5%) translateX(0%);
   }
   50% {
-    -webkit-transform: scale(1.02, 1.03) translateY(0%) translateX(0.5%);
-            transform: scale(1.02, 1.03) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(1.05, 1.03) translateY(0%) translateX(0.5%);
+            transform: scale(1.05, 1.03) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(1, 0.99) translateY(-0.5%) translateX(0%);
-            transform: scale(1, 0.99) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(1, 0.96) translateY(-0.5%) translateX(0%);
+            transform: scale(1, 0.96) translateY(-0.5%) translateX(0%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -142,16 +142,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.03, 1.02) translateY(0%) translateX(0.5%);
-            transform: scale(1.03, 1.02) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(1.03, 1.05) translateY(0%) translateX(0.5%);
+            transform: scale(1.03, 1.05) translateY(0%) translateX(0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 1) translateY(0.5%) translateX(0%);
-            transform: scale(0.99, 1) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(0.96, 1) translateY(0.5%) translateX(0%);
+            transform: scale(0.96, 1) translateY(0.5%) translateX(0%);
   }
   75% {
-    -webkit-transform: scale(0.97, 0.99) translateY(0%) translateX(-0.5%);
-            transform: scale(0.97, 0.99) translateY(0%) translateX(-0.5%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0%) translateX(-0.5%);
+            transform: scale(0.97, 0.97) translateY(0%) translateX(-0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -165,16 +165,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.03, 1.02) translateY(0%) translateX(0.5%);
-            transform: scale(1.03, 1.02) translateY(0%) translateX(0.5%);
+    -webkit-transform: scale(1.03, 1.05) translateY(0%) translateX(0.5%);
+            transform: scale(1.03, 1.05) translateY(0%) translateX(0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 1) translateY(0.5%) translateX(0%);
-            transform: scale(0.99, 1) translateY(0.5%) translateX(0%);
+    -webkit-transform: scale(0.96, 1) translateY(0.5%) translateX(0%);
+            transform: scale(0.96, 1) translateY(0.5%) translateX(0%);
   }
   75% {
-    -webkit-transform: scale(0.97, 0.99) translateY(0%) translateX(-0.5%);
-            transform: scale(0.97, 0.99) translateY(0%) translateX(-0.5%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0%) translateX(-0.5%);
+            transform: scale(0.97, 0.97) translateY(0%) translateX(-0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -188,12 +188,12 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.02, 0.99) translateY(0.5%) translateX(-0.5%);
-            transform: scale(1.02, 0.99) translateY(0.5%) translateX(-0.5%);
+    -webkit-transform: scale(1.05, 0.96) translateY(0.5%) translateX(-0.5%);
+            transform: scale(1.05, 0.96) translateY(0.5%) translateX(-0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 0.97) translateY(0%) translateX(0%);
-            transform: scale(0.99, 0.97) translateY(0%) translateX(0%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0%) translateX(0%);
+            transform: scale(0.97, 0.97) translateY(0%) translateX(0%);
   }
   75% {
     -webkit-transform: scale(1.03, 1) translateY(0.5%) translateX(-0.5%);
@@ -211,12 +211,12 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(1.02, 0.99) translateY(0.5%) translateX(-0.5%);
-            transform: scale(1.02, 0.99) translateY(0.5%) translateX(-0.5%);
+    -webkit-transform: scale(1.05, 0.96) translateY(0.5%) translateX(-0.5%);
+            transform: scale(1.05, 0.96) translateY(0.5%) translateX(-0.5%);
   }
   50% {
-    -webkit-transform: scale(0.99, 0.97) translateY(0%) translateX(0%);
-            transform: scale(0.99, 0.97) translateY(0%) translateX(0%);
+    -webkit-transform: scale(0.97, 0.97) translateY(0%) translateX(0%);
+            transform: scale(0.97, 0.97) translateY(0%) translateX(0%);
   }
   75% {
     -webkit-transform: scale(1.03, 1) translateY(0.5%) translateX(-0.5%);
@@ -234,16 +234,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.99, 0.99) translateY(-0.5%) translateX(0%);
-            transform: scale(0.99, 0.99) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(0.96, 0.97) translateY(-0.5%) translateX(0%);
+            transform: scale(0.96, 0.97) translateY(-0.5%) translateX(0%);
   }
   50% {
     -webkit-transform: scale(1.03, 1) translateY(0%) translateX(0.5%);
             transform: scale(1.03, 1) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(0.97, 1.02) translateY(0.5%) translateX(0.5%);
-            transform: scale(0.97, 1.02) translateY(0.5%) translateX(0.5%);
+    -webkit-transform: scale(0.97, 1.05) translateY(0.5%) translateX(0.5%);
+            transform: scale(0.97, 1.05) translateY(0.5%) translateX(0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -257,16 +257,16 @@
             transform: scale(1, 1);
   }
   25% {
-    -webkit-transform: scale(0.99, 0.99) translateY(-0.5%) translateX(0%);
-            transform: scale(0.99, 0.99) translateY(-0.5%) translateX(0%);
+    -webkit-transform: scale(0.96, 0.97) translateY(-0.5%) translateX(0%);
+            transform: scale(0.96, 0.97) translateY(-0.5%) translateX(0%);
   }
   50% {
     -webkit-transform: scale(1.03, 1) translateY(0%) translateX(0.5%);
             transform: scale(1.03, 1) translateY(0%) translateX(0.5%);
   }
   75% {
-    -webkit-transform: scale(0.97, 1.02) translateY(0.5%) translateX(0.5%);
-            transform: scale(0.97, 1.02) translateY(0.5%) translateX(0.5%);
+    -webkit-transform: scale(0.97, 1.05) translateY(0.5%) translateX(0.5%);
+            transform: scale(0.97, 1.05) translateY(0.5%) translateX(0.5%);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -548,6 +548,7 @@ body {
   .menu-button {
     height: 50px;
     width: 50px;
+    padding: 25px;
   }
 }
 
@@ -814,7 +815,7 @@ body {
   font-size: 8vw;
   color: #3c5870;
   text-shadow: 2px 2px #abdcff;
-  padding: 20px;
+  padding: 10px;
   -webkit-animation: menu_text_animation1 5s ease-in-out infinite;
           animation: menu_text_animation1 5s ease-in-out infinite;
 }
@@ -822,6 +823,25 @@ body {
 @media only screen and (max-width: 768px) {
   .skills-section h2 {
     font-size: 10vw;
+    padding: 5px;
+  }
+}
+
+.skills-section p {
+  width: 100%;
+  color: #3c5870;
+  text-align: center;
+  text-shadow: 2px 2px #abdcff;
+  font-size: 2vw;
+  padding: 5px;
+  -webkit-animation: menu_text_animation2 5s ease-in-out infinite;
+          animation: menu_text_animation2 5s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-section p {
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
@@ -862,39 +882,39 @@ body {
 
 @media only screen and (max-width: 768px) {
   #skills-icons i {
-    font-size: 3em;
+    font-size: 2em;
     padding: 5px;
   }
 }
 
-#skills-icons i #skills-1 {
+#skills-icons #skills-1 {
   -webkit-animation: menu_text_animation3 5s ease-in-out infinite;
           animation: menu_text_animation3 5s ease-in-out infinite;
 }
 
-#skills-icons i #skills-2 {
+#skills-icons #skills-2 {
   -webkit-animation: menu_text_animation2 5s ease-in-out infinite;
           animation: menu_text_animation2 5s ease-in-out infinite;
 }
 
-#skills-icons i #skills-3 {
+#skills-icons #skills-3 {
   -webkit-animation: menu_text_animation1 5s ease-in-out infinite;
           animation: menu_text_animation1 5s ease-in-out infinite;
 }
 
-#skills-icons i #skills-4 {
+#skills-icons #skills-4 {
   -webkit-animation: menu_text_animation4 5s ease-in-out infinite;
           animation: menu_text_animation4 5s ease-in-out infinite;
 }
 
-#skills-icons i #skills-5 {
-  -webkit-animation: menu_text_animation5 5s ease-in-out infinite;
-          animation: menu_text_animation5 5s ease-in-out infinite;
+#skills-icons #skills-5 {
+  -webkit-animation: menu_text_animation2 5s ease-in-out infinite;
+          animation: menu_text_animation2 5s ease-in-out infinite;
 }
 
-#skills-icons i #skills-6 {
-  -webkit-animation: menu_text_animation6 5s ease-in-out infinite;
-          animation: menu_text_animation6 5s ease-in-out infinite;
+#skills-icons #skills-6 {
+  -webkit-animation: menu_text_animation1 5s ease-in-out infinite;
+          animation: menu_text_animation1 5s ease-in-out infinite;
 }
 
 .skills-svg-bottom {
@@ -911,6 +931,13 @@ body {
           animation: stretch_animation4 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .skills-svg-bottom {
+    height: 115%;
+    width: 115%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -941,6 +968,13 @@ body {
           transform-origin: center;
 }
 
+@media only screen and (max-width: 1800px) {
+  .skills-svg-middle {
+    height: 105.8%;
+    width: 105.8%;
+  }
+}
+
 @media only screen and (max-width: 1450px) {
   .skills-svg-middle {
     height: 138%;
@@ -968,6 +1002,13 @@ body {
           animation: stretch_animation6 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .skills-svg-top {
+    height: 97.75%;
+    width: 97.75%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1010,7 +1051,7 @@ body {
   font-size: 8vw;
   color: #3c5870;
   text-shadow: 2px 2px #def1fe;
-  padding: 20px;
+  padding: 10px;
   -webkit-animation: menu_text_animation1 5s ease-in-out infinite;
           animation: menu_text_animation1 5s ease-in-out infinite;
 }
@@ -1018,7 +1059,25 @@ body {
 @media only screen and (max-width: 768px) {
   .portfolio-section h2 {
     font-size: 10vw;
-    margin-top: 0%;
+    padding: 5px;
+  }
+}
+
+.portfolio-section p {
+  width: 100%;
+  color: #3c5870;
+  text-align: center;
+  text-shadow: 2px 2px #abdcff;
+  font-size: 2vw;
+  padding: 5px;
+  -webkit-animation: menu_text_animation2 5s ease-in-out infinite;
+          animation: menu_text_animation2 5s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-section p {
+    font-size: 15px;
+    padding: 10px;
   }
 }
 
@@ -1075,7 +1134,7 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .portfolio-section .portfolio-list .portfolio-tab {
-    width: 25vh;
+    width: 30vw;
     margin: 15px;
     height: 25vh;
   }
@@ -1083,10 +1142,24 @@ body {
 
 @media only screen and (max-width: 768px) {
   .portfolio-section .portfolio-list .portfolio-tab {
-    width: 40vh;
+    width: 90vw;
     margin: 15px;
     height: 15vh;
   }
+}
+
+.portfolio-section .portfolio-list .portfolio-tab:hover {
+  background-color: #74a0bf;
+}
+
+.portfolio-section .portfolio-list .portfolio-tab:hover h3 {
+  color: #def1fe;
+  text-shadow: none;
+}
+
+.portfolio-section .portfolio-list .portfolio-tab:hover p {
+  color: #def1fe;
+  text-shadow: none;
 }
 
 .portfolio-section .portfolio-list .portfolio-tab h3 {
@@ -1100,6 +1173,7 @@ body {
 @media only screen and (max-width: 768px) {
   .portfolio-section .portfolio-list .portfolio-tab h3 {
     font-size: 20px;
+    padding: 2px;
   }
 }
 
@@ -1114,6 +1188,7 @@ body {
   .portfolio-section .portfolio-list .portfolio-tab p {
     margin-top: 0%;
     font-size: 10px;
+    padding: 2px;
   }
 }
 
@@ -1125,8 +1200,12 @@ body {
 
 @media only screen and (max-width: 768px) {
   .portfolio-section .portfolio-list .portfolio-tab .portfolio-inner {
-    margin: 20px;
+    margin: 5px;
   }
+}
+
+.portfolio-section .portfolio-list .portfolio-tab .portfolio-inner:hover {
+  background-color: #3c5870;
 }
 
 .portfolio-section .portfolio-list #portfolio-1-outer {
@@ -1150,13 +1229,13 @@ body {
 }
 
 .portfolio-section .portfolio-list #portfolio-3-outer {
-  -webkit-animation: menu_text_animation5 5s ease-in-out infinite;
-          animation: menu_text_animation5 5s ease-in-out infinite;
+  -webkit-animation: menu_text_animation3 5s ease-in-out infinite;
+          animation: menu_text_animation3 5s ease-in-out infinite;
 }
 
 .portfolio-section .portfolio-list #portfolio-3-inner {
-  -webkit-animation: menu_text_animation6 5s ease-in-out infinite;
-          animation: menu_text_animation6 5s ease-in-out infinite;
+  -webkit-animation: menu_text_animation1 5s ease-in-out infinite;
+          animation: menu_text_animation1 5s ease-in-out infinite;
 }
 
 .portfolio-svg-bottom {
@@ -1173,6 +1252,13 @@ body {
           animation: stretch_animation2 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .portfolio-svg-bottom {
+    height: 132.25%;
+    width: 132.25%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1201,6 +1287,13 @@ body {
           animation: stretch_animation1 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .portfolio-svg-middle {
+    height: 121.9%;
+    width: 121.9%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1232,6 +1325,13 @@ body {
           transform-origin: center;
 }
 
+@media only screen and (max-width: 1800px) {
+  .portfolio-svg-top {
+    height: 109.25%;
+    width: 109.25%;
+  }
+}
+
 @media only screen and (max-width: 1450px) {
   .portfolio-svg-top {
     height: 142.5%;
@@ -1243,6 +1343,104 @@ body {
   .portfolio-svg-top {
     height: 285%;
     width: 285%;
+  }
+}
+
+.portfolio-clicked {
+  height: 90vh;
+  width: 90vw;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-clicked {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 45vh;
+  }
+}
+
+.portfolio-clicked-svg-bottom {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  opacity: 0.5;
+  position: absolute;
+  fill: #def1fe;
+  z-index: -1;
+  -webkit-animation: stretch_animation4 12s ease-in-out infinite;
+          animation: stretch_animation4 12s ease-in-out infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .portfolio-clicked-svg-bottom {
+    height: 115%;
+    width: 115%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .portfolio-clicked-svg-bottom {
+    height: 125%;
+    width: 125%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-clicked-svg-bottom {
+    height: 140%;
+    width: 140%;
+  }
+}
+
+.portfolio-clicked-svg-top {
+  height: 85%;
+  width: 85%;
+  overflow: visible;
+  position: absolute;
+  fill: #def1fe;
+  z-index: -1;
+  -webkit-animation: stretch_animation6 12s ease-in-out infinite;
+          animation: stretch_animation6 12s ease-in-out infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .portfolio-clicked-svg-top {
+    height: 97.75%;
+    width: 97.75%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .portfolio-clicked-svg-top {
+    height: 106.25%;
+    width: 106.25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-clicked-svg-top {
+    height: 119%;
+    width: 119%;
   }
 }
 
@@ -1316,20 +1514,37 @@ body {
 }
 
 .contact-div p {
-  width: 50%;
+  width: 100%;
   color: #def1fe;
   text-align: center;
   text-shadow: 2px 2px #3c5870;
   font-size: 2vw;
   padding: 5px;
-  margin-top: 2%;
   -webkit-animation: menu_text_animation2 5s ease-in-out infinite;
           animation: menu_text_animation2 5s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 768px) {
   .contact-div p {
-    font-size: 10px;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+.contact-div .p2 {
+  width: 50%;
+  color: #def1fe;
+  text-align: center;
+  text-shadow: 2px 2px #3c5870;
+  font-size: 2vw;
+  padding: 5px;
+  -webkit-animation: menu_text_animation4 5s ease-in-out infinite;
+          animation: menu_text_animation4 5s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-div .p2 {
+    font-size: 15px;
   }
 }
 
@@ -1347,6 +1562,13 @@ body {
           animation: stretch_animation3 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .contact-svg-bottom {
+    height: 115%;
+    width: 115%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1377,6 +1599,13 @@ body {
           transform-origin: center;
 }
 
+@media only screen and (max-width: 1800px) {
+  .contact-svg-middle {
+    height: 105.8%;
+    width: 105.8%;
+  }
+}
+
 @media only screen and (max-width: 1450px) {
   .contact-svg-middle {
     height: 138%;
@@ -1404,6 +1633,13 @@ body {
           animation: stretch_animation4 12s ease-in-out infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .contact-svg-top {
+    height: 97.75%;
+    width: 97.75%;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1443,6 +1679,10 @@ body {
   }
 }
 
+#contact-icons a {
+  color: #def1fe;
+}
+
 #contact-icons i {
   font-size: 10em;
   padding: 50px;
@@ -1460,6 +1700,10 @@ body {
     font-size: 2em;
     padding: 10px;
   }
+}
+
+#contact-icons i:hover {
+  color: #3c5870;
 }
 
 #contact-1 {
