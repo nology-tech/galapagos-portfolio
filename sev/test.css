@@ -98,11 +98,10 @@
   height: 100vh;
 }
 
-* body section.landing h1 {
-  display: inline-block;
+* body section.landing div h1 {
+  display: block;
   color: black;
   font-weight: bold;
-  margin-bottom: 20px;
   font-size: 3em;
   padding: 5px;
   height: 1.5em;
@@ -113,7 +112,7 @@
           backdrop-filter: blur(8px);
 }
 
-* body section.landing h1 span {
+* body section.landing div h1 span {
   color: red;
   font-weight: bold;
   text-shadow: 3px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -132,12 +131,6 @@
           flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-  * body section {
-    padding: 0px 150px;
-  }
-}
-
 * body section#about h2 {
   padding: 2% 0;
   color: #E9F1F7;
@@ -150,6 +143,7 @@
   border: black 4px solid;
   -webkit-box-shadow: 10px 7px rgba(79, 99, 103, 0.8);
           box-shadow: 10px 7px rgba(79, 99, 103, 0.8);
+  width: 80%;
 }
 
 @media screen and (min-width: 480px) {
@@ -159,6 +153,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 80%;
   }
 }
 
@@ -375,6 +370,7 @@ section#projects h2 {
   -webkit-box-shadow: 10px 7px rgba(79, 99, 103, 0.8);
           box-shadow: 10px 7px rgba(79, 99, 103, 0.8);
   opacity: 0.8;
+  width: 80%;
 }
 
 @media screen and (min-width: 480px) {
@@ -383,6 +379,7 @@ section#projects h2 {
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 80%;
   }
 }
 
@@ -486,10 +483,13 @@ section#projects div.section-content article.article-projects section.project-de
 }
 
 footer {
-  margin-top: 40px;
-  background-color: black;
+  margin-top: 60px;
+  background-color: #4F6367;
   z-index: 2;
   opacity: unset;
+  width: 100%;
+  bottom: 0;
+  position: relative;
 }
 
 footer ul {
@@ -507,13 +507,15 @@ footer ul {
   opacity: unset;
   margin: 0;
   height: 70px;
+  z-index: 2;
 }
 
 footer ul a {
-  color: red;
+  color: black;
 }
 
 footer ul a:hover {
   color: #E9F1F7;
+  text-decoration: none;
 }
 /*# sourceMappingURL=test.css.map */
