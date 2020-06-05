@@ -68,7 +68,10 @@ body {
 nav {
   position: -webkit-sticky;
   position: sticky;
+<<<<<<< HEAD
+=======
   z-index: 2;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   top: 0;
   background-color: purple;
   padding: 0;
@@ -192,7 +195,7 @@ nav {
       grid-template-rows: 1fr 1fr 1fr;
   height: 60%;
   gap: 10px;
-      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
 }
 
 .grid h1 {
@@ -210,7 +213,10 @@ nav {
   -ms-grid-column: 1;
   grid-area: project1;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -239,7 +245,10 @@ nav {
   -ms-grid-column: 2;
   grid-area: project2;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -268,7 +277,10 @@ nav {
   -ms-grid-column: 1;
   grid-area: project3;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -297,7 +309,10 @@ nav {
   -ms-grid-column: 2;
   grid-area: project4;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -326,7 +341,10 @@ nav {
   -ms-grid-column: 1;
   grid-area: project5;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -355,7 +373,10 @@ nav {
   -ms-grid-column: 2;
   grid-area: project6;
   border: 2px solid purple;
+<<<<<<< HEAD
+=======
   border-radius: 10px;
+>>>>>>> 826d607e0e2a37fb18217774c75144a3d605b9fd
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -639,7 +660,7 @@ footer {
     height: 50vh;
     width: 60%;
     gap: 10px;
-        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
+        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
   }
   .grid h1 {
     color: white;
