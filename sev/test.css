@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD:sev/test.css
 * body video {
   position: fixed;
   right: 0;
@@ -15,6 +16,10 @@
   min-height: 100vh;
   opacity: 0.6;
   z-index: 0;
+=======
+* body {
+  background-image: url("./coding3.png");
+>>>>>>> 57c602c51207709333a8c8ab326558cbf0f89716:sev/style.css
 }
 
 * body nav {
@@ -114,7 +119,7 @@
 * body section.landing div h1 span {
   color: red;
   font-weight: bold;
-  text-shadow: 3px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 3px 5px rgba(0, 0, 0, 0);
   letter-spacing: 3px;
 }
 
@@ -132,11 +137,18 @@
 
 * body section#about h2 {
   padding: 2% 0;
+<<<<<<< HEAD:sev/test.css
   color: #E9F1F7;
   text-shadow: 3px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: bold;
   background-color: #4F6367;
   opacity: 0.8;
+=======
+  color: #eef5db;
+  text-shadow: 3px 5px rgba(0, 0, 0, 0);
+  font-weight: bold;
+  background-color: #4f6367;
+>>>>>>> 57c602c51207709333a8c8ab326558cbf0f89716:sev/style.css
   font-size: 3em;
   position: relative;
   border: black 4px solid;
@@ -332,7 +344,7 @@
 }
 
 * article.about-me-blocks article div span.button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -360,10 +372,15 @@
 
 section#projects h2 {
   padding: 2% 0;
+<<<<<<< HEAD:sev/test.css
   color: #E9F1F7;
   text-shadow: 3px 5px black, 0 1px black, 1px 0 black, 0 -1px black;
+=======
+  color: #eef5db;
+  text-shadow: 3px 5px rgba(0, 0, 0, 0);
+>>>>>>> 57c602c51207709333a8c8ab326558cbf0f89716:sev/style.css
   font-weight: bold;
-  background-color: #4F6367;
+  background-color: #4f6367;
   font-size: 3em;
   border: black 4px solid;
   -webkit-box-shadow: 10px 7px rgba(79, 99, 103, 0.8);

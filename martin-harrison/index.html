@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Harrison</title>
+    <title>Martin Harrison | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1782d53993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+  <i class="fas fa-bars"></i>
+  <i class="fas fa-arrow-right nav-hover"></i>
+  <nav>
+    <ul>
+      <li class="uppercase"><a href="#bio">Bio</a></li>
+      <li class="uppercase"><a href="#portfolio">Projects</a></li>
+      <li class="uppercase"><a href="#skills">Skills</a></li>
+      <li class="uppercase"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="inverse-container">
+      <div class="name">
+        <h1 class="uppercase">Martin Harrison</h1>
+        <h2 class="uppercase">{Software Developer}</h2>
+        <a id="cta-btn" href="#portfolio">View portfolio</a>
+      </div>
+
+      <main>
+        <section id="bio">
+          <h2 class="uppercase hidden">Bio</h2>
+          <p class = "hidden">A Bristol-based junior developer with a passion for building performant apps that enable efficient working. With a background in Operations I understand the importance of good systems for a productive workforce.</p>
+        </section>
+        <section id="portfolio">
+            <h2 class="hidden">Portfolio</h2>
+            <div class="grid-container">
+              <article id="project-1" class="hidden">
+                <img src="./images/proj-placeholder.jpg" alt="Project image">
+                  <span class="skills">
+                    <i class="fab fa-html5 float-icons"></i>
+                    <i class="fab fa-css3-alt float-icons"></i>
+                    <i class="fab fa-js-square float-icons"></i>
+                    <i class="fab fa-sass float-icons"></i>
+                  </span>
+                  <i class="fas fa-rocket float-icons"></i>
+                  <i class="fas fa-code float-icons"></i>
+                <div class="project-text">
+                  <h3>Project 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iste, quisquam voluptates perspiciatis modi et reiciendis dicta aspernatur molestias labore fuga autem quae eveniet, quibusdam necessitatibus qui nemo temporibus adipisci!</p>
+                </div>
+              </article>
+              <article id="project-2" class="hidden">
+                  <img src="./images/proj-placeholder.jpg" alt="Project image">
+                    <span class="skills">
+                      <i class="fab fa-react float-icons"></i>
+                    </span>
+                    <i class="fas fa-rocket float-icons"></i>
+                    <i class="fas fa-code float-icons"></i>
+                  <div class="project-text">  
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iste, quisquam voluptates perspiciatis modi et reiciendis dicta aspernatur molestias labore fuga autem quae eveniet, quibusdam necessitatibus qui nemo temporibus adipisci!</p>
+                  </div>
+              </article>
+              <article id="project-3" class="hidden">
+                <img src="./images/proj-placeholder.jpg" alt="Project image">
+                <!-- <span class="skills"></span> -->
+                  <i class="fas fa-rocket float-icons"></i>
+                  <i class="fas fa-code float-icons"></i>
+                <div class="project-text">  
+                  <h3>Project 3</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iste, quisquam voluptates perspiciatis modi et reiciendis dicta aspernatur molestias labore fuga autem quae eveniet, quibusdam necessitatibus qui nemo temporibus adipisci!</p>
+                </div>
+              </article>
+            </div>
+        </section>
+        <section id="skills">
+          <h2 class="hidden">Skills</h2>
+        </section>
+      </main>
+
+      <footer id="contact" class="hidden">
+        <ul>
+          <li><a href="https://github.com/mph206" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li id="email"><i class="fas fa-at"></i></li>
+          <li><a href="https://www.linkedin.com/in/martin-harrison-b8b02a46/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div id="modal">
+          <form id="modal-content">
+            <h2>Email me</h2>
+            <i id ="modal-x" class="fas fa-times"></i>
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" required placeholder="Your email address">
+            <label for="textarea">Your query</label>
+            <textarea id="textarea" required placeholder="Please enter your query"></textarea>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+      </div>
+      </footer>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

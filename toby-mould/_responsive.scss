@@ -1,0 +1,173 @@
+// ------DIFFERENT SIZE RANGES TO CONSIDER------//
+
+// Tablet[PORTFOLIO]
+@media (min-width: 501px) and (max-width: 769px) {
+  //------------------------------------//
+  //--------1. LANDING SECTION(IPAD)--------//
+  //------------------------------------//
+  #home {
+    #home-content {
+      top: 12%;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  #navbar {
+    font-size: 1.2rem;
+  }
+
+  #skills {
+    .items {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  #portfolio {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: 1fr 1fr;
+
+      .item {
+        height: 20px;
+
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+// Normal[PORTFOLIO]
+@media (min-width: 769px) and (max-width: 1200px) {
+  //---------------------------------------//
+  //--------1. LANDING SECTION (PRO)--------//
+  //---------------------------------------//
+  #home {
+    #home-content {
+      top: 15%;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  #navbar {
+    font-size: 1.2rem;
+  }
+
+  #skills {
+    .items {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  #portfolio {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .item {
+        height: 20px;
+
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+//WideScreen[PORTFOLIO]
+@media (min-width: 1201px) {
+  //-----------------------------------------//
+  //--------1. LANDING SECTION (WIDE)--------//
+  //----------------------------------------//
+  #home {
+    background: url('./img/SpaceSelfie.png') no-repeat 75% 70% / cover;
+
+    #home-content {
+      top: 5%;
+    }
+  }
+
+  #navbar {
+    font-size: 1.2rem;
+  }
+
+  #skills {
+    .items {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  #portfolio {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .item {
+        height: 20px;
+
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

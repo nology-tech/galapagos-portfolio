@@ -11,20 +11,20 @@ $margin-large: 4px * $multiple;
 $padding-small: 2px * $multiple;
 $padding-medium: 3px * $multiple;
 
+$tiny-width: 1vw * $multiple;
 $small-width: (100 / $multiple) * 2vw;
 $medium-width: (100 / $multiple) * 3vw;
 $large-width: (100 / $multiple) * 4vw;
 $full-width: 100vw;
 
+$tiny-height: 1vh * $multiple;
 $small-height: (100vh / $multiple) / 2;
 $medium-height: (100vh / $multiple);
 $large-height: (100vh / $multiple) * 2vh;
 $full-height: 100vh;
 
-$top-gradient: linear-gradient
-  (180deg, white, 70%, 
-  rgba(255, 255, 255, 0.1) 100%);
+$top-gradient: linear-gradient(180deg, rgba(251, 254, 249, 1) 80%, 
+rgba(251, 254, 249, 0.1) 100%);
 
-$bottom-gradient: linear-gradient
-  (0deg, white, 70%,
-  rgba(255, 255, 255, 0.1) 100%);
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
