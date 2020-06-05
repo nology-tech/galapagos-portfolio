@@ -1,26 +1,25 @@
 const matt = {
-    firstName: 'Matt',
-    lastName: 'Bickell',
-    age: 26,
-    isVegetarian: false,
-    hobbies: ['Witchcraft', 'Wizardy', 'Hufflepuff memorabilia']
-}
+  firstName: 'Matt',
+  lastName: 'Bickell',
+  age: 26,
+  isVegetarian: false,
+  hobbies: ['Witchcraft', 'Wizardy', 'Hufflepuff memorabilia'],
+};
 const shea = {
-    firstName: "Shea",
-    lastName: "Murphy",
-    age: 27,
-    isVegetarian: true,
-    hobbies: ["JS", "Telling people I'm VEGAN"]
-}
+  firstName: 'Shea',
+  lastName: 'Murphy',
+  age: 27,
+  isVegetarian: true,
+  hobbies: ['JS', 'Telling people I\'m VEGAN'],
+};
 const ollie = {
-    firstName: "Ollie",
-    lastName: "Holden",
-    age: 27,
-    isVegetarian: true,
-    hobbies: ["naming furniture", "Eating Leon bouquet of chicken"]
-}
+  firstName: 'Ollie',
+  lastName: 'Holden',
+  age: 27,
+  isVegetarian: true,
+  hobbies: ['naming furniture', 'Eating Leon bouquet of chicken'],
+};
 const coaches = [shea, matt, ollie];
-
 
 // LOG OUT WHETHER OLLIE IS VEGGIE
 

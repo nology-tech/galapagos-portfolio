@@ -116,6 +116,7 @@
     grid-column: 1 / span 2;
     border-bottom: 1px solid #c5c5c5;
     margin-top: 20px;
+    width: 150px;
   }
   .container-resume .card-3 {
     -ms-grid-column: 2;
@@ -165,10 +166,14 @@
   .skills {
     -ms-grid-rows: (1fr) [6];
     grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 0px;
   }
   .skills li {
     font-size: 20px;
     list-style: none;
+  }
+  .skills .title{
+    width: 100px;
   }
   .container-about {
     display: -ms-grid;
@@ -184,6 +189,7 @@
     grid-column: 1 / span 6;
     border-bottom: 1px solid #c5c5c5;
     margin-bottom: 20px;
+    width: 180px;
   }
   .container-about .card-7 {
     -ms-grid-row: 2;
