@@ -83,25 +83,25 @@ $colour3: #4F6367;
                 width: 100%;
                 height: 100vh;
 
-                h1 {
-                    display: inline-block;
-                    color: black;
-                    font-weight: bold;
-                    margin-bottom: 20px;
-                    font-size: 3em;
-                    padding: 5px;
-                    height: 1.5em;
-                    text-shadow: 3px 3px rgba(79, 99, 103, 0.8);
-                    position: relative;
-                    border-radius: 20px;
-                    backdrop-filter: blur(8px);
-
-
-                    span {
-                        color: red;
+                div {
+                    h1 {
+                        display: block;
+                        color: black;
                         font-weight: bold;
-                        text-shadow: $shadow;
-                        letter-spacing: 3px;
+                        font-size: 3em;
+                        padding: 5px;
+                        height: 1.5em;
+                        text-shadow: 3px 3px rgba(79, 99, 103, 0.8);
+                        position: relative;
+                        border-radius: 20px;
+                        backdrop-filter: blur(8px); 
+
+                        span {
+                            color: red;
+                            font-weight: bold;
+                            text-shadow: $shadow;
+                            letter-spacing: 3px;
+                        }
                     }
                 }
             }
@@ -112,10 +112,6 @@ $colour3: #4F6367;
             text-align: center;
             display: flex;
             flex-direction: column;
-
-            @media screen and (min-width: 768px) {
-                padding: 0px 150px;
-            }
 
             &#about {
 
@@ -130,6 +126,7 @@ $colour3: #4F6367;
                     position: relative;
                     border: black 4px solid;
                     box-shadow: $shadow-grey;
+                    width: 80%;
 
 
                     @media screen and (min-width: 480px) {
@@ -138,6 +135,7 @@ $colour3: #4F6367;
                         display: block;
                         margin: 0 auto;
                         margin-bottom: 40px;
+                        width: 80%;
                     }
                 }
 
@@ -339,12 +337,14 @@ section {
             border: black 4px solid;
             box-shadow: $shadow-grey;
             opacity: 0.8;
+            width: 80%;
 
             @media screen and (min-width: 480px) {
                 width: 100%;
                 display: block;
                 margin: 0 auto;
                 margin-bottom: 40px;
+                width: 80%;
             }
         }
 
@@ -435,10 +435,13 @@ section {
 }
 
 footer {
-    margin-top: 40px;
-    background-color: black;
+    margin-top: 60px;
+    background-color: $colour3;
     z-index: 2;
     opacity: unset;
+    width: 100%;
+    bottom: 0;
+    position: relative;
 
     ul {
         margin-bottom: 1rem;
@@ -450,12 +453,14 @@ footer {
         opacity: unset;
         margin: 0;
         height: 70px;
+        z-index: 2;
 
         a {
-            color: red;
+            color: black;
 
             &:hover {
                 color: $colour1;
+                text-decoration: none;
             }
         }
     }
