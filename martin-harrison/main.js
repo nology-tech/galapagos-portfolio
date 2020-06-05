@@ -6,7 +6,7 @@ const animateOnScroll = () => {
   let checkHiddenElements = () => {
     elements = document.querySelectorAll('.hidden');
     windowHeight = window.innerHeight;
-  }
+  };
 
   function checkPosition() {
     for (let i = 0; i < elements.length; i++) {
@@ -29,8 +29,8 @@ const animateOnScroll = () => {
 
   checkHiddenElements();
   checkPosition();
-}
-animateOnScroll()
+};
+animateOnScroll();
 
 // Animate email modal 
 // ANIMATE EMAIL MODAL
@@ -53,16 +53,16 @@ document.querySelector('#email').addEventListener('click',() => {
   modal.style.display = 'block';
   modalContent.classList.remove('slide-back');    
   modalContent.classList.add('slide-up');
-})
+});
 
 document.querySelector('#modal-x').addEventListener('click', () => {
   slideBack();
   hideModal();
-})
+});
 
 modal.addEventListener('click', () => {
   if (event.target === modal) {
     slideBack();
     hideModal();
   }
-})
+});
