@@ -4,21 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Sumit Gurung</title>
-  <script>
-    function wipe() {
-      document.getElementById('form').reset();
-    }
-
-    function getData() {
-      let name = document.getElementById('name').value;
-      let email = document.getElementById('email').value;
-      let phone = document.getElementById('phone').value;
-      let comment = document.getElementById('comment').value;
-
-      console.log(name, email, phone, comment);
-    }git 
-  </script>
 </head>
 <body>
   <video autoplay muted loop class="video">
@@ -30,7 +17,7 @@
     </div>
     <div>
       <h1>Sumit Gurung</h1>
-      <h2>Junior Web Developer</h2>
+      <h2 class="typewriter">Junior Web Developer</h2>
     </div>
     <div>
       <img src="./icon/arrow_down.png" alt="down arrow" id="arrow">
@@ -46,12 +33,31 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="container">
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
-        <div>Project 4</div>
-        <div>Project 5</div>
-        <div>Project 6</div>
+        <div class="polaroid">
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #1</p>  
+        </div>
+        <div>
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #2</p>  
+        </div>
+        <div>
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #3</p>  
+        </div>
+        <div>
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #4</p>  
+        </div>
+        <div>
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #5
+          </p>  
+        </div>
+        <div>
+          <img src="./img/project-placeholder.png" alt="projects" class="proj">
+          <p class="text">Project #6</p>  
+        </div>
       </div>
     </section>
     <section id="skills">
@@ -64,7 +70,7 @@
         <img src="./icon/icon-js.png" alt="js">
         <img src="./icon/icon-sass.png" alt="sass">
         <img src="./icon/icon-github.png" alt="github">
-        <a href="https:www.nology.io" target="_blank"><img src="./icon/icon-nology.png" alt="nology"></a>
+        <a href="https://www.nology.io" target="_blank"><img src="./icon/icon-nology.png" alt="nology"></a>
       </div>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus quibusdam explicabo a!
         Ipsam magni neque eligendi beatae autem laboriosam assumenda nostrum ipsum blanditiis animi,
@@ -79,7 +85,7 @@
       </p>
     </section>
     <section id="about">
-      <div>
+      <div>ß
         <h2>About</h2>
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eveniet dolorem cum quas
@@ -89,8 +95,21 @@
         eligendi impedit earum maxime labore consequuntur numquam rem quis?</p>
     </section>
     <section id="contact">
-      <h2>Contact</h2>
-      <form id="form">
+      <div>
+        <h2>Contact</h2>
+      </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum sint voluptatibus 
+            aliquam explicabo quisquam non voluptas corrupti dolorem, mollitia provident. Reprehenderit 
+            adipisci tempore minus, error nostrum expedita eaque a <br>
+            <img src="./icon/icon-cv.png" alt="CV"><a href="">Download CV</a></p>
+        <div class="contact-icon">
+          <img src="./icon/icon-linkedin.png" alt="linkedin">
+          <img src="./icon/icon-email.png" alt="email">
+          
+          <img src="./icon/icon-telephone.png" alt="telephone">
+        </div>
+        
+      <!-- <form id="form">
         <label for="name"></label>
         <input type="text" name="name" id="name" placeholder="Name" required>
         <label for="email"></label>
@@ -105,8 +124,11 @@
         <img src="./icon/icon-linkedin.png" alt="linkedin">
         <img src="./icon/icon-telephone.png" alt="telephone">
         <img src="./icon/icon-email.png" alt="email">
-      </div>
+      </div> -->
     </section>
   </main>
+  <footer>
+    <p>Sumit Gurung (c) 2020</p>
+  </footer>
 </body>
 </html>
