@@ -153,8 +153,25 @@ ul {
 }
 
 article {
-  height: 43.75vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 25vh;
+  padding: 5px;
+  width: 90vw;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+          box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+  text-align: center;
+}
+
+article header {
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+article .project-links {
+  width: 50%;
+  padding: 5vh;
 }
 
 #languages-wrapper {
@@ -181,6 +198,7 @@ article {
 
 #languages-icon-wrapper {
   width: 50vw;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -219,7 +237,7 @@ article {
 }
 
 header h2 {
-  margin: 0 24px;
+  margin: 0 16px;
   display: block;
 }
 
@@ -263,6 +281,10 @@ p {
   text-align: justify;
 }
 
+#about p {
+  line-height: 30px;
+}
+
 .project-links i {
   font-size: 1.5em;
 }
@@ -274,7 +296,7 @@ p {
   }
   article {
     width: 80vw;
-    height: 29.16667vh;
+    padding: 20px;
   }
 }
 
@@ -282,25 +304,29 @@ p {
   main {
     margin: 0 auto;
   }
+  article {
+    width: 40vw;
+  }
   #about {
     width: 60vw;
     margin: 0 auto;
   }
-  article {
-    width: 40vw;
-    height: auto;
-    margin: 25vh;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    -webkit-box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
-            box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+  h1 {
+    font-size: 3.15em;
   }
-  article header {
-    border: 1px solid transparent;
-    border-radius: 25px;
+  h2,
+  i,
+  li {
+    font-size: 2.25em;
   }
-  article .project-links {
-    width: 10vw;
+  p {
+    font-size: 1.35em;
+  }
+  header .social-media-wrapper i {
+    font-size: 1.35em;
+  }
+  header .project-links i {
+    font-size: 2.1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
