@@ -7,7 +7,7 @@
 }
 
 * h1 {
-  font-size: 100px;
+  font-size: 50px;
   -webkit-text-decoration: underline purple;
           text-decoration: underline purple;
 }
@@ -54,23 +54,6 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 60%;
-  padding: 10px;
-  text-align: center;
-}
-
-.landing {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 2;
   width: 60%;
   padding: 20px;
@@ -85,10 +68,7 @@ body {
 nav {
   position: -webkit-sticky;
   position: sticky;
-<<<<<<< HEAD
   z-index: 2;
-=======
->>>>>>> 206bdb2f198220a5976e75d0d6a9bd8533d0973e
   top: 0;
   background-color: purple;
   padding: 0;
@@ -188,10 +168,12 @@ nav {
           align-items: center;
   position: relative;
   padding-bottom: 50px;
+  z-index: -2;
 }
 
 .projects h1 {
   padding: 20px;
+  font-size: 50px;
 }
 
 .projects h3 {
@@ -210,7 +192,7 @@ nav {
       grid-template-rows: 1fr 1fr 1fr;
   height: 60%;
   gap: 10px;
-      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
 }
 
 .grid h1 {
@@ -228,6 +210,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project1;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -256,6 +239,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project2;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -284,6 +268,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project3;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -312,6 +297,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project4;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -340,6 +326,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project5;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -368,6 +355,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project6;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
@@ -423,6 +411,7 @@ nav {
   display: block;
   text-align: justify;
   padding: 20px;
+  font-size: 50px;
 }
 
 .skills h3 {
@@ -650,7 +639,7 @@ footer {
     height: 50vh;
     width: 60%;
     gap: 10px;
-        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
+        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
   }
   .grid h1 {
     color: white;
