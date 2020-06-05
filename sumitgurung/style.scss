@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 $border: 2px solid black;
@@ -14,6 +15,27 @@ $border: 2px solid black;
   min-height: 100vh;
   opacity: 0.2;
   z-index: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(74, 232, 235);
+  }
 }
 
 header {
@@ -62,28 +84,10 @@ P {
   font-size: 1.5em;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 2em;
-  background-color: black;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: rgb(74, 232, 235);
-  }
-}
 
 #projects {
+  padding: 25px;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -94,13 +98,25 @@ nav {
       text-align: center;
       max-width: 90vw;
       margin: 40px auto;
-      padding: 150px;
+      padding: 120px;
       font-size: 1.5em;
+      
+      .proj {
+        width: 300px;
+      }
+
+      .text {
+        text-align: center;
+        border: none;
+      }
+      
     }
   }
 }
 
 #skills {
+  padding: 25px;
+
   .icon {
     display: flex;
     flex-direction: row;
@@ -114,53 +130,27 @@ nav {
       }
     }
   }
+
+  p {
+    background-color: #cbcbcb;
+  }
+}
+
+#about {
+  padding: 25px;
+
+  p {
+    background-color: #cbcbcb;
+  }
 }
 
 #contact {
-  form {
-    display: flex;
-    flex-direction: column;
-
-    label,
-    input,
-    textarea {
-      font-size: 1.5em;
-    }
-
-    label {
-      text-align: center;
-    }
-
-    input[type="text"],
-    [type="email"] {
-      width: 50%;
-      margin: 10px auto;
-      border-radius: 10px;
-      z-index: 1;
-      border: none;
-    }
-
-    textarea {
-      width: 50%;
-      margin: 15px auto;
-      border-radius: 10px;
-      z-index: 1;
-      border: none;
-    }
-
-    input[type="submit"],
-    [type="button"] {
-      width: 25%;
-      margin: 5px auto;
-      border-radius: 10px;
-      z-index: 1;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
+  padding: 25px;
+  
+  p {
+    background-color: #cbcbcb;
   }
-
+  
   .contact-icon {
     display: flex;
     flex-direction: row;
@@ -169,3 +159,39 @@ nav {
     margin: 10px;
   }
 }
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(154, 154, 154); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  to {border-color: transparent;}
+  50% {border-color: rgb(255, 255, 254);}
+}
+
+footer {
+  p { 
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px auto;
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+}
+
