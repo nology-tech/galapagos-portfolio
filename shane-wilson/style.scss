@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+* h1 {
+  font-size: 100px;
+  text-decoration: underline purple;
+}
+
 header {
   background-image: url("./img/background2.jpg");
   height: 100vh;
@@ -66,6 +71,7 @@ body {
 
 nav {
   position: sticky;
+  z-index: 2;
   top: 0;
   background-color: purple;
   padding: 0;
@@ -92,9 +98,24 @@ nav {
   padding: 16px 24px;
 }
 
-.menu a:hover {
+.menu a:hover { 
   background: rgb(250, 10, 130);
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.image img {
+  border: solid 10px purple;
+  max-width: 80vw;
 }
 
 .about p {
@@ -116,6 +137,7 @@ nav {
   text-align: center;
   align-self: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .projects {
@@ -141,6 +163,7 @@ nav {
 
 .grid {
   margin: 0 auto;
+  max-width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -156,11 +179,14 @@ nav {
   color: white;
   text-align: center;
   align-self: center;
+  text-decoration: none;
+  font-size: 45px;
 }
 
 .project1 {
   grid-area: project1;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -178,6 +204,7 @@ nav {
 .project2 {
   grid-area: project2;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -195,6 +222,7 @@ nav {
 .project3 {
   grid-area: project3;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -212,6 +240,7 @@ nav {
 .project4 {
   grid-area: project4;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -229,6 +258,7 @@ nav {
 .project5 {
   grid-area: project5;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -246,6 +276,7 @@ nav {
 .project6 {
   grid-area: project6;
   border: 2px solid purple;
+  border-radius: 10px;
   background-image: url("./img/background3.jpg");
   background-size: contain;
   display: flex;
@@ -303,13 +334,14 @@ nav {
 .social {
   background-color: white;
   max-width: 100%;
-  height: 300px;
+  height: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .social i {
@@ -330,6 +362,7 @@ nav {
 .social h1 {
   color: purple;
   padding: 30px;
+  text-decoration: none;
 }
 
 .social h3 {
@@ -394,6 +427,33 @@ footer {
     color: white;
   }
 
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px;
+    margin-bottom: 0;
+  }
+
+  .text {
+    margin-right: 50px;
+    min-width: 50vw;
+  }
+
+  .image {
+    .container {
+      display: flex;
+      border: black 2px solid;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-width: 30vw;
+    }
+  }
+
   .about p {
     color: grey;
     margin: 0 auto;
@@ -411,6 +471,7 @@ footer {
   .projects {
     background-color: white;
     max-width: 100%;
+    padding-top: 50px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -448,6 +509,7 @@ footer {
     color: white;
     text-align: center;
     align-self: center;
+    text-decoration: none;
   }
 
   .project1 {
@@ -525,7 +587,7 @@ footer {
   .skills {
     background-color: purple;
     max-width: 100%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -564,7 +626,7 @@ footer {
   .social {
     background-color: white;
     max-width: 100%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -591,6 +653,7 @@ footer {
   .social h1 {
     color: purple;
     padding: 30px;
+    text-decoration: none;
   }
 
   .social h3 {
