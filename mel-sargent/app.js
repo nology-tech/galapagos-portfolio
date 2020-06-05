@@ -8,9 +8,9 @@ const expand = (x) => {
   mainNav.classList.toggle('show');
 };
 
-AOS.init({
-  duration: 1200
-});
+// AOS.init({
+//   duration: 1200
+// });
 
 // function expand(x) {
 // x.classList.toggle('change');
