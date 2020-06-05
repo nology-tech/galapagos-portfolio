@@ -16,7 +16,7 @@ jobs:
         run: |
           yarn install
           yarn build-css
-          echo > node_modules
+          echo node_modules > .gitignore
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
