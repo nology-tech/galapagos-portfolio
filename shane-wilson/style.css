@@ -7,7 +7,7 @@
 }
 
 header {
-  background-image: url(./img/background2.jpg);
+  background-image: url("./img/background2.jpg");
   height: 100vh;
   background: contain;
   color: white;
@@ -72,16 +72,16 @@ header {
 }
 
 body {
-  background-image: url(./img/background2.jpg);
+  background-image: url("./img/background2.jpg");
   background: contain;
 }
 
 nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: 0;
   background-color: purple;
-  padding: 0px;
+  padding: 0;
   color: black;
   letter-spacing: 1px;
   font-size: 24px;
@@ -90,7 +90,7 @@ nav {
 }
 
 .menu {
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -174,7 +174,7 @@ nav {
       grid-template-rows: 1fr 1fr 1fr;
   height: 60%;
   gap: 10px;
-      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
 }
 
 .grid h1 {
@@ -190,7 +190,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project1;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +218,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project2;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +246,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project3;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +274,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project4;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +302,7 @@ nav {
   -ms-grid-column: 1;
   grid-area: project5;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +330,7 @@ nav {
   -ms-grid-column: 2;
   grid-area: project6;
   border: 2px solid purple;
-  background-image: url(./img/background3.jpg);
+  background-image: url("./img/background3.jpg");
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,21 +479,21 @@ footer {
   font-size: 12px;
   color: white;
   padding: 25px;
-  background: url(./img/background3.jpg);
+  background: url("./img/background3.jpg");
   height: 200px;
 }
 
 @media only screen and (min-width: 780px) {
   body {
-    background-image: url(./img/background2.jpg);
+    background-image: url("./img/background2.jpg");
     background: contain;
   }
   nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 0;
     background-color: purple;
-    padding: 0px;
+    padding: 0;
     color: black;
     letter-spacing: 1px;
     font-size: 24px;
@@ -501,7 +501,7 @@ footer {
     font-style: none;
   }
   .menu {
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
   }
   .menu a {
@@ -569,7 +569,7 @@ footer {
     height: 50vh;
     width: 60%;
     gap: 10px;
-        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
+        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
   }
   .grid h1 {
     color: white;
@@ -584,7 +584,7 @@ footer {
     -ms-grid-column: 1;
     grid-area: project1;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project1:hover {
@@ -598,7 +598,7 @@ footer {
     -ms-grid-column-span: 2;
     grid-area: project2;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project2:hover {
@@ -611,7 +611,7 @@ footer {
     -ms-grid-column: 4;
     grid-area: project3;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project3:hover {
@@ -625,7 +625,7 @@ footer {
     -ms-grid-column-span: 2;
     grid-area: project4;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project4:hover {
@@ -638,7 +638,7 @@ footer {
     -ms-grid-column: 3;
     grid-area: project5;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project5:hover {
@@ -651,7 +651,7 @@ footer {
     -ms-grid-column: 4;
     grid-area: project6;
     border: 2px solid purple;
-    background-image: url(./img/background3.jpg);
+    background-image: url("./img/background3.jpg");
     background-size: contain;
   }
   .project6:hover {
@@ -772,7 +772,7 @@ footer {
     font-size: 12px;
     color: white;
     padding: 25px;
-    background: url(./img/background3.jpg);
+    background: url("./img/background3.jpg");
     height: 200px;
   }
 }
