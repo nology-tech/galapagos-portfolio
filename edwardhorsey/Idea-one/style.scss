@@ -1,5 +1,6 @@
 $black-font-color: rgb(43, 43, 43);
 $main-blue-color: rgba(115, 126, 150, 0.8);
+$main-blue-color-darker: rgba(115, 126, 150, 0.9);
 $main-grey-color: rgba(136, 136, 136, 0.7);
 $secondary-blue-color: rgb(40, 66, 122);
 $footer-black-color: rgb(41, 40, 40);
@@ -22,7 +23,7 @@ $highlight-color: rgb(204, 157, 70);
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
   text-align: center;
   color: $black-font-color;
   // background-image: url("./img/background-one.jpg"), linear-gradient(rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.815));
@@ -65,28 +66,39 @@ header {
 
       &:hover {
         transform: scale(1.2);
+        transition: 0.4s ease-in-out;
       }
     }
   }
 }
 
 
-
+/* Main section hovers and styling */
 
 main {
   display: flex;
   flex-direction: column;
 
   .transparent {
+    // opacity: 0;
     background-color: transparent;
+    // transition: 0.5s ease-in-out;
 
     &:hover {
-      background-color: rgba(136, 136, 136, 0.12);
+      background-color: rgba(136, 136, 136, 0.15);
+      // opacity: 1;
+      transition: 0.5s ease-in-out;
     }
   }
 
   .solid {
     background-color: $main-blue-color;
+
+    &:hover {
+      background-color: $main-blue-color-darker;
+      transition: 0.5s ease-in-out;
+
+    }
   }
 
 
@@ -120,6 +132,10 @@ main {
     align-content: center;
     flex-wrap: wrap;
 
+    h2 {
+      color: rgb(2, 28, 83);
+    }
+
     .container {
       display: flex;
       flex-direction: row;
@@ -127,6 +143,8 @@ main {
       align-content: center;
       flex-wrap: wrap;
       height: 80%;
+
+    
 
       .box {
         display: flex;
@@ -144,21 +162,65 @@ main {
           order: 0;
         }
 
+        
+
+        &#boxOne {
+          background-image: url("../Idea-one/img/box-one.jpg");
+          background-position: cover;
+        }
+
+        &#boxTwo {
+          background-image: url("../Idea-one/img/box-two.jpg");
+          background-position: cover;
+        }
+
+        &#boxThree {
+          background-image: url("../Idea-one/img/box-three.jpg");
+          background-position: cover;
+        }
+
+        &#boxFour {
+          background-image: url("../Idea-one/img/box-four.jpg");
+          background-position: cover;
+        }
+
+        &#boxFive {
+          background-image: url("../Idea-one/img/box-five.jpg");
+          background-position: cover;
+        }
+        
+        &#boxSix {
+          background-image: url("../Idea-one/img/box-six.jpg");
+          background-position: cover;
+        }
+
+        div {
+          background-color: rgb(240, 239, 239);
+          border-radius: 5px;
+          border: 2px solid $main-grey-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          padding: 2px;
+        }
+
         p {
           width: 80%;
           margin: 0 auto;
         }
-
+        
         span {
           a {
             font-size: 2em;
             padding: 15px;
-
+            
             &:visited {
               color: $black-font-color;
             }
           }
         }
+
       }
     }
   }
@@ -198,7 +260,8 @@ main {
         textarea {
           font-size: inherit;
           font-family: inherit;
-          text-align: center;
+          text-align: left;
+          padding-left: 5px;
           border-radius: 10px;
           border: 2px solid $main-grey-color;
           margin: 10px;
@@ -206,10 +269,11 @@ main {
           width: 240px;
           max-width: 260px;
 
-          #submit {
+          &#submit {
             width: 50%;
             margin: 0 auto;
             margin-top: 10px;
+            text-align: center;
           }
         }
 
@@ -239,12 +303,13 @@ main {
 
         &:hover {
           transform: scale(1.2);
+          transition: 0.4s ease-in-out;
+
         }
       }
     }
   }
 }
-
 
 footer {
   background-color: $footer-black-color;
@@ -252,13 +317,12 @@ footer {
   padding: 20px;
 }
 
-
-
 @media only screen and (min-width: 600px) {
   i {
     &:hover {
       background-color: $highlight-color;
       border-radius: 5px;
+      transition: 0.4s ease-in-out;
     }
   }
 
@@ -292,28 +356,52 @@ footer {
           min-width: 320px;
           min-height: 200px;
 
+          div {
+            height: auto;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+          }
+          
           &.focus {
-            width: 75vw;
+            width: 80vw;
             height: 40vh;
+            background-image: inherit;
+            flex-basis: 80vw;
+            transition: 0.22s ease-in;
 
             p {
-              color: whitesmoke;
               display: block;
               width: 60%;
+            }
+
+            h3 {
+              margin-top: 5px;
             }
           }
 
           &.sub {
             min-height: 10%;
             min-width: 18%;
-            height: 20%;
-            width: 25%;
-
+            height: 48px;
+            width: 190px;
+            transition: 0.11s ease-in;
+                                        
             p,
             span {
               display: none;
             }
           }
+        }
+      }
+    }
+
+    .skills {
+      i {
+        &:hover {
+          background-color: initial;
+          border-radius: initial;
+          transition: initial;
         }
       }
     }
