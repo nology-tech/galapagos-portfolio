@@ -140,6 +140,7 @@ body {
   @media only screen and (max-width: 768px) {
     height: 50px;
     width: 50px;
+    padding: 25px;
   }
 
   &:hover {
@@ -194,8 +195,6 @@ body {
       @media only screen and (max-width: 768px) {
         font-size: 8vw;
       }
-
-
     }
   }
 
@@ -338,11 +337,27 @@ body {
     font-size: 8vw;
     color: $background-color;
     text-shadow: 2px 2px $tertiary-color;
-    padding: 20px;
+    padding: 10px;
     animation: menu_text_animation1 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 10vw;
+      padding: 5px;
+    }
+  }
+
+  p {
+    width: 100%;
+    color: $background-color;
+    text-align: center;
+    text-shadow: 2px 2px $tertiary-color;
+    font-size: 2vw;
+    padding: 5px;
+    animation: menu_text_animation2 5s ease-in-out infinite;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 15px;
+      padding: 10px;
     }
   }
 }
@@ -368,33 +383,33 @@ body {
     }
 
     @media only screen and (max-width: 768px) {
-      font-size: 3em;
+      font-size: 2em;
       padding: 5px;
     }
+  }
 
-    #skills-1 {
-      animation: menu_text_animation3 5s ease-in-out infinite;
-    }
+  #skills-1 {
+    animation: menu_text_animation3 5s ease-in-out infinite;
+  }
 
-    #skills-2 {
-      animation: menu_text_animation2 5s ease-in-out infinite;
-    }
+  #skills-2 {
+    animation: menu_text_animation2 5s ease-in-out infinite;
+  }
 
-    #skills-3 {
-      animation: menu_text_animation1 5s ease-in-out infinite;
-    }
+  #skills-3 {
+    animation: menu_text_animation1 5s ease-in-out infinite;
+  }
 
-    #skills-4 {
-      animation: menu_text_animation4 5s ease-in-out infinite;
-    }
+  #skills-4 {
+    animation: menu_text_animation4 5s ease-in-out infinite;
+  }
 
-    #skills-5 {
-      animation: menu_text_animation5 5s ease-in-out infinite;
-    }
+  #skills-5 {
+    animation: menu_text_animation2 5s ease-in-out infinite;
+  }
 
-    #skills-6 {
-      animation: menu_text_animation6 5s ease-in-out infinite;    
-    }
+  #skills-6 {
+    animation: menu_text_animation1 5s ease-in-out infinite;    
   }
 }
 
@@ -409,6 +424,11 @@ body {
   z-index: -1;
   animation: stretch_animation4 12s ease-in-out infinite;
   transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*100%;
+    width: 1.15*100%;
+  }
 
   @media only screen and (max-width: 1450px) {
     height: 1.5*100%;
@@ -432,6 +452,11 @@ body {
   animation: stretch_animation5 12s ease-in-out infinite;
   transform-origin: center;
 
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*92%;
+    width: 1.15*92%;
+  }
+
   @media only screen and (max-width: 1450px) {
     height: 1.5*92%;
     width: 1.5*92%;
@@ -453,6 +478,11 @@ body {
   z-index: -1;
   animation: stretch_animation6 12s ease-in-out infinite;
   transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*85%;
+    width: 1.15*85%;
+  }
 
   @media only screen and (max-width: 1450px) {
     height: 1.5*85%;
@@ -483,12 +513,27 @@ body {
     font-size: 8vw;
     color: $background-color;
     text-shadow: 2px 2px $primary-color;
-    padding: 20px;
+    padding: 10px;
     animation: menu_text_animation1 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 10vw;
-      margin-top: 0%;
+      padding: 5px;
+    }
+  }
+
+  p {
+    width: 100%;
+    color: $background-color;
+    text-align: center;
+    text-shadow: 2px 2px $tertiary-color;
+    font-size: 2vw;
+    padding: 5px;
+    animation: menu_text_animation2 5s ease-in-out infinite;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 15px;
+      padding: 10px;
     }
   }
 
@@ -521,15 +566,29 @@ body {
       }
 
       @media only screen and (max-width: 1300px) {
-        width: 25vh;
+        width: 30vw;
         margin: 15px;
         height: 25vh;
       }
       
       @media only screen and (max-width: 768px) {
-        width: 40vh;
+        width: 90vw;
         margin: 15px;
         height: 15vh;
+      }
+
+      &:hover {
+        background-color: #74a0bf;
+
+        h3 {
+          color: $primary-color;
+          text-shadow: none;
+        }
+
+        p {
+          color: $primary-color;
+          text-shadow: none;
+        }
       }
 
       h3 {
@@ -541,6 +600,7 @@ body {
     
         @media only screen and (max-width: 768px) {
           font-size: 20px;
+          padding: 2px;
         }
       }
 
@@ -553,6 +613,7 @@ body {
         @media only screen and (max-width: 768px) {
           margin-top: 0%;
           font-size: 10px;
+          padding: 2px;
         }
       }
 
@@ -562,7 +623,11 @@ body {
         border-radius: 25px;
 
         @media only screen and (max-width: 768px) {
-          margin: 20px;
+          margin: 5px;
+        }
+
+        &:hover {
+          background-color: $background-color;
         }
       }
     }
@@ -584,11 +649,11 @@ body {
     }
 
     #portfolio-3-outer {
-      animation: menu_text_animation5 5s ease-in-out infinite;
+      animation: menu_text_animation3 5s ease-in-out infinite;
     }
 
     #portfolio-3-inner {
-      animation: menu_text_animation6 5s ease-in-out infinite;    
+      animation: menu_text_animation1 5s ease-in-out infinite;    
     }
   }
 }
@@ -605,6 +670,11 @@ body {
   animation: stretch_animation2 12s ease-in-out infinite;
   transform-origin: center;
   
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*115%;
+    width: 1.15*115%;
+  }
+
   @media only screen and (max-width: 1450px) {
     height: 1.5*115%;
     width: 1.5*115%;
@@ -627,6 +697,11 @@ body {
   animation: stretch_animation1 12s ease-in-out infinite;
   transform-origin: center;
   
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*106%;
+    width: 1.15*106%;
+  }
+
   @media only screen and (max-width: 1450px) {
     height: 1.5*106%;
     width: 1.5*106%;
@@ -649,6 +724,11 @@ body {
   animation: stretch_animation5 12s ease-in-out infinite;
   transform-origin: center;
 
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*95%;
+    width: 1.15*95%;
+  }
+
   @media only screen and (max-width: 1450px) {
     height: 1.5*95%;
     width: 1.5*95%;
@@ -657,6 +737,78 @@ body {
   @media only screen and (max-width: 768px) {
     height: 3*95%;
     width: 3*95%;
+  }
+}
+
+.portfolio-clicked {
+  height: 90vh;
+  width: 90vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  margin: 0 auto;
+  position: relative;
+
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+    height: 45vh;
+  }
+}
+
+.portfolio-clicked-svg-bottom {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  opacity: 0.5;
+  position: absolute;
+  fill: $primary-color;
+  z-index: -1;
+  animation: stretch_animation4 12s ease-in-out infinite;
+  transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*100%;
+    width: 1.15*100%;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    height: 1.25*100%;
+    width: 1.25*100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 1.4*100%;
+    width: 1.4*100%;
+  }
+}
+
+.portfolio-clicked-svg-top {
+  height: 85%;
+  width: 85%;
+  overflow: visible;
+  position: absolute;
+  fill: $primary-color;
+  z-index: -1;
+  animation: stretch_animation6 12s ease-in-out infinite;
+  transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*85%;
+    width: 1.15*85%;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    height: 1.25*85%;
+    width: 1.25*85%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 1.4*85%;
+    width: 1.4*85%;
   }
 }
 
@@ -703,17 +855,32 @@ body {
   }
 
   p {
+    width: 100%;
+    color: $primary-color;
+    text-align: center;
+    text-shadow: 2px 2px $background-color;
+    font-size: 2vw;
+    padding: 5px;
+    animation: menu_text_animation2 5s ease-in-out infinite;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+
+
+  .p2 {
     width: 50%;
     color: $primary-color;
     text-align: center;
     text-shadow: 2px 2px $background-color;
     font-size: 2vw;
     padding: 5px;
-    margin-top: 2%;
-    animation: menu_text_animation2 5s ease-in-out infinite;
+    animation: menu_text_animation4 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
-      font-size: 10px;
+      font-size: 15px;
     }
   }
 }
@@ -729,6 +896,11 @@ body {
   z-index: -1;
   animation: stretch_animation3 12s ease-in-out infinite;
   transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*100%;
+    width: 1.15*100%;
+  }
 
   @media only screen and (max-width: 1450px) {
     height: 1.5*100%;
@@ -752,6 +924,11 @@ body {
   animation: stretch_animation6 12s ease-in-out infinite;
   transform-origin: center;
 
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*92%;
+    width: 1.15*92%;
+  }
+
   @media only screen and (max-width: 1450px) {
     height: 1.5*92%;
     width: 1.5*92%;
@@ -773,6 +950,11 @@ body {
   z-index: -2;
   animation: stretch_animation4 12s ease-in-out infinite;
   transform-origin: center;
+
+  @media only screen and (max-width: 1800px) {
+    height: 1.15*85%;
+    width: 1.15*85%;
+  }
 
   @media only screen and (max-width: 1450px) {
     height: 1.5*85%;
@@ -796,6 +978,10 @@ body {
     flex-direction: column;
   }
   
+  a {
+    color: $primary-color;;
+  }
+
   i {
     font-size: 10em;
     padding: 50px;
@@ -808,6 +994,10 @@ body {
     @media only screen and (max-width: 768px) {
       font-size: 2em;
       padding: 10px;
+    }
+
+    &:hover {
+      color: $background-color;
     }
   }
 }
