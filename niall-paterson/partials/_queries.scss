@@ -3,13 +3,11 @@
     margin: 0 auto;
     width: 80vw;
   }
-  
+
   article {
     width: 80vw;
-    // 3 projects per 100vh, minus header height
-    height: (100vh - $medium-height) / 3;
+    padding: 20px;
   }
-
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -17,28 +15,40 @@
     margin: 0 auto;
   }
 
+  article {
+    width: 40vw;
+  }
+
   #about {
     width: 60vw;
     margin: 0 auto;
   }
 
-  article {
-    width: 40vw;
-    height: auto;
-    margin: 25vh;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+  h1 {
+    font-size: $large-font * 1.125;
   }
 
-  article {
-    header {
-      border: 1px solid transparent;
-      border-radius: 25px;
+  h2,
+  i,
+  li {
+    font-size: $medium-font * 1.125;
+  }
+
+  p {
+    font-size: $small-font * 1.125;
+  }
+
+  header {
+    .social-media-wrapper {
+      i {
+        font-size: $small-font * 1.125;
+      }
     }
 
     .project-links {
-      width: 10vw;
+      i {
+        font-size: $small-font * 1.75;
+      }
     }
   }
 }
