@@ -132,9 +132,19 @@ body {
   }
 
   main {
+    
     @keyframes slideup {
-      0% { transform: translateY(50px);}
+      0% { transform: translateY(50px); }
+      0% { opacity: 0;}
       100% {transform: translateY(0);}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slidedown {
+      0% { transform: translateY(-50px);}
+      0% {opacity: 0;}
+      100% {transform: translateY(0);}
+      100% {opacity: 1;}
     }
 
     .splash {
@@ -155,13 +165,18 @@ body {
         font-weight: 100;
         margin: 30px 20px 5px;
         animation: slideup 3s;
-        overflow-y: hidden;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
       }
+      
 
       .jumbotron p {
         color: white;
         text-align: center;
         font-size: 30px;
+        animation: slidedown 3s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
       } 
     }
 
@@ -227,7 +242,7 @@ body {
 
         .frame {
           height: 200px;
-          min-width: 150px;
+          min-width: 160px;
           background-color: darkgray;
           border: solid 2px black;
           padding: 10px;
@@ -263,20 +278,18 @@ body {
           }
         }
       }
-    
-
-      .footer div {
-        position: fixed;
-        background-color: black;
-        display: block;
-        color: white;
-        width: 100%;
-        font-family: 'Play', sans-serif;
-        font-size: 16px;
-        display: block;
-        padding: 30px;
-      }
     }
+
+    .footer {
+      background-color: black;
+      display: block;
+      color: white;
+      font-family: 'Play', sans-serif;
+      font-size: 16px;
+      padding: 30px;
+      height: 40px;
+    }
+    
   }
 
   @media only screen and (min-width: 900px) {
