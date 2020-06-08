@@ -1,618 +1,383 @@
-
-	/* Let's get some out-of-this-world fonts */
-
+/*----------Fonts----------*/
 @font-face {
-    font-family: 'sfalienencsolid';
-	src:	url('./assets/fonts/sfalienencsolid.woff2') format('woff2'),
-			url('./assets//fonts/sfalienencsolid.woff') format('woff'),
-			url('./assets//fonts/sfalienencsolid.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "sfalienencsolid";
+  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets//fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'sfalienenc';
-	src:	url('./assets/fonts/sfalienenc.woff2') format('woff2'),
-			url('./assets//fonts/sfalienenc.woff') format('woff'),
-			url('./assets//fonts/sfalienenc.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "sfalienenc";
+  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets//fonts/sfalienenc.woff") format("woff"), url("./assets//fonts/sfalienenc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'streamster';
-	src:	url('./assets/fonts/streamster.woff2') format('woff2'),
-			url('./assets//fonts/streamster.woff') format('woff'),
-			url('./assets//fonts/streamster.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "streamster";
+  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets//fonts/streamster.woff") format("woff"), url("./assets//fonts/streamster.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'scriptina';
-	src:	url('./assets/fonts/scriptina.woff2') format('woff2'),
-			url('./assets//fonts/scriptina.woff') format('woff'),
-			url('./assets//fonts/scriptina.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "scriptina";
+  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets//fonts/scriptina.woff") format("woff"), url("./assets//fonts/scriptina.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-	/* These colors were inspired by a funky Ted Baker wallet
-	which I was given when I left my last sales job */
-
+/*---------- ----------*/
+/*----------CSS Reset----------*/
 * {
-	--portfolio-light-blue: #8EA8C3;
-	--portfolio-black: #0b0014;
-	--portfolio-gray: #363946;
-	--portfolio-blue: #406E8E;
-	--portfolio-purple: #5B2E48;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'sfalienencsolid', sans-serif;
-	color: inherit;
-	/* border: 2px hotpink dotted; */
+  --portfolio-light-blue: #8ea8c3;
+  --portfolio-black: #0b0014;
+  --portfolio-gray: #363946;
+  --portfolio-blue: #406e8e;
+  --portfolio-purple: #5b2e48;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-	/* I know how I like my body. */
-
-body {
-	max-width: 100vw;
-	background-color: var(--portfolio-black); 
-}
-
-	/* Header styles. Because first impressions count. */
-
-header {
-	width: 100%;
-	height: 32vh;
-	background-color: #0B001499;
-	border-bottom: 1px solid var(--portfolio-light-blue);
-}
-
-header > nav {
-	text-align: center;
-	width: 100%;
-	height: 100%;
-}
-
-header > nav > ul {
-	width: 100%;
-	height: 100%;
-	list-style: none;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	letter-spacing: initial;
-}
-
-header > nav > ul > li {
-	color: var(--portfolio-blue);
-	width: 85%;
-}
-
-header > nav > ul > li.home {
-	color: var(--portfolio-light-blue);
-}
-
-header > nav > ul > li:not(.home) {
-	border-left: 0.2em var(--portfolio-light-blue) solid;
-}
-
-header > nav > ul > li > a {
-	text-decoration: none;
-	font-size: 2em;
-}
-
-	/* All the sections take up one viewport height on mobile. */
-
-section {
-	height: 100vh;
-	border-bottom: 1px var(--portfolio-light-blue) double;
-}
-
-		/* What better way to start than a bold opening gambit? */
-
-section.bold-opening-gambit {
-	/* Previously: backgroundthree.jpg, cover, center */
-	background-color: var(--portfolio-black);
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline {
-	height: 68%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-	line-height: 3em;
-	text-align: center;
-	text-shadow: 0px 0px 70px #8EA8C3;
-	overflow: visible;
-	font-size: 1.5em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.first-line p {
-	background-color: #5B2E4833;
-	border-top-right-radius: 2em;
-	border-bottom-right-radius: 2em;
-	color: var(--portfolio-purple);
-	width: 45%;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.second-line p {
-	background-color: #5B2E4833;
-	border-top-left-radius: 2em;
-	border-bottom-left-radius: 2em;
-	float: right;
-	color: var(--portfolio-purple);
-	width: 65%;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-	background-color: #36394633;
-	color: var(--portfolio-blue);
-	font-size: 1.8em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-	color: var(--portfolio-black);
-	background-color: #406E8E33;
-	font-size: 2.4em;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption {
-	height: 32%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: 50%;
-	width: 60%;
-	margin: 0 auto;
-}
-
-section.bold-opening-gambit #bold-opening-gambit-caption > div.text.fifth-line > p {
-	text-shadow: 0px 0px 5px #5B2E48FF;
-	transform: rotate(-0.03turn);
-	font-family: 'scriptina';
-	color: #5B2E48FF;
-	font-size: 5em;
-	line-height: 2em;
-}
-
-	/* Whew, that was long. Alright, first proper bit of homepage content now. */
-
-	/* Remember, we're still on mobile here—this all goes out the window after 768 pixels. */
-
-section.first-content {
-	background-color: white;
-	/* background-image: url(./assets/images/background-five.jpg);
-	background-size: cover;
-	background-repeat: no-repeat; */
-}
-
-section.first-content #first-content-headline {
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: left;
-}
-
-section.first-content #first-content-headline div.text p {
-	line-height: 3em;
-	text-align: center;
-	text-shadow: 0px 0px 70px #8EA8C3;
-	overflow: visible;
-	font-size: 1.5em;
-}
-
-section.first-content #first-content-headline div.text.first-line p {
-	background-color: #5B2E4833;
-	border-bottom-right-radius: 70%; 
-	color: var(--portfolio-blue);
-	width: 45%;
-	float: middle;
-}
-
-section.first-content #first-content-headline div.text.second-line p {
-	color: var(--portfolio-black);
-	background-color: #406E8E33;
-	font-size: 2.5em;
-	line-height: 1em;
-}
-
-section.first-content #first-content-headline div.text.third-line p {
-	background-color: #5B2E4833;
-	border-top-left-radius: 2em;
-	border-bottom-left-radius: 2em;
-	float: right;
-	color: var(--portfolio-gray);
-	width: 65%;
-}
-
-section.first-content #first-content-headline > div.text.fourth-line {
-	display: none;
-}
-
-section.first-content #first-content-caption {
-	height: 30%;
-	display: flex;
-	justify-content: center;
-  align-items: center;
-}
-
-
-
-
-section.first-content #first-content-caption > div.text.fourth-line {
-	display: initial;
-}
-
-section.first-content #first-content-caption > div.text.fourth-line > p {
-	font-family: 'streamster';
-	color: var(--portfolio-blue);
-	text-shadow: none;
-	background-color: none;
-	font-size: 10em;
-	line-height: 50%;
-}
-
-
-
-	/* NICE. Ok, second bit of the homepage comin' up.
-	This will probably be a form but I'll change it later.
-	Also, this needs to be a bit shorter so we can fit the footer in. */
-
-section.second-content {
-	background-color: var(--portfolio-black);
-}
-		/* background-image: url(./assets/images/background-four.jpg);
-	background-size: cover;
-	background-repeat: no-repeat; */
-
-section.second-content #headline {
-	height: 68vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: justify;
-}
-
-section.second-content #headline div.text p {
-	line-height: 3em;
-	text-align: center;
-	text-shadow: 0px 0px 70px #8EA8C3;
-	overflow: visible;
-	font-size: 1.5em;
-}
-
-section.second-content #headline div.text.first-line p {
-	background-color: #5B2E4833;
-	border-top-right-radius: 2em;
-	border-bottom-right-radius: 2em;
-	color: var(--portfolio-purple);
-	width: 45%;
-}
-
-section.second-content #headline div.text.second-line p {
-	background-color: #5B2E4833;
-	border-top-left-radius: 2em;
-	border-bottom-left-radius: 2em;
-	float: right;
-	color: var(--portfolio-purple);
-	width: 65%;
-}
-
-section.second-content #headline div.text.third-line p {
-	background-color: #36394633;
-	color: var(--portfolio-blue);
-	font-size: 1.8em;
-}
-
+/*---------- ----------*/
+/*----------Styling for hyperlinks and special characters----------*/
 .char {
-	color: transparent;
-	text-decoration: underline;
-	text-decoration-color: var(--portfolio-blue);
+  color: transparent;
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--portfolio-blue);
+          text-decoration-color: var(--portfolio-blue);
 }
-
-.second-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 76vh;
-	width: 100%;
-}
-
-	/* The form */
-
-	body > section.second-content > div > div > p {
-		font-family: 'scriptina';
-		font-size: 15vmin;
-		color: var(--portfolio-purple);
-		line-height: 1em;
-		text-align: center;
-	}
-
-
-
-
-	/* Last but not least. If you're still reading, I applaud you. */
-
-/* header {
-	width: 100%;
-	height: 32vh;
-	background-color: #0B001499;
-} */
-
-body > footer {
-	height: 12vh;
-	background-color: #0B001499;
-	border-top: 1px double var(--portfolio-light-blue);
-}
-
-footer > nav {
-	height: 100%;
-	width: 100%;
-	text-align: center;
-}
-
-footer > nav > ul {
-	width: 100%;
-	height: 100%;
-	list-style: none;
-	display: grid;
-	grid-template-columns: 2fr 2fr 1fr 1fr;
-	grid-template-rows: 5fr;
-	letter-spacing: initial;
-}
-
-footer > nav > ul > li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-}
-
-footer > nav > ul > li > a {
-
-	width: 100%;
-	height: auto;
-	color: var(--portfolio-blue);
-	text-decoration: none;
-}
-
-	/* This is where it gets funky... */
 
 @media screen and (min-width: 823px) {
+  span.char {
+    -webkit-text-decoration-color: var(--portfolio-purple);
+            text-decoration-color: var(--portfolio-purple);
+  }
+}
 
-	header {
-		z-index: 2;
-	}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-	#bold-opening-gambit-headline > div.text.blink-three.eighties.fourth-line {
-		z-index: 1;
-	}
+/*---------- ----------*/
+/*----------General styles----------*/
+body {
+  max-width: 100vw;
+  background-color: var(--portfolio-black);
+  font-size: 16px;
+  color: var(--portfolio-black);
+}
 
-	.hover-nav {
-		letter-spacing: 0.05em;
-		color: var(--portfolio-purple);
-	}
+/*---------- ----------*/
+/*----------Header and navbar styles----------*/
+header {
+  font-family: "sfalienencsolid", sans-serif;
+}
 
-	span.char {
-		text-decoration-color: var(--portfolio-purple);
+header .title {
+  height: 50vh;
+}
 
-	}
+header h1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0b0014bb), to(#0b0014bb)), url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
+  background-image: linear-gradient(#0b0014bb 0%, #0b0014bb 100%), url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
 
-		
+header nav {
+  width: 100%;
+  height: 100%;
+}
 
+header nav ul {
+  width: 100%;
+  height: 80%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: initial;
+}
 
-	header {
-		position: sticky;
-		top: 0;
-		height: 12vh;
-		border-bottom: 1px solid var(--portfolio-light-blue);
-	}
+header nav ul li {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  line-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-	header > nav {
-		text-align: center;
-		width: 100%;
-		height: 100%;
-	}
+/*---------- ----------*/
+/*---------- Specific section stylings. Sections take up one viewport height.
+For very small devices sections take up two heights. ---------- */
+section {
+  font-family: "sfalienencsolid", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-	header > nav > ul {
-		width: 100%;
-		height: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1.75fr 1.75fr 1.75fr;
-		grid-template-rows: 1fr;
+section.section-three {
+  height: 88vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-	}
+section article {
+  font-family: consolas, Arial, Helvetica, sans-serif;
+  height: 60%;
+  width: 75%;
+}
 
-	header > nav > ul > li {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 50%;
-		color: inherit;
-	}
-	
-	header > nav > ul > li > a {
-		text-decoration: none;
-		font-size: 2em;
-	}
-	
-	nav:hover *.hover-nav {
-		display: inherit;
-		letter-spacing: 0em;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: letter-spacing 2s, text-shadow 2s, color 2s;
-		color: var(--portfolio-blue);
-		cursor: pointer;
-	}
+section article div {
+  width: 100%;
+}
 
-	nav:hover * > span.char {
-		color: transparent;
-		text-decoration-color: var(--portfolio-blue);
-		transition: text-decoration 2s;
-	}
-		
-	a:hover .hover-io, p:hover .hover-io, li:hover .hover-io {
-		letter-spacing: 0.05em;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: letter-spacing 0.5s, color 0.5s;
-		color: var(--portfolio-light-blue);
-		cursor: pointer;
-		text-shadow: 0px 0px 30px var(--portfolio-light-blue);
-	}
+section article div h3 {
+  color: var(--portfolio-purple);
+  font-size: 1em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 2%;
+}
 
-	section {
-		height: 88vh;
-		border-bottom: 1px var(--portfolio-light-blue) double
-	}
+section article div h4 {
+  font-size: 0.5em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 2%;
+}
 
-	section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-		line-height: 1.2em;
-		font-size: 2.5em;
-	}
+section article div p {
+  color: var(--portfolio-gray);
+  text-align: left;
+  width: 100%;
+  font-size: 0.5em;
+  padding: 0% 0% 3%;
+}
 
-	section.bold-opening-gambit #bold-opening-gambit-headline div.text.third-line p {
-		font-size: 4em;
-	}
+section .caption {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
 
-	section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-		font-size: 6em;
-		background-color: unset;
-	}
+/*----------Page styling----------*/
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--portfolio-black);
+  border-top: 1px double var(--portfolio-light-blue);
+  border-bottom: 1px double var(--portfolio-light-blue);
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
+          box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
+  font-size: 2em;
+  color: var(--portfolio-blue);
+}
 
-	section.first-content #first-content-headline div.text p {
-		line-height: 2;
-		font-size: 2em;
-	}
+.page div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline-color: transparent;
+}
 
-	section.first-content #first-content-caption > div.text.fourth-line {
-		display: none;
-	}
+.page div.title {
+  height: 20%;
+  width: 100%;
+}
 
-	section.first-content #first-content-headline {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-	}
+.page div h1,
+.page div h2 {
+  width: 80%;
+  padding: 2vmin;
+  text-align: center;
+  line-height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: var(--portfolio-black);
+  text-shadow: 0 0 5px var(--portfolio-light-blue);
+  font-size: 1em;
+  border-top: 1px solid var(--portfolio-light-blue);
+  border-bottom: 2px solid var(--portfolio-light-blue);
+  border-radius: 1em;
+}
 
-	section.first-content #first-content-headline > div.text.fourth-line {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
+.page div .title-one,
+.page div .title-two {
+  display: block;
+}
 
-	}
-
-	section.first-content #first-content-headline > div.text.fourth-line > p {
-		width: 30%;
-		border-top-right-radius: 100%;
-		border-top-left-radius: 100%;
-		border-bottom-right-radius: 100%;
-		background-color: rgba(91, 46, 72, 0);
-		font-family: 'streamster';
-		color: var(--portfolio-blue);
-		text-shadow: unset;
-		font-size: 5em;
-		line-height: 2em;
-	}
-
-
-	section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-		width: 100%;
-		background-color: transparent;
-		background-image: linear-gradient(to bottom, rgba(91, 46, 72, 0), rgba(91, 46, 72, 1));
-		border-top-right-radius: 0em;
-		border-top-left-radius: 0em;
-		border-bottom-right-radius: 0em;
-		letter-spacing: 0.3em;
-		font-size: 10em;
-		line-height: 2em;
-		color: var(--portfolio-black);
-		text-shadow: 0px 0px 5px #8EA8C3;
-		transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-		transition: width 1.5s, background-color 1.5s, background-image 1.5s, border-radius 1.5s, text-align 1.5s, border 1.5s, line-height 1.5s, letter-spacing 1.5s, font-size 1.5s, color 1.5s, text-shadow 1.5s;
-
-	}
-
+/*----------Responsive design----------*/
+@media screen and (min-width: 823px) {
+  h1,
+  h2 {
+    width: 100%;
+  }
+  header.page div.title {
+    height: 40vh;
+  }
+  header.page nav {
+    height: 60vh;
+  }
+  header.page ul {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
-	section.bold-opening-gambit #bold-opening-gambit-headline div.text p {
-		line-height: 1.2em;
-		font-size: 3.5em;
-	}
-
-	section.first-content #first-content-headline div.text.second-line p {
-		font-size: 4em;
-	}
-
-	section.bold-opening-gambit #bold-opening-gambit-headline div.text.fourth-line p {
-		font-size: 6em;
-		background-color: unset;
-	}
-
-	section.first-content #first-content-headline div.text p {
-		line-height: 1.5;
-		font-size: 4em;
-	}
-
-
-	section.first-content #first-content-headline > div.text.fourth-line > p {
-		font-size: 7em;
-	}
-
-
-	section.first-content #first-content-headline > div.text.fourth-line:hover > p {
-		font-size: 12em;
-	}
-
-	header > nav > ul > li > a {
-		font-size: 2.6em;
-	}
+  /*----------Page styling----------*/
+  ul {
+    color: var(--portfolio-gray);
+  }
+  nav:hover * > span.char {
+    color: transparent;
+    -webkit-text-decoration-color: var(--portfolio-blue);
+            text-decoration-color: var(--portfolio-blue);
+    -webkit-transition: -webkit-text-decoration 2s;
+    transition: -webkit-text-decoration 2s;
+    transition: text-decoration 2s;
+    transition: text-decoration 2s, -webkit-text-decoration 2s;
+  }
+  .hover-fx-subtle {
+    letter-spacing: 0.05em;
+    color: inherit;
+  }
+  :hover > .hover-fx-subtle {
+    letter-spacing: 0;
+    text-shadow: none;
+    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+    -webkit-transition: letter-spacing 2s, text-shadow 2s, color 1s;
+    transition: letter-spacing 2s, text-shadow 2s, color 1s;
+    color: var(--portfolio-blue);
+  }
+  *:hover > .hover-fx-highlight {
+    letter-spacing: 0.05em;
+    -webkit-transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+            transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
+    -webkit-transition: letter-spacing 0.5s, color 1s;
+    transition: letter-spacing 0.5s, color 1s;
+    color: var(--portfolio-light-blue);
+    cursor: pointer;
+    text-shadow: 0 0 30px var(--portfolio-light-blue);
+  }
+  .page .first-line:hover {
+    outline: 2px solid var(--portfolio-purple);
+    -webkit-transition: outline 0.5s;
+    transition: outline 0.5s;
+  }
+  .page .second-line:hover {
+    outline: 1px solid var(--portfolio-blue);
+    -webkit-transition: outline 0.5s;
+    transition: outline 0.5s;
+  }
+  footer {
+    color: var(--portfolio-light-blue);
+    height: 12vh;
+    background-color: #0b0014;
+    border-top: 1px double var(--portfolio-light-blue);
+    border-radius: 2em;
+  }
+  footer nav {
+    height: 100%;
+    width: 100%;
+  }
+  footer nav ul {
+    height: 100%;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    letter-spacing: initial;
+  }
+  footer nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    color: inherit;
+  }
 }
-
-
-.highlight {
-	color: var(--portfolio-light-blue);
-	text-shadow: 0px 0px 30px var(--portfolio-light-blue);
-}
-
-.lowlight {
-	color: var(--portfolio-purple);
-	text-shadow: 0px 0px 30px var(--portfolio-light-blue);
-}
-
-
-.hover-io {
-	color: inherit;
-}
-
-@media screen and (max-height: 568px) {
-	body > header {
-		height: 100vh;
-		position: static;
-	}
-	section {
-		height: 200vh;
-	}
-}
+/*# sourceMappingURL=home.css.map */
