@@ -1,5 +1,5 @@
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Fjalla One";
@@ -10,6 +10,7 @@
 body {
   display: flex;
 }
+
 nav {
   background-color: #1d2227;
   display: fixed;
@@ -25,13 +26,14 @@ nav {
   height: 5vh;
   background-color: transparent;
 }
+
 div {
   width: 1vw;
   background-color: red;
 }
 
 main {
-  background-image: url(./Images/web-build1.png);
+  background-image: url("./Images/web-build1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,6 +52,7 @@ section {
     "btn-outline"
     "btn-primary";
 }
+
 #name {
   grid-area: name;
   font-size: 40px;
