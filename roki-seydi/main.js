@@ -11,6 +11,7 @@ function rotate(e) {
     if (e.data.d === "p") {
         currdeg = currdeg + 60;
     }
+
     carousel.css({
         "-webkit-transform": "rotateY(" + currdeg + "deg)",
         "-moz-transform": "rotateY(" + currdeg + "deg)",

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EJ | Portfolio</title>
@@ -23,8 +26,8 @@
         </div>
         <div class="landing-text">
           <p>
-            I’m an aspiring <span> Junior Developer </span>from London, United Kingdom. I am currently on on a 12-week
-            intensive web development course at _nology.io.
+            I’m an aspiring <span> Junior Developer </span>from London, United Kingdom. I am
+            currently on on a 12-week intensive web development course at _nology.io.
           </p>
         </div>
         <div class="contact-links">
@@ -34,24 +37,22 @@
           </p>
         </div>
         <div class="headshot-1">
-          <img src="./IMG_2955_Facetune_29-05-2020-20-19-47 1.jpg" alt="" />
+          <img src="./ej.jpg" alt="" />
         </div>
       </section>
 
-      <section class="container-work" data-aos="fade-in">
-        <div class="title" id="work"><h2>Selected Work</h2></div>
-        <div class="card-1">
-          <p>Project 1</p>
+      <div class="title-1" id="work" data-aos="fade-in"><h2>Selected Work</h2></div>
+      <section class="container-work swiper-container" data-aos="fade-in">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Project 1</div>
+          <div class="swiper-slide">Project 2</div>
+          <div class="swiper-slide">Project 3</div>
+          <div class="swiper-slide">Project 4</div>
+          <div class="swiper-slide">Project 5</div>
+          <div class="swiper-slide">Project 6</div>
         </div>
-        <div class="card-2">
-          <p>Project 2</p>
-        </div>
-        <div class="card-1 extra-1">
-          <p>Project 3</p>
-        </div>
-        <div class="card-2 extra-2">
-          <p>Project 4</p>
-        </div>
+        <div class="swiper-pagination"></div>
       </section>
 
       <section class="container-resume" data-aos="fade-in">
@@ -95,10 +96,11 @@
         <div class="title" id="about"><h2>About Me</h2></div>
         <div class="card-7">
           <p>
-            Hi! My name is EJ, I am a 24 year old British-Nigerian with a passion for all things computer science!, I
-            have been self teaching my self coding for a few months in my spare time, but have significantly increased
-            my time spent learning since quitting my job in retail banking a few months ago to pursue my dream career!
-            When I'm not writing code, I enjoy working out in the gym, socialising and plenty of netflix!
+            Hi! My name is EJ, I am a 24 year old British-Nigerian with a passion for all things
+            computer science!, I have been self teaching my self coding for a few months in my spare
+            time, but have significantly increased my time spent learning since quitting my job in
+            retail banking a few months ago to pursue my dream career! When I'm not writing code, I
+            enjoy working out in the gym, socialising and plenty of netflix!
           </p>
         </div>
         <div class="headshot-2"><p>Headshot 2</p></div>
@@ -106,7 +108,7 @@
     </main>
 
     <footer>
-      <p>Created with &#10084; by EJ</p>
+      <p>Created by EJ &#129304;</p>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -116,6 +118,33 @@
         duration: 1000,
       });
     </script>
-    <script src="./scripts.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // init: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
