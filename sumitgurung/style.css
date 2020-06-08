@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #4ae8eb;
+}
+
+header {
+  background-image: linear-gradient(#7070ee, #aae3e3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header #photo {
+  border: 2px solid black;
+  border-radius: 15px 50px;
+  margin: 10px;
+  box-shadow: 5px 10px #636363;
+}
+header #arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+header h1 {
+  font-size: 3em;
+}
+header h2 {
+  font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+P {
+  border: 2px solid black;
+  max-width: 90vw;
+  margin: 5px auto;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+#projects {
+  padding: 25px;
+}
+#projects .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#projects .container div {
+  border: 2px solid black;
+  text-align: center;
+  max-width: 90vw;
+  margin: 40px auto;
+  padding: 120px;
+  font-size: 1.5em;
+}
+#projects .container div .proj {
+  width: 300px;
+}
+#projects .container div .text {
+  text-align: center;
+  border: none;
+}
+
+#skills {
+  padding: 25px;
+}
+#skills .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#skills .icon a {
+  z-index: 1;
+}
+#skills .icon a:hover {
+  opacity: 0.5;
+}
+#skills p {
+  background-color: #cbcbcb;
+}
+
+#about {
+  padding: 25px;
+}
+#about p {
+  background-color: #cbcbcb;
+}
+
+#contact {
+  padding: 25px;
+}
+#contact p {
+  background-color: #cbcbcb;
+}
+#contact .contact-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 60px;
+  margin: 10px;
+}
+
+.typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #9a9a9a;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fffffe;
+  }
+}
+footer p {
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px auto;
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
