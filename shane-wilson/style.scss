@@ -6,7 +6,7 @@
 }
 
 * h1 {
-  font-size: 100px;
+  font-size: 50px;
   text-decoration: underline purple;
 }
 
@@ -30,22 +30,6 @@ header {
 .landing h3 {
   font-size: 30px;
   padding: 20px;
-}
-
-.landing {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 60%;
-  padding: 10px;
-  text-align: center;
 }
 
 .landing {
@@ -109,7 +93,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -150,10 +134,12 @@ nav {
   align-items: center;
   position: relative;
   padding-bottom: 50px;
+  z-index: -2;
 }
 
 .projects h1 {
   padding: 20px;
+  font-size: 50px;
 }
 
 .projects h3 {
@@ -314,6 +300,7 @@ nav {
   display: block;
   text-align: justify;
   padding: 20px;
+  font-size: 50px;
 }
 
 .skills h3 {
@@ -435,6 +422,7 @@ footer {
     position: relative;
     margin: 50px;
     margin-bottom: 0;
+    max-width: 90%;
   }
 
   .text {
@@ -479,6 +467,7 @@ footer {
     align-items: center;
     position: relative;
     padding-bottom: 50px;
+    
   }
 
   .projects h1 {

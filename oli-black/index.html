@@ -8,6 +8,7 @@
     <title>Oli's portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/88773380a0.js" crossorigin="anonymous"></script>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
 </head>
 <body>
@@ -50,6 +51,7 @@
                 </svg>
                 <div class="skills-div">
                     <h2>skills</h2>
+                    <p>below are some of the tools i can use</p>
                         <div id="skills-icons">
                             <i class="fab fa-js-square" id="skills-1"></i>
                             <i class="fab fa-html5" id="skills-2"></i>
@@ -72,26 +74,35 @@
                 <svg class="portfolio-svg-top" viewbox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1621.78,31.95c131.05,38.11,159.13,174.86,230.01,291.43c69.54,116.57,183.2,212.97,172.51,304.13 c-12.04,91.17-148.44,176.35-288.85,253.32c-139.08,76.22-280.82,144.22-441.3,165.89s-341-2.99-521.53-30.64 c-180.53-27.65-361.06-58.29-537.58-120.31C59.86,834.5-111.31,741.1-146.08,634.24c-34.77-106.11,66.86-226.42,183.2-332.53 c115-106.11,246.06-198.02,413.21-227.17c165.82-29.14,370.42,3.74,588.39-8.97C1258.05,52.87,1490.73-6.91,1621.78,31.95z"/>
                 </svg>
-                    <h2>portfolio</h2>
-                    <div class="portfolio-list">
+                    <h2 id="portfolio-h2">portfolio</h2>
+                    <p id="portfolio-p">and here are some of the things i've built with them</p>
+                    <div class="portfolio-list" id="portfolio-list">
                         <article class="portfolio-tab" id="portfolio-1-outer">
-                            <div class="portfolio-inner" id="portfolio-1-inner">
+                            <div class="portfolio-inner" id="portfolio-1-inner" onclick="portfolioClicked(1)">
                                 <h3>Portfolio Website 1</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </article>
                         <article class="portfolio-tab" id="portfolio-2-outer">
-                            <div class="portfolio-inner" id="portfolio-2-inner">
+                            <div class="portfolio-inner" id="portfolio-2-inner" onclick="portfolioClicked(2)">
                                 <h3>Mobile App</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </article>
                         <article class="portfolio-tab" id="portfolio-3-outer">
-                            <div class="portfolio-inner" id="portfolio-3-inner">
+                            <div class="portfolio-inner" id="portfolio-3-inner" onclick="portfolioClicked(3)">
                                 <h3>Coding Tutorials</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </article>
+                    </div>
+                    <div class="portfolio-clicked" id="portfolio-clicked" onclick="portfolioClicked(4)">
+                        <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="portfolio-clicked-svg-bottom" id="portfolio-clicked-svg-bottom">
+                            <path d="M39.5,-64.7C51.6,-53.7,62.2,-43.5,64.7,-31.5C67.1,-19.5,61.5,-5.7,56,5.5C50.4,16.8,45,25.5,39.1,36C33.3,46.4,27,58.6,17.3,63.5C7.6,68.4,-5.6,66.1,-19.8,63.6C-34,61.2,-49.3,58.5,-58.4,49.7C-67.5,40.8,-70.4,25.7,-73,10.3C-75.5,-5.1,-77.6,-20.8,-71.4,-31.8C-65.1,-42.9,-50.5,-49.3,-37.2,-59.8C-23.9,-70.3,-11.9,-84.9,0.9,-86.3C13.7,-87.7,27.4,-75.8,39.5,-64.7Z" transform="translate(100 100)" />
+                        </svg>
+                        <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="portfolio-clicked-svg-top" id="portfolio-clicked-svg-top">
+                            <path d="M39.5,-64.7C51.6,-53.7,62.2,-43.5,64.7,-31.5C67.1,-19.5,61.5,-5.7,56,5.5C50.4,16.8,45,25.5,39.1,36C33.3,46.4,27,58.6,17.3,63.5C7.6,68.4,-5.6,66.1,-19.8,63.6C-34,61.2,-49.3,58.5,-58.4,49.7C-67.5,40.8,-70.4,25.7,-73,10.3C-75.5,-5.1,-77.6,-20.8,-71.4,-31.8C-65.1,-42.9,-50.5,-49.3,-37.2,-59.8C-23.9,-70.3,-11.9,-84.9,0.9,-86.3C13.7,-87.7,27.4,-75.8,39.5,-64.7Z" transform="translate(100 100)" />
+                        </svg>
                     </div>
             </section>
 
@@ -107,11 +118,12 @@
                 </svg>
                 <div class="contact-div">
                     <h2>get in touch</h2>
-                    <p>email me on oli.black@nology.io or call me on 07913086545</p>
+                    <p>if you like what you saw</p>
+                    <p class="p2">@ me on oli.black@nology.io or</p>
                     <div id="contact-icons">
-                        <i class="fab fa-github" id="contact-1"></i>
-                        <i class="fab fa-facebook" id="contact-2"></i>
-                        <i class="fab fa-twitter" id="contact-3"></i>  
+                        <a href="https://github.com/oliblack"><i class="fab fa-github" id="contact-1"></i></a>
+                        <a href="https://www.linkedin.com/in/oliver-black-63489942/"><i class="fab fa-linkedin" id="contact-2"></i></a>
+                        <a href="https://twitter.com/oliverblack1990"><i class="fab fa-twitter" id="contact-3"></i></a> 
                     </div>   
                 </div>
             </section>
