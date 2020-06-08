@@ -6,12 +6,15 @@ $font-main: 14px;
 $tn-width: 7vw;
 $tn-height: 7vh;
 $btn-width: 27vw;
-$btn-height: 7vh;
+$btn-height: 40px;
 $primary-border: 2px solid $primary-color;
 $breakpoint-l-mobile: 425px;
 $breakpoint-s-tablet: 550px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
+$breakpoint-l-laptop: 1440px;
+$about-tn-height: 39px;
+$about-tn-width: 39px;
 
 * {
   margin: 0;
@@ -58,9 +61,10 @@ nav {
   .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
   }
-    
+
   .menu {
     display: none;
+    text-align: center;
   }  
 
   .social {
@@ -81,65 +85,76 @@ nav {
   background-color: red;
 }
 
-/* open menu*/
-/*main{
-  display: none;
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
-a:hover{
+i:hover {
   color: red;
 }
 
-i:hover{
-  color: red;
-}
+.open {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-nav {
-    background-color: $secondary-color;
+  .burger {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  i {
+    margin: auto 15px;
+  }
+  
+  #logo {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+  }
+
+  #profile {
+    width: 60px;
+    height: 60px;
+  }
+
+  .redline {
+    display: none;
+  }
+
+  .menu {
+    display: unset;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 5px;   
-    font-size: 25px;
-    text-align: center;
-    opacity: 0.7;
+  }  
 
-    .burger{
-        display:none;
-    }
+  .social {
+    display: unset;  
+  }
+
+  #logo {
+    display: unset;
+  }
   
-
-    ul {
-      list-style: none;
-    }
-
-    li{
-      display: flex;
-     margin:20px auto  15px auto;
-      }
-
-    i {
-     margin:auto 15px auto 15px;
-      }
-    
-    #logo{
-          width: 60px;
-          height: 60px;
-          background-color: transparent;
-    }
-
-    #profile{
-          width: 60px;
-          height: 60px;
-    }
-
-    .redline {
-    display: none;
-    }
-  } */
+  #profile {
+    display: unset;
+  }
+}
 
 main {
   background-image: url('./Images/web-build1.png');
@@ -174,7 +189,7 @@ main {
     .btn-outline {
       grid-area: btn-outline;
       border: $primary-border;
-      padding: 18px;
+      padding: 10px;
       font-size: $font-main;
       width: $btn-width;
       height: $btn-height;
@@ -190,7 +205,7 @@ main {
       border: $primary-border;
       background-color: $primary-color;
       color: #536a8e;
-      padding: 18px;
+      padding: 10px;
       font-size: $font-main;
       width: $btn-width;
       height: $btn-height;
@@ -252,30 +267,30 @@ main {
 
 .about {
   display: grid;
-  grid-template-rows: 150px 50px 100px 100px 100px;
-  grid-template-columns: 80px 200px;
+  grid-template-rows: 150px 50px 60px 60px 60px 60px;
+  grid-template-columns: 120px 167px;
   margin: 20px;
+  column-gap: 10px;
+  row-gap: 20px;
   grid-template-areas: 
     "phil phil phil"
     "frontend frontend frontend"
     "skills skillsp "
     ". . experience"
     "qualifications qualificationsp .";
-
+  
   h3 {
     border: $primary-border;
-    font-size: $font-main;
-    padding: 5px;
+    font-size: 17px;
+    padding: 15px;
     text-align: center;
-
-    p {
-      font-size: 23px;
-      padding: 5px;
-      text-align: center;
-    }
     
     .skills {
       grid-area: skills;
+    }
+
+    .domain {
+      grid-area: domain;
     }
 
     .experience {
@@ -288,7 +303,10 @@ main {
 
     .skillsp {
       grid-area: skillsp;
-  
+    }
+
+    .domainp {
+      grid-area: domainp;
     }
 
     .experiencep {
@@ -300,30 +318,79 @@ main {
     }
   }
 }
+
+#bgc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#fd {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#pwc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#kip {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
 @media only screen and (min-width: $breakpoint-l-mobile) {
   main section .btn-primary {
     font-size: 17px;
+    padding: 7px;
   }
 
   main section .btn-outline {
     font-size: 17px;
+    padding: 7px;
   }
 
   .portfolio article {
-    font-size: 20px;
+    font-size: 17px;
+  }
+
+  .about {
+    grid-template-columns: 130px 185px;
+
+    h3 {
+      font-size: 20px;
+      padding: 10px;
+    }
   }
 }
 @media only screen and (min-width: $breakpoint-s-tablet) {
   main section .btn-primary {
     font-size: 20px;
+    padding: 7px;
   }
 
   main section .btn-outline {
     font-size: 20px;
+    padding: 7px;
   }
 
   .portfolio article {
     font-size: 23px;
+  }
+
+  .about {
+    grid-template-columns: 130px 280px;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 }
 @media only screen and (min-width: $breakpoint-tablet) {
@@ -337,16 +404,28 @@ main {
 
   main section .btn-primary {
     font-size: 26px;
-    padding: 12px;
+    padding: 3px;
   }
 
   main section .btn-outline {
     font-size: 26px;
-    padding: 12px;
+    padding: 3px;
   }
 
   .portfolio article {
     font-size: 25px;
+  }
+
+  .about {
+    grid-template-columns: 160px 400px;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 }
 @media only screen and (min-width: $breakpoint-laptop) {
@@ -360,9 +439,54 @@ main {
 
   main section .btn-primary {
     font-size: 29px;
+    padding: 5px;
+    height: 50px;
   }
 
   main section .btn-outline {
     font-size: 29px;
+    padding: 5px;
+    height: 50px;
+  }
+
+  .about {
+    grid-template-columns: 180px 450px;
+
+    h3 {
+      font-size: 27px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  nav ul {
+    font-size: 40px;
+  }
+
+  .socia {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: $breakpoint-laptop) {
+  main section .btn-primary {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+
+  main section .btn-outline {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+
+  nav ul {
+    font-size: 50px;
+  }
+
+  .social {
+    font-size: 50px;
   }
 }
