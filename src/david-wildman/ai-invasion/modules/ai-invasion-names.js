@@ -2,15 +2,15 @@
 
 
 
-export class Word {
-  constructor(word, definition, isReal, getRandomNumber) {
-    getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+class Word {
+  constructor(word, definition, isReal, getRandomCoordinates) {
+    getRandomCoordinates = () => Math.floor(Math.random() * 100) + 1;
     this.word = word;
     this.definition = definition;
     this.isReal = isReal;
     this.pointsScore = this.word.length;
-    this.XPosition = getRandomNumber()+"%";
-    this.YPosition = getRandomNumber()+"%";
+    this.XPosition = getRandomCoordinates()+"%";
+    this.YPosition = getRandomCoordinates()+"%";
   }
   giveOverview() {
     if (this.isReal === true) {
@@ -25,7 +25,7 @@ export class Word {
 
 // Fake Word object template //
 
-export class FakeWord extends Word {
+class FakeWord extends Word {
   constructor(word, definition) { 
     super(word, definition, false)
   }
@@ -33,7 +33,7 @@ export class FakeWord extends Word {
 
 // Real Word object template //
 
-export class RealWord extends Word {
+class RealWord extends Word {
   constructor(word, definition) { 
     super(word, definition, true)
   }
@@ -68,25 +68,17 @@ const realWord8 = new RealWord("dissimulate", "verb. to hide under a false appea
 const realWord9 = new RealWord("sententious", "adjective. given to or abounding in excessive moralizing.");
 const realWord10 = new RealWord("chimerical", "adjective. existing only as the product of unchecked imagination");
 
-export const wordsArray = [
-  fakeWord1,
-  fakeWord2,
-  fakeWord3,
-  fakeWord4,
-  fakeWord5,
-  fakeWord6,
-  fakeWord7,
-  fakeWord8,
-  fakeWord9,
-  fakeWord10,
-  realWord1,
-  realWord2,
-  realWord3,
-  realWord4,
-  realWord5,
-  realWord6,
-  realWord7,
-  realWord8,
-  realWord9,
-  realWord10
+const coreGameAssets = [
+  fakeWord1, fakeWord2, fakeWord3, fakeWord4, fakeWord5, fakeWord6, fakeWord7, fakeWord8, fakeWord9, fakeWord10,
+  realWord1, realWord2, realWord3, realWord4, realWord5, realWord6, realWord7, realWord8, realWord9, realWord10
 ]
+
+
+export const wordsArray = coreGameAssets;
+
+// for ( let i = 0; i < coreGameAssets.length; i ++) {
+  
+// })
+
+// Sum
+// wordsArray.length > 0; i = Math.round(wordsArray.length * Math.random()))

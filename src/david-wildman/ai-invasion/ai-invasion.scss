@@ -32,6 +32,13 @@ main {
     border: 1px #0B0014 solid;
     background-color: whitesmoke;
   }
+
+  span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    outline: 1px gray solid;
+  }
 }
 
 

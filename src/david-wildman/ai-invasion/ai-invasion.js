@@ -1,8 +1,5 @@
 import  { wordsArray } from "./modules/ai-invasion-names.js";
 
-for ( let i = 0; i < wordsArray.length; i ++) {
-}
-
 console.log("AI Invasion v0.1");
 
 /* ---------- AI INVASION - a game by David Wildman ---------*/
@@ -32,15 +29,32 @@ console.log("AI Invasion v0.1");
 // Starting and pausing the game //
 
 let gameReset = true;
-
-// Game variables //
-
 let currentScore = 0;
 let scoreOne = 0;
 let scoreTwo = 0;
 let scoreThree = 0;
 let highScore = 0;
 let currentLanguagePollutionLevel = 0;
+
+// 
+// console.log(Math.round(wordsArray.length * Math.random()));
+
+const newGameWordsArray = [];
+// wordsArray.forEach((wordObject) => console.log(wordObject.word));
+
+const getNewGameWordsArray = () => {
+  console.log(wordsArray[0].word);
+  for (let i = 0; i < 20; i ++) {
+    let n = Math.round(wordsArray.length * Math.random());
+    let splicedWordObject = (wordsArray.splice(n-1, 1))[0];
+    newGameWordsArray.push(splicedWordObject);
+  }
+  console.log(newGameWordsArray[0].word);
+}
+
+getNewGameWordsArray();
+
+
 
 // DOM Elements //
 
@@ -77,5 +91,5 @@ const toggleReset = () => {
 // Event Listeners //
 
 resetToggleButton.addEventListener("click", toggleReset);
-wordsArray.forEach((wordObject) => console.log(wordObject.word));
+
 
