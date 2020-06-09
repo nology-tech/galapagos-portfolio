@@ -46,7 +46,8 @@ header {
     text-decoration: none;
     padding: 2px;
     margin: 3px;
-      &:hover {
+
+    &:hover {
       border: 1px solid rgb(22, 219, 147);
       border-radius: 10px;
     }
@@ -116,181 +117,199 @@ main {
     display: inline-block;
   }
       
-    .parahi {
+  .parahi {
     display: block;
     padding-top: 10px;
     padding-left: 20px;
     font-size: 50px;
       
 
-    }
+  }
 
-    .para1 {
+  .para1 {
     display: inline-block;
     padding-left: 20px;
     font-size: 70px;
     width: 100%;
     line-height: 50pt;
     color: rgb(22, 219, 147);
-    }
+  }
 
-    .fenn {
+  .fenn {
     color: rgb(29, 26, 47);
-    }
+  }
 
-    .para2 { 
+  .para2 { 
     display: block;
     font-size: 30px;
     padding-left: 20px;
     color: rgb(22, 219, 147);
-    }
+  }
 
   .social {
     padding-left: 40px;
     padding-top: 30px;
     height: 50vh;
     position: relative;
-    }
   }
+}
 
-    #insta {
-      color: rgb(29, 26, 47);
-      font-size: 40px;
-      text-decoration: none;
-      &:hover {
-        color: rgb(22, 219, 147);
-      }
-    }
+#insta {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
 
-    #facebook {
-      color: rgb(29, 26, 47);
-      font-size: 40px;
-      text-decoration: none;
-        &:hover {
-        color: rgb(22, 219, 147);
-      }
-    }
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
+
+#facebook {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
     
 
-    #linkedin {
-      color: rgb(29, 26, 47);
-      font-size: 40px;
-      text-decoration: none;
-      &:hover {
-        color: rgb(22, 219, 147);
-      }
-    }
-    
-    #chevron {
-      font-size: 50px;
-      color: rgb(29, 26, 47);
-      float: left;
-      position: absolute;
-      left: 40px;
-      bottom: 50px;
-      text-decoration: none;
-      &:hover {
-        color: rgb(22, 219, 147);
-      }
-    }
+#linkedin {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
 
-
-    .bexface {
-      height: auto;
-      width: 250px;
-      position: fixed;
-      right: 0;
-      bottom: 0;
-    }
-
-  #aboutparent {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  &:hover {
+    color: rgb(22, 219, 147);
   }
-    #about {
-      background-color:white;
-      height: 85vh;
-      width: 85vw;
-      .aboutpara, h1 {
-        padding: 12px;
-      }
-      .cv {
-        padding-left: 12px;
-        color: rgb(29, 26, 47);;
-        a {
-          color: rgb(22, 219, 147);
-          text-decoration: none; 
-        }
-      }
-      
-      .aboutheading {
-          color:  rgb(29, 26, 47);
-          text-decoration: underline;
-          text-decoration-color: rgb(22, 219, 147);
-          text-align: center;
-          font-size: 30px;
-          font-weight: bold;
-        }
-      .aboutpara {
-        font-size: 16px;
-        color:  rgb(29, 26, 47);
-      }
-      }
-      .skills-grid {
-    height: 150px;
-    width: 231px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+}
+    
+#chevron {
+  font-size: 50px;
+  color: rgb(29, 26, 47);
+  float: left;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
+
+
+.bexface {
+  height: auto;
+  width: 250px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#aboutparent {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#about {
+  background-color: white;
+  height: 85vh;
+  width: 85vw;
+
+  .aboutpara,
+  h1 {
+    padding: 12px;
+  }
+
+  .cv {
     padding-left: 12px;
-      div i {
-      font-size: 40px;
-      color: rgb(29, 26, 47);
-        &:hover {
-        color: rgb(22, 219, 147);
-    }
-      }
+    color: rgb(29, 26, 47);
 
-    #chevronTwo {
-      font-size: 50px;
-      color: rgb(29, 26, 47);
-      float: left;
-      position: absolute;
-      left: 40px;
-      bottom: 50px;
-      text-decoration: none;
-      &:hover {
-        color: rgb(22, 219, 147);
-      }
+    a {
+      color: rgb(22, 219, 147);
+      text-decoration: none; 
+    }
+  }
+      
+  .aboutheading {
+    color: rgb(29, 26, 47);
+    text-decoration: underline;
+    text-decoration-color: rgb(22, 219, 147);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
   }
 
-  #projects {
-    display: grid;
+  .aboutpara {
+    font-size: 16px;
+    color: rgb(29, 26, 47);
   }
-  .projects-grid {
-      margin: 40px;
-      display: grid;
-      gap: 20px;
-    }
+}
 
-    article {
-      display: flex;
-      justify-items: center;
-      background: white;
-    }
+.skills-grid {
+  height: 150px;
+  width: 231px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
 
-    article div {
-      border: dashed 2px white;
-      border-radius: 20px;
-      height: 300px;
-      width: 220px;
-      background:rgb(29, 26, 47);
+  div i {
+    font-size: 40px;
+    color: rgb(29, 26, 47);
+
+    &:hover {
+      color: rgb(22, 219, 147);
     }
+  }
+
+
+  #chevronTwo {
+    font-size: 50px;
+    color: rgb(29, 26, 47);
+    float: left;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+  }
+}
+
+#projects {
+  display: grid;
+}
+
+.projects-grid {
+  margin: 40px;
+  display: grid;
+  gap: 20px;
+
+}
+
+article {
+  display: flex;
+  justify-items: center;
+  background: white;
+}
+
+article div {
+  border: dashed 2px white;
+  border-radius: 20px;
+  height: 300px;
+  width: 220px;
+  background: rgb(29, 26, 47);
+}
   
 
 
@@ -358,22 +377,23 @@ main {
         left: 500px;
         bottom: 0;
 
-      .bexface {
-        height: auto;
-        width: 340px;
+        .bexface {
+          height: auto;
+          width: 340px;
+        }
+
+        // main section #about {
+        //     width: 100vw;
+
       }
 
-      // main section #about {
-      //     width: 100vw;
-
-        }
       #projects {
         .projects-grid {
           grid-template-columns: 1fr 1fr 1fr;
           gap: 20px;
           
-          div{
-          width: 340px;}
+          div {
+            width: 340px;}
         }
       }
 
@@ -381,4 +401,4 @@ main {
     
 
   }
-}}
+}
