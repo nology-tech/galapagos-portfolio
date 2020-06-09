@@ -346,6 +346,25 @@ main section .btn-primary {
   grid-area: qualificationsp;
 }
 
+.about p i {
+  font-size: 40px;
+  margin: 2px;
+}
+
+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+span img {
+  margin: 3px;
+}
+
 #bgc {
   height: 39px;
   width: 39px;
@@ -392,6 +411,10 @@ main section .btn-primary {
   }
 }
 
+span img {
+  margin: 6px;
+}
+
 @media only screen and (min-width: 550px) {
   main section .btn-primary {
     font-size: 20px;
@@ -414,6 +437,10 @@ main section .btn-primary {
   .about p {
     font-size: 18px;
   }
+}
+
+span img {
+  margin: 6px;
 }
 
 @media only screen and (min-width: 768px) {

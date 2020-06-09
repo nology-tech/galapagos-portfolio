@@ -260,7 +260,6 @@ main {
 
     i {
       margin: 10px;;
-
     }
   }
 }
@@ -317,6 +316,21 @@ main {
       grid-area: qualificationsp;
     }
   }
+
+  p i {
+    font-size: 40px;
+    margin:2px;
+ }
+}
+
+span {
+  display: flex;
+  justify-self: left;
+  align-items: center;
+
+  img {
+    margin: 3px;
+  }
 }
 
 #bgc {
@@ -366,6 +380,11 @@ main {
     }
   }
 }
+
+span img {
+  margin: 6px;;
+}
+
 @media only screen and (min-width: $breakpoint-s-tablet) {
   main section .btn-primary {
     font-size: 20px;
@@ -393,6 +412,11 @@ main {
     }
   }
 }
+
+span img {
+  margin: 6px;;
+}
+
 @media only screen and (min-width: $breakpoint-tablet) {
   main section h1 {
     font-size: 72px;
