@@ -1,4 +1,4 @@
-import  { wordsArray } from "./modules/ai-invasion-names.js";
+import  { coreGameAssets, wordsArray } from "./modules/ai-invasion-assets.js";
 
 console.log("AI Invasion v0.1");
 
@@ -25,48 +25,68 @@ console.log("AI Invasion v0.1");
 ------------- -------------------------------------------------------------------------------------------------------------*/
 
 /*----------- GLOBAL VARIABLES INITIALIZATION ----------*/
-
-// Starting and pausing the game //
-
 let gameReset = true;
 let currentScore = 0;
 let scoreOne = 0;
 let scoreTwo = 0;
 let scoreThree = 0;
 let highScore = 0;
-let currentLanguagePollutionLevel = 0;
-
-// 
-// console.log(Math.round(wordsArray.length * Math.random()));
-
+let currentLanguagePollutionLevel = 0; 
 const newGameWordsArray = [];
-// wordsArray.forEach((wordObject) => console.log(wordObject.word));
+
+/*-----------------------------------------*/
+/*-----------                    ----------*/
+/*-----------                    ----------*/
+/*----------- CORE GAME FUNCTION ----------*/
+/*-----------                    ----------*/
+/*-----------                    ----------*/
+/*-----------------------------------------*/
+
 
 const getNewGameWordsArray = () => {
+  
+  
+  // The wordsArray is imported from the core game assets file.
+  // The object at index position [0] should remain the same
+  // each time the game is run.
   console.log(wordsArray[0].word);
-  for (let i = 0; i < 20; i ++) {
-    let n = Math.round(wordsArray.length * Math.random());
-    let splicedWordObject = (wordsArray.splice(n-1, 1))[0];
+  
+  
+  // The Core Game Assets array is never mutated. At the moment,
+  // it contains very few objects. Once there are a significant number
+  // of objects in this array, I will set a hard limit on the
+  // number of objects to import for a game.
+  for (let i = 0; i < coreGameAssets.length; i ++) {
+    
+    
+    // This block of code is looping through the imported
+    // array of word objects, and picking out a random one
+    // to splice out and push into the newGameWordsArray.
+    // The random number will always correspond to a valid
+    // index of an object within the current wordsArray. Once
+    // all the objects have been pushed, the loop stops.
+        let n = Math.round(wordsArray.length * Math.random());
+    let splicedWordObject = (wordsArray.splice(n-1, 1))[0];    
     newGameWordsArray.push(splicedWordObject);
   }
+  
+  
+  
+  // Finally, I log the object at index position [0]
+  // of the new game array. This makes it easy to
+  // check whether or not the array has been
+  // randomized successfully.
   console.log(newGameWordsArray[0].word);
 }
 
-getNewGameWordsArray();
-
-
-
 // DOM Elements //
-
 const resetToggleButton = document.querySelector("#reset-toggle-button");
 const gameBoard = document.querySelector(".game-board");
 
 
 
 /*----------- GLOBAL FUNCTIONS ----------*/
-
 // Play and reset button //
-
 const toggleReset = () => {
   if (gameReset === true) {
     gameReset = false;
@@ -79,17 +99,15 @@ const toggleReset = () => {
   }
 }
 
-// Random number generator, used for element coordinates // 
+
 
 /*----------- ------------------------------------------------------------------------------------------------------------*/
-
-/*----------- GLOBAL CLASSES ----------*/
-
-
-
-
 // Event Listeners //
-
 resetToggleButton.addEventListener("click", toggleReset);
 
 
+
+getNewGameWordsArray();
+
+
+console.log()
