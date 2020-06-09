@@ -112,5 +112,5 @@ getNewGameWordsArray();
 
 console.log()
 
-const numberOfMandatoryCommits = 8;
+const numberOfMandatoryCommits = 9;
 console.log(numberOfMandatoryCommits);
