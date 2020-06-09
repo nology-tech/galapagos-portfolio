@@ -1,6 +1,7 @@
 $headerheight: 100px;
 $parawidthandheight: 150px;
 $desktopwidth: 200px;
+// $aboutmargin: 40px;
 
 * {
   box-sizing: border-box;
@@ -21,19 +22,35 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(29, 26, 47);
-  // border: solid 4px white;
 
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+
+  }
   
   li {
   
     list-style: none;
     text-decoration: none;
-    display: none;
   }
 
   a {
     color: white;
-    font-size: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 2px;
+    margin: 3px;
+
+    &:hover {
+      border: 1px solid rgb(22, 219, 147);
+      border-radius: 10px;
+    }
   }
 
   .menu-btn {
@@ -98,27 +115,8 @@ main {
   #parawrapper {
     height: 100vh;
     display: inline-block;
-    //   width: 100vw;
-    //   font-size: 40px;
-    //   color: rgb(29, 26, 47);
-    //   padding-top: 40px;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    // height: calc(100% - #{$headerheight});
   }
       
-  // .para1 {
-  //   width: $parawidthandheight;
-  //   height: $parawidthandheight;
-  //   text-align: right;
-  //   border-top: 3px solid rgb(29, 26, 47);
-  //   border-left: 3px dashed rgb(29, 26, 47);
-  //   // border-radius: 20px;
-  //   margin-bottom: 200px;
-  //   margin-right: 5px;
-  //   padding-left: 8px;
-  // }
   .parahi {
     display: block;
     padding-top: 10px;
@@ -141,36 +139,64 @@ main {
     color: rgb(29, 26, 47);
   }
 
-  // .para2 {
-  //   width: $parawidthandheight;
-  //   height: $parawidthandheight;
-  //   border-bottom: 3px solid rgb(29, 26, 47);
-  //   border-right: 3px dashed rgb(29, 26, 47);
-  //   // border-radius: 20px;
-  //   margin-left: 5px;
-  //   padding-right: 8px;
-  // }
   .para2 { 
     display: block;
     font-size: 30px;
     padding-left: 20px;
     color: rgb(22, 219, 147);
-
   }
 
-  #insta {
+  .social {
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 50vh;
+    position: relative;
+  }
+}
+
+#insta {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
+
+  &:hover {
     color: rgb(22, 219, 147);
-    font-size: 40px;
-  
-
   }
+}
+
+#facebook {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
     
-  // .bexfaceparent { 
-  //   position: relative;
-  //     // i {
-  //     //   font-size: 40px;
-  //     //   position: absolute;
-  //     // }
+
+#linkedin {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
+    
+#chevron {
+  font-size: 50px;
+  color: rgb(29, 26, 47);
+  float: left;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
 }
 
 
@@ -182,17 +208,99 @@ main {
   bottom: 0;
 }
 
+#aboutparent {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-// #projects {
-//   display: grid;
-// }
-.projects-grid {
+}
+
+#about {
+  background-color: white;
+  height: 85vh;
+  width: 85vw;
+
+  .aboutpara,
+  h1 {
+    padding: 12px;
+  }
+
+  .cv {
+    padding-left: 12px;
+    color: rgb(29, 26, 47);
+
+    a {
+      color: rgb(22, 219, 147);
+      text-decoration: none; 
+    }
+  }
+      
+  .aboutheading {
+    color: rgb(29, 26, 47);
+    text-decoration: underline;
+    text-decoration-color: rgb(22, 219, 147);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .aboutpara {
+    font-size: 16px;
+    color: rgb(29, 26, 47);
+  }
+}
+
+.skills-grid {
+  height: 150px;
+  width: 231px;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+
+  div i {
+    font-size: 40px;
+    color: rgb(29, 26, 47);
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+  }
+
+
+  #chevronTwo {
+    font-size: 50px;
+    color: rgb(29, 26, 47);
+    float: left;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+  }
+}
+
+#projects {
+  display: grid;
+}
+
+.projects-grid {
+  margin: 40px;
+  display: grid;
+  gap: 20px;
+
 }
 
 article {
   display: flex;
   justify-items: center;
+  background: white;
 }
 
 article div {
@@ -200,20 +308,29 @@ article div {
   border-radius: 20px;
   height: 300px;
   width: 220px;
-  // display: inline-block;
+  background: rgb(29, 26, 47);
 }
+  
+
 
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
 @media only screen and (min-width: 768px) {
   main .bexface {
     height: auto;
     width: 300px;
-  }   
+  }  
 
   #parawrapper {
     padding-top: 90px;
   }
 
+  #projects {
+    .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      // gap: 40px;
+    }
+  }
+  
   // .bexfaceparent {
   //   height: 380px;
   // }
@@ -235,6 +352,11 @@ article div {
         width: $desktopwidth;
       }
 
+      .show {
+        flex-direction: column;
+        width: 80px;
+      }
+
       main {
         width: calc(100% - #{$desktopwidth});
         height: 100vh;
@@ -247,9 +369,32 @@ article div {
         padding-top: 150px;
       }
 
-      .bexface {
-        height: auto;
-        width: 340px;
+      #chevron {
+        font-size: 50px;
+        color: rgb(29, 26, 47);
+        float: left;
+        position: absolute;
+        left: 500px;
+        bottom: 0;
+
+        .bexface {
+          height: auto;
+          width: 340px;
+        }
+
+        // main section #about {
+        //     width: 100vw;
+
+      }
+
+      #projects {
+        .projects-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+          
+          div {
+            width: 340px;}
+        }
       }
 
     }
