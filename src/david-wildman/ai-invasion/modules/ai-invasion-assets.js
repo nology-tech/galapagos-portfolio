@@ -68,10 +68,10 @@ const realWord8 = new RealWord("dissimulate", "verb. to hide under a false appea
 const realWord9 = new RealWord("sententious", "adjective. given to or abounding in excessive moralizing.");
 const realWord10 = new RealWord("chimerical", "adjective. existing only as the product of unchecked imagination");
 
-const coreGameAssets = [
+export const coreGameAssets = [
   fakeWord1, fakeWord2, fakeWord3, fakeWord4, fakeWord5, fakeWord6, fakeWord7, fakeWord8, fakeWord9, fakeWord10,
   realWord1, realWord2, realWord3, realWord4, realWord5, realWord6, realWord7, realWord8, realWord9, realWord10
-]
+];
 
 
 export const wordsArray = coreGameAssets;
