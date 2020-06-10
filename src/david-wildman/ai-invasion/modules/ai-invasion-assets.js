@@ -4,6 +4,8 @@
 
 class Word {
   constructor(word, definition, isReal, getRandomCoordinates) {
+    // May need to play around with the 100 value here so that
+    // words don't spill off the board.
     getRandomCoordinates = () => Math.floor(Math.random() * 100) + 1;
     this.word = word;
     this.definition = definition;
@@ -12,7 +14,8 @@ class Word {
     this.XPosition = getRandomCoordinates()+"%";
     this.YPosition = getRandomCoordinates()+"%";
   }
-  giveOverview() {
+
+  get giveOverview() {
     if (this.isReal === true) {
     return `${this.word}. Real word. Definition: ${this.definition}.`
     } else if (this.isReal === false) {
@@ -20,6 +23,27 @@ class Word {
     } else {
       return "This word has an invalid 'isReal' value. Please send a strongly-worded email to david.wildman@nology.io."
     };
+  }
+
+  get renderWord() {
+    console.log("Word rendered");
+    return `<span style="top:${this.YPosition};left:${this.XPosition};" class="${this.word}">
+    ${this.word}
+    </span>`;
+  }
+  
+  get wordRetainButton() {
+    console.log("Retain button rendered");
+    return `<input type="button" value="KEEP" color="blue" class="keep ${this.word}">
+    ${this.word}
+    </input>`;
+  }
+
+  get wordDiscardButton() {
+    console.log("Discard button rendered");
+    return `<input type="button" value="KEEP" color="blue" class="discard ${this.word}">
+    ${this.word}
+    </input>`;
   }
 }
 
@@ -68,13 +92,18 @@ const realWord8 = new RealWord("dissimulate", "verb. to hide under a false appea
 const realWord9 = new RealWord("sententious", "adjective. given to or abounding in excessive moralizing.");
 const realWord10 = new RealWord("chimerical", "adjective. existing only as the product of unchecked imagination");
 
+const coreGameAssetsBackup = [
+  fakeWord1, fakeWord2, fakeWord3, fakeWord4, fakeWord5, fakeWord6, fakeWord7, fakeWord8, fakeWord9, fakeWord10,
+  realWord1, realWord2, realWord3, realWord4, realWord5, realWord6, realWord7, realWord8, realWord9, realWord10
+];
+
 export const coreGameAssets = [
   fakeWord1, fakeWord2, fakeWord3, fakeWord4, fakeWord5, fakeWord6, fakeWord7, fakeWord8, fakeWord9, fakeWord10,
   realWord1, realWord2, realWord3, realWord4, realWord5, realWord6, realWord7, realWord8, realWord9, realWord10
 ];
 
 
-export const wordsArray = coreGameAssets;
+export const wordsArray = [...coreGameAssets];
 
 // for ( let i = 0; i < coreGameAssets.length; i ++) {
   

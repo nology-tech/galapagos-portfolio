@@ -13,12 +13,12 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #0B0014;
-  height: 12vh;
+  height: 10vh;
   width: 100vw;
 }
 
 main {
-  height: 76vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -27,17 +27,20 @@ main {
 
   section {
     position: relative;
-    height: 90vmin;
-    width: 90vmin;
+    height: 90%;
+    width: 90%;
     border: 1px #0B0014 solid;
     background-color: whitesmoke;
   }
 
   span {
+    font-family: sans-serif;
     position: absolute;
     width: 10px;
     height: 10px;
-    outline: 1px gray solid;
+    color: blue;
+    transition: all 5s ease 5s;
+
   }
 }
 
@@ -49,6 +52,6 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #0B0014;
-  height: 12vh;
+  height: 10vh;
   width: 100vw;
 }
