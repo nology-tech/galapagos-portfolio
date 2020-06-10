@@ -25,7 +25,6 @@ const expand = (x) => {
 // mainNav.classList.toggle('show');
 // };
 
-
 // const menu = document.getElementsByClassName('burger');
 // menu.onclick = expand = (x) => {
 // x.classList.toggle('change');
