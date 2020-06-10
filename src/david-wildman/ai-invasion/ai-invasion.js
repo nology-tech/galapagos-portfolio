@@ -2,6 +2,7 @@ import  { coreGameAssets, wordsArray } from "./modules/ai-invasion-assets.js";
 
 console.log("AI Invasion v0.1");
 
+
 /* ---------- AI INVASION - a game by David Wildman ---------*/
 
 
@@ -42,14 +43,13 @@ const newGameWordsArray = [];
 /*-----------                    ----------*/
 /*-----------------------------------------*/
 
-
 const getNewGameWordsArray = () => {
   
   
   // The wordsArray is imported from the core game assets file.
   // The object at index position [0] should remain the same
   // each time the game is run.
-  console.log(wordsArray[0].word);
+  console.log("THIS WORD SHOULD BE THE SAME EACH TIME: ", wordsArray[0].word);
   
   
   // The Core Game Assets array is never mutated. At the moment,
@@ -66,22 +66,33 @@ const getNewGameWordsArray = () => {
     // index of an object within the current wordsArray. Once
     // all the objects have been pushed, the loop stops.
         let n = Math.round(wordsArray.length * Math.random());
-    let splicedWordObject = (wordsArray.splice(n-1, 1))[0];    
+    let splicedWordObject = (wordsArray.splice(n-1, 1))[0];
     newGameWordsArray.push(splicedWordObject);
   }
-  
+
   
   
   // Finally, I log the object at index position [0]
   // of the new game array. This makes it easy to
   // check whether or not the array has been
   // randomized successfully.
-  console.log(newGameWordsArray[0].word);
+  console.log("THIS WORD SHOULD BE DIFFERENT EACH TIME: ", newGameWordsArray[0].word);
 }
 
-// DOM Elements //
-const resetToggleButton = document.querySelector("#reset-toggle-button");
-const gameBoard = document.querySelector(".game-board");
+
+
+
+
+
+
+const playGame = () => {
+  for (let i = 1; i <= coreGameAssets.length; i ++) {
+    const newWord = (newGameWordsArray.splice(0, 1))[0];
+    setTimeout(addToGameBoard, 5000 * i, newWord.renderWord);
+  }
+}
+
+
 
 
 
@@ -91,26 +102,30 @@ const toggleReset = () => {
   if (gameReset === true) {
     gameReset = false;
     console.log("Game started.");
-    resetToggleButton.setAttribute("value", "NEW GAME")
+    resetToggleButton.setAttribute("value", "NEW GAME");
+    getNewGameWordsArray();
+    playGame();
   } else {
     gameReset = true;
-    console.log("Game reset.");
-    resetToggleButton.setAttribute("value", "PLAY")
+    // console.log("Game reset.");
+    // resetToggleButton.setAttribute("value", "PLAY");
+    // getNewGameWordsArray();
+    window.location.reload();
   }
 }
 
 
 
+// DOM Elements //
+const resetToggleButton = document.querySelector("#reset-toggle-button");
+const gameBoard = document.querySelector(".game-board");
+const addToGameBoard = (newWord) => {
+  gameBoard.innerHTML += newWord;
+}
+
+
 /*----------- ------------------------------------------------------------------------------------------------------------*/
 // Event Listeners //
 resetToggleButton.addEventListener("click", toggleReset);
+gameBoard.addEventListener("click", getButtons, true);
 
-
-
-getNewGameWordsArray();
-
-
-console.log()
-
-const numberOfMandatoryCommits = 11;
-console.log(numberOfMandatoryCommits);
