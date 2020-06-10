@@ -1,4 +1,4 @@
-console.log("HELLO");
+console.log('HELLO');
 let turn = 0;
 
 // CLICK EVENTS //
@@ -9,48 +9,41 @@ let turn = 0;
 // every = need a loop over all the squares //
 
 // If a box is clicked //
-  // If a box has been clicked //
-    // if turn is 2, 4 or 6, add X otherwise 0 //
-
+// If a box has been clicked //
+// if turn is 2, 4 or 6, add X otherwise 0 //
 
 // Two users, X and 0, and their moves //
-const addEventListeners = () => {
-  const squares = document.getElementsByClassName("square");
-  squares.forEach(square => {
-    square.addEventListener("click", () => {
+// const addEventListeners = () => {
+//   const squares = document.getElementsByClassName('square');
+//   squares.forEach((square) => {
+//     square.addEventListener('click', () => {
+//       if (square.innerHTML === '') {
+//         if (turn % 2 === 0) {
+//           square.innerHTML = 'X';
+//         } else {
+//           square.innerHTML = '0';
+//         }
+//       }
+//       turn++;
+//     });
+//   });
+// };
 
-      if (square.innerHTML === "") {
-        if (turn % 2 === 0) {
-          square.innerHTML = "X";
-        } else {
-          square.innerHTML = "0";
-        }
-      }
-      turn++;
-    });
-  });
-};
+// const squares = document.querySelectorAll('.square');
 
+// console.log(squares);
 
-const squares = document.querySelectorAll(".square");
-
-console.log(squares);
-
-squares.forEach((square) => {
-  square.addEventListener("click", () => {
-    console.log("click");
-  });
-});
-
+// squares.forEach((square) => {
+//   square.addEventListener('click', () => {
+//     console.log('click');
+//   });
+// });
 
 // Turn counter //
 
 // 2. WIN LOGIC //
-  // If there are three in line - | / \ current user has won //
-  // add one to the current user //
-
-
-
+// If there are three in line - | / \ current user has won //
+// add one to the current user //
 
 // 3. RESET //
-  // Trigger to start the whole game //
+// Trigger to start the whole game //
