@@ -104,6 +104,11 @@ const toggleReset = () => {
     console.log('Game started.');
     resetToggleButton.setAttribute('value', 'RESTART');
     gameBoard.style.border = 'none';
+    gameBoard.style.backgroundImage =
+      'url(https://media.giphy.com/media/l0MYGWqxQUdCONvTq/giphy.gif)';
+    gameBoard.style.backgroundSize = 'contain';
+    gameBoard.style.backgroundPosition = 'center';
+    gameBoard.style.backgroundRepeat = 'no-repeat';
     getNewGameWordsArray();
     playGame();
     timerMechanism();
@@ -148,9 +153,13 @@ const playerScoreEvent = (event) => {
         event.target.attributes[5].value == 'false')
     ) {
       console.log('CORRECT');
+      gameBoard.style.backgroundImage =
+        'url(https://media.giphy.com/media/WUsOgqfcpOBRlJPrUM/giphy.gif)';
       playerScore += thisScore;
     } else {
       console.log('INCORRECT');
+      gameBoard.style.backgroundImage =
+        'url(https://media.giphy.com/media/hPPx8yk3Bmqys/giphy.gif)';
       playerScore -= thisScore;
     }
     scoreBoard.innerHTML = playerScore;
@@ -177,9 +186,13 @@ const timerMechanism = () => {
     if (--timeRemaining < 0) {
       timer.textContent = '';
       if (playerScore <= 0) {
-        gameBoard.innerHTML = `<br>Game over.<br><br>Your score is:<br>${playerScore}.<br><br>That was<br>TERRIBLE.<br>GET OUT OF MY SIGHT.<br>Waste of time.<br><br>I don't know why I bother.`;
+        keepDiscardButtonArea.innerHTML = `<div></div><div><br>GAME<br>OVER</div>`;
+        gameBoard.style.backgroundImage =
+          'url(https://media.giphy.com/media/X3nnss8PAj5aU/giphy.gif)';
       } else {
-        gameBoard.innerHTML = `<br><br><br>Game over.<br><br>Your score is:<br>${playerScore}.<br><br>OMG! That's<br>AMAZING!<br>Now get some other<br>hobbies. You know, other<br>than spending all of your time<br>reading the dictionary...`;
+        keepDiscardButtonArea.innerHTML = `<div></div><div><br>WELL<br>DONE!</div>`;
+        gameBoard.style.backgroundImage =
+          'url(https://media.giphy.com/media/VGVwLultLZjrrssAak/giphy.gif)';
       }
     }
   }, 1000);
