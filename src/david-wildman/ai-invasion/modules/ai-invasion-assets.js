@@ -1,17 +1,23 @@
 // Word object template //
 
 class Word {
-  constructor(word, definition, isReal, getRandomCoordinates) {
+  constructor(
+    word,
+    definition,
+    isReal,
+    getRandomXCoordinate,
+    getRandomYCoordinate
+  ) {
     // May need to play around with the 100 value here so that
     // words don't spill off the board.
-    getRandomCoordinates = () => Math.floor(Math.random() * 85) + 1;
+    getRandomXCoordinate = () => Math.floor(Math.random() * 60) + 1;
+    getRandomYCoordinate = () => Math.floor(Math.random() * 100) + 1;
     this.word = word;
     this.definition = definition;
     this.isReal = isReal;
-    this.pointsScore =
-      isReal === true ? `${this.word.length}` : `-${this.word.length}`;
-    this.XPosition = getRandomCoordinates() + '%';
-    this.YPosition = getRandomCoordinates() + '%';
+    this.pointsScore = this.word.length;
+    this.XPosition = getRandomXCoordinate() + '%';
+    this.YPosition = getRandomYCoordinate() + '%';
   }
 
   get giveOverview() {
@@ -26,7 +32,7 @@ class Word {
 
   get renderWord() {
     console.log('Word rendered');
-    return `<span data-pointsScore='${this.pointsScore}' data-definition='${this.definition}' style='top:${this.YPosition};left:${this.XPosition};' class='${this.word}' >${this.word}</span>`;
+    return `<span data-points-score='${this.pointsScore}' data-definition='${this.definition}' data-is-real='${this.isReal}'style='top:${this.YPosition};left:${this.XPosition};' class='${this.word}' >${this.word}</span>`;
   }
 }
 
