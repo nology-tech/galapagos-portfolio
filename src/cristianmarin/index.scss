@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.9em;
+}
+
+a {
+  color: rgb(44, 83, 190);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+  color: white;
+}
+
+p {
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+#navbar {
+  background: black;
+  color: white;
+  overflow: auto;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  border-radius: 25px;
+  background: rgb(30, 68, 180);
+  color: white;
+}
+
+.primary-text {
+  font-family: "Courier New", Courier, monospace;
+  padding: 100px;
+  margin: 30px;
+  text-align: center;
+  text-decoration-color: rgb(30, 68, 180);
+  line-height: 1.4;
+}
+
+.secondary-text {
+  text-align: center;
+}
+
+.downloadcv {
+  display: inline-block;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(30, 68, 180);
+  letter-spacing: 1.9px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+.downloadcv:hover {
+  background-color: #e7e419;
+}
+
+.list {
+  text-align: center;
+  color: white;
+}
+
+.box {
+  margin: 30px;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 10px;
+  color: white;
+}
+
+#footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Footer */
+
+#lab_social_icon_footer {
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+  height: 25vh;
+
+  p {
+    color: white;
+    padding: 20px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+#lab_social_icon_footer .social:hover {
+  transform: -webkit-transform scale(1.1);
+  transform: -moz-transform scale(1.1);
+  transform: -o-transform scale(1.1);
+}
+/*
+      Multicoloured Hover Variations
+  */
+
+#lab_social_footer #social-gh:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-li:hover {
+  color: #e7e419;
+}
+
+#lab_social_footer #social-em:hover {
+  color: #e7e419;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+// @media only screen and (min-width: 425px) {
+//   h1 {
+//     font-size: 20px;
+//   }
+
+//   p {
+//     font-size: 15px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//     color: yellow;
+//   }
+// }
+
+// @media only screen and (min-width: 375px) {
+//   h1 {
+//     font-size: 15px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//   }
+
+//   .middlebtn {
+//     font-size: 10px;
+//   }
+// }
+
+// @media only screen and (max-width: 320px) {
+//   h1 {
+//     font-size: 13px;
+//   }
+
+//   .middlebtn {
+//     font-size: 7px;
+//   }
+
+//   .box {
+//     font-size: 5px;
+//     color: yellow;
+//   }
+// }
