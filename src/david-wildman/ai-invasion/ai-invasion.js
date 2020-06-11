@@ -103,6 +103,7 @@ const toggleReset = () => {
     gameReset = false;
     console.log('Game started.');
     resetToggleButton.setAttribute('value', 'RESTART');
+    gameBoard.style.border = 'none';
     getNewGameWordsArray();
     playGame();
     timerMechanism();
