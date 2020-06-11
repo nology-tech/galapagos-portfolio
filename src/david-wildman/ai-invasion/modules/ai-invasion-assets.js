@@ -11,7 +11,7 @@ class Word {
     // May need to play around with the 100 value here so that
     // words don't spill off the board.
     getRandomXCoordinate = () => Math.floor(Math.random() * 60) + 1;
-    getRandomYCoordinate = () => Math.floor(Math.random() * 100) + 1;
+    getRandomYCoordinate = () => Math.floor(Math.random() * 95) + 1;
     this.word = word;
     this.definition = definition;
     this.isReal = isReal;
