@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    width: 400px;
+    height: 300px;
+}
+
+.refresh {
+    margin-top: 20px;
+}

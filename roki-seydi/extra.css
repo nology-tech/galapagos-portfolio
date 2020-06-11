@@ -118,7 +118,7 @@ ul li a {
 
 ul li a .icon {
     position: relative;
-    color: #262626;
+    color: white;
     transition: .5s;
     z-index: 3;
 }
