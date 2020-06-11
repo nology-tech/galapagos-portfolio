@@ -25,7 +25,8 @@ console.log('AI Invasion v0.1');
 
 /*----------- GLOBAL VARIABLES INITIALIZATION ----------*/
 let gameReset = true;
-// let currentScore = 0;
+let playerScore = 0;
+let currentWord;
 // let scoreOne = 0;
 // let scoreTwo = 0;
 // let scoreThree = 0;
@@ -36,7 +37,8 @@ const newGameWordsArray = [];
 // DOM Elements //
 const resetToggleButton = document.querySelector('#reset-toggle-button');
 const gameBoard = document.querySelector('.game-board');
-const buttonArea = document.querySelector('header');
+const keepDiscardButtonArea = document.querySelector('header');
+const scoreBoard = document.querySelector('#player-score');
 
 /*-----------------------------------------*/
 /*-----------                    ----------*/
@@ -82,18 +84,25 @@ const playGame = () => {
   for (let i = 1; i <= coreGameAssets.length; i++) {
     const newWordObject = newGameWordsArray.shift();
     newGameWordsArray.push(newWordObject);
-    setTimeout(addItemsToGameBoard, 1000 * i, newWordObject);
+    setTimeout(addItemsToGameBoard, 5000 * i, newWordObject);
   }
   console.log(newGameWordsArray);
 };
 
 /*----------- GLOBAL FUNCTIONS ----------*/
+
+const toTitleCase = (str) => {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+};
+
 // Play and reset button //
 const toggleReset = () => {
   if (gameReset === true) {
     gameReset = false;
     console.log('Game started.');
-    resetToggleButton.setAttribute('value', 'NEW GAME');
+    resetToggleButton.setAttribute('value', 'RESTART');
     getNewGameWordsArray();
     playGame();
     timerMechanism();
@@ -111,26 +120,47 @@ const addItemsToGameBoard = (newWord) => {
 };
 
 const getButtons = (event) => {
+  currentWord = event.target;
+  currentWord.style.display = 'none';
+  console.log(currentWord);
   if (event.target == event.currentTarget) {
-    buttonArea.innerHTML = '';
+    keepDiscardButtonArea.innerHTML = '';
   } else {
     console.log(event);
-    buttonArea.innerHTML = `<button type='button' value='-${event.target.attributes[0].value}' color='blue' class='discard ${event.target.innerText}'>DISCARD ${event.target.innerText}</button><div>${event.target.attributes[1].value}</div><button type='button' value='${event.target.attributes[0].value}' color='blue' class='keep ${event.target.innerText}'>KEEP ${event.target.innerText}</input>`;
+    keepDiscardButtonArea.innerHTML = `<button type='button' value='${event.target.attributes[0].value}' color='blue' class='${event.target.innerText}' id="discard" data-is-real='${event.target.attributes[2].value}'>DISCARD ${event.target.innerText}</button><div>${event.target.attributes[1].value}</div><button type='button' value='${event.target.attributes[0].value}' color='blue' class='${event.target.innerText}' id="keep" data-is-real='${event.target.attributes[2].value}'>KEEP ${event.target.innerText}</input>`;
   }
 };
 
-// const getButtons = (event, newWord) => {
-//   wordRetainButton() {
-//     return `<button type='button' value='-${this.pointsScore}' color='blue' class='discard ${this.word}'>DISCARD</input>`;
-//   }
-//   wordDiscardButton() {
-//     console.log('Discard button rendered');
-//     return `<button type='button' value='-${this.pointsScore}' color='blue' class='discard ${this.word}'>DISCARD</input>`;
-//   }
-//   document.querySelector(
-//     'header'
-//   ).innerHTML = `${newWord.wordRetainButton}${newWord.wordDiscardButton}`;
-// };
+const playerScoreEvent = (event) => {
+  if (event.target == event.currentTarget) {
+    keepDiscardButtonArea.innerHTML = '';
+  } else {
+    console.log(event.target.isReal);
+    let thisScore = parseInt(event.target.value);
+    console.log(thisScore);
+    console.log(playerScore);
+    console.log(event.target.id, event.target.attributes[5].value);
+    if (
+      (event.target.id == 'keep' &&
+        event.target.attributes[5].value == 'true') ||
+      (event.target.id == 'discard' &&
+        event.target.attributes[5].value == 'false')
+    ) {
+      console.log('CORRECT');
+      playerScore += thisScore;
+    } else {
+      console.log('INCORRECT');
+      playerScore -= thisScore;
+    }
+    scoreBoard.innerHTML = playerScore;
+    event.target.style.display = 'none';
+    keepDiscardButtonArea.innerHTML = '';
+    keepDiscardButtonArea.innerHTML =
+      event.target.attributes[5].value == 'false'
+        ? `<div></div><div>${event.target.attributes[3].value.toUpperCase()}<br>is a<br>FAKE WORD!!!</div>`
+        : `<div></div><div>${event.target.attributes[3].value.toUpperCase()}<br>is a<br>REAL WORD!!!</div>`;
+  }
+};
 
 const timerMechanism = () => {
   let timer = document.querySelector('#timer');
@@ -144,13 +174,18 @@ const timerMechanism = () => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     timer.textContent = minutes + ':' + seconds;
     if (--timeRemaining < 0) {
-      timeRemaining.toString();
-      timeRemaining = 'GAME OVER';
+      timer.textContent = '';
+      if (playerScore <= 0) {
+        gameBoard.innerHTML = `<br>Game over.<br><br>Your score is:<br>${playerScore}.<br><br>That was<br>TERRIBLE.<br>GET OUT OF MY SIGHT.<br>Waste of time.<br><br>I don't know why I bother.`;
+      } else {
+        gameBoard.innerHTML = `<br><br><br>Game over.<br><br>Your score is:<br>${playerScore}.<br><br>OMG! That's<br>AMAZING!<br>Now get some other<br>hobbies. You know, other<br>than spending all of your time<br>reading the dictionary...`;
+      }
     }
   }, 1000);
 };
 
 /*----------- ------------------------------------------------------------------------------------------------------------*/
-// Event Listeners //
+// Global event Listeners //
 resetToggleButton.addEventListener('click', toggleReset);
 gameBoard.addEventListener('click', getButtons, true);
+keepDiscardButtonArea.addEventListener('click', playerScoreEvent);
