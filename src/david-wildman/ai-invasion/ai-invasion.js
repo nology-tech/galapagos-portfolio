@@ -97,7 +97,7 @@ const toTitleCase = (str) => {
   });
 };
 
-// Play and reset button //
+// Play and reset button  //
 const toggleReset = () => {
   if (gameReset === true) {
     gameReset = false;
