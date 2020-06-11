@@ -126,12 +126,11 @@ const addItemsToGameBoard = (newWord) => {
 };
 
 const getButtons = (event) => {
-  currentWord = event.target;
-  currentWord.style.display = 'none';
-  console.log(currentWord);
-  if (event.target == event.currentTarget) {
-    keepDiscardButtonArea.innerHTML = '';
-  } else {
+  if (event.target != event.currentTarget) {
+    currentWord = event.target;
+    currentWord.style.display = 'none';
+    console.log(currentWord);
+
     console.log(event);
     keepDiscardButtonArea.innerHTML = `<button type='button' value='${event.target.attributes[0].value}' color='blue' class='${event.target.innerText}' id="discard" data-is-real='${event.target.attributes[2].value}'>DISCARD ${event.target.innerText}</button><div>${event.target.attributes[1].value}</div><button type='button' value='${event.target.attributes[0].value}' color='blue' class='${event.target.innerText}' id="keep" data-is-real='${event.target.attributes[2].value}'>KEEP ${event.target.innerText}</input>`;
   }
@@ -187,10 +186,12 @@ const timerMechanism = () => {
       timer.textContent = '';
       if (playerScore <= 0) {
         keepDiscardButtonArea.innerHTML = `<div></div><div><br>GAME<br>OVER</div>`;
+        gameBoard.innerHTML = '';
         gameBoard.style.backgroundImage =
           'url(https://media.giphy.com/media/X3nnss8PAj5aU/giphy.gif)';
       } else {
         keepDiscardButtonArea.innerHTML = `<div></div><div><br>WELL<br>DONE!</div>`;
+        gameBoard.innerHTML = '';
         gameBoard.style.backgroundImage =
           'url(https://media.giphy.com/media/VGVwLultLZjrrssAak/giphy.gif)';
       }
