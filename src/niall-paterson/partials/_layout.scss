@@ -51,7 +51,7 @@ nav {
     display: inline-block;
     @include flex-row-between;
     width: $small-width;
-    padding: $small-padding;
+    padding: 0 $small-padding;
     i {
       display: inline-block;
       margin: $tiny-margin;
@@ -73,6 +73,7 @@ section {
 footer {
   position: absolute;
   bottom: 0;
+  background-color: transparent;
 
   ul {
     @include flex-row-between;
@@ -96,6 +97,7 @@ main {
 }
 
 article {
+  @include flex-column-center;
   height: auto;
   margin: 20vh $small-margin;
   border: 1px solid transparent;
@@ -113,6 +115,7 @@ article {
     margin: 0;
     width: $small-width;
     padding: $small-padding;
+    background-color: transparent;
   }
 
   &:last-child {
