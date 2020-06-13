@@ -5,9 +5,9 @@ import { toggleColorMode } from './toggleColorMode.js';
 /* global SVG */
 
 export const toggleButton = {
-  svgFrame: undefined,
-  bevel: undefined,
-  button: undefined,
+  svgFrame: null,
+  bevel: null,
+  button: null,
   drawFrame() {
     this.svgFrame = SVG().addTo('#color-toggle').size(60, 50);
     return this;
