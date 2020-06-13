@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @mixin flex-column-center {
@@ -34,25 +35,4 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-@mixin fixed-menu($header: true) {
-  position: fixed;
-  height: $medium-height;
-  width: $full-width;
-  @if $header {
-    @include flex-row-between;
-    top: 0;
-    background-color: $top-gradient;
-  } @else {
-    @include flex-row-center;
-    bottom: 0;
-    background: $bottom-gradient;
-
-    .social-media-wrapper {
-      @include flex-row-even;
-      width: $full-width;
-      max-width: 400px;
-    }
-  }
 }
