@@ -1,3 +1,12 @@
+h1, h2, p {
+  display: inline-block;
+  margin: $small-margin;
+}
+
+h1, h2 {
+  padding: $small-padding 0;
+}
+
 nav {
   z-index: 998;
   position: fixed;
@@ -16,73 +25,72 @@ nav {
 }
 
 #fixed-header {
-
-  @include fixed-menu($header: true);
+  @include flex-row-between;
+  position: fixed;
+  width: 100vw;
+  top: 0;
   z-index: 999;
-  background: $top-gradient;
-
+  background-color: transparent;
   div {
-    margin: $margin-medium;
+    margin: $small-margin;
   };
 }
 
-#home {
-
-  position: relative;
-
-  footer {
-    position: absolute;
-    bottom: 0;
-
-    ul {
-      @include flex-row-even;
-      width: $large-width;
-      min-width: 300px;
-      max-width: 500px;
-      height: 12.5vh;
-    }
-  }
-}
-
-h1 {
-  margin: $margin-large 0;
-  padding: $padding-medium;
-}
-
-h2 {
-  padding: $padding-small 0;
-}
-
-p {
-  margin: $margin-small;
-}
-
-main {
+#languages-wrapper {
 
   @include flex-column-center;
+  text-align: center;
+  height: auto;
+  
+  p {
+    text-align: center;
+    width: $small-width;
+  }
+
+  #languages-icon-wrapper {
+    display: inline-block;
+    @include flex-row-between;
+    width: $small-width;
+    padding: $small-padding;
+    i {
+      display: inline-block;
+      margin: $tiny-margin;
+    }
+  } 
 }
 
 section {
-
   @include flex-column-center;
-}
-
-.section-wrapper {
-  @include flex-column-around;
-  height: 87.5vh;
-}
-
-section,
-ul {
-
+  position: relative;
   height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  @include flex-row-center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+
+  ul {
+    @include flex-row-between;
+    width: $small-width;
+    padding: $small-padding;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+main {
+  @include flex-column-center;
 }
 
 article {
   height: auto;
-  margin: 25vh;
-  padding: 5px;
-  width: 90vw;
+  margin: 20vh $small-margin;
+  padding: $tiny-padding;
   border: 1px solid transparent;
   border-radius: 25px;
   box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
@@ -94,39 +102,20 @@ article {
   }
   
   .project-links {
-    width: 50%;
-    padding: 5vh;
+    width: $small-width;
+    padding: $small-padding;
   }
-}
 
-#languages-wrapper {
-  @include flex-column-center;
-  width: $large-width;
-
-  p {
-    text-align: center;
-    width: $large-width;
-  }
-}
-
-
-#languages-icon-wrapper {
-  width: $large-width;
-  max-width: 500px;
-  text-align: center;
-
-  i {
-    width: $tiny-width;
-    min-width: 40px;
-    height: $tiny-height;
+  &:last-child {
+  margin-bottom: 27.5vh
   }
 }
 
 .project-links {
   @include flex-row-even;
-  width: $medium-width;
+  width: $small-width;
   margin: 0 auto;
-  padding: $padding-small 0;
+  padding: $small-padding 0;
 }
 
 .project-header {
@@ -136,18 +125,11 @@ article {
 
 header {
   h2 {
-    margin: 0 $margin-small;
+    margin: 0 $small-margin;
     display: block;
   }
 }
 
-img {
-  width: 50px;
-  height: 25px;
-}
-
-
-svg {
-  background-color: $top-gradient;
-  fill: green;
+#menu-toggle, #color-toggle, svg {
+  background: transparent;
 }
