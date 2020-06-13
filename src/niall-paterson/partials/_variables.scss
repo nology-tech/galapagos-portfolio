@@ -1,5 +1,6 @@
 $multiple: 8;
 
+$icon-font: 4px * $multiple;
 $small-font: 0.15em * $multiple;
 $medium-font: 0.25em * $multiple;
 $large-font: 0.35em * $multiple;
@@ -11,12 +12,12 @@ $large-margin: 5px * $multiple;
 
 $tiny-padding: 1px * $multiple;
 $small-padding: 3px * $multiple;
-$medium-padding: 4px * $multiple;
+$medium-padding: 6px * $multiple;
 $large-padding: 5px * $multiple;
 
 $tiny-width: 10px * $multiple;
 $small-width: 30px * $multiple;
-$medium-width: 40px * $multiple;
+$medium-width: 60px * $multiple;
 $large-width: 50px * $multiple;
 
 $breakpoint-tablet: 768px;
