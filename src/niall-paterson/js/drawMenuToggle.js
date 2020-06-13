@@ -3,9 +3,9 @@ import { toggleMenuVisibility } from './toggleMenu.js';
 /* global SVG */
 
 export const toggleMenu = {
-  svgFrame: undefined,
-  lineTop: undefined,
-  lintBot: undefined,
+  svgFrame: null,
+  lineTop: null,
+  lintBot: null,
   drawFrame() {
     this.svgFrame = SVG().addTo('#menu-toggle').size(50, 50);
     return this;
