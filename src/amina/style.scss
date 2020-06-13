@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(14, 24, 39, 0.8);
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  z-index: 1;
+  padding: 40px;
+}
+
+.navbar ul {
+  white-space: nowrap;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.navbar li {
+  font-size: 25px;
+  margin: 0 50px;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  color: white;
+}
+
+.me a {
+  font-size: 25px;
+  background-color: #e569f3;
+  padding: 10px;
+}
+
+li:hover {
+  color: black;
+  background-color: black;
+}
+
+.wave {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+}
+
+h1 {
+  font-size: 120px;
+  margin: 0 auto;
+  color: black;
+}
+
+.typewriter {
+  color: purple;
+  font-size: 50px;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 4s steps(20, end), blink-caret 0.9s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+#about {
+  width: 90%;
+  height: 500px;
+  line-height: 40px;
+  padding: 150px 100px 50px;
+  color: black;
+  text-align: center;
+  margin: 0 80px;
+}
+
+#about h2 {
+  font-size: 95px;
+  margin: 20px auto;
+  font-family: "Lobster", cursive;
+  color: purple;
+  line-height: 1em;
+  text-decoration: underline;
+}
+
+#about p {
+  font-size: 30px;
+}
+
+.skills {
+  float: right;
+  background-color: rgb(230, 204, 255);
+  width: 90%;
+  margin: 0 120px;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.skills h3 {
+  font-family: "Lobster", cursive;
+  font-size: 95px;
+  color: purple;
+  /* float: left; */
+  margin-top: -400px 30px;
+  text-decoration: underline;
+}
+
+.skill-info p {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.skills-bar {
+  margin: 60px 0;
+}
+
+.skills-bar p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container2 {
+  width: 30%;
+  background-color: gray;
+  margin: 40px auto;
+}
+
+.html {
+  width: 40%;
+  background-color: #4caf50;
+}
+
+.css {
+  width: 40%;
+  background-color: #2196f3;
+}
+
+.js {
+  width: 10%;
+  background-color: yellow;
+  color: black;
+}
+
+button {
+  padding: 12px 28px;
+  box-shadow: rgba(143, 53, 228, 0.1) 1px 1px 1px 1px;
+  font-size: 20px;
+  background-color: rgb(230, 204, 255, 0.1);
+  color: black;
+  border: 2px solid purple;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+#moreinfo {
+  margin: 40px;
+  font-size: 60px;
+  display: none;
+}
+
+#moreinfo i {
+  margin: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-evenly;
+  justify-content: space-around;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-h3 {
+  color: purple;
+  font-family: "Lobster", cursive;
+  font-size: 95px;
+  text-align: center;
+  text-decoration: underline;
+  /* margin: 60px 0; */
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  /* border-radius: 30px; */
+}
+
+#project1 {
+  background-color: rgb(222, 203, 93);
+}
+
+#project2 {
+  background-color: rgb(172, 252, 244);
+}
+
+#project3 {
+  background-color: lightpink;
+}
+
+#project4 {
+  background-color: #6dffaf;
+}
+
+article p {
+  position: absolute;
+  opacity: 0;
+  width: 90%;
+}
+
+article:hover p {
+  opacity: 1;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+article:hover h2 {
+  display: none;
+}
+
+footer {
+  background-color: rgba(91, 30, 214, 1);
+  background-color: rgba(14, 24, 39, 0.8);
+  padding: 100px;
+  text-align: center;
+  color: #e569f3;
+  font-size: 40px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.social i {
+  color: white;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .container {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: black;
+  }
+
+  .typewriter {
+    font-size: 30px;
+  }
+
+  #about {
+    width: 100%;
+    height: 750px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    margin-top: -400px;
+  }
+
+  #about h2 {
+    font-size: 80px;
+  }
+
+  #about p {
+    /* width: 700px;
+        margin: 30px 300px;  */
+    font-size: 30px;
+    margin: 60px 0;
+  }
+
+  .skills {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills h3 {
+    font-size: 80px;
+  }
+
+  .skill-info p {
+    width: 50%;
+    margin: 30px auto;
+    font-size: 30px;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+  }
+
+  .project-h3 {
+    font-size: 80px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 0;
+    /* border-radius: 30px; */
+  }
+
+  article p {
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+  }
+
+  article:hover p {
+    opacity: 1;
+    transition: 0.5s ease;
+    text-align: center;
+  }
+
+  article:hover h2 {
+    display: none;
+  }
+
+  footer {
+    padding: 100px;
+    font-size: 30px;
+  }
+}
