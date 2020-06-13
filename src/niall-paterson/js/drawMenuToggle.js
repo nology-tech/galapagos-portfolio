@@ -37,8 +37,8 @@ export const toggleMenu = {
     // animate menu if click nav links
     document.querySelectorAll('a').forEach(element => {
       element.addEventListener('click', () => {
-        toggleMenuVisibility(settings);
         toggleMenu.runAnimation(settings);
+        toggleMenuVisibility(settings);
       });
     });
     return this;
