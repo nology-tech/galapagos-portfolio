@@ -66,11 +66,13 @@ section {
   width: 100vw;
 }
 
+.section-wrapper {
+  @include flex-column-center;
+}
+
 footer {
-  @include flex-row-center;
   position: absolute;
   bottom: 0;
-  width: 100vw;
 
   ul {
     @include flex-row-between;
@@ -80,17 +82,22 @@ footer {
 
   p {
     text-align: center;
+    
   }
 }
 
 main {
-  @include flex-column-center;
+  @include flex-column-even;
+  width: 100vw;
+}
+
+.hidden-link-location {
+  height: 7.5vh;
 }
 
 article {
   height: auto;
   margin: 20vh $small-margin;
-  padding: $tiny-padding;
   border: 1px solid transparent;
   border-radius: 25px;
   box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
@@ -102,20 +109,15 @@ article {
   }
   
   .project-links {
+    @include flex-row-even;
+    margin: 0;
     width: $small-width;
     padding: $small-padding;
   }
 
   &:last-child {
-  margin-bottom: 27.5vh
+  margin-bottom: 27.5vh;
   }
-}
-
-.project-links {
-  @include flex-row-even;
-  width: $small-width;
-  margin: 0 auto;
-  padding: $small-padding 0;
 }
 
 .project-header {
@@ -126,7 +128,6 @@ article {
 header {
   h2 {
     margin: 0 $small-margin;
-    display: block;
   }
 }
 

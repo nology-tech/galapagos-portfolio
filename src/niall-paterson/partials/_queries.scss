@@ -1,54 +1,35 @@
 @media (min-width: $breakpoint-tablet) {
-  #about {
-    margin: 0 auto;
-    width: 80vw;
+  h1, h2, p {
+    margin: $medium-margin;
+    width: $medium-width;
+  }
+  
+  #fixed-header {
+    div {
+      margin: $medium-margin;
+    };
   }
 
   article {
-    width: 80vw;
-    padding: 20px;
-  }
-}
 
-@media (min-width: $breakpoint-desktop) {
-  main {
-    margin: 0 auto;
-  }
-
-  article {
-    width: 40vw;
-  }
-
-  #about {
-    width: 60vw;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: $large-font * 1.125;
-  }
-
-  h2,
-  i,
-  li {
-    font-size: $medium-font * 1.125;
-  }
-
-  p {
-    font-size: $small-font * 1.125;
+    .project-wrapper {
+      width: $medium-width;
+    }
   }
 
   header {
-    .social-media-wrapper {
-      i {
-        font-size: $small-font * 1.125;
-      }
+    h2 {
+      margin: 0 $medium-margin;
     }
+  }
 
-    .project-links {
-      i {
-        font-size: $small-font * 1.75;
-      }
+
+}
+
+@media (min-width: $breakpoint-desktop) {
+  #about {
+    h1, p {
+      width: 45vw;
     }
   }
 }

@@ -9,7 +9,6 @@ h1 {
 }
 
 h2,
-i,
 li {
   font-size: $medium-font;
   text-align: center;
@@ -21,10 +20,11 @@ header {
   }
 }
 
-.social-media-wrapper {
-  i {
-    font-size: $small-font * 0.8;
-  }
+
+i, 
+#languages-icon-wrapper i,
+.project-links a i {
+  font-size: $icon-font;
 }
 
 p {
@@ -38,8 +38,23 @@ p {
   }
 } 
 
-.project-links {
-  i {
-    font-size: $small-font * 1.25;
+@media (min-width: $breakpoint-tablet) {
+  h1 {
+    font-size: $large-font * 1.125;
   }
+  
+  h2,
+  i,
+  li {
+    font-size: $medium-font * 1.125;
+  }
+
+  p {
+    font-size: $small-font * 1.125;
+  }
+
+  i {
+    font-size: $icon-font * 1.125;
+   }
+
 }

@@ -30,6 +30,13 @@
   align-items: center;
 }
 
+@mixin flex-column-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: even;
+  align-items: center;
+}
+
 @mixin flex-column-around {
   display: flex;
   flex-direction: column;
