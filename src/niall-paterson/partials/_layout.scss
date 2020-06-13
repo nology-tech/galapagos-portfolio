@@ -108,7 +108,14 @@ article {
   header {
     border: 1px solid transparent;
     border-radius: 25px;
+    width: 100%;
   }
+
+  h2 {
+    display: block;
+  }
+
+
   
   .project-links {
     @include flex-row-even;
