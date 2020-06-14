@@ -87,7 +87,6 @@ nav {
 
 a:hover {
   color: red;
-  text-decoration: underline;
 }
 
 i:hover {
@@ -153,6 +152,10 @@ i:hover {
   
   #profile {
     display: unset;
+  }
+
+  article i {
+    pointer-events: none;
   }
 }
 
@@ -228,7 +231,6 @@ main {
 
   article {
     border: $primary-border;
-    font-size: 18px;
     height: 15vh;
     padding: 5px;
     text-align: center;
@@ -259,9 +261,25 @@ main {
     }
 
     i {
-      margin: 10px;;
+      opacity: 0;
+      font-size: 50px;
+      margin: 40px;
     }
   }
+}
+
+article:hover i {
+  opacity: 1;
+}
+
+.project1 {
+  background-image: url('./Images/project1pic.png');
+  background-size: cover;
+}
+
+.project2 {
+    background-image: url('./Images/morse.jpg');
+    background-size: cover;
 }
 
 .about {
@@ -318,7 +336,7 @@ main {
   }
 
   p i {
-    font-size: 40px;
+    font-size: 30px;
     margin:2px;
  }
 }
