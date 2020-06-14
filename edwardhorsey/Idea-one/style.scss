@@ -236,9 +236,6 @@ main {
       flex-wrap: wrap;
 
       div {
-        h2{
-          margin: 0 auto;
-        }
         display: flex;
         flex-direction: column;
         min-width: 300px;
@@ -247,6 +244,10 @@ main {
         padding: 20px;
         margin-bottom: 20px;
         // margin: 0px auto 20px auto;
+        
+        h2 {
+          margin: 0 auto;
+        }
 
         ul {
           min-height: 400px;
@@ -257,12 +258,14 @@ main {
           align-content: center;
           flex-wrap: wrap;
           font-size: 20px;
+
           li {
             display: inline-block;
             list-style-type: none;
             padding: 10px;
             font-weight: 700;
-            img{
+
+            img {
               position: relative;
             }
           }
@@ -303,10 +306,10 @@ main {
         }
       }
     }
-      
-      div.icons {
+    
+    div.icons {
       display: flex;
-      justify-content: space-around;  
+      justify-content: space-around;
       flex-direction: row;
       font-size: 50px;
       max-height: 20%;
