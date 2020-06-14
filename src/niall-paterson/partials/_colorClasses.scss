@@ -1,0 +1,27 @@
+.lightModeText {
+  color: #1f1f1f;
+}
+
+.lightModeBackground {
+  background-color: #fbfef9;
+}
+
+.darkModeBackground {
+  background-color: #1f1f1f;
+}
+
+.darkModeText {
+  color: #fbfef9;
+}
+
+.darkModeBoxShadow {
+  box-shadow: 0 0 16px -3px rgba(251, 254, 249, 0.19);
+}
+
+.lightModeBoxShadow {
+  box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+}
+
+.transparentBackground {
+  background-color: transparent;
+}
