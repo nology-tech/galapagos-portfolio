@@ -1,4 +1,3 @@
-import { toggleGradient } from './toggleGradient.js';
 import { updateSettings } from './settings.js';
 import { toggleColorMode } from './toggleColorMode.js';
 
@@ -42,7 +41,6 @@ export const toggleButton = {
         .animate(300, 0, 'after').center(15, 25);
 
       setTimeout(toggleColorMode, 100);
-      setTimeout(toggleGradient, 100);
       setTimeout(updateSettings, 1000);
     } else {
       this.button.animate(300, 0, 'now').center(35, 25)
@@ -51,7 +49,6 @@ export const toggleButton = {
         .animate(300, 0, 'after').size(16);
 
       setTimeout(toggleColorMode, 400);
-      setTimeout(toggleGradient, 400);
       setTimeout(updateSettings, 1000);
     }
     return this;
