@@ -263,7 +263,7 @@ main {
     i {
       opacity: 0;
       font-size: 50px;
-      margin: 40px;
+      margin-top: 30px;
     }
   }
 }
@@ -278,8 +278,8 @@ article:hover i {
 }
 
 .project2 {
-    background-image: url('./Images/morse.jpg');
-    background-size: cover;
+  background-image: url('./Images/morse.jpg');
+  background-size: cover;
 }
 
 .about {
@@ -337,8 +337,8 @@ article:hover i {
 
   p i {
     font-size: 30px;
-    margin:2px;
- }
+    margin: 20px;
+  }
 }
 
 span {
