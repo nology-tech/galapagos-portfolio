@@ -4,7 +4,6 @@ import { toggleMenu } from './drawMenuToggle.js';
 
 export const toggleColorMode = () => {
 
-  console.log(toggleButton);
   // we do backgrounds and colors separately, since some
   // elements have transparent backgrounds
 
@@ -35,7 +34,6 @@ export const toggleColorMode = () => {
 
   });
 
-
   // svgs
 
   if (settings.colorMode === 'light') {
@@ -49,5 +47,4 @@ export const toggleColorMode = () => {
     toggleMenu.lineTop.stroke('#1f1f1f');
     toggleMenu.lineBot.stroke('#1f1f1f');
   }
-
 };
