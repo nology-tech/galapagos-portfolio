@@ -195,13 +195,15 @@ main .projects .container .box.order-override {
 }
 
 main .projects .container .box#boxOne {
-  background-image: url("../Idea-one/img/box-one.jpg");
-  background-position: cover;
+  background-image: url("../Idea-one/img/box-one-a-copy.png");
+  background-position: center;
+  background-size: repeat;
 }
 
 main .projects .container .box#boxTwo {
-  background-image: url("../Idea-one/img/box-two.jpg");
-  background-position: cover;
+  background-image: url("../Idea-one/img/box-two.png");
+  background-position: bottom;
+  background-size: cover;
 }
 
 main .projects .container .box#boxThree {
@@ -266,10 +268,10 @@ main .cv-and-contact .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -291,10 +293,36 @@ main .cv-and-contact .contact div {
   margin-bottom: 20px;
 }
 
+main .cv-and-contact .contact div h2 {
+  margin: 0 auto;
+}
+
+main .cv-and-contact .contact div ul {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+}
+
 main .cv-and-contact .contact div ul li {
+  display: inline-block;
   list-style-type: none;
   padding: 10px;
   font-weight: 700;
+}
+
+main .cv-and-contact .contact div ul li img {
+  position: relative;
 }
 
 main .cv-and-contact .contact form {
@@ -337,27 +365,32 @@ main .cv-and-contact .contact form textarea {
   padding-top: 10px;
 }
 
-main .cv-and-contact .icons {
+main .cv-and-contact div.icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 50px;
+  max-height: 20%;
   margin-top: 10px;
   color: #2b2b2b;
   text-decoration: none;
 }
 
-main .cv-and-contact .icons a {
+main .cv-and-contact div.icons a {
   display: inline-block;
 }
 
-main .cv-and-contact .icons a:visited {
+main .cv-and-contact div.icons a:visited {
   color: #2b2b2b;
 }
 
-main .cv-and-contact .icons a:hover {
+main .cv-and-contact div.icons a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 0.4s ease-in-out;
