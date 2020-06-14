@@ -298,12 +298,12 @@ main .cv-and-contact .contact div h2 {
 }
 
 main .cv-and-contact .contact div ul {
+  max-width: 800px;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 800px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
