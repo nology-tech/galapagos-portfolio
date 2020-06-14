@@ -3,7 +3,6 @@ const menu = () => {
   document.querySelector('nav').classList.toggle('open');
 };
 
-
 const sendMail =() => {
   let link ='mailto:phillipdunn@hotmail.com'
 + '?cc='
