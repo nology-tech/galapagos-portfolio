@@ -112,17 +112,18 @@ article {
   }
 
   h2 {
-    display: block;
+    align-self: flex-start;
   }
-
 
   
   .project-links {
-    @include flex-row-even;
     margin: 0;
-    width: $small-width;
     padding: $small-padding;
     background-color: transparent;
+    align-self: flex-end;
+    a {
+      margin: 15px;
+    }
   }
 
   &:last-child {
