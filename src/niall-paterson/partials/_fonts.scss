@@ -22,9 +22,12 @@ header {
 
 
 i, 
-#languages-icon-wrapper i,
-.project-links a i {
+#languages-icon-wrapper i {
   font-size: $icon-font;
+}
+
+.project-links a i {
+  font-size: $icon-font  * 0.8;
 }
 
 p {
