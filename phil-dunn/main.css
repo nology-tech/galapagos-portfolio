@@ -217,18 +217,18 @@ article:hover i {
 }
 
 .project2 {
-  background-image: url("./Images/morse.jpg");
+  background-image: url("./Images/morse.png");
   background-size: cover;
 }
 
 .about {
   display: grid;
   grid-template-rows: 150px 50px 60px 60px 60px 60px;
-  grid-template-columns: 120px 167px;
+  grid-template-columns: 110px 167px;
   margin: 20px;
   column-gap: 10px;
   row-gap: 20px;
-  grid-template-areas: "phil phil phil" "frontend frontend frontend" "skills skillsp " ". . experience" "qualifications qualificationsp .";
+  grid-template-areas: "phil phil phil" "frontend frontend frontend" "skills skillsp " ". . experience" "education educationp .";
 }
 .about h3 {
   border: 2px solid whitesmoke;
@@ -245,8 +245,8 @@ article:hover i {
 .about h3 .experience {
   grid-area: experience;
 }
-.about h3 .qualifications {
-  grid-area: qualifications;
+.about h3 .education {
+  grid-area: education;
 }
 .about h3 .skillsp {
   grid-area: skillsp;
@@ -257,21 +257,17 @@ article:hover i {
 .about h3 .experiencep {
   grid-area: experiencep;
 }
-.about h3 .qualificationsp {
-  grid-area: qualificationsp;
+.about h3 .educationp {
+  grid-area: educationp;
 }
 .about p i {
   font-size: 30px;
-  margin: 20px;
+  pointer-events: none;
 }
 
 span {
   display: flex;
-  justify-self: left;
   align-items: center;
-}
-span img {
-  margin: 3px;
 }
 
 #bgc {
@@ -314,7 +310,7 @@ span img {
   }
 
   .about {
-    grid-template-columns: 130px 185px;
+    grid-template-columns: 110px 185px;
   }
   .about h3 {
     font-size: 20px;
@@ -350,17 +346,14 @@ span img {
     font-size: 18px;
   }
 }
-span img {
-  margin: 6px;
-}
-
 @media only screen and (min-width: 768px) {
   main section h1 {
     font-size: 72px;
   }
 
   main section h2 {
-    font-size: 42px;
+    font-size: 65px;
+    margin-bottom: 10px;
   }
 
   main section .btn-primary {
@@ -378,13 +371,17 @@ span img {
   }
 
   .about {
-    grid-template-columns: 160px 400px;
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
   }
   .about h3 {
     font-size: 25px;
   }
   .about p {
     font-size: 20px;
+  }
+  .about p i {
+    margin-top: 10px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -409,7 +406,8 @@ span img {
   }
 
   .about {
-    grid-template-columns: 180px 450px;
+    grid-template-columns: 220px 500px;
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
   }
   .about h3 {
     font-size: 27px;
@@ -417,16 +415,56 @@ span img {
   .about p {
     font-size: 22px;
   }
+  .about p i {
+    margin-top: 4px;
+    font-size: 50px;
+  }
 
   nav ul {
     font-size: 40px;
   }
 
-  .socia {
+  .social {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 1024px) {
+#bgc {
+  height: 50px;
+  width: 50px;
+}
+
+#pwc {
+  height: 50px;
+  width: 50px;
+}
+
+#fd {
+  height: 50px;
+  width: 50px;
+}
+
+#kip {
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (min-width: 1440px) {
+  main section h1 {
+    font-size: 95px;
+  }
+
+  main section h2 {
+    font-size: 65px;
+  }
+
+  .portfolio {
+    grid-template-rows: 150px 100px 180px;
+  }
+
+  .about {
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
+  }
+
   main section .btn-primary {
     font-size: 32px;
     padding: 10px;
@@ -445,6 +483,41 @@ span img {
 
   .social {
     font-size: 50px;
+  }
+
+  .about {
+    grid-template-columns: 220px 600px;
+    grid-template-rows: 150px 120px 70px 70px 70px 70px;
+  }
+  .about h3 {
+    font-size: 40px;
+  }
+  .about p {
+    font-size: 30px;
+  }
+  .about p i {
+    margin-top: 5px;
+    font-size: 60px;
+  }
+
+  #bgc {
+    height: 55px;
+    width: 55px;
+  }
+
+  #pwc {
+    height: 55px;
+    width: 55px;
+  }
+
+  #fd {
+    height: 55px;
+    width: 55px;
+  }
+
+  #kip {
+    height: 55px;
+    width: 55px;
   }
 }
 
