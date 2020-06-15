@@ -461,7 +461,7 @@ span img {
 
     p i {
       margin-top: 10px;
-      font-size:40px;
+      font-size: 40px;
     }
   }
 }
@@ -545,7 +545,7 @@ span img {
     grid-template-rows: 150px 100px 180px;
   }
 
-  .about{
+  .about {
     grid-template-rows: 150px 100px 60px 60px 60px 60px;
   }
   
@@ -580,11 +580,13 @@ span img {
     p {
       font-size: 30px;
     }
+
     p i {
       margin-top: 5px;
-      font-size:60px;
+      font-size: 60px;
     }
   }
+  
   #bgc {
     height: 55px;
     width: 55px;
