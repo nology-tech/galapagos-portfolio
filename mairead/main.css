@@ -60,6 +60,25 @@
 * #purple-banner h2 {
   font-variant: small-caps;
   letter-spacing: 6px;
+  color: black;
+  text-align: center;
+  width: 14em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 3s steps(300, end);
+          animation: type 3s steps(300, end);
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -137,12 +156,27 @@
   }
 }
 
-main {
-  display: -ms-grid;
-  display: grid;
+@media (min-width: 1024px) {
+  * i:hover {
+    background-color: lightgray;
+    color: black;
+    font-size: 4em;
+  }
 }
 
-main div {
+main h3 {
+  text-align: center;
+  margin-top: 5em;
+  padding: 1em;
+}
+
+main #projectgrid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
+}
+
+main #projectgrid section {
   height: 30vh;
   border: solid 2px #cd5555;
   background-color: #f9ebeb;
@@ -150,6 +184,60 @@ main div {
   font-variant: small-caps;
   padding: 2em;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  main #projectgrid {
+        grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+  }
+}
+
+@media (min-width: 1024px) {
+  main #projectgrid {
+        grid-template-areas: "project1 project2 project3"  "project4 project5 project6";
+  }
+}
+
+@media (min-width: 2560px) {
+  main #projectgrid {
+        grid-template-areas: "project1 project2 project3 project4 project5 project6";
+  }
+}
+
+main #projectgrid #project1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: project1;
+}
+
+main #projectgrid #project2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: project2;
+}
+
+main #projectgrid #project3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: project3;
+}
+
+main #projectgrid #project4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: project4;
+}
+
+main #projectgrid #project5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: project5;
+}
+
+main #projectgrid #project6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: project6;
 }
 
 #contact-header {
@@ -205,14 +293,6 @@ form #submit {
 @media (min-width: 768px) and (min-width: 1024px) {
   form {
     width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  i:hover {
-    background-color: lightgray;
-    color: black;
-    font-size: 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */

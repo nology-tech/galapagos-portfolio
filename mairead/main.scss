@@ -53,7 +53,8 @@ $largescreen: 2560px;
     h2 {
       font-variant: small-caps;
       letter-spacing: 6px;
-      TYPING ANIMATION
+      
+      //TYPING ANIMATION
       color: black;
       text-align: center;
       width: 14em;
@@ -81,9 +82,6 @@ $largescreen: 2560px;
       }
     }
   }
-
-
-
   
   @media (min-width: $tablet) {
     h2::before,
@@ -117,21 +115,85 @@ $largescreen: 2560px;
       padding: 1em;
     }
   }
+  @media (min-width: $laptop) {
+    i:hover {
+      background-color: lightgray;
+      color: black;
+      font-size: 4em;
+    }
+  }
 }
 
 
 //PROJECTS STYLING
 main {
-  display: grid;
-
-  div {
-    height: 30vh;
-    border: solid 2px #cd5555;
-    background-color: #f9ebeb;
-    margin: 3em;
-    font-variant: small-caps;
-    padding: 2em;
+  h3 {
     text-align: center;
+    margin-top: 5em;
+    padding: 1em;
+  }
+
+  #projectgrid {
+    display: grid;
+
+    section {
+      height: 30vh;
+      border: solid 2px #cd5555;
+      background-color: #f9ebeb;
+      margin: 3em;
+      font-variant: small-caps;
+      padding: 2em;
+      text-align: center;
+    }
+    grid-template-areas:
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5"
+    "project6";
+
+  
+    @media (min-width: $tablet) {
+      
+      grid-template-areas:
+      "project1 project2"
+      "project3 project4"
+      "project5 project6";
+    }
+
+    @media (min-width: $laptop) {
+      
+      grid-template-areas:
+      "project1 project2 project3" 
+      "project4 project5 project6";
+    }
+
+    @media (min-width: $largescreen) {
+      
+      grid-template-areas:
+      "project1 project2 project3 project4 project5 project6";
+    }
+  
+  
+    #project1 {
+      grid-area: project1;
+    }
+    #project2 {
+      grid-area: project2;
+    }
+    #project3 {
+      grid-area: project3;
+    }
+    #project4 {
+      grid-area: project4;
+    }
+    #project5 {
+      grid-area: project5;
+    }
+    #project6 {
+      grid-area: project6;
+    }
   }
 }
 
@@ -185,14 +247,7 @@ form {
 }
   
 
-@media (min-width: $laptop) {
-  i:hover {
-    background-color: lightgray;
-    color: black;
-    font-size: 4em;
-  }
-}
-  
+
 
 
 
@@ -205,6 +260,7 @@ form {
 //link from contact form back to main page
 //Fix the animation centering issue
 //Center the contact form
+//hover effects for project boxes
 
 
 
