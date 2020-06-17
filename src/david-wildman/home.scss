@@ -1,77 +1,36 @@
+@import 'colors';
+@import 'fonts';
 
-/*----------Fonts----------*/
-
-@font-face {
-  font-family: "sfalienencsolid";
-  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"),
-    url("./assets//fonts/sfalienencsolid.woff") format("woff"),
-    url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "sfalienenc";
-  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets//fonts/sfalienenc.woff") format("woff"),
-    url("./assets//fonts/sfalienenc.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-
-  font-family: "streamster";
-  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets//fonts/streamster.woff") format("woff"),
-    url("./assets//fonts/streamster.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "scriptina";
-  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets//fonts/scriptina.woff") format("woff"),
-    url("./assets//fonts/scriptina.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/*---------- ----------*/
-
-/*----------CSS Reset----------*/
+/*---------- CSS Reset ----------*/
 
 * {
-  --portfolio-light-blue: #8ea8c3;
-  --portfolio-black: #0b0014;
-  --portfolio-gray: #363946;
-  --portfolio-blue: #406e8e;
-  --portfolio-purple: #5b2e48;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  // outline: 1px greenyellow dotted;
+  // overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
-/*---------- ----------*/
 
-/*----------Styling for hyperlinks and special characters----------*/
-
-//  My chosen font doesn't have much in it!! //
+/*---------- Special characters and other oddities ----------*/
 
 .char {
   color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--portfolio-blue);
+  text-decoration-color: inherit;
 }
+
+/* ---------- Mobile-only styles ----------*/
 
 @media screen and (min-width: 823px) {
   span.char {
-    text-decoration-color: var(--portfolio-purple);
-    // font-size: 1em;
+    text-decoration-color: $dark-byzantium;
+    font-size: 1em;
   }
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /*---------- ----------*/
@@ -80,43 +39,83 @@ a {
 
 body {
   max-width: 100vw;
-  background-color: var(--portfolio-black);
-  //  I've given the body this background image so I can see where it peeks through
-  // background-image: linear-gradient(to bottom right, yellow 0%, yellow 4%, black 5%, black 9%, yellow 10%,
-  // yellow 14%, black 15%, black 19%, yellow 20%,
-  // yellow 24%, black 25%, black 29%, yellow 30%,
-  // yellow 34%, black 35%, black 39%, yellow 40%,
-  // yellow 44%, black 45%, black 49%, yellow 50%,
-  // yellow 54%, black 55%, black 59%, yellow 60%,
-  // yellow 64%, black 65%, black 69%, yellow 70%,
-  // yellow 74%, black 75%, black 79%, yellow 80%,
-  // yellow 84%, black 85%, black 89%, yellow 90%,
-  // yellow 94%, black 95%, black 99%, yellow 100%);
   font-size: 16px;
-  color: var(--portfolio-black);
+  background-color: $xiketic;
+  color: $xiketic;
 }
-/*---------- ----------*/
+
+/*---------- General page styling----------*/
+
+.page {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px double $cadet-grey;
+  color: $queen-blue;
+
+  .title {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    outline-color: transparent;
+
+    h2 {
+      width: 80%;
+      padding: 2vmin;
+      text-align: center;
+      line-height: 100%;
+      height: max-content;
+      color: $xiketic;
+      text-shadow: 0 0 5px $cadet-grey;
+      font-size: 1em;
+      border-bottom: 2px solid $cadet-grey;
+    }
+  }
+}
 
 /*----------Header and navbar styles----------*/
 
 header {
-  font-family: "sfalienencsolid", sans-serif;
+  font-family: sfalienencsolid, sans-serif;
+  transform-origin: top;
 
-  .title {
-    height: 50vh;
-  }
-
-  h1 {
-    background-image: linear-gradient(#0b0014bb 0%, #0b0014bb 100%),
-      url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
+  .header-title {
+    background-image: url('./assets/images/glitchybackground2.gif');
     background-size: cover;
     background-position: center;
-    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #7605f599;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    transition: color 3s ease-in, height 3s ease-in;
+
+    .title-one {
+      height: max-content;
+      margin: 2% auto;
+      font-size: 3em;
+      line-height: 0.9em;
+      transition: line-height 1s ease-in;
+    }
+
+    .title-two {
+      height: max-content;
+      margin: 0 auto;
+      font-size: 2em;
+      line-height: 1em;
+      transition: line-height 1s ease-in-out;
+    }
   }
 
   nav {
     width: 100%;
-    height: 100%;
+    height: 60%;
 
     ul {
       width: 100%;
@@ -147,7 +146,7 @@ header {
 For very small devices sections take up two heights. ---------- */
 
 section {
-  font-family: "sfalienencsolid", sans-serif;
+  font-family: 'sfalienencsolid', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -174,7 +173,7 @@ section {
       width: 100%;
 
       h3 {
-        color: var(--portfolio-purple);
+        color: $dark-byzantium;
         font-size: 1em;
         text-align: left;
         width: 100%;
@@ -189,7 +188,7 @@ section {
       }
 
       p {
-        color: var(--portfolio-gray);
+        color: $onyx;
         text-align: left;
         width: 100%;
         font-size: 0.5em;
@@ -208,49 +207,33 @@ section {
   }
 }
 
-/*----------Page styling----------*/
+footer {
+  color: $cadet-grey;
+  height: 12vh;
+  background-color: #0b0014;
+  border-top: 1px double $cadet-grey;
+  border-radius: 2em;
 
-.page {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--portfolio-black);
-  border-top: 1px double var(--portfolio-light-blue);
-  border-bottom: 1px double var(--portfolio-light-blue);
-  border-radius: 1em;
-  box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
-  font-size: 2em;
-  color: var(--portfolio-blue);
+  nav {
+    height: 100%;
+    width: 100%;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    outline-color: transparent;
+    ul {
+      height: 100%;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      letter-spacing: initial;
 
-    &.title {
-      height: 20%;
-      width: 100%;
-    }
-
-    h1,
-    h2 {
-      width: 80%;
-      padding: 2vmin;
-      text-align: center;
-      line-height: 100%;
-      height: max-content;
-      color: var(--portfolio-black);
-      text-shadow: 0 0 5px var(--portfolio-light-blue);
-      font-size: 1em;
-      border-top: 1px solid var(--portfolio-light-blue);
-      border-bottom: 2px solid var(--portfolio-light-blue);
-      border-radius: 1em;
-    }
-
-    .title-one,
-    .title-two {
-      display: block;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        color: inherit;
+      }
     }
   }
 }
@@ -288,13 +271,13 @@ section {
   // .page {
   // 	width: 100%;
   //   height: 100vh;
-  // 	background-color: var(--portfolio-black);
-  // 	border-top: 1px double var(--portfolio-light-blue);
-  // 	border-bottom: 1px double var(--portfolio-light-blue);
+  // 	background-color: $xiketic;
+  // 	border-top: 1px double $cadet-grey;
+  // 	border-bottom: 1px double $cadet-grey;
   //   border-radius: 1em;
-  //   box-shadow: 0px 0px 5px 1px var(--portfolio-light-blue);
+  //   box-shadow: 0px 0px 5px 1px $cadet-grey;
   //   font-size: 2em;
-  //   color: var(--portfolio-blue);
+  //   color: var$queen-blue;
 
   //   div {
   //     display: flex;
@@ -305,12 +288,12 @@ section {
   // }
 
   ul {
-    color: var(--portfolio-gray);
+    color: $onyx;
   }
 
   nav:hover * > span.char {
     color: transparent;
-    text-decoration-color: var(--portfolio-blue);
+    text-decoration-color: $queen-blue;
     transition: text-decoration 2s;
   }
 
@@ -324,58 +307,40 @@ section {
     letter-spacing: 0;
     text-shadow: none;
     transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: letter-spacing 2s, text-shadow 2s, color 1s;
-    color: var(--portfolio-blue);
+    transition: letter-spacing 2s, text-shadow 2s, color 2s;
+    color: $queen-blue;
   }
 
   *:hover > .hover-fx-highlight {
     letter-spacing: 0.05em;
     transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
     transition: letter-spacing 0.5s, color 1s;
-    color: var(--portfolio-light-blue);
+    color: $cadet-grey;
     cursor: pointer;
-    text-shadow: 0 0 30px var(--portfolio-light-blue);
+    text-shadow: 0 0 30px $cadet-grey;
   }
 
   .page .first-line:hover {
-    outline: 2px solid var(--portfolio-purple);
+    outline: 2px solid $dark-byzantium;
     transition: outline 0.5s;
   }
 
   .page .second-line:hover {
-    outline: 1px solid var(--portfolio-blue);
+    outline: 1px solid $queen-blue;
     transition: outline 0.5s;
-  }
-
-  footer {
-    color: var(--portfolio-light-blue);
-    height: 12vh;
-    background-color: #0b0014;
-    border-top: 1px double var(--portfolio-light-blue);
-    border-radius: 2em;
-
-    nav {
-      height: 100%;
-      width: 100%;
-
-      ul {
-        height: 100%;
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        letter-spacing: initial;
-
-        li {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: auto;
-          color: inherit;
-        }
-      }
-    }
   }
 }
 
+/*---------- Selectors for JavaScript functions ----------*/
+
+.header-title.landing-page-effect {
+  color: transparent;
+  height: 100%;
+  transition: color 3s ease-in, height 1s ease-in;
+
+  .title-one,
+  .title-two {
+    line-height: 1.4em;
+    transition: line-height 3s ease-in;
+  }
+}
