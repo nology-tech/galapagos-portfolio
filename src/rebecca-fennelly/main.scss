@@ -272,13 +272,12 @@ main {
 }
 
 .skills-grid {
-  height: 150px;
-  width: 231px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
+  display: flex;
+  // flex-flow: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding: 0px 70px;
+
 
   div i {
     font-size: 40px;
@@ -298,11 +297,13 @@ main {
 
 .projects-grid {
   padding: 20px;
-  margin: 40px;
+  margin: 15px 40px;
   display: grid;
   gap: 20px;
   justify-items: center;
   background: white;
+  width: 85vw;
+  margin: 0 auto
 
 }
 
@@ -311,7 +312,7 @@ main {
   text-decoration-color: rgb(22, 219, 147);
   text-align: center;
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
   
 }
 
@@ -319,7 +320,7 @@ main {
   border: dashed 2px white;
   border-radius: 20px;
   height: 300px;
-  width: 220px;
+  width: 240px;
   background: rgb(29, 26, 47);
 }
 
@@ -429,7 +430,7 @@ main {
 
   #projects {
     .projects-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       // gap: 40px;
     }
   }
@@ -450,12 +451,12 @@ main {
 
   header {
 
-    height: 150px;
+    // height: 150px;
         
-    // display: flex;
-    // float: left;
-    // // height: 100vh;
-    // width: $desktopwidth;
+    display: flex;
+    float: left;
+    height: 100vh;
+    width: $desktopwidth;
   }
 
   .show {
@@ -463,11 +464,11 @@ main {
     width: 80px;
   }
 
-  main {
-    width: calc(100% - #{$desktopwidth});
-    height: 100vh;
-    float: left;
-  }
+  // main {
+  //   width: calc(100% - #{$desktopwidth});
+  //   height: 100vh;
+  //   float: left;
+  // }
 
   #parawrapper {
     // width: calc(100% - #{$desktopwidth});
@@ -503,7 +504,7 @@ main {
       gap: 20px;
 
       div {
-        width: 340px;}
+        width: 280px;}
     }
   }
 
