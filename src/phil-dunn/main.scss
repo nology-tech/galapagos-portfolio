@@ -87,7 +87,6 @@ nav {
 
 a:hover {
   color: red;
-  text-decoration: underline;
 }
 
 i:hover {
@@ -153,6 +152,10 @@ i:hover {
   
   #profile {
     display: unset;
+  }
+
+  article i {
+    pointer-events: none;
   }
 }
 
@@ -228,7 +231,6 @@ main {
 
   article {
     border: $primary-border;
-    font-size: 18px;
     height: 15vh;
     padding: 5px;
     text-align: center;
@@ -259,16 +261,31 @@ main {
     }
 
     i {
-      margin: 10px;;
-
+      opacity: 0;
+      font-size: 50px;
+      margin-top: 30px;
     }
   }
+}
+
+article:hover i {
+  opacity: 1;
+}
+
+.project1 {
+  background-image: url('./Images/project1pic.png');
+  background-size: cover;
+}
+
+.project2 {
+  background-image: url('./Images/morse.png');
+  background-size: cover;
 }
 
 .about {
   display: grid;
   grid-template-rows: 150px 50px 60px 60px 60px 60px;
-  grid-template-columns: 120px 167px;
+  grid-template-columns: 110px 167px;
   margin: 20px;
   column-gap: 10px;
   row-gap: 20px;
@@ -277,7 +294,7 @@ main {
     "frontend frontend frontend"
     "skills skillsp "
     ". . experience"
-    "qualifications qualificationsp .";
+    "education educationp .";
   
   h3 {
     border: $primary-border;
@@ -297,8 +314,8 @@ main {
       grid-area: experience;
     }
 
-    .qualifications {
-      grid-area: qualifications;
+    .education {
+      grid-area: education;
     }
 
     .skillsp {
@@ -313,10 +330,20 @@ main {
       grid-area: experiencep;
     }
 
-    .qualificationsp {
-      grid-area: qualificationsp;
+    .educationp {
+      grid-area: educationp;
     }
   }
+
+  p i {
+    font-size: 30px;
+    pointer-events: none;
+  }
+}
+
+span {
+  display: flex;
+  align-items: center;
 }
 
 #bgc {
@@ -358,13 +385,17 @@ main {
   }
 
   .about {
-    grid-template-columns: 130px 185px;
+    grid-template-columns: 110px 185px;
 
     h3 {
       font-size: 20px;
       padding: 10px;
     }
   }
+}
+
+span img {
+  margin: 6px;
 }
 @media only screen and (min-width: $breakpoint-s-tablet) {
   main section .btn-primary {
@@ -399,7 +430,8 @@ main {
   }
 
   main section h2 {
-    font-size: 42px;
+    font-size: 65px;
+    margin-bottom: 10px;
   }
 
   main section .btn-primary {
@@ -417,7 +449,7 @@ main {
   }
 
   .about {
-    grid-template-columns: 160px 400px;
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
 
     h3 {
       font-size: 25px;
@@ -425,6 +457,11 @@ main {
 
     p {
       font-size: 20px;
+    }
+
+    p i {
+      margin-top: 10px;
+      font-size: 40px;
     }
   }
 }
@@ -450,7 +487,8 @@ main {
   }
 
   .about {
-    grid-template-columns: 180px 450px;
+    grid-template-columns: 220px 500px;
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
 
     h3 {
       font-size: 27px;
@@ -459,17 +497,58 @@ main {
     p {
       font-size: 22px;
     }
+
+    p i {
+      margin-top: 4px;
+      font-size: 50px;
+    }
   }
 
   nav ul {
     font-size: 40px;
   }
 
-  .socia {
+  .social {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: $breakpoint-laptop) {
+
+#bgc {
+  height: 50px;
+  width: 50px;
+}
+
+#pwc {
+  height: 50px;
+  width: 50px;
+}
+
+#fd {
+  height: 50px;
+  width: 50px;
+}
+
+#kip {
+  height: 50px;
+  width: 50px;
+}
+@media only screen and (min-width: $breakpoint-l-laptop) {
+  main section h1 {
+    font-size: 95px;
+  }
+  
+  main section h2 {
+    font-size: 65px;
+  }
+
+  .portfolio {
+    grid-template-rows: 150px 100px 180px;
+  }
+
+  .about {
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
+  }
+  
   main section .btn-primary {
     font-size: 32px;
     padding: 10px;
@@ -488,5 +567,43 @@ main {
 
   .social {
     font-size: 50px;
+  }
+
+  .about {
+    grid-template-columns: 220px 600px;
+    grid-template-rows: 150px 120px 70px 70px 70px 70px;
+
+    h3 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    p i {
+      margin-top: 5px;
+      font-size: 60px;
+    }
+  }
+  
+  #bgc {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #pwc {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #fd {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #kip {
+    height: 55px;
+    width: 55px;
   }
 }
