@@ -270,27 +270,31 @@ span {
   align-items: center;
 }
 
+span img {
+  margin: 1px;
+}
+
 #bgc {
-  height: 39px;
-  width: 39px;
+  height: 30px;
+  width: 30px;
   border-radius: 3px;
 }
 
 #fd {
-  height: 39px;
-  width: 39px;
+  height: 30px;
+  width: 30px;
   border-radius: 3px;
 }
 
 #pwc {
-  height: 39px;
-  width: 39px;
+  height: 30px;
+  width: 30px;
   border-radius: 3px;
 }
 
 #kip {
-  height: 39px;
-  width: 39px;
+  height: 30px;
+  width: 30px;
   border-radius: 3px;
 }
 
@@ -316,11 +320,11 @@ span {
     font-size: 20px;
     padding: 10px;
   }
-}
-span img {
-  margin: 6px;
-}
 
+  span img {
+    margin: 3px;
+  }
+}
 @media only screen and (min-width: 550px) {
   main section .btn-primary {
     font-size: 20px;
@@ -427,27 +431,27 @@ span img {
   .social {
     font-size: 40px;
   }
-}
-#bgc {
-  height: 50px;
-  width: 50px;
-}
 
-#pwc {
-  height: 50px;
-  width: 50px;
-}
+  #bgc {
+    height: 50px;
+    width: 50px;
+  }
 
-#fd {
-  height: 50px;
-  width: 50px;
-}
+  #pwc {
+    height: 50px;
+    width: 50px;
+  }
 
-#kip {
-  height: 50px;
-  width: 50px;
-}
+  #fd {
+    height: 50px;
+    width: 50px;
+  }
 
+  #kip {
+    height: 50px;
+    width: 50px;
+  }
+}
 @media only screen and (min-width: 1440px) {
   main section h1 {
     font-size: 95px;
