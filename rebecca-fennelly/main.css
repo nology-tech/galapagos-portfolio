@@ -11,6 +11,7 @@ body {
 
 header {
   height: 100px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,12 +128,21 @@ main .social {
   color: #16db93;
 }
 
-#facebook {
+#github {
   color: #1d1a2f;
   font-size: 40px;
   text-decoration: none;
 }
-#facebook:hover {
+#github:hover {
+  color: #16db93;
+}
+
+#mail {
+  color: #1d1a2f;
+  font-size: 40px;
+  text-decoration: none;
+}
+#mail:hover {
   color: #16db93;
 }
 
@@ -173,23 +183,29 @@ main .social {
   justify-content: center;
   align-items: center;
 }
+#aboutparent #chevronTwo {
+  font-size: 50px;
+  color: #1d1a2f;
+  position: absolute;
+  top: 1390px;
+  left: 40px;
+  text-decoration: none;
+  z-index: 2;
+}
+#aboutparent #chevronTwo:hover {
+  color: #16db93;
+}
 
 #about {
   background-color: white;
   height: 85vh;
   width: 85vw;
 }
-#about .aboutpara,
-#about h1 {
-  padding: 12px;
-}
 #about .cv {
-  padding-left: 12px;
-  color: #1d1a2f;
-}
-#about .cv a {
   color: #16db93;
   text-decoration: none;
+  font-size: 1em;
+  padding: 0;
 }
 #about .aboutheading {
   color: #1d1a2f;
@@ -201,17 +217,15 @@ main .social {
 }
 #about .aboutpara {
   font-size: 16px;
+  padding: 12px;
   color: #1d1a2f;
 }
 
 .skills-grid {
-  height: 150px;
-  width: 231px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding: 0 70px;
 }
 .skills-grid div i {
   font-size: 40px;
@@ -220,41 +234,104 @@ main .social {
 .skills-grid div i:hover {
   color: #16db93;
 }
-.skills-grid #chevronTwo {
-  font-size: 50px;
-  color: #1d1a2f;
-  float: left;
-  position: absolute;
-  left: 40px;
-  bottom: 50px;
-  text-decoration: none;
-}
-.skills-grid #chevronTwo:hover {
-  color: #16db93;
-}
 
 #projects {
   display: grid;
 }
 
 .projects-grid {
-  margin: 40px;
+  padding: 20px;
+  margin: 15px 40px;
   display: grid;
   gap: 20px;
-}
-
-article {
-  display: flex;
   justify-items: center;
   background: white;
+  width: 85vw;
+  margin: 0 auto;
 }
 
-article div {
+.projectsheading {
+  text-decoration: underline;
+  text-decoration-color: #16db93;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.projects-grid div {
   border: dashed 2px white;
   border-radius: 20px;
   height: 300px;
-  width: 220px;
+  width: 240px;
   background: #1d1a2f;
+}
+
+#contact {
+  width: 85vw;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: white;
+}
+#contact h1 {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #16db93;
+  margin-bottom: 40px;
+}
+#contact .contactarticle {
+  margin-bottom: 40px;
+}
+#contact a {
+  padding-left: 10px;
+  color: #1d1a2f;
+  font-size: 70px;
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+#contact a:hover {
+  color: #16db93;
+}
+#contact #flexcontacticons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact a {
+  padding-left: 10px;
+  color: #1d1a2f;
+  font-size: 70px;
+  text-decoration: none;
+}
+#contact a:hover {
+  color: #16db93;
+}
+
+.totopdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.top {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1d1a2f;
+  letter-spacing: 0.4em;
+}
+.top:hover {
+  color: #16db93;
+}
+
+#chevronUp {
+  font-size: 50px;
+  color: #1d1a2f;
+  text-decoration: none;
+}
+#chevronUp:hover {
+  color: #16db93;
 }
 
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
@@ -264,59 +341,73 @@ article div {
     width: 300px;
   }
 
+  #about {
+    background-color: white;
+    height: 85vh;
+    width: 85vw;
+  }
+  #about .aboutpara {
+    font-size: 26px;
+    padding: 12px;
+  }
+
   #parawrapper {
     padding-top: 90px;
   }
 
   #projects .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
-  /* AFTER MEDIA QUERY FOR  SIZE */
 }
-@media only screen and (min-width: 768px) and (min-width: 991px) {
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-  body header {
+/* AFTER MEDIA QUERY FOR  SIZE */
+@media only screen and (min-width: 991px) {
+  header {
     display: flex;
     float: left;
     height: 100vh;
     width: 200px;
   }
-  body .show {
+
+  .show {
     flex-direction: column;
     width: 80px;
   }
-  body main {
-    width: calc(100% - 200px);
+
+  #parawrapper {
     height: 100vh;
-    float: left;
   }
-  body #parawrapper {
-    width: calc(100% - 200px);
-    height: 100vh;
-    padding-top: 150px;
-  }
-  body #chevron {
+
+  #chevron {
     font-size: 50px;
     color: #1d1a2f;
     float: left;
     position: absolute;
-    left: 500px;
-    bottom: 0;
+    left: 550px;
+    bottom: 150px;
   }
-  body #chevron .bexface {
+
+  .bexface {
     height: auto;
     width: 340px;
   }
-  body #projects .projects-grid {
+
+  #aboutparent {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #projects .projects-grid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
-  body #projects .projects-grid div {
-    width: 340px;
+  #projects .projects-grid div {
+    width: 280px;
+  }
+
+  #sayhi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
