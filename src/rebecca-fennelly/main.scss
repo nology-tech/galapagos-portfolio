@@ -225,6 +225,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   #chevronTwo {
     font-size: 50px;
     color: rgb(29, 26, 47);
@@ -233,6 +234,7 @@ main {
     left: 40px;
     text-decoration: none;
     z-index: 2;
+
     &:hover {
       color: rgb(22, 219, 147);
     }
@@ -247,11 +249,11 @@ main {
 
 
   .cv {
-      color: rgb(22, 219, 147);
-      text-decoration: none; 
-      font-size: 1em;
-      padding: 0px;
-    }
+    color: rgb(22, 219, 147);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0;
+  }
       
   .aboutheading {
     color: rgb(29, 26, 47);
@@ -327,6 +329,7 @@ main {
   margin: 0 auto;
   margin-bottom: 40px;
   background-color: white;
+
   h1 {
     display: block;
     text-align: center;
@@ -340,17 +343,18 @@ main {
     margin-bottom: 40px;
   }
      
-    a {
-      padding-left: 10px;
-      color: rgb(29, 26, 47);
-      font-size: 70px;
-      text-decoration: none;
-      padding-bottom: 40px;
-      &:hover {
-        color: rgb(22, 219, 147);
-      }
-    
+  a {
+    padding-left: 10px;
+    color: rgb(29, 26, 47);
+    font-size: 70px;
+    text-decoration: none;
+    padding-bottom: 40px;
+
+    &:hover {
+      color: rgb(22, 219, 147);
     }
+    
+  }
   
  
   #flexcontacticons {
@@ -364,6 +368,7 @@ main {
     color: rgb(29, 26, 47);
     font-size: 70px;
     text-decoration: none;
+
     &:hover {
       color: rgb(22, 219, 147);
     }
@@ -372,28 +377,32 @@ main {
 }
 
 .totopdiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-  .top {
-    font-size: 12px;
-    text-decoration: none;
-    color: rgb(29, 26, 47);
-    letter-spacing: 0.4em;
-    &:hover {
-      color: rgb(22, 219, 147);
-    }
+
+.top {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(29, 26, 47);
+  letter-spacing: 0.4em;
+
+  &:hover {
+    color: rgb(22, 219, 147);
   }
-  #chevronUp {
-    font-size: 50px;
-    color: rgb(29, 26, 47);
-    text-decoration: none;
-    &:hover {
-      color: rgb(22, 219, 147);
-    }
+}
+
+#chevronUp {
+  font-size: 50px;
+  color: rgb(29, 26, 47);
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
   }
+}
 
 
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
@@ -407,11 +416,12 @@ main {
     background-color: white;
     height: 85vh;
     width: 85vw;
+
     .aboutpara {
       font-size: 26px;
       padding: 12px;
+    }
   }
-}
 
   #parawrapper {
     padding-top: 90px;
@@ -423,85 +433,85 @@ main {
       // gap: 40px;
     }
   }
+}
+  
+// .bexfaceparent {
+//   height: 380px;
+// }
+    
+/* AFTER MEDIA QUERY FOR  SIZE */
+
+@media only screen and (min-width: 991px) {
+
+  // body {
+    
+  //   height: 100vh;
+  //   width: 100vw;
+
+  header {
+
+    height: 150px;
+        
+    // display: flex;
+    // float: left;
+    // // height: 100vh;
+    // width: $desktopwidth;
   }
-  
-  // .bexfaceparent {
-  //   height: 380px;
-  // }
-    
-  /* AFTER MEDIA QUERY FOR  SIZE */
 
-  @media only screen and (min-width: 991px) {
+  .show {
+    flex-direction: column;
+    width: 80px;
+  }
 
-    // body {
-    
-    //   height: 100vh;
-    //   width: 100vw;
+  main {
+    width: calc(100% - #{$desktopwidth});
+    height: 100vh;
+    float: left;
+  }
 
-      header {
+  #parawrapper {
+    // width: calc(100% - #{$desktopwidth});
+    height: 100vh;
 
-        height: 150px;
+  }
+
+  #chevron {
+    font-size: 50px;
+    color: rgb(29, 26, 47);
+    float: left;
+    position: absolute;
+    left: 550px;
+    bottom: 150px;
+  }
         
-        // display: flex;
-        // float: left;
-        // // height: 100vh;
-        // width: $desktopwidth;
-      }
+  .bexface {
+    height: auto;
+    width: 340px;
+  }
 
-      .show {
-        flex-direction: column;
-        width: 80px;
-      }
+  #aboutparent {
+    height: 100vh;
+    width: 100vw;
 
-      main {
-        width: calc(100% - #{$desktopwidth});
-        height: 100vh;
-        float: left;
-      }
-
-      #parawrapper {
-        // width: calc(100% - #{$desktopwidth});
-        height: 100vh;
-
-      }
-
-      #chevron {
-        font-size: 50px;
-        color: rgb(29, 26, 47);
-        float: left;
-        position: absolute;
-        left: 550px;
-        bottom: 150px;
-      }
-        
-      .bexface {
-          height: auto;
-          width: 340px;
-        }
-
-        #aboutparent {
-          height: 100vh;
-          width: 100vw;
-
-      }
+  }
 
 
 
-      #projects {
-        .projects-grid {
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 20px;
-          div {
-            width: 340px;}
-        }
-      }
+  #projects {
+    .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
 
-      #sayhi {
-  
-        display: flex;
-        flex-direction:row;
-        justify-content: space-evenly;
-      }
-
+      div {
+        width: 340px;}
     }
+  }
+
+  #sayhi {
   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+}
