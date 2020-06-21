@@ -121,12 +121,14 @@ main .projects .container .box.order-override {
   order: 0;
 }
 main .projects .container .box#boxOne {
-  background-image: url("../Idea-one/img/box-one.jpg");
-  background-position: cover;
+  background-image: url("../Idea-one/img/box-one-a-copy.png");
+  background-position: center;
+  background-size: repeat;
 }
 main .projects .container .box#boxTwo {
-  background-image: url("../Idea-one/img/box-two.jpg");
-  background-position: cover;
+  background-image: url("../Idea-one/img/box-two.png");
+  background-position: bottom;
+  background-size: cover;
 }
 main .projects .container .box#boxThree {
   background-image: url("../Idea-one/img/box-three.jpg");
@@ -170,7 +172,7 @@ main .cv-and-contact {
 }
 main .cv-and-contact .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -183,10 +185,27 @@ main .cv-and-contact .contact div {
   padding: 20px;
   margin-bottom: 20px;
 }
+main .cv-and-contact .contact div h2 {
+  margin: 0 auto;
+}
+main .cv-and-contact .contact div ul {
+  min-height: 400px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
 main .cv-and-contact .contact div ul li {
+  display: inline-block;
   list-style-type: none;
   padding: 10px;
   font-weight: 700;
+}
+main .cv-and-contact .contact div ul li img {
+  position: relative;
 }
 main .cv-and-contact .contact form {
   display: flex;
@@ -219,21 +238,23 @@ main .cv-and-contact .contact form textarea {
   min-width: 240px;
   padding-top: 10px;
 }
-main .cv-and-contact .icons {
+main .cv-and-contact div.icons {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   font-size: 50px;
+  max-height: 20%;
   margin-top: 10px;
   color: #2b2b2b;
   text-decoration: none;
 }
-main .cv-and-contact .icons a {
+main .cv-and-contact div.icons a {
   display: inline-block;
 }
-main .cv-and-contact .icons a:visited {
+main .cv-and-contact div.icons a:visited {
   color: #2b2b2b;
 }
-main .cv-and-contact .icons a:hover {
+main .cv-and-contact div.icons a:hover {
   transform: scale(1.2);
   transition: 0.4s ease-in-out;
 }
