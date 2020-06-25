@@ -177,13 +177,17 @@ main #projectgrid {
 }
 
 main #projectgrid section {
-  height: 30vh;
-  border: solid 2px #cd5555;
+  height: 200px;
+  width: 300px;
   background-color: #f9ebeb;
-  margin: 3em;
+  margin: 2em;
   font-variant: small-caps;
-  padding: 2em;
   text-align: center;
+}
+
+main #projectgrid section img {
+  height: auto;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
