@@ -137,14 +137,26 @@ main {
     display: grid;
 
     section {
-      height: 30vh;
-      border: solid 2px #cd5555;
+      height: 200px;
+      width: 300px;
+      // border: solid 2px #cd5555;
       background-color: #f9ebeb;
-      margin: 3em;
+      margin: 2em;
       font-variant: small-caps;
-      padding: 2em;
+      // padding: 1em;
       text-align: center;
+
+      img {
+        height: auto;
+        width: 100%;
+        // border: 1px solid #612020;
+      }
+      
+      // #project1 {
+      //   background-color: white;
+      // }
     }
+
     grid-template-areas:
     "project1"
     "project2"
