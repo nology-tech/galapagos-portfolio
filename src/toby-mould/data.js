@@ -10,11 +10,36 @@ export const data = [
     difficult: `Building the styling classes from scratch and keeping the code well-organised.`,
     solution: `I was able to create the template website seen here.`,
     features: [`1. Use of all Sass functionalities Partials, Mix-ins, Functions, variables etc.`, `2. Use of CSS Animations, Grid & Flex concepts.`, `3. Project Portfolio Modals.`, `4. Direct link between GitHub & Netlify Hosting service.`]
-  }
+  },
 
+  {
+    name: 'Gold Plating Website',
+    image: 'https://source.unsplash.com/1600x900/?application,form',
+    live: 'http://LinkLink',
+    github: 'http://LinkLink',
+    overview: 'OverviewOverview',
+    technology: ['HTML', 'SCSS'],
+    role: 'RoleRole',
+    difficult: 'DifficultDifficult',
+    solution: 'SolutionSolution',
+    features: ['feature', 'feature', 'feature']
+  },
+
+  {
+    name: 'Hotel Website',
+    image: 'https://source.unsplash.com/1600x900/?cinema',
+    live: 'http://LinkLink',
+    github: 'http://LinkLink',
+    overview: 'OverviewOverview',
+    technology: ['HTML', 'SCSS'],
+    role: 'RoleRole',
+    difficult: 'DifficultDifficult',
+    solution: 'SolutionSolution',
+    features: ['feature', 'feature', 'feature']
+  }
   // {
-  //   name: 'Gold Plating Website',
-  //   image: './image-2',
+  //   name: 'Hotel Website',
+  //   image: 'https://source.unsplash.com/1600x900/?news',
   //   live: 'http://LinkLink',
   //   github: 'http://LinkLink',
   //   overview: 'OverviewOverview',
@@ -23,11 +48,10 @@ export const data = [
   //   difficult: 'DifficultDifficult',
   //   solution: 'SolutionSolution',
   //   features: ['feature', 'feature', 'feature']
-  // },
-
+  // }
   // {
   //   name: 'Hotel Website',
-  //   image: './image-3',
+  //   image: 'https://source.unsplash.com/1600x900/?gold',
   //   live: 'http://LinkLink',
   //   github: 'http://LinkLink',
   //   overview: 'OverviewOverview',
