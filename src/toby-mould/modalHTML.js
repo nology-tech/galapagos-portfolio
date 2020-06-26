@@ -11,7 +11,7 @@ export const something = projectNumber => {
   const project = data.data[projectNumber];
   // console.log(projects.difficult);
   const modalhtml = `
-  <span class="closeBtn">&times;</span>
+  <span class="close-btn">&times;</span>
   <!-- Modal Content on Project -->
     <article id="project1" class="text-justify">
   
