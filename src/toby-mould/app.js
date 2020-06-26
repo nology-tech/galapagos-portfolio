@@ -1,4 +1,5 @@
 import * as modalhtml from './modalHTML.js';
+import * as data from './data.js';
 
 // 1. Grab Items
 const portfolioGrid = document.querySelector('#portfolio .items');
@@ -6,6 +7,16 @@ const portfolioItems = document.querySelectorAll('#portfolio .item');
 const modalContent = document.querySelector('#simpleModal .modal-content');
 const modalStructure = document.querySelector('#simpleModal');
 console.log(portfolioGrid);
+const projectList = document.querySelector('#portfolio .items');
+// ----------------------------------------------------------------
+
+const buttons = data.data.map((project, index) => {
+  return `
+  <button class="item" value="${index}">
+    <h4>${project.name}</h4>
+  </button>`;
+});
+projectList.innerHTML = buttons.join('');
 
 // 3. Event Handler
 const modalEventHandler = event => {
@@ -13,17 +24,18 @@ const modalEventHandler = event => {
   console.log(`it reached inside Event Handler - ${buttonClicked}`);
 
   switch (buttonClicked) {
-    case '1':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+    case '0':
       modalhtml.something(0);
-    // console.log((modalContent.innerHTML = modalhtml));
-    // break;
-    // case '2':
-    //   return (modalContent.innerHTML = modalhtml);
-    // // break;
-    // case '3':
-    //   return (modalContent.innerHTML = modalhtml);
-    // // break;
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      break;
+    case '1':
+      modalhtml.something(1);
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      break;
+    case '2':
+      modalhtml.something(2);
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      break;
     // case '4':
     //   return (modalContent.innerHTML = modalhtml);
     // // break;
