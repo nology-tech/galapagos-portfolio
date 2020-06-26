@@ -4,9 +4,9 @@
 //---------------------------------
 //
 
-%modalBtn {
+%modal-btn {
   padding: 1em 2em;
-  color: #fff;
+  color: white;
   border: 0;
   border-radius: 15px;
   min-height: 275px;
@@ -39,30 +39,30 @@
 //-----------MODAL BUTTON-----------//
 //---------------------------------
 //
-// #modalBtn {
+// #modal-btn {
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
 
 //   &-1 {
-//     @extend %modalBtn;
+//     @extend %modal-btn;
 //     background: $project1Image no-repeat center center/cover;
 //   }
 //   &-2 {
-//     @extend %modalBtn;
+//     @extend %modal-btn;
 //     background: $project2Image no-repeat center center/cover;
 //   }
 //   &-3 {
-//     @extend %modalBtn;
+//     @extend %modal-btn;
 //     background: $project3Image no-repeat center center/cover;
 //   }
 //   &-4 {
-//     @extend %modalBtn;
+//     @extend %modal-btn;
 //     background: $project4Image no-repeat center center/cover;
 //     margin-top: 25px;
 //   }
 //   &-5 {
-//     @extend %modalBtn;
+//     @extend %modal-btn;
 //     background: $project5Image no-repeat center center/cover;
 //     margin-top: 25px;
 //   }
@@ -104,7 +104,7 @@
     animation-name: modalopen;
     animation-duration: 1s;
 
-    .closeBtn {
+    .close-btn {
       color: #ccc;
       // float: right;
       font-size: 30px;
@@ -127,6 +127,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
