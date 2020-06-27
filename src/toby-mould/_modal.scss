@@ -1,11 +1,11 @@
 @import 'variables';
-$sectionBackgroundColours: rgba(0, 0, 0, 0.1);
+$section-background-colours: rgba(0, 0, 0, 0.1);
 // //
 // //------------------------------------
 // //--------MIX-INS--------//
 // //------------------------------------
 //
-%marginPadding {
+%margin-padding {
   margin: 10px;
   padding: 15px;
   border-radius: 10px;
@@ -15,11 +15,12 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
 //   font-size: 1rem;
 //   line-height: 1.5rem;
 // }
-%tileImage {
+%tile-image {
   height: 150px;
   min-width: 250px;
   border-radius: 15px;
   cursor: pointer;
+
   h4 {
     display: flex;
     align-items: center;
@@ -86,24 +87,28 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
 
       #summary {
         // background: rgba(255, 0, 0, 0.1);
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
 
         .image {
-          @extend %tileImage;
+          @extend %tile-image;
 
           &-0 {
             background: $project1Image no-repeat center center/cover;
           }
+
           &-1 {
             background: $project2Image no-repeat center center/cover;
           }
+
           &-2 {
             background: $project3Image no-repeat center center/cover;
           }
+
           &-3 {
             background: $project4Image no-repeat center center/cover;
           }
+
           &-4 {
             background: $project5Image no-repeat center center/cover;
           }
@@ -117,6 +122,7 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
 
           i {
             margin: 0 auto 5px auto;
+
             a {
               font-size: 0.5rem;
               padding: 5px 10px;
@@ -127,8 +133,8 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
       }
 
       #tech {
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
         // @extend %text-adjust;
 
         // background: rgba(0, 255, 0, 0.1);
@@ -142,11 +148,11 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
             flex-direction: column;
             // background: green;
             li {
-              padding: 5px 0px;
+              padding: 5px 0;
               // background: blue;
               i {
                 margin-bottom: 5px;
-                padding: 0px;
+                padding: 0;
                 // background: red;
               }
             }
@@ -162,38 +168,43 @@ $sectionBackgroundColours: rgba(0, 0, 0, 0.1);
       // background: red;
 
       #role {
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
         // p {
         //   @extend %text-adjust;
         // }
         // max-height: 180px;
         // background: rgba(0, 0, 255, 0.1);
       }
+
       #diff {
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
         // p {
         //   @extend %text-adjust;
         // }
         // background: rgba(255, 255, 0, 0.1);
       }
+
       #sol {
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
         // p {
         //   @extend %text-adjust;
         // }
         // background: rgba(255, 0, 255, 0.1);
       }
+
       #feat {
-        @extend %marginPadding;
-        background: $sectionBackgroundColours;
+        @extend %margin-padding;
+        background: $section-background-colours;
         // @extend %text-adjust;
         // background: rgba(0, 255, 255, 0.1);
+
         ul {
           display: flex;
           flex-direction: column;
+
           li {
             margin: 0px;
             padding: 0px;
