@@ -1,4 +1,4 @@
-import * as modalFunctionFile from './modalHTML.js';
+import * as modalOpenFuncFile from './modalHTML.js';
 import * as dataFile from './data.js';
 
 // 1. Grab Items
@@ -27,15 +27,15 @@ const modalOpen = event => {
   switch (buttonClicked) {
     case '0':
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
-      modalFunctionFile.insertProjectModalFunction(0);
+      modalOpenFuncFile.insertProjectModalFunction(0);
       break;
     case '1':
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
-      modalFunctionFile.insertProjectModalFunction(1);
+      modalOpenFuncFile.insertProjectModalFunction(1);
       break;
     case '2':
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
-      modalFunctionFile.insertProjectModalFunction(2);
+      modalOpenFuncFile.insertProjectModalFunction(2);
       break;
   }
 

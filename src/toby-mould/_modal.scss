@@ -1,5 +1,5 @@
 @import 'variables';
-
+$sectionBackgroundColours: rgba(0, 0, 0, 0.1);
 // //
 // //------------------------------------
 // //--------MIX-INS--------//
@@ -10,13 +10,11 @@
   padding: 15px;
   border-radius: 10px;
 }
-%background-colour {
-  background: rgba(0, 0, 0, 0.05);
-}
-%text-adjust {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
+
+// %text-adjust {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+// }
 %tileImage {
   height: 150px;
   min-width: 250px;
@@ -63,49 +61,54 @@
 //
 /* Now to deal with the content! */
 .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+
   article {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background: rgba(255, 255, 255, 0.9);
-    min-width: 30vw;
+    min-width: 20vw;
     max-height: 90vh;
     border-radius: 10px;
     box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
-    background: purple;
+    // background: purple;
 
     #column-1 {
       display: flex;
       flex-direction: column;
-      p {
-        @extend %text-adjust;
-      }
-      background: yellow;
+      justify-content: center;
+      // background: yellow;
 
       #summary {
         // background: rgba(255, 0, 0, 0.1);
         @extend %marginPadding;
-        @extend %background-colour;
+        background: $sectionBackgroundColours;
 
-        #project1Image {
+        .image {
           @extend %tileImage;
-          background: $project1Image no-repeat center center/cover;
+
+          &-0 {
+            background: $project1Image no-repeat center center/cover;
+          }
+          &-1 {
+            background: $project2Image no-repeat center center/cover;
+          }
+          &-2 {
+            background: $project3Image no-repeat center center/cover;
+          }
+          &-3 {
+            background: $project4Image no-repeat center center/cover;
+          }
+          &-4 {
+            background: $project5Image no-repeat center center/cover;
+          }
         }
-        #project2Image {
-          @extend %tileImage;
-          background: $project2Image no-repeat center center/cover;
-        }
-        #project3Image {
-          @extend %tileImage;
-          background: $project3Image no-repeat center center/cover;
-        }
-        #project4Image {
-          @extend %tileImage;
-          background: $project4Image no-repeat center center/cover;
-        }
-        #project5Image {
-          @extend %tileImage;
-          background: $project5Image no-repeat center center/cover;
-        }
+
         .buttons {
           display: flex;
           align-items: center;
@@ -125,8 +128,8 @@
 
       #tech {
         @extend %marginPadding;
-        @extend %background-colour;
-        @extend %text-adjust;
+        background: $sectionBackgroundColours;
+        // @extend %text-adjust;
 
         // background: rgba(0, 255, 0, 0.1);
 
@@ -155,37 +158,38 @@
     #column-2 {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       // background: red;
 
       #role {
         @extend %marginPadding;
-        @extend %background-colour;
-        p {
-          @extend %text-adjust;
-        }
+        background: $sectionBackgroundColours;
+        // p {
+        //   @extend %text-adjust;
+        // }
         // max-height: 180px;
         // background: rgba(0, 0, 255, 0.1);
       }
       #diff {
         @extend %marginPadding;
-        @extend %background-colour;
-        p {
-          @extend %text-adjust;
-        }
+        background: $sectionBackgroundColours;
+        // p {
+        //   @extend %text-adjust;
+        // }
         // background: rgba(255, 255, 0, 0.1);
       }
       #sol {
         @extend %marginPadding;
-        @extend %background-colour;
-        p {
-          @extend %text-adjust;
-        }
+        background: $sectionBackgroundColours;
+        // p {
+        //   @extend %text-adjust;
+        // }
         // background: rgba(255, 0, 255, 0.1);
       }
       #feat {
         @extend %marginPadding;
-        @extend %background-colour;
-        @extend %text-adjust;
+        background: $sectionBackgroundColours;
+        // @extend %text-adjust;
         // background: rgba(0, 255, 255, 0.1);
         ul {
           display: flex;
@@ -214,72 +218,3 @@
     opacity: 1;
   }
 }
-
-//
-//---------------------------------
-//-----------MIX-IN's-----------//
-//---------------------------------
-//
-
-// %modal-btn {
-//   padding: 1em 2em;
-//   color: white;
-//   border: 0;
-//   border-radius: 15px;
-//   min-height: 275px;
-//   max-height: 276px;
-//   width: 400px;
-
-//   h3 {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: relative;
-//     top: -11px;
-//     left: -22px;
-//     min-height: 276px;
-//     width: 400px;
-//     border-radius: 15px;
-//     background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
-//     transition: all 0.5s ease-out;
-//     cursor: pointer;
-
-//     &:hover {
-//       border: 1px solid orange;
-//       background: rgba(0, 0, 0, 0.9);
-//     }
-//   }
-// }
-//
-//---------------------------------
-//-----------MODAL BUTTON-----------//
-//---------------------------------
-//
-// #modal-btn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   &-1 {
-//     @extend %modal-btn;
-//     background: $project1Image no-repeat center center/cover;
-//   }
-//   &-2 {
-//     @extend %modal-btn;
-//     background: $project2Image no-repeat center center/cover;
-//   }
-//   &-3 {
-//     @extend %modal-btn;
-//     background: $project3Image no-repeat center center/cover;
-//   }
-//   &-4 {
-//     @extend %modal-btn;
-//     background: $project4Image no-repeat center center/cover;
-//     margin-top: 25px;
-//   }
-//   &-5 {
-//     @extend %modal-btn;
-//     background: $project5Image no-repeat center center/cover;
-//     margin-top: 25px;
-//   }
-// }
