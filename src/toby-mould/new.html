@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p>
+          I have worked on a number of small projects. Some of these include the following:
+        </p>
+        <section class="items"></section>
+        <div id="simpleModal" class="modal">
+          <div class="modal-content">
+            <!-- Modal Content on Project -->
+            <article id="project1" class="item text-justify">
+              <!-- Column-1 -->
+              <div id="column-1">
+                <!-- Summary Section -->
+                <div id="summary">
+                  <h3>${project.name}</h3>
+                  <div id="project1Image">
+                    <h4>Live Preview</h4>
+                  </div>
+                  <div class="buttons">
+                    <i class="fas fa-desktop"><a class="btn" href="${project.live}" target="_blank">Live Preview</a></i>
+                    <i class="fas fa-code-branch"><a class="btn" href="${project.github}" target="_blank">Source Private</a></i>
+                  </div>
+                  <p>
+                    ${project.overview}
+                  </p>
+                </div>
+
+                <!-- Technology Section -->
+                <div id="tech">
+                  <h4>Technologies Used</h4>
+                  <div class="table">
+                    <ul class="fa-ul">
+                      ${project.technology}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2 -->
+              <div id="column-2">
+                <!-- Role Content -->
+                <div id="role">
+                  <h4>My Role</h4>
+                  <p>
+                    ${project.role}
+                  </p>
+                </div>
+
+                <!-- Difficulties Content -->
+                <div id="diff">
+                  <h4>Project Difficulties</h4>
+                  <p>
+                    ${project.difficult}
+                  </p>
+                </div>
+
+                <!-- Solution Content -->
+                <div id="sol">
+                  <h4>My Solution</h4>
+                  <p>
+                    ${project.solution}
+                  </p>
+                </div>
+
+                <!-- Notable Features Content -->
+                <div id="feat">
+                  <h4>Notable Features</h4>
+                  <ul>
+                    ${project.features}
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
