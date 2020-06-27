@@ -1,19 +1,15 @@
-import * as data from './data.js';
+import * as dataFile from './data.js';
 
-const modalContent = document.querySelector('#simpleModal .modal-content');
-const modalStructure = document.querySelector('#simpleModal');
-
-// let modalhtml =
-
-export const something = projectNumber => {
+//STEP 3 - USING THE PROJECT BUTTON NUMBER, RETRIEVE THE PROJECTS DATA, INPUT IT INTO THE MODAL CONTENT TEMPLATE 'modalhtml' AND INSERT IT INTO PAGE.
+export const insertProjectModalFunction = projectNumber => {
   console.log(`It Reached inside the SOMETHING FUNCTION`);
   // console.log(data);
-  const project = data.data[projectNumber];
+  const project = dataFile.data[projectNumber];
   // console.log(projects.difficult);
   const modalhtml = `
-  <span class="close-btn">&times;</span>
+  <div class="modal-content">
   <!-- Modal Content on Project -->
-    <article id="project1" class="text-justify">
+    <article class="text-justify">
   
     <!-- Column-1 -->
       <div id="column-1">
@@ -93,14 +89,10 @@ export const something = projectNumber => {
           </ul>
         </div>
       </div>
-    </article>`;
+    </article>
+    </div>`;
   //
-  modalContent.innerHTML = modalhtml;
-  console.log(modalContent);
-  // modalStructure.style.display = 'block';
-
-  // projects.forEach(project => {
-  //   //
-  //   // console.log('hello');
-  // });
+  console.log(document.querySelector('#simpleModal'));
+  document.querySelector('#simpleModal').innerHTML = modalhtml;
+  document.querySelector('#simpleModal').style.display = 'block';
 };
