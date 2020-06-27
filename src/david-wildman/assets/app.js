@@ -20,22 +20,24 @@ const contactButton = document.querySelector('#contact-button');
 
 
 const mainMenu = () => {
-  enterButton.style.backgroundImage = "url('./assets/images/downwardsbackgroundmingblue.gif')";
-  enterButton.style.borderColor = "#8ea8c3"
-  enterButton.style.color = "#8ea8c3"
+  enterButton.classList.remove('fly-in');
+  enterButton.classList.add('fly-out');
   setTimeout(() => {
     console.log(landingPage.classList);
     landingPage.classList.remove('on');
     homePage.classList.add('on');
-  }, 2000);;
+  }, 5000);
   headerTitleContainer.classList.toggle('landing-page-effect');
   headerTitleOne.classList.toggle('landing-page-effect');
   headerTitleTwo.classList.toggle('landing-page-effect');
 };
 
 // navButtons.addEventListener('click', foldAway);
+
+
 enterButton.addEventListener('click', mainMenu);
-headerTitleContainer.addEventListener('click', mainMenu);
+
+headerTitleContainer.addEventListener('none', mainMenu);
 // bioButton.addEventListener('click', foldAway);
 // portfolioButton.addEventListener('click', foldAway);
 // contactButton.addEventListener('click', foldAway);
