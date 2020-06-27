@@ -1,3 +1,7 @@
+const playAudio = (audioSource) => {
+  let audio = new Audio(audioSource);
+  audio.play();
+};
 const enterButton = document.querySelector('#enter-button');
 const landingPage = document.querySelector('.landing.page');
 const homePage = document.querySelector('.home.page');
