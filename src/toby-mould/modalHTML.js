@@ -3,9 +3,7 @@ import * as dataFile from './data.js';
 //STEP 3 - USING THE PROJECT BUTTON NUMBER, RETRIEVE THE PROJECTS DATA, INPUT IT INTO THE MODAL CONTENT TEMPLATE 'modalhtml' AND INSERT IT INTO PAGE.
 export const insertProjectModalFunction = projectNumber => {
   console.log(`It Reached inside the SOMETHING FUNCTION`);
-  // console.log(data);
   const project = dataFile.data[projectNumber];
-  // console.log(projects.difficult);
   const modalhtml = `
   <div class="modal-content">
   <!-- Modal Content on Project -->
@@ -17,7 +15,7 @@ export const insertProjectModalFunction = projectNumber => {
         <!-- Summary Section -->
         <div id="summary">
           <h3>${project.name}</h3>
-          <div id="project1Image">
+          <div class="image image-${projectNumber}">
             <h4>Live Preview</h4>
           </div>
           <div class="buttons">
@@ -48,7 +46,7 @@ export const insertProjectModalFunction = projectNumber => {
           <h4>Technologies Used</h4>
           <div class="table">
             <ul class="fa-ul">
-              ${project.technology}
+              ${project.technology.join('')}
             </ul>
           </div>
         </div>
@@ -85,14 +83,12 @@ export const insertProjectModalFunction = projectNumber => {
         <div id="feat">
           <h4>Notable Features</h4>
           <ul>
-          ${project.features}
+          ${project.features.join('')}
           </ul>
         </div>
       </div>
     </article>
     </div>`;
-  //
-  console.log(document.querySelector('#simpleModal'));
   document.querySelector('#simpleModal').innerHTML = modalhtml;
   document.querySelector('#simpleModal').style.display = 'block';
 };
