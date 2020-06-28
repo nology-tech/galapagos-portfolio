@@ -1,12 +1,8 @@
 @import "colors";
 @import "fonts";
+@import "animations";
 
 /*---------- CSS Reset ----------*/
-
-aside {
-  height: 1px;
-  display: none;
-}
 
 * {
   margin: 0;
@@ -25,47 +21,16 @@ body {
   max-width: 100vw;
   font-size: 16px;
   background-color: $xiketic;
-  color: $xiketic;
 }
 
-/*---------- General page styling----------*/
-
-.page {
-  width: 100%;
-  height: 100vh;
-  border-bottom: 1px double $cadet-grey;
-  color: $queen-blue;
-}
-
-.title {
-  height: 20%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  outline-color: transparent;
-}
-
-h2 {
-  width: 80%;
-  padding: 2vmin;
-  text-align: center;
-  line-height: 100%;
-  height: max-content;
-  color: $xiketic;
-  text-shadow: 0 0 5px $cadet-grey;
-  font-size: 1em;
-  border-bottom: 2px solid $cadet-grey;
-}
-
-/*----------Landing page style----------*/
+/*----------Landing page styles ----------*/
 
 .landing.page {
   border: unset;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 #enter-button {
@@ -74,181 +39,247 @@ h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
-@keyframes flyin {
-  from {
-    filter: blur(8px);
-    transform: scale(2);
-    opacity: 0;
-  }
-  to {
-    filter: blur(0);
-    transform: scale(1);
-    opacity: 1;
-  }
+h6:hover,
+#enter-button:hover,
+#bio-button:hover,
+#portfolio-button:hover,
+#contact-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
-@keyframes flyout {
-  from {
-    filter: blur(0);
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    filter: blur(8px);
-    transform: scale(2);
-    opacity: 0;
-  }
-}
+/*---------- Main content pages styling----------*/
 
-.fly-in {
-  animation: flyin 1.5s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
-  border: 1px solid $fire-opal;
-  color: $fire-opal;
-  background-image: url("./assets/images/downwardsbackgroundfireopal.gif");
-  opacity: 1;
-}
-
-.fly-out {
-  color: #8ea8c3;
-  border: 1px solid #8ea8c3;
-  animation: flyout 1.5s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
-  opacity: 0;
-  background-image: url("./assets/images/downwardsbackgroundmingblue.gif");
-}
-/*----------Header and navbar styles----------*/
-
-section.home.page {
-  font-family: sfalienencsolid, sans-serif;
-  transform-origin: top;
-  overflow: hidden;
-
-  .header-title {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 40%;
-    transition: height 1.5s ease-in;
-
-    .title-one {
-      background-image: url("./assets/images/downwardsbackgroundslateblue.gif");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: #7605f599;
-      height: max-content;
-      margin: 2% auto;
-      font-size: 3em;
-      line-height: 1.2em;
-      transition: padding 1.5s ease-in, color 2s ease-in;
-    }
-
-    .title-two {
-      height: max-content;
-      margin: 0 auto;
-      font-size: 2em;
-      line-height: 1em;
-      transition: line-height 1s ease-in, color 2s ease-in;
-    }
-  }
-
-  nav {
-    width: 100%;
-    height: 60%;
-
-    ul {
-      width: 100%;
-      height: 80%;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      letter-spacing: initial;
-
-      li {
-        width: 100%;
-        height: max-content;
-        line-height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-}
-
-/*---------- ----------*/
-
-/*---------- Specific section stylings. Sections take up one viewport height.
-For very small devices sections take up two heights. ---------- */
-
-section {
+.page {
   font-family: "sfalienencsolid", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+nav.fixed {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  width: 100%;
+  color: $fire-opal;
+  background-color: #0b0014;
+
+  ul {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 2px solid $cadet-grey;
+
+    li {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        text-align: center;
+        height: max-content;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*---------- Specific section stylings. Sections take up one viewport height.
+For very small devices sections take up two heights. ---------- */
+
+#bio,
+#portfolio,
+#contact {
+  font-family: "sfalienencsolid", sans-serif;
+
+  .title {
+    height: max-content;
+    margin: 12vh 10% 10%;
+
+    h2 {
+      color: $cultured;
+      text-shadow: 0 0 50px $cultured;
+      font-size: 2em;
+      line-height: 100%;
+    }
+  }
 
   article {
-    font-family: consolas, Arial, Helvetica, sans-serif;
-    height: 60%;
+    font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
+    height: max-content;
     width: 75%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // align-items: center;
 
     div {
       width: 100%;
 
       h3 {
-        color: $dark-byzantium;
+        color: $fire-opal;
+        font-size: 1.5em;
+        text-align: left;
+        width: 100%;
+        padding: 0% 0% 5%;
+      }
+
+      h4 {
+        color: $cadet-grey;
+        font-size: 1.2em;
+        text-align: left;
+        width: 100%;
+        padding: 0% 0% 2%;
+      }
+
+      h5 {
+        color: $cadet-grey;
         font-size: 1em;
         text-align: left;
         width: 100%;
         padding: 0% 0% 2%;
       }
 
-      h4 {
-        font-size: 0.5em;
-        text-align: left;
-        width: 100%;
+      h6 {
+        color: $slate-blue;
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 0.9em;
+        text-align: justify;
+        width: max-content;
         padding: 0% 0% 2%;
       }
 
       p {
-        color: $onyx;
+        color: $cultured;
         text-align: left;
         width: 100%;
-        font-size: 0.5em;
-        padding: 0% 0% 3%;
+        font-size: 1em;
+        padding: 0% 0% 5%;
       }
     }
-  }
 
-  .caption {
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+    ul {
+      list-style: square inside;
+      color: $cadet-grey;
+      padding: 0% 0% 5%;
+
+      li {
+        font-size: 0.7em;
+      }
+    }
+
+    .caption {
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
 
+/*---------- Homepage styles----------*/
+
+#home {
+  height: 100vh;
+  font-family: sfalienencsolid, sans-serif;
+  transform-origin: top;
+
+  .header-title {
+    margin: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+    opacity: 0;
+    transition: opacity 2s ease;
+
+    .title-one {
+      color: $cultured;
+      text-shadow: 0 0 50px $cultured;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+      height: max-content;
+      margin: 1% auto;
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    .title-two {
+      color: $cadet-grey;
+      text-shadow: 0 0 50px $cadet-grey;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+      height: max-content;
+      margin: 0 auto;
+      font-size: 2em;
+      line-height: 1em;
+    }
+  }
+
+  nav {
+    list-style: none;
+    width: 100%;
+    height: 60%;
+
+    ul {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: initial;
+      border: unset;
+
+      li {
+        border-bottom: 1px solid $cadet-grey;
+        font-size: 1.5em;
+        width: 60%;
+        height: max-content;
+        line-height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        * {
+          border: unset;
+        }
+      }
+    }
+  }
+}
+
+/*---------- Footer styles ----------*/
+
 footer {
+  display: absolute;
+  position: fixed;
+  bottom: -12vh;
+  left: 0;
   color: $cadet-grey;
   height: 12vh;
+  width: 100%;
   background-color: #0b0014;
   border-top: 1px double $cadet-grey;
   border-radius: 2em;
@@ -259,7 +290,6 @@ footer {
 
     ul {
       height: 100%;
-      list-style: none;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
@@ -372,24 +402,33 @@ footer {
 
 /*---------- Selectors for JavaScript functions ----------*/
 
-.header-title.landing-page-effect {
-  color: transparent;
-  height: 100%;
-  transition: color 2s ease-in, height 1.5s ease-in;
-
-  .title-one {
-    color: transparent;
-    padding-top: 30vh;
-    transition: padding 1.5s ease-in, color 2s ease-in;
-  }
-
-  .title-two {
-    color: transparent;
-    line-height: 3em;
-    transition: line-height 1.5s ease-in, color 1s ease-in;
-  }
-}
-
 section.page:not(.on) {
   display: none;
+}
+
+.cascade-in {
+  animation: cascade-in cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 1;
+  color: $fire-opal;
+}
+
+.cascade-out {
+  animation: cascade-out cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 0;
+}
+
+.fly-in {
+  animation: flyin 1s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  border: 1px solid $fire-opal;
+  color: $fire-opal;
+  background-image: url("./assets/images/downwardsbackgroundfireopal.gif");
+  opacity: 1;
+}
+
+.fly-out {
+  color: #8ea8c3;
+  border: 1px solid #8ea8c3;
+  animation: flyout 0.75s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 0;
+  background-image: url("./assets/images/downwardsbackgroundmingblue.gif");
 }
