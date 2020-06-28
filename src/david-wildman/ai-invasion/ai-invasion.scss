@@ -23,7 +23,7 @@ header {
     width: 100%;
     background-color: inhert;
     font-size: 3vmin;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: whitesmoke;
   }
 }
@@ -35,10 +35,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
   section {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
     position: relative;
     height: 90%;
@@ -52,7 +52,7 @@ main {
       position: absolute;
       width: max-content;
       height: max-content;
-      padding: 0 5% 0 5%;
+      padding: 0 5%;
       color: rgb(255, 115, 0);
       transition: all 5s ease 5s;
       font-size: unset;
@@ -77,7 +77,7 @@ footer {
     width: 100%;
     background-color: inherit;
     font-size: 5vmin;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: whitesmoke;
   }
 
