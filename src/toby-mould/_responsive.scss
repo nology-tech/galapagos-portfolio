@@ -26,9 +26,9 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
+    // p {
+    //   text-align: center;
+    // }
 
     .items {
       grid-template-columns: 1fr 1fr;
@@ -84,10 +84,6 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
-
     .items {
       grid-template-columns: 1fr 1fr 1fr;
 
@@ -140,10 +136,6 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
-
     .items {
       grid-template-columns: 1fr 1fr 1fr;
 
