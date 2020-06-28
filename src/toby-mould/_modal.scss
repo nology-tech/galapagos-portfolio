@@ -94,23 +94,23 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           @extend %tile-image;
 
           &-0 {
-            background: $project1Image no-repeat center center/cover;
+            background: $project1-image no-repeat center center/cover;
           }
 
           &-1 {
-            background: $project2Image no-repeat center center/cover;
+            background: $project2-image no-repeat center center/cover;
           }
 
           &-2 {
-            background: $project3Image no-repeat center center/cover;
+            background: $project3-image no-repeat center center/cover;
           }
 
           &-3 {
-            background: $project4Image no-repeat center center/cover;
+            background: $project4-image no-repeat center center/cover;
           }
 
           &-4 {
-            background: $project5Image no-repeat center center/cover;
+            background: $project5-image no-repeat center center/cover;
           }
         }
 
@@ -121,7 +121,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           // background: red;
 
           i {
-            margin: 0 auto 5px auto;
+            margin: 0 auto 5px;
 
             a {
               font-size: 0.5rem;
@@ -206,8 +206,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           flex-direction: column;
 
           li {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
           }
         }
       }
