@@ -13,8 +13,8 @@ $breakpoint-s-tablet: 550px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-l-laptop: 1440px;
-$about-tn-height: 39px;
-$about-tn-width: 39px;
+$about-tn-height: 30px;
+$about-tn-width: 30px;
 
 * {
   margin: 0;
@@ -346,6 +346,10 @@ span {
   align-items: center;
 }
 
+span img {
+  margin: 1px;
+}
+
 #bgc {
   height: $about-tn-height;
   width: $about-tn-width;
@@ -392,10 +396,10 @@ span {
       padding: 10px;
     }
   }
-}
 
-span img {
-  margin: 6px;
+  span img {
+    margin: 3px;
+  }
 }
 @media only screen and (min-width: $breakpoint-s-tablet) {
   main section .btn-primary {
@@ -511,26 +515,26 @@ span img {
   .social {
     font-size: 40px;
   }
-}
 
-#bgc {
-  height: 50px;
-  width: 50px;
-}
+  #bgc {
+    height: 50px;
+    width: 50px;
+  }
 
-#pwc {
-  height: 50px;
-  width: 50px;
-}
+  #pwc {
+    height: 50px;
+    width: 50px;
+  }
 
-#fd {
-  height: 50px;
-  width: 50px;
-}
+  #fd {
+    height: 50px;
+    width: 50px;
+  }
 
-#kip {
-  height: 50px;
-  width: 50px;
+  #kip {
+    height: 50px;
+    width: 50px;
+  }
 }
 @media only screen and (min-width: $breakpoint-l-laptop) {
   main section h1 {
