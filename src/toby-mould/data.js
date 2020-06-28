@@ -5,11 +5,11 @@ export const data = [
     live: 'https://amazing-raman-bf7426.netlify.com/',
     github: 'https://github.com/tobymould/portfolio',
     overview: `The website you are currently previewing is hosted on <span>Netlify</span> and is an ongoing work-in-progress.`,
-    technology: ['<i>HTML</i>', '<i>SCSS</i>', '<i>JavaScript</i>'],
+    technology: ['<li>HTML</li>', '<li>SCSS</li>', '<li>JavaScript</li>'],
     role: `I created this website from scratch without frameworks. As the owner of the website, I was responsible for the build. The aim was to build a website with only vanilla code.`,
     difficult: `Building the styling classes from scratch and keeping the code well-organised.`,
     solution: `I was able to create the template website seen here.`,
-    features: [`1. Use of all Sass functionalities Partials, Mix-ins, Functions, variables etc.`, `2. Use of CSS Animations, Grid & Flex concepts.`, `3. Project Portfolio Modals.`, `4. Direct link between GitHub & Netlify Hosting service.`]
+    features: [`<li>1. Use of all Sass functionalities Partials, Mix-ins, Functions, variables etc.</li>`, `<li>2. Use of CSS Animations, Grid & Flex concepts.</li>`, `<li>3. Project Portfolio Modals.</li>`, `<li>4. Direct link between GitHub & Netlify Hosting service.</li>`]
   },
 
   {
