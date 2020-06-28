@@ -1,3 +1,149 @@
+.modal-content article #column-2 #feat, .modal-content article #column-2 #sol, .modal-content article #column-2 #diff, .modal-content article #column-2 #role, .modal-content article #column-1 #tech, .modal-content article #column-1 #summary {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.modal-content article #column-1 #summary .image {
+  height: 150px;
+  min-width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.modal-content article #column-1 #summary .image h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+  transition: all 0.5s ease-out;
+  color: set-h4-color(#f4f4f4);
+}
+.modal-content article #column-1 #summary .image h4:hover {
+  border: 1px solid orange;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal {
+  /* This is the class for the dark background around the modal. */
+  display: none;
+  /*This makes the modal hide until button click*/
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Now to deal with the content! */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+.modal-content article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: rgba(255, 255, 255, 0.9);
+  min-width: 20vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+}
+.modal-content article #column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-content article #column-1 #summary {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-1 #summary .image-0 {
+  background: url("https://source.unsplash.com/1600x900/?portfolio,website") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-1 {
+  background: url("https://source.unsplash.com/1600x900/?application,form") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-2 {
+  background: url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-3 {
+  background: url("https://source.unsplash.com/1600x900/?news") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-4 {
+  background: url("https://source.unsplash.com/1600x900/?gold") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content article #column-1 #summary .buttons i {
+  margin: 0 auto 5px;
+}
+.modal-content article #column-1 #summary .buttons i a {
+  font-size: 0.5rem;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+.modal-content article #column-1 #tech {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-1 #tech .table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.modal-content article #column-1 #tech .table ul {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content article #column-1 #tech .table ul li {
+  padding: 5px 0;
+}
+.modal-content article #column-1 #tech .table ul li i {
+  margin-bottom: 5px;
+  padding: 0;
+}
+.modal-content article #column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-content article #column-2 #role {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-2 #diff {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-2 #sol {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-2 #feat {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-content article #column-2 #feat ul {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content article #column-2 #feat ul li {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -250,9 +396,6 @@ body a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #portfolio p {
-    text-align: center;
-  }
   #portfolio .items {
     grid-template-columns: 1fr 1fr;
   }
@@ -289,9 +432,6 @@ body a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #portfolio p {
-    text-align: center;
-  }
   #portfolio .items {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -328,9 +468,6 @@ body a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #portfolio p {
-    text-align: center;
-  }
   #portfolio .items {
     grid-template-columns: 1fr 1fr 1fr;
   }

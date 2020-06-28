@@ -1,19 +1,13 @@
-import * as data from './data.js';
+import * as dataFile from './data.js';
 
-const modalContent = document.querySelector('#simpleModal .modal-content');
-const modalStructure = document.querySelector('#simpleModal');
-
-// let modalhtml =
-
-export const something = projectNumber => {
+//STEP 3 - USING THE PROJECT BUTTON NUMBER, RETRIEVE THE PROJECTS DATA, INPUT IT INTO THE MODAL CONTENT TEMPLATE 'modalhtml' AND INSERT IT INTO PAGE.
+export const insertProjectModalFunction = projectNumber => {
   console.log(`It Reached inside the SOMETHING FUNCTION`);
-  // console.log(data);
-  const project = data.data[projectNumber];
-  // console.log(projects.difficult);
+  const project = dataFile.data[projectNumber];
   const modalhtml = `
-  <span class="close-btn">&times;</span>
+  <div class="modal-content">
   <!-- Modal Content on Project -->
-    <article id="project1" class="text-justify">
+    <article class="text-justify">
   
     <!-- Column-1 -->
       <div id="column-1">
@@ -21,7 +15,7 @@ export const something = projectNumber => {
         <!-- Summary Section -->
         <div id="summary">
           <h3>${project.name}</h3>
-          <div id="project1Image">
+          <div class="image image-${projectNumber}">
             <h4>Live Preview</h4>
           </div>
           <div class="buttons">
@@ -52,7 +46,7 @@ export const something = projectNumber => {
           <h4>Technologies Used</h4>
           <div class="table">
             <ul class="fa-ul">
-              ${project.technology}
+              ${project.technology.join('')}
             </ul>
           </div>
         </div>
@@ -89,18 +83,12 @@ export const something = projectNumber => {
         <div id="feat">
           <h4>Notable Features</h4>
           <ul>
-          ${project.features}
+          ${project.features.join('')}
           </ul>
         </div>
       </div>
-    </article>`;
-  //
-  modalContent.innerHTML = modalhtml;
-  console.log(modalContent);
-  // modalStructure.style.display = 'block';
-
-  // projects.forEach(project => {
-  //   //
-  //   // console.log('hello');
-  // });
+    </article>
+    </div>`;
+  document.querySelector('#simpleModal').innerHTML = modalhtml;
+  document.querySelector('#simpleModal').style.display = 'block';
 };

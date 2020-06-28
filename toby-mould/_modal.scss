@@ -1,31 +1,35 @@
+@import 'variables';
+$section-background-colours: rgba(0, 0, 0, 0.1);
+// //
+// //------------------------------------
+// //--------MIX-INS--------//
+// //------------------------------------
 //
-//---------------------------------
-//-----------MIX-IN's-----------//
-//---------------------------------
-//
+%margin-padding {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
 
-%modal-btn {
-  padding: 1em 2em;
-  color: white;
-  border: 0;
+// %text-adjust {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+// }
+%tile-image {
+  height: 150px;
+  min-width: 250px;
   border-radius: 15px;
-  min-height: 275px;
-  max-height: 276px;
-  width: 400px;
+  cursor: pointer;
 
-  h3 {
+  h4 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    top: -11px;
-    left: -22px;
-    min-height: 276px;
-    width: 400px;
+    justify-content: center;
+    min-height: 150px;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
     transition: all 0.5s ease-out;
-    cursor: pointer;
+    color: set-h4-color($light-colour);
 
     &:hover {
       border: 1px solid orange;
@@ -35,93 +39,186 @@
 }
 
 //
-//---------------------------------
-//-----------MODAL BUTTON-----------//
-//---------------------------------
-//
-// #modal-btn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   &-1 {
-//     @extend %modal-btn;
-//     background: $project1Image no-repeat center center/cover;
-//   }
-//   &-2 {
-//     @extend %modal-btn;
-//     background: $project2Image no-repeat center center/cover;
-//   }
-//   &-3 {
-//     @extend %modal-btn;
-//     background: $project3Image no-repeat center center/cover;
-//   }
-//   &-4 {
-//     @extend %modal-btn;
-//     background: $project4Image no-repeat center center/cover;
-//     margin-top: 25px;
-//   }
-//   &-5 {
-//     @extend %modal-btn;
-//     background: $project5Image no-repeat center center/cover;
-//     margin-top: 25px;
-//   }
-// }
-
-//
-//---------------------------------
+//-----------------------------------------//
 //-----------MODAL OVERLAY BLACK-----------//
-//---------------------------------
+//-----------------------------------------//
 //
-
 .modal {
   /* This is the class for the dark background around the modal. */
-  // display: none; /*This makes the modal hide until button click*/
+  display: none; /*This makes the modal hide until button click*/
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   height: 100vh;
   width: 100vw;
   // overflow: auto; /*enables the scrollbar if needed */
   background: rgba(0, 0, 0, 0.5);
+}
+//
+//-----------------------------------//
+//-----------MODAL CONTENT-----------//
+//-----------------------------------//
+//
+/* Now to deal with the content! */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
 
-  //
-  //---------------------------------
-  //-----------MODAL CONTENT-----------//
-  //---------------------------------
-  //
-  /* Now to deal with the content! */
-  &-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // background: rgba(0, 0, 0, 0);
-    margin: 2% auto; /*use auto for left and right coz want be in middle.*/
-    padding: 20px;
-    max-width: 40%;
-    // box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: 1s;
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: rgba(255, 255, 255, 0.9);
+    min-width: 20vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+    // background: purple;
 
-    .close-btn {
-      color: #ccc;
-      // float: right;
-      font-size: 30px;
+    #column-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // background: yellow;
 
-      &:hover,
-      &:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
+      #summary {
+        // background: rgba(255, 0, 0, 0.1);
+        @extend %margin-padding;
+        background: $section-background-colours;
+
+        .image {
+          @extend %tile-image;
+
+          &-0 {
+            background: $project1-image no-repeat center center/cover;
+          }
+
+          &-1 {
+            background: $project2-image no-repeat center center/cover;
+          }
+
+          &-2 {
+            background: $project3-image no-repeat center center/cover;
+          }
+
+          &-3 {
+            background: $project4-image no-repeat center center/cover;
+          }
+
+          &-4 {
+            background: $project5-image no-repeat center center/cover;
+          }
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // background: red;
+
+          i {
+            margin: 0 auto 5px;
+
+            a {
+              font-size: 0.5rem;
+              padding: 5px 10px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      #tech {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // @extend %text-adjust;
+
+        // background: rgba(0, 255, 0, 0.1);
+
+        .table {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // background: purple;
+          ul {
+            display: flex;
+            flex-direction: column;
+            // background: green;
+            li {
+              padding: 5px 0;
+              // background: blue;
+              i {
+                margin-bottom: 5px;
+                padding: 0;
+                // background: red;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #column-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // background: red;
+
+      #role {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // max-height: 180px;
+        // background: rgba(0, 0, 255, 0.1);
+      }
+
+      #diff {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // background: rgba(255, 255, 0, 0.1);
+      }
+
+      #sol {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // background: rgba(255, 0, 255, 0.1);
+      }
+
+      #feat {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // @extend %text-adjust;
+        // background: rgba(0, 255, 255, 0.1);
+
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            margin: 0;
+            padding: 0;
+          }
+        }
       }
     }
   }
 }
+
 //
-//---------------------------------
+//--------------------------------------//
 //-----------MODAL ANIMATIONS-----------//
-//---------------------------------
+//--------------------------------------//
 //
 @keyframes modalopen {
   from {
