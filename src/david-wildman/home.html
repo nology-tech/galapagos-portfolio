@@ -5,126 +5,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/9ff089ecf9.js" async defer crossorigin="anonymous"></script>
   <script src="./assets/app.js" async defer></script>
-  <link rel="preload" href="./assets/images/downwardsbackgroundcadetgrey.gif" as="image">
-  <link rel="preload" href="./assets/images/downwardsbackgroundcultured.gif" as="image">
   <link rel="preload" href="./assets/images/downwardsbackgroundfireopal.gif" as="image">
   <link rel="preload" href="./assets/images/downwardsbackgroundmingblue.gif" as="image">
+
+  <link rel="preload" href="./assets/images/downwardsbackgroundcadetgrey.gif" as="image">
+  <link rel="preload" href="./assets/images/downwardsbackgroundcultured.gif" as="image">
   <link rel="preload" href="./assets/images/downwardsbackgroundplain.gif" as="image">
   <link rel="preload" href="./assets/images/downwardsbackgroundslateblue.gif" as="image">
-  <link rel="preload" href="./assets/images/downwardsbackgroundxiketic.gif" as="image">
   <link rel="preload" href="./assets/images/downwardsbackgroundxiketic.gif" as="image">
 
   <title>David Wildman—Software Developer</title>
 </head>
 
 <body>
-  <aside>
-    <div>
-      <span><img src=alt="1"></span>
-      <span><img src=alt="2"></span>
-      <span><img src=alt="3"></span>
-      <span><img src=alt="4"></span>
-      <span><img src=alt="5"></span>
-      <span><img src=alt="6"></span>
-      <span><img src=alt="7"></span>
-    </div>
-  </aside>
   <section class="landing page on">
     <span id="enter-button" class="fly-in">ENTER</span>
   </section>
-  <section class="home page off" id="home">
-    <div class="header-title landing-page-effect">
-      <span class="title-one landing-page-effect">David Wildman</span>
-      <span class="title-two landing-page-effect">Software Developer</span>
+  <section class="home page" id="home">
+    <div class="header-title">
+      <span class="title-one">David Wildman</span>
+      <span class="title-two">Software Developer</span>
     </div>
     <nav>
       <ul>
         <li class="hover-fx-subtle" id="bio-button">
-          <a href="#bio"> b<span class="hover-fx-highlight">io</span> </a>
+          <span>Bio</span>
         </li>
         <li class="hover-fx-subtle" id="portfolio-button">
-          <a href="#portfolio">
-            portfol<span class="hover-fx-highlight">io</span>
-          </a>
+          <span>Portfolio</span>
         </li>
         <li class="hover-fx-subtle" id="contact-button">
-          <a href="#contact">
-            c<span class="hover-fx-highlight">o</span>ntact
-          </a>
+          <span>Contact</span>
         </li>
       </ul>
     </nav>
   </section>
-  <section class="section-one page off" id="bio">
+
+  <section class="bio page" id="bio">
+    <nav class="fixed">
+      <ul>
+        <li><span>Bio</span></li>
+        <li><span>Portfolio</span></li>
+        <li><span>Contact</span></li>
+      </ul>
+    </nav>
     <div class="title">
-      <h2>
-        <span class="hover-fx-subtle title-one">
-          B<span class="hover-fx-highlight">io</span>
-        </span>
-      </h2>
+      <h2>Bio</h2>
     </div>
     <article>
-      <div class="first-line">
+      <div>
         <h3>Education</h3>
         <h4>University of Cambridge</h4>
         <p>M.A. Chinese Studies</p>
         <h4>_nology</h4>
         <p>Intensive Software Development training</p>
       </div>
-      <div class="second-line">
+      <div>
         <h3>Skills</h3>
         <h4>Technologies</h4>
         <p>HTML | CSS | React | Bootstrap | Git | GitHub |</p>
         <h4>Professional skills</h4>
         <p>
           Excellent communicator | Strong attention to detail | Confident and
-          assertive | Reliable and hardworking
+          assertive | Reliable and hardworking |
         </p>
       </div>
-      <div class="third-line"></div>
-      <div class="fourth-line"></div>
     </article>
-    <div class="caption"></div>
   </section>
-  <section class="section-two page off" id="portfolio">
+
+  <section class="portfolio page" id="portfolio">
     <div class="title">
-      <h2>
-        <span class="hover-fx-subtle title-one">
-          Portfol<span class="hover-fx-highlight">io</span>
-        </span>
-      </h2>
+      <h2>Portfolio</h2>
     </div>
     <article>
-      <div class="first-line"></div>
-      <div class="second-line"></div>
-      <div class="third-line"></div>
-      <div class="fourth-line"></div>
+      <div>
+        <h3>Project One</h3>
+        <h4>AI INVASION</h4>
+        <h6><a href="https://thewildebeest.github.io/ai-invasion/ai-invasion.html" target="_blank">Play AI INVASION</a>
+        </h6>
+        <p>Light-hearted political satire in the form of a single-player word game.</p>
+        <p>This game uses JavaScript classes to generate DOM elements and pass data to them.</p>
+        <p>The user can then interact with these elements to score points.</p>
+        <h5>Tech:</h5>
+        <p>HTML | CSS | Vanilla JavaScript | OOP</p>
+      </div>
+      <div>
+        <h3>Project Two</h3>
+        <h4>Morse Encoder</h4>
+        <h6><a href="https://thewildebeest.github.io/morse-encoder/morse-code-translator.html" target="_blank">Try out
+            Morse Encoder</a>
+        </h6>
+        <p>A simple web app which converts a string of latin characters into international morse code.</p>
+        <p>There are many approaches to solving this tech test.</p>
+        <p>I was more confident with OOP at the time, so I challenged myself to use array iterators and functional
+          programming to solve this.</p>
+        <p>The 'translator' is a simple function which:</p>
+        <ul>
+          <li>converts the user's input from a string into an array</li>
+          <li>loops through this array</li>
+          <li>finds the index of the current character in the Latin Alphabet array</li>
+          <li>returns the character from the same index in the Morse Code Alphabet array</li>
+          <li>adds the character to a string</li>
+          <li>inserts the string onto the page</li>
+        </ul>
+        <h5>Tech:</h5>
+        <p>HTML | CSS | Vanilla JavaScript | Functional Programming |</p>
+      </div>
     </article>
-    <div class="caption">
-      <div class="fifth-line"></div>
-    </div>
   </section>
-  <section class="section-three page off" id="contact">
+
+  <section class="contact page" id="contact">
     <div class="title">
-      <h2>
-        <span class="hover-fx-subtle title-one">
-          C<span class="hover-fx-highlight">o</span>ntact
-        </span>
-      </h2>
+      <h2>Contact</h2>
     </div>
     <article>
-      <div class="first-line"></div>
-      <div class="second-line"></div>
-      <div class="third-line"></div>
-      <div class="fourth-line"></div>
+      <div></div>
     </article>
-    <div class="caption">
-      <div class="fifth-line"></div>
-    </div>
   </section>
-  <footer class="off">
+
+  <footer class="on">
     <nav>
       <ul>
         <li class="hover-fx-subtle">
@@ -145,6 +147,7 @@
       </ul>
     </nav>
   </footer>
+
 </body>
 
 </html>
