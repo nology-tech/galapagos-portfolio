@@ -1,152 +1,273 @@
-/*----------Fonts----------*/
+/*---------- Fonts ----------*/
 @font-face {
   font-family: "sfalienencsolid";
-  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets//fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
+  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets/fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "sfalienenc";
-  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets//fonts/sfalienenc.woff") format("woff"), url("./assets//fonts/sfalienenc.ttf") format("truetype");
+  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets/fonts/sfalienenc.woff") format("woff"), url("./assets/fonts/sfalienenc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "streamster";
-  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets//fonts/streamster.woff") format("woff"), url("./assets//fonts/streamster.ttf") format("truetype");
+  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets/fonts/streamster.woff") format("woff"), url("./assets/fonts/streamster.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "scriptina";
-  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets//fonts/scriptina.woff") format("woff"), url("./assets//fonts/scriptina.ttf") format("truetype");
+  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets/fonts/scriptina.woff") format("woff"), url("./assets/fonts/scriptina.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-/*---------- ----------*/
-/*----------CSS Reset----------*/
+/*---------- Animations ----------*/
+@keyframes cascade-in {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes cascade-out {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes flyin {
+  from {
+    filter: blur(8px);
+    transform: scale(2);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes flyout {
+  from {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    filter: blur(8px);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes foldAway {
+  from {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-20degrees);
+  }
+}
+@keyframes unFold {
+  from {
+    margin-bottom: 50px;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+/*---------- CSS Reset ----------*/
 * {
-  --portfolio-light-blue: #8ea8c3;
-  --portfolio-black: #0b0014;
-  --portfolio-gray: #363946;
-  --portfolio-blue: #406e8e;
-  --portfolio-purple: #5b2e48;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-
-/*---------- ----------*/
-/*----------Styling for hyperlinks and special characters----------*/
-.char {
-  color: transparent;
-  text-decoration: underline;
-  text-decoration-color: var(--portfolio-blue);
-}
-
-@media screen and (min-width: 823px) {
-  span.char {
-    text-decoration-color: var(--portfolio-purple);
-  }
-}
-a {
+* a {
   text-decoration: none;
-  color: inherit;
+  color: unset;
 }
 
-/*---------- ----------*/
 /*----------General styles----------*/
 body {
   max-width: 100vw;
-  background-color: var(--portfolio-black);
   font-size: 16px;
-  color: var(--portfolio-black);
+  background-color: #0b0014;
 }
 
-/*---------- ----------*/
-/*----------Header and navbar styles----------*/
-header {
-  font-family: "sfalienencsolid", sans-serif;
+/*----------Landing page styles ----------*/
+.landing.page {
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-header .title {
-  height: 50vh;
-}
-header h1 {
-  background-image: linear-gradient(#0b0014bb 0%, #0b0014bb 100%), url("https://media.giphy.com/media/QAmzAMUA4rOIkG0Rdv/giphy.gif");
-  background-size: cover;
+
+#enter-button {
+  padding: 2%;
+  line-height: 2em;
   background-position: center;
-  background-blend-mode: multiply;
-}
-header nav {
-  width: 100%;
-  height: 100%;
-}
-header nav ul {
-  width: 100%;
-  height: 80%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: initial;
-}
-header nav ul li {
-  width: 100%;
-  height: max-content;
-  line-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/*---------- ----------*/
-/*---------- Specific section stylings. Sections take up one viewport height.
-For very small devices sections take up two heights. ---------- */
-section {
+h6:hover,
+#enter-button:hover,
+#bio-button:hover,
+#portfolio-button:hover,
+#contact-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+/*---------- Main content pages styling----------*/
+.page {
   font-family: "sfalienencsolid", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: max-content;
 }
-section.section-three {
-  height: 88vh;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+
+nav.fixed {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  width: 100%;
+  color: #ee6352;
+  background-color: #0b0014;
 }
-section article {
-  font-family: consolas, Arial, Helvetica, sans-serif;
-  height: 60%;
-  width: 75%;
+nav.fixed ul {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 2px solid #8ea8c3;
 }
-section article div {
+nav.fixed ul li {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.fixed ul li span {
+  text-align: center;
+  height: max-content;
   width: 100%;
 }
-section article div h3 {
-  color: var(--portfolio-purple);
+
+/*---------- Specific section stylings. Sections take up one viewport height.
+For very small devices sections take up two heights. ---------- */
+#bio,
+#portfolio,
+#contact {
+  font-family: "sfalienencsolid", sans-serif;
+}
+#bio .title,
+#portfolio .title,
+#contact .title {
+  height: max-content;
+  margin: 12vh 10% 10%;
+}
+#bio .title h2,
+#portfolio .title h2,
+#contact .title h2 {
+  color: whitesmoke;
+  text-shadow: 0 0 50px whitesmoke;
+  font-size: 2em;
+  line-height: 100%;
+}
+#bio article,
+#portfolio article,
+#contact article {
+  font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
+  height: max-content;
+  width: 75%;
+}
+#bio article div,
+#portfolio article div,
+#contact article div {
+  width: 100%;
+}
+#bio article div h3,
+#portfolio article div h3,
+#contact article div h3 {
+  color: #ee6352;
+  font-size: 1.5em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 5%;
+}
+#bio article div h4,
+#portfolio article div h4,
+#contact article div h4 {
+  color: #8ea8c3;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+  padding: 0% 0% 2%;
+}
+#bio article div h5,
+#portfolio article div h5,
+#contact article div h5 {
+  color: #8ea8c3;
   font-size: 1em;
   text-align: left;
   width: 100%;
   padding: 0% 0% 2%;
 }
-section article div h4 {
-  font-size: 0.5em;
-  text-align: left;
-  width: 100%;
+#bio article div h6,
+#portfolio article div h6,
+#contact article div h6 {
+  color: #7d53de;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: justify;
+  width: max-content;
   padding: 0% 0% 2%;
 }
-section article div p {
-  color: var(--portfolio-gray);
+#bio article div p,
+#portfolio article div p,
+#contact article div p {
+  color: whitesmoke;
   text-align: left;
   width: 100%;
-  font-size: 0.5em;
-  padding: 0% 0% 3%;
+  font-size: 1em;
+  padding: 0% 0% 5%;
 }
-section .caption {
+#bio article ul,
+#portfolio article ul,
+#contact article ul {
+  list-style: square inside;
+  color: #8ea8c3;
+  padding: 0% 0% 5%;
+}
+#bio article ul li,
+#portfolio article ul li,
+#contact article ul li {
+  font-size: 0.7em;
+}
+#bio article .caption,
+#portfolio article .caption,
+#contact article .caption {
   height: 20%;
   display: flex;
   flex-direction: column;
@@ -155,46 +276,110 @@ section .caption {
   text-align: center;
 }
 
-/*----------Page styling----------*/
-.page {
-  width: 100%;
+/*---------- Homepage styles----------*/
+#home {
   height: 100vh;
-  background-color: var(--portfolio-black);
-  border-top: 1px double var(--portfolio-light-blue);
-  border-bottom: 1px double var(--portfolio-light-blue);
-  border-radius: 1em;
-  box-shadow: 0 0 5px 1px var(--portfolio-light-blue);
-  font-size: 2em;
-  color: var(--portfolio-blue);
+  font-family: sfalienencsolid, sans-serif;
+  transform-origin: top;
 }
-.page div {
+#home .header-title {
+  margin: 10%;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  outline-color: transparent;
+  height: 30%;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
-.page div.title {
-  height: 20%;
+#home .header-title .title-one {
+  color: whitesmoke;
+  text-shadow: 0 0 50px whitesmoke;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  height: max-content;
+  margin: 1% auto;
+  font-size: 3em;
+  line-height: 1em;
+}
+#home .header-title .title-two {
+  color: #8ea8c3;
+  text-shadow: 0 0 50px #8ea8c3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  height: max-content;
+  margin: 0 auto;
+  font-size: 2em;
+  line-height: 1em;
+}
+#home nav {
+  list-style: none;
+  width: 100%;
+  height: 60%;
+}
+#home nav ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: initial;
+  border: unset;
+}
+#home nav ul li {
+  border-bottom: 1px solid #8ea8c3;
+  font-size: 1.5em;
+  width: 60%;
+  height: max-content;
+  line-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home nav ul li * {
+  border: unset;
+}
+
+/*---------- Footer styles ----------*/
+footer {
+  display: absolute;
+  position: fixed;
+  bottom: -12vh;
+  left: 0;
+  color: #8ea8c3;
+  height: 12vh;
+  width: 100%;
+  background-color: #0b0014;
+  border-top: 1px double #8ea8c3;
+  border-radius: 2em;
+}
+footer nav {
+  height: 100%;
   width: 100%;
 }
-.page div h1,
-.page div h2 {
-  width: 80%;
-  padding: 2vmin;
-  text-align: center;
-  line-height: 100%;
-  height: max-content;
-  color: var(--portfolio-black);
-  text-shadow: 0 0 5px var(--portfolio-light-blue);
-  font-size: 1em;
-  border-top: 1px solid var(--portfolio-light-blue);
-  border-bottom: 2px solid var(--portfolio-light-blue);
-  border-radius: 1em;
+footer nav ul {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  letter-spacing: initial;
 }
-.page div .title-one,
-.page div .title-two {
-  display: block;
+footer nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: inherit;
 }
 
 /*----------Responsive design----------*/
@@ -218,77 +403,36 @@ h2 {
     grid-template-rows: 1fr;
   }
 }
-@media screen and (min-width: 1024px) {
-  /*----------Page styling----------*/
-  ul {
-    color: var(--portfolio-gray);
-  }
+/*---------- Selectors for JavaScript functions ----------*/
+section.page:not(.on) {
+  display: none;
+}
 
-  nav:hover * > span.char {
-    color: transparent;
-    text-decoration-color: var(--portfolio-blue);
-    transition: text-decoration 2s;
-  }
+.cascade-in {
+  animation: cascade-in cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 1;
+  color: #ee6352;
+}
 
-  .hover-fx-subtle {
-    letter-spacing: 0.05em;
-    color: inherit;
-  }
+.cascade-out {
+  animation: cascade-out cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 0;
+}
 
-  :hover > .hover-fx-subtle {
-    letter-spacing: 0;
-    text-shadow: none;
-    transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: letter-spacing 2s, text-shadow 2s, color 1s;
-    color: var(--portfolio-blue);
-  }
+.fly-in {
+  animation: flyin 1s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  border: 1px solid #ee6352;
+  color: #ee6352;
+  background-image: url("./assets/images/downwardsbackgroundfireopal.gif");
+  opacity: 1;
+}
 
-  *:hover > .hover-fx-highlight {
-    letter-spacing: 0.05em;
-    transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
-    transition: letter-spacing 0.5s, color 1s;
-    color: var(--portfolio-light-blue);
-    cursor: pointer;
-    text-shadow: 0 0 30px var(--portfolio-light-blue);
-  }
-
-  .page .first-line:hover {
-    outline: 2px solid var(--portfolio-purple);
-    transition: outline 0.5s;
-  }
-
-  .page .second-line:hover {
-    outline: 1px solid var(--portfolio-blue);
-    transition: outline 0.5s;
-  }
-
-  footer {
-    color: var(--portfolio-light-blue);
-    height: 12vh;
-    background-color: #0b0014;
-    border-top: 1px double var(--portfolio-light-blue);
-    border-radius: 2em;
-  }
-  footer nav {
-    height: 100%;
-    width: 100%;
-  }
-  footer nav ul {
-    height: 100%;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    letter-spacing: initial;
-  }
-  footer nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    color: inherit;
-  }
+.fly-out {
+  color: #8ea8c3;
+  border: 1px solid #8ea8c3;
+  animation: flyout 0.75s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
+  opacity: 0;
+  background-image: url("./assets/images/downwardsbackgroundmingblue.gif");
 }
 
 /*# sourceMappingURL=home.css.map */

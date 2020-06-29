@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #0b0014;
+  height: 15vh;
+  width: 100vw;
+}
+header div {
+  padding: 2% 5% 2% 10%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: inhert;
+  font-size: 3vmin;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: whitesmoke;
+}
+
+main {
+  height: 77vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+main section {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  position: relative;
+  height: 90%;
+  width: 90%;
+  border: 1px #0b0014 solid;
+  background-color: whitesmoke;
+  font-size: 7vmin;
+}
+main section span {
+  font-family: sans-serif;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  padding: 0 5%;
+  color: #ff7300;
+  transition: all 5s ease 5s;
+  font-size: unset;
+  background-color: #0b001499;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.7fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #0b0014;
+  height: 8vh;
+  width: 100vw;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  font-size: 5vmin;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: whitesmoke;
+}
+footer div#player-score {
+  font-size: 6vmin;
+}
+
+button,
+input {
+  font-size: 4.4vmin;
+  border: 0;
+  border-radius: 0;
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=ai-invasion.css.map */
