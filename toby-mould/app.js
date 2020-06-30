@@ -37,6 +37,34 @@ const modalOpen = event => {
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(2);
       break;
+    case '3':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(3);
+      break;
+    case '4':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(4);
+      break;
+    case '5':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(5);
+      break;
+    case '6':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(6);
+      break;
+    case '7':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(7);
+      break;
+    case '8':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(8);
+      break;
+    case '9':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(9);
+      break;
   }
 
   // modalContent.style.display = 'block';

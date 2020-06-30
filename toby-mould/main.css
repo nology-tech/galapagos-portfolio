@@ -79,6 +79,21 @@
 .modal-content article #column-1 #summary .image-4 {
   background: url("https://source.unsplash.com/1600x900/?gold") no-repeat center center/cover;
 }
+.modal-content article #column-1 #summary .image-5 {
+  background: url("https://source.unsplash.com/1600x900/?calculator") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-6 {
+  background: url("https://source.unsplash.com/1600x900/?ship") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-7 {
+  background: url("https://source.unsplash.com/1600x900/?games") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-8 {
+  background: url("https://source.unsplash.com/1600x900/?morse") no-repeat center center/cover;
+}
+.modal-content article #column-1 #summary .image-9 {
+  background: url("https://source.unsplash.com/1600x900/?human,resources") no-repeat center center/cover;
+}
 .modal-content article #column-1 #summary .buttons {
   display: flex;
   align-items: center;
@@ -342,6 +357,48 @@ body a {
 }
 #portfolio .items .item:nth-of-type(3):hover {
   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?cinema") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?news") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(4):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?news") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?gold") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(5):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?gold") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?calculator") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(6):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?calculator") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(7) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?ship") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(7):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?ship") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(8) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?games") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(8):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?games") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(9) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?morse") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(9):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?morse") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(10) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900/?human,resources") no-repeat center center/cover;
+}
+#portfolio .items .item:nth-of-type(10):hover {
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url("https://source.unsplash.com/1600x900/?human,resources") no-repeat center center/cover;
 }
 
 #about {
