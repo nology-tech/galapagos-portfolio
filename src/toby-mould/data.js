@@ -85,7 +85,7 @@ export const data = [
   },
   {
     name: 'Tick-Tack-Toe Game',
-    image: 'https://source.unsplash.com/1600x900/?human',
+    image: 'https://source.unsplash.com/1600x900/?games',
     live: 'https://tobymould.github.io/tick-tack-toe/',
     github: 'https://github.com/tobymould/tick-tack-toe',
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
