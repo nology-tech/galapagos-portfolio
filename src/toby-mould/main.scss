@@ -296,6 +296,8 @@ body {
     // justify-content: center;
     // grid-template-columns: 1fr;
 
+    @extend %portfolio-button-images;
+
     .item {
       // background: blue;
       // width: 100%;
@@ -304,8 +306,6 @@ body {
       border-radius: 10px;
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
     }
-
-    @extend %portfolio-button-images;
   }
 }
 
