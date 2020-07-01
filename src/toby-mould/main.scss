@@ -397,6 +397,22 @@ body {
           background: $linear-grad-3d, $project11-image no-repeat center center/cover;
         }
       }
+
+      &:nth-of-type(12) {
+        background: $linear-grad, $project12-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project12-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(13) {
+        background: $linear-grad, $project13-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project13-image no-repeat center center/cover;
+        }
+      }
     }
   }
 }
