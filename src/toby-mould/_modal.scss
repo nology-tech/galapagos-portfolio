@@ -67,6 +67,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         // background: rgba(255, 0, 0, 0.1);
         @extend %margin-padding;
         background: $section-background-colours;
+        @extend %modal-overview-section-images;
 
         .image {
           height: 150px;
@@ -90,8 +91,6 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
             }
           }
         }
-
-        @extend %modal-overview-section-images;
 
         .buttons {
           display: flex;
