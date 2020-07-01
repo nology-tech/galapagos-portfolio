@@ -44,8 +44,166 @@ $project11-image: url('https://source.unsplash.com/1600x900/?arduino');
 $project12-image: url('https://source.unsplash.com/1600x900/?social,media');
 $project13-image: url('https://source.unsplash.com/1600x900/?space');
 
-// $project1Image
-// $project2Image
-// $project3Image
-// $project4Image
-// $project5Image
+%portfolio-button-images {
+  .item {
+    &:nth-of-type(1) {
+      background: $linear-grad, $project1-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project1-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(2) {
+      background: $linear-grad, $project2-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project2-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(3) {
+      background: $linear-grad, $project3-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project3-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(4) {
+      background: $linear-grad, $project4-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project4-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(5) {
+      background: $linear-grad, $project5-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project5-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(6) {
+      background: $linear-grad, $project6-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project6-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(7) {
+      background: $linear-grad, $project7-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project7-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(8) {
+      background: $linear-grad, $project8-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project8-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(9) {
+      background: $linear-grad, $project9-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project9-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(10) {
+      background: $linear-grad, $project10-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project10-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(11) {
+      background: $linear-grad, $project11-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project11-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(12) {
+      background: $linear-grad, $project12-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project12-image no-repeat center center/cover;
+      }
+    }
+
+    &:nth-of-type(13) {
+      background: $linear-grad, $project13-image no-repeat center center/cover;
+
+      &:hover {
+        background: $linear-grad-3d, $project13-image no-repeat center center/cover;
+      }
+    }
+  }
+}
+
+%modal-overview-section-images {
+  .image {
+    &-0 {
+      background: $project1-image no-repeat center center/cover;
+    }
+
+    &-1 {
+      background: $project2-image no-repeat center center/cover;
+    }
+
+    &-2 {
+      background: $project3-image no-repeat center center/cover;
+    }
+
+    &-3 {
+      background: $project4-image no-repeat center center/cover;
+    }
+
+    &-4 {
+      background: $project5-image no-repeat center center/cover;
+    }
+
+    &-5 {
+      background: $project6-image no-repeat center center/cover;
+    }
+
+    &-6 {
+      background: $project7-image no-repeat center center/cover;
+    }
+
+    &-7 {
+      background: $project8-image no-repeat center center/cover;
+    }
+
+    &-8 {
+      background: $project9-image no-repeat center center/cover;
+    }
+
+    &-9 {
+      background: $project10-image no-repeat center center/cover;
+    }
+
+    &-10 {
+      background: $project11-image no-repeat center center/cover;
+    }
+
+    &-11 {
+      background: $project12-image no-repeat center center/cover;
+    }
+
+    &-12 {
+      background: $project13-image no-repeat center center/cover;
+    }
+  }
+}
