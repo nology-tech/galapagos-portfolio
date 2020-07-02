@@ -17,7 +17,6 @@ const buttons = dataFile.data.map((project, index) => {
   </button>`;
 });
 projectList.innerHTML += buttons.join('');
-// projectList.innerHTML +=
 
 // STEP 2 - WHEN PROJECT BUTTON PRESSED, RUN THE MODAL DISPLAY FUNCTION TAKING IN THE BUTTON NUMBER PRESSED AS AN ARG.
 // 3. Event Handler
@@ -78,9 +77,6 @@ const modalOpen = event => {
       modalOpenFuncFile.insertProjectModalFunction(12);
       break;
   }
-
-  // modalContent.style.display = 'block';
-  // modalStructure.style.display = 'block';
 };
 
 const modalClose = event => {
