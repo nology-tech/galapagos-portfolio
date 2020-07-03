@@ -11,7 +11,9 @@
 //--------0. GENERAL STYLES--------//
 //------------------------------------//
 body {
-  font-family: 'Dosis', sans-serif;
+  // font-family: 'Dosis', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 
   .container {
     margin: 0 10vw;
@@ -128,7 +130,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   justify-content: center;
-  background: $dark-colour;
+  background: $grey;
   z-index: 4;
   font-size: 0.75rem;
   // border-radius: 10px;
@@ -139,7 +141,8 @@ body {
     align-items: center;
     justify-content: center;
     background: $colour1;
-    color: white;
+    color: $white-50;
+    border-right: 3px solid $black-90;
     // border-radius: 10px;
 
     // a {
@@ -159,15 +162,19 @@ body {
     justify-content: space-evenly;
     list-style-type: none;
 
-    a {
-      padding: 10px;
-      margin: 0 5px;
-      // border: 1px solid white;
-      border-radius: 10px;
+    li {
+      a {
+        display: block;
+        // padding: 18px 10px;
+        margin: 0 5px;
+        // border: 1px solid white;
+        // border-radius: 10px;
+        border-right: 3px solid $black-90;
 
-      // li {
-      // background: blue;
-      // }
+        // li {
+        // background: blue;
+        // }
+      }
     }
   }
 }
@@ -254,6 +261,22 @@ body {
       .npm {
         color: $npm;
       }
+
+      .node {
+        color: $node;
+      }
+
+      .python {
+        color: $python;
+      }
+
+      .yarn {
+        color: $yarn;
+      }
+
+      .github {
+        color: $github;
+      }
     }
   }
 }
@@ -281,98 +304,13 @@ body {
     // grid-template-columns: 1fr;
 
     .item {
+      @extend %portfolio-button-images;
       // background: blue;
       // width: 100%;
       min-height: 200px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
-
-      // margin: 0px 10px;
-
-      // &:nth-child(even) {
-      //   margin: 10px 0;
-      // }
-
-      &:nth-of-type(1) {
-        background: $linear-grad, $project1-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project1-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(2) {
-        background: $linear-grad, $project2-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project2-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(3) {
-        background: $linear-grad, $project3-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project3-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(4) {
-        background: $linear-grad, $project4-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project4-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(5) {
-        background: $linear-grad, $project5-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project5-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(6) {
-        background: $linear-grad, $project6-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project6-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(7) {
-        background: $linear-grad, $project7-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project7-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(8) {
-        background: $linear-grad, $project8-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project8-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(9) {
-        background: $linear-grad, $project9-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project9-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(10) {
-        background: $linear-grad, $project10-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project10-image no-repeat center center/cover;
-        }
-      }
     }
   }
 }
