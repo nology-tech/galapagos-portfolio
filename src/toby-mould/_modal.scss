@@ -66,8 +66,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       #summary {
         // background: rgba(255, 0, 0, 0.1);
         @extend %margin-padding;
-        background: $section-background-colours;
         @extend %modal-overview-section-images;
+        background: $section-background-colours;
 
         .image {
           height: 150px;
