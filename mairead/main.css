@@ -80,14 +80,6 @@
     width: 52em;
   }
 }
-@media (min-width: 768px) {
-  * h2::before,
-* h2::after {
-    content: "       ";
-    text-decoration: line-through;
-    margin: auto 0.5em;
-  }
-}
 * nav {
   height: 30vh;
   display: flex;
@@ -111,18 +103,75 @@
     padding: 1em;
   }
 }
-
-main {
-  display: grid;
+@media (min-width: 768px) {
+  * h2::before,
+* h2::after {
+    content: "       ";
+    text-decoration: line-through;
+    margin: auto 0.5em;
+  }
 }
-main div {
-  height: 30vh;
-  border: solid 2px #cd5555;
-  background-color: #f9ebeb;
-  margin: 3em;
-  font-variant: small-caps;
-  padding: 2em;
+@media (min-width: 1024px) {
+  * i:hover {
+    background-color: lightgray;
+    color: black;
+    font-size: 4em;
+  }
+}
+
+main h3 {
   text-align: center;
+  margin-top: 5em;
+  padding: 1em;
+}
+main #projectgrid {
+  display: grid;
+  grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
+}
+main #projectgrid section {
+  height: 200px;
+  width: 300px;
+  background-color: #f9ebeb;
+  margin: 2em;
+  font-variant: small-caps;
+  text-align: center;
+}
+main #projectgrid section img {
+  height: auto;
+  width: 100%;
+}
+main #projectgrid #project1 {
+  grid-area: project1;
+}
+main #projectgrid #project2 {
+  grid-area: project2;
+}
+main #projectgrid #project3 {
+  grid-area: project3;
+}
+main #projectgrid #project4 {
+  grid-area: project4;
+}
+main #projectgrid #project5 {
+  grid-area: project5;
+}
+main #projectgrid #project6 {
+  grid-area: project6;
+}
+@media (min-width: 768px) {
+  main #projectgrid {
+    grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+  }
+}
+@media (min-width: 1024px) {
+  main #projectgrid {
+    grid-template-areas: "project1 project2 project3" "project4 project5 project6";
+  }
+}
+@media (min-width: 2560px) {
+  main #projectgrid {
+    grid-template-areas: "project1 project2 project3 project4 project5 project6";
+  }
 }
 
 #contact-header {
@@ -160,20 +209,12 @@ form #submit {
 }
 @media (min-width: 768px) {
   form form {
-    width: 50%;
+    width: 60%;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   form {
-    width: 40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  i:hover {
-    background-color: lightgray;
-    color: black;
-    font-size: 4em;
+    width: 50%;
   }
 }
 
