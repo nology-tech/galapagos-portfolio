@@ -1,0 +1,255 @@
+@import 'variables';
+$section-background-colours: rgba(0, 0, 0, 0.1);
+// //
+// //------------------------------------
+// //--------MIX-INS--------//
+// //------------------------------------
+//
+%margin-padding {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+// %text-adjust {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+// }
+%tile-image {
+  height: 150px;
+  min-width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+
+  h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+    transition: all 0.5s ease-out;
+    color: set-h4-color($light-colour);
+
+    &:hover {
+      border: 1px solid orange;
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+//
+//-----------------------------------------//
+//-----------MODAL OVERLAY BLACK-----------//
+//-----------------------------------------//
+//
+.modal {
+  /* This is the class for the dark background around the modal. */
+  display: none; /*This makes the modal hide until button click*/
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  // overflow: auto; /*enables the scrollbar if needed */
+  background: rgba(0, 0, 0, 0.5);
+}
+//
+//-----------------------------------//
+//-----------MODAL CONTENT-----------//
+//-----------------------------------//
+//
+/* Now to deal with the content! */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: rgba(255, 255, 255, 0.9);
+    min-width: 20vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+    // background: purple;
+
+    #column-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // background: yellow;
+
+      #summary {
+        // background: rgba(255, 0, 0, 0.1);
+        @extend %margin-padding;
+        background: $section-background-colours;
+
+        .image {
+          @extend %tile-image;
+
+          &-0 {
+            background: $project1-image no-repeat center center/cover;
+          }
+
+          &-1 {
+            background: $project2-image no-repeat center center/cover;
+          }
+
+          &-2 {
+            background: $project3-image no-repeat center center/cover;
+          }
+
+          &-3 {
+            background: $project4-image no-repeat center center/cover;
+          }
+
+          &-4 {
+            background: $project5-image no-repeat center center/cover;
+          }
+
+          &-5 {
+            background: $project6-image no-repeat center center/cover;
+          }
+
+          &-6 {
+            background: $project7-image no-repeat center center/cover;
+          }
+
+          &-7 {
+            background: $project8-image no-repeat center center/cover;
+          }
+
+          &-8 {
+            background: $project9-image no-repeat center center/cover;
+          }
+
+          &-9 {
+            background: $project10-image no-repeat center center/cover;
+          }
+
+          // &-9 {
+          //   background: $project10-image no-repeat center center/cover;
+          // }
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // background: red;
+
+          i {
+            margin: 0 auto 5px;
+
+            a {
+              font-size: 0.5rem;
+              padding: 5px 10px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      #tech {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // @extend %text-adjust;
+
+        // background: rgba(0, 255, 0, 0.1);
+
+        .table {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // background: purple;
+          ul {
+            display: flex;
+            flex-direction: column;
+            // background: green;
+            li {
+              padding: 5px 0;
+              // background: blue;
+              i {
+                margin-bottom: 5px;
+                padding: 0;
+                // background: red;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #column-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // background: red;
+
+      #role {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // max-height: 180px;
+        // background: rgba(0, 0, 255, 0.1);
+      }
+
+      #diff {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // background: rgba(255, 255, 0, 0.1);
+      }
+
+      #sol {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // p {
+        //   @extend %text-adjust;
+        // }
+        // background: rgba(255, 0, 255, 0.1);
+      }
+
+      #feat {
+        @extend %margin-padding;
+        background: $section-background-colours;
+        // @extend %text-adjust;
+        // background: rgba(0, 255, 255, 0.1);
+
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+//--------------------------------------//
+//-----------MODAL ANIMATIONS-----------//
+//--------------------------------------//
+//
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

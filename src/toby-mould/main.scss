@@ -1,4 +1,5 @@
 @import './variables';
+@import './modal';
 
 * {
   box-sizing: border-box;
@@ -314,6 +315,62 @@ body {
 
         &:hover {
           background: $linear-grad-3d, $project3-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(4) {
+        background: $linear-grad, $project4-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project4-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(5) {
+        background: $linear-grad, $project5-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project5-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(6) {
+        background: $linear-grad, $project6-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project6-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(7) {
+        background: $linear-grad, $project7-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project7-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(8) {
+        background: $linear-grad, $project8-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project8-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(9) {
+        background: $linear-grad, $project9-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project9-image no-repeat center center/cover;
+        }
+      }
+
+      &:nth-of-type(10) {
+        background: $linear-grad, $project10-image no-repeat center center/cover;
+
+        &:hover {
+          background: $linear-grad-3d, $project10-image no-repeat center center/cover;
         }
       }
     }
