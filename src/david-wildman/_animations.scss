@@ -1,0 +1,75 @@
+/*---------- Animations ----------*/
+
+@keyframes cascade-in {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cascade-out {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyin {
+  from {
+    filter: blur(8px);
+    transform: scale(2);
+    opacity: 0;
+  }
+
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyout {
+  from {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    filter: blur(8px);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes foldAway {
+  from {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotateX(-20degrees);
+  }
+}
+
+@keyframes unFold {
+  from {
+    margin-bottom: 50px;
+  }
+
+  to {
+    margin-bottom: 0;
+  }
+}
