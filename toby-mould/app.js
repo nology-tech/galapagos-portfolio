@@ -17,7 +17,6 @@ const buttons = dataFile.data.map((project, index) => {
   </button>`;
 });
 projectList.innerHTML += buttons.join('');
-// projectList.innerHTML +=
 
 // STEP 2 - WHEN PROJECT BUTTON PRESSED, RUN THE MODAL DISPLAY FUNCTION TAKING IN THE BUTTON NUMBER PRESSED AS AN ARG.
 // 3. Event Handler
@@ -65,10 +64,19 @@ const modalOpen = event => {
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(9);
       break;
+    case '10':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(10);
+      break;
+    case '11':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(11);
+      break;
+    case '12':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(12);
+      break;
   }
-
-  // modalContent.style.display = 'block';
-  // modalStructure.style.display = 'block';
 };
 
 const modalClose = event => {
