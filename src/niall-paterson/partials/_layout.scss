@@ -1,0 +1,153 @@
+nav {
+  z-index: 998;
+  position: fixed;
+  height: 100vh;
+  left: -100vw;
+  width: 100vw;
+  transition: left 1s;
+
+  ul {
+    @include flex-column-around;
+    height: 80vh;
+    padding-top: 10vh;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+}
+
+#fixed-header {
+
+  @include fixed-menu($header: true);
+  z-index: 999;
+  background: $top-gradient;
+
+  div {
+    margin: $margin-medium;
+  };
+}
+
+#home {
+
+  position: relative;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+
+    ul {
+      @include flex-row-even;
+      width: $large-width;
+      min-width: 300px;
+      max-width: 500px;
+      height: 12.5vh;
+    }
+  }
+}
+
+h1 {
+  margin: $margin-large 0;
+  padding: $padding-medium;
+}
+
+h2 {
+  padding: $padding-small 0;
+}
+
+p {
+  margin: $margin-small;
+}
+
+main {
+
+  @include flex-column-center;
+}
+
+section {
+
+  @include flex-column-center;
+}
+
+.section-wrapper {
+  @include flex-column-around;
+  height: 87.5vh;
+}
+
+section,
+ul {
+
+  height: 100vh;
+}
+
+article {
+  height: auto;
+  margin: 25vh;
+  padding: 5px;
+  width: 90vw;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 16px -3px rgba(31, 31, 31, 0.19);
+  text-align: center;
+
+  header {
+    border: 1px solid transparent;
+    border-radius: 25px;
+  }
+  
+  .project-links {
+    width: 50%;
+    padding: 5vh;
+  }
+}
+
+#languages-wrapper {
+  @include flex-column-center;
+  width: $large-width;
+
+  p {
+    text-align: center;
+    width: $large-width;
+  }
+}
+
+
+#languages-icon-wrapper {
+  width: $large-width;
+  max-width: 500px;
+  text-align: center;
+
+  i {
+    width: $tiny-width;
+    min-width: 40px;
+    height: $tiny-height;
+  }
+}
+
+.project-links {
+  @include flex-row-even;
+  width: $medium-width;
+  margin: 0 auto;
+  padding: $padding-small 0;
+}
+
+.project-header {
+  @include flex-row-start;
+  position: static;
+}
+
+header {
+  h2 {
+    margin: 0 $margin-small;
+    display: block;
+  }
+}
+
+img {
+  width: 50px;
+  height: 25px;
+}
+
+
+svg {
+  background-color: $top-gradient;
+  fill: green;
+}
