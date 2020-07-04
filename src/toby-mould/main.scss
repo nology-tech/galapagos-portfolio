@@ -127,7 +127,7 @@ body {
   top: 0;
   background: $grey;
   z-index: 4;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: $white-50;
 
   ul {
@@ -162,12 +162,12 @@ body {
         align-items: center;
         justify-content: center;
         padding: 15px 5px;
-        width: 100%;
+        // width: 100%;
         // background: green;
         i {
           padding-right: 5px;
-          padding-right: 15px;
-          font-size: 1.5rem;
+          // padding-right: 15px;
+          // font-size: 1.5rem;
         }
 
         &:hover {
