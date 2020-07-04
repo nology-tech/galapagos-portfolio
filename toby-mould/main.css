@@ -384,6 +384,7 @@ body h1 {
   color: #c0c5ce;
 }
 body h2 {
+  display: block;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
@@ -452,41 +453,52 @@ body a {
 #navbar {
   position: sticky;
   top: 0;
-  height: 7.5vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  justify-content: center;
   background: #343a40;
   z-index: 4;
-  font-size: 0.75rem;
-}
-#navbar div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background: #5fa4dc;
+  font-size: 0.65rem;
   color: rgba(255, 255, 255, 0.5);
-  border-right: 3px solid rgba(0, 0, 0, 0.9);
 }
 #navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-content: center;
   list-style-type: none;
 }
-#navbar ul li a {
-  display: block;
-  margin: 0 5px;
+#navbar ul li {
+  display: flex;
+}
+#navbar ul li:nth-child(1) {
+  background: #5fa4dc;
+}
+#navbar ul li:nth-child(1):hover {
+  background: #111;
+}
+#navbar ul li:nth-child(1), #navbar ul li:nth-child(2), #navbar ul li:nth-child(3), #navbar ul li:nth-child(4) {
   border-right: 3px solid rgba(0, 0, 0, 0.9);
+}
+#navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5px;
+  width: 100%;
+}
+#navbar ul li a i {
+  padding-right: 5px;
+}
+#navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 #skills {
   background: white;
   padding: 10px;
   width: 100vw;
+}
+#skills h2 {
+  width: 70px;
+  margin: 0 auto 20px;
 }
 #skills .items {
   display: grid;
@@ -547,6 +559,10 @@ body a {
   background: #a7adba;
   padding-bottom: 30px;
 }
+#portfolio h2 {
+  width: 120px;
+  margin: 0 auto 20px;
+}
 #portfolio .items {
   margin-top: 20px;
   display: grid;
@@ -561,26 +577,30 @@ body a {
   box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-#about {
+#background {
   padding-bottom: 30px;
 }
-#about p {
+#background h2 {
+  width: 165px;
+  margin: 0 auto 20px;
+}
+#background p {
   padding-bottom: 10px;
 }
-#about .items {
+#background .items {
   display: grid;
   gap: 40px;
 }
-#about .items .item {
+#background .items .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#about .items .item i {
+#background .items .item i {
   padding-bottom: 10px;
 }
-#about .items .item p {
+#background .items .item p {
   line-height: 1.8rem;
   padding: 0 10px;
   text-align: justify;
@@ -623,13 +643,13 @@ body a {
     font-size: 1.2rem;
   }
 
-  #about p {
+  #background p {
     text-align: center;
   }
-  #about .items {
+  #background .items {
     grid-template-columns: repeat(3, 1fr);
   }
-  #about .items .item {
+  #background .items .item {
     justify-content: flex-start;
   }
 }
@@ -659,13 +679,13 @@ body a {
     font-size: 1.2rem;
   }
 
-  #about p {
+  #background p {
     text-align: center;
   }
-  #about .items {
+  #background .items {
     grid-template-columns: repeat(3, 1fr);
   }
-  #about .items .item {
+  #background .items .item {
     justify-content: flex-start;
   }
 }
@@ -695,13 +715,13 @@ body a {
     font-size: 1.2rem;
   }
 
-  #about p {
+  #background p {
     text-align: center;
   }
-  #about .items {
+  #background .items {
     grid-template-columns: repeat(3, 1fr);
   }
-  #about .items .item {
+  #background .items .item {
     justify-content: flex-start;
   }
 }
