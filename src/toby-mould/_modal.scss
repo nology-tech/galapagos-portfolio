@@ -74,6 +74,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           min-width: 250px;
           border-radius: 15px;
           cursor: pointer;
+          // o: $linear-grad;
+          filter: brightness(50%);
 
           h4 {
             display: flex;

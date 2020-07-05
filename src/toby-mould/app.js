@@ -8,6 +8,8 @@ const modalContent = document.querySelector('#simpleModal .modal-content');
 
 console.log(portfolioGrid);
 const projectList = document.querySelector('#portfolio .items');
+const buttonList2 = document.querySelectorAll('#portfolio button');
+
 // ----------------------------------------------------------------
 // STEP 1 - AUTO-RENDER THE PROJECT BUTTONS USING 'DATA.JS' FILE.
 const portfolioButtons = () => {
@@ -98,9 +100,13 @@ const modalClose = event => {
 
 const hoverEffect = event => {
   let buttonHovered = event.target;
-  // if ()
   const imageFile = dataFile.data[buttonHovered.value].image;
-  buttonHovered.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile}) no-repeat center center/cover`;
+  // buttonHovered.style.background.includes('0.5') &&
+  if (event.type == 'mouseenter') {
+    return (buttonHovered.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile}) no-repeat center center/cover`);
+  } else {
+    return (buttonHovered.style.background = `linear - gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`);
+  }
 
   // const buttonBackgrounds = dataFile.data.map((project, index) => {
   //   return (buttonList[index].style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${project.image}) no-repeat center center/cover`);
@@ -109,5 +115,5 @@ const hoverEffect = event => {
 // 2. Event Listener
 portfolioGrid.addEventListener('click', modalOpen);
 document.querySelector('#simpleModal').addEventListener('click', modalClose);
-portfolioGrid.addEventListener('mouseover', hoverEffect);
-portfolioGrid.addEventListener('mouseleave', hoverEffec);
+portfolioGrid.addEventListener('mouseenter', hoverEffect);
+portfolioGrid.addEventListener('mouseleave', hoverEffect);
