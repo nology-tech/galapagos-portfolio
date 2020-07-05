@@ -10,13 +10,26 @@ console.log(portfolioGrid);
 const projectList = document.querySelector('#portfolio .items');
 // ----------------------------------------------------------------
 // STEP 1 - AUTO-RENDER THE PROJECT BUTTONS USING 'DATA.JS' FILE.
-const buttons = dataFile.data.map((project, index) => {
-  return `
-  <button class="item" value="${index}">
-    <h4>${project.name}</h4>
-  </button>`;
-});
-projectList.innerHTML += buttons.join('');
+const portfolioButtons = () => {
+  const buttons = dataFile.data.map((project, index) => {
+    return `
+    <button class="item" value="${index}">
+      <h4>${project.name}</h4>
+    </button>`;
+  });
+  projectList.innerHTML += buttons.join('');
+};
+
+const portfolioButtonBackgrounds = () => {
+  const buttonList = document.querySelectorAll('#portfolio button');
+
+  const buttonBackgrounds = dataFile.data.map((project, index) => {
+    return (buttonList[index].style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover`);
+  });
+};
+
+portfolioButtons();
+portfolioButtonBackgrounds();
 
 // STEP 2 - WHEN PROJECT BUTTON PRESSED, RUN THE MODAL DISPLAY FUNCTION TAKING IN THE BUTTON NUMBER PRESSED AS AN ARG.
 // 3. Event Handler
@@ -83,6 +96,18 @@ const modalClose = event => {
   document.querySelector('#simpleModal').style.display = 'none';
 };
 
+const hoverEffect = event => {
+  let buttonHovered = event.target;
+  // if ()
+  const imageFile = dataFile.data[buttonHovered.value].image;
+  buttonHovered.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile}) no-repeat center center/cover`;
+
+  // const buttonBackgrounds = dataFile.data.map((project, index) => {
+  //   return (buttonList[index].style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${project.image}) no-repeat center center/cover`);
+  // });
+};
 // 2. Event Listener
 portfolioGrid.addEventListener('click', modalOpen);
 document.querySelector('#simpleModal').addEventListener('click', modalClose);
+portfolioGrid.addEventListener('mouseover', hoverEffect);
+portfolioGrid.addEventListener('mouseleave', hoverEffec);
