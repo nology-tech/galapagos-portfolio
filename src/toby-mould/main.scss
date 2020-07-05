@@ -11,7 +11,9 @@
 //--------0. GENERAL STYLES--------//
 //------------------------------------//
 body {
-  font-family: 'Dosis', sans-serif;
+  // font-family: 'Dosis', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 
   .container {
     margin: 0 10vw;
@@ -24,7 +26,7 @@ body {
   }
 
   h2 {
-    // display: inline-block;
+    display: block;
     // margin: 0 auto 0 auto;
     // background: blue;
     font-size: 2rem;
@@ -123,54 +125,59 @@ body {
 #navbar {
   position: sticky;
   top: 0;
-  height: 7.5vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  justify-content: center;
-  background: $dark-colour;
+  background: $grey;
   z-index: 4;
-  font-size: 0.75rem;
-  // border-radius: 10px;
-
-  div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: $colour1;
-    color: white;
-    // border-radius: 10px;
-
-    // a {
-    //   // height: 100%;
-    //   // width: 100%;
-    //   // justify-content: center;
-    //   // align-items: center;
-    //   // justify-self: center;
-    //   // background: yellow;
-    // }
-  }
+  font-size: 0.65rem;
+  color: $white-50;
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
     list-style-type: none;
+    // background: blue;
 
-    a {
-      padding: 10px;
-      margin: 0 5px;
-      // border: 1px solid white;
-      border-radius: 10px;
+    li {
+      display: flex;
 
-      // li {
-      // background: blue;
-      // }
+      &:nth-child(1) {
+        background: $colour1;
+
+        &:hover {
+          background: $dark-colour;
+        }
+        // background: yellow;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        border-right: 3px solid $black-90;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px;
+        width: 100%;
+        // background: green;
+        i {
+          padding-right: 5px;
+          // padding-right: 15px;
+          // font-size: 1.5rem;
+        }
+
+        &:hover {
+          background: $white-50;
+        }
+      }
     }
   }
 }
+
 // }
 // }
 //------------------------------------//
@@ -180,26 +187,18 @@ body {
   background: white;
   padding: 10px;
   width: 100vw;
-  // display: flex;
-  // justify-content: center;
-  // width: 100vw;
 
-  // h2 {
-  //   display: inline-block;
-  //   margin: 0px auto;
-  // }
+  h2 {
+    width: 70px;
+    margin: 0 auto 20px;
+  }
 
   .items {
     display: grid;
-    // flex-direction: column;
     grid-template-columns: 1fr;
-    // justify-content: center;
-    // align-items: center;
     width: 100%;
     border-radius: 10px;
     margin: 10px 0;
-    // border: 2px solid black;
-    // background: burlywood;
 
     // #frontend {
     //   // background: rebeccapurple;
@@ -254,6 +253,22 @@ body {
       .npm {
         color: $npm;
       }
+
+      .node {
+        color: $node;
+      }
+
+      .python {
+        color: $python;
+      }
+
+      .yarn {
+        color: $yarn;
+      }
+
+      .github {
+        color: $github;
+      }
     }
   }
 }
@@ -268,6 +283,11 @@ body {
   // height: 100vh;
   padding-bottom: 30px;
 
+  h2 {
+    width: 120px;
+    margin: 0 auto 20px;
+  }
+
   .items {
     // background: blue;
     margin-top: 20px;
@@ -281,42 +301,13 @@ body {
     // grid-template-columns: 1fr;
 
     .item {
+      @extend %portfolio-button-images;
       // background: blue;
       // width: 100%;
       min-height: 200px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
-
-      // margin: 0px 10px;
-
-      // &:nth-child(even) {
-      //   margin: 10px 0;
-      // }
-
-      &:nth-of-type(1) {
-        background: $linear-grad, $project1-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project1-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(2) {
-        background: $linear-grad, $project2-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project2-image no-repeat center center/cover;
-        }
-      }
-
-      &:nth-of-type(3) {
-        background: $linear-grad, $project3-image no-repeat center center/cover;
-
-        &:hover {
-          background: $linear-grad-3d, $project3-image no-repeat center center/cover;
-        }
-      }
     }
   }
 }
@@ -326,7 +317,7 @@ body {
 //--------5. ABOUT SECTION--------//
 //------------------------------------
 //
-#about {
+#background {
   padding-bottom: 30px;
   // height: 100vh;   -  SMOOTH SCROLL
   // display: flex;
@@ -336,6 +327,12 @@ body {
   // h2 {
   //   color: set-h2-color($light-colour);
   // }
+
+  h2 {
+    width: 165px;
+    margin: 0 auto 20px;
+  }
+
   p {
     // text-align: center;
     padding-bottom: 10px;

@@ -17,7 +17,6 @@ const buttons = dataFile.data.map((project, index) => {
   </button>`;
 });
 projectList.innerHTML += buttons.join('');
-// projectList.innerHTML +=
 
 // STEP 2 - WHEN PROJECT BUTTON PRESSED, RUN THE MODAL DISPLAY FUNCTION TAKING IN THE BUTTON NUMBER PRESSED AS AN ARG.
 // 3. Event Handler
@@ -37,10 +36,47 @@ const modalOpen = event => {
       console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(2);
       break;
+    case '3':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(3);
+      break;
+    case '4':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(4);
+      break;
+    case '5':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(5);
+      break;
+    case '6':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(6);
+      break;
+    case '7':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(7);
+      break;
+    case '8':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(8);
+      break;
+    case '9':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(9);
+      break;
+    case '10':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(10);
+      break;
+    case '11':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(11);
+      break;
+    case '12':
+      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      modalOpenFuncFile.insertProjectModalFunction(12);
+      break;
   }
-
-  // modalContent.style.display = 'block';
-  // modalStructure.style.display = 'block';
 };
 
 const modalClose = event => {

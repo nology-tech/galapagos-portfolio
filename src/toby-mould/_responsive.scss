@@ -1,6 +1,6 @@
 // ------DIFFERENT SIZE RANGES TO CONSIDER------//
 
-// Tablet[PORTFOLIO]
+// IPad[PORTFOLIO]
 @media (min-width: 501px) and (max-width: 769px) {
   //------------------------------------//
   //--------1. LANDING SECTION(IPAD)--------//
@@ -43,7 +43,7 @@
     }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
@@ -58,7 +58,7 @@
   }
 }
 
-// Normal[PORTFOLIO]
+// IPad Pro[PORTFOLIO]
 @media (min-width: 769px) and (max-width: 1200px) {
   //---------------------------------------//
   //--------1. LANDING SECTION (PRO)--------//
@@ -97,7 +97,7 @@
     }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
@@ -112,7 +112,7 @@
   }
 }
 
-//WideScreen[PORTFOLIO]
+//Desktop-widescreen[PORTFOLIO]
 @media (min-width: 1201px) {
   //-----------------------------------------//
   //--------1. LANDING SECTION (WIDE)--------//
@@ -149,7 +149,7 @@
     }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
