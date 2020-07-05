@@ -15,28 +15,6 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 //   font-size: 1rem;
 //   line-height: 1.5rem;
 // }
-%tile-image {
-  height: 150px;
-  min-width: 250px;
-  border-radius: 15px;
-  cursor: pointer;
-
-  h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
-    transition: all 0.5s ease-out;
-    color: set-h4-color($light-colour);
-
-    &:hover {
-      border: 1px solid orange;
-      background: rgba(0, 0, 0, 0.9);
-    }
-  }
-}
 
 //
 //-----------------------------------------//
@@ -88,29 +66,29 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       #summary {
         // background: rgba(255, 0, 0, 0.1);
         @extend %margin-padding;
+        @extend %modal-overview-section-images;
         background: $section-background-colours;
 
         .image {
-          @extend %tile-image;
+          height: 150px;
+          min-width: 250px;
+          border-radius: 15px;
+          cursor: pointer;
 
-          &-0 {
-            background: $project1-image no-repeat center center/cover;
-          }
+          h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+            transition: all 0.5s ease-out;
+            color: set-h4-color($light-colour);
 
-          &-1 {
-            background: $project2-image no-repeat center center/cover;
-          }
-
-          &-2 {
-            background: $project3-image no-repeat center center/cover;
-          }
-
-          &-3 {
-            background: $project4-image no-repeat center center/cover;
-          }
-
-          &-4 {
-            background: $project5-image no-repeat center center/cover;
+            &:hover {
+              border: 1px solid orange;
+              background: rgba(0, 0, 0, 0.9);
+            }
           }
         }
 
