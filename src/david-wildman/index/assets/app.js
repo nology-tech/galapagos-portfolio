@@ -15,7 +15,7 @@ const footer = document.querySelector('.footer');
 const addEventListeners = (buttons, clickBehaviour) => {
   buttons.forEach(button => {
     button.addEventListener('click', () => clickBehaviour(event));
-  })
+  });
 };
 
 const playBeep = (filePath) => {
@@ -41,24 +41,24 @@ const updatePage = (event) => {
 const mainMenuFadeIn = (event) => {
   setTimeout((() => homePageButtons.forEach((homePageButton, index) => {
     homePageButton.style.transitionDelay = `${index * 0.4}s`;
-    homePageButton.style.opacity = "1";
-    homePageButton.style.transform = "scale(1)";
+    homePageButton.style.opacity = '1';
+    homePageButton.style.transform = 'scale(1)';
     headerTitle.style.opacity = '1';
   })), 500);
 }
 
 const mainMenuFadeOut = (event) => {
-  event.currentTarget.style.color = "#8ea8c3";
-  event.currentTarget.style.borderBottom = "2px solid #ee6352";
+  event.currentTarget.style.color = '#8ea8c3';
+  event.currentTarget.style.borderBottom = '2px solid #ee6352';
   homePageButtons.forEach((homePageButton, index) => {
     if (homePageButton != event.currentTarget) {
       homePageButton.style.transitionDelay = `${index * 0.4}s`;
-      homePageButton.style.opacity = "0";
-      homePageButton.style.transform = "scale(1.3)";
+      homePageButton.style.opacity = '0';
+      homePageButton.style.transform = 'scale(1.3)';
     } else {
-      homePageButton.style.transitionDelay = "1.5s";
-      homePageButton.style.opacity = "0";
-      homePageButton.style.transform = "scale(1.5)";
+      homePageButton.style.transitionDelay = '1.5s';
+      homePageButton.style.opacity = '0';
+      homePageButton.style.transform = 'scale(1.5)';
     }
     headerTitle.style.opacity = '0';
   });
@@ -73,7 +73,7 @@ const loadMainMenu = (event) => {
   mainMenuFadeIn(event);
   if (event) {
     updatePage(event);
-  };
+  }
   setTimeout(() => {
     headerTitle.style.opacity = '1';
   }, 2000);
@@ -108,5 +108,7 @@ loadMainMenu();
 //// Footer: 
 
 
-////    footer.style.height = "8vh";
-// footer.style.opacity = "1";
+////    footer.style.height = '8vh';
+// footer.style.opacity = '1';
+
+console.log(bioPage, portfolioPage, portfolioLinks, contactPage, footer, event);
