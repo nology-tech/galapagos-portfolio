@@ -15,7 +15,7 @@ export const data = [
   {
     name: 'Cislunar Industries USA, inc.',
     image: 'https://source.unsplash.com/1600x900/?space',
-    live: 'tobymould.github.io/cislunar/',
+    live: 'https://tobymould.github.io/cislunar/',
     github: 'https://',
     overview: 'overviewoverview',
     technology: ['<li><i class="fa-li fa fa-angle-double-right"></i>HTML</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>SCSS</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>JavaScript</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>React.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Node.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Firebase</li>'],
@@ -41,7 +41,7 @@ export const data = [
   {
     name: 'Social Media Website',
     image: 'https://source.unsplash.com/1600x900/?social,media',
-    live: 'n/a',
+    live: 'https://',
     github: 'https://',
     overview: 'overviewoverview',
     technology: ['<li><i class="fa-li fa fa-angle-double-right"></i>HTML</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>SCSS</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>JavaScript</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>React.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Node.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Firebase</li>'],
@@ -158,7 +158,7 @@ export const data = [
   {
     name: 'Arduino Project',
     image: 'https://source.unsplash.com/1600x900/?arduino',
-    live: 'n/a',
+    live: 'https://',
     github: 'https://',
     overview: 'overviewoverview',
     technology: ['<li><i class="fa-li fa fa-angle-double-right"></i>HTML</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>SCSS</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>JavaScript</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>React.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Node.js</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>Firebase</li>'],
