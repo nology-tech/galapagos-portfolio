@@ -15,9 +15,10 @@ export const insertProjectModalFunction = projectNumber => {
         <!-- Summary Section -->
         <div id="summary">
           <h3>${project.name}</h3>
-          <img src="${project.image}" alt="${project.name}" class="image">
+          <div>
+          <a href="${project.live}"><img src="${project.image}" alt="${project.name}" class="image"></a>
             <h4>Live Preview</h4>
-          </>
+          </div>
           <div class="buttons">
             <i class="fas fa-desktop"
               ><a
