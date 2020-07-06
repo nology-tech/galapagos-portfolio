@@ -3,7 +3,7 @@ import * as modalOpenFuncFile from './modalHTML.js';
 import * as dataFile from './data.js';
 
 // (2) - INITIALLY-GRABBED ELEMENT
-const portfolioGrid = document.querySelector('#portfolio .items');
+const portfolioGridGlobal = document.querySelector('#portfolio .items');
 const modalGlobal = document.querySelector('#simpleModal');
 
 // (3) - AUTO-RENDER PORTFOLIO PROJECT BUTTONS AND BACKGROUND PICS USING 'DATA.JS' FILE.
@@ -14,7 +14,7 @@ const addPortfolioButtonsToHTMLFromDataFile = () => {
       <h4>${project.name}</h4>
     </button>`;
   });
-  portfolioGrid.innerHTML += buttons.join('');
+  portfolioGridGlobal.innerHTML += buttons.join('');
 };
 addPortfolioButtonsToHTMLFromDataFile();
 const portfolioButtonBackgrounds = () => {
@@ -108,7 +108,7 @@ const hoverEffect = event => {
 // ----------------------EVENT LISTENERS/TRIGGERS----------------------//
 // ---------------------------------------------------------------------//
 // (6) - MODAL OPEN & CLOSE EVENT TRIGGERS
-portfolioGrid.addEventListener('click', modalOpen);
+portfolioGridGlobal.addEventListener('click', modalOpen);
 modalGlobal.addEventListener('click', modalClose);
 
 // (7) - PORTFOLIO BUTTON HOVER EFFECT EVENT TRIGGERS
