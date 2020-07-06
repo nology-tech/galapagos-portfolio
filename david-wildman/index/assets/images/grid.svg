@@ -1,0 +1,808 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" preserveAspectRatio="xMidYMid" viewBox="0 0 1080 1080">
+<defs>
+  <pattern id="pid-0.9153643061818684" x="0" y="0" width="529.92" height="529.92" patternUnits="userSpaceOnUse">
+    <g transform="scale(2.07)"><path d="M 0 0 L 12.8 0 L 12.8 12.8 L 0 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.756504372096521s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 12.8 L 12.8 12.8 L 12.8 25.6 L 0 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.6286726643907252s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 25.6 L 12.8 25.6 L 12.8 38.400000000000006 L 0 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.9680047916320422s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 38.400000000000006 L 12.8 38.400000000000006 L 12.8 51.2 L 0 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.437605090946914s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 51.2 L 12.8 51.2 L 12.8 64 L 0 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.769034460550069s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 64 L 12.8 64 L 12.8 76.80000000000001 L 0 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.1671769050676217s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 76.80000000000001 L 12.8 76.80000000000001 L 12.8 89.60000000000001 L 0 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.71904028113239s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 89.60000000000001 L 12.8 89.60000000000001 L 12.8 102.4 L 0 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.268167072058578s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 102.4 L 12.8 102.4 L 12.8 115.2 L 0 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.792796819829642s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 115.2 L 12.8 115.2 L 12.8 128 L 0 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.27442755499159s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 128 L 12.8 128 L 12.8 140.8 L 0 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.9656760789540995s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 140.8 L 12.8 140.8 L 12.8 153.60000000000002 L 0 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.481478538265241s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 153.60000000000002 L 12.8 153.60000000000002 L 12.8 166.4 L 0 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.826141786931378s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 166.4 L 12.8 166.4 L 12.8 179.20000000000002 L 0 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.082465202512992s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 179.20000000000002 L 12.8 179.20000000000002 L 12.8 192 L 0 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.354040797160877s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 192 L 12.8 192 L 12.8 204.8 L 0 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.882681848246506s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 204.8 L 12.8 204.8 L 12.8 217.60000000000002 L 0 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.680488841484638s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 217.60000000000002 L 12.8 217.60000000000002 L 12.8 230.4 L 0 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.945789227121513s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 230.4 L 12.8 230.4 L 12.8 243.20000000000002 L 0 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.449935100549077s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 0 243.20000000000002 L 12.8 243.20000000000002 L 12.8 256 L 0 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.70989082934s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 0 L 25.6 0 L 25.6 12.8 L 12.8 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.6701895331996006s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 12.8 L 25.6 12.8 L 25.6 25.6 L 12.8 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.046626733594093s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 25.6 L 25.6 25.6 L 25.6 38.400000000000006 L 12.8 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.488494988231789s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 38.400000000000006 L 25.6 38.400000000000006 L 25.6 51.2 L 12.8 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.253207082489231s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 51.2 L 25.6 51.2 L 25.6 64 L 12.8 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.23585160749839776s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 64 L 25.6 64 L 25.6 76.80000000000001 L 12.8 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.406257679909979s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 76.80000000000001 L 25.6 76.80000000000001 L 25.6 89.60000000000001 L 12.8 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.674904812328803s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 89.60000000000001 L 25.6 89.60000000000001 L 25.6 102.4 L 12.8 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.297427367746206s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 102.4 L 25.6 102.4 L 25.6 115.2 L 12.8 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.638936716563327s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 115.2 L 25.6 115.2 L 25.6 128 L 12.8 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.6136555726104795s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 128 L 25.6 128 L 25.6 140.8 L 12.8 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.274310767595683s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 140.8 L 25.6 140.8 L 25.6 153.60000000000002 L 12.8 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.0943306545055105s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 153.60000000000002 L 25.6 153.60000000000002 L 25.6 166.4 L 12.8 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.72407426575857s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 166.4 L 25.6 166.4 L 25.6 179.20000000000002 L 12.8 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.323406834815213s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 179.20000000000002 L 25.6 179.20000000000002 L 25.6 192 L 12.8 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.6489643901842894s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 192 L 25.6 192 L 25.6 204.8 L 12.8 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.437453234234738s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 204.8 L 25.6 204.8 L 25.6 217.60000000000002 L 12.8 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.2920857228606992s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 217.60000000000002 L 25.6 217.60000000000002 L 25.6 230.4 L 12.8 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.970488797780238s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 230.4 L 25.6 230.4 L 25.6 243.20000000000002 L 12.8 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.352830550072984s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 12.8 243.20000000000002 L 25.6 243.20000000000002 L 25.6 256 L 12.8 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.62086600933899s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 0 L 38.400000000000006 0 L 38.400000000000006 12.8 L 25.6 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.2489307747069955s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 12.8 L 38.400000000000006 12.8 L 38.400000000000006 25.6 L 25.6 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.87909270095623s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 25.6 L 38.400000000000006 25.6 L 38.400000000000006 38.400000000000006 L 25.6 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.021434137720009s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 38.400000000000006 L 38.400000000000006 38.400000000000006 L 38.400000000000006 51.2 L 25.6 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.431833899752169s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 51.2 L 38.400000000000006 51.2 L 38.400000000000006 64 L 25.6 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.3694590451296773s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 64 L 38.400000000000006 64 L 38.400000000000006 76.80000000000001 L 25.6 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.649974492590479s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 76.80000000000001 L 38.400000000000006 76.80000000000001 L 38.400000000000006 89.60000000000001 L 25.6 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.246093364476538s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 89.60000000000001 L 38.400000000000006 89.60000000000001 L 38.400000000000006 102.4 L 25.6 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.941966354163843s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 102.4 L 38.400000000000006 102.4 L 38.400000000000006 115.2 L 25.6 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.7634757246286656s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 115.2 L 38.400000000000006 115.2 L 38.400000000000006 128 L 25.6 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.750519181029917s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 128 L 38.400000000000006 128 L 38.400000000000006 140.8 L 25.6 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.2677355871885334s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 140.8 L 38.400000000000006 140.8 L 38.400000000000006 153.60000000000002 L 25.6 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.453650748971363s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 153.60000000000002 L 38.400000000000006 153.60000000000002 L 38.400000000000006 166.4 L 25.6 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.544854026307036s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 166.4 L 38.400000000000006 166.4 L 38.400000000000006 179.20000000000002 L 25.6 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.456797780615845s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 179.20000000000002 L 38.400000000000006 179.20000000000002 L 38.400000000000006 192 L 25.6 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.394652543392761s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 192 L 38.400000000000006 192 L 38.400000000000006 204.8 L 25.6 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.314714548395947s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 204.8 L 38.400000000000006 204.8 L 38.400000000000006 217.60000000000002 L 25.6 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.30280547712718s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 217.60000000000002 L 38.400000000000006 217.60000000000002 L 38.400000000000006 230.4 L 25.6 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.99857203287267s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 230.4 L 38.400000000000006 230.4 L 38.400000000000006 243.20000000000002 L 25.6 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.8635572804547704s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 25.6 243.20000000000002 L 38.400000000000006 243.20000000000002 L 38.400000000000006 256 L 25.6 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.975674076924649s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 0 L 51.2 0 L 51.2 12.8 L 38.400000000000006 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.764909273908895s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 12.8 L 51.2 12.8 L 51.2 25.6 L 38.400000000000006 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.383202746661342s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 25.6 L 51.2 25.6 L 51.2 38.400000000000006 L 38.400000000000006 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.134394107312266s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 38.400000000000006 L 51.2 38.400000000000006 L 51.2 51.2 L 38.400000000000006 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.6703731995371505s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 51.2 L 51.2 51.2 L 51.2 64 L 38.400000000000006 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.6066979747791725s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 64 L 51.2 64 L 51.2 76.80000000000001 L 38.400000000000006 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.957522562973793s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 76.80000000000001 L 51.2 76.80000000000001 L 51.2 89.60000000000001 L 38.400000000000006 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.3198932477036376s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 89.60000000000001 L 51.2 89.60000000000001 L 51.2 102.4 L 38.400000000000006 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.594896612432082s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 102.4 L 51.2 102.4 L 51.2 115.2 L 38.400000000000006 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.173502728365088s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 115.2 L 51.2 115.2 L 51.2 128 L 38.400000000000006 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.450670708604029s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 128 L 51.2 128 L 51.2 140.8 L 38.400000000000006 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.627801283141217s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 140.8 L 51.2 140.8 L 51.2 153.60000000000002 L 38.400000000000006 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.9386651020464505s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 153.60000000000002 L 51.2 153.60000000000002 L 51.2 166.4 L 38.400000000000006 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.467158974029273s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 166.4 L 51.2 166.4 L 51.2 179.20000000000002 L 38.400000000000006 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.578651514403558s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 179.20000000000002 L 51.2 179.20000000000002 L 51.2 192 L 38.400000000000006 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.19286343660653s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 192 L 51.2 192 L 51.2 204.8 L 38.400000000000006 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.643749578566746s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 204.8 L 51.2 204.8 L 51.2 217.60000000000002 L 38.400000000000006 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.913027051699597s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 217.60000000000002 L 51.2 217.60000000000002 L 51.2 230.4 L 38.400000000000006 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.875777965363567s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 230.4 L 51.2 230.4 L 51.2 243.20000000000002 L 38.400000000000006 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.108507574632167s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 38.400000000000006 243.20000000000002 L 51.2 243.20000000000002 L 51.2 256 L 38.400000000000006 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.6143296926034509s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 0 L 64 0 L 64 12.8 L 51.2 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.845775127104478s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 12.8 L 64 12.8 L 64 25.6 L 51.2 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.935183221241017s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 25.6 L 64 25.6 L 64 38.400000000000006 L 51.2 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.679019176431893s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 38.400000000000006 L 64 38.400000000000006 L 64 51.2 L 51.2 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.879361661231156s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 51.2 L 64 51.2 L 64 64 L 51.2 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.436452996908998s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 64 L 64 64 L 64 76.80000000000001 L 51.2 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.615735810169019s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 76.80000000000001 L 64 76.80000000000001 L 64 89.60000000000001 L 51.2 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.545412114363579s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 89.60000000000001 L 64 89.60000000000001 L 64 102.4 L 51.2 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.077892871008196s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 102.4 L 64 102.4 L 64 115.2 L 51.2 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.759022051215902s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 115.2 L 64 115.2 L 64 128 L 51.2 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.073110812203581s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 128 L 64 128 L 64 140.8 L 51.2 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.921322293913295s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 140.8 L 64 140.8 L 64 153.60000000000002 L 51.2 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.857336215245184s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 153.60000000000002 L 64 153.60000000000002 L 64 166.4 L 51.2 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.474059784974944s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 166.4 L 64 166.4 L 64 179.20000000000002 L 51.2 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.4874579674199784s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 179.20000000000002 L 64 179.20000000000002 L 64 192 L 51.2 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.700219348398624s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 192 L 64 192 L 64 204.8 L 51.2 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.467787515503417s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 204.8 L 64 204.8 L 64 217.60000000000002 L 51.2 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.87721738580762s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 217.60000000000002 L 64 217.60000000000002 L 64 230.4 L 51.2 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.857569650512277s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 230.4 L 64 230.4 L 64 243.20000000000002 L 51.2 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.4066977889533385s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 51.2 243.20000000000002 L 64 243.20000000000002 L 64 256 L 51.2 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.783119501354454s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 0 L 76.80000000000001 0 L 76.80000000000001 12.8 L 64 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.801718373275376s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 12.8 L 76.80000000000001 12.8 L 76.80000000000001 25.6 L 64 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.117326018915035s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 25.6 L 76.80000000000001 25.6 L 76.80000000000001 38.400000000000006 L 64 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.31078453548998s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 38.400000000000006 L 76.80000000000001 38.400000000000006 L 76.80000000000001 51.2 L 64 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.3844240577935901s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 51.2 L 76.80000000000001 51.2 L 76.80000000000001 64 L 64 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.192249838464452s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 64 L 76.80000000000001 64 L 76.80000000000001 76.80000000000001 L 64 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.494802204621983s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 76.80000000000001 L 76.80000000000001 76.80000000000001 L 76.80000000000001 89.60000000000001 L 64 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.196955722955911s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 89.60000000000001 L 76.80000000000001 89.60000000000001 L 76.80000000000001 102.4 L 64 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.180695284589028s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 102.4 L 76.80000000000001 102.4 L 76.80000000000001 115.2 L 64 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.294785661709203s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 115.2 L 76.80000000000001 115.2 L 76.80000000000001 128 L 64 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.872387451099371s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 128 L 76.80000000000001 128 L 76.80000000000001 140.8 L 64 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.154967138108743s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 140.8 L 76.80000000000001 140.8 L 76.80000000000001 153.60000000000002 L 64 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.593936297499745s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 153.60000000000002 L 76.80000000000001 153.60000000000002 L 76.80000000000001 166.4 L 64 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.505001822613105s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 166.4 L 76.80000000000001 166.4 L 76.80000000000001 179.20000000000002 L 64 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.618928377378767s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 179.20000000000002 L 76.80000000000001 179.20000000000002 L 76.80000000000001 192 L 64 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.8776320731397536s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 192 L 76.80000000000001 192 L 76.80000000000001 204.8 L 64 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.4369000806246063s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 204.8 L 76.80000000000001 204.8 L 76.80000000000001 217.60000000000002 L 64 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.813672190557819s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 217.60000000000002 L 76.80000000000001 217.60000000000002 L 76.80000000000001 230.4 L 64 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.821521306078619s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 230.4 L 76.80000000000001 230.4 L 76.80000000000001 243.20000000000002 L 64 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.0793684591283454s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 64 243.20000000000002 L 76.80000000000001 243.20000000000002 L 76.80000000000001 256 L 64 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.7619795685411674s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 0 L 89.60000000000001 0 L 89.60000000000001 12.8 L 76.80000000000001 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.702581208174593s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 12.8 L 89.60000000000001 12.8 L 89.60000000000001 25.6 L 76.80000000000001 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.268018462843028s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 25.6 L 89.60000000000001 25.6 L 89.60000000000001 38.400000000000006 L 76.80000000000001 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.14270489460204s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 38.400000000000006 L 89.60000000000001 38.400000000000006 L 89.60000000000001 51.2 L 76.80000000000001 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.643385941121087s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 51.2 L 89.60000000000001 51.2 L 89.60000000000001 64 L 76.80000000000001 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.4940153451901415s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 64 L 89.60000000000001 64 L 89.60000000000001 76.80000000000001 L 76.80000000000001 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.130540058812961s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 76.80000000000001 L 89.60000000000001 76.80000000000001 L 89.60000000000001 89.60000000000001 L 76.80000000000001 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.475350758063975s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 89.60000000000001 L 89.60000000000001 89.60000000000001 L 89.60000000000001 102.4 L 76.80000000000001 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.1629893398604354s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 102.4 L 89.60000000000001 102.4 L 89.60000000000001 115.2 L 76.80000000000001 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.5340682747968772s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 115.2 L 89.60000000000001 115.2 L 89.60000000000001 128 L 76.80000000000001 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.633964446769222s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 128 L 89.60000000000001 128 L 89.60000000000001 140.8 L 76.80000000000001 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.769980375336752s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 140.8 L 89.60000000000001 140.8 L 89.60000000000001 153.60000000000002 L 76.80000000000001 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.75045246906072s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 153.60000000000002 L 89.60000000000001 153.60000000000002 L 89.60000000000001 166.4 L 76.80000000000001 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.726930514181387s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 166.4 L 89.60000000000001 166.4 L 89.60000000000001 179.20000000000002 L 76.80000000000001 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.501387538985957s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 179.20000000000002 L 89.60000000000001 179.20000000000002 L 89.60000000000001 192 L 76.80000000000001 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.12410425899458s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 192 L 89.60000000000001 192 L 89.60000000000001 204.8 L 76.80000000000001 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.2405958236040857s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 204.8 L 89.60000000000001 204.8 L 89.60000000000001 217.60000000000002 L 76.80000000000001 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.950157453346918s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 217.60000000000002 L 89.60000000000001 217.60000000000002 L 89.60000000000001 230.4 L 76.80000000000001 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.5184699544033415s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 230.4 L 89.60000000000001 230.4 L 89.60000000000001 243.20000000000002 L 76.80000000000001 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.720729329996525s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 76.80000000000001 243.20000000000002 L 89.60000000000001 243.20000000000002 L 89.60000000000001 256 L 76.80000000000001 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.974971783637724s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 0 L 102.4 0 L 102.4 12.8 L 89.60000000000001 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.835584941733213s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 12.8 L 102.4 12.8 L 102.4 25.6 L 89.60000000000001 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.231865117516321s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 25.6 L 102.4 25.6 L 102.4 38.400000000000006 L 89.60000000000001 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.9653089822614525s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 38.400000000000006 L 102.4 38.400000000000006 L 102.4 51.2 L 89.60000000000001 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.707399517409057s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 51.2 L 102.4 51.2 L 102.4 64 L 89.60000000000001 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.51283383054172s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 64 L 102.4 64 L 102.4 76.80000000000001 L 89.60000000000001 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.917896414431047s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 76.80000000000001 L 102.4 76.80000000000001 L 102.4 89.60000000000001 L 89.60000000000001 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.530078684018886s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 89.60000000000001 L 102.4 89.60000000000001 L 102.4 102.4 L 89.60000000000001 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.381050746174198s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 102.4 L 102.4 102.4 L 102.4 115.2 L 89.60000000000001 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.794975294726822s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 115.2 L 102.4 115.2 L 102.4 128 L 89.60000000000001 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.547182621306522s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 128 L 102.4 128 L 102.4 140.8 L 89.60000000000001 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.3126245203261666s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 140.8 L 102.4 140.8 L 102.4 153.60000000000002 L 89.60000000000001 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.9031044796650816s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 153.60000000000002 L 102.4 153.60000000000002 L 102.4 166.4 L 89.60000000000001 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.017477936406499s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 166.4 L 102.4 166.4 L 102.4 179.20000000000002 L 89.60000000000001 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.697231061212682s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 179.20000000000002 L 102.4 179.20000000000002 L 102.4 192 L 89.60000000000001 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.1240756686168454s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 192 L 102.4 192 L 102.4 204.8 L 89.60000000000001 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.469846331425295s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 204.8 L 102.4 204.8 L 102.4 217.60000000000002 L 89.60000000000001 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.108773242978565s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 217.60000000000002 L 102.4 217.60000000000002 L 102.4 230.4 L 89.60000000000001 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.600000062164252s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 230.4 L 102.4 230.4 L 102.4 243.20000000000002 L 89.60000000000001 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.064390975703827s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 89.60000000000001 243.20000000000002 L 102.4 243.20000000000002 L 102.4 256 L 89.60000000000001 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.4920990074742411s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 0 L 115.2 0 L 115.2 12.8 L 102.4 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.34480739999269s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 12.8 L 115.2 12.8 L 115.2 25.6 L 102.4 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.681017506566553s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 25.6 L 115.2 25.6 L 115.2 38.400000000000006 L 102.4 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.110543133605077s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 38.400000000000006 L 115.2 38.400000000000006 L 115.2 51.2 L 102.4 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.328957961631217s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 51.2 L 115.2 51.2 L 115.2 64 L 102.4 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.259281857246677s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 64 L 115.2 64 L 115.2 76.80000000000001 L 102.4 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.006886009833969s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 76.80000000000001 L 115.2 76.80000000000001 L 115.2 89.60000000000001 L 102.4 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.022236989447448s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 89.60000000000001 L 115.2 89.60000000000001 L 115.2 102.4 L 102.4 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.382631258657298s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 102.4 L 115.2 102.4 L 115.2 115.2 L 102.4 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.811768318871668s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 115.2 L 115.2 115.2 L 115.2 128 L 102.4 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.189579170641032s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 128 L 115.2 128 L 115.2 140.8 L 102.4 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.40161757975893s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 140.8 L 115.2 140.8 L 115.2 153.60000000000002 L 102.4 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.701900245735535s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 153.60000000000002 L 115.2 153.60000000000002 L 115.2 166.4 L 102.4 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.439223343876893s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 166.4 L 115.2 166.4 L 115.2 179.20000000000002 L 102.4 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.799768698550178s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 179.20000000000002 L 115.2 179.20000000000002 L 115.2 192 L 102.4 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.2465792124621428s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 192 L 115.2 192 L 115.2 204.8 L 102.4 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.3436331718592145s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 204.8 L 115.2 204.8 L 115.2 217.60000000000002 L 102.4 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.473516049876565s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 217.60000000000002 L 115.2 217.60000000000002 L 115.2 230.4 L 102.4 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.023848410544113s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 230.4 L 115.2 230.4 L 115.2 243.20000000000002 L 102.4 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.937418600269561s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 102.4 243.20000000000002 L 115.2 243.20000000000002 L 115.2 256 L 102.4 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.811424067526456s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 0 L 128 0 L 128 12.8 L 115.2 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.518251880998628s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 12.8 L 128 12.8 L 128 25.6 L 115.2 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.880707126621158s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 25.6 L 128 25.6 L 128 38.400000000000006 L 115.2 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.871244238126982s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 38.400000000000006 L 128 38.400000000000006 L 128 51.2 L 115.2 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.289635474449855s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 51.2 L 128 51.2 L 128 64 L 115.2 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.4202802822331964s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 64 L 128 64 L 128 76.80000000000001 L 115.2 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.488468757724256s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 76.80000000000001 L 128 76.80000000000001 L 128 89.60000000000001 L 115.2 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.918358006965914s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 89.60000000000001 L 128 89.60000000000001 L 128 102.4 L 115.2 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.736662942633435s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 102.4 L 128 102.4 L 128 115.2 L 115.2 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.512759164786722s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 115.2 L 128 115.2 L 128 128 L 115.2 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.3401960016820746s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 128 L 128 128 L 128 140.8 L 115.2 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.793624944638097s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 140.8 L 128 140.8 L 128 153.60000000000002 L 115.2 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.905876043053134s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 153.60000000000002 L 128 153.60000000000002 L 128 166.4 L 115.2 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.0154350579948686s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 166.4 L 128 166.4 L 128 179.20000000000002 L 115.2 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.31204806878686s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 179.20000000000002 L 128 179.20000000000002 L 128 192 L 115.2 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.303059267567457s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 192 L 128 192 L 128 204.8 L 115.2 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.365470054520038s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 204.8 L 128 204.8 L 128 217.60000000000002 L 115.2 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.198621408138163s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 217.60000000000002 L 128 217.60000000000002 L 128 230.4 L 115.2 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.955846960040372s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 230.4 L 128 230.4 L 128 243.20000000000002 L 115.2 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.847801658086608s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 115.2 243.20000000000002 L 128 243.20000000000002 L 128 256 L 115.2 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.846744659118062s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 0 L 140.8 0 L 140.8 12.8 L 128 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.091576763908071s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 12.8 L 140.8 12.8 L 140.8 25.6 L 128 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.2302747174117257s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 25.6 L 140.8 25.6 L 140.8 38.400000000000006 L 128 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.388547982280626s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 38.400000000000006 L 140.8 38.400000000000006 L 140.8 51.2 L 128 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.622318654213887s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 51.2 L 140.8 51.2 L 140.8 64 L 128 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.659505376794312s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 64 L 140.8 64 L 140.8 76.80000000000001 L 128 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.459259558406819s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 76.80000000000001 L 140.8 76.80000000000001 L 140.8 89.60000000000001 L 128 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.69064989373047s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 89.60000000000001 L 140.8 89.60000000000001 L 140.8 102.4 L 128 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.46628618713876463s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 102.4 L 140.8 102.4 L 140.8 115.2 L 128 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.8389441594626277s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 115.2 L 140.8 115.2 L 140.8 128 L 128 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.845897451100691s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 128 L 140.8 128 L 140.8 140.8 L 128 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.362352697292216s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 140.8 L 140.8 140.8 L 140.8 153.60000000000002 L 128 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.182940132252578s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 153.60000000000002 L 140.8 153.60000000000002 L 140.8 166.4 L 128 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.844450666508225s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 166.4 L 140.8 166.4 L 140.8 179.20000000000002 L 128 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.40965956500564s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 179.20000000000002 L 140.8 179.20000000000002 L 140.8 192 L 128 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.810698561784344s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 192 L 140.8 192 L 140.8 204.8 L 128 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.8223912664913328s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 204.8 L 140.8 204.8 L 140.8 217.60000000000002 L 128 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.136403379502688s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 217.60000000000002 L 140.8 217.60000000000002 L 140.8 230.4 L 128 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.390382620044414s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 230.4 L 140.8 230.4 L 140.8 243.20000000000002 L 128 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.46765568906756s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 128 243.20000000000002 L 140.8 243.20000000000002 L 140.8 256 L 128 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.17346451905159893s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 0 L 153.60000000000002 0 L 153.60000000000002 12.8 L 140.8 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.5759932714313816s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 12.8 L 153.60000000000002 12.8 L 153.60000000000002 25.6 L 140.8 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.948175500247412s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 25.6 L 153.60000000000002 25.6 L 153.60000000000002 38.400000000000006 L 140.8 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.8813040746661531s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 38.400000000000006 L 153.60000000000002 38.400000000000006 L 153.60000000000002 51.2 L 140.8 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.664694370558039s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 51.2 L 153.60000000000002 51.2 L 153.60000000000002 64 L 140.8 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.678729079704366s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 64 L 153.60000000000002 64 L 153.60000000000002 76.80000000000001 L 140.8 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.5401395342905944s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 76.80000000000001 L 153.60000000000002 76.80000000000001 L 153.60000000000002 89.60000000000001 L 140.8 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.750236553270836s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 89.60000000000001 L 153.60000000000002 89.60000000000001 L 153.60000000000002 102.4 L 140.8 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.295773507419057s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 102.4 L 153.60000000000002 102.4 L 153.60000000000002 115.2 L 140.8 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.955621031874712s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 115.2 L 153.60000000000002 115.2 L 153.60000000000002 128 L 140.8 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.148604882096544s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 128 L 153.60000000000002 128 L 153.60000000000002 140.8 L 140.8 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.541217692406718s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 140.8 L 153.60000000000002 140.8 L 153.60000000000002 153.60000000000002 L 140.8 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.33017939855952s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 153.60000000000002 L 153.60000000000002 153.60000000000002 L 153.60000000000002 166.4 L 140.8 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.696529988024268s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 166.4 L 153.60000000000002 166.4 L 153.60000000000002 179.20000000000002 L 140.8 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.0209630200779s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 179.20000000000002 L 153.60000000000002 179.20000000000002 L 153.60000000000002 192 L 140.8 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.19526185809222s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 192 L 153.60000000000002 192 L 153.60000000000002 204.8 L 140.8 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.56230570637163s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 204.8 L 153.60000000000002 204.8 L 153.60000000000002 217.60000000000002 L 140.8 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.98772565896388s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 217.60000000000002 L 153.60000000000002 217.60000000000002 L 153.60000000000002 230.4 L 140.8 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.164335897848067s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 230.4 L 153.60000000000002 230.4 L 153.60000000000002 243.20000000000002 L 140.8 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.167958437242234s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 140.8 243.20000000000002 L 153.60000000000002 243.20000000000002 L 153.60000000000002 256 L 140.8 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.76803678456296s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 0 L 166.4 0 L 166.4 12.8 L 153.60000000000002 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.3636380772626735s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 12.8 L 166.4 12.8 L 166.4 25.6 L 153.60000000000002 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.6550204660886845s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 25.6 L 166.4 25.6 L 166.4 38.400000000000006 L 153.60000000000002 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.249050298151116s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 38.400000000000006 L 166.4 38.400000000000006 L 166.4 51.2 L 153.60000000000002 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.74711244857296s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 51.2 L 166.4 51.2 L 166.4 64 L 153.60000000000002 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.82887752081008s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 64 L 166.4 64 L 166.4 76.80000000000001 L 153.60000000000002 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.744124756850807s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 76.80000000000001 L 166.4 76.80000000000001 L 166.4 89.60000000000001 L 153.60000000000002 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.586605403052946s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 89.60000000000001 L 166.4 89.60000000000001 L 166.4 102.4 L 153.60000000000002 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.319743199539774s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 102.4 L 166.4 102.4 L 166.4 115.2 L 153.60000000000002 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.488959483940503s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 115.2 L 166.4 115.2 L 166.4 128 L 153.60000000000002 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.833422066973007s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 128 L 166.4 128 L 166.4 140.8 L 153.60000000000002 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.8071673938167856s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 140.8 L 166.4 140.8 L 166.4 153.60000000000002 L 153.60000000000002 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.3694788661322038s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 153.60000000000002 L 166.4 153.60000000000002 L 166.4 166.4 L 153.60000000000002 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.894955106324966s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 166.4 L 166.4 166.4 L 166.4 179.20000000000002 L 153.60000000000002 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.030485759761799s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 179.20000000000002 L 166.4 179.20000000000002 L 166.4 192 L 153.60000000000002 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.172107251399465s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 192 L 166.4 192 L 166.4 204.8 L 153.60000000000002 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.50950677186679s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 204.8 L 166.4 204.8 L 166.4 217.60000000000002 L 153.60000000000002 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.3122844395559197s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 217.60000000000002 L 166.4 217.60000000000002 L 166.4 230.4 L 153.60000000000002 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.635943076339176s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 230.4 L 166.4 230.4 L 166.4 243.20000000000002 L 153.60000000000002 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.966512635579717s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 153.60000000000002 243.20000000000002 L 166.4 243.20000000000002 L 166.4 256 L 153.60000000000002 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.56990301188803s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 0 L 179.20000000000002 0 L 179.20000000000002 12.8 L 166.4 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.876429410825194s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 12.8 L 179.20000000000002 12.8 L 179.20000000000002 25.6 L 166.4 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.6435313387111727s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 25.6 L 179.20000000000002 25.6 L 179.20000000000002 38.400000000000006 L 166.4 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.4456139814896092s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 38.400000000000006 L 179.20000000000002 38.400000000000006 L 179.20000000000002 51.2 L 166.4 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.99943719851742s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 51.2 L 179.20000000000002 51.2 L 179.20000000000002 64 L 166.4 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.006599533319386s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 64 L 179.20000000000002 64 L 179.20000000000002 76.80000000000001 L 166.4 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.493614493962235s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 76.80000000000001 L 179.20000000000002 76.80000000000001 L 179.20000000000002 89.60000000000001 L 166.4 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.04344178809373s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 89.60000000000001 L 179.20000000000002 89.60000000000001 L 179.20000000000002 102.4 L 166.4 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.468332447020561s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 102.4 L 179.20000000000002 102.4 L 179.20000000000002 115.2 L 166.4 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.375003594501406s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 115.2 L 179.20000000000002 115.2 L 179.20000000000002 128 L 166.4 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.1531160702936205s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 128 L 179.20000000000002 128 L 179.20000000000002 140.8 L 166.4 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.3386599009461375s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 140.8 L 179.20000000000002 140.8 L 179.20000000000002 153.60000000000002 L 166.4 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.248003371285199s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 153.60000000000002 L 179.20000000000002 153.60000000000002 L 179.20000000000002 166.4 L 166.4 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.3152230655049535s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 166.4 L 179.20000000000002 166.4 L 179.20000000000002 179.20000000000002 L 166.4 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.351729534987151s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 179.20000000000002 L 179.20000000000002 179.20000000000002 L 179.20000000000002 192 L 166.4 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.318077487545885s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 192 L 179.20000000000002 192 L 179.20000000000002 204.8 L 166.4 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.975371641952707s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 204.8 L 179.20000000000002 204.8 L 179.20000000000002 217.60000000000002 L 166.4 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.404018081811795s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 217.60000000000002 L 179.20000000000002 217.60000000000002 L 179.20000000000002 230.4 L 166.4 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.8739403952282467s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 230.4 L 179.20000000000002 230.4 L 179.20000000000002 243.20000000000002 L 166.4 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.907536007469599s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 166.4 243.20000000000002 L 179.20000000000002 243.20000000000002 L 179.20000000000002 256 L 166.4 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.62791450232989s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 0 L 192 0 L 192 12.8 L 179.20000000000002 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.147837443674682s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 12.8 L 192 12.8 L 192 25.6 L 179.20000000000002 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.050559205528073s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 25.6 L 192 25.6 L 192 38.400000000000006 L 179.20000000000002 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.437266488097592s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 38.400000000000006 L 192 38.400000000000006 L 192 51.2 L 179.20000000000002 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.544943428112529s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 51.2 L 192 51.2 L 192 64 L 179.20000000000002 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.790653425995588s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 64 L 192 64 L 192 76.80000000000001 L 179.20000000000002 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.660397516538657s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 76.80000000000001 L 192 76.80000000000001 L 192 89.60000000000001 L 179.20000000000002 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.083623196350924s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 89.60000000000001 L 192 89.60000000000001 L 192 102.4 L 179.20000000000002 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.213607373509184s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 102.4 L 192 102.4 L 192 115.2 L 179.20000000000002 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.645476082872127s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 115.2 L 192 115.2 L 192 128 L 179.20000000000002 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.286873586697393s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 128 L 192 128 L 192 140.8 L 179.20000000000002 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.094286911934638s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 140.8 L 192 140.8 L 192 153.60000000000002 L 179.20000000000002 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.274565857208751s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 153.60000000000002 L 192 153.60000000000002 L 192 166.4 L 179.20000000000002 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.273012280489656s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 166.4 L 192 166.4 L 192 179.20000000000002 L 179.20000000000002 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.315813258874945s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 179.20000000000002 L 192 179.20000000000002 L 192 192 L 179.20000000000002 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.202302343596066s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 192 L 192 192 L 192 204.8 L 179.20000000000002 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.114983837088158s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 204.8 L 192 204.8 L 192 217.60000000000002 L 179.20000000000002 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.969748984344834s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 217.60000000000002 L 192 217.60000000000002 L 192 230.4 L 179.20000000000002 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.2649528861598823s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 230.4 L 192 230.4 L 192 243.20000000000002 L 179.20000000000002 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.4144853059124065s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 179.20000000000002 243.20000000000002 L 192 243.20000000000002 L 192 256 L 179.20000000000002 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.95145941393501s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 0 L 204.8 0 L 204.8 12.8 L 192 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.406225654183364s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 12.8 L 204.8 12.8 L 204.8 25.6 L 192 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.180470625500558s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 25.6 L 204.8 25.6 L 204.8 38.400000000000006 L 192 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.8021062077223602s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 38.400000000000006 L 204.8 38.400000000000006 L 204.8 51.2 L 192 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.5370268221620185s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 51.2 L 204.8 51.2 L 204.8 64 L 192 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.207212182814104s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 64 L 204.8 64 L 204.8 76.80000000000001 L 192 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.837968518462881s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 76.80000000000001 L 204.8 76.80000000000001 L 204.8 89.60000000000001 L 192 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.730521201764469s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 89.60000000000001 L 204.8 89.60000000000001 L 204.8 102.4 L 192 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.890109532785019s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 102.4 L 204.8 102.4 L 204.8 115.2 L 192 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.521201185316524s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 115.2 L 204.8 115.2 L 204.8 128 L 192 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.57432020421553s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 128 L 204.8 128 L 204.8 140.8 L 192 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.742581286397864s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 140.8 L 204.8 140.8 L 204.8 153.60000000000002 L 192 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.193812397317581s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 153.60000000000002 L 204.8 153.60000000000002 L 204.8 166.4 L 192 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.920585967271903s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 166.4 L 204.8 166.4 L 204.8 179.20000000000002 L 192 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.543115982354093s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 179.20000000000002 L 204.8 179.20000000000002 L 204.8 192 L 192 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.14595832752621s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 192 L 204.8 192 L 204.8 204.8 L 192 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.48710221691826s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 204.8 L 204.8 204.8 L 204.8 217.60000000000002 L 192 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.869681525031687s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 217.60000000000002 L 204.8 217.60000000000002 L 204.8 230.4 L 192 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.1888021911459155s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 230.4 L 204.8 230.4 L 204.8 243.20000000000002 L 192 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.768843547477369s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 192 243.20000000000002 L 204.8 243.20000000000002 L 204.8 256 L 192 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.421928084541525s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 0 L 217.60000000000002 0 L 217.60000000000002 12.8 L 204.8 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.873715197897473s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 12.8 L 217.60000000000002 12.8 L 217.60000000000002 25.6 L 204.8 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.199151161293308s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 25.6 L 217.60000000000002 25.6 L 217.60000000000002 38.400000000000006 L 204.8 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.631372617384853s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 38.400000000000006 L 217.60000000000002 38.400000000000006 L 217.60000000000002 51.2 L 204.8 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.34473386371101s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 51.2 L 217.60000000000002 51.2 L 217.60000000000002 64 L 204.8 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.737966755206063s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 64 L 217.60000000000002 64 L 217.60000000000002 76.80000000000001 L 204.8 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.2601149263356692s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 76.80000000000001 L 217.60000000000002 76.80000000000001 L 217.60000000000002 89.60000000000001 L 204.8 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.476439597750777s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 89.60000000000001 L 217.60000000000002 89.60000000000001 L 217.60000000000002 102.4 L 204.8 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.4964230203054094s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 102.4 L 217.60000000000002 102.4 L 217.60000000000002 115.2 L 204.8 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.87647553573894s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 115.2 L 217.60000000000002 115.2 L 217.60000000000002 128 L 204.8 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.5048345676215016s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 128 L 217.60000000000002 128 L 217.60000000000002 140.8 L 204.8 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.151772031431541s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 140.8 L 217.60000000000002 140.8 L 217.60000000000002 153.60000000000002 L 204.8 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.363628867678084s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 153.60000000000002 L 217.60000000000002 153.60000000000002 L 217.60000000000002 166.4 L 204.8 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.190598643839801s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 166.4 L 217.60000000000002 166.4 L 217.60000000000002 179.20000000000002 L 204.8 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.140124873365178s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 179.20000000000002 L 217.60000000000002 179.20000000000002 L 217.60000000000002 192 L 204.8 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.665847700339641s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 192 L 217.60000000000002 192 L 217.60000000000002 204.8 L 204.8 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.215974239310661s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 204.8 L 217.60000000000002 204.8 L 217.60000000000002 217.60000000000002 L 204.8 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.001854313667637s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 217.60000000000002 L 217.60000000000002 217.60000000000002 L 217.60000000000002 230.4 L 204.8 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.3673517204991095s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 230.4 L 217.60000000000002 230.4 L 217.60000000000002 243.20000000000002 L 204.8 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.882475012217176s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 204.8 243.20000000000002 L 217.60000000000002 243.20000000000002 L 217.60000000000002 256 L 204.8 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.023189990191506s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 0 L 230.4 0 L 230.4 12.8 L 217.60000000000002 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.01885889561428s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 12.8 L 230.4 12.8 L 230.4 25.6 L 217.60000000000002 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-13.689414089543074s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 25.6 L 230.4 25.6 L 230.4 38.400000000000006 L 217.60000000000002 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.8244612594434444s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 38.400000000000006 L 230.4 38.400000000000006 L 230.4 51.2 L 217.60000000000002 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.369814470283215s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 51.2 L 230.4 51.2 L 230.4 64 L 217.60000000000002 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.1422788373712976s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 64 L 230.4 64 L 230.4 76.80000000000001 L 217.60000000000002 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.134051024907192s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 76.80000000000001 L 230.4 76.80000000000001 L 230.4 89.60000000000001 L 217.60000000000002 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.637956614988403s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 89.60000000000001 L 230.4 89.60000000000001 L 230.4 102.4 L 217.60000000000002 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.460770859245642s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 102.4 L 230.4 102.4 L 230.4 115.2 L 217.60000000000002 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.7667822116132s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 115.2 L 230.4 115.2 L 230.4 128 L 217.60000000000002 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.075452609377167s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 128 L 230.4 128 L 230.4 140.8 L 217.60000000000002 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-10.147659608976193s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 140.8 L 230.4 140.8 L 230.4 153.60000000000002 L 217.60000000000002 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.3219687751806335s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 153.60000000000002 L 230.4 153.60000000000002 L 230.4 166.4 L 217.60000000000002 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.0014433314343796s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 166.4 L 230.4 166.4 L 230.4 179.20000000000002 L 217.60000000000002 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.542771633456708s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 179.20000000000002 L 230.4 179.20000000000002 L 230.4 192 L 217.60000000000002 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.2657620171604063s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 192 L 230.4 192 L 230.4 204.8 L 217.60000000000002 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.731362279774492s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 204.8 L 230.4 204.8 L 230.4 217.60000000000002 L 217.60000000000002 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.921984308835103s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 217.60000000000002 L 230.4 217.60000000000002 L 230.4 230.4 L 217.60000000000002 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.399316582699727s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 230.4 L 230.4 230.4 L 230.4 243.20000000000002 L 217.60000000000002 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-4.542527500932873s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 217.60000000000002 243.20000000000002 L 230.4 243.20000000000002 L 230.4 256 L 217.60000000000002 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.3334388317916925s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 0 L 243.20000000000002 0 L 243.20000000000002 12.8 L 230.4 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.3228810095318724s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 12.8 L 243.20000000000002 12.8 L 243.20000000000002 25.6 L 230.4 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.6532487766663415s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 25.6 L 243.20000000000002 25.6 L 243.20000000000002 38.400000000000006 L 230.4 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.536309751634331s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 38.400000000000006 L 243.20000000000002 38.400000000000006 L 243.20000000000002 51.2 L 230.4 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.235252592433204s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 51.2 L 243.20000000000002 51.2 L 243.20000000000002 64 L 230.4 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.155744149371678s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 64 L 243.20000000000002 64 L 243.20000000000002 76.80000000000001 L 230.4 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.49037101769743s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 76.80000000000001 L 243.20000000000002 76.80000000000001 L 243.20000000000002 89.60000000000001 L 230.4 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.3258277206158584s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 89.60000000000001 L 243.20000000000002 89.60000000000001 L 243.20000000000002 102.4 L 230.4 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.0810502512932105s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 102.4 L 243.20000000000002 102.4 L 243.20000000000002 115.2 L 230.4 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.184845791867135s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 115.2 L 243.20000000000002 115.2 L 243.20000000000002 128 L 230.4 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.646950667009857s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 128 L 243.20000000000002 128 L 243.20000000000002 140.8 L 230.4 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.991832306049961s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 140.8 L 243.20000000000002 140.8 L 243.20000000000002 153.60000000000002 L 230.4 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.837623012465544s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 153.60000000000002 L 243.20000000000002 153.60000000000002 L 243.20000000000002 166.4 L 230.4 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.975997748326702s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 166.4 L 243.20000000000002 166.4 L 243.20000000000002 179.20000000000002 L 230.4 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-14.555123132609754s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 179.20000000000002 L 243.20000000000002 179.20000000000002 L 243.20000000000002 192 L 230.4 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.611251298433332s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 192 L 243.20000000000002 192 L 243.20000000000002 204.8 L 230.4 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.7292929101348022s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 204.8 L 243.20000000000002 204.8 L 243.20000000000002 217.60000000000002 L 230.4 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.300775251156365s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 217.60000000000002 L 243.20000000000002 217.60000000000002 L 243.20000000000002 230.4 L 230.4 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-6.575677555298301s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 230.4 L 243.20000000000002 230.4 L 243.20000000000002 243.20000000000002 L 230.4 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.9536778414427237s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 230.4 243.20000000000002 L 243.20000000000002 243.20000000000002 L 243.20000000000002 256 L 230.4 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-11.25855203162469s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 0 L 256 0 L 256 12.8 L 243.20000000000002 12.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.82305982802196s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 12.8 L 256 12.8 L 256 25.6 L 243.20000000000002 25.6 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-5.339324145992548s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 25.6 L 256 25.6 L 256 38.400000000000006 L 243.20000000000002 38.400000000000006 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.271843244002262s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 38.400000000000006 L 256 38.400000000000006 L 256 51.2 L 243.20000000000002 51.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.597763042779293s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 51.2 L 256 51.2 L 256 64 L 243.20000000000002 64 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-1.8032830213202713s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 64 L 256 64 L 256 76.80000000000001 L 243.20000000000002 76.80000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-15.154191911940046s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 76.80000000000001 L 256 76.80000000000001 L 256 89.60000000000001 L 243.20000000000002 89.60000000000001 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.535207190525336s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 89.60000000000001 L 256 89.60000000000001 L 256 102.4 L 243.20000000000002 102.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-12.086774552227256s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 102.4 L 256 102.4 L 256 115.2 L 243.20000000000002 115.2 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-7.8703488096390455s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 115.2 L 256 115.2 L 256 128 L 243.20000000000002 128 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.399816030226448s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 128 L 256 128 L 256 140.8 L 243.20000000000002 140.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-3.134504648665855s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 140.8 L 256 140.8 L 256 153.60000000000002 L 243.20000000000002 153.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-0.754377586017844s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 153.60000000000002 L 256 153.60000000000002 L 256 166.4 L 243.20000000000002 166.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.151040942994406s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 166.4 L 256 166.4 L 256 179.20000000000002 L 243.20000000000002 179.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.9534035227713136s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 179.20000000000002 L 256 179.20000000000002 L 256 192 L 243.20000000000002 192 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.34002918394373s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 192 L 256 192 L 256 204.8 L 243.20000000000002 204.8 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-9.90803879227139s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 204.8 L 256 204.8 L 256 217.60000000000002 L 243.20000000000002 217.60000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-16.006596742768146s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 217.60000000000002 L 256 217.60000000000002 L 256 230.4 L 243.20000000000002 230.4 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-8.806866242160849s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 230.4 L 256 230.4 L 256 243.20000000000002 L 243.20000000000002 243.20000000000002 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.145370487224311s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path><path d="M 243.20000000000002 243.20000000000002 L 256 243.20000000000002 L 256 256 L 243.20000000000002 256 Z" fill="#0b0014">
+  <animate attributeName="fill" begin="-2.4602145149505388s" values="#0b0014;#0b0014;#1d0034;#0b0014;#0b0014;#0b0014" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="16.666666666666664s" repeatCount="indefinite"></animate>
+</path></g>
+  </pattern>
+</defs>
+<rect x="0" y="0" width="1080" height="1080" fill="url(#pid-0.9153643061818684)"></rect>
+</svg>
