@@ -4,6 +4,7 @@ import * as dataFile from './data.js';
 export const insertProjectModalFunction = projectNumber => {
   console.log(`It Reached inside the SOMETHING FUNCTION`);
   const project = dataFile.data[projectNumber];
+  const modalLocalScope = document.querySelector('#simpleModal');
   const modalhtml = `
   <div class="modal-content">
   <!-- Modal Content on Project -->
@@ -90,6 +91,6 @@ export const insertProjectModalFunction = projectNumber => {
       </div>
     </article>
     </div>`;
-  document.querySelector('#simpleModal').innerHTML = modalhtml;
-  document.querySelector('#simpleModal').style.display = 'block';
+  modalLocalScope.innerHTML = modalhtml; // keep
+  modalLocalScope.style.display = 'block'; //
 };
