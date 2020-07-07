@@ -33,58 +33,58 @@ portfolioButtonBackgrounds();
 // (4) - WHEN PROJECT (BUTTON||MODAL) CLICKED, (OPEN||CLOSE) PROJECT-SPECIFIC MODAL (USED BUTTON NUMBER PRESSED AS ARG)
 const modalOpen = event => {
   const buttonClicked = event.target.value;
-  console.log(`it reached inside Event Handler - ${buttonClicked}`);
+  // console.log(`it reached inside Event Handler - ${buttonClicked}`);
   switch (buttonClicked) {
     case '0':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(0);
       break;
     case '1':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(1);
       break;
     case '2':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(2);
       break;
     case '3':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(3);
       break;
     case '4':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(4);
       break;
     case '5':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(5);
       break;
     case '6':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(6);
       break;
     case '7':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(7);
       break;
     case '8':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(8);
       break;
     case '9':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(9);
       break;
     case '10':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(10);
       break;
     case '11':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(11);
       break;
     case '12':
-      console.log(`it reached inside SWITCH - ${buttonClicked}`);
+      // console.log(`it reached inside SWITCH - ${buttonClicked}`);
       modalOpenFuncFile.insertProjectModalFunction(12);
       break;
   }
@@ -93,6 +93,7 @@ const modalClose = event => {
   const modalLocalScope = document.querySelector('#simpleModal');
   modalLocalScope.style.display = 'none';
 };
+
 // (5) - PROJECT BUTTON HOVER EFFECT - MOUSEENTER = RAINBOW, MOUSELEAVE = BLACK-50;
 const hoverEffect = event => {
   const imageFile = dataFile.data[event.target.value];
@@ -115,3 +116,13 @@ modalGlobal.addEventListener('click', modalClose);
 const buttons = document.querySelectorAll('#portfolio button'); // NEEDS TO BE DOWN HERE AFTER BUTTONS THAT ARE RENDERED IN JS NEAR THE START OF THIS SCRIPT^^
 buttons.forEach(button => button.addEventListener('mouseenter', hoverEffect));
 buttons.forEach(button => button.addEventListener('mouseleave', hoverEffect));
+
+// (8) - MODAL POPUP BUTTON HOVER EFFECT EVENT TRIGGER
+const modalImageSection = document.querySelector('#summary .image');
+
+const test = event => console.log(`modalImageSections: ${event.type}`);
+
+modalImageSection.addEventListener('mouseenter', test);
+modalImageSection.addEventListener('mouseleave', test);
+
+// modalImageSections.forEach(modalImage => modalImage.addEventListener('mouseenter', hoverEffect);

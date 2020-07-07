@@ -44,7 +44,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
 
   article {
@@ -61,6 +61,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 25vw;
       // background: yellow;
 
       #summary {
@@ -69,29 +70,45 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         // @extend %modal-overview-section-images;
         background: $section-background-colours;
 
-        .image {
-          height: 150px;
-          min-width: 250px;
-          border-radius: 15px;
-          cursor: pointer;
-          // o: $linear-grad;
-          filter: brightness(50%);
+        .image-section {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // height: 100px;
 
-          h4 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 150px;
+          .image {
+            height: 150px;
+            min-width: 10vw;
+            // max-width: 350px;
             border-radius: 15px;
-            background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
-            transition: all 0.5s ease-out;
-            color: set-h4-color($light-colour);
+            cursor: pointer;
+            // o: $linear-grad;
+            filter: brightness(50%);
 
             &:hover {
-              border: 1px solid orange;
-              background: rgba(0, 0, 0, 0.9);
+              background: green;
             }
           }
+
+          // h4 {
+          //   position: absolute;
+          //   top: 0px;
+          //   min-width: 250px;
+          //   display: flex;
+          //   align-items: center;
+          //   justify-content: center;
+          //   min-height: 150px;
+          //   border-radius: 15px;
+          //   background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+          //   transition: all 0.5s ease-out;
+          //   color: set-h4-color($light-colour);
+
+          //   // &:hover {
+          //   //   border: 1px solid orange;
+          //   //   background: rgba(0, 0, 0, 0.9);
+          //   // }
+          // }
         }
 
         .buttons {
@@ -120,6 +137,37 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         // @extend %text-adjust;
 
         background: rgba(0, 255, 0, 0.1);
+
+        .lang-percent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding-top: 10px;
+
+          div {
+            width: 20%;
+            height: 10px;
+            background: blue;
+
+            &:first-of-type {
+              background: red;
+              border-radius: 20px 0 0 20px;
+            }
+            &:nth-of-type(2) {
+              background: yellow;
+            }
+
+            &:last-of-type {
+              // background: red;
+              border-radius: 0 20px 20px 0;
+            }
+          }
+
+          // &:nth-child(0){
+          //   width: 10%;
+          // }
+        }
 
         .table {
           // display: grid;
@@ -161,6 +209,9 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      min-height: 100%;
+      min-width: 100%;
+      // max-width: 55vw;
       // background: red;
 
       #role {
@@ -202,7 +253,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           flex-direction: column;
 
           li {
-            margin: 0;
+            margin: 0 0 0 20px;
             padding: 0;
           }
         }
