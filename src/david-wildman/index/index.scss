@@ -31,6 +31,10 @@ body {
   max-width: 100vw;
   font-size: 12px;
   background-color: #0b0014;
+  background-image: url("./assets/images/backgroundsquares.svg");
+  background-position: top;
+  background-size: 100vw;
+  background-attachment: fixed;
 }
 
 /*---------- Homepage styles----------*/
@@ -38,23 +42,20 @@ body {
 .home.page {
   height: 100vh;
   font-family: sfalienencsolid, sans-serif;
-  background-image: url("./assets/images/grid.svg");
-  background-position: center;
-  background-size: cover, 560px;
-  background-attachment: fixed;
 
   .wrapper {
-    background-color: #0b0014bb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40%;
-    width: 80%;
-    border-left: 1px $cadet-grey solid;
-    border-right: 1px $cadet-grey solid;
+    width: 100%;
 
     .header.title {
+      text-shadow: 0 0 50px $cultured, 0 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
+      font-family: sfalienenc;
+      z-index: 1;
+      overflow: visible;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -67,22 +68,46 @@ body {
       transition-delay: 0.2;
 
       .title-one {
-        color: $xiketic;
-        text-shadow: 0 0 50px $cultured, 00 0 30px $cultured, 0 0 5px $cultured;
+        position: relative;
+        text-shadow: 0 0 50px $cultured, 0 0 30px $cadet-grey, 0 0 5px $cultured;
+        color: $cultured;
         width: 100%;
         height: max-content;
-        font-size: 2em;
-        margin: 10%;
+        font-size: 2.5em;
+        margin: 5% 0;
+
+        &::after {
+          width: 100%;
+          height: max-content;
+          content: attr(data-content);
+          position: absolute;
+          left: 0;
+          top: 0;
+
+          color: $xiketic;
+          text-shadow: none;
+        }
       }
 
       .title-two {
-        font-family: sfalienenc;
-        color: $cultured;
-        text-shadow: 0 0 50px $cultured, 00 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
+        position: relative;
+        color: $xiketic;
+        text-shadow: 0 0 50px $cultured, 0 0 30px $fire-opal, 0 0 5px $cultured;
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.5em;
         height: max-content;
-        margin: 2%;
+        margin: 2% 0;
+
+        &::after {
+          width: 100%;
+          height: max-content;
+          content: attr(data-content);
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: $cultured;
+          text-shadow: none;
+        }
       }
     }
   }
@@ -94,11 +119,10 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  width: 80%;
+  width: 100%;
   height: 60%;
 
   ul {
-    background-color: #0b0014bb;
     width: 100%;
     height: 100%;
     display: flex;
@@ -106,8 +130,6 @@ body {
     justify-content: center;
     align-items: center;
     letter-spacing: initial;
-    border-left: 1px $cadet-grey solid;
-    border-right: 1px $cadet-grey solid;
 
     li {
       color: $fire-opal;
@@ -123,6 +145,7 @@ body {
       opacity: 0;
       transition-property: transform, opacity;
       transition-duration: 1s;
+      transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
       * {
         border: unset;
@@ -146,16 +169,26 @@ h6,
 /*---------- Generic pages styling----------*/
 
 .page {
-  background-image: url("./assets/images/grid.svg");
-  background-position: center;
-  background-size: 560px;
-  background-attachment: local;
   font-family: "sfalienencsolid", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0 auto;
+
+  .page-border {
+    background-color: #0b0014bb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-left: 1px $cadet-grey solid;
+    border-right: 1px $cadet-grey solid;
+  }
 }
 
 .fixed {
@@ -163,7 +196,7 @@ h6,
   position: sticky;
   top: 0;
   height: 8vh;
-  width: 100%;
+  width: 80%;
   color: $fire-opal;
   background-color: #0b0014;
 
@@ -199,21 +232,18 @@ h6,
   font-family: "sfalienencsolid", sans-serif;
 
   .wrapper {
-    background-color: #0b0014bb;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40%;
-    width: 80%;
-    border-left: 1px $cadet-grey solid;
-    border-right: 1px $cadet-grey solid;
+    width: 100%;
 
     .title {
       font-family: "sfalienenc";
       width: 100%;
       height: 18vh;
-      opacity: 1;
+      opacity: 0;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -240,9 +270,8 @@ h6,
 }
 
 article {
+  position: relative;
   background-color: #0b0014bb;
-  border-left: 1px $cadet-grey solid;
-  border-right: 1px $cadet-grey solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,93 +279,104 @@ article {
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
   height: max-content;
   width: 80%;
+  margin: 5% 0;
 
-  div {
+  .expandable {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 80%;
+    height: 100px;
 
-    .expandable {
+    .dropdown {
+      z-index: 1;
+      height: 100px;
+      background-color: $xiketic;
       display: flex;
       align-items: center;
       justify-content: space-between;
       color: $fire-opal;
       font-size: 1.5em;
       width: 100%;
-      height: 100%;
-      border-top: 1px solid $fire-opal;
-      border-left: 1px solid $fire-opal;
-      margin: 5% 0;
       padding: 5%;
+
+      .dropdown-title {
+        float: left;
+        color: $fire-opal;
+        text-align: left;
+        padding: 5%;
+        z-index: 1;
+        border-top: 1px solid $fire-opal;
+        border-left: 1px solid $fire-opal;
+      }
+
+      .expand-button {
+        float: right;
+        color: $fire-opal;
+        text-align: left;
+        padding: 5%;
+        z-index: 1;
+        border-bottom: 1px solid $fire-opal;
+        border-right: 1px solid $fire-opal;
+      }
     }
 
-    h3 {
-      display: inline;
-      color: $fire-opal;
-      text-align: left;
-    }
-  }
+    .content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: max-content;
-    border-bottom: 1px solid $fire-opal;
-    border-right: 1px solid $fire-opal;
-    margin: 5% 0;
-    padding: 5%;
-  }
+      h4 {
+        margin: 2%;
+        color: $light-green;
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+      }
 
-  h4 {
-    margin: 2%;
+      h5 {
+        margin: 2%;
 
-    color: $light-green;
-    font-size: 1em;
-    text-align: left;
-    width: 100%;
-  }
+        color: $azure;
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+      }
 
-  h5 {
-    margin: 2%;
+      h6 {
+        margin: 2%;
+        color: $fire-opal;
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 0.9em;
+        text-align: justify;
+        width: max-content;
+      }
 
-    color: $azure;
-    font-size: 1em;
-    text-align: left;
-    width: 100%;
-  }
+      p {
+        margin: 2%;
 
-  h6 {
-    margin: 2%;
+        color: $cultured;
+        text-align: left;
+        width: 100%;
+      }
 
-    color: $fire-opal;
-    text-decoration: underline;
-    font-style: italic;
-    font-size: 0.9em;
-    text-align: justify;
-    width: max-content;
-  }
+      ul {
+        list-style: square inside;
+        color: $cadet-grey;
+        padding: 0% 0% 5%;
 
-  p {
-    margin: 2%;
-
-    color: $cultured;
-    text-align: left;
-    width: 100%;
-  }
-
-  ul {
-    list-style: square inside;
-    color: $cadet-grey;
-    padding: 0% 0% 5%;
-
-    li {
-      font-size: 0.7em;
+        li {
+          font-size: 0.7em;
+        }
+      }
     }
   }
 }
