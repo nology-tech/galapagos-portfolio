@@ -50,6 +50,7 @@ export const insertProjectModalFunction = projectNumber => {
             <ul class="fa-ul">
               ${project.technology.join('')}
             </ul>
+            <p> ADD LANGUAGES % USAGE BAR HERE <p>
           </div>
         </div>
       </div>
