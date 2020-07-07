@@ -1,25 +1,36 @@
+// (1) - IMPORTS
 import * as modalOpenFuncFile from './modalHTML.js';
 import * as dataFile from './data.js';
 
-// 1. Grab Items
-const portfolioGrid = document.querySelector('#portfolio .items');
-const portfolioItems = document.querySelectorAll('#portfolio .item');
-const modalContent = document.querySelector('#simpleModal .modal-content');
+// (2) - INITIALLY-GRABBED ELEMENT
+const portfolioGridGlobal = document.querySelector('#portfolio .items');
+const modalGlobal = document.querySelector('#simpleModal');
 
-console.log(portfolioGrid);
-const projectList = document.querySelector('#portfolio .items');
-// ----------------------------------------------------------------
-// STEP 1 - AUTO-RENDER THE PROJECT BUTTONS USING 'DATA.JS' FILE.
-const buttons = dataFile.data.map((project, index) => {
-  return `
-  <button class="item" value="${index}">
-    <h4>${project.name}</h4>
-  </button>`;
-});
-projectList.innerHTML += buttons.join('');
+// (3) - AUTO-RENDER PORTFOLIO PROJECT BUTTONS AND BACKGROUND PICS USING 'DATA.JS' FILE.
+const addPortfolioButtonsToHTMLFromDataFile = () => {
+  const buttons = dataFile.data.map((project, index) => {
+    return `
+    <button class="item" value="${index}">
+      <h4>${project.name}</h4>
+    </button>`;
+  });
+  portfolioGridGlobal.innerHTML += buttons.join('');
+};
+addPortfolioButtonsToHTMLFromDataFile();
+const portfolioButtonBackgrounds = () => {
+  const buttonList = document.querySelectorAll('#portfolio button');
 
-// STEP 2 - WHEN PROJECT BUTTON PRESSED, RUN THE MODAL DISPLAY FUNCTION TAKING IN THE BUTTON NUMBER PRESSED AS AN ARG.
-// 3. Event Handler
+  const buttonBackgrounds = dataFile.data.map((project, index) => {
+    return (buttonList[index].style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover`);
+  });
+};
+portfolioButtonBackgrounds();
+
+// ---------------------------------------------------------------------//
+// ----------------------EVENT-DEPENDENT FUNCTIONS----------------------//
+// ---------------------------------------------------------------------//
+
+// (4) - WHEN PROJECT (BUTTON||MODAL) CLICKED, (OPEN||CLOSE) PROJECT-SPECIFIC MODAL (USED BUTTON NUMBER PRESSED AS ARG)
 const modalOpen = event => {
   const buttonClicked = event.target.value;
   console.log(`it reached inside Event Handler - ${buttonClicked}`);
@@ -78,11 +89,29 @@ const modalOpen = event => {
       break;
   }
 };
-
 const modalClose = event => {
-  document.querySelector('#simpleModal').style.display = 'none';
+  const modalLocalScope = document.querySelector('#simpleModal');
+  modalLocalScope.style.display = 'none';
+};
+// (5) - PROJECT BUTTON HOVER EFFECT - MOUSEENTER = RAINBOW, MOUSELEAVE = BLACK-50;
+const hoverEffect = event => {
+  const imageFile = dataFile.data[event.target.value];
+
+  if (event.type == 'mouseenter') {
+    return (event.target.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover`);
+  } else if (event.type == 'mouseleave') {
+    return (event.target.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageFile.image}) no-repeat center center/cover`);
+  }
 };
 
-// 2. Event Listener
-portfolioGrid.addEventListener('click', modalOpen);
-document.querySelector('#simpleModal').addEventListener('click', modalClose);
+// ---------------------------------------------------------------------//
+// ----------------------EVENT LISTENERS/TRIGGERS----------------------//
+// ---------------------------------------------------------------------//
+// (6) - MODAL OPEN & CLOSE EVENT TRIGGERS
+portfolioGridGlobal.addEventListener('click', modalOpen);
+modalGlobal.addEventListener('click', modalClose);
+
+// (7) - PORTFOLIO BUTTON HOVER EFFECT EVENT TRIGGERS
+const buttons = document.querySelectorAll('#portfolio button'); // NEEDS TO BE DOWN HERE AFTER BUTTONS THAT ARE RENDERED IN JS NEAR THE START OF THIS SCRIPT^^
+buttons.forEach(button => button.addEventListener('mouseenter', hoverEffect));
+buttons.forEach(button => button.addEventListener('mouseleave', hoverEffect));
