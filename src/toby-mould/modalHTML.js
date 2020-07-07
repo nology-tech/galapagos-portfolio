@@ -16,9 +16,10 @@ export const insertProjectModalFunction = projectNumber => {
         <!-- Summary Section -->
         <div id="summary">
           <h3>${project.name}</h3>
-          <div>
-          <a href="${project.live}"><img src="${project.image}" alt="${project.name}" class="image"></a>
-            <h4>Live Preview</h4>
+          <div class='image-section'>
+            <a href="${project.live}">
+            <img src="${project.image}" alt="${project.name}" class="image">
+            </a>
           </div>
           <div class="buttons">
             <i class="fas fa-desktop"
@@ -50,8 +51,13 @@ export const insertProjectModalFunction = projectNumber => {
             <ul class="fa-ul">
               ${project.technology.join('')}
             </ul>
-            <p> ADD LANGUAGES % USAGE BAR HERE <p>
-          </div>
+            </div>
+            <div class='lang-percent'> 
+              <div> </div>
+              <div> </div>
+              <div> </div>
+              <div> </div>
+            </div>
         </div>
       </div>
   
@@ -94,4 +100,9 @@ export const insertProjectModalFunction = projectNumber => {
     </div>`;
   modalLocalScope.innerHTML = modalhtml; // keep
   modalLocalScope.style.display = 'block'; //
+  // const addHoverEventListeners = () => {
+  //   const modalImageSectionLocal = document.querySelector('#summary .image');
+  //   const test = event => console.log(`modalImageSections: ${event.type}`);
+  //   return modalImageSection.addEventListener('mouseenter', test);
+  // };
 };
