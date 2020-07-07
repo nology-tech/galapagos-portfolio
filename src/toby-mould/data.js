@@ -5,7 +5,7 @@ export const data = [
     live: 'https://amazing-raman-bf7426.netlify.com/',
     github: 'https://github.com/tobymould/portfolio',
     overview: `The website you are currently previewing is hosted on <span>Netlify</span> and is an ongoing work-in-progress.`,
-    technology: ['<li><i class="fa-li fa fa-angle-double-right"></i>HTML</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>SCSS</li>', '<li><i class="fa-li fa fa-angle-double-right"></i>JavaScript</li>'],
+    technology: ['<i class="html fab fa-html5"></i>', '<i class="sass fab fa-sass"></i>', '<i class="javascript fab fa-js-square"></i>'],
     role: `I created this website from scratch without frameworks. As the owner of the website, I was responsible for the build. The aim was to build a website with only vanilla code.`,
     difficult: `Building the styling classes from scratch and keeping the code well-organised.`,
     solution: `I was able to create the template website seen here.`,
