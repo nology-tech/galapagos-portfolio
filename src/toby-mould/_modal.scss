@@ -66,7 +66,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       #summary {
         // background: rgba(255, 0, 0, 0.1);
         @extend %margin-padding;
-        @extend %modal-overview-section-images;
+        // @extend %modal-overview-section-images;
         background: $section-background-colours;
 
         .image {
@@ -74,6 +74,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           min-width: 250px;
           border-radius: 15px;
           cursor: pointer;
+          // o: $linear-grad;
+          filter: brightness(50%);
 
           h4 {
             display: flex;
@@ -112,6 +114,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 
       #tech {
         @extend %margin-padding;
+        @extend %icon-colours;
+
         background: $section-background-colours;
         // @extend %text-adjust;
 
@@ -131,6 +135,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
               i {
                 margin-bottom: 5px;
                 padding: 0;
+
                 // background: red;
               }
             }
