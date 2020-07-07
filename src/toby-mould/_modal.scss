@@ -119,25 +119,38 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         background: $section-background-colours;
         // @extend %text-adjust;
 
-        // background: rgba(0, 255, 0, 0.1);
+        background: rgba(0, 255, 0, 0.1);
 
         .table {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+          // display: grid;
+          // grid-template-columns: 1fr 1fr;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           // background: purple;
+
           ul {
             display: flex;
             flex-direction: row;
+            padding: 10px;
+            margin: 0px;
             // background: green;
-            li {
-              padding: 5px 0;
-              // background: blue;
-              i {
-                margin-bottom: 5px;
-                padding: 0;
-                // background: red;
-              }
+            // width: 100%;
+
+            i {
+              padding: 0 10px;
             }
+
+            // li {
+            //   padding: 5px 0;
+            //   background: blue;
+            //   i {
+            //     margin: 0px 20px;
+            //     // margin-bottom: 5px;
+            //     padding: 0;
+            //     background: red;
+            //   }
+            // }
           }
         }
       }
