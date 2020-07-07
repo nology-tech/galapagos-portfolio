@@ -288,7 +288,8 @@ article {
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 100px;
+    max-height: 100px;
+    transition: max-height 1s linear;
 
     .dropdown {
       z-index: 1;
@@ -300,23 +301,22 @@ article {
       color: $fire-opal;
       font-size: 1.5em;
       width: 100%;
-      padding: 5%;
 
       .dropdown-title {
+        padding: 7%;
         float: left;
         color: $fire-opal;
         text-align: left;
-        padding: 5%;
         z-index: 1;
         border-top: 1px solid $fire-opal;
         border-left: 1px solid $fire-opal;
       }
 
       .expand-button {
+        padding: 7%;
         float: right;
         color: $fire-opal;
         text-align: left;
-        padding: 5%;
         z-index: 1;
         border-bottom: 1px solid $fire-opal;
         border-right: 1px solid $fire-opal;
@@ -325,13 +325,15 @@ article {
 
     .content {
       position: absolute;
+      top: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100px;
+      max-height: 100px;
       overflow: hidden;
+      transition: max-height 1s linear, top 1s linear;
 
       h4 {
         margin: 2%;
