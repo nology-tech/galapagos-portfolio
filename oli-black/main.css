@@ -3,13 +3,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(1, 0.98) translateY(-0.5%) translateX(0.5%);
+    transform: scale(1.03, 1) translateY(-0.5%) translateX(0.5%);
   }
   50% {
-    transform: scale(0.96, 0.98) translateY(0.5%) translateX(0%);
+    transform: scale(1.02, 1.02) translateY(0.5%) translateX(0%);
   }
   75% {
-    transform: scale(0.99, 1) translateY(-0.5%) translateX(0.5%);
+    transform: scale(1, 1.03) translateY(-0.5%) translateX(0.5%);
   }
   100% {
     transform: scale(1, 1);
@@ -20,13 +20,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(0.99, 1.02) translateY(0%) translateX(-0.5%);
+    transform: scale(1, 1.05) translateY(0%) translateX(-0.5%);
   }
   50% {
-    transform: scale(0.98, 0.98) translateY(0%) translateX(0.5%);
+    transform: scale(1.02, 1) translateY(0%) translateX(0.5%);
   }
   75% {
-    transform: scale(1, 0.96) translateY(-0.5%) translateX(0%);
+    transform: scale(1.03, 1.02) translateY(-0.5%) translateX(0%);
   }
   100% {
     transform: scale(1, 1);
@@ -37,13 +37,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(0.98, 0.99) translateY(0.5%) translateX(0%);
+    transform: scale(1, 1) translateY(0.5%) translateX(0%);
   }
   50% {
-    transform: scale(1, 0.96) translateY(0%) translateX(0.5%);
+    transform: scale(1.03, 1.02) translateY(0%) translateX(0.5%);
   }
   75% {
-    transform: scale(1.02, 0.98) translateY(-0.5%) translateX(0%);
+    transform: scale(1.05, 1.02) translateY(-0.5%) translateX(0%);
   }
   100% {
     transform: scale(1, 1);
@@ -54,13 +54,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(0.96, 1) translateY(0%) translateX(0.5%);
+    transform: scale(1.02, 1.03) translateY(0%) translateX(0.5%);
   }
   50% {
-    transform: scale(0.98, 1.02) translateY(0.5%) translateX(0%);
+    transform: scale(1.02, 1.05) translateY(0.5%) translateX(0%);
   }
   75% {
-    transform: scale(0.98, 0.99) translateY(0%) translateX(-0.5%);
+    transform: scale(1, 1) translateY(0%) translateX(-0.5%);
   }
   100% {
     transform: scale(1, 1);
@@ -71,13 +71,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(1, 0.98) translateY(0.5%) translateX(-0.5%);
+    transform: scale(1.03, 1.02) translateY(0.5%) translateX(-0.5%);
   }
   50% {
-    transform: scale(0.99, 0.98) translateY(0%) translateX(0%);
+    transform: scale(1, 1) translateY(0%) translateX(0%);
   }
   75% {
-    transform: scale(0.96, 1.02) translateY(0.5%) translateX(-0.5%);
+    transform: scale(1.02, 1.05) translateY(0.5%) translateX(-0.5%);
   }
   100% {
     transform: scale(1, 1);
@@ -88,13 +88,13 @@
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(0.98, 0.99) translateY(-0.5%) translateX(0%);
+    transform: scale(1.02, 1) translateY(-0.5%) translateX(0%);
   }
   50% {
-    transform: scale(0.96, 1.02) translateY(0%) translateX(0.5%);
+    transform: scale(1.02, 1.05) translateY(0%) translateX(0.5%);
   }
   75% {
-    transform: scale(0.98, 1) translateY(0.5%) translateX(0.5%);
+    transform: scale(1, 1.03) translateY(0.5%) translateX(0.5%);
   }
   100% {
     transform: scale(1, 1);
