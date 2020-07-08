@@ -3,7 +3,7 @@ import * as dataFile from './data.js';
 //STEP 3 - USING THE PROJECT BUTTON NUMBER, RETRIEVE THE PROJECTS DATA, INPUT IT INTO THE MODAL CONTENT TEMPLATE 'modalhtml' AND INSERT IT INTO PAGE.
 export const insertProjectModalFunction = projectNumber => {
   console.log(`It Reached inside the SOMETHING FUNCTION`);
-  const project = dataFile.data[projectNumber];
+  const project = dataFile.projects[projectNumber];
   const modalLocalScope = document.querySelector('#simpleModal');
   const modalhtml = `
   <div class='modal-content-wrapper'>
