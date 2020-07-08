@@ -46,13 +46,13 @@
       .modal-content {
         // height: 100%;
         margin: 22vh auto;
-        // overflow-y: scroll !important;
+        overflow-y: scroll;
 
         article {
           height: 100%;
           // background: red;
-          display: grid !important;
-          grid-template-columns: 1fr 2fr !important;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
         }
       }
     }
@@ -113,19 +113,20 @@
 
     .modal {
       // background: blue;
-
-      .modal-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: yellow;
-        // height: 100%;
-        // margin: 35vh auto;
-        article {
-          height: 100%;
-          // background: red;
-          display: grid !important;
-          grid-template-columns: 1fr 3fr !important;
+      .modal-content-wrapper {
+        .modal-content {
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          // background: yellow;
+          // height: 100%;
+          // margin: 35vh auto;
+          article {
+            height: 100%;
+            // background: red;
+            display: grid !important;
+            grid-template-columns: 1fr 3fr !important;
+          }
         }
       }
     }
@@ -183,15 +184,17 @@
     }
 
     .modal {
-      .modal-content {
-        // height: 100%;
-        margin: 20vh auto;
+      .modal-content-wrapper {
+        .modal-content {
+          // height: 100%;
+          margin: 20vh auto;
 
-        article {
-          height: 100%;
-          // background: red;
-          display: grid !important;
-          grid-template-columns: 1fr 3fr !important;
+          article {
+            height: 100%;
+            // background: red;
+            display: grid !important;
+            grid-template-columns: 1fr 3fr !important;
+          }
         }
       }
     }
