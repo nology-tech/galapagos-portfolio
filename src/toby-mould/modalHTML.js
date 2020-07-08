@@ -22,22 +22,14 @@ export const insertProjectModalFunction = projectNumber => {
             </a>
           </div>
           <div class="buttons">
-            <i class="fas fa-desktop"
-              ><a
-                class="btn"
-                href="${project.live}"
-                target="_blank"
-                >Live Preview</a
-              ></i
-            >
-            <i class="fas fa-code-branch"
-              ><a
-                class="btn"
-                href="${project.github}"
-                target="_blank"
-                >Source Private</a
-              ></i
-            >
+            <a class="btn" href="${project.live}" target="_blank">
+              <i class="fas fa-desktop"></i>
+              <p>Live Preview</p>
+            </a>
+            <a class="btn" href="${project.github}" target="_blank">
+              <i class="fas fa-code-branch"></i>
+              <p>Source Private</p>
+            </a>
           </div>
           <p>
           ${project.overview}
@@ -53,6 +45,7 @@ export const insertProjectModalFunction = projectNumber => {
             </ul>
             </div>
             <div class='lang-percent'> 
+              <div> </div>
               <div> </div>
               <div> </div>
               <div> </div>
