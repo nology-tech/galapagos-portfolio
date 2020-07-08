@@ -47,9 +47,10 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
   align-items: center;
   // height: 98vh;
   width: 80vw;
+  // margin: 2.5vh auto;
   margin: 2.5vh auto;
   overflow-y: scroll;
-  // background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   // margin: 20px 0;
 
@@ -70,7 +71,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
     // background: purple;
 
     #column-1 {
-      background: rgba(255, 255, 255, 0.9);
+      // background: rgba(255, 255, 255, 0.9);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -254,9 +255,9 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
     #column-2 {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      min-height: 50%;
-      background: rgba(255, 255, 255, 0.9);
+      justify-content: start;
+      min-height: 30%;
+      // background: rgba(255, 255, 255, 0.9);
 
       // width: 100%;
       // margin: 10px;
