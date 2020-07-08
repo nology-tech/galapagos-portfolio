@@ -1,4 +1,4 @@
-export const data = [
+export const projects = [
   {
     name: 'Portfolio Project',
     image: 'https://source.unsplash.com/1600x900/?portfolio,website',
@@ -171,3 +171,4 @@ export const data = [
 ];
 
 // export default data;
+export const skillsIcons = ['<i class="html fab fa-html5 fa-3x"></i>', '<i class="css fab fa-css3-alt fa-3x"></i>', '<i class="sass fab fa-sass fa-3x"></i>', '<i class="javascript fab fa-js-square fa-3x"></i>', '<i class="react fab fa-react fa-3x"></i>', '<i class="node fab fa-node fa-3x"></i>', '<i class="yarn fab fa-yarn fa-3x"></i>', '<i class="git fab fa-git fa-3x"></i>', '<i class="github fab fa-github fa-3x"></i>'];
