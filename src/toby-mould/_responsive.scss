@@ -25,6 +25,7 @@
     }
 
     .items {
+      padding: 10px 0;
       grid-template-columns: repeat(auto-fit, 100px);
     }
   }
@@ -102,6 +103,7 @@
     }
 
     .items {
+      padding: 20px 0;
       grid-template-columns: repeat(auto-fit, 70px);
     }
   }
@@ -170,11 +172,12 @@
 
   #skills {
     p {
-      padding: 0px 70px;
+      padding: 0 200px;
     }
 
     .items {
       // width: 80vw;
+      padding: 20px 0;
       grid-template-columns: repeat(auto-fit, 70px);
     }
   }
