@@ -1,4 +1,84 @@
-.modal-content article #column-2 #feat, .modal-content article #column-2 #sol, .modal-content article #column-2 #diff, .modal-content article #column-2 #role, .modal-content article #column-1 #tech, .modal-content article #column-1 #summary {
+#skills .items .item .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
+  color: #f06529;
+}
+#skills .items .item .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
+  color: #2965f1;
+}
+#skills .items .item .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
+  color: #cd6799;
+}
+#skills .items .item .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
+  color: #f0db4f;
+}
+#skills .items .item .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
+  color: #61dbfb;
+}
+#skills .items .item .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
+  color: #563d7c;
+}
+#skills .items .item .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
+  color: #f1502f;
+}
+#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: black;
+}
+#skills .items .item .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
+  color: #cc3534;
+}
+#skills .items .item .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
+  color: #3c873a;
+}
+#skills .items .item .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
+  color: #306998;
+}
+#skills .items .item .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
+  color: #117cad;
+}
+#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: #2b3137;
+}
+
+#skills .items .item .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
+  color: #f06529;
+}
+#skills .items .item .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
+  color: #2965f1;
+}
+#skills .items .item .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
+  color: #cd6799;
+}
+#skills .items .item .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
+  color: #f0db4f;
+}
+#skills .items .item .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
+  color: #61dbfb;
+}
+#skills .items .item .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
+  color: #563d7c;
+}
+#skills .items .item .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
+  color: #f1502f;
+}
+#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: black;
+}
+#skills .items .item .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
+  color: #cc3534;
+}
+#skills .items .item .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
+  color: #3c873a;
+}
+#skills .items .item .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
+  color: #306998;
+}
+#skills .items .item .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
+  color: #117cad;
+}
+#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: #2b3137;
+}
+
+.modal-content-wrapper .modal-content article #column-2 #feat, .modal-content-wrapper .modal-content article #column-2 #sol, .modal-content-wrapper .modal-content article #column-2 #diff, .modal-content-wrapper .modal-content article #column-2 #role, .modal-content-wrapper .modal-content article #column-1 #tech, .modal-content-wrapper .modal-content article #column-1 #summary {
   margin: 10px;
   padding: 15px;
   border-radius: 10px;
@@ -18,106 +98,141 @@
 }
 
 /* Now to deal with the content! */
-.modal-content {
+.modal-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 90vw;
-  margin: 0 auto;
 }
-.modal-content article {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.modal-content-wrapper .modal-content {
+  width: 80vw;
+  margin: 0 auto;
+  overflow-y: scroll;
   background: rgba(255, 255, 255, 0.9);
-  min-width: 20vw;
-  max-height: 90vh;
+  border-radius: 15px;
+}
+.modal-content-wrapper .modal-content article {
+  height: 95vh;
+  width: 80vw;
   border-radius: 10px;
   box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
 }
-.modal-content article #column-1 {
+.modal-content-wrapper .modal-content article #column-1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  min-height: 50%;
 }
-.modal-content article #column-1 #summary {
+.modal-content-wrapper .modal-content article #column-1 #summary {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-1 #summary .image {
-  height: 150px;
-  min-width: 250px;
+.modal-content-wrapper .modal-content article #column-1 #summary .image-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content-wrapper .modal-content article #column-1 #summary .image-section .image {
+  width: 100%;
   border-radius: 15px;
   cursor: pointer;
   filter: brightness(50%);
 }
-.modal-content article #column-1 #summary .image h4 {
+.modal-content-wrapper .modal-content article #column-1 #summary .image-section .image:hover {
+  background: green;
+}
+.modal-content-wrapper .modal-content article #column-1 #summary .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 150px;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
-  transition: all 0.5s ease-out;
-  color: set-h4-color(#f4f4f4);
+  justify-content: space-evenly;
 }
-.modal-content article #column-1 #summary .image h4:hover {
-  border: 1px solid orange;
-  background: rgba(0, 0, 0, 0.9);
-}
-.modal-content article #column-1 #summary .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.modal-content article #column-1 #summary .buttons i {
-  margin: 0 auto 5px;
-}
-.modal-content article #column-1 #summary .buttons i a {
+.modal-content-wrapper .modal-content article #column-1 #summary .buttons a {
   font-size: 0.5rem;
-  padding: 5px 10px;
-  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.modal-content article #column-1 #tech {
+.modal-content-wrapper .modal-content article #column-1 #summary .buttons a i {
+  margin: 0 10px 0 0;
+  padding: 5px;
+  font-size: 1rem;
+}
+.modal-content-wrapper .modal-content article #column-1 #summary .buttons a p {
+  padding: 0 5px;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-1 #tech .table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.modal-content article #column-1 #tech .table ul {
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
-.modal-content article #column-1 #tech .table ul li {
-  padding: 5px 0;
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div {
+  height: 10px;
 }
-.modal-content article #column-1 #tech .table ul li i {
-  margin-bottom: 5px;
-  padding: 0;
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div:first-of-type {
+  background: turquoise;
+  border-radius: 20px 0 0 20px;
+  width: 40%;
 }
-.modal-content article #column-2 {
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div:nth-of-type(2) {
+  background: green;
+  width: 30%;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div:nth-of-type(3) {
+  background: yellow;
+  width: 20%;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div:nth-of-type(4) {
+  background: red;
+  width: 10%;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech .lang-percent div:last-of-type {
+  background: blue;
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech .table {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.modal-content article #column-2 #role {
+.modal-content-wrapper .modal-content article #column-1 #tech .table ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0;
+}
+.modal-content-wrapper .modal-content article #column-1 #tech .table ul i {
+  padding: 0 10px;
+}
+.modal-content-wrapper .modal-content article #column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 30%;
+}
+.modal-content-wrapper .modal-content article #column-2 #role {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-2 #diff {
+.modal-content-wrapper .modal-content article #column-2 #diff {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-2 #sol {
+.modal-content-wrapper .modal-content article #column-2 #sol {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-2 #feat {
+.modal-content-wrapper .modal-content article #column-2 #feat {
   background: rgba(0, 0, 0, 0.1);
 }
-.modal-content article #column-2 #feat ul {
+.modal-content-wrapper .modal-content article #column-2 #feat ul {
   display: flex;
   flex-direction: column;
 }
-.modal-content article #column-2 #feat ul li {
-  margin: 0;
+.modal-content-wrapper .modal-content article #column-2 #feat ul li {
+  margin: 0 0 0 20px;
   padding: 0;
 }
 
@@ -278,45 +393,6 @@ body a {
 #skills .items .item i {
   margin: 20px auto;
 }
-#skills .items .item .html {
-  color: #f06529;
-}
-#skills .items .item .css {
-  color: #2965f1;
-}
-#skills .items .item .sass {
-  color: #cd6799;
-}
-#skills .items .item .javascript {
-  color: #f0db4f;
-}
-#skills .items .item .react {
-  color: #61dbfb;
-}
-#skills .items .item .bootstrap {
-  color: #563d7c;
-}
-#skills .items .item .git {
-  color: #f1502f;
-}
-#skills .items .item .github {
-  color: black;
-}
-#skills .items .item .npm {
-  color: #cc3534;
-}
-#skills .items .item .node {
-  color: #3c873a;
-}
-#skills .items .item .python {
-  color: #306998;
-}
-#skills .items .item .yarn {
-  color: #117cad;
-}
-#skills .items .item .github {
-  color: #2b3137;
-}
 
 #portfolio {
   background: #a7adba;
@@ -329,8 +405,8 @@ body a {
 #portfolio .items {
   margin-top: 20px;
   display: grid;
-  align-content: space-between;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
   padding: 10px;
 }
 #portfolio .items .item {
@@ -380,7 +456,7 @@ body a {
   color: #5fa4dc;
 }
 
-@media (min-width: 501px) and (max-width: 769px) {
+@media (min-width: 670px) and (max-width: 769px) {
   #home #home-content {
     top: 12%;
   }
@@ -404,6 +480,15 @@ body a {
   }
   #portfolio .items .item h4 {
     font-size: 1.2rem;
+  }
+  #portfolio .modal .modal-content {
+    margin: 22vh auto;
+    overflow-y: scroll;
+  }
+  #portfolio .modal .modal-content article {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   #background p {
@@ -441,6 +526,11 @@ body a {
   #portfolio .items .item h4 {
     font-size: 1.2rem;
   }
+  #portfolio .modal .modal-content-wrapper .modal-content article {
+    height: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
+  }
 
   #background p {
     text-align: center;
@@ -468,14 +558,19 @@ body a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #portfolio .items {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   #portfolio .items .item {
     height: 20px;
   }
   #portfolio .items .item h4 {
     font-size: 1.2rem;
+  }
+  #portfolio .modal .modal-content-wrapper .modal-content {
+    margin: 20vh auto;
+  }
+  #portfolio .modal .modal-content-wrapper .modal-content article {
+    height: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
   }
 
   #background p {
