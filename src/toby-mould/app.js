@@ -104,6 +104,23 @@ const hoverEffect = event => {
     return (event.target.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageFile.image}) no-repeat center center/cover`);
   }
 };
+// (5) - PROJECT BUTTON HOVER EFFECT - MOUSEENTER = RAINBOW, MOUSELEAVE = BLACK-50;
+const hoverEffect = event => {
+  const imageFile = dataFile.data[event.target.value];
+
+  if (event.type == 'mouseenter') {
+    return (event.target.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover`);
+  } else if (event.type == 'mouseleave') {
+    return (event.target.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageFile.image}) no-repeat center center/cover`);
+  }
+};
+
+// ---------------------------------------------------------------------//
+// ----------------------EVENT LISTENERS/TRIGGERS----------------------//
+// ---------------------------------------------------------------------//
+// (6) - MODAL OPEN & CLOSE EVENT TRIGGERS
+portfolioGridGlobal.addEventListener('click', modalOpen);
+modalGlobal.addEventListener('click', modalClose);
 
 // ---------------------------------------------------------------------//
 // ----------------------EVENT LISTENERS/TRIGGERS----------------------//

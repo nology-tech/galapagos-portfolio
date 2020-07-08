@@ -4,26 +4,26 @@
 /* Other colors */
 /*---------- Fonts ----------*/
 @font-face {
-  font-family: "sfalienencsolid";
-  src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets/fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
+  font-family: 'sfalienencsolid';
+  src: url('./assets/fonts/sfalienencsolid.woff2') format('woff2'), url('./assets/fonts/sfalienencsolid.woff') format('woff'), url('./assets//fonts/sfalienencsolid.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "sfalienenc";
-  src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets/fonts/sfalienenc.woff") format("woff"), url("./assets/fonts/sfalienenc.ttf") format("truetype");
+  font-family: 'sfalienenc';
+  src: url('./assets/fonts/sfalienenc.woff2') format('woff2'), url('./assets/fonts/sfalienenc.woff') format('woff'), url('./assets/fonts/sfalienenc.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "streamster";
-  src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets/fonts/streamster.woff") format("woff"), url("./assets/fonts/streamster.ttf") format("truetype");
+  font-family: 'streamster';
+  src: url('./assets/fonts/streamster.woff2') format('woff2'), url('./assets/fonts/streamster.woff') format('woff'), url('./assets/fonts/streamster.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "scriptina";
-  src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets/fonts/scriptina.woff") format("woff"), url("./assets/fonts/scriptina.ttf") format("truetype");
+  font-family: 'scriptina';
+  src: url('./assets/fonts/scriptina.woff2') format('woff2'), url('./assets/fonts/scriptina.woff') format('woff'), url('./assets/fonts/scriptina.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -103,7 +103,7 @@ body {
 .home.page {
   height: 100vh;
   font-family: sfalienencsolid, sans-serif;
-  background-image: url("./assets/images/grid.svg");
+  background-image: url('./assets/images/grid.svg');
   background-position: center;
   background-size: cover, 560px;
   background-attachment: fixed;
@@ -201,11 +201,11 @@ h6:hover,
 
 /*---------- Generic pages styling----------*/
 .page {
-  background-image: url("./assets/images/grid.svg");
+  background-image: url('./assets/images/grid.svg');
   background-position: center;
   background-size: 560px;
   background-attachment: local;
-  font-family: "sfalienencsolid", sans-serif;
+  font-family: 'sfalienencsolid', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -247,7 +247,7 @@ h6:hover,
 #bio,
 #portfolio,
 #contact {
-  font-family: "sfalienencsolid", sans-serif;
+  font-family: 'sfalienencsolid', sans-serif;
 }
 #bio .wrapper,
 #portfolio .wrapper,
@@ -265,7 +265,7 @@ h6:hover,
 #bio .wrapper .title,
 #portfolio .wrapper .title,
 #contact .wrapper .title {
-  font-family: "sfalienenc";
+  font-family: 'sfalienenc';
   width: 100%;
   height: 18vh;
   opacity: 1;
@@ -429,7 +429,7 @@ article ul li {
 /*----------Responsive design----------*/
 @media screen and (min-width: 823px) {
   h1,
-h2 {
+  h2 {
     width: 100%;
   }
 
