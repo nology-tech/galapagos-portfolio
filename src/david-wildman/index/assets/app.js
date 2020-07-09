@@ -112,9 +112,7 @@ const loadMainMenu = (event) => {
 
 const expandArticle = (event) => {
   console.log(event.currentTarget.children[1]);
-  event.currentTarget.style.maxHeight = "1000px";
-  event.currentTarget.children[1].style.top = "100px";
-  event.currentTarget.children[1].style.maxHeight = "1000px";
+  event.currentTarget.children[1].classList.toggle('open');
 }
 
 addEventListeners(homePageButtons, mainMenuFadeOut);

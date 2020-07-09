@@ -540,34 +540,49 @@ h6:hover,
 }
 
 article {
-  position: relative;
-  background-color: #0b0014bb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-color: #0b0014;
+  overflow: hidden;
+  background-color: #0b0014;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
+  height: 100px;
+  width: 60%;
+  margin: 5% 0;
+  font-size: 0;
+}
+
+article .article-heading {
+  font-size: 16px;
+  white-space: nowrap;
+  display: inline-block;
+  outline: none;
+  width: 50%;
+  max-height: 100px;
+  -webkit-transition: max-height 1s linear;
+  transition: max-height 1s linear;
+  color: #ee6352;
+  margin-right: auto;
+}
+
+article .article-heading .article-heading-text {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 80%;
-  margin: 5% 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #ee6352;
+  color: #ee6352;
+  border-top: 1px solid #ee6352;
+  border-left: 1px solid #ee6352;
+  font-size: 1.5em;
+  line-height: 48px;
+  padding: 25px;
 }
 
-article .expandable {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+article .article-content {
+  font-size: 16px;
+  display: none;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -580,72 +595,16 @@ article .expandable {
           justify-content: center;
   width: 70%;
   max-height: 100px;
+  overflow: hidden;
   -webkit-transition: max-height 1s linear;
   transition: max-height 1s linear;
 }
 
-article .expandable .dropdown {
-  z-index: 1;
-  height: 100px;
-  background-color: #0b0014;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #ee6352;
-  font-size: 1.5em;
-  width: 100%;
+article .article-content.open {
+  max-height: 200vh;
 }
 
-article .expandable .dropdown .dropdown-title {
-  padding: 7%;
-  float: left;
-  color: #ee6352;
-  text-align: left;
-  z-index: 1;
-  border-top: 1px solid #ee6352;
-  border-left: 1px solid #ee6352;
-}
-
-article .expandable .dropdown .expand-button {
-  padding: 7%;
-  float: right;
-  color: #ee6352;
-  text-align: left;
-  z-index: 1;
-  border-bottom: 1px solid #ee6352;
-  border-right: 1px solid #ee6352;
-}
-
-article .expandable .content {
-  position: absolute;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  max-height: 100px;
-  overflow: hidden;
-  -webkit-transition: max-height 1s linear, top 1s linear;
-  transition: max-height 1s linear, top 1s linear;
-}
-
-article .expandable .content h4 {
+article .article-content h4 {
   margin: 2%;
   color: #7cea9c;
   font-size: 1em;
@@ -653,7 +612,7 @@ article .expandable .content h4 {
   width: 100%;
 }
 
-article .expandable .content h5 {
+article .article-content h5 {
   margin: 2%;
   color: #357ded;
   font-size: 1em;
@@ -661,7 +620,7 @@ article .expandable .content h5 {
   width: 100%;
 }
 
-article .expandable .content h6 {
+article .article-content h6 {
   margin: 2%;
   color: #ee6352;
   text-decoration: underline;
@@ -673,21 +632,49 @@ article .expandable .content h6 {
   width: max-content;
 }
 
-article .expandable .content p {
+article .article-content p {
   margin: 2%;
   color: whitesmoke;
   text-align: left;
   width: 100%;
 }
 
-article .expandable .content ul {
+article .article-content ul {
   list-style: square inside;
   color: #8ea8c3;
   padding: 0% 0% 5%;
 }
 
-article .expandable .content ul li {
+article .article-content ul li {
   font-size: 0.7em;
+}
+
+article .article-footer {
+  font-size: 16px;
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  outline: none;
+  max-height: 100px;
+  -webkit-transition: max-height 1s linear;
+  transition: max-height 1s linear;
+  color: #ee6352;
+}
+
+article .article-footer .article-footer-text {
+  margin-left: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 1.5em;
+  line-height: 48px;
+  color: #ee6352;
+  border-bottom: 1px solid #ee6352;
+  border-right: 1px solid #ee6352;
+  padding: 25px;
 }
 
 .caption {
