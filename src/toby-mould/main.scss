@@ -14,6 +14,7 @@ body {
   // font-family: 'Dosis', sans-serif;
   // font-family: 'Montserrat', sans-serif;
   font-family: 'Lato', sans-serif;
+  background: black;
 
   .container {
     margin: 0 10vw;
@@ -76,6 +77,7 @@ body {
   align-items: center;
   background: url('./img/SpaceSelfie.png') no-repeat 25% 100% / cover;
   // background-attachment: fixed; //This solved nothing?
+  clip-path: polygon(14% 0, 100% 0%, 86% 100%, 0% 100%);
 
   #home-overlay {
     position: absolute;
@@ -125,7 +127,7 @@ body {
 #navbar {
   position: sticky;
   top: 0;
-  background: $grey;
+  background: $grey-50;
   z-index: 4;
   font-size: 0.65rem;
   color: $white-50;
@@ -142,7 +144,7 @@ body {
       display: flex;
 
       &:nth-child(1) {
-        background: $colour1;
+        background: $colour1-50;
 
         &:hover {
           background: $dark-colour;
@@ -187,6 +189,7 @@ body {
   background: white;
   padding: 10px;
   width: 100vw;
+  clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
 
   h2 {
     width: 70px;
@@ -211,8 +214,10 @@ body {
 //--------4. PORTFOLIO SECTION--------//
 //------------------------------------//
 #portfolio {
+  padding: 60px 0px;
   background: $colour4;
   padding-bottom: 30px;
+  clip-path: polygon(14% 0, 100% 0%, 86% 100%, 0% 100%);
 
   h2 {
     width: 120px;
@@ -222,10 +227,15 @@ body {
     text-align: center;
   }
 
-  input {
+  input[type='search'] {
     background: rgba(255, 255, 255, 0.5);
     padding: 5px 10px;
     border-radius: 20px;
+
+    &:focus {
+      border: 2px solid grey;
+      border-radius: 60px;
+    }
   }
 
   .items {
@@ -255,7 +265,10 @@ body {
 //------------------------------------
 //
 #background {
+  background: white;
   padding-bottom: 30px;
+  clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+
   // height: 100vh;   -  SMOOTH SCROLL
   // display: flex;
   // align-items: center;
