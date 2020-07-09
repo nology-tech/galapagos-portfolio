@@ -171,4 +171,4 @@ export const projects = [
 ];
 
 // export default data;
-export const skillsIcons = ['<i class="html fab fa-html5 fa-3x"></i>', '<i class="css fab fa-css3-alt fa-3x"></i>', '<i class="sass fab fa-sass fa-3x"></i>', '<i class="javascript fab fa-js-square fa-3x"></i>', '<i class="react fab fa-react fa-3x"></i>', '<i class="node fab fa-node fa-3x"></i>', '<i class="yarn fab fa-yarn fa-3x"></i>', '<i class="git fab fa-git fa-3x"></i>', '<i class="github fab fa-github fa-3x"></i>'];
+export const skillsIcons = ['<i class="html fab fa-html5 fa-3x"></i>', '<i class="css fab fa-css3-alt fa-3x"></i>', '<i class="sass fab fa-sass fa-3x"></i>', '<i class="javascript fab fa-js-square fa-3x"></i>', '<i class="react fab fa-react fa-3x"></i>', '<i class="node fab fa-node fa-3x"></i>', '<i class="yarn fab fa-yarn fa-3x"></i>', '<i class="git fab fa-git fa-3x"></i>', '<i class="github fab fa-github fa-3x"></i>', '<img class="firebase" src="./img/icons/firebase.png" alt="firebase logo" />', '<img class="postman" src="./img/icons/postman.png" alt="postman logo" />'];
