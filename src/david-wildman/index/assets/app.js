@@ -12,7 +12,7 @@ const portfolioLinks = document.querySelectorAll('h6');
 const contactPage = document.querySelector('.contact.page');
 const footer = document.querySelector('.footer');
 
-const expandButtons = document.querySelectorAll('.expandable');
+const expandButtons = document.querySelectorAll('.article-footer');
 
 let pageTitle = document.querySelector('.on .title');
 
@@ -111,8 +111,8 @@ const loadMainMenu = (event) => {
 };
 
 const expandArticle = (event) => {
-  console.log(event.currentTarget.children[1]);
-  event.currentTarget.children[1].classList.toggle('open');
+  console.log(event.currentTarget.parentNode.childNodes[3]);
+  event.currentTarget.parentNode.childNodes[3].classList.toggle('open');
 }
 
 addEventListeners(homePageButtons, mainMenuFadeOut);

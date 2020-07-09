@@ -231,39 +231,43 @@ h6,
 #contact {
   font-family: "sfalienencsolid", sans-serif;
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-    width: 100%;
+  .page-border {
+    justify-content: flex-start;
 
-    .title {
-      font-family: "sfalienenc";
-      width: 100%;
-      height: 18vh;
-      opacity: 0;
-      text-align: center;
+    .wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      height: 40%;
       width: 100%;
-      transition: opacity 1.5s ease-in;
-      transition-delay: 0.2;
 
-      span {
-        text-shadow: 0 0 50px $cultured, 00 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
-        font-family: sfalienenc;
-        width: 85%;
+      .title {
+        font-family: "sfalienenc";
+        width: 100%;
+        height: 18vh;
+        opacity: 0;
         text-align: center;
-        color: $cadet-grey;
-        font-size: 2.5em;
-        line-height: 6vh;
-        margin: 6vh 0;
-        border-bottom: 2px $fire-opal solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        transition: opacity 1.5s ease-in;
+        transition-delay: 0.2;
+
+        span {
+          text-shadow: 0 0 50px $cultured, 00 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
+          font-family: sfalienenc;
+          width: 85%;
+          text-align: center;
+          color: $cadet-grey;
+          font-size: 2.5em;
+          line-height: 6vh;
+          margin: 6vh 0;
+          border-bottom: 2px $fire-opal solid;
+        }
       }
     }
   }
@@ -271,18 +275,16 @@ h6,
 
 article {
   background-color: $xiketic;
-  overflow: hidden;
-  background-color: $xiketic;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
-  height: 100px;
+  max-height: 1000vh;
   width: 60%;
   margin: 5% 0;
   font-size: 0;
 
   .article-heading {
+    float: left;
     font-size: 16px;
     white-space: nowrap;
-    display: inline-block;
     outline: none;
     width: 50%;
     max-height: 100px;
@@ -312,11 +314,12 @@ article {
     justify-content: center;
     width: 70%;
     max-height: 100px;
-    overflow: hidden;
     transition: max-height 1s linear;
 
     &.open {
-      max-height: 200vh;
+      display: flex;
+      max-height: 100vh;
+      overflow: visible;
     }
 
     h4 {
@@ -366,9 +369,9 @@ article {
   }
 
   .article-footer {
+    float: right;
     font-size: 16px;
     text-align: right;
-    display: inline-block;
     width: 50%;
     outline: none;
     max-height: 100px;
