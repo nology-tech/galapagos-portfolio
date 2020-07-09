@@ -111,8 +111,9 @@ const loadMainMenu = (event) => {
 };
 
 const expandArticle = (event) => {
-  console.log(event.currentTarget.parentNode.childNodes[3]);
+  event.currentTarget.parentNode.classList.toggle("flex-direction");
   event.currentTarget.parentNode.childNodes[3].classList.toggle('open');
+  event.currentTarget.parentNode.childNodes[5].classList.toggle('open');;
 }
 
 addEventListeners(homePageButtons, mainMenuFadeOut);
