@@ -27,6 +27,60 @@ $yarn: #117cad;
 $python: #306998;
 $github: #2b3137;
 
+%icon-colours {
+  .html {
+    color: $html5;
+  }
+
+  .css {
+    color: $css3;
+  }
+
+  .sass {
+    color: $sass;
+  }
+
+  .javascript {
+    color: $js;
+  }
+
+  .react {
+    color: $react;
+  }
+
+  .bootstrap {
+    color: $bootstrap;
+  }
+
+  .git {
+    color: $git;
+  }
+
+  .github {
+    color: black;
+  }
+
+  .npm {
+    color: $npm;
+  }
+
+  .node {
+    color: $node;
+  }
+
+  .python {
+    color: $python;
+  }
+
+  .yarn {
+    color: $yarn;
+  }
+
+  .github {
+    color: $github;
+  }
+}
+
 // LINEAR GRADIENTS
 // $linear-grad-3d: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 // $linear-grad: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
