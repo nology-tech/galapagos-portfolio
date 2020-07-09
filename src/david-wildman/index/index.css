@@ -476,9 +476,17 @@ h6:hover,
   font-family: "sfalienencsolid", sans-serif;
 }
 
-#bio .wrapper,
-#portfolio .wrapper,
-#contact .wrapper {
+#bio .page-border,
+#portfolio .page-border,
+#contact .page-border {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#bio .page-border .wrapper,
+#portfolio .page-border .wrapper,
+#contact .page-border .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,9 +504,9 @@ h6:hover,
   width: 100%;
 }
 
-#bio .wrapper .title,
-#portfolio .wrapper .title,
-#contact .wrapper .title {
+#bio .page-border .wrapper .title,
+#portfolio .page-border .wrapper .title,
+#contact .page-border .wrapper .title {
   font-family: "sfalienenc";
   width: 100%;
   height: 18vh;
@@ -525,9 +533,9 @@ h6:hover,
           transition-delay: 0.2;
 }
 
-#bio .wrapper .title span,
-#portfolio .wrapper .title span,
-#contact .wrapper .title span {
+#bio .page-border .wrapper .title span,
+#portfolio .page-border .wrapper .title span,
+#contact .page-border .wrapper .title span {
   text-shadow: 0 0 50px whitesmoke, 0 0 30px whitesmoke, 0 0 5px #0b0014, 0 0 10px #0b0014;
   font-family: sfalienenc;
   width: 85%;
@@ -541,19 +549,17 @@ h6:hover,
 
 article {
   background-color: #0b0014;
-  overflow: hidden;
-  background-color: #0b0014;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
-  height: 100px;
+  max-height: 1000vh;
   width: 60%;
   margin: 5% 0;
   font-size: 0;
 }
 
 article .article-heading {
+  float: left;
   font-size: 16px;
   white-space: nowrap;
-  display: inline-block;
   outline: none;
   width: 50%;
   max-height: 100px;
@@ -595,13 +601,16 @@ article .article-content {
           justify-content: center;
   width: 70%;
   max-height: 100px;
-  overflow: hidden;
   -webkit-transition: max-height 1s linear;
   transition: max-height 1s linear;
 }
 
 article .article-content.open {
-  max-height: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100vh;
+  overflow: visible;
 }
 
 article .article-content h4 {
@@ -650,9 +659,9 @@ article .article-content ul li {
 }
 
 article .article-footer {
+  float: right;
   font-size: 16px;
   text-align: right;
-  display: inline-block;
   width: 50%;
   outline: none;
   max-height: 100px;
