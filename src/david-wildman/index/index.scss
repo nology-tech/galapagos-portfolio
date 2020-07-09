@@ -276,25 +276,25 @@ h6,
 article {
   background-color: $xiketic;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
-  max-height: 1000vh;
-  width: 60%;
+  max-height: max-content;
+  width: 80%;
   margin: 5% 0;
   font-size: 0;
+  transition: flex-direction 5s linear;
 
   .article-heading {
-    float: left;
+    max-width: 50%;
     font-size: 16px;
     white-space: nowrap;
     outline: none;
-    width: 50%;
     max-height: 100px;
     transition: max-height 1s linear;
     color: $fire-opal;
-    margin-right: auto;
+    transition: max-width 5s linear;
 
     .article-heading-text {
-      height: max-content;
-      width: max-content;
+      // height: max-content;
+      // width: max-content;
       color: $fire-opal;
       color: $fire-opal;
       border-top: 1px solid $fire-opal;
@@ -307,19 +307,15 @@ article {
 
   .article-content {
     font-size: 16px;
-    display: none;
     overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    max-height: 100px;
-    transition: max-height 1s linear;
+    max-height: 0px;
+    transition-property: max-height;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.2, 0);
+    margin: 0 auto;
 
     &.open {
-      display: flex;
-      max-height: 100vh;
-      overflow: visible;
+      max-height: 300px;
     }
 
     h4 {
@@ -332,7 +328,6 @@ article {
 
     h5 {
       margin: 2%;
-
       color: $azure;
       font-size: 1em;
       text-align: left;
@@ -369,14 +364,20 @@ article {
   }
 
   .article-footer {
-    float: right;
+    width: 100%;
     font-size: 16px;
     text-align: right;
-    width: 50%;
     outline: none;
     max-height: 100px;
-    transition: max-height 1s linear;
     color: $fire-opal;
+    transform: translateY(-100px);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.5, 1);
+
+    &.open {
+      transform: translateY(0);
+    }
 
     .article-footer-text {
       margin-left: auto;
