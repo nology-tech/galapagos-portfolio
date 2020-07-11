@@ -274,13 +274,13 @@ h6,
 }
 
 article {
+  text-align: right;
   background-color: $xiketic;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
   max-height: max-content;
   width: 80%;
   margin: 5% 0;
   font-size: 0;
-  transition: flex-direction 5s linear;
 
   .article-heading {
     max-width: 50%;
@@ -308,11 +308,51 @@ article {
   .article-content {
     font-size: 16px;
     overflow: hidden;
-    max-height: 0px;
+    max-height: 0;
     transition-property: max-height;
     transition-duration: 0.75s;
     transition-timing-function: cubic-bezier(0.5, 0, 0.2, 0);
     margin: 0 auto;
+
+    .section-heading {
+      padding: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $electric-blue;
+
+      .left {
+        width: 10%;
+      }
+
+      .right {
+        width: 60%;
+      }
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+
+    .section-text {
+      padding: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $cultured;
+
+      .left {
+        width: 10%;
+      }
+
+      .right {
+        width: 60%;
+      }
+
+      i {
+        font-size: 1.4em;
+      }
+    }
 
     &.open {
       max-height: 80vh;
@@ -320,7 +360,7 @@ article {
 
     h4 {
       margin: 2%;
-      color: $light-green;
+      color: $electric-blue;
       font-size: 1em;
       text-align: left;
       width: 100%;
@@ -379,17 +419,22 @@ article {
       cursor: pointer;
       color: $cadet-grey;
       border-color: $cadet-grey;
-      font-size: 1.2em;
+      font-size: 1.8em;
     }
 
     &.open {
       transform: translateY(0);
-      color: $cadet-grey;
-      border-color: $cadet-grey;
 
       .article-footer-text {
         color: $cadet-grey;
         border-color: $cadet-grey;
+      }
+
+      &:hover > .article-footer-text {
+        cursor: pointer;
+        color: $fire-opal;
+        border-color: $fire-opal;
+        font-size: 1.8em;
       }
     }
 
