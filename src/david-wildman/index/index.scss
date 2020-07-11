@@ -310,12 +310,12 @@ article {
     overflow: hidden;
     max-height: 0px;
     transition-property: max-height;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     transition-timing-function: cubic-bezier(0.5, 0, 0.2, 0);
     margin: 0 auto;
 
     &.open {
-      max-height: 300px;
+      max-height: 80vh;
     }
 
     h4 {
@@ -372,17 +372,20 @@ article {
     color: $fire-opal;
     transform: translateY(-100px);
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.5, 1);
 
     &:hover > .article-footer-text {
       cursor: pointer;
       color: $cadet-grey;
       border-color: $cadet-grey;
+      font-size: 1.2em;
     }
 
     &.open {
       transform: translateY(0);
+      color: $cadet-grey;
+      border-color: $cadet-grey;
 
       .article-footer-text {
         color: $cadet-grey;
