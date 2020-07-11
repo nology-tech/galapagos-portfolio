@@ -375,8 +375,19 @@ article {
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.5, 1);
 
+    &:hover > .article-footer-text {
+      cursor: pointer;
+      color: $cadet-grey;
+      border-color: $cadet-grey;
+    }
+
     &.open {
       transform: translateY(0);
+
+      .article-footer-text {
+        color: $cadet-grey;
+        border-color: $cadet-grey;
+      }
     }
 
     .article-footer-text {
