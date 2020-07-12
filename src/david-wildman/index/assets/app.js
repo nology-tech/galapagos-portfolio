@@ -112,8 +112,12 @@ const loadMainMenu = (event) => {
 
 const expandArticle = (event) => {
   event.currentTarget.parentNode.parentNode.childNodes[3].classList.toggle('open');
-  event.currentTarget.parentNode.parentNode.childNodes[5].classList.toggle('open');;
-
+  event.currentTarget.parentNode.parentNode.childNodes[5].classList.toggle('open');
+  if (event.currentTarget.innerText == "＋") {
+    event.currentTarget.innerText = "－";
+  } else {
+    event.currentTarget.innerText = "＋";
+  };
 }
 
 addEventListeners(homePageButtons, mainMenuFadeOut);
