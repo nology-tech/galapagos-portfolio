@@ -1,0 +1,852 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* h1 {
+  font-size: 50px;
+  -webkit-text-decoration: underline purple;
+          text-decoration: underline purple;
+}
+
+header {
+  background-image: url("./img/background2.jpg");
+  height: 100vh;
+  background: contain;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.landing h1 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.landing h3 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.landing {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-image: url("./img/background2.jpg");
+  background: contain;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: purple;
+  padding: 0;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: none;
+}
+
+.menu {
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu a {
+  text-decoration: none;
+  color: White;
+  font-size: 14px;
+  letter-spacing: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.menu a:hover {
+  background: #fa0a82;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.image img {
+  border: solid 10px purple;
+  max-width: 80vw;
+}
+
+.about p {
+  color: grey;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.about {
+  background-color: white;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about h1 {
+  color: black;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projects {
+  background-color: white;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+  z-index: -2;
+}
+
+.projects h1 {
+  padding: 20px;
+  font-size: 50px;
+}
+
+.projects h3 {
+  color: grey;
+  padding: 30px;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 90vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 60%;
+  gap: 10px;
+      grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+}
+
+.grid h1 {
+  color: white;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  font-size: 45px;
+}
+
+.project1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: project1;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project1:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.project2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: project2;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project2:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.project3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: project3;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project3:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.project4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: project4;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project4:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.project5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: project5;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project5:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.project6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: project6;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-image: url("./img/background3.jpg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project6:hover {
+  background-image: none;
+  background-color: #fa0a82;
+}
+
+.skills {
+  background-color: purple;
+  max-width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.skills i {
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.skills h1 {
+  color: white;
+  display: block;
+  text-align: justify;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.skills h3 {
+  color: white;
+  display: block;
+  text-align: justify;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.social {
+  background-color: white;
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.social i {
+  font-style: none;
+  color: purple;
+  font-size: 100px;
+  padding: 20px;
+}
+
+.social i:hover {
+  color: #fa0a82;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social h1 {
+  color: purple;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.social h3 {
+  color: purple;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+footer {
+  background-color: black;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  color: white;
+  padding: 25px;
+  background: url("./img/background3.jpg");
+  height: 200px;
+}
+
+@media only screen and (min-width: 780px) {
+  body {
+    background-image: url("./img/background2.jpg");
+    background: contain;
+  }
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    padding: 0;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: none;
+  }
+  .menu {
+    margin: 0;
+    overflow: hidden;
+  }
+  .menu a {
+    text-decoration: none;
+    color: White;
+    font-size: 18px;
+    letter-spacing: 1px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    padding: 16px 24px;
+  }
+  .menu a:hover {
+    background: #fa0a82;
+    color: white;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin: 50px;
+    margin-bottom: 0;
+    max-width: 90%;
+  }
+  .text {
+    margin-right: 50px;
+    min-width: 50vw;
+  }
+  .image .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: black 2px solid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    min-width: 30vw;
+  }
+  .about p {
+    color: grey;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .about {
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .projects {
+    background-color: white;
+    max-width: 100%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .projects h1 {
+    padding: 30px;
+  }
+  .projects h3 {
+    color: grey;
+    padding: 30px;
+  }
+  .grid {
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 50vh;
+    width: 60%;
+    gap: 10px;
+        grid-template-areas: "project1 project2 project2 project3" "project1 project2 project2 project3" "project4 project4 project5 project6" "project4 project4 project5 project6";
+  }
+  .grid h1 {
+    color: white;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-decoration: none;
+  }
+  .project1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: project1;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project1:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .project2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: project2;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project2:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .project3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: project3;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project3:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .project4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: project4;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project4:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .project5 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: project5;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project5:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .project6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: project6;
+    border: 2px solid purple;
+    background-image: url("./img/background3.jpg");
+    background-size: contain;
+  }
+  .project6:hover {
+    background-image: none;
+    background-color: #fa0a82;
+  }
+  .skills {
+    background-color: purple;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .skills i {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+  }
+  .skills h1 {
+    color: white;
+    display: block;
+    text-align: justify;
+    padding: 30px;
+  }
+  .skills h3 {
+    color: white;
+    display: block;
+    text-align: justify;
+  }
+  .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .social {
+    background-color: white;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .social i {
+    font-style: none;
+    color: purple;
+    font-size: 100px;
+    padding: 20px;
+  }
+  .social i:hover {
+    color: #fa0a82;
+  }
+  .social a {
+    text-decoration: none;
+  }
+  .social h1 {
+    color: purple;
+    padding: 30px;
+    text-decoration: none;
+  }
+  .social h3 {
+    color: purple;
+  }
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  footer {
+    background-color: black;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: white;
+    padding: 25px;
+    background: url("./img/background3.jpg");
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
