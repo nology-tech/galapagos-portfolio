@@ -207,6 +207,7 @@ body {
     //   padding: 10px;
 
     .item {
+      @extend %icon-colours;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -217,58 +218,6 @@ body {
         margin: 20px auto;
         // background: yellow;
       }
-
-      .html {
-        color: $html5;
-      }
-
-      .css {
-        color: $css3;
-      }
-
-      .sass {
-        color: $sass;
-      }
-
-      .javascript {
-        color: $js;
-      }
-
-      .react {
-        color: $react;
-      }
-
-      .bootstrap {
-        color: $bootstrap;
-      }
-
-      .git {
-        color: $git;
-      }
-
-      .github {
-        color: black;
-      }
-
-      .npm {
-        color: $npm;
-      }
-
-      .node {
-        color: $node;
-      }
-
-      .python {
-        color: $python;
-      }
-
-      .yarn {
-        color: $yarn;
-      }
-
-      .github {
-        color: $github;
-      }
     }
   }
 }
@@ -278,9 +227,6 @@ body {
 //------------------------------------//
 #portfolio {
   background: $colour4;
-  // padding: 20%;
-  // min-height: 50vh;
-  // height: 100vh;
   padding-bottom: 30px;
 
   h2 {
@@ -292,22 +238,19 @@ body {
     // background: blue;
     margin-top: 20px;
     display: grid;
-    align-content: space-between;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
     padding: 10px;
-    // max-height: 100%;
-    // gap: 4%;
-    // justify-content: center;
-    // grid-template-columns: 1fr;
 
     .item {
-      @extend %portfolio-button-images;
-      // background: blue;
-      // width: 100%;
       min-height: 200px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+
+      // &:hover {
+      //   background: $linear-grad-3d;
+      // }
     }
   }
 }
