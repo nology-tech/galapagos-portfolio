@@ -174,10 +174,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
-    height: 100%;
+    height: max-content;
     border-left: 1px $cadet-grey solid;
     border-right: 1px $cadet-grey solid;
   }
@@ -226,7 +226,7 @@ body {
   font-family: "sfalienencsolid", sans-serif;
 
   .page-border {
-    justify-content: flex-start;
+    border-bottom: 1px solid $cadet-grey;
 
     .wrapper {
       display: flex;
@@ -254,11 +254,11 @@ body {
         span {
           text-shadow: 0 0 50px $cultured, 00 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
           font-family: sfalienenc;
-          width: 85%;
+          width: 100%;
           text-align: center;
           color: $cadet-grey;
           font-size: 2.5em;
-          line-height: 6vh;
+          line-height: 9vh;
           margin: 6vh 0;
           border-bottom: 2px $fire-opal solid;
         }
@@ -268,13 +268,30 @@ body {
 }
 
 article {
+  position: relative;
   text-align: left;
   background-color: $xiketic;
   font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
-  height: 20%;
-  max-height: max-content;
+  height: max-content;
   width: 80%;
-  margin: 5% 0;
+  transform: scale(1.3);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  margin: 2% 0;
+
+  &.subtitle {
+    background-color: transparent;
+    text-align: center;
+    font-family: sfalienenc, Orbitron, consolas, Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-top: 1px solid $cadet-grey;
+    border-bottom: 1px solid $cadet-grey;
+    color: $cultured;
+    font-size: 1.5em;
+    padding: 0.5em 0;
+  }
 
   .article-heading {
     width: 100%;
@@ -287,14 +304,14 @@ article {
     transition: max-width 5s linear;
 
     .article-heading-text {
-      padding: 12.5%;
+      padding: 7.5%;
       text-align: center;
       width: max-content;
       color: $fire-opal;
       color: $fire-opal;
       border-top: 1px solid $fire-opal;
       border-left: 1px solid $fire-opal;
-      line-height: 48px;
+      line-height: 48%;
     }
   }
 
@@ -433,7 +450,7 @@ article {
     }
 
     &.open {
-      max-height: 80vh;
+      max-height: 100vh;
     }
 
     h4 {
@@ -446,7 +463,6 @@ article {
       text-align: left;
       width: 100%;
       color: $azure;
-      text-align: right;
     }
 
     h6 {
@@ -471,12 +487,14 @@ article {
   }
 
   .article-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: max-content;
     text-align: right;
     outline: none;
     color: $fire-opal;
-    transform: translateY(-100%);
     transition-property: transform;
     transition-duration: 0.75s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.5, 1);
@@ -488,8 +506,6 @@ article {
     }
 
     &.open {
-      transform: translateY(0);
-
       .article-footer-text {
         color: $cadet-grey;
         border-color: $cadet-grey;
@@ -503,28 +519,21 @@ article {
     }
 
     .article-footer-text {
-      padding: 12.5%;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 7.5%;
       text-align: center;
       margin-left: auto;
       width: max-content;
-
       height: max-content;
-      line-height: 48px;
+      line-height: 50%;
       color: $fire-opal;
       border-bottom: 1px solid $fire-opal;
       border-right: 1px solid $fire-opal;
       overflow: hidden;
     }
   }
-}
-
-.caption {
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
 }
 
 /*---------- Footer styles ----------*/
