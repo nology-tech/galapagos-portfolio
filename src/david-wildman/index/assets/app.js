@@ -4,18 +4,19 @@ const bioButtons = document.querySelectorAll('.bio.button');
 const portfolioButtons = document.querySelectorAll('.portfolio.button');
 const contactButtons = document.querySelectorAll('.contact.button');
 const homePage = document.querySelector('.home.page');
-const headerTitle = document.querySelector('.header.title');
 const homePageButtons = document.querySelectorAll('.home-nav li');
-const bioPage = document.querySelector('.bio.page');
-const portfolioPage = document.querySelector('.portfolio.page');
+const headerTitle = document.querySelector('.header.title');
+let pageArticles;
+let pageTitle;
+// const bioPage = document.querySelector('.bio.page');
+// const bioPageTitle = document.querySelector('.bio.title');
+// const portfolioPage = document.querySelector('.portfolio.page');
+// const portfolioPageTitle = document.querySelector('.porfolio.title');
 const portfolioLinks = document.querySelectorAll('h6');
 const contactPage = document.querySelector('.contact.page');
 const footer = document.querySelector('.footer');
 
 const expandButtons = document.querySelectorAll('.article-footer-text');
-
-let pageTitle = document.querySelector('.on .title');
-
 const addEventListeners = (buttons, clickBehaviour) => {
   buttons.forEach(button => {
     button.addEventListener('click', () => clickBehaviour(event));
@@ -39,8 +40,8 @@ const updatePage = (event) => {
     setTimeout(() => {
       livePage.classList.remove('on');
       newPage.classList.add('on');
-      pageTitle = document.querySelector('.on .title');
-      console.log(pageTitle.classList[0]);
+      console.log(newPage.classList[0]);
+      pageFadeIn(newPage.classList[0]);
     }, 2000);
   }
 };
@@ -53,8 +54,8 @@ const mainMenuFadeIn = (event) => {
     homePageButton.style.transitionDelay = `${index * 0.4}s`;
     homePageButton.style.opacity = '1';
     homePageButton.style.transform = 'scale(1)';
-    headerTitle.style.opacity = '1';
   })), 500);
+  setTimeout(() => headerTitle.style.opacity = '1', 500);
 }
 
 const mainMenuFadeOut = (event) => {
@@ -75,13 +76,16 @@ const mainMenuFadeOut = (event) => {
 };
 
 
-const pageFadeIn = (page, event) => {
-  setTimeout((() => `.${page}pageArticles`.forEach((article, index) => {
+const pageFadeIn = (newPage) => {
+  pageArticles = document.querySelectorAll(`.${newPage} article`);
+  pageTitle = document.querySelector(`.${newPage}.title`);
+  console.log(pageArticles);
+  setTimeout((() => pageArticles.forEach((article, index) => {
     article.style.transitionDelay = `${index * 0.4}s`;
     article.style.opacity = '1';
     article.style.transform = 'scale(1)';
-    pageTitle.style.opacity = '1';
   })), 500);
+  setTimeout(() => pageTitle.style.opacity = '1', 500);
 }
 
 const pageFadeOut = (page, event) => {
@@ -93,7 +97,7 @@ const pageFadeOut = (page, event) => {
       button.style.opacity = '0';
       button.style.transform = 'scale(1.5)';
     }
-    `.${page}pageTitle`.style.opacity = '0';
+    `.${page}PageTitle`.style.opacity = '0';
   });
 };
 
