@@ -16,6 +16,7 @@ const addSkillSectionLanguageIconsFromDataFile = () => {
   skillsIconSection.innerHTML += icons.join('');
 };
 addSkillSectionLanguageIconsFromDataFile();
+
 const addPortfolioButtonsToHTMLFromDataFile = () => {
   const buttons = dataFile.projects.map((project, index) => {
     return `
@@ -36,6 +37,28 @@ const portfolioButtonBackgrounds = () => {
 };
 portfolioButtonBackgrounds();
 
+// const getRepos = () => {
+//   fetch(`https://api.github.com/users/tobymould/repos`)
+//   .then(response => response.json())
+//   .then(data => {
+//      const listOfRepos = data
+//      return listOfRepos;
+//   })
+//   .catch(error => console.log(error));
+//   return listOfRepos;
+// }
+// getRepos();
+
+// const getRepoLanguages = (listOfRepos) => {
+//   fetch(`https://api.github.com/repos/tobymould/${project}/languages`)
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(error => {
+//       console.log(error);
+//       https://api.github.com/repos/tobymould/${project}/languages
+//     });
+// };
+// getRepoLanguages();
 // ---------------------------------------------------------------------//
 // ----------------------EVENT-DEPENDENT FUNCTIONS----------------------//
 // ---------------------------------------------------------------------//
@@ -137,18 +160,28 @@ buttons.forEach(button => button.addEventListener('mouseleave', hoverEffect));
 
 // (8) - SEARCH FUNCTIONALITY
 const search = document.querySelector('#portfolio input');
-const searchFunction = () => {
-  console.log(search.value);
-  // const filteredProjectButtons = buttons.forEach(button => {
-  //   if (!button.includes(button.value)) {
-  //     button.style.display = 'none';
-  //   }
-  // });
-  // console.log(filteredProjectButtons);
+const searchFunction = event => {
+  const term = event.target.value.toLowerCase();
+  buttons.forEach(button => console.log(button.value));
+  // console.log(dataFile.projects);
 
-  // portfolioGridGlobal.innerhtml = filteredProjectButtons;
+  console.log(dataFile.projects.languages);
+  const test = buttons;
+  // const filteredProjects = dataFile.projects.languages.forEach((project, index) => {
+  //   // console.log(project.languages);
+  //   // console.log(buttons[index]);
+  //   const filteredProject = project.languages.filter(language => {
+  //     // console.log(language);
+  //     // if (project.languages.includes(term)) {
+  //     if (language.toLowerCase().indexOf(term) == -1) {
+  //       // console.log(project);
+  //       // buttons[index].style.display = 'none';
+  //     }
+  //   });
+  //   // console.log(project.languages.includes(search.value));
+  // });
 };
-search.addEventListener('input', searchFunction);
+search.addEventListener('keyup', searchFunction);
 
 // (9) - MODAL POPUP BUTTON HOVER EFFECT EVENT TRIGGER
 // const modalImageSection = document.querySelector('#summary .image');
