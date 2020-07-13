@@ -887,10 +887,7 @@ article .article-footer .article-footer-text {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  line-height: 50%;
+  line-height: 48%;
   color: #ee6352;
   border-bottom: 1px solid #ee6352;
   border-right: 1px solid #ee6352;
