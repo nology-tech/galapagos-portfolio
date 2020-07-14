@@ -4,7 +4,7 @@
 @media (min-width: 670px) and (max-width: 769px) {
   //------------------------------------//
   //--------1. LANDING SECTION(IPAD)--------//
-  //------------------------------------//
+  //-------------------------------------//
   #home {
     #home-content {
       top: 12%;
@@ -20,8 +20,13 @@
   }
 
   #skills {
+    p {
+      padding: 0 70px;
+    }
+
     .items {
-      grid-template-columns: 1fr 1fr 1fr;
+      padding: 10px 0;
+      grid-template-columns: repeat(auto-fit, 100px);
     }
   }
 
@@ -31,7 +36,7 @@
     // }
 
     .items {
-      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
       .item {
         height: 20px;
@@ -93,21 +98,22 @@
   }
 
   #skills {
+    p {
+      padding: 0 70px;
+    }
+
     .items {
-      grid-template-columns: 1fr 1fr 1fr;
+      padding: 20px 0;
+      grid-template-columns: repeat(auto-fit, 70px);
     }
   }
 
   #portfolio {
     .items {
-      grid-template-columns: 1fr 1fr 1fr;
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-      .item {
-        height: 20px;
-
-        h4 {
-          font-size: 1.2rem;
-        }
+      h4 {
+        font-size: 1.2rem;
       }
     }
 
@@ -165,14 +171,20 @@
   }
 
   #skills {
+    p {
+      padding: 0 200px;
+    }
+
     .items {
-      grid-template-columns: 1fr 1fr 1fr;
+      // width: 80vw;
+      padding: 20px 0;
+      grid-template-columns: repeat(auto-fit, 70px);
     }
   }
 
   #portfolio {
     .items {
-      // grid-template-columns: repeat(4, 1fr);
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
       .item {
         height: 20px;
