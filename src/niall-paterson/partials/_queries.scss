@@ -4,6 +4,17 @@
     width: $medium-width;
   }
 
+  #about-content {
+    margin: 0 $medium-margin 48px $medium-margin;
+  }
+
+  #languages-wrapper {
+    padding: 20px 0;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
   #about-content p, .project-wrapper p {
     margin-top: 0;
   }
@@ -33,7 +44,7 @@
 @media (min-width: $breakpoint-desktop) {
   #about {
     h1, p {
-      width: 45vw;
+      width: $large-width;
     }
   }
 }
