@@ -1,5 +1,68 @@
-//menu button click
+
+//initialising js for animations
 const backgroundColor =  '#3C5870';
+console.log('this code is running on launch');
+
+
+
+// eslint-disable-next-line no-unused-vars
+function initialiseAnimations(){
+  animateElementById('menu-svg-bottom', 'svg');
+  animateElementById('menu-svg-middle', 'svg');
+  animateElementById('menu-svg-top', 'svg');
+  animateElementById('skills-svg-bottom', 'svg');
+  animateElementById('skills-svg-middle', 'svg');
+  animateElementById('skills-svg-top', 'svg');
+  animateElementById('portfolio-svg-bottom', 'svg');
+  animateElementById('portfolio-svg-middle', 'svg');
+  animateElementById('portfolio-svg-top', 'svg');
+  animateElementById('portfolio-clicked-svg-bottom', 'svg');
+  animateElementById('portfolio-clicked-svg-top', 'svg');
+  animateElementById('contact-svg-bottom', 'svg');
+  animateElementById('contact-svg-middle', 'svg');
+  animateElementById('contact-svg-top', 'svg');
+  animateElementById('welcome-text', 'text');
+  animateElementById('skills-1', 'text');
+  animateElementById('skills-2', 'text');
+  animateElementById('skills-3', 'text');
+  animateElementById('skills-4', 'text');
+  animateElementById('skills-5', 'text');
+  animateElementById('skills-6', 'text');
+  animateElementById('contact-1', 'text');
+  animateElementById('contact-2', 'text');
+  animateElementById('contact-3', 'text');
+}
+
+function animateElementById(elemId, elemType){
+  let element = document.getElementById(elemId);
+  if (elemType==='svg'){   
+    element.animate([
+    // keyframes
+      { transform: 'scale(1, 1)',offset:0 }, 
+      {  transform: `scale(${((Math.random()*10) + 95)/100}, ${((Math.random()*10) + 95)/100}) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.25 },
+      {  transform: `scale(${((Math.random()*10) + 95)/100}, ${((Math.random()*10) + 95)/100}) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.5 },
+      {  transform: `scale(${((Math.random()*10) + 95)/100}, ${((Math.random()*10) + 95)/100}) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.75 },
+      {  transform: 'scale(1, 1)',offset:1 } 
+    ], { 
+    // timing options
+      duration: 5000,
+      iterations: Infinity,
+    });
+  }else{
+    element.animate([
+    // keyframes
+      { transform: 'scale(1, 1)',offset:0 }, 
+      {  transform: `skewX(${Math.random()*2}deg) rotate(${Math.random()*2}deg) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.25 },
+      {  transform: `skewX(${Math.random()*2}deg) rotate(${Math.random()*2}deg) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.5 },
+      {  transform: `skewX(${Math.random()*2}deg) rotate(${Math.random()*2}deg) translateY(${((Math.random()*10) + (-5))/100}%) translateX(${((Math.random()*10) + (-5))/100}%)`,offset:0.75 },
+      {  transform: 'scale(1, 1)',offset:1 } 
+    ], { 
+    // timing options
+      duration: 5000,
+      iterations: Infinity,
+    });
+  }
+}
 
 // eslint-disable-next-line no-unused-vars
 function menuButtonClick() {

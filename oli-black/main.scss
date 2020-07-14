@@ -3,105 +3,6 @@ $primary-color: #def1fe;
 $secondary-color: #6c63ff;
 $tertiary-color: #abdcff;
 
-$random-number1: (random(10) + 95)/100;
-$random-number2: (random(10) + 95)/100;
-$random-number3: (random(10) + 95)/100;
-$random-number4: (random(10) + 95)/100;
-$random-number5: (random(10) + 95)/100;
-$random-number6: (random(10) + 95)/100;
-
-//svg animations
-@keyframes stretch_animation1 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number1, $random-number2) translateY(-0.5%) translateX(0.5%);}
-  50% {transform: scale($random-number3, $random-number5) translateY(0.5%) translateX(0%);}
-  75% {transform: scale($random-number4, $random-number1) translateY(-0.5%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes stretch_animation2 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number4, $random-number6) translateY(0%) translateX(-0.5%);}
-  50% {transform: scale($random-number5, $random-number2) translateY(0%) translateX(0.5%);}
-  75% {transform: scale($random-number1, $random-number3) translateY(-0.5%) translateX(0%);}
-  100% {transform: scale(1, 1);};
-}
-
-@keyframes stretch_animation3 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number2, $random-number4) translateY(0.5%) translateX(0%);}
-  50% {transform: scale($random-number1, $random-number3) translateY(0%) translateX(0.5%);}
-  75% {transform: scale($random-number6, $random-number5) translateY(-0.5%) translateX(0%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes stretch_animation4 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number3, $random-number1) translateY(0%) translateX(0.5%);}
-  50% {transform: scale($random-number5, $random-number6) translateY(0.5%) translateX(0%);}
-  75% {transform: scale($random-number2, $random-number4) translateY(0%) translateX(-0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes stretch_animation5 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number1, $random-number5) translateY(0.5%) translateX(-0.5%);}
-  50% {transform: scale($random-number4, $random-number2) translateY(0%) translateX(0%);}
-  75% {transform: scale($random-number3, $random-number6) translateY(0.5%) translateX(-0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes stretch_animation6 {
-  0% {transform: scale(1, 1);}
-  25% {transform: scale($random-number5, $random-number4) translateY(-0.5%) translateX(0%);}
-  50% {transform: scale($random-number3, $random-number6) translateY(0%) translateX(0.5%);}
-  75% {transform: scale($random-number2, $random-number1) translateY(0.5%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-//header animation
-@keyframes main_text_animation {
-  0% {transform: scale(1, 1);}
-  25% {transform: skewX(2deg) translateY(-0.5%) translateX(0%);}
-  50% {transform: rotate(1deg) translateY(0%) translateX(0.5%);}
-  75% {transform: skewY(2deg) rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-//menu text animations
-@keyframes menu_text_animation1 {
-  0% {transform: scale(1, 1);}
-  25% {transform: skewX(1deg) translateY(-0.5%) translateX(-0.5%);}
-  50% {transform: rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  75% {transform: skewY(1deg) rotate(-1deg) translateY(0.5%) translateX(0%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes menu_text_animation2 {
-  0% {transform: scale(1, 1);}
-  25% {transform: skewX(2deg) rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  50% {transform: rotate(1deg) translateY(0%) translateX(0%);}
-  75% {transform: skewY(2deg)  translateY(-1%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes menu_text_animation3 {
-  0% {transform: scale(1, 1);}
-  25% {transform: rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  50% {transform: rotate(1deg) translateY(0%) translateX(0%);}
-  75% {transform: skewX(2deg) rotate(-1deg) translateY(0.5%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-@keyframes menu_text_animation4 {
-  0% {transform: scale(1, 1);}
-  25% {transform: skewY(2deg)  translateY(-1%) translateX(0.5%);}
-  50% {transform: rotate(1deg) translateY(0%) translateX(0.5%);}
-  75% {transform: rotate(1deg) translateY(0%) translateX(0.5%);}
-  100% {transform: scale(1, 1);}
-}
-
-
 * {
   padding: 0;
   margin: 0;
@@ -209,7 +110,6 @@ body {
     z-index: -1;
     transform-origin: center;
     display: none;
-    animation: stretch_animation1 12s ease infinite;
 
     @media only screen and (max-width: 1024px) {
       height: 1400px;
@@ -232,7 +132,6 @@ body {
     z-index: -1;
     transform-origin: center;
     display: none;
-    animation: stretch_animation2 12s ease infinite;
 
     @media only screen and (max-width: 1024px) {
       height: 1200px;
@@ -256,7 +155,6 @@ body {
     z-index: -1;
     transform-origin: center;
     display: none;
-    animation: stretch_animation3 12s ease infinite;
 
     @media only screen and (max-width: 1024px) {
       height: 1000px;
@@ -267,22 +165,6 @@ body {
       width: 600px;
     }
   }
-}
-
-#menu-item-1 {
-  animation: menu_text_animation1 5s ease-in-out infinite;
-}
-
-#menu-item-2 {
-  animation: menu_text_animation2 5s ease-in-out infinite;
-}
-
-#menu-item-3 {
-  animation: menu_text_animation3 5s ease-in-out infinite;
-}
-
-#menu-item-4 {
-  animation: menu_text_animation4 5s ease-in-out infinite;
 }
 
 //home section
@@ -302,7 +184,6 @@ body {
     align-items: center;
     text-shadow: 2px 2px $secondary-color;
     transform-origin: center;
-    animation: main_text_animation 10s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 15vw;
@@ -334,11 +215,10 @@ body {
 
 
   h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     color: $background-color;
     text-shadow: 2px 2px $tertiary-color;
     padding: 10px;
-    animation: menu_text_animation1 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 10vw;
@@ -353,7 +233,6 @@ body {
     text-shadow: 2px 2px $tertiary-color;
     font-size: 2vw;
     padding: 5px;
-    animation: menu_text_animation2 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 15px;
@@ -387,32 +266,8 @@ body {
       padding: 5px;
     }
   }
-
-  #skills-1 {
-    animation: menu_text_animation3 5s ease-in-out infinite;
-  }
-  
-
-  #skills-2 {
-    animation: menu_text_animation2 5s ease-in-out infinite;
-  }
-
-  #skills-3 {
-    animation: menu_text_animation1 5s ease-in-out infinite;
-  }
-
-  #skills-4 {
-    animation: menu_text_animation4 5s ease-in-out infinite;
-  }
-
-  #skills-5 {
-    animation: menu_text_animation2 5s ease-in-out infinite;
-  }
-
-  #skills-6 {
-    animation: menu_text_animation1 5s ease-in-out infinite;    
-  }
 }
+
 
 .skills-svg-bottom {
   height: 100%;
@@ -423,7 +278,6 @@ body {
   transform: rotate(2deg);
   fill: $primary-color;
   z-index: -1;
-  animation: stretch_animation4 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -450,7 +304,6 @@ body {
   position: absolute;
   fill: $primary-color;
   z-index: -1;
-  animation: stretch_animation5 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -477,7 +330,6 @@ body {
   transform: rotate(-1.5deg);
   fill: $primary-color;
   z-index: -1;
-  animation: stretch_animation6 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -511,11 +363,10 @@ body {
   position: relative;
 
   h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     color: $background-color;
     text-shadow: 2px 2px $primary-color;
     padding: 10px;
-    animation: menu_text_animation1 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 10vw;
@@ -524,13 +375,12 @@ body {
   }
 
   p {
-    width: 100%;
+    width: 80%;
     color: $background-color;
     text-align: center;
     text-shadow: 2px 2px $tertiary-color;
     font-size: 2vw;
     padding: 5px;
-    animation: menu_text_animation2 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 15px;
@@ -555,13 +405,13 @@ body {
       background-color: #c5e6ff;
       width: 35vh;
       margin: 30px;
-      height: 35vh;
+      height: 30vh;
       display: flex;
       justify-content: center;
-      border-radius: 25px;
+      border-radius: 100px;
 
       @media only screen and (max-width: 1700px) {
-        width: 27vh;
+        width: 27vw;
         margin: 22px;
         height: 27vh;
       }
@@ -590,6 +440,11 @@ body {
           color: $primary-color;
           text-shadow: none;
         }
+
+        .portfolio-inner{
+          background-color: $background-color;
+        }
+        
       }
 
       h3 {
@@ -610,6 +465,8 @@ body {
         color: $background-color;
         padding: 5px;
         margin-top: 2%;
+        width: 90%;
+        text-align: center;
     
         @media only screen and (max-width: 768px) {
           margin-top: 0%;
@@ -619,9 +476,12 @@ body {
       }
 
       .portfolio-inner {
-        margin: 30px;
+        margin: 15px;
         background-color: $primary-color;
-        border-radius: 25px;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @media only screen and (max-width: 768px) {
           margin: 5px;
@@ -631,30 +491,6 @@ body {
           background-color: $background-color;
         }
       }
-    }
-
-    #portfolio-1-outer {
-      animation: menu_text_animation3 5s ease-in-out infinite;
-    }
-
-    #portfolio-1-inner {
-      animation: menu_text_animation2 5s ease-in-out infinite;
-    }
-
-    #portfolio-2-outer {
-      animation: menu_text_animation1 5s ease-in-out infinite;
-    }
-
-    #portfolio-2-inner {
-      animation: menu_text_animation4 5s ease-in-out infinite;
-    }
-
-    #portfolio-3-outer {
-      animation: menu_text_animation3 5s ease-in-out infinite;
-    }
-
-    #portfolio-3-inner {
-      animation: menu_text_animation1 5s ease-in-out infinite;    
     }
   }
 }
@@ -668,7 +504,6 @@ body {
   transform: rotate(2deg);
   fill: $tertiary-color;
   z-index: -1;
-  animation: stretch_animation2 12s ease-in-out infinite;
   transform-origin: center;
   
   @media only screen and (max-width: 1800px) {
@@ -695,7 +530,6 @@ body {
   position: absolute;
   fill: $tertiary-color;
   z-index: -1;
-  animation: stretch_animation1 12s ease-in-out infinite;
   transform-origin: center;
   
   @media only screen and (max-width: 1800px) {
@@ -722,7 +556,6 @@ body {
   transform: rotate(-1.5deg);
   fill: $tertiary-color;
   z-index: -1;
-  animation: stretch_animation5 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -753,7 +586,6 @@ body {
   margin: 0 auto;
   position: relative;
 
-
   @media only screen and (max-width: 768px) {
     justify-content: center;
     height: 45vh;
@@ -768,7 +600,6 @@ body {
   position: absolute;
   fill: $primary-color;
   z-index: -1;
-  animation: stretch_animation4 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -782,34 +613,33 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
-    height: 1.4*100%;
-    width: 1.4*100%;
+    height: 2.4*100%;
+    width: 2.4*100%;
   }
 }
 
 .portfolio-clicked-svg-top {
-  height: 85%;
-  width: 85%;
+  height: 135%;
+  width: 135%;
   overflow: visible;
   position: absolute;
   fill: $primary-color;
   z-index: -1;
-  animation: stretch_animation6 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
-    height: 1.15*85%;
-    width: 1.15*85%;
+    height: 2.15*85%;
+    width: 2.15*85%;
   }
 
   @media only screen and (max-width: 1450px) {
-    height: 1.25*85%;
-    width: 1.25*85%;
+    height: 2.25*85%;
+    width: 2.25*85%;
   }
 
   @media only screen and (max-width: 768px) {
-    height: 1.4*85%;
-    width: 1.4*85%;
+    height: 2.4*85%;
+    width: 2.4*85%;
   }
 }
 
@@ -845,10 +675,9 @@ body {
   justify-content: center;
 
   h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     color: $primary-color;
     text-shadow: 2px 2px $background-color;
-    animation: menu_text_animation5 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 10vw;
@@ -862,14 +691,12 @@ body {
     text-shadow: 2px 2px $background-color;
     font-size: 2vw;
     padding: 5px;
-    animation: menu_text_animation2 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 15px;
       padding: 10px;
     }
   }
-
 
   .p2 {
     width: 50%;
@@ -878,7 +705,6 @@ body {
     text-shadow: 2px 2px $background-color;
     font-size: 2vw;
     padding: 5px;
-    animation: menu_text_animation4 5s ease-in-out infinite;
 
     @media only screen and (max-width: 768px) {
       font-size: 15px;
@@ -895,7 +721,6 @@ body {
   transform: rotate(2deg);
   fill: $secondary-color;
   z-index: -1;
-  animation: stretch_animation3 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -922,7 +747,6 @@ body {
   position: absolute;
   fill: $secondary-color;
   z-index: -1;
-  animation: stretch_animation6 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -949,7 +773,6 @@ body {
   transform: rotate(-1.5deg);
   fill: $secondary-color;
   z-index: -2;
-  animation: stretch_animation4 12s ease-in-out infinite;
   transform-origin: center;
 
   @media only screen and (max-width: 1800px) {
@@ -1003,14 +826,26 @@ body {
   }
 }
 
-#contact-1 {
-  animation: menu_text_animation3 5s ease-in-out infinite;
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+  }
 }
 
-#contact-2 {
-  animation: menu_text_animation2 5s ease-in-out infinite;
-}
-
-#contact-3 {
-  animation: menu_text_animation1 5s ease-in-out infinite;
-}
