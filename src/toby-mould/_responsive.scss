@@ -1,7 +1,7 @@
 // ------DIFFERENT SIZE RANGES TO CONSIDER------//
 
-// Tablet[PORTFOLIO]
-@media (min-width: 501px) and (max-width: 769px) {
+// IPad[PORTFOLIO]
+@media (min-width: 670px) and (max-width: 769px) {
   //------------------------------------//
   //--------1. LANDING SECTION(IPAD)--------//
   //------------------------------------//
@@ -26,9 +26,9 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
+    // p {
+    //   text-align: center;
+    // }
 
     .items {
       grid-template-columns: 1fr 1fr;
@@ -41,9 +41,24 @@
         }
       }
     }
+
+    .modal {
+      .modal-content {
+        // height: 100%;
+        margin: 22vh auto;
+        overflow-y: scroll;
+
+        article {
+          height: 100%;
+          // background: red;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
+      }
+    }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
@@ -58,7 +73,7 @@
   }
 }
 
-// Normal[PORTFOLIO]
+// IPad Pro[PORTFOLIO]
 @media (min-width: 769px) and (max-width: 1200px) {
   //---------------------------------------//
   //--------1. LANDING SECTION (PRO)--------//
@@ -84,10 +99,6 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
-
     .items {
       grid-template-columns: 1fr 1fr 1fr;
 
@@ -99,9 +110,29 @@
         }
       }
     }
+
+    .modal {
+      // background: blue;
+      .modal-content-wrapper {
+        .modal-content {
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          // background: yellow;
+          // height: 100%;
+          // margin: 35vh auto;
+          article {
+            height: 100%;
+            // background: red;
+            display: grid !important;
+            grid-template-columns: 1fr 3fr !important;
+          }
+        }
+      }
+    }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
@@ -116,7 +147,7 @@
   }
 }
 
-//WideScreen[PORTFOLIO]
+//Desktop-widescreen[PORTFOLIO]
 @media (min-width: 1201px) {
   //-----------------------------------------//
   //--------1. LANDING SECTION (WIDE)--------//
@@ -140,12 +171,8 @@
   }
 
   #portfolio {
-    p {
-      text-align: center;
-    }
-
     .items {
-      grid-template-columns: 1fr 1fr 1fr;
+      // grid-template-columns: repeat(4, 1fr);
 
       .item {
         height: 20px;
@@ -155,9 +182,25 @@
         }
       }
     }
+
+    .modal {
+      .modal-content-wrapper {
+        .modal-content {
+          // height: 100%;
+          margin: 20vh auto;
+
+          article {
+            height: 100%;
+            // background: red;
+            display: grid !important;
+            grid-template-columns: 1fr 3fr !important;
+          }
+        }
+      }
+    }
   }
 
-  #about {
+  #background {
     p {
       text-align: center;
     }
