@@ -1,166 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-header {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  background-color: darkgray;
+body {
+    background-color: darkgray;
+  
 }
-
-#navlinks {
-  list-style: none;
-  color: white;
-  font-size: 20px;
+#nametag {
+    border: 2px solid black;
+    height: 80vh;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin: 80px;
+    text-align: center;
+    background-color: gray;
 }
-
-#navlinks li {
-  display: inline-block;
-  padding: 0 20px;
+#nametag h1 {
+    font-size: 65px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    padding-top: 235px;
+    padding-bottom: 10px;
 }
-
-#navlinks li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 20px;
+#nametag p {
+    font-size: 25px;
 }
-
-#navlinks li a:hover {
-  color: darkgrey;
-  font-weight: bold;
-  background-color: yellow;
+#portfolio {
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-h1 {
-  font-size: 100px;
-  text-align: center;
-  color: white;
-  font-family: 'Lobster', cursive;;
-}
-
-#jobtag {
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  font-size: 20px;
-}
-
-.container {
-  background-image: url("northernlights.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  max-width: 100%;
-  height: 500px; 
-}
-
-.abtme {
-  background-color: darkgrey;
-  padding: 20px;
-  border: 3px solid yellow;
-  margin: 40px;
-  padding-bottom: 40px;
-}
-
-#abouttitle h2 {
-  font-family: 'Lobster', cursive;
-  font-size: 35px;
-  letter-spacing: 10px;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  color: white;
-}
-
-.abtme p {
-  text-align: justify;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 2;
-}
-
-.portfolio h2 {
-  font-family: 'Lobster', cursive;
-  font-size: 35px;
-  letter-spacing: 10px;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  color: white;
-}
-
 .projects {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50vh;
-  width: 70vw;
-  margin: 0 auto;
+    height: 400px;
+    width: 275px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 4px 8px #009c72;
 }
+.projects:hover {
+    cursor: pointer;
+    background-color: white;
+}
+h2 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 45px;
+    text-decoration: underline;
+    text-decoration-color: #009c72;
+    letter-spacing: 3px;
+}
+#portfolio2 {
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about h2 {
 
-.projects div {
-  width: 500px;
-  height: 250px;
-  border: 3px solid darkgray;
-  background-color: yellow;
-  margin: 10px;
-  color: black;
 }
-
-.projects div:hover {
-  background-color: darkgray;
-  color: #177e89;
-  cursor: pointer;
+.para {
+    margin: 60px;
+    text-align: justify;
+    line-height: 2;
+    font-size: 20px;
 }
-
-main {
-  background-color: #177e89;
+.skill-icons {
+    border: 2px solid black;
+    height: 40vh;
+    border-radius: 10px;
+    margin: 100px;
+    font-size: 50px; 
+    overflow: scroll;
+    background-color: gray; 
 }
-
-footer h2 {
-  font-family: 'Lobster', cursive;
-  font-size: 35px;
-  letter-spacing: 10px;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-  color: white;
-}
-
-footer .social i {
-  font-size: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  display: inline-block;
-  align-items: center;
-  color: white;
-}
-
-footer .social i:hover {
-  color: yellow;
-  cursor: pointer;
-}
-
-footer p {
-  text-align: center;
-  color: white;
-  padding: 40px 0;
-  font-size: 20px;
-}
-@media only screen and (max-width: 600px) {
-  #navlinks li {
+.skill-icons i {
     display: block;
-  }
-
-  .projects div {
-    display: grid;
-    width: 200px;
-
-  }
+    text-align: center;
+    padding: 30px;
+}
+.skill-icons i:hover {
+    color: #009c72;
+    cursor: pointer;
+}
+.skill-icons p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.contact p {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 15px;
+    line-height: 1.5;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 45px;
+    margin: 30px;
+}
+.social-icons i:hover {
+    color: #009c72;
+    cursor: pointer;
+}
+.social-icons a i {
+    color: black;
 }
