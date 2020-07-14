@@ -175,8 +175,8 @@ main {
         }
 
         &#boxThree {
-          background-image: url("../Idea-one/img/box-three.jpg");
-          background-position: cover;
+          background-image: url("../Idea-one/img/box-three-project.png");
+          background-position: center;
         }
 
         &#boxFour {
@@ -228,22 +228,23 @@ main {
 
   .cv-and-contact {
     justify-content: space-between;
-
+    
     .contact {
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: wrap;
 
-      div {
+      div.skills {
         display: flex;
         flex-direction: column;
         min-width: 300px;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 5px;
+        height: 60vh;
         padding: 20px;
-        margin-bottom: 20px;
-        // margin: 0px auto 20px auto;
+        margin-bottom: 10px;
         
         h2 {
           margin: 0 auto;
@@ -271,40 +272,6 @@ main {
           }
         }
       }
-      
-      form {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-
-        input,
-        textarea {
-          font-size: inherit;
-          font-family: inherit;
-          text-align: left;
-          padding-left: 5px;
-          border-radius: 10px;
-          border: 2px solid $main-grey-color;
-          margin: 10px;
-          height: 35px;
-          width: 240px;
-          max-width: 260px;
-
-          &#submit {
-            width: 50%;
-            margin: 0 auto;
-            margin-top: 10px;
-            text-align: center;
-          }
-        }
-
-        textarea {
-          height: 150px;
-          max-height: 200px;
-          min-width: 240px;
-          padding-top: 10px;
-        }
-      }
     }
     
     div.icons {
@@ -316,6 +283,10 @@ main {
       margin-top: 10px;
       color: $black-font-color;
       text-decoration: none;
+      min-width: 300px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 5px;
+      padding: 20px;
       
       a {
         display: inline-block;
