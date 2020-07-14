@@ -1,81 +1,145 @@
-#skills .items .item .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
+#skills .items .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
   color: #f06529;
 }
-#skills .items .item .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
+#skills .items .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
   color: #2965f1;
 }
-#skills .items .item .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
+#skills .items .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
   color: #cd6799;
 }
-#skills .items .item .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
+#skills .items .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
   color: #f0db4f;
 }
-#skills .items .item .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
+#skills .items .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
   color: #61dbfb;
 }
-#skills .items .item .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
+#skills .items .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
   color: #563d7c;
 }
-#skills .items .item .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
+#skills .items .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
   color: #f1502f;
 }
-#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+#skills .items .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
   color: black;
 }
-#skills .items .item .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
+#skills .items .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
   color: #cc3534;
 }
-#skills .items .item .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
+#skills .items .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
   color: #3c873a;
 }
-#skills .items .item .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
+#skills .items .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
   color: #306998;
 }
-#skills .items .item .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
+#skills .items .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
   color: #117cad;
 }
-#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+#skills .items .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: #2b3137;
+}
+#skills .items .firebase, .modal-content-wrapper .modal-content article #column-1 #tech .firebase {
+  width: 60px;
+  height: 60px;
+}
+#skills .items .firebase-modal, .modal-content-wrapper .modal-content article #column-1 #tech .firebase-modal {
+  width: 35px;
+  height: 40px;
+}
+#skills .items .mongodb, .modal-content-wrapper .modal-content article #column-1 #tech .mongodb {
+  width: 60px;
+  height: 70px;
+}
+#skills .items .mongodb-modal, .modal-content-wrapper .modal-content article #column-1 #tech .mongodb-modal {
+  width: 40px;
+  height: 50px;
+}
+#skills .items .postman, .modal-content-wrapper .modal-content article #column-1 #tech .postman {
+  width: 65px;
+  height: 65px;
+}
+
+.software {
   color: #2b3137;
 }
 
-#skills .items .item .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
-  color: #f06529;
-}
-#skills .items .item .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
-  color: #2965f1;
-}
-#skills .items .item .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
-  color: #cd6799;
-}
-#skills .items .item .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
-  color: #f0db4f;
-}
-#skills .items .item .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
-  color: #61dbfb;
-}
-#skills .items .item .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
-  color: #563d7c;
-}
-#skills .items .item .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
-  color: #f1502f;
-}
-#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
-  color: black;
-}
-#skills .items .item .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
-  color: #cc3534;
-}
-#skills .items .item .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
-  color: #3c873a;
-}
-#skills .items .item .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
+.space {
   color: #306998;
 }
-#skills .items .item .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
+
+.chemistry {
+  color: #f1502f;
+}
+
+#skills .items .html, .modal-content-wrapper .modal-content article #column-1 #tech .html {
+  color: #f06529;
+}
+#skills .items .css, .modal-content-wrapper .modal-content article #column-1 #tech .css {
+  color: #2965f1;
+}
+#skills .items .sass, .modal-content-wrapper .modal-content article #column-1 #tech .sass {
+  color: #cd6799;
+}
+#skills .items .javascript, .modal-content-wrapper .modal-content article #column-1 #tech .javascript {
+  color: #f0db4f;
+}
+#skills .items .react, .modal-content-wrapper .modal-content article #column-1 #tech .react {
+  color: #61dbfb;
+}
+#skills .items .bootstrap, .modal-content-wrapper .modal-content article #column-1 #tech .bootstrap {
+  color: #563d7c;
+}
+#skills .items .git, .modal-content-wrapper .modal-content article #column-1 #tech .git {
+  color: #f1502f;
+}
+#skills .items .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+  color: black;
+}
+#skills .items .npm, .modal-content-wrapper .modal-content article #column-1 #tech .npm {
+  color: #cc3534;
+}
+#skills .items .node, .modal-content-wrapper .modal-content article #column-1 #tech .node {
+  color: #3c873a;
+}
+#skills .items .python, .modal-content-wrapper .modal-content article #column-1 #tech .python {
+  color: #306998;
+}
+#skills .items .yarn, .modal-content-wrapper .modal-content article #column-1 #tech .yarn {
   color: #117cad;
 }
-#skills .items .item .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
+#skills .items .github, .modal-content-wrapper .modal-content article #column-1 #tech .github {
   color: #2b3137;
+}
+#skills .items .firebase, .modal-content-wrapper .modal-content article #column-1 #tech .firebase {
+  width: 60px;
+  height: 60px;
+}
+#skills .items .firebase-modal, .modal-content-wrapper .modal-content article #column-1 #tech .firebase-modal {
+  width: 35px;
+  height: 40px;
+}
+#skills .items .mongodb, .modal-content-wrapper .modal-content article #column-1 #tech .mongodb {
+  width: 60px;
+  height: 70px;
+}
+#skills .items .mongodb-modal, .modal-content-wrapper .modal-content article #column-1 #tech .mongodb-modal {
+  width: 40px;
+  height: 50px;
+}
+#skills .items .postman, .modal-content-wrapper .modal-content article #column-1 #tech .postman {
+  width: 65px;
+  height: 65px;
+}
+
+.software {
+  color: #2b3137;
+}
+
+.space {
+  color: #306998;
+}
+
+.chemistry {
+  color: #f1502f;
 }
 
 .modal-content-wrapper .modal-content article #column-2 #feat, .modal-content-wrapper .modal-content article #column-2 #sol, .modal-content-wrapper .modal-content article #column-2 #diff, .modal-content-wrapper .modal-content article #column-2 #role, .modal-content-wrapper .modal-content article #column-1 #tech, .modal-content-wrapper .modal-content article #column-1 #summary {
@@ -252,6 +316,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background: #343a40;
 }
 body .container {
   margin: 0 10vw;
@@ -331,7 +396,7 @@ body a {
 #navbar {
   position: sticky;
   top: 0;
-  background: #343a40;
+  background: rgba(52, 58, 64, 0.5);
   z-index: 4;
   font-size: 0.65rem;
   color: rgba(255, 255, 255, 0.5);
@@ -347,7 +412,7 @@ body a {
   display: flex;
 }
 #navbar ul li:nth-child(1) {
-  background: #5fa4dc;
+  background: rgba(95, 164, 220, 0.7);
 }
 #navbar ul li:nth-child(1):hover {
   background: #111;
@@ -380,18 +445,14 @@ body a {
 }
 #skills .items {
   display: grid;
-  grid-template-columns: 1fr;
+  gap: 20px 0;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 80px);
   width: 100%;
   border-radius: 10px;
   margin: 10px 0;
-}
-#skills .items .item {
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-#skills .items .item i {
-  margin: 20px auto;
 }
 
 #portfolio {
@@ -402,10 +463,22 @@ body a {
   width: 120px;
   margin: 0 auto 20px;
 }
+#portfolio div {
+  text-align: center;
+}
+#portfolio input[type=search] {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+#portfolio input[type=search]:focus {
+  border: 2px solid grey;
+  border-radius: 60px;
+}
 #portfolio .items {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   padding: 10px;
 }
@@ -417,6 +490,7 @@ body a {
 }
 
 #background {
+  background: white;
   padding-bottom: 30px;
 }
 #background h2 {
@@ -468,13 +542,14 @@ body a {
     font-size: 1.2rem;
   }
 
+  #skills p {
+    padding: 0 70px;
+  }
   #skills .items {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+    grid-template-columns: repeat(auto-fit, 100px);
   }
 
-  #portfolio .items {
-    grid-template-columns: 1fr 1fr;
-  }
   #portfolio .items .item {
     height: 20px;
   }
@@ -513,17 +588,15 @@ body a {
     font-size: 1.2rem;
   }
 
+  #skills p {
+    padding: 0 70px;
+  }
   #skills .items {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, 70px);
   }
 
-  #portfolio .items {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  #portfolio .items .item {
-    height: 20px;
-  }
-  #portfolio .items .item h4 {
+  #portfolio .items h4 {
     font-size: 1.2rem;
   }
   #portfolio .modal .modal-content-wrapper .modal-content article {
@@ -554,8 +627,12 @@ body a {
     font-size: 1.2rem;
   }
 
+  #skills p {
+    padding: 0 200px;
+  }
   #skills .items {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, 70px);
   }
 
   #portfolio .items .item {
