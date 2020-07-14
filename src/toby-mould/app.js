@@ -7,6 +7,7 @@ const portfolioGridGlobal = document.querySelector('#portfolio .items');
 const modalGlobal = document.querySelector('#simpleModal');
 
 // (3) - AUTO-RENDER PORTFOLIO PROJECT BUTTONS AND BACKGROUND PICS USING 'DATA.JS' FILE.
+// 3a)
 const addSkillSectionLanguageIconsFromDataFile = () => {
   const skillsIconSection = document.querySelector('#skills .items');
   const icons = dataFile.skillsIcons.map(icon => {
@@ -17,6 +18,7 @@ const addSkillSectionLanguageIconsFromDataFile = () => {
 };
 addSkillSectionLanguageIconsFromDataFile();
 
+// 3b)
 const addPortfolioButtonsToHTMLFromDataFile = () => {
   const buttons = dataFile.projects.map((project, index) => {
     return `
@@ -27,7 +29,7 @@ const addPortfolioButtonsToHTMLFromDataFile = () => {
   portfolioGridGlobal.innerHTML += buttons.join('');
 };
 addPortfolioButtonsToHTMLFromDataFile();
-
+// 3c)
 const portfolioButtonBackgrounds = () => {
   const buttonList = document.querySelectorAll('#portfolio button');
 
@@ -37,9 +39,7 @@ const portfolioButtonBackgrounds = () => {
 };
 portfolioButtonBackgrounds();
 
-// const listOfRepos = getRepos();
-// console.log(listOfRepos);
-
+// 3d)
 // Returns an array of repo objects with a languages array
 const getRepoLanguages = listOfRepos => {
   // repo is the repository data
@@ -48,16 +48,14 @@ const getRepoLanguages = listOfRepos => {
       .then(response => response.json())
       // data is the language data
       .then(data => {
-        return { ...repo, languages: data };
+        // return { ...repo, languages: data };
+        return { name: repo.name, languages: data };
       })
       .catch(error => {
         console.error(error);
-        // https://api.github.com/repos/tobymould/${project}/languages
       })
   );
 };
-// getRepoLanguages(getRepos());
-
 // gets public repos
 const getRepos = () => {
   return fetch(`https://api.github.com/users/tobymould/repos`)
@@ -68,7 +66,13 @@ const getRepos = () => {
     .then(repos => getRepoLanguages(repos))
     .catch(error => console.error(error));
 };
-console.log(getRepos());
+const repoLanguages = getRepos();
+
+const RepoLanguageIntoHTML = () => {
+  const modalStats = document.querySelector('#tech .lang-percent');
+  console.log(modalStats);
+};
+RepoLanguageIntoHTML();
 
 // ---------------------------------------------------------------------//
 // ----------------------EVENT-DEPENDENT FUNCTIONS----------------------//

@@ -94,7 +94,9 @@ export const insertProjectModalFunction = projectNumber => {
       </div>
     </div>`;
   modalLocalScope.innerHTML = modalhtml; // keep
-  modalLocalScope.style.display = 'block'; //
+  modalLocalScope.style.display = 'block';
+
+  //
   // const addHoverEventListeners = () => {
   //   const modalImageSectionLocal = document.querySelector('#summary .image');
   //   const test = event => console.log(`modalImageSections: ${event.type}`);

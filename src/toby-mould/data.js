@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'Portfolio Project',
     image: 'https://source.unsplash.com/1600x900/?portfolio,website',
-    live: 'toby-portfolio-7fe51.web.app',
+    live: 'https://toby-portfolio-7fe51.web.app',
     github: 'https://github.com/tobymould/portfolio',
     overview: `The website you are currently previewing is hosted on <span>Netlify</span> and is an ongoing work-in-progress.`,
     technology: ['<i class="html fab fa-html5 fa-2x"></i>', '<i class="sass fab fa-sass fa-2x"></i>', '<i class="javascript fab fa-js-square fa-2x"></i>'],
