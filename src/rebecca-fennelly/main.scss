@@ -18,6 +18,7 @@ body {
 header {
     
   height: $headerheight;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +165,17 @@ main {
   }
 }
 
-#facebook {
+#github {
+  color: rgb(29, 26, 47);
+  font-size: 40px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
+
+#mail {
   color: rgb(29, 26, 47);
   font-size: 40px;
   text-decoration: none;
@@ -215,6 +226,20 @@ main {
   justify-content: center;
   align-items: center;
 
+  #chevronTwo {
+    font-size: 50px;
+    color: rgb(29, 26, 47);
+    position: absolute;
+    top: 1390px;
+    left: 40px;
+    text-decoration: none;
+    z-index: 2;
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+  }
+
 }
 
 #about {
@@ -222,19 +247,12 @@ main {
   height: 85vh;
   width: 85vw;
 
-  .aboutpara,
-  h1 {
-    padding: 12px;
-  }
 
   .cv {
-    padding-left: 12px;
-    color: rgb(29, 26, 47);
-
-    a {
-      color: rgb(22, 219, 147);
-      text-decoration: none; 
-    }
+    color: rgb(22, 219, 147);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0;
   }
       
   .aboutheading {
@@ -248,18 +266,18 @@ main {
 
   .aboutpara {
     font-size: 16px;
+    padding: 12px;
     color: rgb(29, 26, 47);
   }
 }
 
 .skills-grid {
-  height: 150px;
-  width: 231px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
+  display: flex;
+  // flex-flow: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding: 0 70px;
+
 
   div i {
     font-size: 40px;
@@ -270,47 +288,122 @@ main {
     }
   }
 
-
-  #chevronTwo {
-    font-size: 50px;
-    color: rgb(29, 26, 47);
-    float: left;
-    position: absolute;
-    left: 40px;
-    bottom: 50px;
-    text-decoration: none;
-
-    &:hover {
-      color: rgb(22, 219, 147);
-    }
-  }
 }
+
 
 #projects {
   display: grid;
 }
 
 .projects-grid {
-  margin: 40px;
+  padding: 20px;
+  margin: 15px 40px;
   display: grid;
   gap: 20px;
-
-}
-
-article {
-  display: flex;
   justify-items: center;
   background: white;
+  width: 85vw;
+  margin: 0 auto;
+
 }
 
-article div {
+.projectsheading {
+  text-decoration: underline;
+  text-decoration-color: rgb(22, 219, 147);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  
+}
+
+.projects-grid div {
   border: dashed 2px white;
   border-radius: 20px;
   height: 300px;
-  width: 220px;
+  width: 240px;
   background: rgb(29, 26, 47);
 }
+
+
+#contact {
+  width: 85vw;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: white;
+
+  h1 {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgb(22, 219, 147);
+    margin-bottom: 40px;
+  }
+
+  .contactarticle {
+    margin-bottom: 40px;
+  }
+     
+  a {
+    padding-left: 10px;
+    color: rgb(29, 26, 47);
+    font-size: 70px;
+    text-decoration: none;
+    padding-bottom: 40px;
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+    
+  }
   
+ 
+  #flexcontacticons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ 
+  a {
+    padding-left: 10px;
+    color: rgb(29, 26, 47);
+    font-size: 70px;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(22, 219, 147);
+    }
+  
+  }
+}
+
+.totopdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.top {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(29, 26, 47);
+  letter-spacing: 0.4em;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
+
+#chevronUp {
+  font-size: 50px;
+  color: rgb(29, 26, 47);
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(22, 219, 147);
+  }
+}
 
 
 /* AFTER MEDIA QUERY FOR TABLET SIZE */
@@ -318,7 +411,18 @@ article div {
   main .bexface {
     height: auto;
     width: 300px;
-  }  
+  } 
+  
+  #about {
+    background-color: white;
+    height: 85vh;
+    width: 85vw;
+
+    .aboutpara {
+      font-size: 26px;
+      padding: 12px;
+    }
+  }
 
   #parawrapper {
     padding-top: 90px;
@@ -326,79 +430,89 @@ article div {
 
   #projects {
     .projects-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       // gap: 40px;
     }
   }
+}
   
-  // .bexfaceparent {
-  //   height: 380px;
+// .bexfaceparent {
+//   height: 380px;
+// }
+    
+/* AFTER MEDIA QUERY FOR  SIZE */
+
+@media only screen and (min-width: 991px) {
+
+  // body {
+    
+  //   height: 100vh;
+  //   width: 100vw;
+
+  header {
+
+    // height: 150px;
+        
+    display: flex;
+    float: left;
+    height: 100vh;
+    width: $desktopwidth;
+  }
+
+  .show {
+    flex-direction: column;
+    width: 80px;
+  }
+
+  // main {
+  //   width: calc(100% - #{$desktopwidth});
+  //   height: 100vh;
+  //   float: left;
   // }
-    
-  /* AFTER MEDIA QUERY FOR  SIZE */
 
-  @media only screen and (min-width: 991px) {
-    body {
-      // display: flex;
-      height: 100vh;
-      width: 100vw;
-
-
-
-      header {
-        display: flex;
-        float: left;
-        height: 100vh;
-        width: $desktopwidth;
-      }
-
-      .show {
-        flex-direction: column;
-        width: 80px;
-      }
-
-      main {
-        width: calc(100% - #{$desktopwidth});
-        height: 100vh;
-        float: left;
-      }
-
-      #parawrapper {
-        width: calc(100% - #{$desktopwidth});
-        height: 100vh;
-        padding-top: 150px;
-      }
-
-      #chevron {
-        font-size: 50px;
-        color: rgb(29, 26, 47);
-        float: left;
-        position: absolute;
-        left: 500px;
-        bottom: 0;
-
-        .bexface {
-          height: auto;
-          width: 340px;
-        }
-
-        // main section #about {
-        //     width: 100vw;
-
-      }
-
-      #projects {
-        .projects-grid {
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 20px;
-          
-          div {
-            width: 340px;}
-        }
-      }
-
-    }
-    
+  #parawrapper {
+    // width: calc(100% - #{$desktopwidth});
+    height: 100vh;
 
   }
+
+  #chevron {
+    font-size: 50px;
+    color: rgb(29, 26, 47);
+    float: left;
+    position: absolute;
+    left: 550px;
+    bottom: 150px;
+  }
+        
+  .bexface {
+    height: auto;
+    width: 340px;
+  }
+
+  #aboutparent {
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+
+
+  #projects {
+    .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+      div {
+        width: 280px;}
+    }
+  }
+
+  #sayhi {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
 }
