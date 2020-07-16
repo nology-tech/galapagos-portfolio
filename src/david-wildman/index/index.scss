@@ -46,8 +46,7 @@ body {
     width: 100%;
 
     .header.title {
-      text-shadow: 0 0 50px $cultured, 0 0 30px $cultured, 0 0 5px $xiketic, 0 0 10px $xiketic;
-      font-family: sfalienenc;
+      text-shadow: 0 0 50px $cultured, 0 0 30px $cultured, 0 0 5px $cultured, 0 0 10px $cultured;
       overflow: visible;
       text-align: center;
       display: flex;
@@ -61,9 +60,10 @@ body {
       transition-delay: 0.2;
 
       .title-one {
+        font-family: sfalienencsolid;
         position: relative;
-        text-shadow: 0 0 50px $cultured, 0 0 30px $cadet-grey, 0 0 5px $cultured;
-        color: $cultured;
+        text-shadow: 0 0 50px $cultured, 0 0 30px $xiketic, 0 0 5px $cultured;
+        color: $xiketic;
         width: 100%;
         height: max-content;
         font-size: 2.5em;
@@ -76,16 +76,16 @@ body {
           position: absolute;
           left: 0;
           top: 0;
-
           color: $xiketic;
           text-shadow: none;
         }
       }
 
       .title-two {
+        font-family: sfalienenc;
         position: relative;
         color: $xiketic;
-        text-shadow: 0 0 50px $cultured, 0 0 30px $fire-opal, 0 0 5px $cultured;
+        text-shadow: 0 0 50px $xiketic, 0 0 30px $cultured, 0 0 5px $xiketic;
         width: 100%;
         font-size: 1.5em;
         height: max-content;
@@ -280,6 +280,10 @@ article {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
   margin: 2% 0;
+  i {
+    font-size: initial;
+    color: $electric-blue;
+  }
 
   &.subtitle {
     background-color: transparent;
@@ -294,24 +298,27 @@ article {
   }
 
   .article-heading {
+    font-family: sfalienencsolid, Orbitron, consolas, Arial, Helvetica, sans-serif;
     width: 100%;
     white-space: nowrap;
     outline: none;
     height: max-content;
-
     transition: max-height 1s linear;
-    color: $fire-opal;
+    color: $cadet-grey;
     transition: max-width 5s linear;
 
     .article-heading-text {
       padding: 7.5%;
       text-align: center;
       width: max-content;
-      color: $fire-opal;
-      color: $fire-opal;
-      border-top: 1px solid $fire-opal;
-      border-left: 1px solid $fire-opal;
+      color: $cultured;
+      border-top: 1px solid $cadet-grey;
+      border-left: 1px solid $cadet-grey;
       line-height: 48%;
+
+      .char {
+        font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
+      }
     }
   }
 
@@ -378,19 +385,15 @@ article {
           justify-content: space-evenly;
           align-items: flex-start;
         }
-
-        i {
-          font-size: unset;
-          color: $cadet-grey;
-        }
       }
 
       .section-text {
         height: 100%;
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .left {
           width: 15%;
@@ -408,11 +411,6 @@ article {
           flex-direction: column;
           justify-content: space-evenly;
           align-items: flex-start;
-        }
-
-        i {
-          font-size: initial;
-          color: $cadet-grey;
         }
       }
 
@@ -441,10 +439,6 @@ article {
           justify-content: space-evenly;
           align-items: flex-start;
           color: $cultured;
-        }
-
-        i {
-          font-size: initial;
         }
       }
     }
@@ -501,21 +495,12 @@ article {
 
     &:hover > .article-footer-text {
       cursor: pointer;
-      color: $cadet-grey;
-      border-color: $cadet-grey;
+      border-color: $fire-opal;
     }
 
-    &.open {
-      .article-footer-text {
-        color: $cadet-grey;
-        border-color: $cadet-grey;
-      }
-
-      &:hover > .article-footer-text {
-        cursor: pointer;
-        color: $fire-opal;
-        border-color: $fire-opal;
-      }
+    &.open:hover > .article-footer-text {
+      cursor: pointer;
+      border-color: $fire-opal;
     }
 
     .article-footer-text {
@@ -528,8 +513,8 @@ article {
       width: max-content;
       line-height: 48%;
       color: $fire-opal;
-      border-bottom: 1px solid $fire-opal;
-      border-right: 1px solid $fire-opal;
+      border-bottom: 1px solid $cadet-grey;
+      border-right: 1px solid $cadet-grey;
       overflow: hidden;
     }
   }
