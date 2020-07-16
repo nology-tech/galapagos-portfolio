@@ -213,8 +213,7 @@ body {
 }
 
 .home.page .wrapper .header.title {
-  text-shadow: 0 0 50px whitesmoke, 0 0 30px whitesmoke, 0 0 5px #0b0014, 0 0 10px #0b0014;
-  font-family: sfalienenc;
+  text-shadow: 0 0 50px whitesmoke, 0 0 30px whitesmoke, 0 0 5px whitesmoke, 0 0 10px whitesmoke;
   overflow: visible;
   text-align: center;
   display: -webkit-box;
@@ -240,9 +239,10 @@ body {
 }
 
 .home.page .wrapper .header.title .title-one {
+  font-family: sfalienencsolid;
   position: relative;
-  text-shadow: 0 0 50px whitesmoke, 0 0 30px #8ea8c3, 0 0 5px whitesmoke;
-  color: whitesmoke;
+  text-shadow: 0 0 50px whitesmoke, 0 0 30px #0b0014, 0 0 5px whitesmoke;
+  color: #0b0014;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -265,9 +265,10 @@ body {
 }
 
 .home.page .wrapper .header.title .title-two {
+  font-family: sfalienenc;
   position: relative;
   color: #0b0014;
-  text-shadow: 0 0 50px whitesmoke, 0 0 30px #ee6352, 0 0 5px whitesmoke;
+  text-shadow: 0 0 50px #0b0014, 0 0 30px whitesmoke, 0 0 5px #0b0014;
   width: 100%;
   font-size: 1.5em;
   height: -webkit-max-content;
@@ -564,6 +565,11 @@ article {
   margin: 2% 0;
 }
 
+article i {
+  font-size: initial;
+  color: #56eef4;
+}
+
 article.subtitle {
   background-color: transparent;
   text-align: center;
@@ -577,6 +583,7 @@ article.subtitle {
 }
 
 article .article-heading {
+  font-family: sfalienencsolid, Orbitron, consolas, Arial, Helvetica, sans-serif;
   width: 100%;
   white-space: nowrap;
   outline: none;
@@ -585,7 +592,7 @@ article .article-heading {
   height: max-content;
   -webkit-transition: max-height 1s linear;
   transition: max-height 1s linear;
-  color: #ee6352;
+  color: #8ea8c3;
   -webkit-transition: max-width 5s linear;
   transition: max-width 5s linear;
 }
@@ -596,11 +603,14 @@ article .article-heading .article-heading-text {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #ee6352;
-  color: #ee6352;
-  border-top: 1px solid #ee6352;
-  border-left: 1px solid #ee6352;
+  color: whitesmoke;
+  border-top: 1px solid #8ea8c3;
+  border-left: 1px solid #8ea8c3;
   line-height: 48%;
+}
+
+article .article-heading .article-heading-text .char {
+  font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
 }
 
 article .article-content {
@@ -693,23 +703,22 @@ article .article-content .section-content .section-heading .right {
           align-items: flex-start;
 }
 
-article .article-content .section-content .section-heading i {
-  font-size: unset;
-  color: #8ea8c3;
-}
-
 article .article-content .section-content .section-text {
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 article .article-content .section-content .section-text .left {
@@ -743,11 +752,6 @@ article .article-content .section-content .section-text .right {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-article .article-content .section-content .section-text i {
-  font-size: initial;
-  color: #8ea8c3;
 }
 
 article .article-content .section-content .section-highlight {
@@ -797,10 +801,6 @@ article .article-content .section-content .section-highlight .right {
       -ms-flex-align: start;
           align-items: flex-start;
   color: whitesmoke;
-}
-
-article .article-content .section-content .section-highlight i {
-  font-size: initial;
 }
 
 article .article-content.open {
@@ -862,18 +862,11 @@ article .article-footer {
 
 article .article-footer:hover > .article-footer-text {
   cursor: pointer;
-  color: #8ea8c3;
-  border-color: #8ea8c3;
-}
-
-article .article-footer.open .article-footer-text {
-  color: #8ea8c3;
-  border-color: #8ea8c3;
+  border-color: #ee6352;
 }
 
 article .article-footer.open:hover > .article-footer-text {
   cursor: pointer;
-  color: #ee6352;
   border-color: #ee6352;
 }
 
@@ -889,8 +882,8 @@ article .article-footer .article-footer-text {
   width: max-content;
   line-height: 48%;
   color: #ee6352;
-  border-bottom: 1px solid #ee6352;
-  border-right: 1px solid #ee6352;
+  border-bottom: 1px solid #8ea8c3;
+  border-right: 1px solid #8ea8c3;
   overflow: hidden;
 }
 
