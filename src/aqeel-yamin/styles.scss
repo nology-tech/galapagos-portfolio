@@ -8,129 +8,144 @@
 
 body {
         background-color:#1d263b;
-}
+        
+        .homepage {
 
-#nametag {
-        border: 2px solid black;
-        height: 80vh;
-        border-radius: 10px;
-        padding-top: 20px;
-        margin: 80px;
-        text-align: center;
-        background-color: #5c6784;
-}
+        #nametag {
+                border: 2px solid black;
+                height: 80vh;
+                border-radius: 10px;
+                padding-top: 20px;
+                margin: 80px;
+                text-align: center;
+                background-color: #5c6784;
+        
 
-#nametag h1 {
-        font-size: 65px;
-        font-family: 'Bangers', cursive;
-        color: #1d263b;
-        letter-spacing: 3px;
-        padding-top: 235px;
-        padding-bottom: 10px;
-}
+                
+                h1 {
+                        font-size: 65px;
+                        font-family: 'Bangers', cursive;
+                        color: #1d263b;
+                        letter-spacing: 3px;
+                        padding-top: 235px;
+                        padding-bottom: 10px;
+                }
+                
+                p {
+                        font-size: 25px;
+                        color: #98b6b1;
+                }
+        }
+                
+                #portfolio {
+                        margin: 80px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                }
+                
+                .projects {
+                        height: 400px;
+                        width: 275px;
+                        border: 2px solid black;
+                        border-radius: 10px;
+                        background-color: #5c6784;
+                        box-shadow: 4px 8px #98b6b1;
+                }
+                
+                .projects:hover {
+                        cursor: pointer;
+                        background-color: silver;
+                }
+                
+                h2 {
+                        text-align: center;
+                        font-family: 'Bangers', cursive;
+                        font-size: 45px;
+                        text-decoration: underline;
+                        text-decoration-color: #98b6b1;
+                        color: #5c6784;
+                        letter-spacing: 3px;
+                }
+                
+                #portfolio2 {
+                        margin: 80px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                }
+        }
+                .about {
 
-#nametag p {
-        font-size: 25px;
-        color: #98b6b1;
-}
+                .para {
+                                margin: 60px;
+                                text-align: justify;
+                                line-height: 2;
+                                font-size: 20px;
+                                color: #98b6b1;
+                }
 
-#portfolio {
-        margin: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-}
+                .skills {
 
-.projects {
-        height: 400px;
-        width: 275px;
-        border: 2px solid black;
-        border-radius: 10px;
-        background-color: #5c6784;
-        box-shadow: 4px 8px #98b6b1;
-}
+                .skill-icons {
+                        border: 2px solid black;
+                        height: 40vh;
+                        border-radius: 10px;
+                        margin: 100px;
+                        font-size: 50px; 
+                        overflow: scroll;
+                        background-color: #5c6784; 
+                }
+                
+                .skill-icons i {
+                        display: block;
+                        text-align: center;
+                        padding: 30px;
+                        color: #98b6b1;
+                }
+                
+                .skill-icons i:hover {
+                        color: #1d263b;
+                }
+                
+                .skill-icons p {
+                        font-size: 20px;
+                        color: #1d263b;
+                        text-align: center;
+                        padding-top: 20px;
+                }
+                }
+                .contact {
 
-.projects:hover {
-        cursor: pointer;
-        background-color: silver;
-}
+                .contact p {
+                        font-size: 20px;
+                        text-align: center;
+                        padding: 15px;
+                        line-height: 1.5;
+                        color: #98b6b1;
+                }
+                
+                .social-icons {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-direction: row;
+                        font-size: 45px;
+                        margin: 30px;
+                        color: #98b6b1;
+                }
+                
+                .social-icons i:hover {
+                        color: #5c6784;
+                }
+                
+                .social-icons a{
+                        color: #98b6b1;
+                }
+        }
+        
+        }
 
-h2 {
-        text-align: center;
-        font-family: 'Bangers', cursive;
-        font-size: 45px;
-        text-decoration: underline;
-        text-decoration-color: #98b6b1;
-        color: #5c6784;
-        letter-spacing: 3px;
-}
 
-#portfolio2 {
-        margin: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-}
-
-.para {
-        margin: 60px;
-        text-align: justify;
-        line-height: 2;
-        font-size: 20px;
-        color: #98b6b1;
-}
-
-.skill-icons {
-        border: 2px solid black;
-        height: 40vh;
-        border-radius: 10px;
-        margin: 100px;
-        font-size: 50px; 
-        overflow: scroll;
-        background-color: #5c6784; 
-}
-
-.skill-icons i {
-        display: block;
-        text-align: center;
-        padding: 30px;
-        color: #98b6b1;
-}
-
-.skill-icons i:hover {
-        color: #1d263b;
-}
-
-.skill-icons p {
-        font-size: 20px;
-        color: #1d263b;
-        text-align: center;
-        padding-top: 20px;
-}
-
-.contact p {
-        font-size: 20px;
-        text-align: center;
-        padding: 15px;
-        line-height: 1.5;
-        color: #98b6b1;
-}
-
-.social-icons {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        font-size: 45px;
-        margin: 30px;
-        color: #98b6b1;
-}
-
-.social-icons i:hover {
-        color: #5c6784;
-}
-
-.social-icons a{
-        color: #98b6b1;
 }
