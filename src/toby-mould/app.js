@@ -7,8 +7,20 @@ const portfolioGridGlobal = document.querySelector('#portfolio .items');
 const modalGlobal = document.querySelector('#simpleModal');
 
 // (3) - AUTO-RENDER PORTFOLIO PROJECT BUTTONS AND BACKGROUND PICS USING 'DATA.JS' FILE.
+// 3a)
+const addSkillSectionLanguageIconsFromDataFile = () => {
+  const skillsIconSection = document.querySelector('#skills .items');
+  const icons = dataFile.skillsIcons.map(icon => {
+    return icon;
+  });
+  // console.log(icons);
+  skillsIconSection.innerHTML += icons.join('');
+};
+addSkillSectionLanguageIconsFromDataFile();
+
+// 3b)
 const addPortfolioButtonsToHTMLFromDataFile = () => {
-  const buttons = dataFile.data.map((project, index) => {
+  const buttons = dataFile.projects.map((project, index) => {
     return `
     <button class="item" value="${index}">
       <h4>${project.name}</h4>
@@ -17,14 +29,50 @@ const addPortfolioButtonsToHTMLFromDataFile = () => {
   portfolioGridGlobal.innerHTML += buttons.join('');
 };
 addPortfolioButtonsToHTMLFromDataFile();
+// 3c)
 const portfolioButtonBackgrounds = () => {
   const buttonList = document.querySelectorAll('#portfolio button');
 
-  const buttonBackgrounds = dataFile.data.map((project, index) => {
+  const buttonBackgrounds = dataFile.projects.map((project, index) => {
     return (buttonList[index].style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover`);
   });
 };
 portfolioButtonBackgrounds();
+
+// 3d)
+// Returns an array of repo objects with a languages array
+const getRepoLanguages = listOfRepos => {
+  // repo is the repository data
+  return listOfRepos.map(repo =>
+    fetch(repo.languages_url)
+      .then(response => response.json())
+      // data is the language data
+      .then(data => {
+        // return { ...repo, languages: data };
+        return { name: repo.name, languages: data };
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  );
+};
+// gets public repos
+const getRepos = () => {
+  return fetch(`https://api.github.com/users/tobymould/repos`)
+    .then(response => response.json())
+    .then(data => {
+      return data;
+    })
+    .then(repos => getRepoLanguages(repos))
+    .catch(error => console.error(error));
+};
+const repoLanguages = getRepos();
+
+const RepoLanguageIntoHTML = () => {
+  const modalStats = document.querySelector('#tech .lang-percent');
+  console.log(modalStats);
+};
+RepoLanguageIntoHTML();
 
 // ---------------------------------------------------------------------//
 // ----------------------EVENT-DEPENDENT FUNCTIONS----------------------//
@@ -89,6 +137,7 @@ const modalOpen = event => {
       break;
   }
 };
+
 const modalClose = event => {
   const modalLocalScope = document.querySelector('#simpleModal');
   modalLocalScope.style.display = 'none';
@@ -96,7 +145,7 @@ const modalClose = event => {
 
 // (5) - PROJECT BUTTON HOVER EFFECT - MOUSEENTER = RAINBOW, MOUSELEAVE = BLACK-50;
 const hoverEffect = event => {
-  const imageFile = dataFile.data[event.target.value];
+  const imageFile = dataFile.projects[event.target.value];
 
   if (event.type == 'mouseenter') {
     return (event.target.style.background = `linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover`);
@@ -124,7 +173,32 @@ const buttons = document.querySelectorAll('#portfolio button'); // NEEDS TO BE D
 buttons.forEach(button => button.addEventListener('mouseenter', hoverEffect));
 buttons.forEach(button => button.addEventListener('mouseleave', hoverEffect));
 
-// (8) - MODAL POPUP BUTTON HOVER EFFECT EVENT TRIGGER
+// (8) - SEARCH FUNCTIONALITY
+const search = document.querySelector('#portfolio input');
+const searchFunction = event => {
+  const term = event.target.value.toLowerCase();
+  buttons.forEach(button => console.log(button.value));
+  // console.log(dataFile.projects);
+
+  console.log(dataFile.projects.languages);
+  const test = buttons;
+  // const filteredProjects = dataFile.projects.languages.forEach((project, index) => {
+  //   // console.log(project.languages);
+  //   // console.log(buttons[index]);
+  //   const filteredProject = project.languages.filter(language => {
+  //     // console.log(language);
+  //     // if (project.languages.includes(term)) {
+  //     if (language.toLowerCase().indexOf(term) == -1) {
+  //       // console.log(project);
+  //       // buttons[index].style.display = 'none';
+  //     }
+  //   });
+  //   // console.log(project.languages.includes(search.value));
+  // });
+};
+search.addEventListener('keyup', searchFunction);
+
+// (9) - MODAL POPUP BUTTON HOVER EFFECT EVENT TRIGGER
 // const modalImageSection = document.querySelector('#summary .image');
 
 // const test = event => console.log(`modalImageSections: ${event.type}`);
