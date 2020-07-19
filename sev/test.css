@@ -240,7 +240,7 @@
   background-color: #4caf50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 17px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -378,12 +378,11 @@ footer ul {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  font-size: 25px;
   opacity: unset;
   margin: 0;
   height: 70px;
   z-index: 2;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 10px;
 }
 footer ul a {
