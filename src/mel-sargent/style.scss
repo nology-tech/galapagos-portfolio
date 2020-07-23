@@ -1,0 +1,307 @@
+
+@mixin section-top {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("./images/lights.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Play', sans-serif;
+
+  nav {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    display: relative;
+
+    #dropdown {
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+      opacity: 0.97;
+      display: flex;
+      padding: 20px;
+      width: 25%vw;
+      height: 50%vh;
+      padding: 10px;
+      align-items: space-between;
+
+
+      &.hide {
+        display: none;
+      }
+
+      &.show {
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul {
+        margin-top: 40px;
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          margin-bottom: 10px;  
+        }
+
+        li {
+          color: black;
+          font-size: 1.5em;
+
+          &:active {
+            color: black;
+            background-color: lightgray;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+
+    .burger {
+      position: fixed;
+      display: inline-block;
+      width: 10%vw;
+      background-color: none;
+      cursor: pointer;
+      margin: 4px 10px;
+      z-index: 2;
+    
+    
+      .bar1 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+        box-shadow: 1px 2px 2px black;
+      }
+    
+      .bar2 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+        box-shadow: 1px 2px 2px black;
+      }
+    
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+        box-shadow: 1px 2px 2px black;
+      }
+    
+      &.change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        background-color: black;
+      }
+    
+      &.change .bar2 {
+        opacity: 0;
+      }
+      
+      &.change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        background-color: black;
+      }
+    }
+  }
+
+  main {
+    
+    @keyframes slideup {
+      0% { transform: translateY(50px); }
+      0% { opacity: 0;}
+      100% {transform: translateY(0);}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slidedown {
+      0% { transform: translateY(-50px);}
+      0% {opacity: 0;}
+      100% {transform: translateY(0);}
+      100% {opacity: 1;}
+    }
+
+    .splash {
+      height: 100vh;
+      
+      .jumbotron {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        padding-top: 20%;
+        justify-content: center;
+      }
+
+      .jumbotron h2 {
+        font-size: 48px;
+        font-weight: 100;
+        margin: 30px 20px 5px;
+        animation: slideup 3s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+      }
+      
+
+      .jumbotron p {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        animation: slidedown 3s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+      } 
+    }
+
+    .header {
+      background-color: transparent;
+      background-image: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: white;
+      text-align: center;
+      text-shadow: 1px 2px 2px black;
+      font-size: 48px;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 100;
+        margin: 30px 20px 5px;
+        padding: 20px;
+      }
+    }
+
+
+    .about-me {
+      @include section-top;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      
+
+      h2 {
+        margin-top: 20px;
+        font-size: 50px;  
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+      }
+    }
+
+    .my-work {
+      @include section-top;
+      background-color: transparent;
+      color: white;
+      margin: 0 auto;
+      justify-content: center;
+      
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        .frame {
+          height: 200px;
+          min-width: 160px;
+          background-color: darkgray;
+          border: solid 2px black;
+          padding: 10px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+      
+      
+    
+
+    .get-in-touch {
+      @include section-top;
+      display: inline-flexbox;
+      justify-content: space-evenly;
+
+
+      .icons {
+        display: inline-flexbox;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 80px;
+
+        i {
+          opacity: 1;
+          padding: 20px;
+          color: grey;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .footer {
+      background-color: black;
+      display: block;
+      color: white;
+      font-family: 'Play', sans-serif;
+      font-size: 16px;
+      padding: 30px;
+      height: 40px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 900px) {
+    #dropdown:hover {
+      color: black;
+      background-color: white;
+      transition: 0.2s;
+    }
+
+    .frame:hover {
+      box-shadow: 2px 2px 20px white;
+      border: solid 2px white;
+    }
+  }
+}
