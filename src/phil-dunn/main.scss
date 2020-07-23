@@ -1,0 +1,613 @@
+
+$primary-color: whitesmoke;
+$secondary-color: #1d2227;
+$tertiary-color: #536a8e;
+$font-main: 14px;
+$tn-width: 7vw;
+$tn-height: 7vh;
+$btn-width: 27vw;
+$btn-height: 40px;
+$primary-border: 2px solid $primary-color;
+$breakpoint-l-mobile: 425px;
+$breakpoint-s-tablet: 550px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-l-laptop: 1440px;
+$about-tn-height: 30px;
+$about-tn-width: 30px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fjalla One';
+  color: $primary-color;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+}
+
+nav {
+  background-color: $secondary-color;
+  padding: 5px;
+  font-size: $font-main;
+  height: 100vh;
+    
+  #burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 40px;
+    height: 5px;
+    background-color: $primary-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }   
+
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }        
+
+  .change .bar2 {
+    opacity: 0;
+  }  
+
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .menu {
+    display: none;
+    text-align: center;
+  }  
+
+  .social {
+    display: none;  
+  }
+
+  #logo {
+    display: none;
+  }
+  
+  #profile {
+    display: none;
+  }
+}
+
+.redline {
+  min-width: 1vw;
+  background-color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+i:hover {
+  color: red;
+}
+
+.open {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .burger {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  i {
+    margin: auto 15px;
+  }
+  
+  #logo {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+  }
+
+  #profile {
+    width: 60px;
+    height: 60px;
+  }
+
+  .redline {
+    display: none;
+  }
+
+  .menu {
+    display: unset;
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .social {
+    display: unset;  
+  }
+
+  #logo {
+    display: unset;
+  }
+  
+  #profile {
+    display: unset;
+  }
+
+  article i {
+    pointer-events: none;
+  }
+}
+
+main {
+  background-image: url('./Images/web-build1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  background-color: $tertiary-color;
+  height: 100vh;
+  width: 100vw;
+
+  section {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    gap: 20px;
+    margin: 20px;
+    grid-template-areas: 
+      "phil phil"
+      "frontend frontend"
+      "btn-outline btn-primary";
+       
+    h1 {
+      grid-area: phil;
+      font-size: 60px;
+    }  
+
+    h2 {
+      grid-area: frontend;
+      font-size: 30px;
+    }  
+
+    .btn-outline {
+      grid-area: btn-outline;
+      border: $primary-border;
+      padding: 10px;
+      font-size: $font-main;
+      width: $btn-width;
+      height: $btn-height;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }  
+
+    .btn-primary {
+      grid-area: btn-primary;
+      border: $primary-border;
+      background-color: $primary-color;
+      color: #536a8e;
+      padding: 10px;
+      font-size: $font-main;
+      width: $btn-width;
+      height: $btn-height;
+      text-align: center;
+    }
+  }
+}   
+
+.portfolio {
+  display: grid;
+  grid-template-rows: 150px 50px 150px;
+  gap: 20px;
+  margin: 20px;
+  grid-template-areas: 
+    "phil phil phil"
+    "frontend frontend frontend"
+    "project1 project2 ."
+    "project3 project4 ."
+    "project5 project6 .";
+
+  article {
+    border: $primary-border;
+    height: 15vh;
+    padding: 5px;
+    text-align: center;
+    
+  
+    .project1 {
+      grid-area: project1;
+    }
+
+    .project2 {
+      grid-area: project2;
+    }
+
+    .project3 {
+      grid-area: project3;
+    }
+
+    .project4 {
+      grid-area: project4;
+    }
+
+    .project5 {
+      grid-area: project5;
+    }
+
+    .project6 {
+      grid-area: project6;
+    }
+
+    i {
+      opacity: 0;
+      font-size: 50px;
+      margin-top: 30px;
+    }
+  }
+}
+
+article:hover i {
+  opacity: 1;
+}
+
+.project1 {
+  background-image: url('./Images/project1pic.png');
+  background-size: cover;
+}
+
+.project2 {
+  background-image: url('./Images/morse.png');
+  background-size: cover;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 150px 50px 60px 60px 60px 60px;
+  grid-template-columns: 110px 167px;
+  margin: 20px;
+  column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: 
+    "phil phil phil"
+    "frontend frontend frontend"
+    "skills skillsp "
+    ". . experience"
+    "education educationp .";
+  
+  h3 {
+    border: $primary-border;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    
+    .skills {
+      grid-area: skills;
+    }
+
+    .domain {
+      grid-area: domain;
+    }
+
+    .experience {
+      grid-area: experience;
+    }
+
+    .education {
+      grid-area: education;
+    }
+
+    .skillsp {
+      grid-area: skillsp;
+    }
+
+    .domainp {
+      grid-area: domainp;
+    }
+
+    .experiencep {
+      grid-area: experiencep;
+    }
+
+    .educationp {
+      grid-area: educationp;
+    }
+  }
+
+  p i {
+    font-size: 30px;
+    pointer-events: none;
+  }
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+span img {
+  margin: 1px;
+}
+
+#bgc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#fd {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#pwc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#kip {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+@media only screen and (min-width: $breakpoint-l-mobile) {
+  main section .btn-primary {
+    font-size: 17px;
+    padding: 7px;
+  }
+
+  main section .btn-outline {
+    font-size: 17px;
+    padding: 7px;
+  }
+
+  .portfolio article {
+    font-size: 17px;
+  }
+
+  .about {
+    grid-template-columns: 110px 185px;
+
+    h3 {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+
+  span img {
+    margin: 3px;
+  }
+}
+@media only screen and (min-width: $breakpoint-s-tablet) {
+  main section .btn-primary {
+    font-size: 20px;
+    padding: 7px;
+  }
+
+  main section .btn-outline {
+    font-size: 20px;
+    padding: 7px;
+  }
+
+  .portfolio article {
+    font-size: 23px;
+  }
+
+  .about {
+    grid-template-columns: 130px 280px;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media only screen and (min-width: $breakpoint-tablet) {
+  main section h1 {
+    font-size: 72px;
+  }
+
+  main section h2 {
+    font-size: 65px;
+    margin-bottom: 10px;
+  }
+
+  main section .btn-primary {
+    font-size: 26px;
+    padding: 3px;
+  }
+
+  main section .btn-outline {
+    font-size: 26px;
+    padding: 3px;
+  }
+
+  .portfolio article {
+    font-size: 25px;
+  }
+
+  .about {
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    p i {
+      margin-top: 10px;
+      font-size: 40px;
+    }
+  }
+}
+@media only screen and (min-width: $breakpoint-laptop) {
+  main section h1 {
+    font-size: 75px;
+  }
+  
+  main section h2 {
+    font-size: 45px;
+  }
+
+  main section .btn-primary {
+    font-size: 29px;
+    padding: 5px;
+    height: 50px;
+  }
+
+  main section .btn-outline {
+    font-size: 29px;
+    padding: 5px;
+    height: 50px;
+  }
+
+  .about {
+    grid-template-columns: 220px 500px;
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
+
+    h3 {
+      font-size: 27px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    p i {
+      margin-top: 4px;
+      font-size: 50px;
+    }
+  }
+
+  nav ul {
+    font-size: 40px;
+  }
+
+  .social {
+    font-size: 40px;
+  }
+
+  #bgc {
+    height: 50px;
+    width: 50px;
+  }
+
+  #pwc {
+    height: 50px;
+    width: 50px;
+  }
+
+  #fd {
+    height: 50px;
+    width: 50px;
+  }
+
+  #kip {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media only screen and (min-width: $breakpoint-l-laptop) {
+  main section h1 {
+    font-size: 95px;
+  }
+  
+  main section h2 {
+    font-size: 65px;
+  }
+
+  .portfolio {
+    grid-template-rows: 150px 100px 180px;
+  }
+
+  .about {
+    grid-template-rows: 150px 100px 60px 60px 60px 60px;
+  }
+  
+  main section .btn-primary {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+
+  main section .btn-outline {
+    font-size: 32px;
+    padding: 10px;
+    height: 60px;
+  }
+
+  nav ul {
+    font-size: 50px;
+  }
+
+  .social {
+    font-size: 50px;
+  }
+
+  .about {
+    grid-template-columns: 220px 600px;
+    grid-template-rows: 150px 120px 70px 70px 70px 70px;
+
+    h3 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    p i {
+      margin-top: 5px;
+      font-size: 60px;
+    }
+  }
+  
+  #bgc {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #pwc {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #fd {
+    height: 55px;
+    width: 55px;
+  }
+  
+  #kip {
+    height: 55px;
+    width: 55px;
+  }
+}

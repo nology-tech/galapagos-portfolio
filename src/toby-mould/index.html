@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f4df4b0929.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet" /> -->
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="main.css" />
+    <title>Toby Mould | Portfolio</title>
+  </head>
+
+  <body>
+    <!------------------------->
+    <!-- 2. NAVBAR SECTION -->
+    <!------------------------->
+    <!-- <div id="nav-wrap"> --->
+    <nav id="navbar">
+      <div></div>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank"> <i class="fas fa-passport"></i>Resume</a>
+        </li>
+        <li>
+          <a href="#home"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fas fa-microchip"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fas fa-code"></i>Portfolio</a>
+        </li>
+        <li>
+          <a href="#background"><i class="fas fa-user-circle"></i>Background</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+
+    <!------------------------->
+    <!-- 1. LANDING SECTION -->
+    <!------------------------->
+    <section id="home">
+      <div id="home-overlay"></div>
+      <div id="home-content">
+        <h1>Toby Mould</h1>
+        <h2>
+          London-based <br />
+          <span>Software Developer </span>
+        </h2>
+      </div>
+    </section>
+
+    <!------------------------->
+    <!-- 3. SKILLS SECTION -->
+    <!------------------------->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p>
+          I am a self-taught Front-End Web Developer looking for opportunties to transfer into the industry full-time to become a
+          <span> Full Stack Web Developer</span>. I have a basis of knowledge and practice in the following:
+        </p>
+
+        <section class="items"></section>
+      </div>
+    </section>
+
+    <!------------------------->
+    <!-- 4. PORTFOLIO SECTION -->
+    <!------------------------->
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div>
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Search projects..." />
+        </div>
+        <section class="items"></section>
+        <div>
+          <div id="simpleModal" class="modal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------->
+    <!-- 5.   BACKGROUND SECTION -->
+    <!------------------------->
+    <section id="background">
+      <div class="container py-2">
+        <h2>Background</h2>
+        <p>
+          I have worked in a variety of domains to date:
+        </p>
+        <br />
+        <div class="items py-1">
+          <div class="item">
+            <i class="software fab fa-connectdevelop fa-2x"></i>
+            <h3>Software Development</h3>
+            <p>
+              Currently, I am teaching myself to code so to transition my career path toward becoming a professional Software Developer.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-space-shuttle fa-2x space"></i>
+            <h3>Space Engineering</h3>
+            <p>
+              I have 4 years experience in this domain, both as an entrepreneur and engineer.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-flask fa-2x chemistry"></i>
+            <h3>Chemistry</h3>
+            <p>
+              I have 4 years experience in this domain, working on high-tech materials and industrial projects.
+            </p>
+          </div>
+
+          <!-- <div class="item">
+            <i class="fas fa-chart-area fa-2x"></i>
+            <h3>Analytics</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!------------------------->
+    <!-- 6. FOOTER -->
+    <!------------------------->
+    <footer id="footer" class="text-center">
+      <div class="container">
+        <div>
+          <p>toby.mould@icloud.com</p>
+          <!-- <div id="contact">
+            <p>email: _____</p>
+            <p>phone: _____</p>
+          </div> -->
+          <i class="fab fa-linkedin fa-2x" href="https://uk.linkedin.com/in/tobymould"></i>
+          <!-- <i ></i> -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
