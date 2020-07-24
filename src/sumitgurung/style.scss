@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 $border: 2px solid black;
@@ -73,22 +73,27 @@ header {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
-    animation: 
-      typing 4s steps(40, end),
-      blink-caret 0.5s step-end infinite;
+    animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
 
-    
     /* The typing effect */
     @keyframes typing {
-      from {width: 0;}
-      to {width: 100%;}
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
     }
-    
+
     /* The typewriter cursor effect */
     @keyframes blink-caret {
-      to {border-color: transparent;}
-      50% {border-color: rgb(255, 255, 254);}
-    }      
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: rgb(255, 255, 254);
+      }
+    }
   }
 }
 
@@ -105,7 +110,6 @@ P {
   text-align: justify;
   font-size: 1.5em;
 }
-
 
 #projects {
   padding: 25px;
@@ -126,24 +130,21 @@ P {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      
+
       .proj {
         width: 400px;
-  
       }
 
       .text {
         text-align: center;
         border: none;
       }
-      
+
       .lunchcode {
         display: flex;
         justify-content: space-evenly;
         z-index: 1;
-  
       }
-
     }
   }
 }
@@ -205,7 +206,6 @@ P {
         padding: 10px;
         border: none;
         border-radius: 10px;
-      
       }
     }
 
@@ -221,7 +221,7 @@ P {
         border: none;
         border-radius: 10px;
 
-        a {   
+        a {
           text-decoration: none;
           color: black;
           font-family: sans-serif;
