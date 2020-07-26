@@ -6,13 +6,44 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f4df4b0929.js" crossorigin="anonymous"></script>
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet" /> -->
+
     <!-- CSS file -->
     <link rel="stylesheet" href="main.css" />
     <title>Toby Mould | Portfolio</title>
   </head>
 
   <body>
+    <!------------------------->
+    <!-- 2. NAVBAR SECTION -->
+    <!------------------------->
+    <!-- <div id="nav-wrap"> --->
+    <nav id="navbar">
+      <div></div>
+      <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank"> <i class="fas fa-passport"></i>Resume</a>
+        </li>
+        <li>
+          <a href="#home"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fas fa-microchip"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fas fa-code"></i>Portfolio</a>
+        </li>
+        <li>
+          <a href="#background"><i class="fas fa-user-circle"></i>Background</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+
     <!------------------------->
     <!-- 1. LANDING SECTION -->
     <!------------------------->
@@ -28,23 +59,6 @@
     </section>
 
     <!------------------------->
-    <!-- 2. NAVBAR SECTION -->
-    <!------------------------->
-    <!-- <div id="nav-wrap"> -->
-    <nav id="navbar">
-      <div>
-        <a href="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">Resume</a>
-      </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#background">Background</a></li>
-      </ul>
-    </nav>
-    <!-- </div> -->
-
-    <!------------------------->
     <!-- 3. SKILLS SECTION -->
     <!------------------------->
     <section id="skills">
@@ -55,54 +69,7 @@
           <span> Full Stack Web Developer</span>. I have a basis of knowledge and practice in the following:
         </p>
 
-        <section class="items">
-          <!-- <article id="frontend" class="item"> -->
-          <!-- <h3>Frontend</h3> -->
-          <div class="item">
-            <i class="html fab fa-html5 fa-3x"></i>
-            <i class="css fab fa-css3-alt fa-3x"></i>
-            <i class="sass fab fa-sass fa-3x"></i>
-          </div>
-          <!-- </article> -->
-
-          <!-- <article id="libraries" class="item"> -->
-          <!-- <h3>Libraries</h3> -->
-          <div class="item">
-            <i class="javascript fab fa-js-square fa-3x"></i>
-            <i class="react fab fa-react fa-4x"></i>
-            <i class="bootstrap fab fa-bootstrap fa-3x"></i>
-          </div>
-          <!-- </article> -->
-
-          <!-- <article id="support" class="item"> -->
-          <!-- <h3>Support</h3> -->
-          <div class="item">
-            <i class="git fab fa-git fa-3x"></i>
-            <i class="github fab fa-github fa-3x"></i>
-            <i class="npm fab fa-npm fa-3x"></i>
-            <!-- <i class="fab fa-google-drive fa-4x"></i> -->
-          </div>
-          <!-- </article> -->
-        </section>
-        <!-- <br />
-        <br /> -->
-        <!-- <p>I intend to follow on building a proficiency in the following:</p>
-        <div class="items py-1">
-          <article id="libraries" class="item">
-            <h3>Libraries</h3>
-            <div>
-              <i class="fab fa-react fa-3x"></i>
-              <i class="fab fa-bootstrap fa-3x"></i>
-            </div>
-          </article>
-          <article id="backend" class="item">
-            <h3>Backend</h3>
-            <div>
-              <i class="fab fa-node fa-3x"></i>
-              <i class="fab fa-python fa-3x"></i>
-            </div>
-          </article>
-        </div> -->
+        <section class="items"></section>
       </div>
     </section>
 
@@ -112,27 +79,21 @@
     <section id="portfolio">
       <div class="container">
         <h2>Portfolio</h2>
-        <p>
-          I have worked on a number of small projects. Some of these include the following:
-        </p>
-        <section class="items">
-          <button class="item">
-            <h4>Project-1</h4>
-          </button>
-          <button class="item">
-            <h4>Project-2</h4>
-          </button>
-          <button class="item">
-            <h4>Project-3</h4>
-          </button>
-        </section>
+        <div>
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Search projects..." />
+        </div>
+        <section class="items"></section>
+        <div>
+          <div id="simpleModal" class="modal"></div>
+        </div>
       </div>
     </section>
 
     <!------------------------->
-    <!-- 5. ABOUT SECTION -->
+    <!-- 5.   BACKGROUND SECTION -->
     <!------------------------->
-    <section id="about">
+    <section id="background">
       <div class="container py-2">
         <h2>Background</h2>
         <p>
@@ -141,21 +102,21 @@
         <br />
         <div class="items py-1">
           <div class="item">
-            <i class="fab fa-connectdevelop fa-2x"></i>
+            <i class="software fab fa-connectdevelop fa-2x"></i>
             <h3>Software Development</h3>
             <p>
               Currently, I am teaching myself to code so to transition my career path toward becoming a professional Software Developer.
             </p>
           </div>
           <div class="item">
-            <i class="fas fa-space-shuttle fa-2x"></i>
+            <i class="fas fa-space-shuttle fa-2x space"></i>
             <h3>Space Engineering</h3>
             <p>
               I have 4 years experience in this domain, both as an entrepreneur and engineer.
             </p>
           </div>
           <div class="item">
-            <i class="fas fa-flask fa-2x"></i>
+            <i class="fas fa-flask fa-2x chemistry"></i>
             <h3>Chemistry</h3>
             <p>
               I have 4 years experience in this domain, working on high-tech materials and industrial projects.
@@ -187,5 +148,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./app.js" type="module"></script>
   </body>
 </html>
