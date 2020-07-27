@@ -48,7 +48,7 @@ body header input[type=checkbox]:checked ~ label > i {
 }
 
 body header h1 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 body header i {
@@ -186,21 +186,6 @@ body main section article {
   position: relative;
 }
 
-body main section article input[type=checkbox] {
-  display: none;
-}
-
-body main section article input[type=checkbox]:checked ~ label > div {
-  -webkit-transform: translate(-130px) rotate(180deg) scaleX(-1);
-          transform: translate(-130px) rotate(180deg) scaleX(-1);
-}
-
-body main section article label div {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-}
-
 body main section article i {
   position: absolute;
   left: 10px;
@@ -222,6 +207,7 @@ body main section article.welcome {
   font-size: 30px;
   color: rgba(48, 96, 174, 0.898);
   -webkit-text-stroke: 1px black;
+  padding: 8px;
 }
 
 body main section article.code {
