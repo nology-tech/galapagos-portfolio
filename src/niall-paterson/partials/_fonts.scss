@@ -14,12 +14,15 @@ li {
   text-align: center;
 }
 
+.fa-file-download {
+  font-size: $cv-icon-font;
+}
+
 header {
   h2 {
     text-align: left;
   }
 }
-
 
 i, 
 #languages-icon-wrapper i {
@@ -28,6 +31,9 @@ i,
 
 .project-links a i {
   font-size: $icon-font  * 0.8;
+  &.project-npm {
+    font-size: $icon-font;
+  }
 }
 
 p {
@@ -39,7 +45,11 @@ p {
   p {
     line-height: 30px;
   }
-} 
+}
+
+.project-content li {
+  font-size: $small-font;
+}
 
 @media (min-width: $breakpoint-tablet) {
   h1 {
