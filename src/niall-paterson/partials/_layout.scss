@@ -1,13 +1,17 @@
-h1, p, #languages-icon-wrapper {
+h1,
+p,
+#languages-icon-wrapper {
   display: inline-block;
   margin: $small-margin;
 }
 
-#about-content p, .project-wrapper p {
+#about-content p,
+.project-wrapper p {
   margin-top: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   padding: $small-padding 0;
 }
 
@@ -35,6 +39,7 @@ nav {
   top: 0;
   z-index: 999;
   background-color: transparent;
+
   div {
     margin: $small-margin;
   };
@@ -52,10 +57,11 @@ nav {
   }
 
   #languages-icon-wrapper {
-    display: inline-block;
     @include flex-row-between;
+    display: inline-block;
     width: $small-width;
     padding: 0 $small-padding;
+
     i {
       display: inline-block;
       margin: $tiny-margin;
@@ -117,6 +123,7 @@ article {
     display: inline-block;
     margin: 0 $small-margin;
     width: 95%;
+
     li {
       margin: 0 $large-margin;
       line-height: 1.5;
@@ -130,13 +137,14 @@ article {
     padding: $small-padding;
     background-color: transparent;
     align-self: flex-end;
+
     a {
       margin: 15px;
     }
   }
 
   &:last-of-type {
-  margin-bottom: 27.5vh;
+    margin-bottom: 27.5vh;
   }
 }
 
@@ -151,6 +159,8 @@ header {
   }
 }
 
-#menu-toggle, #color-toggle, svg {
+#menu-toggle,
+#color-toggle,
+svg {
   background: transparent;
 }

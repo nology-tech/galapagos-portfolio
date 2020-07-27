@@ -24,13 +24,14 @@ header {
   }
 }
 
-i, 
+i,
 #languages-icon-wrapper i {
   font-size: $icon-font;
 }
 
 .project-links a i {
   font-size: $icon-font  * 0.8;
+  
   &.project-npm {
     font-size: $icon-font;
   }

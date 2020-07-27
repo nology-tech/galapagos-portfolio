@@ -8,28 +8,28 @@ export const toggleColorMode = () => {
   // elements have transparent backgrounds
 
   document.querySelectorAll('*').forEach((element) => {
-    if (element.classList.contains('lightModeText')) {
-      element.classList.remove('lightModeText');
-      element.classList.add('darkModeText');
-    } else if (element.classList.contains('darkModeText')) {
-      element.classList.remove('darkModeText');
-      element.classList.add('lightModeText');
+    if (element.classList.contains('light-mode-text')) {
+      element.classList.remove('light-mode-text');
+      element.classList.add('dark-mode-text');
+    } else if (element.classList.contains('dark-mode-text')) {
+      element.classList.remove('dark-mode-text');
+      element.classList.add('light-mode-text');
     }
 
-    if (element.classList.contains('lightModeBackground')) {
-      element.classList.remove('lightModeBackground');
-      element.classList.add('darkModeBackground');
-    } else if (element.classList.contains('darkModeBackground')){
-      element.classList.remove('darkModeBackground');
-      element.classList.add('lightModeBackground');
+    if (element.classList.contains('light-mode-background')) {
+      element.classList.remove('light-mode-background');
+      element.classList.add('dark-mode-background');
+    } else if (element.classList.contains('dark-mode-background')){
+      element.classList.remove('dark-mode-background');
+      element.classList.add('light-mode-background');
     }
 
-    if (element.classList.contains('lightModeBoxShadow')) {
-      element.classList.remove('lightModeBoxShadow');
-      element.classList.add('darkModeBoxShadow');
-    } else if (element.classList.contains('darkModeBoxShadow')){
-      element.classList.remove('darkModeBoxShadow');
-      element.classList.add('lightModeBoxShadow');
+    if (element.classList.contains('light-mode-box-shadow')) {
+      element.classList.remove('light-mode-box-shadow');
+      element.classList.add('dark-mode-box-shadow');
+    } else if (element.classList.contains('dark-mode-box-shadow')){
+      element.classList.remove('dark-mode-box-shadow');
+      element.classList.add('light-mode-box-shadow');
     }
 
   });
