@@ -58,7 +58,6 @@ nav {
 
   #languages-icon-wrapper {
     @include flex-row-between;
-    display: inline-block;
     width: $small-width;
     padding: 0 $small-padding;
 
