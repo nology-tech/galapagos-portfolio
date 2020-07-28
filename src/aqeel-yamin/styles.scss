@@ -43,17 +43,34 @@ p {
 }
 
 .projects {
-  height: 470px;
-  width: 350px;
+  height: 500px;
+  width: 500px;
   border: 2px solid black;
   border-radius: 10px;
   background-color: #5c6784;
   box-shadow: 4px 8px #98b6b1;
 }
 
+.projects h2 {
+  color: #1d263b;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.projects p {
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 10px;
+}
+
+.projects img {
+  height: 40%;
+  width: 80%;
+  margin: 2.2rem;
+}
+
 .projects:hover {
   cursor: pointer;
-  background-color: silver;
 }
 
 h2 {
