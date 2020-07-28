@@ -66,35 +66,35 @@ header {
     font-size: 3em;
   }
 
-  // .typewriter {
-  //   font-size: 2em;
-  //   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  //   border-right: 0.15em solid rgb(154, 154, 154); /* The typwriter cursor */
-  //   white-space: nowrap; /* Keeps the content on a single line */
-  //   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  //   letter-spacing: 0.15em; /* Adjust as needed */
-  //   animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
+  .typewriter {
+    font-size: 2em;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid rgb(154, 154, 154); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
 
-  //   /* The typing effect */
-  //   @keyframes typing {
-  //     from {
-  //       width: 0;
-  //     }
-  //     to {
-  //       width: 100%;
-  //     }
-  //   }
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
 
-  //   /* The typewriter cursor effect */
-  //   @keyframes blink-caret {
-  //     to {
-  //       border-color: transparent;
-  //     }
-  //     50% {
-  //       border-color: rgb(255, 255, 254);
-  //     }
-  //   }
-  // }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: rgb(255, 255, 254);
+      }
+    }
+  }
 }
 
 h2 {
@@ -122,6 +122,7 @@ P {
 
     div {
       border: $border; //remove when content is added (i.e. projects)
+      border-radius: 5px;
       text-align: center;
       max-width: 90vw;
       margin: 40px auto;
@@ -157,15 +158,31 @@ P {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
-    a {
+    div {
+      text-align: center;
+      padding: 30px;
+      margin: 0 30px;
       z-index: 1;
+      &:hover {
+        opacity: 0.5; 
+      }
+      .namee {
+        border: none;
+        border-radius: 5px;
+      }
+    }
 
+    img {
+      z-index: 1;
+      width: 45px;
       &:hover {
         opacity: 0.5;
       }
     }
   }
+
 
   p {
     background-color: #cbcbcb;
@@ -177,7 +194,7 @@ P {
 #about {
   padding: 25px;
   margin: 5px 120px;
-
+  
   p {
     background-color: #cbcbcb;
     font-size: 1.3em;
@@ -186,7 +203,12 @@ P {
     border: none;
     border-radius: 10px;
   }
+  a {
+    z-index: 1;
+    color: green;
+  }
 }
+
 
 #contact {
   padding: 25px;
