@@ -7,7 +7,7 @@
 
 $border: 2px solid black;
 
-.video {
+.vid {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -132,6 +132,10 @@ P {
       flex-direction: column;
       justify-content: space-evenly;
 
+      .projVid {
+        width: 400px;
+      }
+
       .proj {
         width: 400px;
       }
@@ -168,7 +172,7 @@ P {
       &:hover {
         opacity: 0.5; 
       }
-      .namee {
+      .iconName {
         border: none;
         border-radius: 5px;
       }
@@ -194,6 +198,7 @@ P {
 #about {
   padding: 25px;
   margin: 5px 120px;
+
   
   p {
     background-color: #cbcbcb;
@@ -204,7 +209,7 @@ P {
     border-radius: 10px;
   }
   a {
-    z-index: 1;
+
     color: green;
   }
 }
