@@ -63,11 +63,16 @@ p {
   padding-top: 10px;
 }
 
-.projects img {
-  height: auto;
-  max-width: 80%;
-  margin: 2.2rem;
-  
+.images {
+  background-image: url('ewe4you.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  border: 2px solid black;
+  margin: 0 auto;
+  height: 50%;
+  width: 85%;
+  margin-top: 2rem;
 }
 
 .projects:hover {
