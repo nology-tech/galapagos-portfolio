@@ -1,54 +1,62 @@
 @media (min-width: $breakpoint-tablet) {
-  #about {
-    margin: 0 auto;
-    width: 80vw;
+  h1,
+  h2,
+  p,
+  #languages-icon-wrapper {
+
+    margin: $medium-margin;
+    width: $medium-width;
+  }
+
+  #about-content {
+
+    margin: 0 $medium-margin 48px $medium-margin;
+  }
+
+  #languages-wrapper {
+
+    padding: 20px 0;
+
+    p {
+
+      margin-bottom: 0;
+    }
+  }
+
+  #about-content p,
+  .project-wrapper p {
+
+    margin-top: 0;
+  }
+  
+  #fixed-header {
+    div {
+      margin: $medium-margin;
+    };
   }
 
   article {
-    width: 80vw;
-    padding: 20px;
+
+    min-width: unset;
+
+    .project-wrapper {
+
+      width: $medium-width;
+    }
+  }
+
+  header {
+    h2 {
+      margin: 0 $medium-margin;
+    }
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
-  main {
-    margin: 0 auto;
-  }
-
-  article {
-    width: 40vw;
-  }
-
   #about {
-    width: 60vw;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: $large-font * 1.125;
-  }
-
-  h2,
-  i,
-  li {
-    font-size: $medium-font * 1.125;
-  }
-
-  p {
-    font-size: $small-font * 1.125;
-  }
-
-  header {
-    .social-media-wrapper {
-      i {
-        font-size: $small-font * 1.125;
-      }
-    }
-
-    .project-links {
-      i {
-        font-size: $small-font * 1.75;
-      }
+    h1,
+    p {
+      width: $large-width;
     }
   }
 }
