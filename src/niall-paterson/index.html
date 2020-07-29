@@ -13,9 +13,9 @@
   <title>niall j. paterson</title>
 </head>
 
-<body>
+<body class='light-mode-background'>
 
-  <nav>
+  <nav class='light-mode-text light-mode-background'>
     <ul>
       <li><a href="#about">about</a></li>
       <li><a href="#project-0">0</a></li>
@@ -26,129 +26,155 @@
     </ul>
   </nav>
 
-  <header id="fixed-header">
+  <header class='light-mode-text transparent-background' id="fixed-header">
     <div id="color-toggle"></div>
     <div id="menu-toggle"></div>
   </header>
 
-  <section id="home">
+  <section class='light-mode-text light-mode-background' id="home">
     <h1 class="name">niall j. paterson</h1>
     <h2 class="dev-portfolio">development <br> portfolio</h2>
     <footer id="home-footer">
       <ul class="social-media-wrapper">
         <li>
-          <a href="https://github.com/niallpaterson" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/niallpaterson" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
         </li>
         <li>
-        <a href="https://www.linkedin.com/in/niall-paterson-1793b81a2" target="_blank"><i
-            class="fab fa-linkedin-in"></i></a>
-        </li>
+          <a href="https://www.linkedin.com/in/niall-paterson-1793b81a2" target="_blank"><i
+              class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="assets/software_dev_CV_NiallPaterson.pdf" download><i class="fas fa-file-download"></i></a>
+          </li>
         <li>
-          <a href="https://twitter.com/some_unique_x" target="_blank"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="http://orcid.org/0000-0003-1178-0463" target="_blank"><i class="fab fa-orcid"></i></a>
+          <a href="http://orcid.org/0000-0003-1178-0463" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i></a>
         </li>
       </ul>
     </footer>
   </section>
 
-  <section id="about">
+  <section class='light-mode-text light-mode-background' id="about">
     <div class="section-wrapper">
       <div class="about-wrapper">
         <header class="about-header">
           <h2 id="about-title">about</h2>
-        </header>
-        <p id="about-content">niall j paterson is a bristol based analytic philosopher turned software developer with a
-          passion for formal logic, test-driven development, and clean, functional code </p>
+        <p id="about-content"> niall j. paterson is an analytic philosopher turned software developer with a passion for well tested development, agile management practices, and writing clean, functional code. creative, inquisitive, personable individual with strong problem solving skills. </p>
       </div>
       <div id="languages-wrapper">
         <p>he works with:</p>
-        <p class="spacer"></p>
         <div id="languages-icon-wrapper">
           <i class="fab fa-js-square"></i>
           <i class="fab fa-node-js"></i>
           <i class="fab fa-react"></i>
           <i class="fab fa-git-alt"></i>
+          <i class="fab fa-yarn"></i>
           <i class="fab fa-html5"></i>
           <i class="fab fa-css3-alt"></i>
           <i class="fab fa-sass"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-sketch"></i>
         </div>
       </div>
-      <p>↯ &nbsp; see his projects &nbsp; ↯ </p>
     </div>
+      <footer><p> ↯ &nbsp; see his projects &nbsp; ↯ </p></footer>
   </section>
 
-  <main>
+  <main class='light-mode-text light-mode-background'>
 
     <div class="hidden-link-location" id="project-0" ></div>
 
-    <article class="project-wrapper">
+    <article class="project-wrapper light-mode-box-shadow">
       <header class="project-header">
-        <h2 class="project-num">0 &nbsp; sigma-calc</h2>
+        <h2 class="project-num">🧮 0 sigma-calc</h2>
       </header>
-      <p class="project-content">web application that allows users to calculate in sigma and pi notation, built using
-        javascript and SCSS</p>
+      <ul class="project-content">
+        <li>calculator written in javascript, html, and scss</li>
+        <li>unit tested with jest</li>
+        <li>calculates in sigma and pi notation</li>
+        <li>handles conventional order of operations</li>
+      </ul>
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="https://niallpaterson.github.io/sigma-calc/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/sigma-calc" target="_blank"><i class="fas fa-code"></i></a>
       </div>
     </article>
 
     <div class="hidden-link-location" id="project-1" ></div>
 
-    <article class="project-wrapper">
+    <article class="project-wrapper light-mode-box-shadow">
       <header class="section-header">
-        <h2 class="project-num">1 &nbsp; conjunctive-props</h2>
+        <h2 class="project-num">🦠 1 antibodies</h2>
       </header>
-      <p class="project-content">web application that constructs and displays conjunctive properties from arbitraty
-        sets of atomic properties, built using javascript and SCSS</p>
+        <ul class="project-content">
+          <li>game written in javascript, html, and scss</li>
+          <li>stockpile resources and avoid infection </li>
+          <li>utilises the svg.js javascript libary</li>
+        </ul>
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="https://niallpaterson.github.io/antibodies/" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/antibodies" target="_blank"><i class="fas fa-code"></i></a>
       </div>
     </article>
 
     <div class="hidden-link-location" id="project-2" ></div>
 
-    <article class="project-wrapper">
+    <article class="project-wrapper light-mode-box-shadow">
       <header class="section-header">
-        <h2 class="project-num">2 &nbsp; equivalent-boole</h2>
+        <h2 class="project-num">🏗 2 mk-js-webapp</h2>
       </header>
-      <p class="project-content">simple game in which users must write distinct, logically equivalent sentence of
-        propositional logic, built using javascript and SCSS</p>
+      <ul class="project-content">
+        <li>shell script written in zsh</li>
+        <li>generates javascript webapp templates</li>
+        <li>adds jest with babel-jest 
+        <li>adds eslint using the airbnb guidelines</li> 
+        <li>adds commit linting enforcing conventional commits</li>
+        <li>autopopulates github repository issue labels</li>
+      </ul>
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="https://github.com/niallpaterson/mk-js-webapp/blob/master/README.md" target="_blank"><i class="fa fa-file-text-o"></i></i></a>
+        <a href="https://github.com/niallpaterson/mk-js-webapp" target="_blank"><i class="fas fa-code"></i></a>
       </div>
     </article>
 
     <div class="hidden-link-location" id="project-3"></div>
 
-    <article class="project-wrapper">
+    <article class="project-wrapper light-mode-box-shadow">
       <header class="section-header">
-        <h2 class="project-num">3 &nbsp; fix-btc-key</h2>
+        <h2 class="project-num">🧼 3 cleanup-react-app </h2>
       </header>
-      <p class="project-content">web application that fixes incorrectly copied private bitcoin keys, built using
-        javascript and SCSS</p>
+      <ul class="project-content">
+        <li> node.js package written using the filesystem module</li>
+        <li> cleanup your create-react-app template</li>
+        <li>removes commonly deleted files and boilerplate content</li>
+        <li> published on the npm registry</li>
+      </ul>
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="https://www.npmjs.com/package/cleanup-react-app" target="_blank"><i class="fab fa-npm project-npm"></i></i></i></a>
+        <a href="https://github.com/niallpaterson/cleanup-react-app" target="_blank"><i class="fas fa-code"></i></a>
       </div>
     </article>
 
     <div class="hidden-link-location" id="project-4" ></div>
 
-    <article class="project-wrapper">
+    <article class="project-wrapper light-mode-box-shadow">
       <header class="section-header">
-        <h2 class="project-num">4 &nbsp; comparative-risk</h2>
+        <h2 class="project-num">🗃 4 github-issue-manager</h2>
       </header>
-      <p class="project-content">define local universes and calculate comparative risk on probabilistic, modal, and unified interpretations</p>
+      <ul class="project-content">
+        <li>work in progress</li>
+        <li>webapp written with functional react.js and scss</li>
+        <li>unit tested with jest & enzyme</li>
+        <li>utilisies data fetching via the github api</li>
+        <li>utilisies the showdown.js markdown transpiler library</li>
+        <li>displays github repository issues</li>
+      </ul>
       <div class="project-links">
-        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="#" target="_blank"><i class="fas fa-rocket"></i></i></a>
+        <a href="https://github.com/niallpaterson/gh-issue-manager" target="_blank"><i class="fas fa-code"></i></a>
       </div>
     </article>
+
+    <div class="hidden-link-location" id="project-bottom" ></div>
 
   </main>
 
