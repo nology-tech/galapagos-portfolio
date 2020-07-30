@@ -62,16 +62,14 @@ p {
   font-size: 1.3em;
   padding-top: 10px;
 }
-
 .images {
-  background-image: url('ewe4you.png');
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
+    display: flex;
+    justify-content: center;
+}
+img {
   border: 2px solid black;
-  margin: 0 auto;
-  height: 50%;
-  width: 85%;
+  height: 45%;
+  width: 80%;
   margin-top: 2rem;
 }
 
@@ -99,8 +97,8 @@ h2 {
 
 .para {
   margin: 60px;
-  text-align: justify;
-  line-height: 2;
+  text-align: center;
+  line-height: 1.5;
   font-size: 20px;
   color: #98b6b1;
 }
@@ -157,3 +155,26 @@ h2 {
 .social-icons a {
   color: #98b6b1;
 }
+
+@media only screen and (max-width: 450px) {
+    #nametag {
+      margin: 60px;
+    }
+    h1 {
+        padding-top: 100px;
+    }
+    #portfolio {
+        margin: 60px;
+    }
+    .projects h2 {
+        font-size: 30px;
+    }
+    .projects {
+        margin-bottom: 2em;
+        width: 350px;
+        height: 350px;
+    }
+    .skill-icons {
+        margin: 50px;
+    }
+  }
