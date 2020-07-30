@@ -186,6 +186,7 @@ body {
   background-position: top;
   background-size: 100vw;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 /*---------- Homepage styles----------*/
@@ -417,6 +418,7 @@ body {
   height: max-content;
   border-left: 1px #8ea8c3 solid;
   border-right: 1px #8ea8c3 solid;
+  overflow-x: clip;
 }
 
 .fixed {
@@ -531,7 +533,7 @@ body {
 #bio .page-border .wrapper .title span,
 #portfolio .page-border .wrapper .title span,
 #contact .page-border .wrapper .title span {
-  text-shadow: 0 0 50px whitesmoke, 0 0 30px whitesmoke, 0 0 5px #0b0014, 0 0 10px #0b0014;
+  text-shadow: 0 0 50px #f5f5f599, 0 0 30px #f5f5f599, 0 0 5px #0b0014, 0 0 10px #0b0014;
   font-family: sfalienenc;
   width: 100%;
   text-align: center;
@@ -546,7 +548,7 @@ article {
   position: relative;
   text-align: left;
   background-color: #0b0014;
-  font-family: Orbitron, consolas, Arial, Helvetica, sans-serif;
+  font-family: consolas, Arial, Helvetica, sans-serif;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
