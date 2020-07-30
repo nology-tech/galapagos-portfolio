@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #46326f;
-  box-shadow: 0px 15px 10px -15px #46326f;
+  box-shadow: 0 15px 10px -15px #46326f;
 }
 
 .logo {
@@ -40,7 +40,7 @@ a {
   color: white;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0px 15px 10px -15px #afafaf;
+  box-shadow: 0 15px 10px -15px #afafaf;
 }
 
 a:visited {
