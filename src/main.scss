@@ -52,15 +52,11 @@ a:visited {
   color: white;
 }
 
-// a:hover > p {
-//   background-color: rgb(236, 69, 102);
-// }
-
 a:hover > .trainee-img {
   // border: solid 2px rgb(236, 69, 102);
   border-bottom: none;
   opacity: 0.5;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .trainee-img {
