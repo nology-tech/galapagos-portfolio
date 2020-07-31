@@ -68,6 +68,14 @@ $largescreen: 2560px;
     h2 {
       font-variant: small-caps;
       letter-spacing: 6px;
+      margin: 0 auto;
+      
+      //TYPING ANIMATION
+      // color: black;
+      // text-align: center;
+      // width: 14em;
+      // white-space: nowrap;
+      // overflow: hidden;
 
       
       @media (min-width: $tablet) {
