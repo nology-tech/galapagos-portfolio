@@ -41,21 +41,26 @@
 * #purple-banner {
   background-color: darkmagenta;
   padding: 15px;
+  position: relative;
 }
-* #purple-banner h2 {
-  font-variant: small-caps;
-  letter-spacing: 6px;
-  color: black;
-  text-align: center;
-  width: 14em;
-  white-space: nowrap;
-  overflow: hidden;
+* #purple-banner div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: darkmagenta;
   animation: type 3s steps(300, end);
 }
 @keyframes type {
   from {
-    width: 0;
+    width: 100%;
   }
+}
+* #purple-banner h2 {
+  font-variant: small-caps;
+  letter-spacing: 6px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   * #purple-banner h2 {
