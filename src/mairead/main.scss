@@ -53,6 +53,7 @@ $largescreen: 2560px;
     h2 {
       font-variant: small-caps;
       letter-spacing: 6px;
+      margin: 0 auto;
       
       //TYPING ANIMATION
       color: black;
@@ -62,8 +63,9 @@ $largescreen: 2560px;
       overflow: hidden;
       animation: type 3s steps(300, end);
       @keyframes type { 
-        from {width: 0;} 
+        from {width: 0;}
       } 
+
       
       @media (min-width: $tablet) {
         letter-spacing: 10px;
@@ -277,6 +279,7 @@ form {
 //Fix the animation centering issue
 //Center the contact form
 //hover effects for project boxes
+//put photo of me on front page
 
 
 
