@@ -4,9 +4,5 @@ export const settings = {
 };
 
 export const updateSettings = function () {
-  if (settings.colorMode === 'light') {
-    settings.colorMode = 'dark';
-  } else {
-    settings.colorMode = 'light';
-  }
+  settings.colorMode === 'light' ? settings.colorMode = 'dark' : settings.colorMode = 'light';
 };
