@@ -1,30 +1,25 @@
 $multiple: 8;
 
-$small-font: 0.15em * $multiple;
-$medium-font: 0.25em * $multiple;
-$large-font: 0.35em * $multiple;
+$cv-icon-font: 3.75px * $multiple;
+$icon-font: 4px * $multiple;
+$small-font: 0.125em * $multiple;
+$medium-font: 0.2em * $multiple;
+$large-font: 0.3em * $multiple;
 
-$margin-small: 2px * $multiple;
-$margin-medium: 3px * $multiple;
-$margin-large: 4px * $multiple;
+$tiny-margin: 1px * $multiple;
+$small-margin: 2px * $multiple;
+$medium-margin: 3px * $multiple;
+$large-margin: 4px * $multiple;
 
-$padding-small: 2px * $multiple;
-$padding-medium: 3px * $multiple;
+$tiny-padding: 1px * $multiple;
+$small-padding: 3px * $multiple;
+$medium-padding: 6px * $multiple;
+$large-padding: 5px * $multiple;
 
-$tiny-width: 1vw * $multiple;
-$small-width: (100 / $multiple) * 2vw;
-$medium-width: (100 / $multiple) * 3vw;
-$large-width: (100 / $multiple) * 4vw;
-$full-width: 100vw;
+$tiny-width: 10px * $multiple;
+$small-width: 30px * $multiple;
+$medium-width: 60px * $multiple;
+$large-width: 65px * $multiple;
 
-$tiny-height: 1vh * $multiple;
-$small-height: (100vh / $multiple) / 2;
-$medium-height: (100vh / $multiple);
-$large-height: (100vh / $multiple) * 2vh;
-$full-height: 100vh;
-
-$top-gradient: linear-gradient(180deg, rgba(251, 254, 249, 1) 80%, 
-rgba(251, 254, 249, 0.1) 100%);
-
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 600px;
 $breakpoint-desktop: 900px;
