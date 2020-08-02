@@ -1123,56 +1123,6 @@ article .article-footer .article-footer-text {
 }
 
 /*---------- Footer styles ----------*/
-.footer {
-  opacity: 0;
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: #8ea8c3;
-  width: 100%;
-  background-color: #0b0014;
-  border-top: 1px double #8ea8c3;
-  border-radius: 2em 2em 0 0;
-  -webkit-transition-property: height, opacity;
-  transition-property: height, opacity;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
-.footer .footer-nav {
-  height: 100%;
-  width: 100%;
-}
-
-.footer .footer-nav ul {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  letter-spacing: unset;
-}
-
-.footer .footer-nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: auto;
-  color: inherit;
-}
-
 html {
   font-size: 16px;
 }
@@ -1182,7 +1132,44 @@ html h1 {
 }
 
 html h2 {
-  font-size: 2em;
+  font-size: 0.8em;
+  color: #56eef4;
+}
+
+@media screen and (min-width: 380px) {
+  html h2 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  html h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  html h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  html h2 {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html h2 {
+    font-size: 2.5em;
+  }
 }
 
 html h3 {
@@ -1244,5 +1231,49 @@ section.page:not(.on) {
   -webkit-animation: flyout 0.75s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
           animation: flyout 0.75s cubic-bezier(0.5, -0.5, 0.5, 1.5) 1;
   opacity: 0;
+}
+
+@media screen and (min-width: 380px) {
+  .contact.page.on .subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .contact.page.on .subtitle {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .contact.page.on .subtitle {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact.page.on .subtitle {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact.page.on .subtitle {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact.page.on .subtitle {
+    font-size: 3.5em;
+  }
+}
+
+.contact.page.on h2 a {
+  color: inherit;
+}
+
+.contact.page.on h2 a:active {
+  color: #ee6352;
 }
 /*# sourceMappingURL=index.css.map */
