@@ -17,5 +17,7 @@
     "html-lint": "htmlhint **/*.html",
     "lint": "yarn html-lint && yarn scss-lint && yarn js-lint"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
