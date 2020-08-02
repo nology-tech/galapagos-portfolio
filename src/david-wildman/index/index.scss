@@ -298,6 +298,9 @@ body {
           background-clip: text;
           -webkit-background-clip: text;
           color: transparent;
+          cursor: pointer;
+          transform: scale(1.1);
+          transform-origin: center;
         }
       }
       * {
@@ -312,6 +315,13 @@ body {
 .portfolio.button,
 .contact.button {
   &:hover {
+    font-family: sfalienenc;
+    background-image: url("./assets/images/downwardsbackgroundfireopal.gif");
+    background-color: transparent;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     cursor: pointer;
     transform: scale(1.1);
     transform-origin: center;
@@ -417,11 +427,11 @@ body {
           font-family: sfalienenc;
           width: 100%;
           text-align: center;
-          color: $cadet-grey;
+          color: $electric-blue;
           font-size: 2.5em;
           line-height: 9vh;
           margin: 6vh 0;
-          border-bottom: 2px $fire-opal solid;
+          border-bottom: 2px $cadet-grey solid;
         }
       }
     }
@@ -431,7 +441,7 @@ body {
 article {
   position: relative;
   text-align: left;
-  background-color: $xiketic;
+  background-color: transparent;
   font-family: consolas, Arial, Helvetica, sans-serif;
   height: max-content;
   width: 80%;
@@ -510,42 +520,21 @@ article {
     }
 
     .section-content {
-      margin: 10% 0;
+      margin: 0 0 15% 0;
       height: 100%;
       width: 100%;
 
       > * {
-        margin-bottom: 5%;
+        margin-bottom: 3%;
 
         > * > * {
-          margin-bottom: 5%;
+          margin-bottom: 2%;
         }
       }
 
       .section-heading {
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        .left {
-          width: 15%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        }
-
-        .right {
-          width: 80%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: flex-start;
-        }
       }
 
       .section-text {
@@ -555,24 +544,6 @@ article {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .left {
-          width: 15%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        }
-
-        .right {
-          width: 80%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: flex-start;
-        }
       }
 
       .section-highlight {
@@ -583,17 +554,16 @@ article {
         align-items: flex-start;
 
         .left {
-          width: 15%;
+          width: 25px;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
-          color: $maximum-yellow;
         }
 
         .right {
-          width: 80%;
+          width: 90%;
           height: 100%;
           display: flex;
           flex-direction: column;
@@ -612,31 +582,37 @@ article {
       text-align: left;
       width: 100%;
       color: $electric-blue;
+      margin-bottom: 2%;
     }
 
     h5 {
       text-align: left;
       width: 100%;
-      color: $azure;
+      color: $cultured;
+      font-weight: bolder;
+      margin-bottom: 1%;
     }
 
     h6 {
       width: 100%;
-      text-align: justify;
+      text-align: left;
+      margin-bottom: 2%;
     }
 
     p {
       text-align: left;
       width: 100%;
       color: $cultured;
+      margin-bottom: 2%;
     }
 
     ul {
       list-style: square inside;
-      padding: 0% 0% 5%;
 
       li {
-        font-size: unset;
+        text-align: left;
+        font-size: 0.7em;
+        color: $cultured;
       }
     }
   }
@@ -656,12 +632,16 @@ article {
 
     &:hover > .article-footer-text {
       cursor: pointer;
-      border-color: $fire-opal;
+      @media screen and (min-width: 1200px) {
+        border-color: $fire-opal;
+      }
     }
 
     &.open:hover > .article-footer-text {
       cursor: pointer;
-      border-color: $fire-opal;
+      @media screen and (min-width: 1200px) {
+        border-color: $fire-opal;
+      }
     }
 
     .article-footer-text {
@@ -721,67 +701,64 @@ article {
   }
 }
 
-// ---------- Responsiveness ---------- //
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 16px;
+html {
+  font-size: 16px;
 
-    h1 {
-      font-size: 2.5em;
-    }
-
-    h2 {
-      font-size: 2em;
-    }
-
-    h3 {
-      font-size: 0.9em;
-    }
-
-    h4 {
-      font-size: 0.85em;
-    }
-
-    h5 {
-      font-size: 0.78em;
-    }
-
-    h6 {
-      font-size: 0.75em;
-    }
-
-    p {
-      font-size: 0.7em;
-    }
+  h1 {
+    font-size: 2.5em;
   }
-}
 
-/*----------Responsive design----------*/
-
-@media screen and (min-width: 823px) {
-  h1,
   h2 {
-    width: 100%;
+    font-size: 2em;
   }
 
-  header.page {
-    div.title {
-      height: 40vh;
-    }
+  h3 {
+    font-size: 0.9em;
+  }
 
-    nav {
-      height: 60vh;
-    }
+  h4 {
+    font-size: 0.85em;
+  }
 
-    ul {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-    }
+  h5 {
+    font-size: 0.85em;
+  }
+
+  h6 {
+    font-size: 0.85em;
+  }
+
+  p {
+    font-size: 0.7em;
   }
 }
+
+// /*----------Responsive design----------*/
+
+// @media screen and (min-width: 823px) {
+//   h1,
+//   h2 {
+//     width: 100%;
+//   }
+
+//   header.page {
+//     div.title {
+//       height: 40vh;
+//     }
+
+//     nav {
+//       height: 60vh;
+//     }
+
+//     ul {
+//       width: 100%;
+//       height: 100%;
+//       display: grid;
+//       grid-template-columns: 1fr 1fr 1fr;
+//       grid-template-rows: 1fr;
+//     }
+//   }
+// }
 
 /*---------- Selectors for JavaScript functions ----------*/
 
