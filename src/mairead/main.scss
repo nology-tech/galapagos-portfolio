@@ -49,21 +49,34 @@ $largescreen: 2560px;
   #purple-banner {
     background-color: darkmagenta;
     padding: 15px;
+    position: relative;
+
+    div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background-color: darkmagenta;
+      animation: type 3s steps(300, end);
+      @keyframes type { 
+        from {width: 100%;}
+      } 
+
+    }
 
     h2 {
       font-variant: small-caps;
       letter-spacing: 6px;
+      margin: 0 auto;
       
       //TYPING ANIMATION
-      color: black;
-      text-align: center;
-      width: 14em;
-      white-space: nowrap;
-      overflow: hidden;
-      animation: type 3s steps(300, end);
-      @keyframes type { 
-        from {width: 0;} 
-      } 
+      // color: black;
+      // text-align: center;
+      // width: 14em;
+      // white-space: nowrap;
+      // overflow: hidden;
+
       
       @media (min-width: $tablet) {
         letter-spacing: 10px;
@@ -277,6 +290,7 @@ form {
 //Fix the animation centering issue
 //Center the contact form
 //hover effects for project boxes
+//put photo of me on front page
 
 
 
