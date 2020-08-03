@@ -18,6 +18,7 @@
     "lint": "yarn html-lint && yarn scss-lint && yarn js-lint"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "firebase-tools": "^8.6.0"
   }
 }
