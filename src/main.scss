@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(70, 50, 111);
-  box-shadow: 0px 15px 10px -15px rgb(70, 50, 111);
+  box-shadow: 0 15px 10px -15px rgb(70, 50, 111);
 }
 
 .logo {
@@ -45,7 +45,7 @@ a {
   // border: solid 1px rgb(221, 221, 221);
   // border-radius: 5px;
   text-align: center;
-  box-shadow: 0px 15px 10px -15px rgb(175, 175, 175);
+  box-shadow: 0 15px 10px -15px rgb(175, 175, 175);
 }
 
 a:visited {
