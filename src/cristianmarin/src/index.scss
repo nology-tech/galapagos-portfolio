@@ -20,7 +20,9 @@ a {
   color: rgb(44, 83, 190);
   text-decoration: none;
 }
-
+p a {
+  color: yellow;
+}
 h1,
 h2,
 h3 {
@@ -116,7 +118,7 @@ p {
 }
 
 .list {
-  text-align: center;
+  text-align: start;
   color: white;
 }
 
@@ -124,10 +126,6 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 70px;
-
-  // margin: 30px;
-  // text-align: center;
-  // letter-spacing: 20px;
   font-size: 10px;
   color: white;
 }
@@ -178,52 +176,26 @@ p {
   color: #e7e419;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 830px) {
   h1 {
-    font-size: 20px;
+    font-size: 13px;
+  }
+
+  .middlebtn {
+    font-size: 15px;
+  }
+
+  .box {
+    justify-content: space-evenly;
+    font-size: 7px;
+    color: yellow;
+    padding: 10px;
+  }
+
+  .items {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 75px;
   }
 }
-
-// @media only screen and (min-width: 425px) {
-//   h1 {
-//     font-size: 20px;
-//   }
-
-//   p {
-//     font-size: 15px;
-//   }
-
-//   .box {
-//     font-size: 5px;
-//     color: yellow;
-//   }
-// }
-
-// @media only screen and (min-width: 375px) {
-//   h1 {
-//     font-size: 15px;
-//   }
-
-//   .box {
-//     font-size: 5px;
-//   }
-
-//   .middlebtn {
-//     font-size: 10px;
-//   }
-// }
-
-// @media only screen and (max-width: 320px) {
-//   h1 {
-//     font-size: 13px;
-//   }
-
-//   .middlebtn {
-//     font-size: 7px;
-//   }
-
-//   .box {
-//     font-size: 5px;
-//     color: yellow;
-//   }
-// }
