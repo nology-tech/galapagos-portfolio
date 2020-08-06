@@ -1096,7 +1096,7 @@ article.gallery .gallery-title {
 
 @media screen and (min-width: 550px) {
   article.gallery .gallery-title {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -1108,7 +1108,7 @@ article.gallery .gallery-title {
 
 @media screen and (min-width: 1080px) {
   article.gallery .gallery-title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
