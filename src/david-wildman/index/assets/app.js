@@ -6,17 +6,14 @@ const contactButtons = document.querySelectorAll('.contact.button');
 const homePage = document.querySelector('.home.page');
 const homePageButtons = document.querySelectorAll('.home-nav li');
 const headerTitle = document.querySelector('.header.title');
+const socialsToggler = document.querySelector('.socials-burger');
 let pageArticles;
 let pageTitle;
-// const bioPage = document.querySelector('.bio.page');
-// const bioPageTitle = document.querySelector('.bio.title');
-// const portfolioPage = document.querySelector('.portfolio.page');
-// const portfolioPageTitle = document.querySelector('.porfolio.title');
 const portfolioLinks = document.querySelectorAll('h6');
 const contactPage = document.querySelector('.contact.page');
-const footer = document.querySelector('.footer');
-
+const socialsBar = document.querySelector('nav.socials');
 const expandButtons = document.querySelectorAll('.article-footer-text');
+
 const addEventListeners = (buttons, clickBehaviour) => {
   buttons.forEach(button => {
     button.addEventListener('click', () => clickBehaviour(event));
@@ -127,6 +124,13 @@ const expandArticle = (event) => {
   };
 }
 
+const toggleSocials = () => {
+  const burgerIcons = Array.from(socialsToggler.childNodes).filter(node => node.tagName === "H3");
+  burgerIcons.forEach(burgerIcon => burgerIcon.classList.toggle("burger-hide"));
+  socialsBar.classList.toggle("display-socials")
+}
+
+socialsToggler.addEventListener("click", toggleSocials);
 addEventListeners(homePageButtons, mainMenuFadeOut);
 addEventListeners(homeButtons, loadMainMenu);
 
@@ -140,7 +144,6 @@ addEventListeners(homeButtons, loadMainMenu);
 addEventListeners(bioButtons, updatePage);
 addEventListeners(portfolioButtons, updatePage);
 addEventListeners(contactButtons, updatePage);
-
 addEventListeners(expandButtons, expandArticle);
 
 // const landingPage = document.querySelector('.landing.page');
