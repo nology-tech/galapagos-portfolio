@@ -1604,7 +1604,7 @@ section.page:not(.on) {
 }
 
 .socials-wrapper .socials-options li:hover {
-  text-shadow: 0px 0px 5px #0b0014, 0px 0px 30px #8ea8c3;
+  text-shadow: 0 0 5px #0b0014, 0 0 30px #8ea8c3;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
