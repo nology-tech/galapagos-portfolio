@@ -4,28 +4,28 @@
 /* Other colors */
 /*---------- Fonts ----------*/
 @font-face {
-  font-family: 'sfalienencsolid';
+  font-family: "sfalienencsolid";
   src: url("./assets/fonts/sfalienencsolid.woff2") format("woff2"), url("./assets/fonts/sfalienencsolid.woff") format("woff"), url("./assets//fonts/sfalienencsolid.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'sfalienenc';
+  font-family: "sfalienenc";
   src: url("./assets/fonts/sfalienenc.woff2") format("woff2"), url("./assets/fonts/sfalienenc.woff") format("woff"), url("./assets/fonts/sfalienenc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'streamster';
+  font-family: "streamster";
   src: url("./assets/fonts/streamster.woff2") format("woff2"), url("./assets/fonts/streamster.woff") format("woff"), url("./assets/fonts/streamster.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'scriptina';
+  font-family: "scriptina";
   src: url("./assets/fonts/scriptina.woff2") format("woff2"), url("./assets/fonts/scriptina.woff") format("woff"), url("./assets/fonts/scriptina.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -964,6 +964,36 @@ article {
   margin: 2% 0;
 }
 
+@media screen and (min-width: 380px) {
+  article {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  article {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  article {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  article {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    font-size: 24px;
+  }
+}
+
 article i {
   font-size: inherit;
   color: #56eef4;
@@ -996,11 +1026,13 @@ article.gallery {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 35vw;
   border-top: 1px solid #8ea8c3;
   border-bottom: 1px solid #8ea8c3;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-bottom: 6vh;
 }
 
 article.gallery .gallery-title {
@@ -1035,7 +1067,6 @@ article.gallery .gallery-title {
 article.gallery img {
   width: 60vw;
   height: 33.75vw;
-  margin-bottom: 8vh;
 }
 
 article .article-heading {

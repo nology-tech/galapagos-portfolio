@@ -35,13 +35,16 @@ body {
   &::-webkit-scrollbar-button {
     background-color: $cadet-grey;
     border-radius: 10px;
+
     &:active {
       background-color: $electric-blue;
     }
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: $cadet-grey;
     border-radius: 10px;
+
     &:active {
       background-color: $electric-blue;
     }
@@ -439,6 +442,7 @@ body {
         font-size: 2.75em;
       }
     }
+
     .wrapper {
       display: flex;
       flex-direction: column;
@@ -551,6 +555,7 @@ article {
       @media screen and (min-width: 1080px) {
         font-size: 2em;
       }
+
       font-family: orbitron;
       display: block;
       width: 100%;
@@ -559,6 +564,7 @@ article {
       background-color: #363946;
       border-bottom: 1px solid $cadet-grey;
     }
+
     img {
       width: 60vw;
       height: 33.75vw;
@@ -650,9 +656,11 @@ article {
             width: max-content;
           }
         }
+
         .intergr8 {
           color: grey;
           font-size: 0.6em;
+
           em {
             color: $cadet-grey;
             margin-right: 2%;
@@ -866,6 +874,7 @@ section.page:not(.on) {
 .contact.page {
   h2 {
     text-align: center;
+
     a {
       color: inherit;
       font-size: inherit;
@@ -927,6 +936,7 @@ section.page:not(.on) {
 
       > h3 {
         line-height: 1em;
+
         &.burger-hide {
           display: none;
         }
@@ -948,6 +958,7 @@ section.page:not(.on) {
     transition-timing-function: cubic-bezier(0.1, 0.2, 0.4, 0.8);
     @media screen and (min-width: 960px) {
       color: #363946;
+
       &:hover {
         color: $electric-blue;
       }
@@ -986,6 +997,7 @@ section.page:not(.on) {
           color: inherit;
           text-decoration: none;
         }
+
         &:active {
           color: $fire-opal;
         }
