@@ -983,7 +983,7 @@ section.page:not(.on) {
       }
 
       &:hover {
-        text-shadow: 0px 0px 5px $xiketic, 0px 0px 30px #8ea8c3;
+        text-shadow: 0 0 5px $xiketic, 0 0 30px #8ea8c3;
         transform: scale(1.2);
       }
 
