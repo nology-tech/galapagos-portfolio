@@ -426,6 +426,28 @@ body {
     border-bottom: 1px solid $cadet-grey;
 
     .subtitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .gallery-nav {
+        font-family: orbitron;
+        color: $fire-opal;
+        font-size: 2.5em;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        p {
+          margin-bottom: 2vh;
+        }
+
+        &:active {
+          color: $electric-blue;
+        }
+      }
       @media screen and (min-width: 380px) {
         font-size: 1.5em;
       }
@@ -533,7 +555,7 @@ article {
   }
 
   &.gallery {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -543,6 +565,10 @@ article {
     border-bottom: 1px solid $cadet-grey;
     height: max-content;
     margin-bottom: 6vh;
+
+    &.active-image {
+      display: flex;
+    }
 
     .gallery-title {
       font-size: 0.8em;
@@ -912,7 +938,7 @@ section.page:not(.on) {
   .socials-toggler {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     display: grid;
     place-items: center;
     background-color: transparent;
@@ -925,9 +951,9 @@ section.page:not(.on) {
       display: grid;
       place-items: center;
       color: white;
-      width: 4vmin;
-      height: 4vmin;
-      font-size: 4vmin;
+      width: 10vmin;
+      height: 10vmin;
+      font-size: 8vmin;
       transition: color 0.5s ease-in;
 
       &:hover {

@@ -829,6 +829,50 @@ body::-webkit-scrollbar-thumb:active {
   border-bottom: 1px solid #8ea8c3;
 }
 
+#bio .page-border .subtitle,
+#portfolio .page-border .subtitle,
+#contact .page-border .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bio .page-border .subtitle .gallery-nav,
+#portfolio .page-border .subtitle .gallery-nav,
+#contact .page-border .subtitle .gallery-nav {
+  font-family: orbitron;
+  color: #ee6352;
+  font-size: 2.5em;
+}
+
+#bio .page-border .subtitle .gallery-nav:hover,
+#portfolio .page-border .subtitle .gallery-nav:hover,
+#contact .page-border .subtitle .gallery-nav:hover {
+  cursor: pointer;
+}
+
+#bio .page-border .subtitle .gallery-nav p,
+#portfolio .page-border .subtitle .gallery-nav p,
+#contact .page-border .subtitle .gallery-nav p {
+  margin-bottom: 2vh;
+}
+
+#bio .page-border .subtitle .gallery-nav:active,
+#portfolio .page-border .subtitle .gallery-nav:active,
+#contact .page-border .subtitle .gallery-nav:active {
+  color: #56eef4;
+}
+
 @media screen and (min-width: 380px) {
   #bio .page-border .subtitle,
   #portfolio .page-border .subtitle,
@@ -1012,9 +1056,7 @@ article.subtitle {
 }
 
 article.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1033,6 +1075,12 @@ article.gallery {
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 6vh;
+}
+
+article.gallery.active-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 article.gallery .gallery-title {
@@ -1503,7 +1551,7 @@ section.page:not(.on) {
 .socials-wrapper .socials-toggler {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -1520,9 +1568,9 @@ section.page:not(.on) {
   display: grid;
   place-items: center;
   color: white;
-  width: 4vmin;
-  height: 4vmin;
-  font-size: 4vmin;
+  width: 10vmin;
+  height: 10vmin;
+  font-size: 8vmin;
   -webkit-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
