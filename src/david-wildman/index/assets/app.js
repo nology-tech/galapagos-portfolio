@@ -6,17 +6,17 @@ const contactButtons = document.querySelectorAll('.contact.button');
 const homePage = document.querySelector('.home.page');
 const homePageButtons = document.querySelectorAll('.home-nav li');
 const headerTitle = document.querySelector('.header.title');
+const socialsToggler = document.querySelector('.socials-burger');
 let pageArticles;
 let pageTitle;
-// const bioPage = document.querySelector('.bio.page');
-// const bioPageTitle = document.querySelector('.bio.title');
-// const portfolioPage = document.querySelector('.portfolio.page');
-// const portfolioPageTitle = document.querySelector('.porfolio.title');
 const portfolioLinks = document.querySelectorAll('h6');
 const contactPage = document.querySelector('.contact.page');
-const footer = document.querySelector('.footer');
-
+const socialsBar = document.querySelector('nav.socials');
 const expandButtons = document.querySelectorAll('.article-footer-text');
+const galleryNextButton = document.querySelector('.gallery-nav .next');
+const galleryPreviousButton = document.querySelector('.gallery-nav .previous');
+const galleryItems = Array.from(document.querySelectorAll('.gallery'));
+
 const addEventListeners = (buttons, clickBehaviour) => {
   buttons.forEach(button => {
     button.addEventListener('click', () => clickBehaviour(event));
@@ -40,7 +40,6 @@ const updatePage = (event) => {
     setTimeout(() => {
       livePage.classList.remove('on');
       newPage.classList.add('on');
-      console.log(newPage.classList[0]);
       pageFadeIn(newPage.classList[0]);
     }, 2000);
   }
@@ -79,7 +78,6 @@ const mainMenuFadeOut = (event) => {
 const pageFadeIn = (newPage) => {
   pageArticles = document.querySelectorAll(`.${newPage} article`);
   pageTitle = document.querySelector(`.${newPage}.title`);
-  console.log(pageArticles);
   setTimeout((() => pageArticles.forEach((article, index) => {
     article.style.transitionDelay = `${index * 0.4}s`;
     article.style.opacity = '1';
@@ -127,35 +125,40 @@ const expandArticle = (event) => {
   };
 }
 
+const toggleSocials = () => {
+  const burgerIcons = Array.from(socialsToggler.childNodes).filter(node => node.tagName === "H3");
+  burgerIcons.forEach(burgerIcon => burgerIcon.classList.toggle("burger-hide"));
+  socialsBar.classList.toggle("display-socials")
+}
+
+socialsToggler.addEventListener("click", toggleSocials);
 addEventListeners(homePageButtons, mainMenuFadeOut);
 addEventListeners(homeButtons, loadMainMenu);
 
-// homeButtons.forEach(homeButton => {
-//   homeButton.addEventListener('mousedown', (event) => loadMainMenu(event));
-// });
-// homePageButtons.forEach((homePageButton) => {
-//   homePageButton.addEventListener('click', (event) => mainMenuFadeOut(event));
-// });
+const previousImage = () => {
+  for (let i = 0; i < galleryItems.length; i++) {
+    if (galleryItems[i].classList.contains("active-image")) {
+      galleryItems[i].classList.toggle("active-image");
+      i === 0 ? galleryItems[galleryItems.length - 1].classList.toggle("active-image") : galleryItems[i - 1].classList.toggle("active-image");
+      return
+    }
+  }
+}
+const nextImage = () => {
+  for (let i = 0; i < galleryItems.length; i++) {
+    if (galleryItems[i].classList.contains("active-image")) {
+      galleryItems[i].classList.toggle("active-image");
+      galleryItems[i + 1] ? galleryItems[i + 1].classList.toggle("active-image") : galleryItems[0].classList.toggle("active-image");
+      return
+    }
+  }
+}
 
 addEventListeners(bioButtons, updatePage);
 addEventListeners(portfolioButtons, updatePage);
 addEventListeners(contactButtons, updatePage);
-
 addEventListeners(expandButtons, expandArticle);
-
-// const landingPage = document.querySelector('.landing.page');
-
-// Enter button styles:
-
-// event.currentTarget.classList.remove('fly-in');
-// event.currentTarget.classList.add('fly-out');
-
-//// Footer: 
-
-
-////    footer.style.height = '8vh';
-// footer.style.opacity = '1';
-
-// console.log(bioPage, portfolioPage, portfolioLinks, contactPage, footer, event);
+galleryNextButton.addEventListener("click", nextImage);
+galleryPreviousButton.addEventListener("click", previousImage);
 
 updatePage();
